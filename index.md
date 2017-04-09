@@ -17,7 +17,7 @@ Interested in organizing a group of like-minded coworkers, or want your coworker
 
 [Please sign up for our newsletter emails](/subscribe.html) to hear updates about events and what we’re working on.
 
-See what we’ve been [writing on our blog](https://medium.com/@techworkersco).
+See what we’ve been [writing on our blog](https://medium.com/tech-workers-coalition).
 
 Follow us on [Twitter](https://twitter.com/techworkersco) or [Facebook](https://www.facebook.com/TechWorkersCoalition).
 
