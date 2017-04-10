@@ -7,7 +7,7 @@ permalink: /slack
 
 
 <form action="https://ancient-ridge-68647.herokuapp.com/signup" method="POST" target="_blank">
-  Email: <input type="text" name="email"><br>
+  Email: <input type="email" name="email"><br>
   Name (optional): <input type="text" name="name" /><br>
   Twitter (optional): <input type="text" name="twitter"><br>
   <input type="hidden" name="team_id" value="T0M2JM76F" />
