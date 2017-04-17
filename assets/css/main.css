@@ -18,6 +18,17 @@ body {
   color: #000f0f;
 }
 
+.callout {
+  border: 1px solid #000f0f;
+  background-color: #003635;
+  color: #fffff7;
+  padding: 0 0.5em;
+}
+
+.main-wrapper .callout a, .main-wrapper .callout a:link {
+  color: #fffff7;
+}
+
 h1,
 h2,
 h3,

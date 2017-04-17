@@ -16,10 +16,9 @@
 title: Tech Workers Coalition
 email: hello@techworkersco.org
 description: A coalition of tech industry workers, labor organizers, community organizers, and friends cultivating solidarity among all workers in tech.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "" # the subpath of your site, e.g. /blog
+baseurl: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: techworkersco
 
 # Build settings
 markdown: kramdown
