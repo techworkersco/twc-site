@@ -1,6 +1,21 @@
 ---
 layout: home
 ---
+
+## Take action on May Day
+
+In full solidarity with a diverse alliance of community organizations and workers associations, the Tech Workers Coalition joins in the call for a Day of Action on May Day, 2017. 
+
+✔ Connect with like-minded coworkers at your place of work
+{% include mailchimp-signup.html %}
+
+✔ No purchasing 
+
+✔ [Ditch work and hit the streets](https://www.facebook.com/events/1639931366021766/)
+
+[Read more](https://medium.com/tech-workers-coalition/tech-workers-coalition-endorses-may-day-general-strike-794193f9d2f5)
+
+
 ## Meet the Tech Workers Coalition
 
 We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends. We are organizing for activism, civic engagement and education in the Bay Area. We work in solidarity with existing movements towards social justice, workers rights, and economic inclusion.
