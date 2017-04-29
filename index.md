@@ -2,18 +2,19 @@
 layout: home
 ---
 
-## Take action on May Day
+## Take Action on May Day
 
-In full solidarity with a diverse alliance of community organizations and workers associations, the Tech Workers Coalition joins in the call for a Day of Action on May Day, 2017. 
+In full solidarity with a diverse alliance of community organizations and workers associations, the Tech Workers Coalition joins in the call for a Day of Action on May Day, 2017.
 
-✔ Connect with like-minded coworkers at your place of work
+✔ Connect with like-minded coworkers at your place of work:
 {% include mailchimp-signup.html %}
 
-✔ No purchasing 
+✔ No purchasing
 
 ✔ [Ditch work and hit the streets](https://www.facebook.com/events/1639931366021766/)
 
-[Read more](https://medium.com/tech-workers-coalition/tech-workers-coalition-endorses-may-day-general-strike-794193f9d2f5)
+[Read more...](https://medium.com/tech-workers-coalition/tech-workers-coalition-endorses-may-day-general-strike-794193f9d2f5)
+<hr>
 
 
 ## Meet the Tech Workers Coalition
