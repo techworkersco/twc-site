@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Slack
-permalink: /slack
+permalink: /slack/
 ---
 
 ## Join our Slack
 
-Our Slack is governed by the principles and rules in our [Community Guide](/community-guide.html). By joining, you agree to follow them.
+Our Slack is governed by the principles and rules in our [Community Guide](/community-guide). By joining, you agree to follow them.
 
 <form action="https://ancient-ridge-68647.herokuapp.com/signup" method="POST" target="_blank">
   Email: <input type="email" name="email"><br><br>
