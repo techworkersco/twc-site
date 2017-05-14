@@ -13,6 +13,6 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
   Name: <input type="text" name="name" /><br><br>
   Twitter (optional): <input type="text" name="twitter"><br><br>
   <input type="hidden" name="team_id" value="T0M2JM76F" />
-  <input type="hidden" name="redirect_uri" value="https://techworkerscoalition.org/slack-thanks.html" />
+  <input type="hidden" name="redirect_uri" value="https://techworkerscoalition.org/slack-thanks" />
   <input type="submit" value="Submit">
 </form>
