@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Community Guide
-permalink: /community-guide
+permalink: /community-guide/
 ---
 [Our Values and Code of Conduct](#our-values)<br>
 [Projects](#projects)<br>
