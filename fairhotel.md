@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 ---
 
 # Bring FairHotels to your company
