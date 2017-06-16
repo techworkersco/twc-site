@@ -22,4 +22,4 @@ See what we’ve been [writing on our blog](https://medium.com/tech-workers-coal
 
 Follow us on [Twitter](https://twitter.com/techworkersco) or [Facebook](https://www.facebook.com/TechWorkersCoalition).
 
-We’re also happy to chat, answer any questions you might have, or hear about any social justice efforts in which you need a partner. [Send us an email](mailto:hello@techworkersco.org).
+We’re also happy to chat, answer any questions you might have, or hear about any social justice efforts in which you need a partner. [Send us an email](/contact-us).
