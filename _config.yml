@@ -32,6 +32,8 @@ header_links:
     text: Meetup
   - url: https://twitter.com/techworkersco
     text: Twitter
+  - url: /contact-us
+    text: Contact Us
 footer_links:
   - url: https://www.meetup.com/Tech-Workers-Coalition/
     text: Meetup
