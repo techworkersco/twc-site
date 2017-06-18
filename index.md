@@ -12,8 +12,6 @@ You are welcome to check us out at our [monthly organization meeting in San Fran
 
 We communicate and organize every day on Slack. [Read our community guide](/community-guide) and [join our Slack](/slack).
 
-Interested in organizing a group of like-minded coworkers, or want your coworker group to get connected with others? [We hold a weekly office hours call](https://www.facebook.com/groups/365534843799176/) where you can connect with other workers in tech who are interested in social justice and can share organizing experiences.
-
 ### Learn More and Stay Connected
 
 [Please sign up for our newsletter emails](/subscribe) to hear updates about events and what we’re working on.
@@ -22,4 +20,4 @@ See what we’ve been [writing on our blog](https://medium.com/tech-workers-coal
 
 Follow us on [Twitter](https://twitter.com/techworkersco) or [Facebook](https://www.facebook.com/TechWorkersCoalition).
 
-We’re also happy to chat, answer any questions you might have, or hear about any social justice efforts in which you need a partner. [Send us an email](mailto:hello@techworkersco.org).
+We’re also happy to chat, answer any questions you might have, or hear about any social justice efforts in which you need a partner. [Send us an email](/contact-us).
