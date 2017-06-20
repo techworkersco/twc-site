@@ -1,16 +1,20 @@
-/* color: http://www.colourlovers.com/palette/3232187/essential_diplomacy.
-dark blue: #003635
-medium blue: #006466
-marine blue: #00C9CF
-yellow: #FFF538
-orange: #FF8800
+/*
 black: #000f0f
 white: #fffff7
+grey: 828486
+
+orange: f79522
+green: 2db674
+blue: 26aae1
+blue-green: 1aa89d
+blue-green (darker): 116e67
+blue-green (darkest): 0d544f
+yellow: #fce013
 */
 
 body {
-  background-color: #003635;
-  color: #fffff7;
+  background-color: #0d544f;
+  color: #1aa89d;
 }
 
 .main-wrapper {
@@ -20,7 +24,7 @@ body {
 
 .callout {
   border: 1px solid #000f0f;
-  background-color: #003635;
+  background-color: #1aa89d;
   color: #fffff7;
   padding: 0 0.5em;
 }
@@ -33,27 +37,27 @@ h1,
 h2,
 h3,
 h4 {
-  color: #FFF538;
+  color: #000f0f;
 }
 
 .main-wrapper h1,
 .main-wrapper h2,
 .main-wrapper h3,
 .main-wrapper h4 {
-  color: #003635;
+  color: #000f0f;
 }
 
-a:link { color: #FFF538; }
-a:visited { color: #FFF538; }
-a:hover { color: #FFF538; }
-a:focus { color: #FFF538; }
-a:active { color: #FFF538; }
+a:link { color: #fffff7; }
+a:visited { color: #fffff7; }
+a:hover { color: #fffff7; }
+a:focus { color: #fffff7; }
+a:active { color: #fffff7; }
 
-.main-wrapper a:link { color: #003635; }
-.main-wrapper a:visited { color: #003635; }
-.main-wrapper a:hover { color: #003635; }
-.main-wrapper a:focus { color: #003635; }
-.main-wrapper a:active { color: #003635; }
+.main-wrapper a:link { color: #116e67; }
+.main-wrapper a:visited { color: #116e67; }
+.main-wrapper a:hover { color: #116e67; }
+.main-wrapper a:focus { color: #116e67; }
+.main-wrapper a:active { color: #116e67; }
 
 /* layout */
 body {
@@ -139,10 +143,6 @@ li {
     .supporting-links li {
       margin-bottom: 1em;
     }
-
-footer {
-  border-top: 1px solid #000f0f;
-}
 
   footer ul {
     list-style-type: none;
