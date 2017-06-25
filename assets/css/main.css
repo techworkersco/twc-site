@@ -227,3 +227,62 @@ li {
     font-weight: normal;
     font-style: normal;
 }
+
+.columns {
+  display: flex;
+}
+
+.columns .column {
+  padding: 0 10px;
+}
+
+.column.is-1 {
+  flex: 1;
+}
+
+.column.is-2 {
+  flex: 2;
+}
+
+.column.is-3 {
+  flex: 3;
+}
+
+.thumbnail {
+  position: relative;
+  margin-top: 20px;
+  padding: 2px;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+.thumbnail:hover .overlay {
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #0d544f;
+}
+
+.overlay .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
