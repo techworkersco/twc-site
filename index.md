@@ -4,7 +4,7 @@ layout: home
 
 ## Meet the Tech Workers Coalition
 
-We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends. We are organizing for activism, civic engagement and education in the Bay Area. We work in solidarity with existing movements towards social justice, workers rights, and economic inclusion.
+We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends. We are organizing for activism, civic engagement and education in the Bay Area. We work in solidarity with existing movements towards social justice, workers rights, and economic inclusion. [Want to learn more?](/about)
 
 ### How We Work
 
