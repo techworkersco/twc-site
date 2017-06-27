@@ -2,6 +2,7 @@
 layout: page
 title: Contact Us
 permalink: /contact-us/
+show_in_footer: true
 ---
 
 If you're a member of the press, please get in touch with us through [press@techworkersco.org](mailto:press@techworkersco.org).
