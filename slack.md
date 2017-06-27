@@ -2,6 +2,7 @@
 layout: page
 title: Slack
 permalink: /slack/
+show_in_footer: true
 ---
 
 ## Join our Slack
