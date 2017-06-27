@@ -14,7 +14,7 @@ We communicate and organize every day on Slack. [Read our community guide](/comm
 
 ### Learn More and Stay Connected
 
-[Please sign up for our newsletter emails](/subscribe) to hear updates about events and what we’re working on, and check out our [calendar.](/events)
+[Please sign up for our newsletter emails](/subscribe) to hear updates about events and what we’re working on, and check out our [calendar](/events).
 
 See what we’ve been [writing on our blog](https://medium.com/tech-workers-coalition).
 
