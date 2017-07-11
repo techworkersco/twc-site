@@ -11,11 +11,11 @@ permalink: /summer-learning-club/2/
 
 ### Description
 
-Initial success in tech union organizing–’agitation’–is based on how well tech workers understand their position within this so-called ‘new economy’, and how their experiences differ from the more traditional narratives about work life and structure.
+Initial success in union organizing is based on how well workers understand their position. In the new economy of tech, tech workers must additionally explore their experiences differ from the more traditional narratives about work life and structure.
 
-The tech industry, as we speak, is disrupting the way that people relate to their work life by innovating a structure of governance to oversee and indoctrinate their employees; a sort-of private placement of public government. We may dig the perks–on-site dinner, shuttles, company-built housing, visa support, inspirational murals on the walls–but our bosses are not giving them away; in return, they expect compliance, efficiency, self-censorship, tech/non-tech worker stratification, and ‘hustle’, regardless of the consequences on worker well-being. Our discussion will dive into how this is happening, why this is happening, and how we can convince our co-workers that the ‘workplace government’ is not working in their best interests.
+The tech industry, like ever other industry, oversees, indoctrinates, and arbitrarily rules over their employees; a sort-of *private government*. We may dig the perks–on-site dinner, shuttles, campus housing, visa support, inspirational murals on the walls–but our bosses are not giving these things away; in return, they expect compliance, efficiency, self-censorship, tech/non-tech worker stratification, and ‘hustle’, regardless of the consequences on worker well-being. Our discussion will dive into how this is happening, why this is happening, and how we can convince our co-workers that the ‘workplace government’ is not working in our best interest.
 
-We will also discuss how, as tech eats the world, the governmental structures erected by the tech industry also infiltrate the working lives of those in other industries in the form of surveillance, workplace propaganda/messaging, etc.
+We will also discuss how, as tech eats the world, the governmental structures erected by the tech industry also infiltrate the working lives of those in other industries in the form of surveillance, workplace propaganda, etc.
 
 
 ### Readings
