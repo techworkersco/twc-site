@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The TWC Summer Learning Club
+title: Summer Learning Club
 permalink: /summer-learning-club/
 show_in_footer: true
 ---
