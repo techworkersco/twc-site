@@ -14,8 +14,8 @@ permalink: /summer-learning-club/6/
 
 This is an all-day, introductory training about visualizing, understanding, and organizing your workplace. While these lessons are applicable to all workplaces, the IWW has agreed to host a training specifically focusing on the tech industry.
 
-Register [here](https://docs.google.com/forms/d/e/1FAIpQLSf5DPZ_ansLKK_7VlzPfCwlJ5d5h1F2A4QTzRaVkaOWI5Qcfg/viewform?c=0&w=1) if you’re interested!
+Register [here](https://docs.google.com/forms/d/e/1FAIpQLSeWZEL4S8xB0wTlZuYZLL1GrOjiZI6hOKAtbZiRTQ54dGG5YA/viewform?usp=sf) if you’re interested!
 
 ### Readings
 
-- [Wobblyism: Revolutionary Unionism for Today](libcom.org/library/wobblyism-revolutionary-unionism-today) (Wobblyist Working Group)
+- [Wobblyism: Revolutionary Unionism for Today](https://libcom.org/library/wobblyism-revolutionary-unionism-today) (Wobblyist Working Group)
