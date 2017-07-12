@@ -18,4 +18,4 @@ Register [here](https://docs.google.com/forms/d/e/1FAIpQLSf5DPZ_ansLKK_7VlzPfCwl
 
 ### Readings
 
-- [Wobblyism: Revolutionary Unionism for Today](libcom.org/library/wobblyism-revolutionary-unionism-today) (Wobblyist Working Group)
+- [Wobblyism: Revolutionary Unionism for Today](https://libcom.org/library/wobblyism-revolutionary-unionism-today) (Wobblyist Working Group)
