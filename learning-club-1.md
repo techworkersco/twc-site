@@ -17,6 +17,9 @@ This is largely inspired by the idea of "Workers’ Inquiry", which is the very 
 
 This initial small session will mostly be an experiment, that can hopefully be developed into something that can be brought to the TWC, tech workers, and workers in general, which can facilitate strategic reflections and discussions, and the development of class consciousness among tech workers.    
 
+[Questionnaire Template](https://docs.google.com/document/d/1Lze34nua7qnD99W8Fy5Jc7YeX8b86PfgaCrQZEE5WXM/edit)
+[Questionnaire Example](https://docs.google.com/document/d/1rMY-npAPCemKFB5HCEYGE5wTIq3IpYbIV0L8G64maR8/edit)
+
 ### Readings
 - [Workers’ Inquiry: A Genealogy](https://www.viewpointmag.com/2013/09/27/workers-inquiry-a-genealogy/) (Viewpoint Magazine, 2013)
 - [Smile Down the Phone: An Attempt at a Workers’ Inquiry in a Call Center](https://www.viewpointmag.com/2013/09/25/smile-down-the-phone-an-attempt-at-a-workers-inquiry-in-a-call-center/) (Viewpoint Magazine, 2013)
