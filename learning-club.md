@@ -12,7 +12,7 @@ show_in_footer: true
 TWC members are welcome to attend sessions with the expectation that they have explored reading material around the subject and are willing to engage with the session facilitator in related activities and assignments.
 
 ### Upcoming Events
-*All events will take place at [Omni Commons](https://www.google.com/maps?q=4799+Shattuck,+Oakland,+California&oe=utf-8&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiLqOeckfbUAhUJyoMKHbATDGUQ_AUICigB) unless otherwise noted.*
+*All events will take place at [Omni Commons](https://omnicommons.org/) unless otherwise noted.*
 
 - *07/15* [Tech Workers Inquiry](/summer-learning-club/1)
 - *07/22* ['Soft Authoritarianism' in the Tech Workplace](/summer-learning-club/2)
