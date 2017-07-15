@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The TWC Learning Club - The Internet, Technology, The Gig Economy and the Future of Labor
+title: Summer Learning Club - The Internet, Technology, The Gig Economy and the Future of Labor
 permalink: /summer-learning-club/4/
 ---
 [Back to Summary](/summer-learning-club/)

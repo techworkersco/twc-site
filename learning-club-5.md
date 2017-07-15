@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The TWC Learning Club - Unions or Workers Associations?
+title: Summer Learning Club - Unions or Workers Associations?
 permalink: /summer-learning-club/5/
 ---
 [Back to Summary](/summer-learning-club/)

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The TWC Learning Club - Organizing High-Tech Workers
+title: Summer Learning Club - Organizing High-Tech Workers
 permalink: /summer-learning-club/3/
 ---
 [Back to Summary](/summer-learning-club/)

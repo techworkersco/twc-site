@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The TWC Learning Club -Italy’s “Hot Autumn” (1969)
+title: Summer Learning Club - Italy’s “Hot Autumn” (1969)
 permalink: /summer-learning-club/7/
 ---
 [Back to Summary](/summer-learning-club/)

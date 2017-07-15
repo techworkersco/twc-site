@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The TWC Learning Club - Tech Workers Inquiry
+title: Summer Learning Club - Tech Workers Inquiry
 permalink: /summer-learning-club/1/
 ---
 [Back to Summary](/summer-learning-club/)
