@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The TWC Learning Club - IWW Organizer Training
+title: Summer Learning Club - IWW Organizer Training
 permalink: /summer-learning-club/6/
 ---
 [Back to Summary](/summer-learning-club/)

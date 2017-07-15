@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The TWC Learning Club - Soft Authoritarianism in the Tech Workplace
+title: Summer Learning Club - Soft Authoritarianism in the Tech Workplace
 permalink: /summer-learning-club/2/
 ---
 [Back to Summary](/summer-learning-club/)
