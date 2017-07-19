@@ -6,7 +6,7 @@ permalink: /summer-learning-club/5/
 [Back to Summary](/summer-learning-club/)
 
 # Summer Learning Club - Unions or Workers Associations? — Understanding the differences and strategizing for organizing in our post-workplace future
-**Saturday, August 5 4-6PM**
+**Saturday, July 29 4-6PM**
 *@ [Omni Commons](https://www.google.com/maps?q=4799+Shattuck,+Oakland,+California&oe=utf-8&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiLqOeckfbUAhUJyoMKHbATDGUQ_AUICigB)*
 
 ### Description
