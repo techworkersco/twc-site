@@ -5,7 +5,7 @@ permalink: /summer-learning-club/5/
 ---
 [Back to Summary](/summer-learning-club/)
 
-# Summer Learning Club - Unions or Worker Center? — Understanding the differences and strategizing for organizing in our post-workplace future
+# Summer Learning Club - What's a worker center? Understanding the union-alternative and strategizing for our post-workplace future
 **Saturday, July 29 4-6PM**
 *@ [Omni Commons](https://www.google.com/maps?q=4799+Shattuck,+Oakland,+California&oe=utf-8&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiLqOeckfbUAhUJyoMKHbATDGUQ_AUICigB)*
 
@@ -27,14 +27,15 @@ Even AFL-CIO union leaders say that unions have to be re-imagined for workers to
 - [Tools for Collective Action—Precarity: The People’s Tribunal](http://dismagazine.com/discussion/21416/tools-for-collective-action-precarity-the-peoples-tribunal/) (Dismagazine)
 - [WORKER CENTERS AND THE FUTURE OF UNION ORGANIZING](http://franchise.org/worker-centers-and-the-future-of-union-organizing-0) (Franchise.org 2013)
 
-#### Academic
-- [Worker centers Organizing communities at the edge of the dream](http://www.epi.org/publication/bp159/) (Economic Policy Institute 2005) _Suggest reading pages 1-5 of PDF_ 
-- [BUILDING A MOVEMENT TOGETHER: WORKERS CENTERS AND LABOR UNION AFFILIATIONS](https://www.labor.ucla.edu/publication/building-a-movement-together-workers-centers-and-labor-union-affiliations-2/) (UCLA Labor Center 2015) _Suggest reading pages 1-2 of PDF_ 
-- [THE STATE OF LABOR 20 YEARS AFTER NAFTA](https://www.labor.ucla.edu/publication/the-state-of-labor-20-years-after-nafta/) (UCLA Labor Center 2015) _Suggest reading pages 4-5, 22-24 of PDF_ 
-
 #### Case studies
 - [LA Black Worker Center](http://lablackworkercenter.org/)
 - [NDLON](http://www.ndlon.org/en/)
 - [Working East Bay](http://workingeastbay.org/)
 - [Wage Theft Coalition](https://wagetheftcoalition.com/)
 - [Fair Work Center](http://fairworkcenter.org/)
+
+#### Academic - Optional
+- If you're reading Srinicek's [Inventing the Future already](https://www.versobooks.com/books/2315-inventing-the-future) , revisit Chapter 6: Building Power: Organisational Ecology (page 163-174)
+- [Worker centers Organizing communities at the edge of the dream](http://www.epi.org/publication/bp159/) (Economic Policy Institute 2005) _Suggest reading pages 1-5 of PDF_ 
+- [BUILDING A MOVEMENT TOGETHER: WORKERS CENTERS AND LABOR UNION AFFILIATIONS](https://www.labor.ucla.edu/publication/building-a-movement-together-workers-centers-and-labor-union-affiliations-2/) (UCLA Labor Center 2015) _Suggest reading pages 1-2 of PDF_ 
+- [THE STATE OF LABOR 20 YEARS AFTER NAFTA](https://www.labor.ucla.edu/publication/the-state-of-labor-20-years-after-nafta/) (UCLA Labor Center 2015) _Suggest reading pages 4-5, 22-24 of PDF_ 
