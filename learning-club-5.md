@@ -19,7 +19,7 @@ Even AFL-CIO union leaders say that unions have to be re-imagined for workers to
 - [The Workers Defense Project, a Union in Spirit](http://www.nytimes.com/2013/08/11/business/the-workers-defense-project-a-union-in-spirit.html) (NYT 2014)
 - [6 Groups That Are Reinventing Organized Labor](https://thinkprogress.org/6-groups-that-are-reinventing-organized-labor-ee58fdba7b55) (ThinkProgress 2014)
 - [Are 'worker centers' the future of labor organizing?](http://www.washingtonexaminer.com/are-worker-centers-the-future-of-labor-organizing/article/2536035) (Washington Examiner 2013)
-- [The Future Of The Workers' Movement](http://www.npr.org/2013/05/20/185559550/the-future-of-the-workers-movement) (NPR 2013)
+- OPTION FOR AUDIO [The Future Of The Workers' Movement](http://www.npr.org/2013/05/20/185559550/the-future-of-the-workers-movement) (NPR 2013)
 
 #### Art & Alternative
 - [Worker Centers: Labs of Organizational Innovation](https://tcf.org/content/facts/worker-centers-labs-organizational-innovation/) (The Century Foundation 2016)
@@ -35,7 +35,7 @@ Even AFL-CIO union leaders say that unions have to be re-imagined for workers to
 - [Fair Work Center](http://fairworkcenter.org/)
 
 #### Academic - Optional
-- If you're reading Srinicek's [Inventing the Future already](https://www.versobooks.com/books/2315-inventing-the-future) , revisit Chapter 6: Building Power: Organisational Ecology (page 163-174)
+- If you've read or are reading Srinicek's [Inventing the Future](https://www.versobooks.com/books/2315-inventing-the-future) , revisit Chapter 6: Building Power: Organisational Ecology (page 163-174)
 - [Worker centers Organizing communities at the edge of the dream](http://www.epi.org/publication/bp159/) (Economic Policy Institute 2005) _Suggest reading pages 1-5 of PDF_ 
 - [BUILDING A MOVEMENT TOGETHER: WORKERS CENTERS AND LABOR UNION AFFILIATIONS](https://www.labor.ucla.edu/publication/building-a-movement-together-workers-centers-and-labor-union-affiliations-2/) (UCLA Labor Center 2015) _Suggest reading pages 1-2 of PDF_ 
-- [THE STATE OF LABOR 20 YEARS AFTER NAFTA](https://www.labor.ucla.edu/publication/the-state-of-labor-20-years-after-nafta/) (UCLA Labor Center 2015) _Suggest reading pages 4-5, 22-24 of PDF_ 
+ 
