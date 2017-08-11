@@ -14,10 +14,14 @@ permalink: /summer-learning-club/3/
 There is historical precedence for organizing workers in the tech industry -- both blue-collar production workers and white-collar engineers and programmers. We will examine some of this history, and discuss what lessons we can take away, and how to apply them to current efforts.
 
 ### Readings
- #### Recommended 
+
+#### Recommended
+ 
 - [Organizing High Tech: Unions & Their Future](http://digitalcommons.ilr.cornell.edu/cgi/viewcontent.cgi?article=1071&context=lrr) (Labor Research Review, 1986)
 - [Employee Organization in Silicon Valley: Networks, Ethnic Organizations, and New Unions](http://scholarship.law.upenn.edu/cgi/viewcontent.cgi?article=1118&context=jbl) (Journal of Labor and Employment Law, 2002)
 - [Collective Representation Among High-Tech Workers at Microsoft and Beyond](https://www.researchgate.net/publication/227538285_Collective_Representation_Among_High-Tech_Workers_at_Microsoft_and_Beyond_Lessons_from_WashTechCWA) (Industrial Relations, 2004)
- #### Optional
+
+#### Optional
+
 - [Up Against the Open Shop - the Hidden Story of Silicon Valley's High-Tech Workers](http://www.truth-out.org/news/item/117:up-against-the-open-shop--the-hidden-story-of-silicon-valleys-hightech-workers) (TruthOut, 2011)
 - [Why American Engineers Aren't Unionized: A Comparative Perspective](http://engagedscholarship.csuohio.edu/cgi/viewcontent.cgi?article=1043&context=clsoc_crim_facpub) (1993)
