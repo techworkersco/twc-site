@@ -21,4 +21,3 @@ TWC members are welcome to attend sessions with the expectation that they have e
 - *08/05* [Organizing High-Tech Workers](/summer-learning-club/3)
 - *08/12* [IWW Organizer Training](/summer-learning-club/6) *@ TBA*
 - *08/19* [Italy’s “Hot Autumn” (1969)](/summer-learning-club/7)
-- *08/26* Closing Discussion *@  TBA*
