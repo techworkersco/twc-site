@@ -286,3 +286,7 @@ li {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
+.join-form div {
+  padding: 8px 0;
+}
