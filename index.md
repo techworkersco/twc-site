@@ -10,7 +10,7 @@ We are a coalition of workers in and around the tech industry, labor organizers,
 
 You are welcome to check us out at our [monthly organization meeting in San Francisco](https://www.meetup.com/Tech-Workers-Coalition/).
 
-We communicate and organize every day on Slack. [Read our community guide](/community-guide) and [join our Slack](/slack).
+We communicate and organize every day on Slack. [Read our community guide](/community-guide) and [join our Slack](/subscribe).
 
 ### Learn More and Stay Connected
 
