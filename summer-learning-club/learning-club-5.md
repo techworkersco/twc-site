@@ -3,11 +3,10 @@ layout: page
 title: Summer Learning Club - What is a worker center?
 permalink: /summer-learning-club/5/
 ---
-[Back to Summary](/summer-learning-club/)
+[Back to Schedule](/summer-learning-club/)
 
-# Summer Learning Club - What's a worker center? Understanding the union-alternative and strategizing for our post-workplace future
-**Saturday, July 29 4-6PM**
-*@ [Omni Commons](https://www.google.com/maps?q=4799+Shattuck,+Oakland,+California&oe=utf-8&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiLqOeckfbUAhUJyoMKHbATDGUQ_AUICigB)*
+# What's a worker center? Understanding the union-alternative and strategizing for our post-workplace future
+**Saturday, July 29, 2017, 4-6PM**
 
 ### Description
 

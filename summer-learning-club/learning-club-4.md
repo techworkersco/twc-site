@@ -3,11 +3,10 @@ layout: page
 title: Summer Learning Club - The Internet, Technology, The Gig Economy and the Future of Labor
 permalink: /summer-learning-club/4/
 ---
-[Back to Summary](/summer-learning-club/)
+[Back to Schedule](/summer-learning-club/)
 
-# Summer Learning Club - The Internet, Technology, The Gig Economy and the Future of Labor
-**Sunday, July 30 10AM**
-*@ [ILWU Local 34](https://www.google.com/maps/place/ILWU+Local+34/@37.7798541,-122.3905908,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7fd83bdd2649:0x277334970df1ad40!8m2!3d37.7798499!4d-122.3884021)*
+# The Internet, Technology, The Gig Economy and the Future of Labor
+**Sunday, July 30, 2017, 10AM**
 
 ### Description
 

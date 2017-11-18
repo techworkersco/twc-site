@@ -3,12 +3,10 @@ layout: page
 title: Summer Learning Club - Italy’s “Hot Autumn” (1969)
 permalink: /summer-learning-club/7/
 ---
-[Back to Summary](/summer-learning-club/)
+[Back to Schedule](/summer-learning-club/)
 
-# Summer Learning Club - Italy’s “Hot Autumn” (1969)
-
-**Saturday, August 19 4PM-6PM**
-*@ [Omni Commons](https://www.google.com/maps?q=4799+Shattuck,+Oakland,+California&oe=utf-8&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiLqOeckfbUAhUJyoMKHbATDGUQ_AUICigB)*
+# Italy’s “Hot Autumn” (1969)
+**Saturday, August 19, 2017, 4PM-6PM**
 
 ### Description
 

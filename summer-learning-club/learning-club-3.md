@@ -3,11 +3,10 @@ layout: page
 title: Summer Learning Club - Organizing High-Tech Workers
 permalink: /summer-learning-club/3/
 ---
-[Back to Summary](/summer-learning-club/)
+[Back to Schedule](/summer-learning-club/)
 
-# Summer Learning Club - Organizing High-Tech Workers
-**Saturday, August 05 4PM-6PM**
-*@ [Omni Commons](https://www.google.com/maps?q=4799+Shattuck,+Oakland,+California&oe=utf-8&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiLqOeckfbUAhUJyoMKHbATDGUQ_AUICigB)*
+# Organizing High-Tech Workers
+**Saturday, August 05, 2017, 4PM-6PM**
 
 ### Description
 
