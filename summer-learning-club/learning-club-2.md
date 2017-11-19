@@ -1,13 +1,12 @@
 ---
 layout: page
-title: Summer Learning Club - Soft Authoritarianism in the Tech Workplace
+title: Summer Learning Club - 'Soft Authoritarianism' in the Tech Workplace
 permalink: /summer-learning-club/2/
 ---
-[Back to Summary](/summer-learning-club/)
+[Back to Schedule](/summer-learning-club/)
 
-# Summer Learning Club - 'Soft Authoritarianism' in the Tech Workplace
-**Saturday, July 22 4PM-6PM**
-*@ [Omni Commons](https://www.google.com/maps?q=4799+Shattuck,+Oakland,+California&oe=utf-8&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiLqOeckfbUAhUJyoMKHbATDGUQ_AUICigB)*
+# 'Soft Authoritarianism' in the Tech Workplace
+**Saturday, July 22, 2017, 4PM-6PM**
 
 ### Description
 

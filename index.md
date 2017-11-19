@@ -20,4 +20,6 @@ See what we’ve been [writing on our blog](https://medium.com/tech-workers-coal
 
 Follow us on [Twitter](https://twitter.com/techworkersco) or [Facebook](https://www.facebook.com/TechWorkersCoalition).
 
+Join our [Learning Club](https://sites.google.com/view/tech-workers-coalition/learning-club).
+
 We’re also happy to chat, answer any questions you might have, or hear about any social justice efforts in which you need a partner. [Send us an email](/contact-us).
