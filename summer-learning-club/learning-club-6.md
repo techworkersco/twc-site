@@ -3,12 +3,10 @@ layout: page
 title: Summer Learning Club - IWW Organizer Training
 permalink: /summer-learning-club/6/
 ---
-[Back to Summary](/summer-learning-club/)
+[Back to Schedule](/summer-learning-club/)
 
-# Summer Learning Club - IWW Organizer Training
-
+# IWW Organizer Training
 **Saturday, August 12 9AM-6PM**
-*@ TBA*
 
 ### Description
 
