@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {% include head.html %}
 
   <body>
-    <div class="main-wrapper">
+
+<!--     <div class="main-wrapper">
       {% include header.html %}
 
       <main>
@@ -14,8 +15,52 @@
       </main>
 
     </div>
-    {% include footer.html %}
+    {% include footer.html %} -->
 
+
+    <div class="main-wrapper site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <header class="masthead clearfix">
+            <div class="inner">
+              <h3 id="logo" class="masthead-brand"><a href="/">{{ site.title }}</a></h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link" href="#">Learn</a>
+                <a class="nav-link" href="#">Connect</a>
+                <a class="nav-link" href="#">Build</a>
+              </nav>
+            </div>
+          </header>
+
+          <main role="main" class="inner cover">
+            <h1 class="cover-heading">Worker power in the tech industry.</h1>
+            <p class="lead">Guided by our vision for an inclusive and equitable tech industry, we organize to build worker power through rank and file self-organization and education.</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-secondary">Join us</a>
+            </p>
+          </main>
+
+          <footer class="mastfoot">
+            <div class="inner">
+              <p>We are workers in and around the tech industry, labor organizers, community organizers, and friends.</p>
+            </div>
+          </footer>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="{{ "/assets/js/jquery.min.js" | relative_url }}"><\/script>')</script>
+    <script src="{{ "/assets/js/popper.min.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/bootstrap.min.js" | relative_url }}"></script>
   </body>
-
 </html>
