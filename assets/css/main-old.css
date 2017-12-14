@@ -1,0 +1,292 @@
+/*
+black: #000f0f
+white: #fffff7
+grey: 828486
+
+orange: f79522
+green: 2db674
+blue: 26aae1
+blue-green: 1aa89d
+blue-green (darker): 116e67
+blue-green (darkest): 0d544f
+yellow: #fce013
+*/
+
+body {
+  background-color: #0d544f;
+  color: #1aa89d;
+}
+
+.main-wrapper {
+  background-color: #fffff7;
+  color: #000f0f;
+}
+
+.callout {
+  border: 1px solid #000f0f;
+  background-color: #1aa89d;
+  color: #fffff7;
+  padding: 0 0.5em;
+}
+
+.main-wrapper .callout a, .main-wrapper .callout a:link {
+  color: #fffff7;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #000f0f;
+}
+
+.main-wrapper h1,
+.main-wrapper h2,
+.main-wrapper h3,
+.main-wrapper h4 {
+  color: #000f0f;
+}
+
+a:link { color: #fffff7; }
+a:visited { color: #fffff7; }
+a:hover { color: #fffff7; }
+a:focus { color: #fffff7; }
+a:active { color: #fffff7; }
+
+.main-wrapper a:link { color: #116e67; }
+.main-wrapper a:visited { color: #116e67; }
+/*.main-wrapper a:hover { color: #116e67; }*/
+.main-wrapper a:focus { color: #116e67; }
+.main-wrapper a:active { color: #116e67; }
+
+/* layout */
+body {
+  font-family: 'Lil Grotesk', sans-serif;
+  font-size: 1.25em;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+.footer-content {
+  max-width: 768px;
+  margin: auto;
+  padding: 1em;
+}
+
+.main-wrapper {
+  width: 100%;
+}
+
+h1 { font-size: 2.25em;  /* 16x2.25=36 */ }
+h2 { font-size: 1.5em;   /* 16x1.5=24 */ }
+h3 { font-size: 1.125em; /* 16x1.125=18 */ }
+h4 { font-size: 0.875em; font-style: italic; /* 16x0.875=14 */ }
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.5em;
+}
+
+p,
+ol,
+ul,
+blockquote {
+  margin-bottom: 1em;
+  line-height: 1.25em;
+}
+
+li {
+  margin-bottom: .375em;
+}
+
+.header {
+  overflow: auto;
+}
+
+  #logo {
+    background-color: none;
+    background-image: url('images/logo.svg');
+    float: left;
+    font-size: 1.75em;
+    line-height: 1em;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-indent: -99999px;
+    width: 75px;
+  }
+
+    #logo a {
+      text-decoration: none;
+      padding-top: 1.25em;
+      padding-left: .1em;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+  .supporting-links {
+    font-size: 1.125em;
+    float: right;
+    list-style-type: none;
+    margin: 0;
+  }
+
+    .supporting-links li {
+      margin-bottom: 1em;
+    }
+
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+    footer li {
+      display: inline;
+    }
+
+      footer li:after {
+        content: '/';
+        margin-right: .2em;
+        margin-left: .2em;
+      }
+
+      footer li:last-child:after {
+        content: none;
+        margin: 0;
+      }
+
+@media screen and (max-width: 620px) {
+    footer li {
+      display: block;
+    }
+
+      footer li:after {
+        content: '/';
+        margin-right: .2em;
+        margin-left: .2em;
+      }
+
+      footer li:last-child:after {
+        content: none;
+        margin: 0;
+      }
+} /* media query: 620 */
+
+@media screen and (max-width: 420px) {
+  h1 { font-size: 1.96875em;  /* 2.25 * .875 */ }
+  h2 { font-size: 1.3125em;   /* 1.5 * .875 */ }
+  h3 { font-size: 1.09375em; /* 1.25 * .875 */ }
+  h4 { font-size: 0.765625em; font-style: italic; /* .875 * .875 */ }
+
+  header,
+  main,
+  .footer-content {
+    padding: .75em;
+  }
+
+  #logo {
+    background-size: cover;
+    height: 110px;
+    width: 110px;
+  }
+
+  .supporting-links {
+    font-size: .875em;
+  }
+} /* media query: 420 */
+
+@font-face {
+    font-family: 'Lil Grotesk';
+    src: url('/assets/fonts/lil-grotesk/lilgrotesk-bold-webfont.eot');
+    src: url('/assets/fonts/lil-grotesk/lilgrotesk-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/lil-grotesk/lilgrotesk-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/lil-grotesk/lilgrotesk-bold-webfont.woff') format('woff'),
+         url('/assets/fonts/lil-grotesk/lilgrotesk-bold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/lil-grotesk/lilgrotesk-bold-webfont.svg#lilgroteskbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lil Grotesk';
+    src: url('/assets/fonts/lil-grotesk/lilgrotesk-regular-webfont.eot');
+    src: url('/assets/fonts/lil-grotesk/lilgrotesk-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/lil-grotesk/lilgrotesk-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/lil-grotesk/lilgrotesk-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/lil-grotesk/lilgrotesk-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/lil-grotesk/lilgrotesk-regular-webfont.svg#lilgroteskregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.columns {
+  display: flex;
+}
+
+.columns .column {
+  padding: 0 10px;
+}
+
+.column.is-1 {
+  flex: 1;
+}
+
+.column.is-2 {
+  flex: 2;
+}
+
+.column.is-3 {
+  flex: 3;
+}
+
+.thumbnail {
+  position: relative;
+  margin-top: 20px;
+  padding: 2px;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+.thumbnail:hover .overlay {
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #0d544f;
+}
+
+.overlay .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.join-form div {
+  padding: 8px 0;
+}
