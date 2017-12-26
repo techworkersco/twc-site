@@ -1,3 +1,16 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+
+@import 'variables';
+// now permits access to sass variables in /_sass/_variables
+// body {
+//   background-color: $red;
+// }
+
+
 /*
 black: #000f0f
 white: #fffff7
@@ -13,13 +26,13 @@ yellow: #fce013
 */
 
 body {
-  background-color: #0d544f;
-  color: #1aa89d;
+background-color: #0d544f;
+color: #1aa89d;
 }
 
 .main-wrapper {
-  background-color: #fffff7;
-  color: #000f0f;
+background-color: #fffff7;
+color: #000f0f;
 }
 
 .callout {
