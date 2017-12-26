@@ -1,0 +1,21 @@
+---
+layout: page
+title: Summer Learning Club - The Internet, Technology, The Gig Economy and the Future of Labor
+permalink: /summer-learning-club/4/
+---
+[Back to Schedule](/summer-learning-club/)
+
+# The Internet, Technology, The Gig Economy and the Future of Labor
+**Sunday, July 30, 2017, 10AM**
+
+### Description
+
+Part of [LaborFest 2017](http://www.laborfest.net/).
+
+The development of technology, including artificial intelligence, automation and platforms like UBER, Lyft, and Airbnb, are making trillions for the tech and media companies that now dominate the world. Growing marginalization of labor and complete deregulation now means that hundreds of thousands of workers are being forced to travel hundreds of miles to work on temp jobs as independent contractors. This threatens our environment here in the Bay Area and around the world.
+
+This panel will discuss how our economy is being transformed in the Bay Area, nationally and globally, and how it is affecting working people, including drivers, tech workers, and workers in other industries.
+The new tech world is also allowing companies like Google and Apple, and the U.S. government to know every place you go, every purchase you make, and every word or text you use in communication. We will look at how workers and unions, with the public, can challenge this new reality.
+
+### Readings
+- [Trade Unions, The Internet and Surviving the Gig Economy](https://www.opendemocracy.net/beyondslavery/alex-j-wood/trade-unions-internet-and-surviving-gig-economy) (2017)

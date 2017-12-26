@@ -2,6 +2,7 @@
 layout: page-about
 title: About
 permalink: /about/
+show_in_footer: true
 ---
 # Who We Are
 

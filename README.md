@@ -1,4 +1,4 @@
-## Dev Steps
+## Getting Started
 
-1. `gem install jekyll bundler`
-1. `bundle exec jekyll serve`
+1. Install dependencies: `bundle install`
+2. Start a local server: `bundle exec jekyll serve`

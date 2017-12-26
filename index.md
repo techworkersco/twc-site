@@ -10,14 +10,16 @@ We are a coalition of workers in and around the tech industry, labor organizers,
 
 You are welcome to check us out at our [monthly organization meeting in San Francisco](https://www.meetup.com/Tech-Workers-Coalition/).
 
-We communicate and organize every day on Slack. [Read our community guide](/community-guide) and [join our Slack](/slack).
+We communicate and organize every day on Slack. [Read our community guide](/community-guide) and [join our Slack](/subscribe).
 
 ### Learn More and Stay Connected
 
-[Please sign up for our newsletter emails](/subscribe) to hear updates about events and what we’re working on.
+[Please sign up for our newsletter emails](/subscribe) to hear updates about events and what we’re working on, and check out our [calendar](/events).
 
 See what we’ve been [writing on our blog](https://medium.com/tech-workers-coalition).
 
 Follow us on [Twitter](https://twitter.com/techworkersco) or [Facebook](https://www.facebook.com/TechWorkersCoalition).
+
+Join our [Learning Club](https://sites.google.com/view/tech-workers-coalition/learning-club).
 
 We’re also happy to chat, answer any questions you might have, or hear about any social justice efforts in which you need a partner. [Send us an email](/contact-us).
