@@ -5,7 +5,7 @@ permalink: /subscribe/
 show_in_footer: true
 ---
 
-## Join our Slack and our Newsletter
+# Join us
 
 Our Slack is governed by the principles and rules in our [Community Guide](/community-guide). By joining, you agree to follow them. Our newsletter includes announcements and updates from the Tech Workers Coalition.
 

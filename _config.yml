@@ -28,12 +28,12 @@ exclude:
   - Gemfile
   - Gemfile.lock
 header_links:
-  - url: https://www.meetup.com/Tech-Workers-Coalition/
-    text: Meetup
-  - url: https://twitter.com/techworkersco
-    text: Twitter
-  - url: /contact-us
-    text: Contact Us
+  - url: '#learn'
+    text: Learn
+  - url: '#connect'
+    text: Connect
+  - url: /subscribe
+    text: Join
 footer_links:
   - url: https://www.meetup.com/Tech-Workers-Coalition/
     text: Meetup
@@ -45,3 +45,4 @@ footer_links:
     text: Blog
   - url: https://sites.google.com/view/tech-workers-coalition/learning-club
     text: Learning Club
+port: 8080
