@@ -342,6 +342,13 @@ display: -webkit-inline-box;
     padding: .75em;
   }
 
+  .supporting-links li:nth-child(2) {
+    display: none;
+  }
+  .supporting-links li:nth-child(1) {
+    display: none;
+  }
+
   footer {
     position: relative;
     box-shadow: none;
@@ -393,13 +400,13 @@ display: -webkit-inline-box;
 
 
   .supporting-links {
-    font-size: .875em;
+    font-size: 1em;
     display: block;
     text-align: right;
-    line-height: 1.5em;
-    margin-right: 2em;
-    margin-top: 0;
-    margin-bottom: 0;
+    // line-height: 1.5em;
+    // margin-right: 2em;
+    // margin-top: 0;
+    // margin-bottom: 0;
   }
 } /* media query: 420 */
 
