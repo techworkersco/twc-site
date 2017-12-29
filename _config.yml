@@ -39,7 +39,7 @@ footer_links:
     text: Learning Club
   - url: /contact-us/
     text: Contact
-  - url: https://s3-us-west-1.amazonaws.com/techworkerscoalition.org/assets/files/TWCCommunityGuide.pdf
+  - url: /community-guide/
     text: Community Guide
   - url: https://medium.com/tech-workers-coalition
     text: Medium Blog
