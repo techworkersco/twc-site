@@ -293,18 +293,20 @@ display: -webkit-inline-box;
     }
   footer ul {
     list-style-type: none;
-    padding-left: 2em;
+    // padding-left: 2em;
+    margin: 0.5em;
   }
 
     footer li {
       display: inline;
       font-weight: 600;
+      font-size: 16px;
     }
 
       footer li:after {
         content: '  ';
-        margin-right: .5em;
-        margin-left: .5em;
+        margin-right: 1em;
+        margin-left: 1em;
       }
 
       footer li:last-child:after {

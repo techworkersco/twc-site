@@ -28,21 +28,26 @@ exclude:
   - Gemfile
   - Gemfile.lock
 header_links:
-  - url: '#learn'
+  - url: https://techworkerscoalition.org/#learn
     text: Learn
-  - url: '#connect'
+  - url: https://techworkerscoalition.org/#connect
     text: Connect
   - url: /subscribe
     text: Join
 footer_links:
-  - url: https://www.meetup.com/Tech-Workers-Coalition/
-    text: Meetup
+  - url: https://sites.google.com/view/tech-workers-coalition/learning-club
+    text: Learning Club
+  - url: /contact-us/
+    text: Contact
+  - url: https://s3-us-west-1.amazonaws.com/techworkerscoalition.org/assets/files/TWCInfosheet.pdf
+    text: Info Sheet
+  - url: https://s3-us-west-1.amazonaws.com/techworkerscoalition.org/assets/files/TWCCommunityGuide.pdf
+    text: Community Guide
+  - url: https://medium.com/tech-workers-coalition
+    text: TWC Blog
   - url: https://twitter.com/techworkersco
     text: Twitter
   - url: https://www.facebook.com/TechWorkersCoalition
     text: Facebook
-  - url: https://medium.com/tech-workers-coalition
-    text: Blog
-  - url: https://sites.google.com/view/tech-workers-coalition/learning-club
-    text: Learning Club
+  
 port: 8080
