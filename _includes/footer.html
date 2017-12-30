@@ -1,7 +1,11 @@
 <footer class="footer-content">
-  <ul>
+  <div class="columns">
     {% for link in site.footer_links %}
-        <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+        {% if link.newTab %}
+          <div class="column is-1"><a target="_blank" href="{{ link.url }}">{{ link.text }}</a></div>
+        {% else %}
+          <div class="column is-1"><a href="{{ link.url }}">{{ link.text }}</a></div>
+        {% endif %}
     {% endfor %}
-  </ul>
+  </div>
 </footer>

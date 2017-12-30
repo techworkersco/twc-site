@@ -28,9 +28,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
 header_links:
-  - url: https://techworkerscoalition.org/#learn
+  - url: /#learn
     text: Learn
-  - url: https://techworkerscoalition.org/#connect
+  - url: /#connect
     text: Connect
   - url: /subscribe
     text: Join
@@ -44,9 +44,12 @@ footer_links:
     text: Community Guide
   - url: https://medium.com/tech-workers-coalition
     text: Medium Blog
+    newTab: true
   - url: https://twitter.com/techworkersco
     text: Twitter
+    newTab: true
   - url: https://www.facebook.com/TechWorkersCoalition
     text: Facebook
+    newTab: true
 
 port: 8080
