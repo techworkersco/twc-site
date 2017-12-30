@@ -1,0 +1,23 @@
+@import 'variables';
+
+
+.home-page {
+
+  .column.is-1 {
+    min-width: 200px;
+  }
+
+  #home {
+    margin: 6em auto 3em;
+    span {
+      color: #E6141B;
+    }
+  }
+
+  #learn, #connect {
+    padding-top: 6em;
+  }
+
+
+
+}

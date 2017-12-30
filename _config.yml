@@ -37,6 +37,7 @@ header_links:
 footer_links:
   - url: https://sites.google.com/view/tech-workers-coalition/learning-club
     text: Learning Club
+    newTab: true
   - url: /contact-us/
     text: Contact
   - url: /community-guide/
@@ -47,5 +48,5 @@ footer_links:
     text: Twitter
   - url: https://www.facebook.com/TechWorkersCoalition
     text: Facebook
-  
+
 port: 8080
