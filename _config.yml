@@ -38,8 +38,8 @@ footer_links:
   - url: https://sites.google.com/view/tech-workers-coalition/learning-club
     text: Learning Club
     newTab: true
-  - url: /contact-us/
-    text: Contact
+  # - url: /contact-us/
+  #   text: Contact
   - url: /community-guide/
     text: Community Guide
   - url: https://medium.com/tech-workers-coalition
