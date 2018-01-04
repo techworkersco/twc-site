@@ -2,3 +2,18 @@ $red: rgb(232, 68, 46);
 $black: rgb(33, 33, 33);
 $white: rgb(255, 255, 255);
 $grey: rgb(234, 234, 234);
+$black: rgb(2, 14, 15);
+$tablet-width: 620px;
+$mobile-width: 420px;
+
+@mixin tablet {
+  @media screen and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: #{$mobile-width}) {
+    @content;
+  }
+}

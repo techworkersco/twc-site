@@ -4,3 +4,4 @@ _site
 .env
 s3_website.yml
 .letsencrypt
+*.log
