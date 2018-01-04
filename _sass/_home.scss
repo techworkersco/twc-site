@@ -8,14 +8,21 @@
   }
 
   #home {
-    margin: 6em auto 3em;
+    margin: 2em auto;
     span {
       color: #E6141B;
     }
   }
 
   #learn, #connect {
-    padding-top: 6em;
+    &::before {
+      display: block;
+      content: " ";
+      margin-top: -6em;
+      height: 6em;
+      visibility: hidden;
+      pointer-events: none;
+    }
   }
 
 

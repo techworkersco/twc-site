@@ -120,6 +120,10 @@ footer {
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+
+    @include mobile {
+      display: block;
+    }
   }
 
 
