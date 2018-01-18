@@ -78,6 +78,11 @@ body {
   }
 }
 
+input {
+  display: inline-block;
+  margin: 10px 0;
+}
+
 input[type="submit"] {
   margin-top: 20px;
   font-weight: 500;
@@ -131,7 +136,6 @@ footer {
     position: relative;
     box-shadow: none;
     border-top: 1px #212121 solid;
-    padding: 0.75em;
     ul {
       padding-left: 1em;
     }

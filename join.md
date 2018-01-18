@@ -24,7 +24,7 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
   <div>
     <label for="social">Please provide two links to social handles (personal website, Twitter, Github, Medium, etc.):</label>
     <input id="social" required type="url" name="social_media_1">
-    <input style="margin-left: 20px;" type="url" required name="social_media_2">
+    <input type="url" required name="social_media_2">
   </div>
   <div>
     <label for="company_name">Company Name (optional):</label>
