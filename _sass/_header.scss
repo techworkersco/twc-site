@@ -1,10 +1,10 @@
 @import 'variables';
 
 header {
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
   @include mobile {
-    padding: 0.75em;
+    padding: 0.25em;
   }
 }
 
@@ -135,5 +135,10 @@ header {
       font-weight: 600;
       color: #212121;
     }
+  }
+
+  .callout {
+    background-color: $black;
+    color: $white;
   }
 }
