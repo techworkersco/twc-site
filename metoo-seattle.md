@@ -1,7 +1,7 @@
 ---
 layout: page
 title: #MeToo In Seattle Resources
-permalink: /metoo-sea/
+permalink: /metoo/seattle/
 ---
 
 # #MeToo In Seattle Resources
