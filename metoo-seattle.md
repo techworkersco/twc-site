@@ -29,7 +29,7 @@ permalink: /metoo/seattle/
 * [Pop Culture Detective Agency](https://www.youtube.com/user/rebelliouspixels)
 
 ## Recommended Books
-* Bell Hooks, Will to Change
+* bell hooks, Will to Change
 * Tim Wise, White like Me
 * Alan Johnson, Gender Knot
 * Jackson Katz, The Macho Paradox
