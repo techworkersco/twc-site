@@ -133,6 +133,7 @@ main {
   padding-left: 5em;
   padding-right: 5em;
   padding-bottom: 2em;
+  max-width: 1200px;
 }
 
 .main-wrapper {
@@ -190,6 +191,17 @@ display: -webkit-inline-box;
 #work span {
   font-weight: 600;
   color: #212121
+}
+
+//**CALENDER//
+
+#calendarListButton1{
+  display: none;
+}
+
+#calendarTitle {
+  font-family: "Avenir";
+  font-size: 20px;
 }
 
 // #home, #learn {
