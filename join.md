@@ -22,7 +22,7 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
     <input id="name" type="text" required name="name">
   </div>
   <div>
-    <label for="social">Please provide two links to social handles (personal website, Twitter, Github, Medium, etc.):</label>
+    <label for="social">Please provide two links to social handles (Twitter, Medium, personal blog, etc.):</label>
     <input id="social" required type="url" name="social_media_1">
     <input type="url" required name="social_media_2">
   </div>
