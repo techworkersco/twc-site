@@ -64,18 +64,7 @@ Projects should form their own topics within Slack. Many start with the prefix *
 
 ## Steering Committee
 <a name="steering-committee" />
-TWC is supported by a steering committee consisting of long-time and active participants. The committee facilitates the creation of group structures, initiatives, maintains shared resources (like Slack), and works to foster common goals and purpose within the organization. If you are interested in participating in the steering committee, please send a note to [steering@techworkersco.org](mailto:steering@techworkersco.org).
-
-### Steering Members
-
-As of this writing steering members include
-- Ares (@ares)
-- Blake (@cowlicks)
-- Kristen (@kristen)
-- Lea Yu (@lea)
-- Matt Schaefer (@situatedbit)
-- Paige Panter (@paige_p)
-- Rachel Melendes (@rachel)
+TWC is supported by a steering committee consisting of long-time and active participants. The committee facilitates the creation of group structures, initiatives, maintains shared resources (like Slack), and works to foster common goals and purpose within the organization. If you are interested in participating in the steering committee, please send a note to [steering@techworkersco.org](mailto:steering@techworkersco.org), or post in the #proj-steering channel.
 
 ## Slack
 <a name="slack" />
@@ -88,25 +77,17 @@ As of this writing steering members include
 
 ### Channel Guide
 Channels come and go on Slack, but here are some long-living channels:
-- #admins: get a hold of the slack admins
+- #proj-steering: discuss the steering of TWC
 - #articles: interesting reads
 - #calendar: TWC events calendar items
 - #events: things going on that you might want to know about (not limited to TWC events)
 - #general: general announcements
 - #meetings: conversation about our org-wide meetings
-- #projects: learn more about ongoing projects (not limited to internal TWC projects)
-
-#### Project/Discussion Channels
-*Please note that these can change frequently.*
-- #fairhotels: tech workers joining fair hotels and encouraging their company to do the same
-- #foodservice_organizin
-- #proj-matchmaking: finding volunteer opportunities for people with tech skills
-- #proj-website: help work on the TWC website
-- #tech_union: tech workers and labor
-- #workplace_chapters: organizing sub-chapters of tech workers within their organizations
+- #workplace-conditions: conversations about working conditions and experiences in the tech industry
 
 ## Document History
 <a name="document-history" />
+- *2018-07-22: Deleted old and out-of-date information, RK*
 - *2017-02-26: Initial draft, Steering committee*
 
 *Thank you to those we extrapolated from: codes of conduct and community guidelines from Learning Gardens, Fog City Ruby, Techqueria, and GoBridge*
