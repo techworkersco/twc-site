@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Legal Help
-permalink: /legal-aid
+permalink: /legal-aid/
 ---
 
 # Legal Aid Resources
