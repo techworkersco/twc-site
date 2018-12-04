@@ -45,10 +45,6 @@ If you have been harassed or have witnessed abuse, please bring this to the atte
 
 While in practice most actions from moderators and administrators will be friendly reminders, they should act on complaints/reports quickly and involve other team members if necessary. They should take appropriate, usually private, action if they see any abuse or harassment. They must be sensitive to cultural differences, time zones, etc., but take prompt action when necessary.
 
-## Press
-
-Members of the press are welcome to attend our public meetings and join our online groups under the condition that all conversation and content in these contexts is off the record. On the record conversations must be explicitly requested. Press cameras are not permitted at our public meetings.
-
 ## Be Mindful of What You Say and Write
 
 TWC participants should be mindful of what they write and say in public TWC meetings and in pseudo-public channels like Slack. Be aware that Slack maintains records of our conversations indefinitely. Do not say anything in a non-private channel that you do not want becoming public. Participants should also be aware that members of the press may be present or in Slack channels. While we ask them to keep what they read and hear off the record, we cannot control what they publish.

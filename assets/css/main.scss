@@ -42,7 +42,10 @@ body {
   background-color: $white;
   color: $black;
   margin-bottom: 5em;
-
+  main {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
   a {
     &:link {
       color: #E6141B;
