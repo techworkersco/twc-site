@@ -16,7 +16,8 @@ We are the New York City local of Tech Workers Coalition. We strive to build wor
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script>
-  const calendarUrl = 'https://www.googleapis.com/calendar/v3/calendars/techworkerscoalitionnyc@gmail.com/events?key=AIzaSyBRDQsqmAWq_yKeYOJt3rE58IYsfCLalMU';
+  const apikey = 'AIzaSyBOuYD41nxrqEFFqrT_M3TgbYVl14BJuc4';
+  const calendarUrl = `https://www.googleapis.com/calendar/v3/calendars/techworkerscoalitionnyc@gmail.com/events?key=${apikey}`;
 
   const calendarContainer = document.getElementById('calendar-container');
 
@@ -37,8 +38,6 @@ We are the New York City local of Tech Workers Coalition. We strive to build wor
 
       eventDiv.innerHTML = eventMarkup;
       calendarContainer.appendChild(eventDiv);
-
-      calendarContainer.appendChild(eventLocation);
     }
   }
 
