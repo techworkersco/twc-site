@@ -21,14 +21,13 @@ We are the New York City local of Tech Workers Coalition. We strive to build wor
 
   const calendarContainer = document.getElementById('calendar-container');
 
-  const dateTime2Date = dateString => new Date(new Date(dateString).toDateString())
+  const dateTime2Date = dateString => new Date(new Date(dateString).toDateString());
 
   const showCalendarEvents = json => {
     const events = json
       .items
       .filter(event => dateTime2Date(event.start.dateTime) > dateTime2Date(Date.now()))
-      .sort((a,b) => new Date(a.start.dateTime) - new Date(b.start.dateTime))
-
+      .sort((a,b) => new Date(a.start.dateTime) - new Date(b.start.dateTime));
 
     for (const event of events) {
       const eventDiv = document.createElement('div');
@@ -52,7 +51,4 @@ We are the New York City local of Tech Workers Coalition. We strive to build wor
   .then(function(res) {
     showCalendarEvents(res);
   });
-
-
 </script>
-
