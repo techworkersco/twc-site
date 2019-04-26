@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tech Workers Coalition NYC Local
+title: NYC Local
 permalink: /nyc/
 ---
 <style>.event{padding:24px}.event:nth-child(odd){background:#f8f8f8}.event div,.event h3{margin:0 0 5px}.flex{align-items:center;display:flex}.jBetween{justify-content:space-between}.eventMeta b{font-size:16px}.event a{line-height:1}.event p{color:#444;font-size:18px;line-height:24px;margin:0;max-width:960px}#calendarContainer{padding:0 0 20px}.social{list-style:none;margin:0;padding:0}.bottomLinks a{display:block;font-size:18px;line-height:1;padding:12px}.calendarLink{display:block;font-size:18px;line-height:1}.marg{margin:0 5px}.pad{padding:12px 0 24px}.main-wrapper main{max-width:1024px;padding-left:1.5em;padding-right:1.5em}#new-york-city-tech-workers-coalition{font-size:48px;line-height:56px;margin:0}.blurb{color:#444;font-size:21px;line-height:32px}@media screen and (max-width:920px){.header .supporting-links li:nth-child(1),.header .supporting-links li:nth-child(2){display:none}}@media screen and (max-width:640px){.header .supporting-links li:nth-child(1),.header .supporting-links li:nth-child(2),.header .work{display:none}#new-york-city-tech-workers-coalition{font-size:32px;line-height:36px}.clamp{-webkit-box-orient:vertical;-webkit-line-clamp:3;display:-webkit-box;overflow:hidden}.calendarLink{margin:12px 0 0}.hideMobile{display:none}.flex{align-items:initial;flex-direction:column}.event{padding:12px}.bottomLinks a{padding:6px 0}}</style>
