@@ -100,17 +100,14 @@ header {
       text-transform: uppercase;
       font-weight: 600;
       margin: auto;
-      padding-left: 1em;
-      padding-right: 1em;
 
+      a {
+        padding: 8px 1em;
 
-      &:nth-child(3) a {
-        background-color: #212121;
-        color: white;
-        padding: 8px 25px;
-        border-radius: 100px;
         &:hover {
-          background-color: #E6141B;
+          border-radius: 100px;
+          background-color: #212121;
+          color: white;
         }
       }
     }
