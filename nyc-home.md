@@ -39,13 +39,22 @@ permalink: /nyc/
 
 <div class="flex jBetween bottomLinks">
   <ul class="flex social">
-   <li><a href="https://www.facebook.com/TechWorkersCoalition">Facebook</a></li>
+   <li><a href="https://www.facebook.com/TechWorkersCoalition">Facebook (National)</a></li>
    <li><a href="https://www.meetup.com/Tech-Workers-Coalition-NYC">Meetup (NYC)</a></li>
-   <li><a href="https://twitter.com/techworkersco)">Twitter</a></li>
+   <li><a href="https://twitter.com/techworkerscony">Twitter (NYC)</a></li>
   </ul>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeV4tzvOnYpzfXekaLPqWmIyT09YwNsFa5EEEbmybvT7zXXmw/viewform">
-    Have an event idea? Let us know!
-  </a>
+  <ul class="flex social">
+    <li>
+      <a href="https://forms.gle/1rFMvppxPj7FvShbA">
+        Suggest an event
+      </a>
+    </li>
+    <li>
+      <a href="https://forms.gle/MSXFCjif2nVfB75E8">
+        Contact Us
+      </a>
+    </li>
+  </ul>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
