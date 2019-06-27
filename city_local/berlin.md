@@ -5,14 +5,14 @@ permalink: /berlin/
 ---
 <style>h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}</style>
 # Berlin Tech Workers Coalition
-We first gathered on 20 June 2019. We have been busy organising since. Join our listserv to find out about future meetings and events! We are still figuring out the best ways to broadcast future events.
+We first gathered on 20 June 2019. We have been busy organising since. Join our email listserv to find out about future meetings and events!
 
 ## About
 - We are a coalition of workers in and around the tech industry, labour organisers, community organisers, and friends.
 - Our meetings are currently only in English, however we are working on expanding documentation in other languages as well as hosting events in German
 
 ## Connect With Us
-- Join our listserv: [TechWorkersBerlin-subscribe@lists.riseup.net](mailto:techworkersberlin-subscribe@lists.riseup.net)
+- To join our listserv, send an email to [TechWorkersBerlin-subscribe@lists.riseup.net](mailto:techworkersberlin-subscribe@lists.riseup.net)
 - Twitter: [@TechWorkersBER](https://twitter.com/TechWorkersBER)
 
 ## Accessibility
