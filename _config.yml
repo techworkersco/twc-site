@@ -52,4 +52,18 @@ footer_links:
     text: Facebook
     newTab: true
 
+collections_dir: city_local/berlin
+future: true  
+collections:
+  berlin_events:
+    output: true
+    permalink: berlin/events/:title
+defaults:
+  -
+    scope:
+      path: ""
+      type: "berlin_events"
+    values:
+      layout: "berlin_event"
+
 port: 8080
