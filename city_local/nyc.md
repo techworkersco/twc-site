@@ -22,6 +22,7 @@ permalink: /nyc/
   </ul>
   <p>We welcome current and former tech, tech-adjacent, and non-tech workers to organize, learn and build power with us.</p>
   <p>Nervous about attending your first meeting? Read our <a href="https://docs.google.com/document/d/1jvRbOb6MruP_dpL9G0Gk9LlILhYdNlgVEuCEhiu-UKY/edit">onboarding doc</a>!</p>
+  <p>And last, but not least, if you have any questions or requests regarding accessibility or childcare, please reach out to us at our email, techworkerscoalitionnyc AT gmail, and we will do our best to address them!</p>
 </div>
 
 <hr />
@@ -59,7 +60,7 @@ permalink: /nyc/
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script>
-  const apikey = 'AIzaSyBOuYD41nxrqEFFqrT_M3TgbYVl14BJuc4';
+  const apikey = 'AIzaSyB9Gj0gvJvkQYaFPlxtsIGj8QkefAp5jgo';
   const calendarUrl = `https://www.googleapis.com/calendar/v3/calendars/techworkerscoalitionnyc@gmail.com/events?key=${apikey}`;
 
   const calendarContainer = document.getElementById('calendarContainer');
@@ -69,8 +70,11 @@ permalink: /nyc/
   const showCalendarEvents = json => {
     const items = json.items || [];
     const events = items
-      .filter(event => dateTime2Date(event.start.dateTime) >= dateTime2Date(Date.now()))
-      .sort((a,b) => new Date(a.start.dateTime) - new Date(b.start.dateTime));
+      .filter((ev = {}) => {
+        const dateTime = ev.start ? ev.start.dateTime : "";
+        return dateTime2Date(dateTime) >= dateTime2Date(Date.now())
+      })
+      .sort((a, b) => new Date(a.start.dateTime) - new Date(b.start.dateTime));
 
     for (const event of events) {
       const eventDiv = document.createElement('div');
