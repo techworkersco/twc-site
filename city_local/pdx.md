@@ -1,6 +1,6 @@
 ---
 layout: page
-title: PDX Local
+title: TWC PDX
 permalink: /pdx/
 ---
 <style>h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}</style>
@@ -8,7 +8,7 @@ permalink: /pdx/
 This is the Portland, OR chapter of the TWC.
 
 ## About
-- We are a coalition of workers in and around the tech industry, labour organisers, community organizers, and friends.
+- We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends.
 
 ## Connect With Us
 - Visit our [Google Calendar](https://calendar.google.com/calendar/b/1?cid=dHdjcGR4QGdtYWlsLmNvbQ) to find the latest events.
