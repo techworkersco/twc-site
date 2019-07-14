@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SF Bay Area Local
+title: TWC SF Bay Area
 permalink: /sf-bay-area/
 ---
 <style>h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}</style>

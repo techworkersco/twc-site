@@ -1,6 +1,6 @@
 ---
 layout: page
-title: DC Local 
+title: TWC DC
 permalink: /dc/
 ---
 
