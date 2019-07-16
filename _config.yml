@@ -28,7 +28,7 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-languages: ["en"]
+languages: ["en", "ru"]
 exclude_from_localizations: ["assets"]
 header_links:
   - url: /#learn

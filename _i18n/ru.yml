@@ -1,0 +1,40 @@
+langs:
+  en: English
+  ru: Ру́сский
+home:
+  title: |
+    <span>Рабочие</span> хайтек индустрии сила
+  summary: Движимые мечтами о недискриминационной и справедливой хайтек-отрасли, мы строим Союз Рабочих Хайтек((Tech Workers Coalition) для приобретения влияния путём низовой самоорганизации и самообразования.
+  who_we_are:
+    title: Кто мы
+    description: Мы - альянс из рабочих, занятых в и вокруг хайтек отрасли, людей ведущих профсоюзную и общественную работу, их подруг и друзей.
+  why_we_organize:
+    title: Зачем мы организуемся
+    description: Мы объединяемся для проведения акций, участия в общественной жизни и образования в Кремниевой Долине, Сиэттле и в США.
+  who_we_support:
+    title: Кого мы поддерживаем
+    description: Мы солидаризируемся с действующими движениями за социальную справедливость, права трудящихся и экономическое равноправие
+  how_we_work:
+    title: Как мы работаем
+    description: |
+      Мы являемся демократически устроенной, на 100% волонтёрской организацией управляемой рабочими. В настоящий момент, членство означает личное посещение собраний и работу в различных проектах по интересам. Мы организуемся онлайн, но наша ключевая деятельность проводится в реальной жизни. Больше информации вы можете получить в нашем <a href="/community-guide">Коллективном Руководстве</a>.
+  check_out_meeting:
+    title: Наши собрания
+    locations: В настоящее время, мы проводим регулярные встречи в Берлине, Бостоне, Вашингтоне, Нью-Йорке, Сан-Франциско и Сиэттле.
+  join_discussion:
+    title: Обсуждения и новости
+    links: |
+      <li><a href="/subscribe">Slack</a></li>
+      <li><a href="/subscribe">Newsletter</a></li>
+      <li><a target="_blank" href="https://sites.google.com/view/tech-workers-coalition/learning-club">Learning Club</a></li>
+  social_media:
+    title: TWC в социальных сетях
+    links: |
+      <li><a target="_blank" href="https://twitter.com/techworkersco">Twitter</a></li>
+      <li><a target="_blank" href="https://www.facebook.com/TechWorkersCoalition">Facebook</a></li>
+      <li><a target="_blank" href="https://medium.com/tech-workers-coalition">Medium Blog</a></li>
+  contact_us:
+    title: Связаться с нами
+    description: |
+      <p>Мы также рады побеседовать, ответить на любые ваши вопросы и узнать о борьбе за социальную справедливость, в которой вам требуются союзники. <a href="mailto:hello@techworkersco.org">Отправьте нам email.</a></p>
+        <p>Если вы представляете прессу, пожалуйста, свяжитесь с нами по e-mail: <a href="mailto:press@techworkersco.org">press@techworkersco.org</a></p>
