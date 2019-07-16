@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SF Bay Area Local
+title: TWC SF Bay Area
 permalink: /sf-bay-area/
 ---
 <style>h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}</style>
@@ -8,7 +8,7 @@ permalink: /sf-bay-area/
 This is the SF Bay Area (San Francisco, Oakland, and Berkeley) chapter of the TWC.
 
 ## About
-- We are a coalition of workers in and around the tech industry, labour organisers, community organizers, and friends.
+- We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends.
 
 ## Connect With Us
 - Visit our [Meetup](https://www.meetup.com/Tech-Workers-Coalition/) to find the latest events.
