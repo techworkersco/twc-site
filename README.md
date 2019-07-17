@@ -11,4 +11,4 @@ Open a browser to localhost:8080
 
 ## Add your city
 
-If your city's local is not mentioned in the website, link to it on the homepage [here](_layouts/home.html) and if you want a markdown page see the other examples [here](city_local)
+If your city's TWC chapter is not mentioned in the website, link to it on the homepage [here](_layouts/home.html) and if you want a markdown page see the other examples [here](city_local)
