@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Berlin Local
+title: TWC Berlin
 permalink: /berlin/
 ---
 <style>h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}</style>
