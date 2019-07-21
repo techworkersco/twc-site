@@ -4,16 +4,13 @@ layout: default
 
 <div class="content">
   <div align="right">
-    <!-- Adds links to other languages on the post -->
+    <!-- Adds links to other languages in the page -->
     {% for lang in site.languages %}
-      {% unless site.lang == lang %}
+      {% if site.lang == lang %}
+        <b>{% t langs.{{ lang }} %}</b>
+      {% else %}
         <a href="{% tl {{ page.namespace }} {{ lang }} %}" >{% t langs.{{ lang }} %}</a>
-        {% assign next = forloop.index | plus: 1 %}
-
-        {% if forloop.last != true and site.languages[forloop.index] != site.lang or site.languages[forloop.index] == site.lang and next < forloop.length %}
-          <span class="separator"> &bull; </span>
-        {% endif %}
-      {% endunless %}
+      {% endif %}
     {% endfor %}
   </div>
 
