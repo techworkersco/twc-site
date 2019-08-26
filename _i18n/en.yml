@@ -1,6 +1,8 @@
 langs:
   en: English
   ru: Русский
+  de: Deutsch
+  it: Italiano
 home:
   title: |
     <span>Worker</span> power in the tech industry
