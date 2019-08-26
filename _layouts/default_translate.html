@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="content">
+  <div align="right">
+    <!-- Adds links to other languages in the page -->
+    {% for lang in site.languages %}
+      {% if site.lang == lang %}
+        <b>{% t langs.{{ lang }} %}</b>
+      {% else %}
+        <a href="{% tl {{ page.namespace }} {{ lang }} %}" >{% t langs.{{ lang }} %}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  {{ content }}
+</div>

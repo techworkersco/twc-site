@@ -4,8 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <link rel="stylesheet" href="{{ "/assets/css/normalize.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/normalize.css" | prepend: site.baseurl_root }}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl_root }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <link rel="shortcut icon" href="/assets/favicon2.png" type="image/x-icon">

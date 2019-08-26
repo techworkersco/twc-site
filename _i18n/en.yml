@@ -1,0 +1,55 @@
+# 1.0.0
+langs:
+  en: English
+  ru: Русский
+  it: Italiano
+home:
+  title: |
+    <span>Worker</span> power in the tech industry
+  summary: Guided by our vision for an inclusive & equitable tech industry, TWC organizes to build worker power through rank & file self-organization and education.
+  who_we_are:
+    title: Who we are
+    description: We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends.
+  why_we_organize:
+    title: Why we organize
+    description: We organize for activism, civic engagement and education in the Bay Area, Seattle, and across the United States.
+  who_we_support:
+    title: Who we support
+    description: We work in solidarity with existing movements towards social justice, workers' rights, and economic inclusion.
+  how_we_work:
+    title: How we work
+    description: |
+      We’re a democratically structured, all-volunteer, and worker-led organization. At this point, membership consists of attending meetings in person and working on the various projects that people are interested in. We organize online but IRL is the crux
+      of what we do. Check out our <a href="/community-guide">Community Guide</a> for more info.
+  check_out_meeting:
+    title: Check out a meeting
+    locations: |
+      We currently have regular meetings in
+      <a href="/austin">Austin</a>,
+      <a href="/berlin">Berlin</a>,
+      <a href="https://boston.techworkerscoalition.org/">Boston</a>,
+      <a href="/dc">DC</a>,
+      <a href="https://www.meetup.com/Tech-Workers-Coalition-LA/">LA</a>,
+      <a href="/nyc">NYC</a>,
+      <a href="/pdx">PDX</a>,
+      <a href="https://www.meetup.com/TWCSanDiego">San Diego</a>,
+      <a href="/seattle">Seattle</a>,
+      <a href="/sf-bay-area">SF Bay Area</a>,
+      and <a href="/south-florida">South Florida</a>.
+  join_discussion:
+    title: Join the discussion & know the latest
+    links: |
+      <li><a href="/subscribe">Slack</a></li>
+      <li><a href="/subscribe">Newsletter</a></li>
+      <li><a target="_blank" href="https://sites.google.com/view/tech-workers-coalition/learning-club">Learning Club</a></li>
+  social_media:
+    title: TWC on social media
+    links: |
+      <li><a target="_blank" href="https://twitter.com/techworkersco">Twitter</a></li>
+      <li><a target="_blank" href="https://www.facebook.com/TechWorkersCoalition">Facebook</a></li>
+      <li><a target="_blank" href="https://medium.com/tech-workers-coalition">Medium Blog</a></li>
+  contact_us:
+    title: Contact us
+    description: |
+      <p>We’re also happy to chat, answer any questions you might have, or hear about any social justice efforts in which you need a partner. <a href="mailto:hello@techworkersco.org">Send us an email.</a></p>
+        <p>If you’re a member of the press, please get in touch with us through <a href="mailto:press@techworkersco.org">press@techworkersco.org.</a></p>
