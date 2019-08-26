@@ -23,6 +23,7 @@ home:
     title: Check out a meeting
     locations: |
       We currently have regular meetings in
+      <a href="/austin">Austin</a>,
       <a href="/berlin">Berlin</a>,
       <a href="https://boston.techworkerscoalition.org/">Boston</a>,
       <a href="/dc">DC</a>,
