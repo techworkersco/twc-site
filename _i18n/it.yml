@@ -1,3 +1,4 @@
+# 1.0.0
 langs:
   it: Italiano
 home:
@@ -21,6 +22,7 @@ home:
     title: Partecipa ad un meeting
     locations: |
       Al momento abbiamo incontri a:
+      <a href="/austin">Austin</a>,
       <a href="/berlin">Berlino</a>,
       <a href="https://boston.techworkerscoalition.org/">Boston</a>,
       <a href="/dc">DC</a>,
