@@ -24,9 +24,12 @@ twitter_username: techworkersco
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-multiple-languages-plugin
 exclude:
   - Gemfile
   - Gemfile.lock
+languages: ["en", "ru", "it"]
+exclude_from_localizations: ["assets"]
 header_links:
   - url: /#learn
     text: Learn

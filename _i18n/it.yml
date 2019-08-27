@@ -1,0 +1,52 @@
+# 1.0.0
+langs:
+  it: Italiano
+home:
+  title: |
+    <span>Potere ai lavoratori</span> del settore tecnologico.
+  summary: Guidati da una visione inclusiva ed egualitaria nel settore tecnologico, la TWC opera per rafforzare il ruolo del lavoratore attraverso la formazione e l'auto-organizzazione diffusa.
+  who_we_are:
+    title: Chi siamo
+    description: Siamo un gruppo di lavoratori collegati al settore tecnologico, sindacalisti, operatori sociali e amici.
+  why_we_organize:
+    title: Dove operiamo
+    description: Organizziamo attività principalmente negli Stati Uniti ma siamo presenti anche in diverse nazioni Europee e Asiatiche
+  who_we_support:
+    title: Chi supportiamo
+    description: Lavoriamo in collaborazione con movimenti già esistenti che puntano all'equità sociale, ai diritti dei lavoratori e all'inclusione economica.
+  how_we_work:
+    title: Come lavoriamo
+    description: |
+      Siamo una struttura democratica, sostenuta esclusivamente da volontari e gestita dai lavoratori. Al momento la partecipazione consiste esclusivamente nella presenza ai meeting o la contribuzione nei diversi progetti a cui è interessata la comunità. Ci organizziamo online ma operare IRL è la nostra priorità. Guarda <a href="/community-guide">la guida della comunità</a> per maggiori informazioni.
+  check_out_meeting:
+    title: Partecipa ad un meeting
+    locations: |
+      Al momento abbiamo incontri a:
+      <a href="/austin">Austin</a>,
+      <a href="https://techworkersberlin.com/">Berlino</a>,
+      <a href="https://boston.techworkerscoalition.org/">Boston</a>,
+      <a href="/dc">DC</a>,
+      <a href="https://www.meetup.com/Tech-Workers-Coalition-LA/">Los Angeles</a>,
+      <a href="/nyc">New York</a>,
+      <a href="/pdx">Portland</a>,
+      <a href="https://www.meetup.com/TWCSanDiego">San Diego</a>,
+      <a href="/seattle">Seattle</a>,
+      <a href="/sf-bay-area">San Francisco</a>,
+      and <a href="/south-florida">Florida meridionale</a>.
+  join_discussion:
+    title: Unisciti alla discussione
+    links: |
+      <li><a href="/subscribe">Slack</a></li>
+      <li><a href="/subscribe">Newsletter</a></li>
+      <li><a target="_blank" href="https://sites.google.com/view/tech-workers-coalition/learning-club">Learning Club</a></li>
+  social_media:
+    title: TWC sui social
+    links: |
+      <li><a target="_blank" href="https://twitter.com/techworkersco">Twitter</a></li>
+      <li><a target="_blank" href="https://www.facebook.com/TechWorkersCoalition">Facebook</a></li>
+      <li><a target="_blank" href="https://medium.com/tech-workers-coalition">Medium Blog</a></li>
+  contact_us:
+    title: Contattaci
+    description: |
+      <p>Le chiacchiere sono benvenute così come le domande a cui possiamo darti risposta e le richieste di aiuto per altre iniziative attinenti. <a href="mailto:hello@techworkersco.org">Mandaci una mail.</a></p>
+        <p>Se sei un giornalista, per favore contattaci tramite <a href="mailto:press@techworkersco.org">press@techworkersco.org.</a></p>

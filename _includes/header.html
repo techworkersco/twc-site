@@ -1,6 +1,8 @@
 <header class="header" role="banner">
-  <h1 class="logo"><a href="/">{{ site.title }}</h1>
-  <p class="work">Tech <span class="link">Workers</span> Coalition</p></a>
+  <div>
+    <h1 class="logo"><a href="/">{{ site.title }}</h1>
+    <p class="work">Tech <span class="link">Workers</span> Coalition</p></a>
+  </div>
   <ul class="supporting-links">
     {% for link in site.header_links %}
       <li><a href="{{ link.url }}">{{ link.text }}</a></li>
