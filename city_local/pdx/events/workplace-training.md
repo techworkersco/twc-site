@@ -1,8 +1,10 @@
 ---
 layout: page
-title: PDX October 2019 Workplace training
+title: PDX October 2019 Workplace Organizer Training
 permalink: /pdx/events/workplace-training
 ---
+
+# PDX October 2019 Workplace Training
 
 Tech Worker Organizer Training is a six hour class which aims to give people the minimum skills and knowledge to get started safely and responsibly with workplace organizing as tech workers (workers in the tech industry or technical workers in any industry).
 
