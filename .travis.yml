@@ -2,6 +2,11 @@ language: ruby
 rvm:
 - 2.6
 script: "./script/cibuild"
+deploy:
+  provider: script
+  script: "./script/cibuild; ./script/cideploy"
+  on:
+    branch: master
 exclude:
 - vendor
 env:
