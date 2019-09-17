@@ -2,6 +2,5 @@ _site
 .sass-cache
 .jekyll-metadata
 .env
-s3_website.yml
 .letsencrypt
 *.log
