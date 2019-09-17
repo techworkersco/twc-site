@@ -14,6 +14,6 @@ Rather than relying on instruction, this training is focused around hands-on lea
 
 # Details
 
-This event will be held in inner East Portland on Saturday, October 12th, with an optional "training for trainers" class on Sunday, October 13th. This event has a maximum of 12 participants, so if you are interested, please email [twc-pdx@protonmail.com](mailto:twc-pdx@protonmail.com) for more information.
+This event will be held from 12:15–6:30pm in inner East Portland on Saturday, October 12th, with an optional "training for trainers" class on Sunday, October 13th, at the same time. This event has a maximum of 12 participants, so if you are interested, please email [twc-pdx@protonmail.com](mailto:twc-pdx@protonmail.com) to reserve a spot!
 
 Accessibility: The event is on the 2nd floor and is only reachable by stairs. (We will find a more accessible location for future events.) Other accessibility needs may be met with advance notice.
