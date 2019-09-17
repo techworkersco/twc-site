@@ -24,7 +24,6 @@ Even AFL-CIO union leaders say that unions have to be re-imagined for workers to
 - [Worker Centers: Labs of Organizational Innovation](https://tcf.org/content/facts/worker-centers-labs-organizational-innovation/) (The Century Foundation 2016)
 - [Tereza Stejskalová, Barbora Kleinhamplová and members of the Precarious Workers Brigade, 2014. Not to defer our politicis to somewhere else - Precarious Workers Brigade on precarity.](https://precariousworkersbrigade.tumblr.com/post/80879049340/tereza-stejskalov%C3%A1-barbora-kleinhamplov%C3%A1-and) (precariousworkersbrigade.tumblr.com 2014)
 - [Tools for Collective Action—Precarity: The People’s Tribunal](http://dismagazine.com/discussion/21416/tools-for-collective-action-precarity-the-peoples-tribunal/) (Dismagazine)
-- [WORKER CENTERS AND THE FUTURE OF UNION ORGANIZING](http://franchise.org/worker-centers-and-the-future-of-union-organizing-0) (Franchise.org 2013)
 
 #### Case studies
 - [LA Black Worker Center](http://lablackworkercenter.org/)
