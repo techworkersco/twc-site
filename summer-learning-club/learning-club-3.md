@@ -22,5 +22,4 @@ There is historical precedence for organizing workers in the tech industry -- bo
 
 #### Optional
 
-- [Up Against the Open Shop - the Hidden Story of Silicon Valley's High-Tech Workers](http://www.truth-out.org/news/item/117:up-against-the-open-shop--the-hidden-story-of-silicon-valleys-hightech-workers) (TruthOut, 2011)
 - [Why American Engineers Aren't Unionized: A Comparative Perspective](http://engagedscholarship.csuohio.edu/cgi/viewcontent.cgi?article=1043&context=clsoc_crim_facpub) (1993)

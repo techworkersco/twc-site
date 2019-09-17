@@ -28,7 +28,7 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - [vendor]
+  - vendor
 languages: ["en", "ru", "it"]
 exclude_from_localizations: ["assets"]
 header_links:
