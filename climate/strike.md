@@ -13,17 +13,17 @@ permalink: /climate-strike/
 
 ## There's a climate crisis and tech workers are walking out
 
-On September 20th 2019, millions of people will mobilize across the globe in the largest ever [#ClimateStrike](https://twitter.com/search?q=%23ClimateStrike&src=typed_query), led by students, workers, and people who care about a livable future. As tech workers, we have a responsibility to hold our employers accountable and to be part of the solution, not the problem.
+On September 20th 2019, millions of people will mobilize across the globe in the largest ever #ClimateStrike, led by students, workers, and people who care about a livable future. As tech workers, we have a responsibility to hold our employers accountable and to be part of the solution, not the problem.
 
-### Here is how you can participate
+## Here is how you can participate
 
 1. On September 20, join a protest near you, as an individual or even better, with your co-workers.
 You can find a list of over 3,000 local marches happening as part of the Global Climate Strike [here](https://globalclimatestrike.net/).  
-Tech workers from across companies will be meeting up before these marches, then joining their local march together. Find a tech worker location and meeting time [here](https://docs.google.com/spreadsheets/d/1ThY98n11LVFV_26P9nmEbvUjvMXwa671nK1gOBPf7mM/). (If you don't see your city listed, feel free to add it in [this form](https://docs.google.com/forms/d/e/1FAIpQLSfJDnN7_u04b-jvDjBGXisUtrQvVbRSqc-wTOkptsPpQV_wnQ/viewform). We'll make sure it gets on to the list).
+**Tech workers from across companies will be meeting up before these marches, then joining their local march together. Find a tech worker location and meeting time** [here](https://docs.google.com/spreadsheets/d/1ThY98n11LVFV_26P9nmEbvUjvMXwa671nK1gOBPf7mM/). (If you don't see your city listed, feel free to add it in [this form](https://docs.google.com/forms/d/e/1FAIpQLSfJDnN7_u04b-jvDjBGXisUtrQvVbRSqc-wTOkptsPpQV_wnQ/viewform). We'll make sure it gets on to the list).
 
 2. Before September 20, talk to your colleagues, post to your company slack or message board, share on Twitter, and let people know why you're joining the Global Climate Strike. Use the hashtag [#TechClimateStrike](https://twitter.com/search?q=%23TechClimateStrike&src=typed_query).
 
-3. On September 20, post photos of the walkout in your city  with the hashtag [#TechClimateStrike](https://twitter.com/search?q=%23TechClimateStrike&src=typed_query), preferably while wearing your company's branded clothing. If you're walking out with other tech workers, post a group photo (with everyone's consent, of course).
+3. On September 20, post photos of the walkout in your city  with the hashtag #TechClimateStrike, preferably while wearing your company's branded clothing. If you're walking out with other tech workers, post a group photo (with everyone's consent, of course).
 
 ## Tech's dirty role in climate change
 
@@ -50,7 +50,7 @@ Amazon, Palantir, and other companies are already [selling technology](https://w
 We demand that our employers across the tech industry act with boldness and urgency, and commit to:
 
 - Zero carbon emissions by 2030
-- Zero contracts w/ fossil fuel companies
+- Zero contracts with fossil fuel companies
 - Zero funding of climate denial lobbying or other efforts
 - Zero harm to climate refugees and frontline communities
 
