@@ -1,4 +1,5 @@
 # TWC Site
+[![Build Status](https://travis-ci.com/techworkersco/twc-site.svg?branch=develop)](https://travis-ci.com/techworkersco/twc-site)
 
 This repository is responsible for most content visible on the website [techworkerscoalition.org](https://techworkerscoalition.org). The site is made with a static site generator called [Jekyll](https://jekyllrb.com/) in a language called Ruby.
 
@@ -29,7 +30,7 @@ Note, only the default [en.yml](_i18n/en.yml) must contain the names of each lan
 ![Screen Shot 2019-07-21 at 14 48 46](https://user-images.githubusercontent.com/7111514/61591397-cb0cd180-abc6-11e9-9876-1577d5c8b4bd.png)
 
 ### Versioning
-Each translation file, should have same version as other languages. Sometimes that is not possible, and having different versions, helps document the disparities. For example, a new city is added, but no translation is provided in Russian yet. 
+Each translation file, should have same version as other languages. Sometimes that is not possible, and having different versions, helps document the disparities. For example, a new city is added, but no translation is provided in Russian yet.
 
 ### Supported Pages
 * Landing Page (home.html in each Language directory)

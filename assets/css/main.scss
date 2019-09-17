@@ -270,3 +270,27 @@ li {
 .highlight {
   background: yellow;
 }
+
+.climate-container{
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
+
+.clear {
+  clear: both;
+}
+
+.climate-container img{
+  padding: 10px 20px;
+  max-width: 220px;
+  vertical-align: top;
+  display: inline-block;
+  display: inline;
+  zoom: 1.5;
+  float: left;
+
+}

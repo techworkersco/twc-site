@@ -3,23 +3,27 @@ layout: page
 title: Climate Strike
 permalink: /climate-strike/
 ---
-
-![Ready for the Global #ClimateStrike](https://lh3.googleusercontent.com/EzNkvk5GnB0ndxp8EPc1xgot_uFhGfhY2Zi3b7JQTwts49TmP4K4nXUqGBGQxv4ZiqYaN5MsmyABJN8snl4GPdw3ShEx9MDdi9xASfqyuqT6a-RE6G0Suw9SLga-iU-87MeZilt9eJHckz42LDdnoaSUdyzttETwPprpMXlX3IGltDai118sRO38HCADsCvCd0BBN1ULlk40HlBeLGuhn4UJlkHREokY1j_WdxHj-i28Wum7pvPFYIazY2OkPwH5SqjRmhGSiWTT1qyH7DWO43v8gtdyaYd29HtGzC9W2qFpLIUHCSp8FZcZlF03yZClDwcl7BwozAbRWY1PJBvtNXyhjAckui0GTYVyvyIbFu9txChdXjcl_mDrx_xzR721j8_Y6j_-l2sPpS9hvb9isgpRyenKBPHYFgqK453VbmzvYfEJghJOgVns85_ytBGcOyQ0vh0H9yQazj-2xKGc20ZfQXQ8-u5Qdab1GVvFa0pRn5jItEQ5ohCDWRQTOSdnNRwzqp-Kyl1tjVNQwZEXdMv43zIpeRIpyjrW6SBPPyMRjZWWcJGP_RlfeHkiwwNFslydt0wQ0PeitBRX8MSpRqYEf4weTKJFOtyigLff94LvIv2NURN3A9CAsQ=w1440-h691)
-
+<div class="climate-container">
+  <img src="/assets/img/climatestrike/2.png" alt="Zero carbon emissions by 2030"/>
+  <img src="/assets/img/climatestrike/1.png" alt="Zero contracts with fossil fuel companies"/>
+  <img src="/assets/img/climatestrike/3.png" alt="Zero funding of climate denial lobbying or other efforts"/>
+  <img src="/assets/img/climatestrike/4.png" alt="Zero harm to climate refugees and frontline communities"/>
+  <div class="clear"></div>
+</div>  
 
 ## There's a climate crisis and tech workers are walking out
 
-On September 20th 2019, millions of people will mobilize across the globe in the largest ever [#ClimateStrike](https://twitter.com/search?q=%23ClimateStrike&src=typed_query), led by students, workers, and people who care about a livable future. As tech workers, we have a responsibility to hold our employers accountable and to be part of the solution, not the problem.
+On September 20th 2019, millions of people will mobilize across the globe in the largest ever #ClimateStrike, led by students, workers, and people who care about a livable future. As tech workers, we have a responsibility to hold our employers accountable and to be part of the solution, not the problem.
 
-### Here is how you can participate
+## Here is how you can participate
 
 1. On September 20, join a protest near you, as an individual or even better, with your co-workers.
 You can find a list of over 3,000 local marches happening as part of the Global Climate Strike [here](https://globalclimatestrike.net/).  
-Tech workers from across companies will be meeting up before these marches, then joining their local march together. Find a tech worker location and meeting time [here](https://docs.google.com/spreadsheets/d/1ThY98n11LVFV_26P9nmEbvUjvMXwa671nK1gOBPf7mM/). (If you don't see your city listed, feel free to add it in [this form](https://docs.google.com/forms/d/e/1FAIpQLSfJDnN7_u04b-jvDjBGXisUtrQvVbRSqc-wTOkptsPpQV_wnQ/viewform). We'll make sure it gets on to the list).
+**Tech workers from across companies will be meeting up before these marches, then joining their local march together. Find a tech worker location and meeting time** [here](https://docs.google.com/spreadsheets/d/1ThY98n11LVFV_26P9nmEbvUjvMXwa671nK1gOBPf7mM/). (If you don't see your city listed, feel free to add it in [this form](https://docs.google.com/forms/d/e/1FAIpQLSfJDnN7_u04b-jvDjBGXisUtrQvVbRSqc-wTOkptsPpQV_wnQ/viewform). We'll make sure it gets on to the list).
 
 2. Before September 20, talk to your colleagues, post to your company slack or message board, share on Twitter, and let people know why you're joining the Global Climate Strike. Use the hashtag [#TechClimateStrike](https://twitter.com/search?q=%23TechClimateStrike&src=typed_query).
 
-3. On September 20, post photos of the walkout in your city  with the hashtag [#TechClimateStrike](https://twitter.com/search?q=%23TechClimateStrike&src=typed_query), preferably while wearing your company's branded clothing. If you're walking out with other tech workers, post a group photo (with everyone's consent, of course).
+3. On September 20, post photos of the walkout in your city  with the hashtag #TechClimateStrike, preferably while wearing your company's branded clothing. If you're walking out with other tech workers, post a group photo (with everyone's consent, of course).
 
 ## Tech's dirty role in climate change
 
@@ -46,7 +50,7 @@ Amazon, Palantir, and other companies are already [selling technology](https://w
 We demand that our employers across the tech industry act with boldness and urgency, and commit to:
 
 - Zero carbon emissions by 2030
-- Zero contracts w/ fossil fuel companies
+- Zero contracts with fossil fuel companies
 - Zero funding of climate denial lobbying or other efforts
 - Zero harm to climate refugees and frontline communities
 

@@ -3,8 +3,13 @@ layout: page
 title: Press kit and social media
 permalink: /climate-strike/press-kit/
 ---
-
-![Ready for the Global #ClimateStrike](https://lh3.googleusercontent.com/EzNkvk5GnB0ndxp8EPc1xgot_uFhGfhY2Zi3b7JQTwts49TmP4K4nXUqGBGQxv4ZiqYaN5MsmyABJN8snl4GPdw3ShEx9MDdi9xASfqyuqT6a-RE6G0Suw9SLga-iU-87MeZilt9eJHckz42LDdnoaSUdyzttETwPprpMXlX3IGltDai118sRO38HCADsCvCd0BBN1ULlk40HlBeLGuhn4UJlkHREokY1j_WdxHj-i28Wum7pvPFYIazY2OkPwH5SqjRmhGSiWTT1qyH7DWO43v8gtdyaYd29HtGzC9W2qFpLIUHCSp8FZcZlF03yZClDwcl7BwozAbRWY1PJBvtNXyhjAckui0GTYVyvyIbFu9txChdXjcl_mDrx_xzR721j8_Y6j_-l2sPpS9hvb9isgpRyenKBPHYFgqK453VbmzvYfEJghJOgVns85_ytBGcOyQ0vh0H9yQazj-2xKGc20ZfQXQ8-u5Qdab1GVvFa0pRn5jItEQ5ohCDWRQTOSdnNRwzqp-Kyl1tjVNQwZEXdMv43zIpeRIpyjrW6SBPPyMRjZWWcJGP_RlfeHkiwwNFslydt0wQ0PeitBRX8MSpRqYEf4weTKJFOtyigLff94LvIv2NURN3A9CAsQ=w1440-h691)
+<div class="climate-container">
+  <img src="/assets/img/climatestrike/2.png" alt="Zero carbon emissions by 2030"/>
+  <img src="/assets/img/climatestrike/1.png" alt="Zero contracts with fossil fuel companies"/>
+  <img src="/assets/img/climatestrike/3.png" alt="Zero funding of climate denial lobbying or other efforts"/>
+  <img src="/assets/img/climatestrike/4.png" alt="Zero harm to climate refugees and frontline communities"/>
+  <div class="clear"></div>
+</div>  
 
 
 Below are some resources to help convince your co-workers and management why they should support the upcoming Climate Strike.
