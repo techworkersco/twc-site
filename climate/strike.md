@@ -63,7 +63,8 @@ We demand that our employers across the tech industry act with boldness and urge
 - [Facebook](https://twitter.com/FBClimateAction/status/1173646327462281217)
 - [Google](https://twitter.com/GoogleWAC/status/1172962371360309248)
 - [Microsoft](https://twitter.com/MsWorkers4/status/1173635089495801857)
-- Twitter
+- [Square](https://twitter.com/SquareWorkers/status/1174840277028130816)
+- [Twitter](https://twitter.com/TwtAction/status/1174735640681799681)
 
 
 ## Social media
@@ -72,4 +73,6 @@ We demand that our employers across the tech industry act with boldness and urge
 - Facebook: [https://twitter.com/FBClimateAction](https://twitter.com/FBClimateAction)
 - Google: [https://twitter.com/GoogleWAC](https://twitter.com/GoogleWAC)
 - Microsoft: [https://twitter.com/MsWorkers4](https://twitter.com/MsWorkers4)
+- Square: [https://twitter.com/SquareWorkers](https://twitter.com/SquareWorkers)
+- Twitter: [https://twitter.com/TwtAction](https://twitter.com/TwtAction)
 - Tech Workers Coalition: [https://twitter.com/techworkersco](https://twitter.com/techworkersco)
