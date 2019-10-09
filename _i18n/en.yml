@@ -4,6 +4,8 @@ langs:
   ru: Русский
   it: Italiano
   es: Español
+global:
+  404: Page not found
 home:
   title: |
     <span>Worker</span> power in the tech industry
