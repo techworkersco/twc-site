@@ -1,31 +1,28 @@
 # 1.0.0
 langs:
-  en: English
-  ru: Русский
-  it: Italiano
   es: Español
 home:
   title: |
-    <span>Worker</span> power in the tech industry
-  summary: Guided by our vision for an inclusive & equitable tech industry, TWC organizes to build worker power through rank & file self-organization and education.
+    <span>Poder</span> para los trabajadores en la industria de la tecnología
+    summary: Guiados por nuestra visión para una industria de la teconogía mas equitativa e inclusiva, TWC se organiza para construir un poder para los trabajadores mediante rangos, sistemas autoorganizados y educación.
   who_we_are:
-    title: Who we are
-    description: We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends.
+    title: Quienes somos
+    description: Somos una coalicion de trabajadores dentro y alrededor de la industria de la teconología, organizadores laborales, organizadores comunitarios, t amigos.
   why_we_organize:
-    title: Why we organize
-    description: We organize for activism, civic engagement and education in the Bay Area, Seattle, and across the United States.
+    title: Por que nos organizamos
+    description: Nos organizamos por activismo, compromiso civil, y educación en el area de la bahía Seattle y a lo largo de los Estados Unidos.
   who_we_support:
-    title: Who we support
-    description: We work in solidarity with existing movements towards social justice, workers' rights, and economic inclusion.
+    title: a quienes ayudamos
+    description: Trabajamos en solidaridad con los movimientos existentes hacia la justicia social, los derechos de los trabajadores, y la inclusión económica.
   how_we_work:
-    title: How we work
+    title: Como trabajamos
     description: |
-      We’re a democratically structured, all-volunteer, and worker-led organization. At this point, membership consists of attending meetings in person and working on the various projects that people are interested in. We organize online but IRL is the crux
-      of what we do. Check out our <a href="/community-guide">Community Guide</a> for more info.
+      Somos una organización democraticamente estructurada, basada en el voluntariado, y controlada por los trabajadores. Actualmente la membresía consiste en attender a personas en eventos en persona y trabajando en varios proyectos de los cuales la gente está interesada. Nos organizamos en línea pero el eje central de lo que hacemos está en la vida real.
+      Visita nuestra <a href="/community-guide">Guía comunitaría</a> para mas información.
   check_out_meeting:
-    title: Check out a meeting
+    title: Visita un evento
     locations: |
-      We currently have regular meetings in
+      Regularmente tenemos enventos en:
       <a href="/austin">Austin</a>,
       <a href="https://techworkersberlin.com/">Berlin</a>,
       <a href="https://boston.techworkerscoalition.org/">Boston</a>,
@@ -39,19 +36,19 @@ home:
       <a href="/sf-bay-area">SF Bay Area</a>,
       and <a href="/south-florida">South Florida</a>.
   join_discussion:
-    title: Join the discussion & know the latest
+    title: Únete a la discusión
     links: |
       <li><a href="/subscribe">Slack</a></li>
       <li><a href="/subscribe">Newsletter</a></li>
       <li><a target="_blank" href="https://sites.google.com/view/tech-workers-coalition/learning-club">Learning Club</a></li>
   social_media:
-    title: TWC on social media
+    title: TWC en las redes sociales
     links: |
       <li><a target="_blank" href="https://twitter.com/techworkersco">Twitter</a></li>
       <li><a target="_blank" href="https://www.facebook.com/TechWorkersCoalition">Facebook</a></li>
       <li><a target="_blank" href="https://medium.com/tech-workers-coalition">Medium Blog</a></li>
   contact_us:
-    title: Contact us
+    title: Contáctanos
     description: |
-      <p>We’re also happy to chat, answer any questions you might have, or hear about any social justice efforts in which you need a partner. <a href="mailto:hello@techworkersco.org">Send us an email.</a></p>
-        <p>If you’re a member of the press, please get in touch with us through <a href="mailto:press@techworkersco.org">press@techworkersco.org.</a></p>
+      <p>Estaríamos felices de hablar y responder cualquiera de las preguntas que puede que tengas, O escuchar acerca de cualquier evento a favor de la justicia social en los cuales necesitarás una membresía. <a href="mailto:hello@techworkersco.org">Envianos un correo.</a></p>
+        <p>Si eres un miembro de la prensa, por favor contáctanos mediante <a href="mailto:press@techworkersco.org">press@techworkersco.org.</a></p>
