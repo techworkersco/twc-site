@@ -3,6 +3,8 @@ langs:
   en: English
   ru: Русский
   it: Italiano
+global:
+  404: Page not found
 home:
   title: |
     <span>Worker</span> power in the tech industry
@@ -30,6 +32,7 @@ home:
       <a href="https://boston.techworkerscoalition.org/">Boston</a>,
       <a href="/dc">DC</a>,
       <a href="https://www.meetup.com/Tech-Workers-Coalition-LA/">LA</a>,
+      <a href="/london">London</a>,
       <a href="/nyc">NYC</a>,
       <a href="/pdx">PDX</a>,
       <a href="https://www.meetup.com/TWCSanDiego">San Diego</a>,
