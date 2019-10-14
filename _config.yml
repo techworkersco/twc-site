@@ -55,5 +55,7 @@ footer_links:
   - url: https://www.facebook.com/TechWorkersCoalition
     text: Facebook
     newTab: true
+sass:
+  style: compressed
 
 port: 8080
