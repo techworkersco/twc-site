@@ -29,7 +29,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-languages: ["en", "ru", "it"]
+languages: ["en", "es", "ru", "it"]
 exclude_from_localizations: ["assets"]
 header_links:
   - url: /#learn
