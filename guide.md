@@ -14,7 +14,9 @@ permalink: /community-guide/
 
 The Tech Workers Coalition seeks to redefine the relationship between tech workers and Bay Area communities. Through activism, civic engagement, direct action, and education, we work in solidarity with existing movements towards social justice and economic inclusion.
 
-We are open to all workers in the tech industry, friends and allies. We believe in respect, compassion, understanding and inclusion. We expect all community members to act in accordance with these values.
+## Membership
+
+We are open to all workers in the tech industry, friends and allies. We believe in respect, compassion, understanding and inclusion. We expect all community members to act in accordance with these values.  We reserve the right to reject membership based on being employed in a management role (i.e. with firing power) or in being employed in a role that is in support of the prison-industrial complex (police, prosecutors, prison industry, etc). If you have any questions about this, feel free to [reach out via email](mailto:hello@techworkersco.org).
 
 ## Values of Participation
 
@@ -83,6 +85,7 @@ Channels come and go on Slack, but here are some long-living channels:
 
 ## Document History
 <a name="document-history" />
+- *2019-11-04: Clarification regarding membership requirements*
 - *2018-07-22: Deleted old and out-of-date information, RK*
 - *2017-02-26: Initial draft, Steering committee*
 
