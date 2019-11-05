@@ -4,11 +4,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <link rel="stylesheet" href="{{ "/assets/css/normalize.css" | prepend: site.baseurl_root }}">
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl_root }}">
+  <style>
+    {% capture styles %}
+      {% include main.scss %}
+      {% include normalize.css %}
+    {% endcapture %}
+    {{ styles | scssify }}
+  </style>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <link rel="shortcut icon" href="/assets/favicon2.png" type="image/x-icon">
   <link rel="icon" href="/assets/favicon2.png" type="image/x-icon">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>

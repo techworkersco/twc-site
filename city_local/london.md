@@ -22,9 +22,10 @@ in September 2019.
 
 ## Connect With Us
 
-- Currently the best way to see what we're up to and find out about our next
-  meeting is to follow us on Twitter, at
+- Currently the best way to see what we're up to is to follow us on Twitter, at
   [@TechWorkersLDN](https://twitter.com/TechWorkersLDN).
+- You can find out about and [sign up to attend our next meeting
+  here](https://bobwhitelock.co.uk/next-twc-london-meeting).
 - We can be securely contacted via email, at
 [techworkersldn@protonmail.com](mailto:techworkersldn@protonmail.com).
 - We are also on [the TWC Slack](/subscribe), in the `#local-uk-london` channel.
