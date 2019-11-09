@@ -11,7 +11,6 @@ This is the South Florida chapter of the TWC.
 - We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends.
 
 ## Connect With Us
-- Visit our [Meetup](https://www.meetup.com/South-Florida-Tech-Workers-Coalition/) to find the latest events.
 - Follow us on Facebook [@SouthFLTechWorkers](https://www.facebook.com/southfltechworkers/).
 
 ## Code of Conduct
