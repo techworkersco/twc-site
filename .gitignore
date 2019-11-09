@@ -4,3 +4,5 @@ _site
 .env
 .letsencrypt
 *.log
+/vendor
+.bundle
