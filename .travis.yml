@@ -1,9 +1,11 @@
 language: ruby
 rvm:
 - 2.6
+- jruby
 script: "./script/cibuild"
 deploy:
   provider: script
+  skip_cleanup: true
   script: "./script/cibuild; ./script/cideploy"
   on:
     branch: master
