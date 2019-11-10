@@ -1,10 +1,10 @@
-language: ruby
+language: 
+  - ruby
+  - java
 rvm:
   - 2.6
-  - jruby
 script: "./script/cibuild"
-jdk:
-  - oraclejdk9
+jdk: openjdk8 
 deploy:
   provider: script
   skip_cleanup: true
