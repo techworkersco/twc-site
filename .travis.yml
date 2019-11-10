@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.6
+- jruby
 script: "./script/cibuild"
 deploy:
   provider: script
