@@ -3,6 +3,8 @@ rvm:
   - 2.6
   - jruby
 script: "./script/cibuild"
+jdk:
+  - oraclejdk8
 deploy:
   provider: script
   skip_cleanup: true
