@@ -4,7 +4,7 @@ rvm:
   - jruby
 script: "./script/cibuild"
 jdk:
-  - oraclejdk8
+  - oraclejdk9
 deploy:
   provider: script
   skip_cleanup: true
