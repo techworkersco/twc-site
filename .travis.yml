@@ -4,6 +4,7 @@ rvm:
 script: "./script/cibuild"
 deploy:
   provider: script
+  skip_cleanup: true
   script: "./script/cibuild; ./script/cideploy"
   on:
     branch: master
