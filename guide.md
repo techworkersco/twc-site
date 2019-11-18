@@ -60,10 +60,6 @@ Projects are a touchstone for new members who want to participate, and we encour
 
 Projects should form their own topics within Slack. Many start with the prefix *#proj-*. See [Project/Discussion Channels](#slack).
 
-## Steering Committee
-<a name="steering-committee" />
-TWC is supported by a steering committee consisting of long-time and active participants. The committee facilitates the creation of group structures, initiatives, maintains shared resources (like Slack), and works to foster common goals and purpose within the organization. If you are interested in participating in the steering committee, please send a note to [steering@techworkersco.org](mailto:steering@techworkersco.org), or post in the #proj-steering channel.
-
 ## Slack
 <a name="slack" />
 
