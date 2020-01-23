@@ -34,7 +34,7 @@ permalink: /nyc/
 <div id="mc_embed_signup">
 <form action="https://gmail.us20.list-manage.com/subscribe/post?u=31ceb0f0ef45a17d52c2763f4&amp;id=b4ea083849" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-	<label id="mc_embed_label" for="mce-EMAIL">Keep in touch with us - sign up for our newsletter</label>
+	<label id="mc_embed_label" for="mce-EMAIL">Keep in touch with us - sign up for our <a href="https://us20.campaign-archive.com/home/?u=31ceb0f0ef45a17d52c2763f4&id=b4ea083849">newsletter</a></label>
   <div class="flex">
 	<input type="email" value="" name="EMAIL" class="mR4" id="mce-EMAIL" placeholder="email address" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
