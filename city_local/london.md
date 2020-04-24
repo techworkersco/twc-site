@@ -32,7 +32,8 @@ attend any public TWC London meetings.
 ## Connect With Us
 
 - Currently the best way to see what we're up to is to follow us on Twitter, at
-[@TechWorkersLDN](https://twitter.com/TechWorkersLDN).
+  [@TechWorkersLDN](https://twitter.com/TechWorkersLDN), or on our
+  [Facebook group](https://www.facebook.com/TechWorkersLDN).
 - We can be securely contacted via email, at
 [techworkersldn@protonmail.com](mailto:techworkersldn@protonmail.com).
 - We are also on [the TWC Slack](/subscribe), in the `#local-uk-london`
