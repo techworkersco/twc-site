@@ -43,6 +43,8 @@ attend any public TWC London meetings.
   slip through the cracks and not be granted access. If you have been waiting
   without a response for more than a week or two after signing up, please email
   or DM us on Twitter and we can try to help get you in.
+  
+- To learn more about TWC London and your rights as a tech worker in the U.K., you can read more in our zine, [Tech Workers Unite] (https://archive.org/stream/techworkersunite/TechWorkersUnite). 
 
 ## Code of Conduct
 
