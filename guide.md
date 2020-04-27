@@ -16,7 +16,15 @@ The Tech Workers Coalition seeks to redefine the relationship between tech worke
 
 ## Membership
 
-We are open to all workers in the tech industry, friends and allies. We believe in respect, compassion, understanding and inclusion. We expect all community members to act in accordance with these values.  We reserve the right to reject membership based on being employed in a management role (i.e. with firing power) or in being employed in a role that is in support of the prison-industrial complex (police, prosecutors, prison industry, etc). If you have any questions about this, feel free to [reach out via email](mailto:hello@techworkersco.org).
+We are open to all workers in the tech industry, friends and allies. We believe in respect, compassion, understanding and inclusion. We expect all community members to act in accordance with these values.
+
+We reserve the right to reject membership based on the following:
+- Being employed in a management role (i.e. with firing power)
+- Employed in a role that is in support of the prison-industrial complex (police, prosecutors, prison industry, etc)
+- Your desire to be part of TWC is compromised by a business interest. For example, you want access to our members to promote your product, or to do user testing
+- You work as a journalist
+
+If you have any questions about this, feel free to [reach out via email](mailto:hello@techworkersco.org).
 
 ## Values of Participation
 
