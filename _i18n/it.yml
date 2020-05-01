@@ -1,5 +1,7 @@
 # 1.0.0
 langs:
+  en: English
+  ru: Русский
   it: Italiano
 home:
   title: |
@@ -25,7 +27,7 @@ home:
       <a href="/austin">Austin</a>,
       <a href="https://techworkersberlin.com/">Berlino</a>,
       <a href="https://boston.techworkerscoalition.org/">Boston</a>,
-      <a href="/chicago">Chicago</a>,      
+      <a href="/chicago">Chicago</a>,
       <a href="/dc">DC</a>,
       <a href="https://www.meetup.com/Tech-Workers-Coalition-LA/">Los Angeles</a>,
       <a href="/london">London</a>,
