@@ -3,8 +3,10 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    coderay (1.1.2)
     colorator (1.1.0)
     concurrent-ruby (1.1.6)
+    deep_merge (1.2.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -51,12 +53,16 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
+    method_source (1.0.0)
     mini_portile2 (2.4.0)
     nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     parallel (1.17.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
+    pry (0.13.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
     public_suffix (4.0.3)
     rainbow (3.0.0)
     rb-fsevent (0.10.3)
@@ -77,10 +83,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  deep_merge
   html-proofer
   jekyll (= 3.8.5)
   jekyll-feed (~> 0.11)
   jekyll-multiple-languages-plugin
+  pry
   tzinfo-data
 
 RUBY VERSION
