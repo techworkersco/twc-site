@@ -9,6 +9,8 @@ show_in_footer: true
 
 Our Slack is governed by the principles and rules in our [Community Guide](/community-guide). By joining, you agree to follow them. Our newsletter includes announcements and updates from the Tech Workers Coalition.
 
+If you are joining the slack, please keep in mind that you will be manually vetted before you are allowed in. Sometimes this can take a day or two. Please be patient with us!
+
 
 **Please provide the following:**
 
@@ -22,7 +24,10 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
     <input id="name" type="text" required name="name">
   </div>
   <div>
-    <label for="social">Please provide two links to social handles (Twitter, Medium, personal blog, etc.):</label>
+    <div>
+      <label for="social">Please provide two links to social media handles.</label>
+      What we are looking for here is a way to validate that you meet the membership requirements laid out <a href="/community-guide#membership">here</a>. Linkedin is preferred, but anything that allows us to verify that you aren't a manager, journalist, etc is acceptable.
+    </div>
     <input id="social" required type="url" name="social_media_1">
     <input type="url" required name="social_media_2">
   </div>

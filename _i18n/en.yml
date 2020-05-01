@@ -28,6 +28,7 @@ home:
     locations: |
       We currently have regular meetings in
       <a href="/austin">Austin</a>,
+      <a href="https://twitter.com/twc_bangalore">Bangalore</a>,
       <a href="https://techworkersberlin.com/">Berlin</a>,
       <a href="https://boston.techworkerscoalition.org/">Boston</a>,
       <a href="/chicago">Chicago</a>,
@@ -38,8 +39,7 @@ home:
       <a href="/pdx">PDX</a>,
       <a href="https://www.meetup.com/TWCSanDiego">San Diego</a>,
       <a href="/seattle">Seattle</a>,
-      <a href="/sf-bay-area">SF Bay Area</a>,
-      and <a href="/south-florida">South Florida</a>.
+      and <a href="/sf-bay-area">SF Bay Area</a>
   join_discussion:
     title: Join the discussion & know the latest
     links: |

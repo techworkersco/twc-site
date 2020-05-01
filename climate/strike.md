@@ -61,7 +61,7 @@ We demand that our employers across the tech industry act with boldness and urge
 - [Cobot](https://blog.cobot.me/cobot-will-join-the-global-climate-strike-public-letter-88af2e473482)
 - [Ecosia](https://blog.ecosia.org/join-ecosia-global-climate-strike/)
 - [Facebook](https://twitter.com/FBClimateAction/status/1173646327462281217)
-- [Google](https://twitter.com/GoogleWAC/status/1172962371360309248)
+- [Google](https://twitter.com/ClimateGooglers/status/1172962371360309248)
 - [Microsoft](https://twitter.com/MsWorkers4/status/1173635089495801857)
 - [Square](https://twitter.com/SquareWorkers/status/1174840277028130816)
 - [Twitter](https://twitter.com/TwtAction/status/1174735640681799681)
@@ -71,7 +71,7 @@ We demand that our employers across the tech industry act with boldness and urge
 
 - Amazon: [https://twitter.com/AMZNforClimate](https://twitter.com/AMZNforClimate)
 - Facebook: [https://twitter.com/FBClimateAction](https://twitter.com/FBClimateAction)
-- Google: [https://twitter.com/GoogleWAC](https://twitter.com/GoogleWAC)
+- Google: [https://twitter.com/ClimateGooglers](https://twitter.com/ClimateGooglers)
 - Microsoft: [https://twitter.com/MsWorkers4](https://twitter.com/MsWorkers4)
 - Square: [https://twitter.com/SquareWorkers](https://twitter.com/SquareWorkers)
 - Twitter: [https://twitter.com/TwtAction](https://twitter.com/TwtAction)
