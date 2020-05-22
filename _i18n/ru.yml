@@ -25,6 +25,7 @@ home:
     title: Присоединяйтесь к обсуждениям и читайте новости
     links: |
       <li><a href="/subscribe">Slack</a></li>
+      <li><a href="https://news.techworkerscoalition.org/subscribe/">Newsletter</a></li>
       <li><a target="_blank" href="https://sites.google.com/view/tech-workers-coalition/learning-club">Learning Club</a></li>
   social_media:
     title: TWC в социальных сетях
