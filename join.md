@@ -7,10 +7,9 @@ show_in_footer: true
 
 # Join us
 
-Our Slack is governed by the principles and rules in our [Community Guide](/community-guide). By joining, you agree to follow them. Our newsletter includes announcements and updates from the Tech Workers Coalition.
+Our Slack is governed by the principles and rules in our [Community Guide](/community-guide). By joining, you agree to follow them. [Our newsletter](https://news.techworkerscoalition.org) includes news, announcements, and updates from the Tech Workers Coalition. You can [subscribe here](https://news.techworkerscoalition.org/subscribe/)
 
-If you are joining the slack, please keep in mind that you will be manually vetted before you are allowed in. Sometimes this can take a day or two. Please be patient with us!
-
+For joining the Slack, please keep in mind that you will be manually vetted before you are allowed in. Sometimes this can take a day or two. Please be patient with us!
 
 **Please provide the following:**
 
@@ -38,10 +37,6 @@ If you are joining the slack, please keep in mind that you will be manually vett
   <div>
     <label for="referrer">How Did You Hear About Us? (optional):</label>
     <input id="referrer" type="text" name="referrer">
-  </div>
-  <div>
-    <input id="subscribeNewsletter" type="checkbox" name="newsletter">
-    <label for="subscribeNewsletter">Subscribe to newsletter?</label>
   </div>
   <div>
     <input id="subscribeSlack" type="checkbox" name="slack">

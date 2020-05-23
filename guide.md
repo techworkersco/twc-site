@@ -5,7 +5,6 @@ permalink: /community-guide/
 ---
 [Our Values and Code of Conduct](#our-values)<br>
 [Projects](#projects)<br>
-[Steering Committee](#steering-committee)<br>
 [Slack](#slack)<br>
 [Document History](#document-history)
 
@@ -51,7 +50,7 @@ Harassment includes, but is not limited to
 Abuse includes, but is not limited to
 - Trolling, misdirection, and disrespectful use of resources and access
 
-If you have been harassed or have witnessed abuse, please bring this to the attention of the group organizers (in meetings) or to members of the steering committee.
+If you have been harassed or have witnessed abuse, please bring this to the attention of the group organizers (in meetings).
 
 While in practice most actions from moderators and administrators will be friendly reminders, they should act on complaints/reports quickly and involve other team members if necessary. They should take appropriate, usually private, action if they see any abuse or harassment. They must be sensitive to cultural differences, time zones, etc., but take prompt action when necessary.
 
@@ -68,10 +67,6 @@ Projects are a touchstone for new members who want to participate, and we encour
 
 Projects should form their own topics within Slack. Many start with the prefix *#proj-*. See [Project/Discussion Channels](#slack).
 
-## Steering Committee
-<a name="steering-committee" />
-TWC is supported by a steering committee consisting of long-time and active participants. The committee facilitates the creation of group structures, initiatives, maintains shared resources (like Slack), and works to foster common goals and purpose within the organization. If you are interested in participating in the steering committee, please send a note to [steering@techworkersco.org](mailto:steering@techworkersco.org), or post in the #proj-steering channel.
-
 ## Slack
 <a name="slack" />
 
@@ -83,7 +78,6 @@ TWC is supported by a steering committee consisting of long-time and active part
 
 ### Channel Guide
 Channels come and go on Slack, but here are some long-living channels:
-- #proj-steering: discuss the steering of TWC
 - #articles: interesting reads
 - #calendar: TWC events calendar items
 - #events: things going on that you might want to know about (not limited to TWC events)
@@ -93,6 +87,7 @@ Channels come and go on Slack, but here are some long-living channels:
 
 ## Document History
 <a name="document-history" />
+- *2019-12-11: Removal of defunct steering committee as per consensus between several locals*
 - *2019-11-04: Clarification regarding membership requirements*
 - *2018-07-22: Deleted old and out-of-date information, RK*
 - *2017-02-26: Initial draft, Steering committee*
