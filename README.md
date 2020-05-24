@@ -33,7 +33,7 @@ Note, only the default [en.yml](_i18n/en.yml) must contain the names of each lan
 Each translation file, should have same version as other languages. Sometimes that is not possible, and having different versions, helps document the disparities. For example, a new city is added, but no translation is provided in Russian yet.
 
 ### Supported Pages
-* Landing Page (home.html in each Language directory)
+* Landing Page [index.md](index.md)
 
 ### Supported Languages
 * English
