@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta http-equiv="Content-Security-Policy" content="base-uri 'none'; connect-src 'self'; default-src 'none'; block-all-mixed-content; font-src 'self'; form-action 'self'; img-src 'self'; manifest-src 'self'; object-src 'none'; script-src 'self' ajax.googleapis.com; style-src 'self' 'unsafe-inline'">
   <style>
     {% capture styles %}
       {% include normalize.css %}
