@@ -1,13 +1,71 @@
-<header class="header" role="banner">
-  <div>
-    <a href="/">
-      <h1 class="logo">{{ site.title }}</h1>
-      <p class="work">Tech <span class="link">Workers</span> Coalition</p>
-    </a>
+<header class="header flex flex-row fixed w-full" role="banner">
+  <div class="contain flex flex-row ai-ctr justify-between">
+    <div class="flex flex-row ai-ctr">
+      <a href="/">
+        <img
+          alt=""
+          class="marg-r-2"
+          height="36"
+          src="/assets/img/logo.svg"
+          width="36"
+        />
+      </a>
+      <h1 class="title mob-hide">
+        <a href="/">
+          Tech <span class="link">Workers</span> Coalition
+        </a>
+      </h1>
+    </div>
+    <div class='flex flex-row ai-ctr'>
+      <div class="flex flex-row ai-ctr rel marg-r-2">
+        <button class="flex flex-row ai-ctr" id="langBtn" role="button">
+          <img
+            alt=""
+            height="16"
+            class="marg-r-1"
+            src="/assets/img/globe.svg"
+            width="16"
+          />
+          {{ site.lang }}
+        </button>
+        <ul id="langNav" class="navOverlay abs hide list-style-none">
+          {% for lang in site.languages %}
+            <li>
+              {% if site.lang == lang %}
+                <div class="p-2 border-b-1">
+                  {% t langs.{{ lang }} %}
+                </div>
+              {% else %}
+                <a href="{% tl {{ page.namespace }} {{ lang }} %}">
+                  {% t langs.{{ lang }} %}
+                </a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="flex flex-row ai-ctr rel">
+        <button class="flex" id="navBtn" role="button">
+          <img
+            alt=""
+            height="20"
+            src="/assets/img/ham.svg"
+            width="20"
+          />
+        </button>
+        <ul id="nav" class="navOverlay abs hide list-style-none" role="navigation">
+          {% for link in site.header_links %}
+            <li>
+              <a href="{{ link.url }}">{{ link.text }}</a>
+            </li>
+          {% endfor %}
+          <li>
+            <a nofollow noreferrer target="_blank" href="https://twitter.com/techworkersco">Twitter <img alt="" src="/assets/img/external.svg" height="14" width="14" /></a></li>
+            <li><a nofollow noreferrer target="_blank" href="https://www.facebook.com/TechWorkersCoalition">Facebook <img alt="" src="/assets/img/external.svg" height="14" width="14" /></a></li>
+            <li><a nofollow noreferrer target="_blank" href="https://medium.com/tech-workers-coalition">Medium <img alt="" src="/assets/img/external.svg" height="14" width="14" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <ul class="supporting-links">
-    {% for link in site.header_links %}
-      <li><a href="{{ link.url }}">{{ link.text }}</a></li>
-    {% endfor %}
-  </ul>
 </header>

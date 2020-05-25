@@ -6,8 +6,8 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <style>
     {% capture styles %}
-      {% include main.scss %}
       {% include normalize.css %}
+      {% include main.scss %}
     {% endcapture %}
     {{ styles | scssify }}
   </style>
@@ -15,5 +15,4 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <link rel="shortcut icon" href="/assets/favicon2.png" type="image/x-icon">
   <link rel="icon" href="/assets/favicon2.png" type="image/x-icon">
-  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>

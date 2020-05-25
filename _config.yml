@@ -37,20 +37,20 @@ exclude:
 languages: ["en", "ru", "it"]
 exclude_from_localizations: ["assets"]
 header_links:
-  - url: /#learn
-    text: Learn
-  - url: /#connect
-    text: Connect
   - url: /subscribe
-    text: Join
-footer_links:
-  - url: https://sites.google.com/view/tech-workers-coalition/learning-club
-    text: Learning Club
-    newTab: true
-  # - url: /contact-us/
-  #   text: Contact
+    text: Join Slack
   - url: /community-guide/
     text: Community Guide
+  - url: https://news.techworkerscoalition.org/subscribe/
+    text: Newsletter
+footer_links:
+  # - url: https://sites.google.com/view/tech-workers-coalition/learning-club
+  #   text: Learning Club
+  #   newTab: true
+  # - url: /contact-us/
+  #   text: Contact
+  # - url: /community-guide/
+  #   text: Community Guide
   - url: https://medium.com/tech-workers-coalition
     text: Medium Blog
     newTab: true

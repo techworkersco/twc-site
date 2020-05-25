@@ -7,7 +7,7 @@ global:
   404: Page not found
 home:
   title: |
-    <span>Worker</span> power in the tech industry
+    <span class="red">Worker</span> power in the tech industry
   summary: Guided by our vision for an inclusive & equitable tech industry, TWC organizes to build worker power through rank & file self-organization and education.
   who_we_are:
     title: Who we are
@@ -49,9 +49,9 @@ home:
   social_media:
     title: TWC on social media
     links: |
-      <li><a target="_blank" href="https://twitter.com/techworkersco">Twitter</a></li>
-      <li><a target="_blank" href="https://www.facebook.com/TechWorkersCoalition">Facebook</a></li>
-      <li><a target="_blank" href="https://medium.com/tech-workers-coalition">Medium Blog</a></li>
+      <li><a nofollow noreferrer target="_blank" href="https://twitter.com/techworkersco">Twitter <img alt="" src="/assets/img/external.svg" /></a></li>
+      <li><a nofollow noreferrer target="_blank" href="https://www.facebook.com/TechWorkersCoalition">Facebook <img alt="" src="/assets/img/external.svg" /></a></li>
+      <li><a nofollow noreferrer target="_blank" href="https://medium.com/tech-workers-coalition">Medium <img alt="" src="/assets/img/external.svg" /></a></li>
   contact_us:
     title: Contact us
     description: |
