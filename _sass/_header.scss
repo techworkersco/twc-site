@@ -18,8 +18,8 @@ header {
 .title {
   font-size: 21px;
 
-  span {
-    color: #212121;
+  @include mobile {
+    font-size: 16px;
   }
 }
 

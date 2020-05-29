@@ -50,7 +50,6 @@ permalink: /nyc/
 
 <div class="flex jBetween bottomLinks">
   <ul class="flex social">
-   <li><a href="https://www.facebook.com/TechWorkersCoalition">Facebook (National)</a></li>
    <li><a href="https://www.meetup.com/Tech-Workers-Coalition-NYC">Meetup (NYC)</a></li>
    <li><a href="https://twitter.com/techworkerscony">Twitter (NYC)</a></li>
   </ul>

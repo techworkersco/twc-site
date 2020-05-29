@@ -8,7 +8,7 @@ permalink: /community-guide/
 [Slack](#slack)<br>
 [Document History](#document-history)
 
-# Our Values and Code of Conduct
+<h1 class="lh-tight marg-b-4">Our Values and Code of Conduct</h1>
 <a name="our-values" />
 
 The Tech Workers Coalition seeks to redefine the relationship between tech workers and Bay Area communities. Through activism, civic engagement, direct action, and education, we work in solidarity with existing movements towards social justice and economic inclusion.

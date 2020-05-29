@@ -1,18 +1,16 @@
 <header class="header flex flex-row fixed w-full" role="banner">
   <div class="contain flex flex-row ai-ctr justify-between">
     <div class="flex flex-row ai-ctr">
-      <a href="/">
-        <img
-          alt=""
-          class="marg-r-2"
-          height="36"
-          src="/assets/img/logo.svg"
-          width="36"
-        />
-      </a>
-      <h1 class="title mob-hide">
+      <img
+        alt=""
+        class="marg-r-2 m:hide"
+        height="30"
+        src="/assets/img/logo.svg"
+        width="30"
+      />
+      <h1 class="title">
         <a href="/">
-          Tech <span class="link">Workers</span> Coalition
+          Tech <span class="black">Workers</span> Coalition
         </a>
       </h1>
     </div>
@@ -44,7 +42,8 @@
           {% endfor %}
         </ul>
       </div>
-      <div class="flex flex-row ai-ctr rel">
+
+      <div class="flex flex-row ai-ctr rel d:hide marg-r-2">
         <button class="flex" id="navBtn" role="button">
           <img
             alt=""
@@ -54,16 +53,71 @@
           />
         </button>
         <ul id="nav" class="navOverlay abs hide list-style-none" role="navigation">
-          {% for link in site.header_links %}
-            <li>
-              <a href="{{ link.url }}">{{ link.text }}</a>
+          {% for link in site.links %}
+            {% if link.newTab %}
+              <li class="flex flex-row ai-ctr">
+                <a
+                  nofollow
+                  noreferrer
+                  target="_blank"
+                  href="{{ link.url }}">
+                  {{ link.text }} <img
+                    alt=""
+                    src="/assets/img/external.svg"
+                    height="14"
+                    width="14"
+                  />
+                </a>
+              </li>
+              {% else %}
+                <li>
+                  <a href="{{ link.url }}">{{ link.text }}</a>
+                </li>
+              {% endif %}
             </li>
           {% endfor %}
-          <li>
-            <a nofollow noreferrer target="_blank" href="https://twitter.com/techworkersco">Twitter <img alt="" src="/assets/img/external.svg" height="14" width="14" /></a></li>
-            <li><a nofollow noreferrer target="_blank" href="https://www.facebook.com/TechWorkersCoalition">Facebook <img alt="" src="/assets/img/external.svg" height="14" width="14" /></a></li>
-            <li><a nofollow noreferrer target="_blank" href="https://medium.com/tech-workers-coalition">Medium <img alt="" src="/assets/img/external.svg" height="14" width="14" /></a>
+        </ul>
+      </div>
+
+      <div class="flex flex-row ai-ctr rel">
+        <button class="flex" id="chapterBtn" role="button">
+          <img
+            alt=""
+            height="20"
+            src="/assets/img/local.svg"
+            width="20"
+          />
+        </button>
+        <ul
+          id="chapterNav"
+          role="navigation"
+          class="navOverlay abs hide list-style-none">
+          <li class="p-2 border-b-1">
+            Join a Chapter
           </li>
+          {% for link in site.chapters %}
+            {% if link.newTab %}
+              <li class="flex flex-row ai-ctr">
+                <a
+                  nofollow
+                  noreferrer
+                  target="_blank"
+                  href="{{ link.url }}">
+                  {{ link.text }} <img
+                    alt=""
+                    src="/assets/img/external.svg"
+                    height="14"
+                    width="14"
+                  />
+                </a>
+              </li>
+              {% else %}
+                <li>
+                  <a href="{{ link.url }}">{{ link.text }}</a>
+                </li>
+              {% endif %}
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>

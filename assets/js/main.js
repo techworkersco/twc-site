@@ -1,14 +1,20 @@
 $(document).ready(function() {
   $('#navBtn').on('click', function(event) {
-    console.log('test?');
     $('#nav').toggleClass('hide');
     $('#langNav').addClass('hide');
+    $('#chapterNav').addClass('hide');
   });
 
   $('#langBtn').on('click', function(event) {
-    console.log('test 2?');
     $('#langNav').toggleClass('hide');
     $('#nav').addClass('hide');
-  })
+    $('#chapterNav').addClass('hide');
+  });
+
+  $('#chapterBtn').on('click', function(event) {
+    $('#chapterNav').toggleClass('hide');
+    $('#nav').addClass('hide');
+    $('#langNav').addClass('hide');
+  });
 })
 

@@ -4,7 +4,7 @@ namespace: home
 permalink: /
 ---
 
-<h1 class="marg-b-2">{% t home.title %}</h1>
+<h1 class="lh-tight marg-b-3">{% t home.title %}</h1>
 <h2 class="grey marg-b-4">{% t home.summary %}</h2>
 
 <h3>{% t home.who_we_are.title %}</h3>
@@ -22,7 +22,9 @@ permalink: /
 <h3>{% t home.check_out_meeting.title %}</h3>
 <p>{% t home.check_out_meeting.locations %}</p>
 
-{% include collective-actions.html %}
+<div class="marg-b-4">
+  <h3>{% t home.contact_us.title %}</h3>
+  {% t home.contact_us.description %}
+</div>
 
-<h3>{% t home.contact_us.title %}</h3>
-{% t home.contact_us.description %}
+{% include collective-actions.html %}
