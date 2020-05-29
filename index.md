@@ -4,8 +4,8 @@ namespace: home
 permalink: /
 ---
 
-<h1>{% t home.title %}</h1>
-<h2 class="grey marg-b-3">{% t home.summary %}</h2>
+<h1 class="marg-b-2">{% t home.title %}</h1>
+<h2 class="grey marg-b-4">{% t home.summary %}</h2>
 
 <h3>{% t home.who_we_are.title %}</h3>
 <p>{% t home.who_we_are.description %}</p>

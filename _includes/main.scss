@@ -114,12 +114,20 @@ ul {
   margin-bottom: 1rem;
 }
 
+.marg-b-4 {
+  margin-bottom: 2rem;
+}
+
 .marg-r-1 {
   margin-right: 4px;
 }
 
 .marg-r-2 {
   margin-right: 8px;
+}
+
+.marg-r-3 {
+  margin-right: 1rem;
 }
 
 .uppercase {
@@ -135,8 +143,19 @@ ul {
   flex-direction: column;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
+/* TODO fix these */
 .flex-row {
   flex-direction: row !important;
+}
+
+.m:flex-col {
+  @include mobile {
+    flex-direction: column !important;
+  }
 }
 
 .justify-between {
@@ -268,54 +287,12 @@ label {
   font-weight: 500;
 }
 
-// .thumbnail {
-//   position: relative;
-//   margin-top: 20px;
-//   padding: 2px;
-//   background-color: white;
-//   border: 1px solid grey;
-//   img {
-//     width: 100%;
-//   }
-//   &:hover {
-//     .overlay {
-//       opacity: 0.8;
-//     }
-//   }
-//   .overlay {
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     height: 100%;
-//     width: 100%;
-//     opacity: 0;
-//     transition: 0.5s ease;
-//     background-color: #0d544f;
-//     .text {
-//       color: white;
-//       font-size: 20px;
-//       position: absolute;
-//       top: 50%;
-//       left: 50%;
-//       transform: translate(-50%, -50%);
-//       -ms-transform: translate(-50%, -50%);
-//     }
-//   }
-// }
-
 .highlight {
   background: yellow;
 }
 
-.climate-container{
-  margin-left: auto;
-  margin-right: auto;
-
-  text-align: justify;
-  -ms-text-justify: distribute-all-lines;
-  text-justify: distribute-all-lines;
+.justify-center {
+  justify-content: center;
 }
 
 .clear {

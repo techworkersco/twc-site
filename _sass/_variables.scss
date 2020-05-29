@@ -6,6 +6,12 @@ $black: rgb(2, 14, 15);
 $tablet-width: 760px;
 $mobile-width: 420px;
 
+@mixin desktop {
+  @media screen and (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media screen and (max-width: #{$tablet-width}) {
     @content;
