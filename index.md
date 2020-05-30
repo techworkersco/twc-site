@@ -27,4 +27,6 @@ permalink: /
   {% t home.contact_us.description %}
 </div>
 
-{% include collective-actions.html %}
+{% if site.lang == 'en' %}
+  {% include collective-actions.html %}
+{% endif %}
