@@ -5,7 +5,7 @@ langs:
   it: Italiano
 home:
   title: |
-    <span>Potere ai lavoratori</span> del settore tecnologico.
+    Potere ai <span class="red">lavoratori</span> del settore tecnologico.
   summary: Guidati da una visione inclusiva ed egualitaria nel settore tecnologico, la TWC opera per rafforzare il ruolo del lavoratore attraverso la formazione e l'auto-organizzazione diffusa.
   who_we_are:
     title: Chi siamo
@@ -48,7 +48,7 @@ home:
     links: |
       <li><a target="_blank" href="https://twitter.com/techworkersco">Twitter</a></li>
       <li><a target="_blank" href="https://www.facebook.com/TechWorkersCoalition">Facebook</a></li>
-      <li><a target="_blank" href="https://medium.com/tech-workers-coalition">Medium Blog</a></li>
+      <li><a target="_blank" href="https://medium.com/tech-workers-coalition">Medium</a></li>
   contact_us:
     title: Contattaci
     description: |

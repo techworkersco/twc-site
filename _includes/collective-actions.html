@@ -1,16 +1,16 @@
-<h3> Recent Collective Actions by Tech Workers</h3>
+<h3 class="txt-2"> Recent Collective Actions by Tech Workers</h3>
 {% assign actions = site.data.collective-actions | reverse %}
 {% for action in actions | limit: 5 %}
   <div class="action">
     <b><time datetime="{{ action.date | date: '%Y-%m-%d' }}">{{ action.date | date: '%-d %B %Y' }}</time></b>
-    <div class="description">
+    <p>
       {{action.description}}
       {% assign source_count = 0 %}
       {% for source in action.sources %}
         {% assign source_count = source_count | plus: 1 %}
         <sup><a href="{{source}}">[{{source_count}}]</a></sup>
       {% endfor %}
-    </div>
+    </p>
   </div>
 
 {% endfor %}

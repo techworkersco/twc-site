@@ -4,16 +4,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta http-equiv="Content-Security-Policy" content="base-uri 'none'; connect-src 'self'; default-src 'none'; block-all-mixed-content; font-src 'self'; form-action 'self'; img-src 'self'; manifest-src 'self'; object-src 'none'; script-src 'self' ajax.googleapis.com; style-src 'self' 'unsafe-inline'">
   <style>
     {% capture styles %}
-      {% include main.scss %}
       {% include normalize.css %}
+      {% include main.scss %}
     {% endcapture %}
     {{ styles | scssify }}
   </style>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <link rel="shortcut icon" href="/assets/favicon2.png" type="image/x-icon">
-  <link rel="icon" href="/assets/favicon2.png" type="image/x-icon">
-  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
 </head>
