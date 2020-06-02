@@ -1,9 +1,12 @@
 # 1.0.0
 langs:
+  en: English
   ru: Русский
+  it: Italiano
+
 home:
   title: |
-    Сила <span>рабочих</span> в тех-индустрии
+    Сила <span class="red">рабочих</span> в тех-индустрии
   summary: Наша мечта — справедливая IT-отрасль, без дискриминации. Мы строим Коалицию Рабочих IT(Tech Workers Coalition, TWC), чтобы обрести влияние путём низовой самоорганизации и самообразования.
   who_we_are:
     title: Кто мы
@@ -32,7 +35,7 @@ home:
     links: |
       <li><a target="_blank" href="https://twitter.com/techworkersco">Twitter</a></li>
       <li><a target="_blank" href="https://www.facebook.com/TechWorkersCoalition">Facebook</a></li>
-      <li><a target="_blank" href="https://medium.com/tech-workers-coalition">Medium Blog</a></li>
+      <li><a target="_blank" href="https://medium.com/tech-workers-coalition">Medium</a></li>
   contact_us:
     title: Связаться с нами
     description: |

@@ -1,132 +1,56 @@
 @import "variables";
 
 header {
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
-  @include mobile {
-    padding: 0.25em;
-  }
-}
-
-.header {
+  background: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  height: 60px;
+  left: 0;
   position: fixed;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  background-color: white;
+  right: 0;
+  top: 0;
   z-index: 9;
 
-  display: flex;
-  justify-content: space-between;
-
-  .logo {
-    background-color: none;
-    background-image: url("/assets/css/images/favicon2.png");
-    float: left;
-    font-size: 1.75em;
-    line-height: 1em;
-    height: 58px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    text-indent: -99999px;
-    width: 58px;
-    margin-top: 0.25em;
-    margin-left: 1em;
-
-    @include mobile {
-      background-size: cover;
-      margin-left: 0.25em;
-    }
-
-    a {
-      text-decoration: none;
-      padding-top: 1.25em;
-      padding-left: 0.1em;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-  }
-
-  .supporting-links {
-    font-size: 1.125em;
-    float: right;
-    list-style-type: none;
-    padding: 0;
-    display: inline-flex;
-    margin-right: 1em;
-
-    @include mobile {
-      font-size: 1em;
-      display: block;
-      text-align: right;
-
-      li {
-        &:nth-child(2) {
-          display: none;
-        }
-        &:nth-child(1) {
-          display: none;
-        }
-      }
-    }
-
-    a {
-      text-decoration: none;
-      &:link {
-        color: #212121;
-      }
-      &:visited {
-        color: #212121;
-      }
-      &:hover {
-        color: #e6141b;
-      }
-      &:focus {
-        color: #e6141b;
-      }
-      &:active {
-        color: #212121;
-      }
-    }
-
-    li {
-      text-transform: uppercase;
-      font-weight: 600;
-      margin: auto;
-      padding-left: 1em;
-      padding-right: 1em;
-
-      &:nth-child(3) a {
-        background-color: #212121;
-        color: white;
-        padding: 8px 25px;
-        border-radius: 100px;
-        &:hover {
-          background-color: #e6141b;
-        }
-      }
-    }
-  }
-
-  .work {
-    font-weight: 100;
-    margin-left: 1em;
-    display: -webkit-inline-box;
-    text-transform: uppercase;
+  a {
     text-decoration: none;
-    font-size: 24px;
-    color: #e6141b;
-
-    @media screen and (max-width: 915px) {
-      display: none;
-    }
-
-    span {
-      font-weight: 600;
-      color: #212121;
-    }
   }
 }
+
+.title {
+  font-size: 21px;
+
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+// .supporting-links {
+//   li {
+//     &:nth-child(3) a {
+//       background: #212121;
+//       border-radius: 100px;
+//       color: #fff;
+//       padding: 8px 25px;
+//       &:hover {
+//         background: #e6141b;
+//       }
+//     }
+//   }
+
+//   // a {
+//   //   &:link {
+//   //     color: #212121;
+//   //   }
+//   //   &:visited {
+//   //     color: #212121;
+//   //   }
+//   //   &:hover {
+//   //     color: #e6141b;
+//   //   }
+//   //   &:focus {
+//   //     color: #e6141b;
+//   //   }
+//   //   &:active {
+//   //     color: #212121;
+//   //   }
+//   // }
+// }
