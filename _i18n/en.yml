@@ -9,6 +9,9 @@ home:
   title: |
     <span class="red">Worker</span> power in the tech industry
   summary: Guided by our vision for an inclusive & equitable tech industry, TWC organizes to build worker power through rank & file self-organization and education.
+  black_lives_matter:
+    title: Black Lives Matter
+    description: We encourage Tech Workers to stand with the Black Lives Matter movement as they fight for justice. To that end, we've put together <a href="/security">a list of security guides here</a> you can use to help protect yourself and your comrades.
   who_we_are:
     title: Who we are
     description: We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends.
@@ -21,8 +24,7 @@ home:
   how_we_work:
     title: How we work
     description: |
-      We’re a democratically structured, all-volunteer, and worker-led organization. At this point, membership consists of attending meetings in person and working on the various projects that people are interested in. We organize online but IRL is the crux
-      of what we do. Check out our <a href="/community-guide">Community Guide</a> for more info.
+      We’re a democratically structured, all-volunteer, and worker-led organization. At this point, membership consists of attending meetings in person and working on the various projects that people are interested in. We organize online but IRL is the crux of what we do. Check out our <a href="/community-guide">Community Guide</a> for more info. Join the <a href="/subscribe">Slack</a> to connect with a local in your area.
   check_out_meeting:
     title: Check out a meeting
     locations: |
@@ -56,4 +58,4 @@ home:
     title: Contact us
     description: |
       <p>We’re also happy to chat, answer any questions you might have, or hear about any social justice efforts in which you need a partner. <a href="mailto:hello@techworkersco.org">Send us an email.</a></p>
-        <p>If you’re a member of the press, please get in touch with us through <a href="mailto:press@techworkersco.org">press@techworkersco.org.</a></p>
+      <p>If you’re a member of the press, please get in touch with us through <a href="mailto:press@techworkersco.org">press@techworkersco.org.</a></p>
