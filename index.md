@@ -7,6 +7,11 @@ permalink: /
 <h1 class="lh-tight marg-b-3">{% t home.title %}</h1>
 <h2 class="grey marg-b-4">{% t home.summary %}</h2>
 
+<div class="marg-b-3 p-3 bg-black">
+  <h3 class="white">{% t home.black_lives_matter.title %}</h3>
+  <p>{% t home.black_lives_matter.description %}</p>
+</div>
+
 <h3>{% t home.who_we_are.title %}</h3>
 <p>{% t home.who_we_are.description %}</p>
 
