@@ -1,4 +1,4 @@
-Our Values and Code of Conduct](#our-values)<br>
+[Our Values and Code of Conduct](#our-values)<br>
 [Projects](#projects)<br>
 [Slack](#slack)<br>
 [Document History](#document-history)
