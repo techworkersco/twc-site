@@ -3,7 +3,8 @@ langs:
   en: English
   ru: Русский
   it: Italiano
-  pt: Português 
+  pt: Português (BR)
+
 global:
   404: Page not found
 home:

@@ -1,9 +1,7 @@
 # 1.0.0
 langs:
-  en: English
-  ru: Русский
-  it: Italiano
   pt: Português
+
 global:
   404: Página não encontrada
 home:
