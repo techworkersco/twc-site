@@ -3,6 +3,8 @@ langs:
   en: English
   ru: Русский
   it: Italiano
+  pt: Português (BR)
+
 global:
   404: Page not found
 home:
@@ -33,6 +35,7 @@ home:
       <a href="https://twitter.com/twc_bangalore">Bangalore</a>,
       <a href="https://techworkersberlin.com/">Berlin</a>,
       <a href="https://boston.techworkerscoalition.org/">Boston</a>,
+      <a href="/brasil">Brasil</a>,
       <a href="/chicago">Chicago</a>,
       <a href="/dc">DC</a>,
       <a href="https://www.meetup.com/Tech-Workers-Coalition-LA/">LA</a>,

@@ -39,3 +39,4 @@ Each translation file, should have same version as other languages. Sometimes th
 * English
 * Russian
 * Italian
+* Portuguese (BR)

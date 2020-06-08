@@ -1,0 +1,68 @@
+# 1.0.0
+langs:
+  en: English
+  ru: Русский
+  it: Italiano
+  pt: Português (BR)
+
+
+global:
+  404: Página não encontrada
+home:
+  title: |
+    <span class="red">Força do trabalhador</span> na indústria de tecnologia
+
+  summary: Guiados por nossa visão de uma indústria de tecnologia inclusiva e equitativa, a TWC se organiza para aumentar o poder do trabalhador por meio da auto-organização e educação.
+  black_lives_matter:
+    title: Vidas Negras Importam
+    description:
+      Encorajamos que trabalhadores da indústria de tecnologia se posicionem ao lado do movimento Vidas Negras Importam na luta por justiça. Para isso, nós reunimos <a href="/security">uma lista de guias de segurança aqui</a> (em inglês) que você pode usar para ajudar a proteger a si mesmo e outres camaradas.
+  who_we_are:
+    title: Quem somos
+    description: Somos uma aliança de trabalhadores dentro e ao redor da indústria de tecnologia, organizadores sindicais, organizadores de comunidades e amigos.
+  why_we_organize:
+    title: Por que nos organizamos
+    description: Organizamos atividades de ativismo, engajamento cívico e educação nos Estados Unidos, India, Inglaterra, Alemanha e Brasil.
+  who_we_support:
+    title: Quem apoiamos
+    description: Trabalhamos em solidariedade com os movimentos existentes em direção à justiça social, direitos dos trabalhadores e inclusão econômica.
+  how_we_work:
+    title: Como trabalhamos
+    description: |
+      Somos uma organização democraticamente estruturada, totalmente voluntária e liderada por trabalhadores. Nesse momento, a associação consiste em participar de reuniões pessoalmente e trabalhar em vários projetos nos quais as pessoas estão interessadas. Organizamos on-line, mas os encontros em vida real são o ponto crucial do que fazemos. Confira nosso <a href="/community-guide">Guia da comunidade</a>  para mais informações. Também entre no <a href="/subscribe">Slack</a> para se conectar com pessoas em sua região.
+
+  check_out_meeting:
+    title: Confira uma reunião
+    locations: |
+      Atualmente, temos reuniões regulares em:
+      <a href="/austin">Austin</a>,
+      <a href="https://twitter.com/twc_bangalore">Bangalore</a>,
+      <a href="https://techworkersberlin.com/">Berlim</a>,
+      <a href="https://boston.techworkerscoalition.org/">Boston</a>,
+      <a href="/brasil">Brasil</a>,
+      <a href="/chicago">Chicago</a>,
+      <a href="/dc">DC</a>,
+      <a href="https://www.meetup.com/Tech-Workers-Coalition-LA/">LA</a>,
+      <a href="/london">Londres</a>,
+      <a href="/nyc">Nova York</a>,
+      <a href="/pdx">PDX</a>,
+      <a href="https://www.meetup.com/TWCSanDiego">San Diego</a>,
+      <a href="/seattle">Seattle</a>,
+      and <a href="/sf-bay-area">São Franscisco Bay Area</a>
+  join_discussion:
+    title: Participe da discussão e fique sabendo das últimas notícias
+    links: |
+      <li><a href="/subscribe">Slack</a></li>
+      <li><a href="https://news.techworkerscoalition.org/subscribe/">Newsletter</a></li>
+      <li><a target="_blank" href="https://sites.google.com/view/tech-workers-coalition/learning-club">Learning Club</a></li>
+  social_media:
+    title: TWC nas midias sociais
+    links: |
+      <li><a nofollow noreferrer target="_blank" href="https://twitter.com/techworkersco">Twitter <img alt="" src="/assets/img/external.svg" /></a></li>
+      <li><a nofollow noreferrer target="_blank" href="https://www.facebook.com/TechWorkersCoalition">Facebook <img alt="" src="/assets/img/external.svg" /></a></li>
+      <li><a nofollow noreferrer target="_blank" href="https://medium.com/tech-workers-coalition">Medium <img alt="" src="/assets/img/external.svg" /></a></li>
+  contact_us:
+    title: Entre em contato
+    description: |
+      <p>Também estamos felizes em conversar, responder a quaisquer perguntas que você possa ter ou ouvir qualquer esforço de justiça social em que você precise de um parceiro.<a href="mailto:hello@techworkersco.org">Envie-nos um e-mail.</a></p>
+      <p>Se você é membro da imprensa, entre em contato conosco através do <a href="mailto:press@techworkersco.org">press@techworkersco.org.</a></p>
