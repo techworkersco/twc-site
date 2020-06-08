@@ -34,8 +34,11 @@ Each translation file, should have same version as other languages. Sometimes th
 
 ### Supported Pages
 * Landing Page [index.md](index.md)
+* Community Guide [_i18n/en/guide.md](_i18n/en/guide.md) and [guide.md](guide.md)
 
 ### Supported Languages
 * English
 * Russian
+* Portuguese
 * Italian
+* Portuguese (BR)

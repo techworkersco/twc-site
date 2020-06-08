@@ -34,7 +34,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-languages: ["en", "ru", "it"]
+languages: ["en", "it", "pt", "ru"]
 exclude_from_localizations: ["assets"]
 chapters:
   - url: /austin
@@ -44,6 +44,9 @@ chapters:
     newTab: true
   - url: https://techworkersberlin.com/
     text: Berlin
+    newTab: true
+  - url: /brasil
+    text: Brasil
     newTab: true
   - url: https://boston.techworkerscoalition.org/
     text: Boston
