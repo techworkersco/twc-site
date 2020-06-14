@@ -42,3 +42,4 @@ Each translation file, should have same version as other languages. Sometimes th
 * Portuguese
 * Italian
 * Portuguese (BR)
+* Spanish (ES)
