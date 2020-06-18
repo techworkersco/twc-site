@@ -15,9 +15,6 @@ permalink: /
 <h3>{% t home.who_we_are.title %}</h3>
 <p>{% t home.who_we_are.description %}</p>
 
-<h3>{% t home.why_we_organize.title %}</h3>
-<p>{% t home.why_we_organize.description %}</p>
-
 <h3>{% t home.who_we_support.title %}</h3>
 <p>{% t home.who_we_support.description %}</p>
 
