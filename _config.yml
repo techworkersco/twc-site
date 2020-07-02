@@ -54,6 +54,9 @@ chapters:
     text: Chicago
   - url: /dc
     text: DC
+  - url: https://twc-italia.org/
+    text: Italia
+    newTab: true
   - url: https://www.meetup.com/Tech-Workers-Coalition-LA
     text: LA
     newTab: true
