@@ -92,6 +92,9 @@ links:
   - url: https://www.facebook.com/TechWorkersCoalition
     text: Facebook
     newTab: true
+  - url: https://collectiveaction.tech/
+    text: CollectiveActions.Tech
+    newTab: true
 sass:
   style: compressed
 
