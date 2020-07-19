@@ -34,7 +34,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-languages: ["en", "es", "it", "pt", "ru"]
+languages: ["en", "es", "fr", "it", "pt", "ru"]
 exclude_from_localizations: ["assets"]
 chapters:
   - url: /austin
