@@ -5,6 +5,7 @@ langs:
   it: Italiano
   pt: Português (BR)
   es: Español (ES)
+  fr: Français
 
 global:
   404: Page not found
