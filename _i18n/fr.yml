@@ -3,7 +3,7 @@ langs:
   fr: Français
 
 global:
-  404: Page not found
+  404: Page non trouvée
 home:
   title: |
     Le pouvoir des <span class="red">travailleurs</span> dans l'industrie de la technologie
@@ -60,4 +60,3 @@ home:
     description: |
       <p>Nous sommes également heureux de discuter, de répondre à toutes vos questions ou d'entendre parler de tout effort de justice sociale dans lequel vous avez besoin d'un partenaire. <a href="mailto:hello@techworkersco.org">Envoyez-nous un e-mail.</a></p>
       <p>Si vous êtes membre de la presse, veuillez nous contacter via <a href="mailto:press@techworkersco.org">press@techworkersco.org.</a></p>
-
