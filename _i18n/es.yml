@@ -10,7 +10,7 @@ home:
   summary: Guiados por nuestra visión de una industria tecnológica inclusiva y equitativa, TWC se organiza para fomentar el poder entre los trabajadores mediante la educación y la autoorganización.
   black_lives_matter:
     title: Black Lives Matter
-    description: Animamos a los trabajadores de la industria tecnológica a apoyar el movimiento Black Lives Matter en su lucha por la justicia. Por ello, hemos reunido <a href="/security">una lista de guías de seguridad</a> (en inglés) que puedes usar para protegerte a ti y a tu camaradas.
+    description: Animamos a los trabajadores de la industria tecnológica a apoyar el movimiento Black Lives Matter en su lucha por la justicia. Por ello, hemos reunido <a class="hover:white" href="/security">una lista de guías de seguridad</a> (en inglés) que puedes usar para protegerte a ti y a tu camaradas.
   who_we_are:
     title: Quiénes somos
     description: Somos una coalición de trabajadores, tanto partícipes como adyacentes a la industria tecnológica, organizadores laborales, organizadores comunitarios, y amigos.
@@ -23,9 +23,9 @@ home:
   how_we_work:
     title: Cómo trabajamos
     description: |
-      Somos una organización democráticamente estructurada, totalmente voluntaria, y liderada por trabajadores. Actualmente, la membresía consiste en asistir a reuniones en persona y participar en los diversos proyectos en los que la gente esté interesada. Nos organizamos online pero el eje central de lo que hacemos es en persona. Visita nuestra <a href="/community-guide">Guía Comunitaria</a> (en inglés) para obtener más información. También puedes unirte a <a href="/subscribe">Slack</a> para conectarte con personas afines en tu área.
+      Somos una organización estructurada democráticamente, totalmente voluntaria, y liderada por trabajadores. Actualmente, la actividad de los miembros consiste en asistir a reuniones en persona y participar en los diversos proyectos en los que la gente esté interesada. Nos organizamos online pero el eje central de lo que hacemos es en persona. Visita nuestra <a href="/community-guide">Guía Comunitaria</a> (en inglés) para obtener más información. También puedes unirte a <a href="/subscribe">Slack</a> para conectarte con personas afines en tu área.
   check_out_meeting:
-    title: Atiende una reunión
+    title: Asiste a una reunión
     locations: |
       Actualmente, tenemos reuniones regulares en
       <a href="/austin">Austin</a>,
@@ -42,7 +42,7 @@ home:
       <a href="/pdx">Portland, OR</a>,
       <a href="https://www.meetup.com/TWCSanDiego">San Diego</a>,
       <a href="/seattle">Seattle</a>,
-      and <a href="/sf-bay-area">Bahía de San Francisco</a>
+      y <a href="/sf-bay-area">Bahía de San Francisco</a>
   join_discussion:
     title: Únete a la discusión y mantente al día
     links: |
