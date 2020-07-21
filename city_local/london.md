@@ -20,9 +20,6 @@ the month at [MayDay Rooms](http://www.maydayrooms.org/). We also hold various
 other meetings, learning clubs, and workers' inquiries, along with other
 organising.
 
-A calendar of all our upcoming public events is available
-[here](https://calendar.google.com/calendar/embed?src=enk8hlrmu1dv15e4s2hf0lrbb0%40group.calendar.google.com&ctz=Europe%2FLondon).
-
 Our definition of a "tech worker" is anyone involved in the tech industry in
 any capacity &mdash; including programmers, designers, product managers,
 students, gig workers (Uber drivers, Deliveroo riders etc.), and cleaners and
@@ -34,6 +31,8 @@ attend any public TWC London meetings.
 - Currently the best way to see what we're up to is to follow us on Twitter, at
   [@TechWorkersLDN](https://twitter.com/TechWorkersLDN), or on our
   [Facebook page](https://www.facebook.com/TechWorkersLDN).
+- We have a [calendar](https://calendar.google.com/calendar/embed?src=enk8hlrmu1dv15e4s2hf0lrbb0%40group.calendar.google.com&ctz=Europe%2FLondon)
+  for all our upcoming public events.
 - We can be securely contacted via email, at
 [techworkersldn@protonmail.com](mailto:techworkersldn@protonmail.com).
 - We are also on [the TWC Slack](/subscribe), in the `#local-uk-london`
