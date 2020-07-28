@@ -13,12 +13,14 @@ h1, .main-wrapper h2, h3 {
 
 This is the London, UK, chapter of the TWC. We started organising in early
 2019, and our first public meeting was at [Newspeak House](https://nwspk.com/)
-in September 2019.
+in September 2019, moving to [MayDay Rooms](http://www.maydayrooms.org/)
+thereafter.
 
-We now have regular monthly general meetings, usually on the first Wednesday of
-the month at [MayDay Rooms](http://www.maydayrooms.org/). We also hold various
-other meetings, learning clubs, and workers' inquiries, along with other
-organising.
+We now have regular monthly general meetings online, announced on
+[Twitter](https://twitter.com/TechWorkersLDN) and
+[Facebook](https://www.facebook.com/TechWorkersLDN), usually on the first
+Wednesday on the month. We also hold various other meetings, learning clubs,
+and workers' inquiries, along with other organising.
 
 Our definition of a "tech worker" is anyone involved in the tech industry in
 any capacity &mdash; including programmers, designers, product managers,
