@@ -165,6 +165,12 @@ ul {
   }
 }
 
+.m\:marg-r-2 {
+  @include mobile {
+    margin-right: 8px;
+  }
+}
+
 .marg-r-2 {
   margin-right: 8px;
 }
