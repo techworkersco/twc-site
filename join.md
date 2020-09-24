@@ -25,14 +25,14 @@ For joining the Slack, please keep in mind that you will be manually vetted acco
   <label class="marg-b-3" for="social">
     <div>
       <b>Please provide two links to social media handles.</b>
-      What we want is a way to validate that you meet the membership requirements laid out <a href="/community-guide#membership">here</a>. Linkedin is preferred, but anything that allows us to verify that you aren't a manager, journalist, etc is acceptable.
+      <div>We need a way to validate that you meet the membership requirements laid out <a href="/community-guide#membership">here</a>. Linkedin is preferred, but anything that allows us to verify that you aren't a manager, journalist, etc is acceptable.</div>
     </div>
     <input placeholder="LinkedIn/Twitter/etc" id="social" required type="url" name="social_media_1">
     <input placeholder="LinkedIn/Twitter/etc" type="url" required name="social_media_2">
   </label>
   <label class="marg-b-3" for="company_name">
     <div><b>Company Name</b> (optional):</div>
-    <div>Including a company name helps you vet you.</div>
+    <div>Including a company name helps us vet you.</div>
     <input id="company_name" type="text" name="company_name">
   </label>
   <label class="marg-b-3" for="referrer">
@@ -52,4 +52,4 @@ For joining the Slack, please keep in mind that you will be manually vetted acco
 
 # Don't qualify for the Slack?
 
-If you're a manager or someone not involved in tech, but you consider yourself a supporter of TWC, we recently setup a new 'Managers & Allies' slack you may join [here](https://join.slack.com/t/techworkersco-4fm8079/shared_invite/zt-h3jau11x-PIPDe4OWaGdYNNzv0RQbhQ).
+If you're a manager or someone not in tech, but you're a supporter of TWC, we recently setup a new 'Managers & Allies' slack you may join [here](https://join.slack.com/t/techworkersco-4fm8079/shared_invite/zt-h3jau11x-PIPDe4OWaGdYNNzv0RQbhQ).
