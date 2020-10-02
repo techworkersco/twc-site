@@ -7,14 +7,16 @@ module JekyllGetJson
   class GetJsonGenerator < Jekyll::Generator
     safe true
     priority :highest
+    @ran_once = false
 
     def generate(site)
+      return if @ran_once
       puts "Initializing jekyll_get_json plugin"
       config = site.config['jekyll_get_json']
       if !config
-        warn "No config".yellow
-        return
+      return  warn "No config".yellow unless config
       end
+
       if !config.kind_of?(Array)
         config = [config]
       end
@@ -23,7 +25,7 @@ module JekyllGetJson
         begin
           target = site.data[d['data']]
           source = JSON.load(open(d['json']))
-
+          @ran_once = true
           if source
             puts "Loading source: #{d['json']}"
           else
