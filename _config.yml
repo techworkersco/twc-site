@@ -21,7 +21,6 @@ baseurl: "" # the base hostname & protocol for your site, e.g. http://example.co
 twitter_username: techworkersco
 
 # Build settings
-markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
@@ -31,9 +30,7 @@ jekyll_get_json:
   json: "https://raw.githubusercontent.com/collective-action/tech/master/actions.json"
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor
+  - .jekyll-cache/
 languages: ["en", "es", "fr", "it", "pt", "ru"]
 exclude_from_localizations: ["assets"]
 chapters:
