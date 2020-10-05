@@ -14,6 +14,7 @@
         </a>
       </h1>
     </div>
+
     <div class='flex flex-row ai-ctr'>
       <div class="flex flex-row ai-ctr rel marg-r-2">
         <button class="flex flex-row ai-ctr" id="langBtn" role="button">
@@ -43,43 +44,7 @@
         </ul>
       </div>
 
-      <div class="flex flex-row ai-ctr rel d:hide marg-r-2">
-        <button class="flex" id="navBtn" role="button">
-          <img
-            alt=""
-            height="20"
-            src="/assets/img/ham.svg"
-            width="20"
-          />
-        </button>
-        <ul id="nav" class="navOverlay abs hide list-style-none" role="navigation">
-          {% for link in site.links %}
-            {% if link.newTab %}
-              <li class="flex flex-row ai-ctr">
-                <a
-                  nofollow
-                  noreferrer
-                  target="_blank"
-                  href="{{ link.url }}">
-                  {{ link.text }} <img
-                    alt=""
-                    src="/assets/img/external.svg"
-                    height="14"
-                    width="14"
-                  />
-                </a>
-              </li>
-              {% else %}
-                <li>
-                  <a href="{{ link.url }}">{{ link.text }}</a>
-                </li>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-
-      <div class="flex flex-row ai-ctr rel">
+      <div class="flex flex-row ai-ctr rel marg-r-2">
         <button class="flex" id="chapterBtn" role="button">
           <img
             alt=""
@@ -120,6 +85,43 @@
           {% endfor %}
         </ul>
       </div>
+
+      <div class="flex flex-row ai-ctr rel">
+        <button class="flex" id="navBtn" role="button">
+          <img
+            alt=""
+            height="20"
+            src="/assets/img/ham.svg"
+            width="20"
+          />
+        </button>
+        <ul id="nav" class="navOverlay abs hide list-style-none" role="navigation">
+          {% for link in site.links %}
+            {% if link.newTab %}
+              <li class="flex flex-row ai-ctr">
+                <a
+                  nofollow
+                  noreferrer
+                  target="_blank"
+                  href="{{ link.url }}">
+                  {{ link.text }} <img
+                    alt=""
+                    src="/assets/img/external.svg"
+                    height="14"
+                    width="14"
+                  />
+                </a>
+              </li>
+              {% else %}
+                <li>
+                  <a href="{{ link.url }}">{{ link.text }}</a>
+                </li>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
     </div>
   </div>
 </header>
