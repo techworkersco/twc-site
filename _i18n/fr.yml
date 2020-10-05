@@ -10,7 +10,7 @@ home:
   summary: Guidé par notre vision d'une industrie technologique inclusive et équitable, TWC s'organise pour renforcer le pouvoir des travailleurs grâce à l'auto-organisation et à l'éducation.
   black_lives_matter:
     title: Black Lives Matter
-    description: Nous encourageons les travailleurs technologiques à soutenir le mouvement Black Lives Matter dans leur lutte pour la justice. Dans ce sens, nous avons <a class="hover:white" href="/security">rassemblé ici une liste de guides de sécurité</a> que vous pouvez utiliser pour vous protéger et protéger vos camarades.
+    description: Nous encourageons les travailleurs technologiques à soutenir le mouvement Black Lives Matter dans leur lutte pour la justice. Dans ce sens, nous avons <a class="white-important hover:white" href="/security">rassemblé ici une liste de guides de sécurité</a> que vous pouvez utiliser pour vous protéger et protéger vos camarades.
   who_we_are:
     title: Qui nous sommes
     description: Nous sommes une coalition de travailleurs dans et autour de l'industrie technologique, des organisateurs syndicaux, des organisateurs communautaires et des amis.

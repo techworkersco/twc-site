@@ -3,6 +3,8 @@
     <div class="flex flex-row ai-ctr">
       <img
         alt=""
+        aria-hidden="true"
+        role="presentation"
         class="marg-r-2 m:hide"
         height="30"
         src="/assets/img/logo.svg"
@@ -14,11 +16,13 @@
         </a>
       </h1>
     </div>
+
     <div class='flex flex-row ai-ctr'>
-      <div class="flex flex-row ai-ctr rel marg-r-2">
+
+      <nav class="flex flex-row ai-ctr rel marg-r-2">
         <button class="flex flex-row ai-ctr" id="langBtn" role="button">
           <img
-            alt=""
+            alt="Click to choose a language"
             height="16"
             class="marg-r-1"
             src="/assets/img/globe.svg"
@@ -41,12 +45,12 @@
             </li>
           {% endfor %}
         </ul>
-      </div>
+      </nav>
 
-      <div class="flex flex-row ai-ctr rel m:marg-r-2">
+      <nav class="flex flex-row ai-ctr rel m:marg-r-2">
         <button class="flex" id="chapterBtn" role="button">
           <img
-            alt=""
+            alt="Click to render chapter navigation"
             height="18"
             src="/assets/img/local.svg"
             width="13"
@@ -63,8 +67,7 @@
             {% if link.newTab %}
               <li class="flex flex-row ai-ctr">
                 <a
-                  nofollow
-                  noreferrer
+                  rel="nofollow noopener noreferrer"
                   target="_blank"
                   href="{{ link.url }}">
                   {{ link.text }} <img
@@ -83,12 +86,12 @@
             </li>
           {% endfor %}
         </ul>
-      </div>
+      </nav>
 
-      <div class="flex flex-row ai-ctr rel d:hide">
+      <nav class="flex flex-row ai-ctr rel d:hide">
         <button class="flex" id="navBtn" role="button">
           <img
-            alt=""
+            alt="Click to render sub-page navigation"
             height="20"
             src="/assets/img/ham.svg"
             width="20"
@@ -99,8 +102,7 @@
             {% if link.newTab %}
               <li class="flex flex-row ai-ctr">
                 <a
-                  nofollow
-                  noreferrer
+                  rel="nofollow noopener noreferrer"
                   target="_blank"
                   href="{{ link.url }}">
                   {{ link.text }} <img
@@ -119,8 +121,9 @@
             </li>
           {% endfor %}
         </ul>
-      </div>
+      </nav>
 
     </div>
+
   </div>
 </header>
