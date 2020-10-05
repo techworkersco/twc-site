@@ -13,7 +13,7 @@ home:
   black_lives_matter:
     title: Vidas Negras Importam
     description:
-      Encorajamos que trabalhadores da indústria de tecnologia se posicionem ao lado do movimento Vidas Negras Importam na luta por justiça. Para isso, nós reunimos <a href="/security">uma lista de guias de segurança aqui</a> (em inglês) que você pode usar para ajudar a proteger a si mesmo e outres camaradas.
+      Encorajamos que trabalhadores da indústria de tecnologia se posicionem ao lado do movimento Vidas Negras Importam na luta por justiça. Para isso, nós reunimos <a class="white-important hover:white" href="/security">uma lista de guias de segurança aqui</a> (em inglês) que você pode usar para ajudar a proteger a si mesmo e outres camaradas.
   who_we_are:
     title: Quem somos
     description: Somos uma aliança de trabalhadores dentro e ao redor da indústria de tecnologia, organizadores sindicais, organizadores de comunidades e amigos.
@@ -26,7 +26,7 @@ home:
   how_we_work:
     title: Como trabalhamos
     description: |
-      Somos uma organização democraticamente estruturada, totalmente voluntária e liderada por trabalhadores. Nesse momento, a associação consiste em participar de reuniões pessoalmente e trabalhar em vários projetos nos quais as pessoas estão interessadas. Organizamos on-line, mas os encontros em vida real são o ponto crucial do que fazemos. Confira nosso <a href="/pt/community-guide">Guia da comunidade</a>  para mais informações. Também entre no <a href="/subscribe">Slack</a> para se conectar com pessoas em sua região.
+      Somos uma organização democraticamente estruturada, totalmente voluntária e liderada por trabalhadores. Nesse momento, a associação consiste em participar de reuniões pessoalmente e trabalhar em vários projetos nos quais as pessoas estão interessadas. Organizamos on-line, mas os encontros em vida real são o ponto crucial do que fazemos. Confira nosso <a href="/pt/guia-da-comunidade">Guia da comunidade</a>  para mais informações. Também entre no <a href="/subscribe">Slack</a> para se conectar com pessoas em sua região.
 
   check_out_meeting:
     title: Confira uma reunião
