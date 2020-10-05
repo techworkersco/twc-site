@@ -3,9 +3,11 @@ layout: page
 title: TWC NYC
 permalink: /nyc/
 ---
-<style>.event{padding:24px}.event:nth-child(odd){background:#f8f8f8}.event div,.event h3{margin:0 0 5px}.eventMeta b{font-size:16px}.event a{line-height:1}.event p{color:#444;font-size:18px;line-height:24px;margin:0;max-width:960px}#calendarContainer{padding:0 0 20px}.social{list-style:none;margin:0;padding:0}.bottomLinks a{display:block;font-size:18px;line-height:1;padding:12px}.calendarLink{display:block;font-size:18px;line-height:1}.marg{margin:0 5px}.pad{padding:12px 0 24px}.main-wrapper main{max-width:1024px;padding-left:1.5em;padding-right:1.5em}.blurb p{color:#444;font-size:21px;line-height:34px}@media screen and (max-width:920px){.header .supporting-links li:nth-child(1),.header .supporting-links li:nth-child(2){display:none}}@media screen and (max-width:640px){.header .supporting-links li:nth-child(1),.header .supporting-links li:nth-child(2),.header .work{display:none}.clamp{-webkit-box-orient:vertical;-webkit-line-clamp:3;display:-webkit-box;overflow:hidden}.calendarLink{margin:12px 0 0}.hideMobile{display:none}.event{padding:12px}.bottomLinks a{padding:6px 0}}#tech-workers-coalition-nyc {font-size:32px;line-height:1;}.mc-field-group{font-size:14px;}.mc-field-group label{display:block;}.mc-field-group input{margin: 0;padding:8px;width:100%;}#mc_embed_label{display:block;font-size:20px;font-weight:600;line-height:1;text-align:left !important;margin-bottom: 10px;}.col{flex:1;}.mR4{margin-right:4px;}.mB12{margin-bottom:12px}input{box-sizing:border-box;} #mce-EMAIL{border: 1px solid #ddd; padding: 4px 10px;} #mc-embedded-subscribe{background: 0;color: inherit;text-transform: initial;border-radius: 8px;border: 1px solid #ddd;padding: 8px 20px;font-size: 14px;font-weight: 600;margin: 0 auto;text-align: center;display: block}#mc_embed_signup{padding: 8px 0;}hr{border-top:0;color:#ccc}</style>
+<style>.event{padding:24px}.event:nth-child(odd){background:#f8f8f8}.event div,.event h3{margin:0 0 5px}.eventMeta b{font-size:16px}.event a{line-height:1}.event p{color:#444;font-size:18px;line-height:24px;margin:0;max-width:960px}#calendarContainer{padding:0 0 20px}.social{list-style:none;margin:0;padding:0}.bottomLinks a{display:block;font-size:18px;line-height:1;padding:12px}.calendarLink{display:block;font-size:18px;line-height:1}.marg{margin:0 5px}.pad{padding:12px 0 24px}.main-wrapper main{max-width:1024px;padding-left:1.5em;padding-right:1.5em}.blurb p{color:#444;font-size:21px;line-height:34px}@media screen and (max-width:920px){.header .supporting-links li:nth-child(1),.header .supporting-links li:nth-child(2){display:none}}@media screen and (max-width:640px){.header .supporting-links li:nth-child(1),.header .supporting-links li:nth-child(2),.header .work{display:none}.clamp{-webkit-box-orient:vertical;-webkit-line-clamp:3;display:-webkit-box;overflow:hidden}.hideMobile{display:none}.event{padding:12px}.bottomLinks a{padding:6px 0}}#tech-workers-coalition-nyc {font-size:32px;line-height:1;}.mc-field-group{font-size:14px;}.mc-field-group label{display:block;}.mc-field-group input{margin: 0;padding:8px;width:100%;}#mc_embed_label{display:block;font-size:20px;font-weight:600;line-height:1;text-align:left !important;margin-bottom: 10px;}.col{flex:1;}.mR4{margin-right:4px;}.mB12{margin-bottom:12px}input{box-sizing:border-box;} #mce-EMAIL{border: 1px solid #ddd; padding: 4px 10px;} #mc-embedded-subscribe{background: 0;color: inherit;text-transform: initial;border-radius: 8px;border: 1px solid #ddd;padding: 8px 20px;font-size: 14px;font-weight: 600;margin: 0 auto;text-align: center;display: block}#mc_embed_signup{padding: 8px 0;}hr{border-top:0;color:#ccc}</style>
 
-# Tech Workers Coalition (NYC)
+<h1 class="marg-b-2">
+  Tech Workers Coalition (NYC)
+</h1>
 
 <div class="blurb">
   <p>We are the New York City local of Tech Workers Coalition, established in October 2018.</p>
@@ -19,10 +21,10 @@ permalink: /nyc/
 
 <hr />
 
-<div class="flex justify-between pad">
+<div class="flex justify-between ai-center pad">
   <b>Upcoming Events</b>
   <a class="calendarLink" href="https://calendar.google.com/calendar?cid=dGVjaHdvcmtlcnNjb2FsaXRpb25ueWNAZ21haWwuY29t">
-    Subscribe to our calendar!
+    Subscribe!
   </a>
 </div>
 
@@ -48,12 +50,12 @@ permalink: /nyc/
 
 <hr />
 
-<div class="flex jBetween bottomLinks">
-  <ul class="flex social">
+<div class="d:flex justify-between bottomLinks">
+  <ul class="d:flex social">
    <li><a href="https://www.meetup.com/Tech-Workers-Coalition-NYC">Meetup (NYC)</a></li>
    <li><a href="https://twitter.com/techworkerscony">Twitter (NYC)</a></li>
   </ul>
-  <ul class="flex social">
+  <ul class="d:flex social">
     <li>
       <a href="https://forms.gle/1rFMvppxPj7FvShbA">
         Suggest an event
@@ -68,7 +70,7 @@ permalink: /nyc/
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script>
+<script nonce="{% nonce %}">
   const apikey = 'AIzaSyB9Gj0gvJvkQYaFPlxtsIGj8QkefAp5jgo';
   const calendarUrl = `https://www.googleapis.com/calendar/v3/calendars/techworkerscoalitionnyc@gmail.com/events?key=${apikey}`;
 

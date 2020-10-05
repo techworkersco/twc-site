@@ -25,4 +25,9 @@ The following is a list of digital security guides we've found to be particularl
       Security in a Box
     </a>
   </li>
+  <li>
+    <a noreferrer nofollow href="https://www.safeprotest.tips/">
+      Safe Protest Tips (partially built by TWC volunteers)
+    </a>
+  </li>
 </ul>

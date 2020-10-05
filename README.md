@@ -12,7 +12,7 @@ Open a browser to localhost:8080
 
 ## Add your city
 
-If your city's TWC chapter is not mentioned in the website, link to it on the homepage [here](_layouts/home.html) and if you want a markdown page see the other examples [here](city_local).
+If your country/city's TWC chapter is not mentioned in the website, link to it on the homepage [here](_layouts/home.html) and if you want a local markdown page (as opposed to external link) see the other examples [here](city_local).
 
 ## Translation
 
@@ -42,3 +42,4 @@ Each translation file, should have same version as other languages. Sometimes th
 * Portuguese
 * Italian
 * Portuguese (BR)
+* Spanish (ES)

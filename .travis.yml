@@ -1,10 +1,10 @@
-language: 
-  - ruby
-  - java
+language:
+- ruby
+- java
 rvm:
-  - 2.6
+- 2.6
 script: "./script/cibuild"
-jdk: openjdk8 
+jdk: openjdk8
 deploy:
   provider: script
   skip_cleanup: true
@@ -16,9 +16,7 @@ exclude:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - secure: TQB/BVXivoag7URFxAEqdrousyf3qpHNzYD8Oi8lOm1w7AzZdrXYgVVzBSAK5Qm3IUAvJxLH0sial2XUUuPw1tBkwjRgdFGtcA9QZTVragxXtX9RhBJW7m4IxBlHIOFXCEC6IHUrg3iY5zB/OumU86U9NE57sKIQejMOJiwX6MNpQY4M/MdSQet/Z42cad1edoF4e3lB6cfOx2hahIyyi8z7SbhFVZW+Zk8R/jiR/CvL7QbciXvtWyEeQE1oMt01N6rJ6A/pMmR8UF8Y7b9L7TxRfij9oTmC2Ie/OoA59qcOMom8YxtFRGqrrDG9pXXXM5XnDtpfum1IOiiaOuNtdzrdwRYoDVMzh9ZIInpLj/6Q+nhEfrG0EigP0YDkFCGAauVgXX1JT88Nml0JGUluU7kyc3yy3X1avV2SeDC578tZa7EE3GUIqJu8i7AsCo05sC4qt0Y+LmtOm03oNlej7mhmtPIRmgI0F9fS5u+zZHjU3w/wLTxvZVqs3bT0ZUni6abLG6UBDoqm9SKVDWY/CI9Vu/s7FvFhbebTjo7axey6GWcnVZy+MUm9kPrnccANo8rmaYsnuNFoOpGhjlXhjpMoNsfQw79pApm0YznBiyu5huDWa+EjosrK63lcyB5jR0QDOqSWuhqcLCwgEhuzLOlc3OeV+jI/y1BYU4n+pww=
-  - secure: LC4NXugVVlDr465++etPRPdhxv0fAZVmucojzt7Egf/Ne1v3dR6NCMbMP2HPufft8BKA0PKStGGITDeAGRq66FsDTP2KAxgQ0Fm5yLDtf0bRaBsYQ4qV8TYyRb74d0XOK3MKrpiSwrFuaX9JqrAjSHyvK5hveAB8ETYbxqcBIstgRtqH8BkyLIy668GUbOR08AUVML+0J8vNNeiN3VqVXGSYiKSgc3JjCjoEiZTpPXmZaymlfiMFBa5s2MVuXhKXMTyjtAGYKjtAkJO1/u3fHUShL0ozKt11JN/AapqRwd2oNwDdvB9rnTsdlZWROKMaORINs3Zb9t5zMueWSAteRB8zr/Z0s/tdPp0aktCQSvl5WaDAAp61yrclWvEM8o34ldsY9RSlIWPyN7n/INE0vYHif+S69I/qmbr5ecMSeAbLbsBomb5pi+PGDM5+RzgnbMJjXnjTJlzpfEZM1DrRkD3XOuUt+sexuMp6JintBeB6jcfoehtk5e5XUDTuDpChfF9nEV3DHE7s1J/iOi0d+tzfUKyh0y+WSoUSCHRltPkbyWOPZQkwIdo0inMgpVfHoAV/D3o96M6EuCzqLbcF9Dmix9oHeJxN3Zi0V+OGnu083fZrVxeC/vnzH4BxqT6DlbAV6pIe33j3YRznfQJSeARZQxwElKUMHuGqJUAnRQs=
-addons:
+  addons:
   apt:
     packages:
     - libcurl4-openssl-dev

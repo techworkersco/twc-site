@@ -93,6 +93,10 @@ button {
   color: $white;
 }
 
+.hover\:white:hover {
+  color: $white;
+}
+
 .navOverlay {
   background: $white;
   border-radius: 4px;
@@ -157,6 +161,12 @@ ul {
 
 .d\:marg-r-2 {
   @include desktop {
+    margin-right: 8px;
+  }
+}
+
+.m\:marg-r-2 {
+  @include mobile {
     margin-right: 8px;
   }
 }

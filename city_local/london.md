@@ -13,15 +13,14 @@ h1, .main-wrapper h2, h3 {
 
 This is the London, UK, chapter of the TWC. We started organising in early
 2019, and our first public meeting was at [Newspeak House](https://nwspk.com/)
-in September 2019.
+in September 2019, moving to [MayDay Rooms](http://www.maydayrooms.org/)
+thereafter.
 
-We now have regular monthly general meetings, usually on the first Wednesday of
-the month at [MayDay Rooms](http://www.maydayrooms.org/). We also hold various
-other meetings, learning clubs, and workers' inquiries, along with other
-organising.
-
-A calendar of all our upcoming public events is available
-[here](https://calendar.google.com/calendar/embed?src=enk8hlrmu1dv15e4s2hf0lrbb0%40group.calendar.google.com&ctz=Europe%2FLondon).
+We now have regular monthly general meetings online, announced on
+[Twitter](https://twitter.com/TechWorkersLDN) and
+[Facebook](https://www.facebook.com/TechWorkersLDN), usually on the first
+Wednesday on the month. We also hold various other meetings, learning clubs,
+and workers' inquiries, along with other organising.
 
 Our definition of a "tech worker" is anyone involved in the tech industry in
 any capacity &mdash; including programmers, designers, product managers,
@@ -34,6 +33,8 @@ attend any public TWC London meetings.
 - Currently the best way to see what we're up to is to follow us on Twitter, at
   [@TechWorkersLDN](https://twitter.com/TechWorkersLDN), or on our
   [Facebook page](https://www.facebook.com/TechWorkersLDN).
+- We have a [calendar](https://calendar.google.com/calendar/embed?src=enk8hlrmu1dv15e4s2hf0lrbb0%40group.calendar.google.com&ctz=Europe%2FLondon)
+  for all our upcoming public events.
 - We can be securely contacted via email, at
 [techworkersldn@protonmail.com](mailto:techworkersldn@protonmail.com).
 - We are also on [the TWC Slack](/subscribe), in the `#local-uk-london`
@@ -48,7 +49,8 @@ attend any public TWC London meetings.
 
 ## Code of Conduct
 
-All meetings and communications are covered under the [TWC Code of
+All meetings and communications are covered under our [Code of
+Conduct](/london/code-of-conduct/), as well as the [TWC Code of
 Conduct](https://techworkerscoalition.org/community-guide/). The privacy and
 safety of our members is important to us. Sharing the identity of members and
 or taking/sharing photos are strictly forbidden unless express consent is
