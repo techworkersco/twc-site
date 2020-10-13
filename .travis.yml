@@ -1,8 +1,11 @@
+before_install:
+  - gem update --system
+
 language:
 - ruby
-- java
+
 rvm:
-- 2.6
+- 2.7
 script: "./script/cibuild"
 jdk: openjdk8
 deploy:
