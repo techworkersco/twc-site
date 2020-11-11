@@ -21,22 +21,8 @@ home:
       Siamo una struttura democratica, sostenuta esclusivamente da volontari e gestita dai lavoratori. Al momento la partecipazione consiste esclusivamente nella presenza ai meeting o la contribuzione nei diversi progetti a cui è interessata la comunità. Ci organizziamo online ma operare IRL è la nostra priorità. Guarda <a href="/community-guide">la guida della comunità</a> per maggiori informazioni.
   check_out_meeting:
     title: Partecipa ad un meeting
-    locations: |
-      Al momento abbiamo incontri a:
-      <a href="/austin">Austin</a>,
-      <a href="https://twitter.com/twc_bangalore">Bangalore</a>,
-      <a href="https://techworkersberlin.com/">Berlino</a>,
-      <a href="https://boston.techworkerscoalition.org/">Boston</a>,
-      <a href="/chicago">Chicago</a>,
-      <a href="/dc">Washington D.C.</a>,
-      <a href="https://twc-italia.org/">Italia</a>,
-      <a href="https://www.meetup.com/Tech-Workers-Coalition-LA/">Los Angeles</a>,
-      <a href="/london">London</a>,
-      <a href="/nyc">New York</a>,
-      <a href="/pdx">Portland</a>,
-      <a href="https://www.meetup.com/TWCSanDiego">San Diego</a>,
-      <a href="/seattle">Seattle</a>,
-      <a href="/sf-bay-area">San Francisco</a>
+    link: |
+      Check out a meeting at a <a href="/chapters">local chapter</a>
   join_discussion:
     title: Unisciti alla discussione
     links: |

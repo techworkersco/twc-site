@@ -30,23 +30,8 @@ home:
 
   check_out_meeting:
     title: Confira uma reunião
-    locations: |
-      Atualmente, temos reuniões regulares em:
-      <a href="/austin">Austin</a>,
-      <a href="https://twitter.com/twc_bangalore">Bangalore</a>,
-      <a href="https://techworkersberlin.com/">Berlim</a>,
-      <a href="https://boston.techworkerscoalition.org/">Boston</a>,
-      <a href="/brasil">Brasil</a>,
-      <a href="/chicago">Chicago</a>,
-      <a href="/dc">DC</a>,
-      <a href="https://twc-italia.org/">Itália</a>,
-      <a href="https://www.meetup.com/Tech-Workers-Coalition-LA/">LA</a>,
-      <a href="/london">Londres</a>,
-      <a href="/nyc">Nova York</a>,
-      <a href="/pdx">PDX</a>,
-      <a href="https://www.meetup.com/TWCSanDiego">San Diego</a>,
-      <a href="/seattle">Seattle</a>,
-      and <a href="/sf-bay-area">São Franscisco Bay Area</a>
+    link: |
+      Check out a meeting at a <a href="/chapters">local chapter</a>
   join_discussion:
     title: Participe da discussão e fique sabendo das últimas notícias
     links: |

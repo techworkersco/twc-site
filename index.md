@@ -22,7 +22,7 @@ permalink: /
 <p>{% t home.how_we_work.description %}</p>
 
 <h3>{% t home.check_out_meeting.title %}</h3>
-<p>{% t home.check_out_meeting.locations %}</p>
+<p>{% t home.check_out_meeting.link %}</p>
 
 <div class="marg-b-4">
   <h3>{% t home.contact_us.title %}</h3>

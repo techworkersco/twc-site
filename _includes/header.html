@@ -61,30 +61,8 @@
           role="navigation"
           class="navOverlay abs hide list-style-none">
           <li class="p-2 border-b-1">
-            Join a Chapter
+            <a href="/chapters">Join a Chapter</a>
           </li>
-          {% for link in site.chapters %}
-            {% if link.newTab %}
-              <li class="flex flex-row ai-ctr">
-                <a
-                  rel="nofollow noopener noreferrer"
-                  target="_blank"
-                  href="{{ link.url }}">
-                  {{ link.text }} <img
-                    alt=""
-                    src="/assets/img/external.svg"
-                    height="14"
-                    width="14"
-                  />
-                </a>
-              </li>
-              {% else %}
-                <li>
-                  <a href="{{ link.url }}">{{ link.text }}</a>
-                </li>
-              {% endif %}
-            </li>
-          {% endfor %}
         </ul>
       </div>
 

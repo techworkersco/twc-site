@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Join a Chapter
-permalink: /local/
+permalink: /chapters/
 ---
 
 {% for region in site.data.chapters.regions %}
