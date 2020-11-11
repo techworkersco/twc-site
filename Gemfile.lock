@@ -97,7 +97,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.11)
   jekyll-multiple-languages-plugin
   pry
-  tzinfo-data
 
 RUBY VERSION
    ruby 2.7.1p83
