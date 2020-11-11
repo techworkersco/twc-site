@@ -33,43 +33,6 @@ exclude:
   - .jekyll-cache/
 languages: ["en", "es", "fr", "it", "pt", "ru"]
 exclude_from_localizations: ["assets"]
-chapters:
-  - url: /austin
-    text: Austin
-  - url: https://twitter.com/twc_bangalore
-    text: Bangalore
-    newTab: true
-  - url: https://techworkersberlin.com/
-    text: Berlin
-    newTab: true
-  - url: /brasil
-    text: Brasil
-    newTab: true
-  - url: https://boston.techworkerscoalition.org/
-    text: Boston
-  - url: /chicago
-    text: Chicago
-  - url: /dc
-    text: DC
-  - url: https://twc-italia.org/
-    text: Italia
-    newTab: true
-  - url: https://www.meetup.com/Tech-Workers-Coalition-LA
-    text: LA
-    newTab: true
-  - url: /london
-    text: London
-  - url: /nyc
-    text: NYC
-  - url: /pdx
-    text: PDX
-  - url: https://www.meetup.com/TWCSanDiego
-    text: San Diego
-    newTab: true
-  - url: /seattle
-    text: Seattle
-  - url: /sf-bay-area
-    text: SF Bay Area
 links:
   - url: /subscribe
     text: Join the Slack
