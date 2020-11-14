@@ -34,6 +34,8 @@ exclude:
 languages: ["en", "es", "fr", "it", "pt", "ru"]
 exclude_from_localizations: ["assets"]
 links:
+  - url: /chapters
+    text: Join a Chapter
   - url: /subscribe
     text: Join the Slack
   - url: /community-guide/
@@ -42,15 +44,6 @@ links:
     text: Newsletter
   - url: https://sites.google.com/view/tech-workers-coalition/learning-club
     text: Learning Clubs
-    newTab: true
-  - url: https://medium.com/tech-workers-coalition
-    text: Medium
-    newTab: true
-  - url: https://twitter.com/techworkersco
-    text: Twitter
-    newTab: true
-  - url: https://www.facebook.com/TechWorkersCoalition
-    text: Facebook
     newTab: true
   - url: https://collectiveaction.tech/
     text: CollectiveActions.Tech
