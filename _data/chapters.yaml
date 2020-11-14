@@ -35,8 +35,14 @@ regions:
 - region: Europe
   chapters:
     - text: Berlin
+      twitter: TechWorkersBER
+      facebook: TechWorkersBER
       url: https://techworkersberlin.com/
     - text: Italia
+      twitter: twcitalia
+      facebook: twcita
       url: https://twc-italia.org/
     - text: London
       url: /london
+    - text: Netherlands
+      twitter: nederlandtwc
