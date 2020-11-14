@@ -114,7 +114,7 @@ button {
   overflow: scroll;
   right: 0;
   top: 55px;
-  width: 200px;
+  width: 240px;
 
   a {
     border-bottom: 1px solid #efefef;
@@ -155,6 +155,10 @@ ul {
 
 .marg-b-4 {
   margin-bottom: 2rem;
+}
+
+.pad-l-3 {
+  padding-left: 1rem; // 16px, we should just be consistent and use rem
 }
 
 .m\:marg-r-1 {

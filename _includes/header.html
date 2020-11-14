@@ -47,47 +47,6 @@
         </ul>
       </div>
 
-      <div class="flex flex-row ai-ctr rel marg-r-2">
-        <button class="flex" id="chapterBtn" role="button">
-          <img
-            alt="Click to render chapter navigation"
-            height="18"
-            src="/assets/img/local.svg"
-            width="13"
-          />
-        </button>
-        <ul
-          id="chapterNav"
-          role="navigation"
-          class="navOverlay abs hide list-style-none">
-          <li class="p-2 border-b-1">
-            Join a Chapter
-          </li>
-          {% for link in site.chapters %}
-            {% if link.newTab %}
-              <li class="flex flex-row ai-ctr">
-                <a
-                  rel="nofollow noopener noreferrer"
-                  target="_blank"
-                  href="{{ link.url }}">
-                  {{ link.text }} <img
-                    alt=""
-                    src="/assets/img/external.svg"
-                    height="14"
-                    width="14"
-                  />
-                </a>
-              </li>
-              {% else %}
-                <li>
-                  <a href="{{ link.url }}">{{ link.text }}</a>
-                </li>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-
       <div class="flex flex-row ai-ctr rel">
         <button class="flex" id="navBtn" role="button">
           <img

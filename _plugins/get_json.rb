@@ -24,7 +24,7 @@ module JekyllGetJson
       config.each do |d|
         begin
           target = site.data[d['data']]
-          source = JSON.load(open(d['json']))
+          source = JSON.load(URI.open(d['json']))
           @ran_once = true
           if source
             puts "Loading source: #{d['json']}"

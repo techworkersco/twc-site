@@ -1,0 +1,48 @@
+regions:
+- region: North and South America
+  chapters:
+    - text: Austin
+      url: /austin
+      twitter: twcatx
+      meetup: Tech-Workers-Coalition-ATX/
+      facebook: twcatx
+    - text: Brasil
+      url: /brasil
+    - text: Boston
+      url: https://boston.techworkerscoalition.org/
+      twitter: techworkersBOS
+    - text: Chicago
+      url: /chicago
+      twitter: chicago_twc
+    - text: DC
+      url: /dc
+      twitter: dctechworkers
+    - text: NYC
+      url: /nyc
+      twitter: techworkerscony
+      meetup: Tech-Workers-Coalition-NYC/
+    - text: San Diego
+      meetup: TWCSanDiego
+      twitter: twcsandiego
+    - text: Seattle
+      url: /seattle
+    - text: SF Bay Area
+      url: /sf-bay-area
+- region: Asia Pacific
+  chapters:
+    - text: Bangalore
+      url: https://twitter.com/twc_bangalore
+- region: Europe
+  chapters:
+    - text: Berlin
+      twitter: TechWorkersBER
+      facebook: TechWorkersBER
+      url: https://techworkersberlin.com/
+    - text: Italia
+      twitter: twcitalia
+      facebook: twcita
+      url: https://twc-italia.org/
+    - text: London
+      url: /london
+    - text: Netherlands
+      twitter: nederlandtwc

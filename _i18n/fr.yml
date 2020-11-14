@@ -26,23 +26,8 @@ home:
       Nous sommes une organisation démocratiquement structurée, entièrement composée de bénévoles et dirigée par des travailleurs. À ce stade, l'adhésion consiste à assister à des réunions en personne et à travailler sur les différents projets qui intéressent les gens. Nous organisons en ligne, mais l'IRL est au cœur de ce que nous faisons. Découvrez notre <a href="/fr/community-guide">Guide communautaire</a> pour plus d'informations. Rejoignez <a href="/subscribe">Slack</a> pour entrer en contact avec un local de votre région.
   check_out_meeting:
     title: Participez à une réunion
-    locations: |
-      Nous avons actuellement des réunions régulières à
-      <a href="/austin">Austin</a>,
-      <a href="https://twitter.com/twc_bangalore">Bangalore</a>,
-      <a href="https://techworkersberlin.com/">Berlin</a>,
-      <a href="https://boston.techworkerscoalition.org/">Boston</a>,
-      <a href="/brasil">Brasil</a>,
-      <a href="/chicago">Chicago</a>,
-      <a href="/dc">DC</a>,
-      <a href="https://twc-italia.org/">Italy</a>,
-      <a href="https://www.meetup.com/Tech-Workers-Coalition-LA/">LA</a>,
-      <a href="/london">London</a>,
-      <a href="/nyc">NYC</a>,
-      <a href="/pdx">PDX</a>,
-      <a href="https://www.meetup.com/TWCSanDiego">San Diego</a>,
-      <a href="/seattle">Seattle</a>,
-      et <a href="/sf-bay-area">SF Bay Area</a>
+    link: |
+      Check out a meeting at a <a href="/chapters">local chapter</a>
   join_discussion:
     title: Rejoignez la discussion et découvrez les dernières nouveautés
     links: |
