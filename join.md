@@ -40,15 +40,10 @@ For joining the Slack, please keep in mind that you will be manually vetted acco
     <div>Including a referrer from an existing member can be a good way to get in the slack if you lack a social media presence. Also, please be specific! If you found us on search, don't just say "Google" (it's unclear if you mean the company or the search engine).</div>
     <input id="referrer" type="text" name="referrer">
   </label>
-  <div class="marg-b-3 flex flex-row ai-ctr">
-    <input class="marg-r-1" id="subscribeSlack" type="checkbox" name="slack">
-    <label for="subscribeSlack"><b>Join the Slack</b></label>
-  </div>
   <input type="hidden" name="team_id" value="T0M2JM76F" />
   <input type="hidden" name="redirect_uri" value="https://techworkerscoalition.org/slack-thanks" />
   <input type="submit" value="Submit">
 </form>
-
 
 # Don't qualify for the Slack?
 
