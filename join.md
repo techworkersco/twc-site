@@ -23,7 +23,7 @@ For joining the Slack, please keep in mind that you will be manually vetted acco
     <input id="name" type="text" required name="name">
   </label>
   <label class="marg-b-3" for="social">
-    <div>
+    <div class="marg-b-2">
       <b>Please provide two links to social media handles.</b>
       <div>We need a way to validate that you meet the membership requirements laid out <a href="/community-guide#membership">here</a>. Linkedin is preferred, but anything that allows us to verify that you aren't a manager, journalist, etc is acceptable.</div>
     </div>
@@ -32,12 +32,12 @@ For joining the Slack, please keep in mind that you will be manually vetted acco
   </label>
   <label class="marg-b-3" for="company_name">
     <div><b>Company Name</b> (optional):</div>
-    <div>Including a company name helps us vet you.</div>
+    <div class="marg-b-2">Including a company name helps us vet you.</div>
     <input id="company_name" type="text" name="company_name">
   </label>
   <label class="marg-b-3" for="referrer">
     <div><b>How Did You Hear About Us?</b> (optional):</div>
-    <div>Including a referrer from an existing member can be a good way to get in the slack if you lack a social media presence. Also, please be specific! If you found us on search, don't just say "Google" (it's unclear if you mean the company or the search engine).</div>
+    <div class="marg-b-2">Including a referrer from an existing member can be a good way to get in the slack if you lack a social media presence. Also, please be specific! If you found us on search, don't just say "Google" (it's unclear if you mean the company or the search engine).</div>
     <input id="referrer" type="text" name="referrer">
   </label>
   <input type="hidden" name="team_id" value="T0M2JM76F" />
@@ -45,6 +45,6 @@ For joining the Slack, please keep in mind that you will be manually vetted acco
   <input type="submit" value="Submit">
 </form>
 
-# Don't qualify for the Slack?
+# Don't qualify for the Slack? Rejected?
 
 If you're a manager or someone not in tech, but you're a supporter of TWC, we recently setup a new 'Managers & Allies' slack you may join [here](https://join.slack.com/t/techworkersco-4fm8079/shared_invite/zt-h3jau11x-PIPDe4OWaGdYNNzv0RQbhQ).

@@ -1,17 +1,45 @@
 @import 'variables';
-@import 'header';
-// @import 'home';
 
 body {
-  background: $white;
-  color: #333;
   font-family: Helvetica Neue, HelveticaNeue, Helvetica, Arial, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
-  // font-family: 'Avenir', sans-serif;
-  font-size: 18px;
-  letter-spacing: normal;
+  letter-spacing: .03rem;
   line-height: 1.4;
   margin: 0;
   padding: 0;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.noUnderline {
+  text-decoration: none;
+}
+
+header {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  height: 60px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9;
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    border: 0;
+  }
+}
+
+.title {
+  font-size: 21px;
+
+  @include mobile {
+    font-size: 16px;
+  }
 }
 
 .bg-black {
@@ -69,20 +97,16 @@ body {
 
 button {
   background: 0;
-  border: 1px solid #ccc;
+  border: 1px solid;
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
   height: 25px;
   transition: background ease-in-out .3s;
-
-  &:hover {
-    background: #efefef;
-  }
 }
 
 .border-b-1 {
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid;
 }
 
 .p-2 {
@@ -106,9 +130,8 @@ button {
 }
 
 .navOverlay {
-  background: $white;
   border-radius: 4px;
-  border: 1px solid #efefef;
+  border: 0;// 1px solid;
   box-shadow: 1px 0 5px rgba(0, 0, 0, .2);
   max-height: 200px;
   overflow: scroll;
@@ -117,9 +140,15 @@ button {
   width: 240px;
 
   a {
-    border-bottom: 1px solid #efefef;
     display: block;
     padding: 8px;
+  }
+
+  li {
+    border-bottom: 1px solid;
+    &:last-child {
+      border: 0;
+    }
   }
 }
 
@@ -278,94 +307,44 @@ ul {
   flex: 3;
 }
 
-a {
-  &:link {
-    color: #E6141B;
-  }
-  &:visited {
-    color: #E6141B;
-  }
-  &:hover {
-    color: #212121;
-  }
-  &:focus {
-    color: #212121;
-  }
-  &:active {
-    color: #E6141B;
-  }
-}
-
-input[type="submit"] {
-  background: #212121;
-  border-radius: 100px;
-  border: 0;
-  color: #fff;
-  font-weight: 500;
-  margin-top: 20px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-
-  &:hover {
-    background-color: #E6141B;
-  }
-}
-
 main {
   max-width: 90%;
   padding: 80px 0;
 }
 
 footer {
-  background: #f6f6f6;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid;
   padding: 2rem 0;
 }
 
-.txt-1
+.txt-1,
 h1 {
   font-size: 2rem;
   @include mobile {
-    font-size: 1.5rem;
-    /* 1.5 * .875 */
+    font-size: 1.75rem;
   }
 }
 
-.txt-2
+.txt-2,
 h2 {
-  font-size: 1.5rem;
-  /* 16x1.5=24 */
+  font-size: 1.75rem;
+  font-weight: 500;
   @include mobile {
-    font-size: 1rem;
-    /* 1.5 * .875 */
+    font-size: 1.5rem;
   }
 }
 
-.txt-3
+.txt-3,
 h3 {
-  font-size: 1.125rem;
-  /* 16x1.125=18 */
+  font-size: 1.5rem;
+  font-weight: 500;
   @include mobile {
-    font-size: 1.09375rem;
-    /* 1.25 * .875 */
-  }
-}
-
-h4 {
-  font-size: 0.875rem;
-  font-style: italic;
-  /* 16x0.875=14 */
-  @include mobile {
-    font-size: 0.765625rem;
-    font-style: italic;
-    /* .875 * .875 */
+    font-size: 1.25rem;
   }
 }
 
 form {
-  background: #f6f6f6;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 1rem;
 }
 
@@ -386,11 +365,193 @@ label {
   clear: both;
 }
 
-.climate-container img{
+.climate-container img {
   display: inline-block;
   display: inline;
   max-width: 220px;
   padding: 10px 20px;
   vertical-align: top;
   zoom: 1.5;
+}
+
+.primaryBg {
+  background: $grey2;
+}
+.secondaryBg {
+  background: $grey;
+}
+.textColor {
+  color: $white;
+}
+
+a {
+  &:link {
+    color: $red;
+  }
+  &:visited {
+    color: $red;
+  }
+}
+
+label {
+  font-weight: inherit;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+input[type="email"],
+input[type="text"],
+input[type="url"] {
+  border: 1px solid;
+  border-radius: 4px;
+  color: $grey;
+  padding: .75rem;
+
+  @include mobile {
+    margin-bottom: .5rem;
+    width: 100%;
+  }
+}
+
+input[type="submit"] {
+  border-radius: 4px;
+  border: 0;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 10px 20px;
+
+  &:hover {
+    background-color: $red;
+  }
+}
+
+hr {
+  border-top: 0;
+}
+
+.primarySvgFill {
+  fill: $white;
+}
+
+#mce-EMAIL,
+#mc-embedded-subscribe {
+  letter-spacing: .03rem;
+}
+
+#mce-EMAIL {
+  margin: 0 .5rem 0 0;
+}
+
+#mc-embedded-subscribe {
+  border: 0;
+  height: 100%;
+  padding: .75rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .bg-black {
+    background-color: $grey3;
+    color: $black;
+  }
+  .primarySvgFill {
+    fill: $grey;
+  }
+  #mc-embedded-subscribe {
+    background: $grey2;
+    color: $white;
+  }
+  hr {
+    border-bottom: 1px solid #ccc;
+  }
+  .navOverlay {
+    background: $white;
+    li {
+      border-color: #ccc;
+    }
+  }
+  footer {
+    border-color: #ccc;
+  }
+  button, form {
+    border-color: $grey3;
+  }
+  form {
+    background-color: $grey3;
+  }
+  input[type="submit"] {
+    background: $grey2;
+    color: $white;
+  }
+  input[type="email"],
+  input[type="text"],
+  input[type="url"] {
+    border-color: #ccc;
+  }
+  .primaryBg {
+    background-color: $white;
+  }
+  .secondaryBg {
+    background-color: $grey3;
+  }
+  .textColor {
+    color: $grey2;
+  }
+  a {
+    &:hover,
+    &:focus {
+      color: $grey;
+    }
+    &:active {
+      color: $red;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #mc-embedded-subscribe {
+    border-color: $grey;
+  }
+  hr {
+    border-bottom: 1px solid $grey;
+  }
+  .navOverlay {
+    background: $grey;
+    li {
+      border-color: $grey2;
+    }
+  }
+  input[type="submit"] {
+    background: $red;
+    color: $white;
+  }
+  input[type="email"],
+  input[type="text"],
+  input[type="url"] {
+    background: $grey2;
+    border-color: transparent;
+    color: $white;
+  }
+  .black {
+    color: $white !important;
+  }
+  a {
+    color: $red;
+  }
+  h1, h2, h3, h4 {
+    color: $white;
+  }
+  a {
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+  form {
+    background-color: $grey;
+  }
+  footer {
+    border-color: $grey2;
+  }
 }

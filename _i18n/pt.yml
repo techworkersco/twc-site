@@ -13,7 +13,7 @@ home:
   black_lives_matter:
     title: Vidas Negras Importam
     description:
-      Encorajamos que trabalhadores da indústria de tecnologia se posicionem ao lado do movimento Vidas Negras Importam na luta por justiça. Para isso, nós reunimos <a class="white-important hover:white" href="/security">uma lista de guias de segurança aqui</a> (em inglês) que você pode usar para ajudar a proteger a si mesmo e outres camaradas.
+      Encorajamos que trabalhadores da indústria de tecnologia se posicionem ao lado do movimento Vidas Negras Importam na luta por justiça. Para isso, nós reunimos <a href="/security">uma lista de guias de segurança aqui</a> (em inglês) que você pode usar para ajudar a proteger a si mesmo e outres camaradas.
   who_we_are:
     title: Quem somos
     description: Somos uma aliança de trabalhadores dentro e ao redor da indústria de tecnologia, organizadores sindicais, organizadores de comunidades e amigos.
