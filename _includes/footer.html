@@ -1,4 +1,4 @@
-<footer>
+<footer class="secondaryBg">
   <div class="contain">
     <img
       alt=""
@@ -14,22 +14,16 @@
         <li class="d:c-1/3 marg-b-3 d:marg-r-3">
           {% if link.newTab %}
             <a
-              class="black-important"
-              rel="nofollow noopener noreferrer"
               target="_blank"
+              class="noUnderline flex ai-ctr"
+              rel="nofollow noopener noreferrer"
               href="{{ link.url }}">
-              {{ link.text }} <img
-                alt=""
-                src="/assets/img/external.svg"
-                height="14"
-                width="14"
-              />
+              <span class="marg-r-1 underline">{{link.text}}</span>
+              {% include externalLinkSvg.html %}
             </a>
           {% else %}
-            <a
-              class="black-important"
-              href="{{ link.url }}">
-              {{ link.text }}
+            <a href="{{ link.url }}">
+              {{link.text}}
             </a>
           {% endif %}
         </li>

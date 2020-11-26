@@ -3,6 +3,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <!--
+    The page supports both dark and light color schemes,
+    and the page author prefers dark.
+  -->
+  <meta name="color-scheme" content="dark light">
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <meta http-equiv="Content-Security-Policy" content="base-uri 'none'; connect-src 'self' https://www.googleapis.com; default-src 'none'; frame-src https://calendar.google.com; block-all-mixed-content; font-src 'self'; form-action https://ancient-ridge-68647.herokuapp.com 'self'; img-src 'self'; manifest-src 'self'; object-src 'none'; script-src 'self' ajax.googleapis.com https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js 'nonce-{% nonce %}'; style-src 'self' 'unsafe-inline'">
   <style>

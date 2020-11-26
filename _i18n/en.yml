@@ -15,7 +15,7 @@ home:
   summary: Guided by our vision for an inclusive & equitable tech industry, TWC organizes to build worker power through rank & file self-organization and education.
   black_lives_matter:
     title: Black Lives Matter
-    description: We encourage Tech Workers to stand with the Black Lives Matter movement as they fight for justice. To that end, we've put together <a class="white-important hover:white" href="/security">a list of security guides here</a> you can use to help protect yourself and your comrades.
+    description: We encourage Tech Workers to stand with the Black Lives Matter movement as they fight for justice. To that end, we've put together <a href="/security">a list of security guides here</a> you can use to help protect yourself and your comrades.
   who_we_are:
     title: Who we are
     description: We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends.
