@@ -8,9 +8,6 @@ home:
   title: |
     Poder para los <span class="red">trabajadores</span> en la industria tecnológica
   summary: Guiados por nuestra visión de una industria tecnológica inclusiva y equitativa, TWC se organiza para fomentar el poder entre los trabajadores mediante la educación y la autoorganización.
-  black_lives_matter:
-    title: Black Lives Matter
-    description: Animamos a los trabajadores de la industria tecnológica a apoyar el movimiento Black Lives Matter en su lucha por la justicia. Por ello, hemos reunido <a href="/security">una lista de guías de seguridad</a> (en inglés) que puedes usar para protegerte a ti y a tu camaradas.
   who_we_are:
     title: Quiénes somos
     description: Somos una coalición de trabajadores, tanto partícipes como adyacentes a la industria tecnológica, organizadores laborales, organizadores comunitarios, y amigos.
@@ -19,7 +16,7 @@ home:
     description: Nos organizamos por el activismo, el compromiso social y la educación en Estados Unidos, Alemania, Brasil, India e Inglaterra.
   who_we_support:
     title: A quiénes apoyamos
-    description: Trabajamos en solidaridad con movimientos preexistentes con el objetivo de la justicia social, los derechos de los trabajadores, y la inclusión económica.
+    description: Trabajamos en solidaridad con movimientos preexistentes con el objetivo de la justicia social, los derechos de los trabajadores, y la inclusión económica. Black Lives Matter!
   how_we_work:
     title: Cómo trabajamos
     description: |

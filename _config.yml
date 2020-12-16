@@ -40,6 +40,8 @@ links:
     text: Join the Slack
   - url: /community-guide/
     text: Community Guide
+  - url: /security
+    text: Security Tips
   - url: https://news.techworkerscoalition.org/subscribe/
     text: Newsletter
   - url: https://sites.google.com/view/tech-workers-coalition/learning-club
