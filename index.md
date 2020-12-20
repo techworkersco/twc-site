@@ -2,6 +2,7 @@
 layout: default
 namespace: home
 permalink: /
+languages: ["en", "es", "fr", "it", "pt", "ru"]
 ---
 
 <h1 class="lh-tight marg-b-3">{% t home.title %}</h1>
