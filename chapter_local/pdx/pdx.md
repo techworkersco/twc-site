@@ -16,4 +16,4 @@ This is the Portland, OR chapter of the TWC.
 - Follow us on Twitter at [@twc_pdx](https://twitter.com/twc_pdx).
 
 ## Code of Conduct
-All meetings and communications are covered under the [TWC Code of Conduct](https://techworkerscoalition.org/community-guide/). The privacy and safety of our members is important to us. Sharing the identity of members and or taking/sharing photos are strictly forbidden unless express consent is given.
+All meetings and communications are covered under the [TWC Code of Conduct](/community-guide/). The privacy and safety of our members is important to us. Sharing the identity of members and or taking/sharing photos are strictly forbidden unless express consent is given.

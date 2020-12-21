@@ -7,7 +7,7 @@ regions:
       meetup: Tech-Workers-Coalition-ATX/
       facebook: twcatx
     - text: Brasil
-      url: /brasil
+      url: /pt/brasil
     - text: Boston
       url: https://boston.techworkerscoalition.org/
       twitter: techworkersBOS
