@@ -20,7 +20,7 @@ gem 'pry'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.11"
-   gem "jekyll-multiple-languages-plugin"
+   gem "jekyll-multiple-languages-plugin", github: "kurtsson/jekyll-multiple-languages-plugin", ref: "refs/pull/178/head"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

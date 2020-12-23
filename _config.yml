@@ -31,7 +31,15 @@ jekyll_get_json:
 
 exclude:
   - .jekyll-cache/
+# also update index.md
 languages: ["en", "es", "fr", "it", "pt", "ru"]
+defaults:
+  - scope:
+      path: ""
+    values:
+      # unless languages: ["bl" "ah"] is included, english is only/default frontmatter language
+      languages: ["en"]
+
 exclude_from_localizations: ["assets"]
 links:
   - url: /chapters

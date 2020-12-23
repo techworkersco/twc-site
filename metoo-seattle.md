@@ -22,7 +22,7 @@ permalink: /metoo/seattle/
 
 ## Healthy Masculinity Resources
 * [Wholehearted Masculine](http://wholeheartedmasculine.org/)
-* [The Consent Academy](http://www.consent.academy/mission-statement.html)
+* [The Consent Academy](https://web.archive.org/web/20200930215105/https://www.consent.academy/mission-statement.html)
 * [Jackson Katz, PhD TED talk - Violence Against Women](https://www.youtube.com/watch?v=KTvSfeCRxe8)
 * [A Call to Men](http://www.acalltomen.org)
 * [MVP Strategies](htp://www.mvpstrat.com/about)

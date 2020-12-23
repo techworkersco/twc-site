@@ -29,8 +29,7 @@ Note, only the default [en.yml](_i18n/en.yml) must contain the names of each lan
 
 ![Screen Shot 2019-07-21 at 14 48 46](https://user-images.githubusercontent.com/7111514/61591397-cb0cd180-abc6-11e9-9876-1577d5c8b4bd.png)
 
-### Versioning
-Each translation file, should have same version as other languages. Sometimes that is not possible, and having different versions, helps document the disparities. For example, a new city is added, but no translation is provided in Russian yet.
+To include only certain languages, specify the exact language keys you want inside the page front matter. For example `languages: ["en", 'ja']` 
 
 ### Supported Pages
 * Landing Page [index.md](index.md)

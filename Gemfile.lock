@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/kurtsson/jekyll-multiple-languages-plugin.git
+  revision: 6290d8c0db1ad62c47a1339465e88a9c3bce67df
+  ref: refs/pull/178/head
+  specs:
+    jekyll-multiple-languages-plugin (1.7.0)
+      jekyll (>= 2.0, < 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -13,7 +21,7 @@ GEM
     ethon (0.12.0)
       ffi (>= 1.3.0)
     eventmachine (1.2.7)
-    ffi (1.13.1)
+    ffi (1.14.1)
     forwardable-extended (2.6.0)
     html-proofer (3.18.2)
       addressable (~> 2.3)
@@ -43,8 +51,6 @@ GEM
       terminal-table (~> 1.8)
     jekyll-feed (0.15.1)
       jekyll (>= 3.7, < 5.0)
-    jekyll-multiple-languages-plugin (1.7.0)
-      jekyll (>= 2.0, < 5.0)
     jekyll-sass-converter (2.1.0)
       sassc (> 2.0.1, < 3.0)
     jekyll-watch (2.2.1)
@@ -95,7 +101,7 @@ DEPENDENCIES
   html-proofer
   jekyll (= 4.1.1)
   jekyll-feed (~> 0.11)
-  jekyll-multiple-languages-plugin
+  jekyll-multiple-languages-plugin!
   pry
 
 RUBY VERSION

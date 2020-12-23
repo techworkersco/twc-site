@@ -51,7 +51,7 @@ attend any public TWC London meetings.
 
 All meetings and communications are covered under our [Code of
 Conduct](/london/code-of-conduct/), as well as the [TWC Code of
-Conduct](https://techworkerscoalition.org/community-guide/). The privacy and
+Conduct](/community-guide/). The privacy and
 safety of our members is important to us. Sharing the identity of members and
 or taking/sharing photos are strictly forbidden unless express consent is
 given.
