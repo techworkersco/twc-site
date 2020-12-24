@@ -11,7 +11,7 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
 
 For joining the Slack, please keep in mind that you will be manually vetted according to our principles above before you are allowed in. Sometimes this can take a couple days. Vetting is done by volunteers, please be patient with us!
 
-<h3 class="marg-b-3">Please provide the following:</h3>
+<h2 class="marg-b-3">Please provide the following:</h2>
 
 <form class="join-form" action="https://ancient-ridge-68647.herokuapp.com/signup" method="POST" target="_blank" class="marg-b-4">
   <label class="marg-b-3" for="email">
