@@ -16,8 +16,7 @@ permalink: /press/
           class="marg-r-3 press-icon"
           role="presentation"
           src="/assets/icons/news.svg"
-          width="32"
-        >
+          width="32">
         <div>
           <div>
             {{post.media}} —
@@ -26,7 +25,7 @@ permalink: /press/
             </time>
           </div>
           <h2>
-            <a hreflang="{{post.lang}}-DE" href="{{ post.url }}">
+            <a href="{{ post.url }}">
               {{ post.title }}
             </a>
           </h2>
