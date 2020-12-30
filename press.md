@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /press
+permalink: /press/
 ---
 
 <h1 class="marg-b-4">Press</h1>
