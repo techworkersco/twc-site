@@ -14,6 +14,10 @@ Open a browser to localhost:8080
 
 If your country/city's TWC chapter is not mentioned in the website, link to it on the homepage [here](_layouts/home.html) and if you want a local markdown page (as opposed to external link) see the other examples [here](city_local).
 
+## Add a press mention
+
+Inside [`_data/press.yml`](_data/press.yml) file, add a media entry, with date format in `YYYY-MM-DD`
+
 ## Translation
 
 I18n (internationalization) is made available with the [jekyll-multiple-languages-plugin](https://github.com/kurtsson/jekyll-multiple-languages-plugin/). When a page has a translated version available, a link will show up on the top right if you use the [default_translate](_layouts/default_translate.html) layout. English is the default language, while other languages have their two letter ISO code prefixed, for example [TechWorkersCoalition.org/ru](https://TechWorkersCoalition.org/ru) for Russian.
@@ -29,7 +33,7 @@ Note, only the default [en.yml](_i18n/en.yml) must contain the names of each lan
 
 ![Screen Shot 2019-07-21 at 14 48 46](https://user-images.githubusercontent.com/7111514/61591397-cb0cd180-abc6-11e9-9876-1577d5c8b4bd.png)
 
-To include only certain languages, specify the exact language keys you want inside the page front matter. For example `languages: ["en", 'ja']` 
+To include only certain languages, specify the exact language keys you want inside the page front matter. For example `languages: ["en", 'ja']`
 
 ### Supported Pages
 * Landing Page [index.md](index.md)

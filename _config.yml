@@ -25,9 +25,11 @@ plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
 
-jekyll_get_json:
-  data: collective-actions
-  json: "https://raw.githubusercontent.com/collective-action/tech/master/actions.json"
+jekyll_get_data:
+  - data: collective-actions
+    url: "https://raw.githubusercontent.com/collective-action/tech/master/actions.json"
+  - data: berlin_press
+    url: "https://raw.githubusercontent.com/techworkersco/twc-site-berlin/develop/_data/press.yml"
 
 exclude:
   - .jekyll-cache/
@@ -48,6 +50,8 @@ links:
     text: Join the Slack
   - url: /community-guide/
     text: Community Guide
+  - url: /press
+    text: Press
   - url: /security
     text: Security Tips
   - url: https://news.techworkerscoalition.org/subscribe/
