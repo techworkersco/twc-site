@@ -1,8 +1,7 @@
 before_install:
   - gem update --system
 
-language:
-- ruby
+language: ruby
 
 rvm:
 - 2.7
@@ -10,20 +9,15 @@ script: "./script/cibuild"
 jdk: openjdk8
 deploy:
   provider: script
-  skip_cleanup: true
   script: "./script/cibuild; ./script/cideploy"
   on:
     branch: master
-exclude:
-- vendor
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   addons:
   apt:
-    packages:
-    - libcurl4-openssl-dev
-sudo: false
+    packages:libcurl4-openssl-dev
 cache: bundler
 notifications:
   email: false
