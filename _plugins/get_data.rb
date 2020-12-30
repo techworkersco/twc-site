@@ -6,12 +6,18 @@ require 'open-uri'
 
 module JekyllGetData
   class GetDataGenerator < Jekyll::Generator
+    attr_accessor :external_data
     safe true
     priority :highest
-    @ran_once = false
+
+    def initialize(_plugin)
+      @external_data = {}
+    end
 
     def generate(site)
+      site.data.deep_merge(external_data)
       return if @ran_once
+
       puts "Initializing jekyll_get_data plugin"
       config = site.config['jekyll_get_data']
       return  warn "No config".yellow unless config
@@ -25,16 +31,17 @@ module JekyllGetData
             source = YAML.load(loaded_content.read)
           end
 
-          # @ran_once = true
           if source
             puts "Loading source: #{d['url']}".green
           else
             warn "source #{d['url']} not found".red
           end
 
-          site.data[d['data']] = source
+          external_data[d['data']] = source
         end
       end
+
+      site.data.deep_merge(external_data)
       @ran_once = true
     end
   end
