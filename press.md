@@ -3,30 +3,32 @@ layout: page
 permalink: /press
 ---
 
-# Press
+<h1 class="marg-b-4">Press</h1>
 
-
-<ul
-class="list -no-list-style l-stack -vertical"
-style="--stack-spacing: 1.5rem"
-role="list">
+<ul>
   {% assign english_berlin_press = site.data.berlin_press | where:"lang",site.lang %}
   {% assign posts = site.data.press | concat: english_berlin_press | sort: 'date' | reverse %}
   {% for post in posts  %}
-    <article class="event-card">
+    <article class="marg-b-4 flex">
         <img
-          class="event-card__icon"
+          alt=""
+          aria-hidden
+          class="marg-r-3 press-icon"
+          role="presentation"
           src="/assets/icons/news.svg"
-          alt="Newspaper">
-        <div
-          class="event-card__info-column l-stack -vertical"
-          style="--stack-spacing: 0.25rem">
-          <div class="aside event-card__date" >
+          width="32"
+        >
+        <div>
+          <div>
             {{post.media}} —
-            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | localize: site.lang, '%-d %B %Y' }}</time>
+            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
+              {{ post.date | localize: site.lang, '%-d %B %Y' }}
+            </time>
           </div>
-          <h2 class="event-card__title ">
-            <a hreflang="{{post.lang}}-DE" href="{{ post.url }}" class="event-card__link">{{ post.title }}</a>
+          <h2>
+            <a hreflang="{{post.lang}}-DE" href="{{ post.url }}">
+              {{ post.title }}
+            </a>
           </h2>
         </div>
       </article>
