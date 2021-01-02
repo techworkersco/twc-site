@@ -60,7 +60,7 @@ GEM
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
-    listen (3.2.1)
+    listen (3.4.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
@@ -91,6 +91,7 @@ GEM
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
     unicode-display_width (1.7.0)
+    webrick (1.7.0)
     yell (2.2.2)
 
 PLATFORMS
@@ -103,9 +104,10 @@ DEPENDENCIES
   jekyll-feed (~> 0.11)
   jekyll-multiple-languages-plugin!
   pry
+  webrick (~> 1.7)
 
 RUBY VERSION
-   ruby 2.7.1p83
+   ruby 3.0.0p0
 
 BUNDLED WITH
-   2.1.4
+   2.2.4
