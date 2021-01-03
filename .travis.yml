@@ -1,10 +1,8 @@
 before_install:
   - gem update --system
+  - gem install bundler
 
 language: ruby
-
-rvm:
-- 2.7
 script: "./script/cibuild"
 jdk: openjdk8
 deploy:
