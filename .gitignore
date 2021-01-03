@@ -5,5 +5,3 @@ _site
 .letsencrypt
 *.log
 .jekyll-cache/
-.bundle/
-vendor/
