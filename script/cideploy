@@ -1,3 +1,4 @@
 gem install s3_website
+gem install bundler:2.1.4
 echo $FOO
 s3_website push
