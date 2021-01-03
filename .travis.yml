@@ -4,8 +4,8 @@ before_install:
 language: ruby
 script: "./script/cibuild"
 jdk: openjdk8
-skip_cleanup: true
 deploy:
+  skip_cleanup: true
   provider: script
   script: "./script/cibuild; ./script/cideploy"
   on:
