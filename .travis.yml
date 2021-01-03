@@ -1,5 +1,5 @@
 before_install:
-  gem install bundler:2.1.4
+  - gem update --system
 
 language: ruby
 script: "./script/cibuild"

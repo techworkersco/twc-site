@@ -12,7 +12,6 @@ ruby RUBY_VERSION
 gem "jekyll", "4.1.1"
 gem 'html-proofer'
 gem 'deep_merge'
-gem 's3_website'
 # gem 'pry'
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
