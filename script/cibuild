@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e # halt script on error
 
 bundle exec jekyll build
-# bundle exec htmlproofer ./_site --http-status-ignore "0"
+bundle exec htmlproofer ./_site --http-status-ignore "0,400,503,403"

@@ -11,7 +11,6 @@ This is the SF Bay Area (San Francisco, Oakland, and Berkeley) chapter of the TW
 - We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends.
 
 ## Connect With Us
-- Visit our [Meetup](https://www.meetup.com/Tech-Workers-Coalition/) to find the latest events.
 - Follow us on Twitter [@techworkersco](https://twitter.com/techworkersco).
 
 ## Code of Conduct
