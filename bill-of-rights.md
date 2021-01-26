@@ -40,15 +40,11 @@ The Tech Workers’ Bill of Rights is undergirded by the core values of equity, 
   <b>Workers should be free to express themselves, dissent, and organize without fear of repercussion or retaliation.</b> Workers have the right to a workplace that is free of retaliation from management or other employees. Regardless of employment status, workers deserve the ability to freely discuss salary and benefits, job security in the face of disagreement, input into employment contracts, and equal protections for organizing. Employers should not conduct active, targeted monitoring of communication between workers. Workers should be free to speak about their lived experiences, without the restrictions of non-disparagement clauses. Workers should never be forced into mandatory arbitration, so as to retain their full legal rights.
 </div>
 
-This Tech Workers’ Bill of Rights was created by people with varied experience in the tech industry, and in life. This is the first iteration of a living document that we are working to improve, evolve, and include more voices in. Whether you see yourself reflected in this document, don’t see yourself here but want to, or have questions or ideas to get involved, please join us. We want to hear from you in order to grow our collective voice in order to make the tech industry better for everybody!
+<div class="marg-b-4">
+  This Tech Workers’ Bill of Rights was created by people with varied experience in the tech industry, and in life. <a href="https://forms.gle/p6mfr5XzytRN7NU87">This is the first iteration of a living document that we are working to improve, evolve, and include more voices in. Whether you see yourself reflected in this document, don’t see yourself here but want to, or have questions or ideas to get involved, please join us.</a> We want to hear from you in order to grow our collective voice in order to make the tech industry better for everybody!
+</div>
 
-<h3>The Tech Workers’ Bill of Rights is endorsed by:</h3>
-<ul class="marg-b-4">
-  <li>Tech Workers Union Local 1010</li>
-  <li>Tech Workers Coalition</li>
-  <li>Silicon Valley DSA</li>
-  <li>CODE-CWA</li>
-  <li>Kickstarter United</li>
-</ul>
+<h3 class="marg-b-3">The Tech Workers’ Bill of Rights is endorsed by:</h3>
+<img alt="" height="120" width="720" src="/assets/img/endorsements.png" />
 
-If your organization, network, or collective is interesting in signing on, please fill out this form.
+If your organization, network, or collective is interesting in signing on, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuB3yiLdSVz9HdwNp2v3Dgu_UAGI0bUQ7cP9qCV_wwSYyJvg/viewform?usp=sf_link">please fill out this form.</a>
