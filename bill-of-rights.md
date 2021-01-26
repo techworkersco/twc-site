@@ -7,7 +7,7 @@ permalink: /bill-of-rights/
 <h1>A Tech Workers’ Bill of Rights</h1>
 <b>Last updated 16 Dec 2020</b>
 
-Technology wields immense power. It fosters connection, creativity, and curiosity across the globe. Alongside the human connections fostered through tech, however, we see tech companies abusing privacy, reproducing inequality, surveilling already over-policed communities, exploiting workers and the environment, and stoking hatred and violence in our world. It is vital that workers gain the ability to shape the products we build and the work we do.
+Technology wields immense power. It fosters connection, creativity, and curiosity across the globe. Alongside the human connections fostered through tech, however, we see tech companies abusing privacy, reproducing inequality, surveilling already over-policed communities, exploiting workers and the environment, and stoking hatred and violence in our world. <b>It is vital that workers gain the ability to shape the products we build and the work we do.</b>
 
 As tech workers, we represent a range of job roles, work environments, and salary levels. We are the creative, technology, academic, and office workers who deserve a say in the products and services we build. We are warehouse workers facing dangerously inadequate workplace safety protocols. We are customer service representatives squeezed to work more and more hours with insufficient pay and benefits. We are part time, gig and contract workers of all kinds who want to to protect our livelihoods in a highly competitive landscape.
 
@@ -45,6 +45,6 @@ The Tech Workers’ Bill of Rights is undergirded by the core values of equity, 
 </div>
 
 <h3 class="marg-b-3">The Tech Workers’ Bill of Rights is endorsed by:</h3>
-<img alt="" height="120" width="720" src="/assets/img/endorsements.png" />
+<img alt="The Tech Workers Union 1010. Kickstarter United. Tech Workers Coalition. Silicon Valley DSA and CODE-CWA" height="120" width="720" src="/assets/img/endorsements.png" />
 
 If your organization, network, or collective is interesting in signing on, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuB3yiLdSVz9HdwNp2v3Dgu_UAGI0bUQ7cP9qCV_wwSYyJvg/viewform?usp=sf_link">please fill out this form.</a>
