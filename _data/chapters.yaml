@@ -17,6 +17,8 @@ regions:
     - text: DC
       url: /dc
       twitter: dctechworkers
+    - text: North Carolina
+      url: /north-carolina  
     - text: NYC
       url: /nyc
       twitter: techworkerscony
