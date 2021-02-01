@@ -555,3 +555,21 @@ hr {
     border-color: $grey2;
   }
 }
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.banner > div {
+  flex-grow: 2;
+  width: 75%;
+  max-width: 75%;
+}
+
+.banner img {
+  width: 100%;
+  height: auto; // use this to display responsive image
+}
