@@ -24,7 +24,7 @@ regions:
       twitter: techworkerscony
       meetup: Tech-Workers-Coalition-NYC/
     - text: San Diego
-      meetup: TWCSanDiego
+      url: https://twcsandiego.org/
       twitter: twcsandiego
     - text: Seattle
       url: /seattle
