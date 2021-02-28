@@ -7,10 +7,7 @@
     <p>
       {{action.description}}
       {% assign source_count = 0 %}
-      {% for source in action.sources %}
-        {% assign source_count = source_count | plus: 1 %}
-        <sup><a href="{{source}}">[{{source_count}}]</a></sup>
-      {% endfor %}
+      {% for source in action.sources %}{% assign source_count = source_count | plus: 1 %}<sup><a href="{{source}}">[{{source_count}}]</a></sup>{% endfor %}
     </p>
   </div>
 
