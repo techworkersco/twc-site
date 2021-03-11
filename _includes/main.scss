@@ -34,6 +34,10 @@ header {
   }
 }
 
+.border {
+  border: 1px solid #000;
+}
+
 .title {
   font-size: 21px;
 
@@ -510,6 +514,9 @@ hr {
 }
 
 @media (prefers-color-scheme: dark) {
+  .border {
+    border-color: #fff;
+  }
   #mc-embedded-subscribe {
     border-color: $grey;
   }
