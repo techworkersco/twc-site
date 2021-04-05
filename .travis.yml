@@ -2,12 +2,10 @@ before_install:
   - gem update --system
 
 language: ruby
-
-rvm:
-- 2.7
 script: "./script/cibuild"
 jdk: openjdk8
 deploy:
+  skip_cleanup: true
   provider: script
   script: "./script/cibuild; ./script/cideploy"
   on:

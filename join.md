@@ -7,12 +7,14 @@ show_in_footer: true
 
 # Join us
 
-Our Slack is governed by the principles and rules in our [Community Guide](/community-guide). By joining, you agree to follow them. [Our newsletter](https://news.techworkerscoalition.org) includes news, announcements, and updates from the Tech Workers Coalition. You can [subscribe here](https://news.techworkerscoalition.org/subscribe/)
+Our Slack is governed by the principles and rules in our [Community Guide](/community-guide). By joining, you agree to follow them. If you don't meet these requirements you should consider joining the [Allies slack](https://join.slack.com/t/techworkersco-4fm8079/shared_invite/zt-nbqg4212-Zzzwrrpl8gYm8HHyla16og).
 
-For joining the Slack, please keep in mind that you will be manually vetted according to our principles above before you are allowed in. Sometimes this can take a couple days. Vetting is done by volunteers, please be patient with us!
+<div class='p-3 marg-b-3 border'>
+  <h2 class="txt-1"><b>STOP! Please read!</b></h2>
+  Before joining the Slack, please keep in mind that you will be manually vetted according to our principles above before you are allowed in. Sometimes this can take a couple days. Vetting is done by volunteers, please be patient with us! Only submit the form once and if you meet our requirements you will get in!
+</div>
 
-<h2 class="marg-b-3">Please provide the following:</h2>
-
+<h3 class="marg-b-3">Please provide the following:</h3>
 <form class="join-form" action="https://ancient-ridge-68647.herokuapp.com/signup" method="POST" target="_blank" class="marg-b-4">
   <label class="marg-b-3" for="email">
     <div><b>Email:</b></div>
@@ -47,4 +49,4 @@ For joining the Slack, please keep in mind that you will be manually vetted acco
 
 # Don't qualify for the Slack? Rejected?
 
-If you're a manager or someone not in tech, but you're a supporter of TWC, we recently setup a new 'Managers & Allies' slack you may join [here](https://join.slack.com/t/techworkersco-4fm8079/shared_invite/zt-h3jau11x-PIPDe4OWaGdYNNzv0RQbhQ).
+If you're a manager or someone not in tech, but you're a supporter of TWC, we recently setup a new 'Managers & Allies' slack you may join that is open to anybody [here](https://join.slack.com/t/techworkersco-4fm8079/shared_invite/zt-nbqg4212-Zzzwrrpl8gYm8HHyla16og).

@@ -48,6 +48,8 @@ links:
     text: Join a Chapter
   - url: /subscribe
     text: Join the Slack
+  - url: /bill-of-rights
+    text: Tech Worker Bill of Rights
   - url: /community-guide/
     text: Community Guide
   - url: /press

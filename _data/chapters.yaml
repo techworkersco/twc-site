@@ -17,12 +17,14 @@ regions:
     - text: DC
       url: /dc
       twitter: dctechworkers
+    - text: North Carolina
+      url: /north-carolina  
     - text: NYC
       url: /nyc
       twitter: techworkerscony
       meetup: Tech-Workers-Coalition-NYC/
     - text: San Diego
-      meetup: TWCSanDiego
+      url: https://twcsandiego.org/
       twitter: twcsandiego
     - text: Seattle
       url: /seattle

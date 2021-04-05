@@ -1,9 +1,10 @@
 ---
 layout: page
 permalink: /press/
+title: Press
 ---
 
-<h1 class="marg-b-4">Press</h1>
+<h1 class="marg-b-4">{{page.title}}</h1>
 
 <ul>
   {% assign english_berlin_press = site.data.berlin_press | where:"lang",site.lang %}
@@ -11,7 +12,7 @@ permalink: /press/
   {% for post in posts  %}
     <article class="marg-b-4 flex">
         <img
-          alt=""
+          alt="Newspaper icon"
           aria-hidden
           class="marg-r-3 press-icon"
           role="presentation"
