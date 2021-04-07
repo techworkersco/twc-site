@@ -1,0 +1,8 @@
+<h3 class="txt-2"> Recent Newsletter articles</h3>
+{% assign items = site.data.newsletter['items'] %}
+{% for action in items | limit: 3 %}
+  <div class="action">
+    <b><a href="{{action['url']}}">{{ action['title']}}</a></b>
+    {{ action['summary'] }}
+  </div>
+{% endfor %}

@@ -30,6 +30,8 @@ jekyll_get_data:
     url: "https://raw.githubusercontent.com/collective-action/tech/master/actions.json"
   - data: berlin_press
     url: "https://raw.githubusercontent.com/techworkersco/twc-site-berlin/develop/_data/press.yml"
+  - data: newsletter
+    url: "https://news.techworkerscoalition.org/feed.json"
 
 exclude:
   - .jekyll-cache/
