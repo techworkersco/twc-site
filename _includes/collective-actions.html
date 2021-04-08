@@ -1,7 +1,7 @@
 <h2 class="txt-2"> Recent Collective Actions by Tech Workers</h2>
 <a href="https://collectiveaction.tech/">Full Archive</a>
 {% assign actions = site.data.collective-actions | reverse %}
-{% for action in actions | limit: 5 %}
+{% for action in actions | limit: 2 %}
   <div class="action">
     <b><time datetime="{{ action.date | date: '%Y-%m-%d' }}">{{ action.date | date: '%-d %B %Y' }}</time></b>
     <p>

@@ -2,7 +2,7 @@
 <a href="/press">All Press Mentions</a>
 {% assign english_berlin_press = site.data.berlin_press | where:"lang", site.lang %}
 {% assign posts = site.data.press | concat: english_berlin_press | sort: 'date' | reverse %}
-{% for post in posts | limit: 3 %}
+{% for post in posts | limit: 2 %}
   <div class="action">
     <b><time datetime="{{ press.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%-d %B %Y' }}</time></b>
     <p>
