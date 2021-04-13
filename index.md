@@ -33,9 +33,7 @@ languages: ["en", "es", "fr", "it", "pt", "ru"]
 </div>
 
 {% if site.lang == 'en' %}
-  {% include press.html %}
-{% endif %}
-
-{% if site.lang == 'en' %}
+  {% include newsletter.html %}
   {% include collective-actions.html %}
+  {% include press.html %}
 {% endif %}
