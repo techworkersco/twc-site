@@ -44,6 +44,9 @@ defaults:
       # unless languages: ["bl" "ah"] is included, english is only/default frontmatter language
       languages: ["en"]
 
+collections:
+  - unionized_workplaces
+
 exclude_from_localizations: ["assets"]
 links:
   - url: /chapters

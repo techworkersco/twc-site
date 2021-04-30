@@ -50,3 +50,8 @@ home:
     description: |
       <p>We’re also happy to chat, answer any questions you might have, or hear about any social justice efforts in which you need a partner. <a href="mailto:hello@techworkersco.org">Send us an email.</a></p>
       <p>If you’re a member of the press, please get in touch with us through <a href="mailto:press@techworkersco.org">press@techworkersco.org.</a></p>
+
+job_board:
+  title: "Job Board 🌹"
+  unionized_workplaces: "Unionized Workplaces"
+  see_jobs: "See all jobs"
