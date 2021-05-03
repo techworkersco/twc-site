@@ -10,18 +10,16 @@ languages: ["en"]
 
 <h2 class="marg-b-4">{% t job_board.unionized_workplaces %}</h2>
 
+<p>{% t job_board.intro_to_unionized_workplaces %}</p>
+
 {% for workplace in site.unionized_workplaces %}
 
-  <h3>{{ workplace.organization }} - {{workplace.division }}</h3>
+  <h3>{{ workplace.organization }} {% if workplace.division %} - {{workplace.division }} {% endif %}</h3>
 
-{% if workplace.union_twitter %}
-
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-
-Union: <a href="https://twitter.com/{{ worplace.union_twitter }}">
-@{{ workplace.union_twitter }}
-</a>
-
-{% endif %}  
+<p>Union: {{ workplace.union }} </p>
+<p>
+{% if workplace.union_twitter %}<a href="https://twitter.com/{{ worplace.union_twitter }}">@{{ workplace.union_twitter }}</a>{% endif %} 
+{% if workplace.union_website %}<a href="https://twitter.com/{{ worplace.union_website }}">website</a>{% endif %}
+</p>
 <a href="{{ workplace.job_listings }}">{% t job_board.see_jobs %}&nbsp;></a>
 {% endfor %}

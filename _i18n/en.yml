@@ -55,3 +55,6 @@ job_board:
   title: "Job Board 🌹"
   unionized_workplaces: "Unionized Workplaces"
   see_jobs: "See all jobs"
+  intro_to_unionized_workplaces: <p>
+    More and more tech-driven organizations are unionizing. This is an incomplete list of workplaces with an active union. Know of another one? <a href="https://github.com/techworkersco/twc-site/tree/master/_unionized_workplaces">Please add it</a>.
+    </p>
