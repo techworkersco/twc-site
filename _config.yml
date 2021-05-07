@@ -45,7 +45,7 @@ defaults:
       languages: ["en"]
 
 collections:
-  - unionized_workplaces
+  - workplaces
 
 exclude_from_localizations: ["assets"]
 links:

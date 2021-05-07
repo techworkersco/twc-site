@@ -6,22 +6,24 @@ permalink: /job-board/
 languages: ["en"]
 ---
 
-<h1 class="lh-tight marg-b-3">{% t job_board.title %}</h1>
+<h1 class="lh-tight marg-b-3 marg-t-2">{% t job_board.title %}</h1>
 
-<h2 class="marg-b-4">{% t job_board.unionized_workplaces %}</h2>
+<h2 class="marg-b-4">{% t job_board.workplaces %}</h2>
 
-{% for workplace in site.unionized_workplaces %}
+<p>{% t job_board.intro_to_unionized_workplaces %}</p>
 
-  <h3>{{ workplace.organization }} - {{workplace.division }}</h3>
+{% for workplace in site.workplaces %}
 
-{% if workplace.union_twitter %}
+  <h3>{{ workplace.organization }} {% if workplace.division %} - {{workplace.division }} {% endif %}</h3>
 
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-
-Union: <a href="https://twitter.com/{{ worplace.union_twitter }}">
-@{{ workplace.union_twitter }}
-</a>
-
-{% endif %}  
+<p>Union: {{ workplace.union }} </p>
+{% assign content = workplace.content | strip_newlines %}
+{% if content != "" %}
+  {{content}}
+{% endif %}
+<p>
+{% if workplace.union_twitter %}<a href="https://twitter.com/{{ worplace.union_twitter }}">@{{ workplace.union_twitter }}</a>{% endif %} 
+{% if workplace.union_website %}<a href="https://twitter.com/{{ worplace.union_website }}">website</a>{% endif %}
+</p>
 <a href="{{ workplace.job_listings }}">{% t job_board.see_jobs %}&nbsp;></a>
 {% endfor %}
