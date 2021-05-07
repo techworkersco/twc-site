@@ -37,7 +37,7 @@ home:
     title: Join the discussion & know the latest
     links: |
       <li><a href="/subscribe">Slack</a></li>
-      <li><a href="https://news.techworkerscoalition.org/subscribe/">Newsletter</a></li>
+      <li><a href="https://news.techworkerscoalition.org/">Newsletter</a></li>
       <li><a target="_blank" href="https://sites.google.com/view/tech-workers-coalition/learning-club">Learning Club</a></li>
   social_media:
     title: TWC on social media
