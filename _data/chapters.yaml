@@ -17,6 +17,11 @@ regions:
     - text: DC
       url: /dc
       twitter: dctechworkers
+      facebook: DC-Tech-Workers-Coalition
+    - text: Denver
+      twitter: @twc_den
+    - text: Los Angeles
+      twitter: TWC_LosAngeles
     - text: North Carolina
       url: /north-carolina  
     - text: NYC
@@ -26,13 +31,18 @@ regions:
     - text: San Diego
       url: https://twcsandiego.org/
       twitter: twcsandiego
+    - text: San Jose
+      twitter: twc_sanjose
     - text: Seattle
       url: /seattle
     - text: SF Bay Area
       url: /sf-bay-area
+    - text: South Florida
+      twitter: southfltechworkers
 - region: Asia Pacific
   chapters:
     - text: Bangalore
+      twitter: TechiesSpeakUp
       url: https://twitter.com/twc_bangalore
 - region: Europe
   chapters:
@@ -40,6 +50,11 @@ regions:
       twitter: TechWorkersBER
       facebook: TechWorkersBER
       url: https://techworkersberlin.com/
+    - text: Dublin
+      twitter: TWBIreland
+    - text: London
+      twitter: TechWorkersLDN
+      facebook: TechWorkersLDN
     - text: Italia
       twitter: twcitalia
       facebook: twcita
