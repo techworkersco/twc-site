@@ -107,6 +107,10 @@ header {
   position: relative;
 }
 
+.circ {
+  border-radius: 50%;
+}
+
 button {
   background: 0;
   border: 1px solid;
@@ -256,6 +260,10 @@ ul {
 
 .flex {
   display: flex;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .d\:flex {
@@ -470,7 +478,17 @@ hr {
   padding: 0.75rem;
 }
 
+.press-icon {
+  height: 40px;
+  min-width: 40px;
+  width: 40px;
+}
+
 @media (prefers-color-scheme: light) {
+  .press-icon {
+    fill: $black;
+  }
+
   .bg-black {
     background-color: $grey3;
     color: $black;
@@ -531,6 +549,12 @@ hr {
 }
 
 @media (prefers-color-scheme: dark) {
+  h2 a:link {
+    color: $white;
+  }
+  .press-icon {
+    fill: $red;
+  }
   .border {
     border-color: #fff;
   }
