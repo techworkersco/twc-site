@@ -4,7 +4,8 @@ before_install:
 
 language: ruby
 script: "./script/cibuild"
-jdk: openjdk8 
+jdk:
+  - openjdk8
 dist: focal # instead of default xenial per https://github.com/rvm/rvm/issues/5133#issuecomment-932342146
 deploy:
   skip_cleanup: true
