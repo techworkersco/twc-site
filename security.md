@@ -11,6 +11,11 @@ The following is a list of digital security guides we've found to be particularl
 
 <ul>
   <li>
+    <a noreferrer nofollow href="https://techworkerhandbook.org/">
+      Tech Worker Handbook
+    </a>
+  </li>
+  <li>
     <a noreferrer nofollow href="https://ssd.eff.org/en">
       Surveillance Self Defense by the EFF
     </a>
