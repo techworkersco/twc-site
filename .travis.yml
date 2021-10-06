@@ -4,8 +4,8 @@ before_install:
 
 language: ruby
 script: "./script/cibuild"
-jdk: openjdk10
-dist: focal # instead of default xenial per https://github.com/rvm/rvm/issues/5133#issuecomment-932342146
+dist: bionic # instead of default xenial per https://github.com/rvm/rvm/issues/5133#issuecomment-932342146
+jdk: openjdk8
 deploy:
   skip_cleanup: true
   provider: script
