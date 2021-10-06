@@ -1,9 +1,11 @@
 before_install:
+  - sudo apt-get update && sudo apt-get install apt-transport-https ca-certificates -y && sudo update-ca-certificates
   - gem update --system
 
 language: ruby
 script: "./script/cibuild"
-jdk: openjdk8
+#jdk: openjdk8 
+dist: focal # instead of default xenial per https://github.com/rvm/rvm/issues/5133#issuecomment-932342146
 deploy:
   skip_cleanup: true
   provider: script
