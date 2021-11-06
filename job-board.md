@@ -22,8 +22,8 @@ languages: ["en"]
   {{content}}
 {% endif %}
 <p>
-{% if workplace.union_twitter %}<a href="https://twitter.com/{{ worplace.union_twitter }}">@{{ workplace.union_twitter }}</a>{% endif %} 
-{% if workplace.union_website %}<a href="https://twitter.com/{{ worplace.union_website }}">website</a>{% endif %}
+{% if workplace.union_twitter %}<a href="https://twitter.com/{{ workplace.union_twitter }}">@{{ workplace.union_twitter }}</a>{% endif %} 
+{% if workplace.union_website %}(<a href="{{ workplace.union_website }}">website</a>){% endif %}
 </p>
 <a href="{{ workplace.job_listings }}">{% t job_board.see_jobs %}&nbsp;></a>
 {% endfor %}
