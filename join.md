@@ -42,7 +42,6 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
     <div class="marg-b-2">Including a referrer from an existing member can be a good way to get in the slack if you lack a social media presence. Also, please be specific! If you found us on search, don't just say "Google" (it's unclear if you mean the company or the search engine).</div>
     <input id="referrer" type="text" name="referrer">
   </label>
-  <input type="hidden" name="team_id" value="T0M2JM76F" />
   <input type="hidden" name="redirect_uri" value="https://techworkerscoalition.org/slack-thanks" />
   <input type="submit" value="Submit">
 </form>
