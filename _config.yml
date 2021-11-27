@@ -49,6 +49,8 @@ collections:
 
 exclude_from_localizations: ["assets"]
 links:
+  - url: /subscribe
+    text: Join our Slack
   - url: /chapters
     text: Join a Chapter
   - url: /bill-of-rights
