@@ -1,4 +1,0 @@
-gem install s3_website
-gem install bundler
-echo $FOO
-s3_website push
