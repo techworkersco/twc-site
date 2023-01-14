@@ -15,7 +15,7 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
 </div>
 
 <h3 class="marg-b-3">Please provide the following:</h3>
-<form class="join-form" action="https://getform.io/f/4e00cd30-42a7-46be-aac4-5e786a5ab9d2" method="POST" target="_blank" class="marg-b-4">
+<form class="join-form" method="POST" target="_blank" class="marg-b-4" data-netlify="true" action="/slack-thanks">
   <label class="marg-b-3" for="email">
     <div><b>Email:</b></div>
     <input id="email" type="email" required name="email">
