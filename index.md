@@ -35,5 +35,7 @@ languages: ["en", "es", "fr", "it", "pt", "ru"]
 {% if site.lang == 'en' %}
   {% include newsletter.html %}
   {% include collective-actions.html %}
-  {% include press.html %}
+  <h2 class="txt-2"> TWC in the Press</h2>
+  <a href="/press">All Press mentions</a>
+  {% include press.html limit=3%}
 {% endif %}
