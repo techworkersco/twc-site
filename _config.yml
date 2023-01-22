@@ -25,6 +25,10 @@ plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
 
+# jekyll-feed plugin
+feed:
+  disable_in_development: true
+
 jekyll_get_data:
   - data: collective-actions
     url: "https://raw.githubusercontent.com/collective-action/tech/master/actions.json"
