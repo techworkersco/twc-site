@@ -28,7 +28,10 @@ module JekyllGetData
           if d['url'].end_with?('json')
             source = JSON.load loaded_content
           elsif d['url'].end_with?(*%w(yml yaml))
-            source = YAML.load(loaded_content.read)
+            source = YAML.load(
+              loaded_content.read,
+              permitted_classes: [Date]
+            )
           end
 
           if source
