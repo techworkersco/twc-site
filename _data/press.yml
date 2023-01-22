@@ -1,3 +1,27 @@
+- media: Wired
+  url: https://www.wired.com/story/tech-organizing-labor-ibm-history/
+  title: The Activist Legacy of the IBM Black Workers Alliance
+  byline: As a tech worker turned tech organizer, I believed the current wave of activism was the first. Then I realized I was part of an important lineage.
+  date: 2022-04-19
+
+- media: Red Pepper
+  url: https://www.redpepper.org.uk/the-tech-fightback-an-interview-with-united-tech-and-allied-workers-utaw/
+  title: The tech fightback: an interview with United Tech and Allied Workers (UTAW)
+  byline: "Liam Kennedy speaks to John Chadfield and Eran Cohen of the new United Tech and Allied Workers (UTAW) branch about their plans for the sector, democratic workplaces and big tech’s pollution problem"
+  date: 2022-03-02
+ 
+- media: MIT Technology Review
+  url: https://www.technologyreview.com/2022/02/07/1044760/tech-workers-unionizing-power/
+  title: Why the balance of power in tech is shifting toward workers
+  byline: A record number of tech worker unions formed in the US last year. They’re part of a global effort.
+  date: 2022-02-07 
+
+- media: Mashable
+  url: https://mashable.com/article/tech-union-organizing
+  title: "Who gets called a 'tech worker' is the big question for 2022"
+  byline: "Tech workers of the world, unite! Uh, but first: define 'tech worker.'"
+  date: 2022-01-16
+
 - media: Jacobin
   url: https://jacobinmag.com/2021/02/tech-workers-organizing-class-position
   title: Tech Workers at Every Level Can Organize to Build Power
