@@ -1,8 +1,20 @@
-<h3 class="txt-2"> Recent Newsletter articles</h3>
-{% assign items = site.data.newsletter['items'] %}
-{% for action in items | limit: 1 %}
-  <div class="action">
-    <b><a href="{{action['url']}}">{{ action['title']}}</a></b>
-    {{ action['summary'] }}
-  </div>
+<h2 class="txt-2">TWC Newsletter</h2>
+{% assign posts = site.data.newsletter['items'] %}
+{% for post in posts limit: 2 %}
+  <article class="marg-b-4 flex items-center">
+    <div>
+      <div>
+        TWC Newsletter —
+        <time datetime="{{ post['date_published'] | date: '%Y-%m-%d' }}">
+          {{ post['date_published'] | date: '%-d %B %Y' }}
+        </time>
+      </div>
+      <h3>
+        <a href="{{post['url']}}">
+          {{  post['title'] }}
+        </a>
+      </h3>
+      {{ post['summary'] }}
+    </div>
+  </article>
 {% endfor %}
