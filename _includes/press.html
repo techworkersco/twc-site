@@ -21,11 +21,11 @@
             {{ post.date | date: '%-d %B %Y' }}
           </time>
         </div>
-        {%if limit% }<h2>{% else %}<h3>{% endif %}
+        {% if limit %}<h2>{% else %}<h3>{% endif %}
           <a href="{{ post.url }}">
             {{ post.title }}
           </a>
-        {% if limit% }</h2>{% else %}</h3>{% endif %}
+        {% if limit %}</h2>{% else %}</h3>{% endif %}
       </div>
     </article>
 {% endfor %}
