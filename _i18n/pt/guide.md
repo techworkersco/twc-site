@@ -19,7 +19,7 @@ Reservamo-nos o direito de rejeitar a associação com base no seguinte:
 - O seu desejo de fazer parte da TWC é comprometido por um interesse comercial. Por exemplo, você quer ter acesso a nossa comunidade para promover seu produto, ou para fazer testes com usuários
 - Você trabalha como jornalista
 
-Se você tiver alguma dúvida sobre isso, sinta-se à vontade para [para entrar em contato via e-mail](mailto:hello@techworkersco.org).
+Se você tiver alguma dúvida sobre isso, sinta-se à vontade para [para entrar em contato via e-mail](mailto:hello@techworkerscoalition.org).
 
 
 ## Valores de Participação

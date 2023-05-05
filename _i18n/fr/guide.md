@@ -18,7 +18,7 @@ Nous nous réservons le droit de refuser l'adhésion sur la base des éléments 
 - Votre désir de faire partie de TWC est compromis par un intérêt commercial. Par exemple, vous souhaitez avoir accès à nos membres pour promouvoir votre produit ou effectuer des tests utilisateurs
 - Vous travaillez comme journaliste
 
-Si vous avez des questions à ce sujet, n'hésitez pas à nous [contacter par e-mail](mailto:hello@techworkersco.org).
+Si vous avez des questions à ce sujet, n'hésitez pas à nous [contacter par e-mail](mailto:hello@techworkerscoalition.org).
 
 ## Valeurs De Participation
 
