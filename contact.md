@@ -5,6 +5,6 @@ permalink: /contact-us/
 show_in_footer: true
 ---
 
-If you're a member of the press, please get in touch with us through [press@techworkersco.org](mailto:press@techworkersco.org).
+If you're a member of the press, please get in touch with us through [press@techworkerscoalition.org](mailto:press@techworkerscoalition.org).
 
-Otherwise, if you'd like to learn more about our organization or learn how to get involved, please reach out to us through [hello@techworkersco.org](mailto:hello@techworkersco.org).
+Otherwise, if you'd like to learn more about our organization or learn how to get involved, please reach out to us through [hello@techworkerscoalition.org](mailto:hello@techworkerscoalition.org).

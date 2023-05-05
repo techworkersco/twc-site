@@ -18,7 +18,7 @@ We reserve the right to reject membership based on the following:
 - Your desire to be part of TWC is compromised by a business interest. For example, you want access to our members to promote your product, or to do user testing
 - You work as a journalist
 
-If you have any questions about this, feel free to [reach out via email](mailto:hello@techworkersco.org).
+If you have any questions about this, feel free to [reach out via email](mailto:hello@techworkerscoalition.org).
 
 ## Values of Participation
 
