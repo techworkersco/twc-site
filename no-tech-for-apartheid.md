@@ -6,15 +6,15 @@ permalink: /no-tech-for-apartheid/
 
 # No Tech for Apartheid
 
-On Wednesday, the [New York Times reported](https://www.nytimes.com/2023/11/08/business/israel-palestine-google-employees.html) that tech workers are facing retaliation and discrimination for speaking up about Palestine. Google workers have published an [open letter](https://medium.com/@notechforapartheid/googleopenletter-868f0c4477db) describing some of the retaliation they’ve been experiencing. And just last week, we learned of a tech worker Mai Ubeid’s [death](https://anamraheem.substack.com/p/a-delicate-small-gazelle) in Gaza following a recent Israeli airstrike. In this moment of grief, rage, and fear, we call on our community to take action to hold our leadership accountable. If you’re here to take action, jump to [“What can I do?”](#what-can-i-do).
+On Wednesday, the [New York Times reported](https://www.nytimes.com/2023/11/08/business/israel-palestine-google-employees.html) that tech workers are facing retaliation and discrimination for speaking up about Palestine. Google workers have published an [open letter](https://medium.com/@notechforapartheid/googleopenletter-868f0c4477db) describing some of the retaliation they’ve been experiencing. And just last week, we learned of a tech worker Mai Ubeid’s [death](https://anamraheem.substack.com/p/a-delicate-small-gazelle) in Gaza following a recent Israeli airstrike. In this moment of grief, rage, and fear, we call on our community to take action to hold our leadership accountable. **If you’re here to take action, jump to [“What can I do?”](#what-can-i-do).**
 
-## **“I work in tech and I am so sad, angry, and scared about the current crisis in Gaza, but no one in tech seems to be talking about it.”**
+## “I work in tech and I am so sad, angry, and scared about the current crisis in Gaza, but no one in tech seems to be talking about it.”
 
 You are not alone—we are also sad, angry, scared, and more. As Palestinian, Arab, and Muslim tech workers; as anti-Zionist Jewish tech workers; as tech workers of color with histories of displacement, migration, and diaspora; as engineers and designers who want to build technology for social good; as trust and safety workers who want to keep our technologies safe; and as allied tech workers standing in solidarity, we share your grief, anger, fear, and more. 
 
 Workers are beginning to speak up about the atrocities in front of us, and they’re asking tough questions that our leaders are trying to silence and ignore. These workers are facing [retaliation and harassment](https://medium.com/@notechforapartheid/googleopenletter-868f0c4477db) for speaking truth to power. But we are stronger together. Every day we find new voices and connect them with each other, and together we’re forming a chorus that’s crying out for peace. Join us so we can build an industry where people can stand together for human rights.
 
-## **“Why has leadership in the tech industry been silent on this?”**
+## “Why has leadership in the tech industry been silent on this?”
 
 The tech industry’s silence speaks louder than words. Many tech companies have yet to acknowledge the ongoing humanitarian crisis in Gaza. Those that did have made [one-sided statements](https://www.calcalistech.com/ctechnews/article/bj8f1tfbt) that erase the context of apartheid.
 
@@ -22,9 +22,9 @@ The tech industry has a long history of violating Palestinian rights through cen
 
 Our leadership may lack the courage to stand against apartheid, and they may choose to be silent or turn away from this devastation - but we don’t have to make the same choices. We can demand that the industry do more.
 
-## **“What can Tech do?”**
+## “What can Tech do?”
 
-This is a moment of crisis. **First and foremost, tech workers must organize to demand their employers cease any defense contracts.** Through the [No Tech For Apartheid](https://www.notechforapartheid.com) (NOTA) campaign, workers at Google and Amazon are [taking bold action](https://www.latimes.com/business/story/2023-08-29/google-cloud-employees-protest-israeli-military-contract) demanding the cancelation of Project Nimbus, a 1.2B dollar contract with the Israeli military and government to build cloud infrastructure for military use. Workers across the tech industry are starting to follow, organizing to demand their companies cease any defense contracts with the Israeli state.
+This is a moment of crisis. **First and foremost, tech workers must organize to demand their employers cease any defense contracts.** Through the [No Tech For Apartheid](https://www.notechforapartheid.com) (NOTA) campaign, workers at Google and Amazon are [taking bold action](https://www.latimes.com/business/story/2023-08-29/google-cloud-employees-protest-israeli-military-contract) demanding the cancelation of Project Nimbus, a $1.2 billion dollar contract with the Israeli military and government to build cloud infrastructure for military use. Workers across the tech industry are starting to follow, organizing to demand their companies cease any defense contracts with the Israeli state.
 
 **Second, companies must stop propagating Israeli misinformation and censoring Palestinian solidarity content.** Our employers have extensive experience protecting freedom of expression, especially that of marginalized and oppressed communities, and ensuring that users have access to verified information. 
 
@@ -32,23 +32,23 @@ This is a moment of crisis. **First and foremost, tech workers must organize to 
 
 It’s time for tech companies to recognize that the labor they employ have voices, perspectives, and needs that they can no longer ignore. Technology should be used to build a better world, not wreck it, and it’s time for us to call on our employers to build it.
 
-## **“What can I do?”**
+## “What can I do?”
 
 It is so easy to fall into despair and feel hopeless. But if we take action together, collectively workers have the power to change this situation. Here are five immediate action items you can take: 
 
-1. ORGANIZE: Join the [No Tech For Apartheid](https://www.notechforapartheid.com) campaign. Join our upcoming mass calls to meet each other and learn about upcoming actions: 
-    * Nov 9, Thursday - 2pm pt / 5pm et 
+* **Organize**: Join the [No Tech For Apartheid](https://www.notechforapartheid.com) campaign. Join our upcoming mass calls to meet each other and learn about upcoming actions: 
+    * 11/14, 8 p.m. ET / 5 p.m. PT: [Register here](https://jvp-org.zoom.us/meeting/register/tZUqc-morT0jH9IuCn8LDVDlhWUquCVZFrx5#/registration)
+    * 11/16, 5 p.m. ET / 2 p.m. PT: [Register here](https://jvp-org.zoom.us/meeting/register/tZEsdO2uqTotGtL1fxdK42rL5KT1lThUis_q#/registration)
 
-2. OUTREACH: Message your coworkers in your team, org, and ERGs to get them involved too, so we can build a movement that’s ready for this moment. Check out some [template communications](#template-email-to-your-coworkers-org-ergs) we have below.
+* **Outreach**: Message your coworkers in your team, org, and ERGs to get them involved too, so we can build a movement that’s ready for this moment. Check out some [template communications](#template-email-to-your-coworkers-org-ergs) we have below.
 
-3. MOBILIZE: When our leadership refuses to acknowledge how tech workers are impacted by the current crisis, we will honor our colleagues ourselves. Organizing a vigil (details to come) is an opportunity for us to come together to honor the passing of tech workers like Mai. Pick a date and an entrance to your office where you will gather. To organize a vigil at your office, see [Bit.ly/VigilHowTo](https://bit.ly/VigilHowToo). 
+* **Mobilize**: When our leadership refuses to acknowledge how tech workers are impacted by the current crisis, we will honor our colleagues ourselves. Organizing a vigil is an opportunity for us to come together to honor the passing of tech workers like Mai. Pick a date and an entrance to your office where you will gather. To organize a vigil at your office, see [Bit.ly/VigilHowTo](https://bit.ly/VigilHowToo). 
 
-4. LEARN: Educate yourself about the current crisis. Bring your coworkers to the many virtual teach-ins that Palestinian groups have been organizing. Upcoming teach-in’s: 
-    * APEC teach in (details to come)
+* **Learn**: Educate yourself about the current crisis. Bring your coworkers to the many virtual teach-ins that Palestinian groups have been organizing.
 
-5. CALL CONGRESS: Of course, if you haven’t been doing so already, contact your elected officials to demand that they endorse an immediate and unconditional ceasefire. If you vote in the U.S., call your members of Congress to demand that they endorse an immediate and unconditional ceasefire. Both [Jewish Voice for Peace](https://www.jewishvoiceforpeace.org/action-alerts/) and [5 Calls](https://5calls.org/) make it really easy, but you can also [contact your representative directly](https://www.house.gov/representatives/find-your-representative).
+* **Call Congress**: Of course, if you haven’t been doing so already, contact your elected officials to demand that they endorse an immediate and unconditional ceasefire. If you vote in the U.S., call your members of Congress to demand that they endorse an immediate and unconditional ceasefire. Both [Jewish Voice for Peace](https://www.jewishvoiceforpeace.org/action-alerts/) and [5 Calls](https://5calls.org/) make it really easy, but you can also [contact your representative directly](https://www.house.gov/representatives/find-your-representative).
 
-## **[Template] Email to your coworkers, org, ERGs**
+## [Template] Email to your coworkers, org, ERGs
 
 Dear colleagues, 
 
@@ -58,7 +58,7 @@ The current death toll in Palestine is at 10,500+ and growing, with almost half 
 
 Our company values state [INSERT COMPANY VALUES] . Yet, our leadership has made no acknowledgment of martyred tech workers, the ongoing genocide in Gaza, or its impact on our employee population.  It is disheartening to see that our values are not honored when it comes to our Palestinian colleagues. 
 
-[IF GOOGLE OR AMAZON] Unfortunately, our employer’s silence on this matter should come as no surprise: Google and Amazon hold a 1.2B dollar contract with Israel through with they directly profit off of this genocidal campaign. This contract, Project Nimbus, provides the Israeli military with an [“all encompassing cloud solution”](https://www.haaretz.com/israel-news/tech-news/2021-04-21/ty-article/israel-picks-google-amazon-for-official-state-cloud/0000017f-e896-dc91-a17f-fc9fd1ce0000) and [AI-driven facial recognition](https://theintercept.com/2022/07/24/google-israel-artificial-intelligence-project-nimbus/), sentiment analysis, and object tracking tools which are likely deployed in the violent policing and surveillance of Palestinians. Despite vocal worker protest, Google and Amazon have thus far refused to cancel Project Nimbus and instead have [retaliated against employees](https://www.latimes.com/business/technology/story/2022-03-15/google-project-nimbus-ariel-koren) who have spoken out. Yet tech workers across the industry have only grown more united in pressuring Google and Amazon to drop Nimbus, and we are convinced that we can succeed, as we did in [forcing Google to drop a prior defense contract](https://www.nytimes.com/2018/06/01/technology/google-pentagon-project-maven.html), Project Maven, in 2018.
+[IF GOOGLE OR AMAZON] Unfortunately, our employer’s silence on this matter should come as no surprise: Google and Amazon hold a $1.2B contract with Israel through with they directly profit off of this genocidal campaign. This contract, Project Nimbus, provides the Israeli military with an [“all encompassing cloud solution”](https://www.haaretz.com/israel-news/tech-news/2021-04-21/ty-article/israel-picks-google-amazon-for-official-state-cloud/0000017f-e896-dc91-a17f-fc9fd1ce0000) and [AI-driven facial recognition](https://theintercept.com/2022/07/24/google-israel-artificial-intelligence-project-nimbus/), sentiment analysis, and object tracking tools which are likely deployed in the violent policing and surveillance of Palestinians. Despite vocal worker protest, Google and Amazon have thus far refused to cancel Project Nimbus and instead have [retaliated against employees](https://www.latimes.com/business/technology/story/2022-03-15/google-project-nimbus-ariel-koren) who have spoken out. Yet tech workers across the industry have only grown more united in pressuring Google and Amazon to drop Nimbus, and we are convinced that we can succeed, as we did in [forcing Google to drop a prior defense contract](https://www.nytimes.com/2018/06/01/technology/google-pentagon-project-maven.html), Project Maven, in 2018.
 
 I can’t stay silent like our leadership has, and I want to honor the values that our leaders won’t. Please join me in standing up against this genocide by joining the No Tech for Apartheid campaign (www.notechforapartheid.com), which is working to ensure our company and our industry is not complicit. They will be holding a mass call on [INSERT NEXT CALL] and [Bit.ly/techworkerCTA](https://bit.ly/techworkerCTA) has other actions you can take.
 
@@ -67,7 +67,7 @@ And finally, thank you for hearing me out and understanding that so many of us a
 Sincerely / In solidarity, 
 [YOUR NAME] 
 
-## **[Template] Chat message to your coworkers, org, ERGs**
+## [Template] Chat message to your coworkers, org, ERGs
 
 Hi folks, I just learned that a former tech worker at Google, Mai Ubeid, and her entire family were murdered during a recent Israeli airstrike. I did not know her, but as a fellow tech worker I am heartbroken by the news and can’t help but feel connected to the countless innocent civilians, like Mai, who are being killed, injured, and displaced by the ongoing genocide in Gaza. 
 
