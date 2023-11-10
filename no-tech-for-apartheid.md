@@ -45,7 +45,7 @@ It is so easy to fall into despair and feel hopeless. But if we take action toge
 * **Mobilize**: When our leadership refuses to acknowledge how tech workers are impacted by the current crisis, we will honor our colleagues ourselves. Organizing a vigil is an opportunity for us to come together to honor the passing of tech workers like Mai. Pick a date and an entrance to your office where you will gather. To organize a vigil at your office, see [Bit.ly/VigilHowTo](https://bit.ly/VigilHowTo). 
 
 * **Learn**: Educate yourself about the current crisis. Bring your coworkers to the many virtual teach-ins that Palestinian groups have been organizing. Upcoming teach-ins: 
-    * [Tech Workers Teach In (virtual)](https://bit.ly/NOTA-Teachin): Tuesday 1pm PST
+    * [Tech Workers Teach In (virtual)](https://bit.ly/NOTA-TeachIn): Tuesday 1pm PST
 
 * **Call Congress**: Of course, if you haven’t been doing so already, contact your elected officials to demand that they endorse an immediate and unconditional ceasefire. If you vote in the U.S., call your members of Congress to demand that they endorse an immediate and unconditional ceasefire. Both [Jewish Voice for Peace](https://www.jewishvoiceforpeace.org/action-alerts/) and [5 Calls](https://5calls.org/) make it really easy, but you can also [contact your representative directly](https://www.house.gov/representatives/find-your-representative).
 
