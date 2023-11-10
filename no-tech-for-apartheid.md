@@ -1,7 +1,10 @@
---- layout: page title: No Tech for Apartheid permalink:
-/no-tech-for-apartheid/ ---
+---
+layout: page
+title: No Tech for Apartheid
+permalink: /no-tech-for-apartheid/
+---
 
-# No Tech for Apartheid
+# No Tech for Apartheid: Call to Action
 
 On Wednesday, the [New York Times
 reported](https://www.nytimes.com/2023/11/08/business/israel-palestine-google-employees.html)
@@ -39,7 +42,7 @@ are five immediate action items you can take:
   Organizing a vigil is an opportunity for us to come together to honor the
   passing of tech workers like Mai. Pick a date and an entrance to your office
   where you will gather. To organize a vigil at your office, see
-  [Bit.ly/VigilHowTo](https://bit.ly/VigilHowToo). 
+  [bit.ly/VigilHowTo](https://bit.ly/VigilHowTo). 
 
 * **Learn**: Educate yourself about the current crisis. Bring your coworkers to
   the many virtual teach-ins that Palestinian groups have been organizing.
@@ -188,9 +191,9 @@ I can’t stay silent like our leadership has, and I want to honor the values
 that our leaders won’t. Please join me in standing up against this genocide by
 joining the No Tech for Apartheid campaign (www.notechforapartheid.com), which
 is working to ensure our company and our industry is not complicit. They will
-be holding a mass call on [INSERT NEXT CALL] and
-[Bit.ly/techworkerCTA](https://bit.ly/techworkerCTA) has other actions you can
-take.
+be holding a mass call on [INSERT NEXT CALL], for which you can register at
+[bit.ly/NOTACallToAction](https://bit.ly/NOTACallToAction), which also has
+other actions you can take.
 
 And finally, thank you for hearing me out and understanding that so many of us
 are trying to find where we can use our voice for peace - I hope you will too.
@@ -213,8 +216,9 @@ I can’t stay silent like our leadership has, and I want to honor the values
 that our leaders won’t. Please join me in standing up against this genocide by
 joining the No Tech for Apartheid campaign (www.notechforapartheid.com), which
 is working to ensure our company and our industry is not complicit. They will
-be holding a mass call on [INSERT NEXT CALL] and Bit.ly/techworkerCTA has other
-actions you can take.
+be holding a mass call on [INSERT NEXT CALL] and
+[bit.ly/NOTACallToAction](https://bit.ly/NOTACallToAction), which also has
+other actions you can take.
 
 And finally, thank you for hearing me out and understanding that so many of us
 are trying to find where we can use our voice for peace - I hope you will too.
