@@ -27,9 +27,9 @@ are five immediate action items you can take:
 * **Organize**: Join the [No Tech For
   Apartheid](https://www.notechforapartheid.com) campaign. Join our upcoming
   mass calls to meet each other and learn about upcoming actions: 
-  * 11/14, 8 p.m. ET / 5 p.m. PT: [Register
+  * Tuesday, 11/14, 8 p.m. ET / 5 p.m. PT: [Register
     here](https://jvp-org.zoom.us/meeting/register/tZUqc-morT0jH9IuCn8LDVDlhWUquCVZFrx5#/registration)
-  * 11/16, 5 p.m. ET / 2 p.m. PT: [Register
+  * Thursday, 11/16, 5 p.m. ET / 2 p.m. PT: [Register
     here](https://jvp-org.zoom.us/meeting/register/tZEsdO2uqTotGtL1fxdK42rL5KT1lThUis_q#/registration)
 
 * **Outreach**: Message your coworkers in your team, org, and ERGs to get them
@@ -46,8 +46,8 @@ are five immediate action items you can take:
 
 * **Learn**: Educate yourself about the current crisis. Bring your coworkers to
   the many virtual teach-ins that Palestinian groups have been organizing.
-  * No to APEC, No to Aparthied teach-in (virtual), 11/14, 4 p.m. ET / 1 p.m.
-    ET: [Register here](https://bit.ly/NOTA-TeachIn): Tuesday 1pm PST
+  * No to APEC, No to Aparthied teach-in (virtual): Tuesday, 11/14, 4 p.m. ET /
+    1 p.m.  ET: [Register here](https://bit.ly/NOTA-TeachIn)
 
 * **Call Congress**: Of course, if you haven’t been doing so already, contact
   your elected officials to demand that they endorse an immediate and
