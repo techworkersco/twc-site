@@ -46,6 +46,8 @@ are five immediate action items you can take:
 
 * **Learn**: Educate yourself about the current crisis. Bring your coworkers to
   the many virtual teach-ins that Palestinian groups have been organizing.
+  * No to APEC, No to Aparthied teach-in (virtual), 11/14, 4 p.m. ET / 1 p.m.
+    ET: [Register here](https://bit.ly/NOTA-TeachIn): Tuesday 1pm PST
 
 * **Call Congress**: Of course, if you haven’t been doing so already, contact
   your elected officials to demand that they endorse an immediate and
