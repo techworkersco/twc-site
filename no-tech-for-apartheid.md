@@ -27,7 +27,8 @@ are five immediate action items you can take:
 * **Organize**: Join the [No Tech For
   Apartheid](https://www.notechforapartheid.com) campaign. Join our upcoming
   mass calls to meet each other and learn about upcoming actions: 
-  * Tuesday, 11/28, 8 p.m. ET / 5 p.m. PT: Registration link coming soon
+  * Tuesday, 11/28, 8 p.m. ET / 5 p.m. PT:
+    [Register](https://jvp-org.zoom.us/meeting/register/tZMrc-GsqDgvGtyLJx7d7BJXR4vHPzn2GT8M#/registration)
 
 * **Outreach**: Message your coworkers in your team, org, and ERGs to get them
   involved too, so we can build a movement that’s ready for this moment. Check
