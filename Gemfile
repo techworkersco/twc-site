@@ -24,3 +24,5 @@ end
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "webrick", "~> 1.7"
+
+gem "rake", "~> 13.1"
