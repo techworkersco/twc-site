@@ -47,9 +47,16 @@ defaults:
     values:
       # unless languages: ["bl" "ah"] is included, english is only/default frontmatter language
       languages: ["en"]
+  - scope:
+      type: "blogs"
+    values:
+      layout: "blog"    
 
 collections:
-  - workplaces
+  workplaces:
+    output: true
+  blogs:
+    output: true
 
 exclude_from_localizations: ["assets"]
 links:
