@@ -53,8 +53,6 @@ defaults:
       layout: "blog"    
 
 collections:
-  workplaces:
-    output: true
   blogs:
     output: true
 

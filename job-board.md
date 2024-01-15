@@ -12,7 +12,7 @@ languages: ["en"]
 
 <p>{% t job_board.intro_to_unionized_workplaces %}</p>
 
-{% for workplace in site.workplaces %}
+{% for workplace in site.data.workplaces %}
 
   <h3>{{ workplace.organization }} {% if workplace.division %} - {{workplace.division }} {% endif %}</h3>
 
