@@ -2,8 +2,9 @@
 layout: page
 title: Highlights of the Labor Notes 2023 Tech Organizing Conference
 ---
+# {{page.title}}
 
-As the Labor Notes 2023 Tech Organizing Conference (TechCon2023) came to a close, it became clear that the Tech Workers Movement is bigger and healthier than ever. The gathering, held in New York on the 7th of October, brought together a diverse group of tech labor organizers from all across the United States. 
+As the [Labor Notes 2023 Tech Organizing Conference](https://labornotes.org/techcon2023) came to a close, it became clear that the Tech Workers Movement is bigger and healthier than ever. The gathering, held in New York on the 7th of October, brought together a diverse group of tech labor organizers from all across the United States. 
 
 Some of us in the Tech Workers Coalition wanted to give the opportunity to participants to share their experiences and insights. So we prepared a short survey to collect experiences from attendees. We then selected the most interesting quotes from the respondents and grouped them according to the themes that attracted the most interest.
 
@@ -32,9 +33,11 @@ Let’s read what the attendees had to say about this:
 > The tech worker movement is much larger than I thought. Many tech workers are organizing independently of established legal frameworks, but many are also intimately aware/closely watching legal changes for example on joint-employer liability and employee classification.
 > 
 
-*Yonatan Miller*
+
 
 ## Internationalism: A Global Movement
+
+*Yonatan Miller*
 
 Another significant aspect is the international nature of the Tech Workers Movement. The challenges faced by tech workers extend beyond national borders, and the fight for workers' rights is a global endeavor. From solidarity actions to cross-border collaborations, tech workers are forging connections and building alliances to effect change on a global scale.
 
@@ -50,9 +53,9 @@ This was very clear to people who responded to the survey:
 > The discussion of how corporations structure work across nation states borders was sobering. That corporations can relocate work to the opposite side of the world, to avoid traditional labor organizing, to create barriers among workers, and to stifle more left organizing (such as anti-militarism organizing), was really sobering. It makes me understand how important internationalism is in our work.
 > 
 
-*Anonymous*
-
 ## Diversity of Tactics: Beyond Traditional Union Organizing
+
+*Anonymous*
 
 The survey responses also shed light on the interest for the diverse range of tactics employed by tech workers to advocate for their rights. While traditional union organizing remains a crucial strategy, tech workers are also exploring new approaches and leveraging their unique skills to make an impact. 
 
@@ -75,4 +78,6 @@ This attitude emerges from several answers we received:
 
 *Anastacio*
 
-If you liked this article, probably it’s time for you to get involved and connect with other tech workers like yourself, organizing for power in our industry. [Subscribe/](/subscribe) to our slack and listserv.
+If you liked this article, probably it’s time for you to get involved and connect with other tech workers like yourself, organizing for power in our industry. 
+
+[Subscribe](/subscribe) to our slack and listserv.
