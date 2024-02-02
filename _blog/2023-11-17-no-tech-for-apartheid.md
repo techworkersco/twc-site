@@ -6,7 +6,7 @@ permalink: /no-tech-for-apartheid/
 
 # No Tech for Apartheid: Call to Action
 
-On Wednesday, the [New York Times
+On Wednesday, November 8 2023, the [New York Times
 reported](https://www.nytimes.com/2023/11/08/business/israel-palestine-google-employees.html)
 that tech workers are facing retaliation and discrimination for speaking up
 about Palestine. Google workers have published an [open

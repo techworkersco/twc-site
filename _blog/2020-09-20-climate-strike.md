@@ -17,7 +17,7 @@ On September 20th 2019, millions of people will mobilize across the globe in the
 
 ## Here is how you can participate
 
-1. On September 20, join a protest near you, as an individual or even better, with your co-workers.
+1. On September 20 2020, join a protest near you, as an individual or even better, with your co-workers.
 You can find a list of over 3,000 local marches happening as part of the Global Climate Strike [here](https://globalclimatestrike.net/).  
 **Tech workers from across companies will be meeting up before these marches, then joining their local march together. Find a tech worker location and meeting time** [here](https://docs.google.com/spreadsheets/d/1ThY98n11LVFV_26P9nmEbvUjvMXwa671nK1gOBPf7mM/). (If you don't see your city listed, feel free to add it in [this form](https://docs.google.com/forms/d/e/1FAIpQLSfJDnN7_u04b-jvDjBGXisUtrQvVbRSqc-wTOkptsPpQV_wnQ/viewform). We'll make sure it gets on to the list).
 

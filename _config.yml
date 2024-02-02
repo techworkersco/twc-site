@@ -46,20 +46,24 @@ defaults:
       path: ""
     values:
       # unless languages: ["bl" "ah"] is included, english is only/default frontmatter language
-      languages: ["en"]   
+      languages: ["en"] 
+  - scope:
+      type: "blog"
+    values:
+      layout: "blog"        
 
 collections:
-  blogs:
+  blog:
     output: true
 
 exclude_from_localizations: ["assets"]
 links:
   - url: /subscribe
     text: Join our Slack
+  - url: /blog
+    text: Blog  
   - url: /chapters
     text: Join a Chapter
-  - url: /bill-of-rights
-    text: Tech Worker Bill of Rights
   - url: /community-guide/
     text: Community Guide
   - url: /job-board
@@ -68,14 +72,6 @@ links:
     text: Press
   - url: /security
     text: Security Tips
-  - url: https://news.techworkerscoalition.org/subscribe/
-    text: Newsletter
-  - url: https://sites.google.com/view/tech-workers-coalition/learning-club
-    text: Learning Clubs
-    newTab: true
-  - url: https://collectiveaction.tech/
-    text: CollectiveActions.Tech
-    newTab: true
 sass:
   style: compressed
 

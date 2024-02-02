@@ -3,10 +3,10 @@
   style="--stack-spacing: 1.5rem"
 >
   {% assign limit = include.limit %}
-  {% assign sorted_posts = site.blogs | filter_tags: include.tags | sort: 'date' | reverse %}
+  {% assign sorted_posts = site.blog | filter_tags: include.tags | sort: 'date' | reverse %}
   {% for post in sorted_posts limit: limit %}
     {% assign author = site.data.authors[post.author] | default:
-      site.data.authors['techworkersber'] %}
+      site.data.authors['techworkersco'] %}
 
       <li>
         <article
@@ -28,7 +28,7 @@
               <time
                 class="aside"
                 datetime="{{ post.date | date: '%Y-%m-%d' }}"
-              >{{ post.date | '%-d %B %Y' }}</time>
+              >{{ post.date | date_to_string }}</time>
             </section>
             {% if limit %}<h3{% else %}<h2{% endif %}
               class="event-card__title"
