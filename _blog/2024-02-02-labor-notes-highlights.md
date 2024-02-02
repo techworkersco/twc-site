@@ -24,7 +24,7 @@ Let’s read what the attendees had to say about this:
 
 > Seeing so many groups come together, it was easier to see what issues we all faced in common in our organizing. I already knew remote organizing was something we especially face as a challenge in this sector. But it was striking to see so many people grapple with issues surrounding multinational and cross-border organizing, as well as various sorts of contract and sub-contract arrangements.
 
-I was impressed by the range of workers and industries represented, not only among public campaigns, but more broadly. It became clear to me that the initial wave of organizing had raised the idea of tech unions and labor consciousness to a whole new layer of people, and there's a whole group of potential organizers and activists ready to step up.
+> I was impressed by the range of workers and industries represented, not only among public campaigns, but more broadly. It became clear to me that the initial wave of organizing had raised the idea of tech unions and labor consciousness to a whole new layer of people, and there's a whole group of potential organizers and activists ready to step up.
 > 
 
 *Gary*
