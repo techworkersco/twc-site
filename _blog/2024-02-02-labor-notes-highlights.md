@@ -1,4 +1,7 @@
-# Highlights of the Labor Notes 2023 Tech Organizing Conference
+---
+layout: page
+title: Highlights of the Labor Notes 2023 Tech Organizing Conference
+---
 
 As the Labor Notes 2023 Tech Organizing Conference (TechCon2023) came to a close, it became clear that the Tech Workers Movement is bigger and healthier than ever. The gathering, held in New York on the 7th of October, brought together a diverse group of tech labor organizers from all across the United States. 
 

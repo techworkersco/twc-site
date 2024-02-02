@@ -46,15 +46,13 @@ defaults:
       path: ""
     values:
       # unless languages: ["bl" "ah"] is included, english is only/default frontmatter language
-      languages: ["en"] 
-  - scope:
-      type: "blog"
-    values:
-      layout: "blog"        
+      languages: ["en"]         
 
+permalink: pretty
 collections:
   blog:
     output: true
+    permalink: blog/:title
 
 exclude_from_localizations: ["assets"]
 links:
