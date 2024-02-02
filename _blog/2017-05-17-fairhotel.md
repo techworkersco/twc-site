@@ -10,6 +10,4 @@ permalink: /fairhotels/
 - [Read what others have done](https://medium.com/@pagepant/consumer-power-in-the-trump-era-tech-hotel-workers-united-b612548a7336) to bring a FairHotel policy to their company.
 
 
-### Not sure how to get started? [Contact us](mailto:fairhotel@techworkerscoalition.org?subject=FairHotels at my work) to have a conversation about FairHotels.
-
-[Sign up for our newsletter](http://techworkerscoalition.us11.list-manage.com/subscribe?u=194e57c175176cfd13007a197&id=7cb85d276a) to get connected to others at your workplace.
+Not sure how to get started? Contact us to have a conversation about FairHotels.

@@ -1,0 +1,41 @@
+<ul
+  class="list -no-list-style l-stack -vertical"
+  style="--stack-spacing: 1.5rem"
+>
+  {% assign limit = include.limit %}
+  {% assign sorted_posts = site.blog | filter_tags: include.tags | sort: 'date' | reverse %}
+  {% for post in sorted_posts limit: limit %}
+    {% assign author = site.data.authors[post.author] | default:
+      site.data.authors['techworkersco'] %}
+
+      <li>
+        <article
+          class="event-card__info-column l-stack -vertical"
+          style="--stack-spacing: 0.5rem"
+          aria-labelledby="news-{{ post.title | slugify }}">
+            <section class="l-stack -horizontal" style="--stack-spacing: 1rem">
+              <div class="l-stack -horizontal" style="--stack-spacing: 0.25rem">
+                {% if author.picture %}
+                  <img
+                    class="h-rounded"
+                    style="--circle-size: 1.75rem"
+                    src="{{author.picture}}"
+                    alt="{{author.name}}"
+                  />
+                {% endif %}
+              </div>
+              <time
+                class="aside"
+                datetime="{{ post.date | date: '%Y-%m-%d' }}"
+              >{{ post.date | date_to_string }}</time>
+            </section>
+            {% if limit %}<h3{% else %}<h2{% endif %}
+              class="event-card__title"
+              id="news-{{ post.title | slugify }}"
+            >
+              <a href="{{ post.url }}" class="event-card__link">{{ post.title }}</a>
+            {% if limit %}</h3>{% else %}</h2>{% endif %}
+        </article>
+      </li>
+  {% endfor %}
+</ul>
