@@ -1,65 +1,79 @@
-regions:
-- region: North and South America
-  chapters:
-    - text: Austin
-      url: /austin
-      twitter: twcatx
-      meetup: Tech-Workers-Coalition-ATX/
-      facebook: twcatx
-    - text: Brasil
-      url: /pt/brasil
-    - text: Boston
-      url: https://boston.techworkerscoalition.org/
-      twitter: techworkersBOS
-    - text: Chicago
-      url: /chicago
-      twitter: chicago_twc
-    - text: DC
-      url: /dc
-      twitter: dctechworkers
-      facebook: DC-Tech-Workers-Coalition
-    - text: Denver
-      twitter: twc_den
-    - text: Los Angeles
-      twitter: TWC_LosAngeles
-    - text: North Carolina
-      url: /north-carolina  
-    - text: NYC
-      url: /nyc
-      twitter: techworkerscony
-      meetup: Tech-Workers-Coalition-NYC/
-    - text: San Diego
-      url: https://twcsandiego.org/
-      twitter: twcsandiego
-    - text: San Jose
-      twitter: twc_sanjose
-    - text: Seattle
-      url: /seattle
-    - text: SF Bay Area
-      url: /sf-bay-area
-    - text: South Florida
-      twitter: southfltechworkers
-- region: Asia Pacific
-  chapters:
-    - text: Bangalore
-      twitter: TechiesSpeakUp
-      url: https://twitter.com/twc_bangalore
-- region: Europe
-  chapters:
-    - text: Berlin
-      twitter: TechWorkersBER
-      facebook: TechWorkersBER
-      url: https://techworkersberlin.com/
-    - text: Dublin
-      twitter: TWBIreland
-    - text: London
-      twitter: TechWorkersLDN
-      facebook: TechWorkersLDN
-    - text: Italia
-      twitter: twcitalia
-      facebook: twcita
-      url: https://twc-italia.org/
-    - text: London
-      url: /london
-    - text: Netherlands
-      twitter: nederlandtwc
+chapters:
+  - text: Austin
+    url: /austin
+    twitter: twcatx
+    meetup: Tech-Workers-Coalition-ATX/
+    facebook: twcatx
+    activity_level: midactive
+  - text: Brasil
+    url: /pt/brasil
+    activity_level: inactive
+  - text: Boston
+    url: https://boston.techworkerscoalition.org/
+    twitter: techworkersBOS
+    activity_level: inactive
+  - text: Chicago
+    url: /chicago
+    twitter: chicago_twc
+    activity_level: inactive
+  - text: DC
+    url: /dc
+    twitter: dctechworkers
+    facebook: DC-Tech-Workers-Coalition
+    activity_level: semiactive
+  - text: Denver
+    twitter: twc_den
+    activity_level: inactive
+  - text: Los Angeles
+    twitter: TWC_LosAngeles
+    activity_level: inactive
+  - text: North Carolina
+    url: /north-carolina
+    activity_level: midactive  
+  - text: NYC
+    url: /nyc
+    twitter: techworkerscony
+    meetup: Tech-Workers-Coalition-NYC/
+    activity_level: active
+  - text: San Diego
+    url: https://twcsandiego.org/
+    twitter: twcsandiego
+    activity_level: active
+  - text: San Jose
+    twitter: twc_sanjose
+    activity_level: inactive
+  - text: Seattle
+    url: /seattle
+    activity_level: active
+  - text: SF Bay Area
+    url: /sf-bay-area
+    activity_level: semiactive
+  - text: South Florida
+    twitter: southfltechworkers
+    activity_level: inactive
+  - text: Bangalore
+    twitter: TechiesSpeakUp
+    url: https://twitter.com/twc_bangalore
+    activity_level: inactive
+  - text: Berlin
+    twitter: TechWorkersBER
+    facebook: TechWorkersBER
+    url: https://techworkersberlin.com/
+    activity_level: active
+  - text: Dublin
+    twitter: TWBIreland
+    activity_level: inactive
+  - text: London
+    twitter: TechWorkersLDN
+    facebook: TechWorkersLDN
+    url: /london
+    activity_level: inactive
+  - text: Italia
+    twitter: twcitalia
+    facebook: twcita
+    url: https://twc-italia.org
+    activity_level: active
+  - text: Netherlands
+    twitter: nederlandtwc
+    activity_level: semiactive
+    
