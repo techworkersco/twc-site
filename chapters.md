@@ -3,16 +3,15 @@ layout: page
 title: Join a Chapter
 permalink: /chapters/
 ---
-
-{% for region in site.data.chapters.regions %}
-<h2>{{region.region}}</h2>
-{% for chapter in region.chapters %}
-  <h3>{{ chapter.text }}</h3>
+{% assign activity_levels = "active,semiactive,inactive" | split: ','%}
+{% for level in activity_levels %}
+  <h2>{{level | capitalize}} chapters</h2>
+  {% assign chapters = site.data.chapters.chapters | where:"activity_level",level | sort: "text" %}
+  {% for chapter in chapters %}
   <ul class="list-style-none marg-b-3 pad-l-3">
-    {% if chapter.url %}<li><a href="{{chapter.url}}">Website</a></li>{% endif %}
-    {% if chapter.twitter %}<li><a href="https://twitter.com/{{chapter.twitter}}"> @{{chapter.twitter}}</a></li>{% endif %}
-    {% if chapter.meetup %}<li><a href="https://meetup.com/{{chapter.meetup}}">Meetup</a></li>{% endif %}
+    <b>{% if chapter.url %}<a href="{{chapter.url}}">{{chapter.text}}</a>{% else if%}{{chapter.text}}{% endif %}</b>
+    {% if chapter.twitter %} · <a href="https://twitter.com/{{chapter.twitter}}">Twitter</a>{% endif %}
+    {% if chapter.meetup %} · <a href="https://meetup.com/{{chapter.meetup}}">Meetup</a>{% endif %}
   </ul>
 {% endfor %}
-<br />
-{% endfor %}
+{% endfor %}  
