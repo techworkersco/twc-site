@@ -54,7 +54,7 @@ collections:
     output: true
     permalink: blog/:title
 
-exclude_from_localizations: ["assets"]
+exclude_from_localizations: ["assets", "admin"]
 links:
   - url: /subscribe
     text: Join

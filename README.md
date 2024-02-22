@@ -10,6 +10,10 @@ This repository is responsible for most content visible on the website [techwork
 
 Open a browser to localhost:8080
 
+## DecapCMS
+
+In addition to GitHub, you can update the website via [DecapCMS](https://decapcms.org/) for example adding new blog posts by going to [/admin](https://techworkerscoalition.org/admin) interface.
+
 ## Add your city
 
 If your country/city's TWC chapter is not mentioned in the website, link to it on the homepage [here](_layouts/home.html) and if you want a local markdown page (as opposed to external link) see the other examples [here](city_local).
