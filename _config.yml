@@ -57,7 +57,7 @@ collections:
 exclude_from_localizations: ["assets"]
 links:
   - url: /subscribe
-    text: Join our Slack
+    text: Join
   - url: /blog
     text: Blog  
   - url: /chapters

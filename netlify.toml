@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/slack-thanks/"
+  to = "/welcome"
+  status = 308
+  force = true
