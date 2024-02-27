@@ -55,6 +55,13 @@ collections:
     permalink: blog/:title
 
 exclude_from_localizations: ["assets"]
+header_links: 
+  - url: /blog
+    text: BLOG  
+  - url: /chapters
+    text: CHAPTERS
+  - url: /subscribe
+    text: JOIN  
 links:
   - url: /subscribe
     text: Join our Slack
