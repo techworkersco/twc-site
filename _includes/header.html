@@ -26,19 +26,19 @@
         {% endfor %}     
         
         <div class="flex flex-row ai-ctr rel">
-        <button class="flex" id="navBtn" role="button" aria-label="Open menu links">
-          <svg aria-hidden="true" class="primarySvgFill" height='23' width='20'  fill="#fff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M85.5,81.5h-70c-2.8,0-5-2.2-5-5v-4c0-2.8,2.2-5,5-5h70c2.8,0,5,2.2,5,5v4C90.5,79.3,88.3,81.5,85.5,81.5z   M85.5,57.5h-70c-2.8,0-5-2.2-5-5v-4c0-2.8,2.2-5,5-5h70c2.8,0,5,2.2,5,5v4C90.5,55.3,88.3,57.5,85.5,57.5z M85.5,33.5h-70  c-2.8,0-5-2.2-5-5v-4c0-2.8,2.2-5,5-5h70c2.8,0,5,2.2,5,5v4C90.5,31.3,88.3,33.5,85.5,33.5z"></path></svg>
-        </button>
-        
-        <ul id="nav" class="navOverlay abs hide list-style-none" role="navigation">
-          {% for link in site.header_links %}
-            <li class="mobile-links">
-              <a href="{{ link.url }}">
-                {{link.text}}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
+          <button class="flex" id="navBtn" role="button" aria-label="Open menu links">
+            <svg aria-hidden="true" class="primarySvgFill" height='23' width='20'  fill="#fff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M85.5,81.5h-70c-2.8,0-5-2.2-5-5v-4c0-2.8,2.2-5,5-5h70c2.8,0,5,2.2,5,5v4C90.5,79.3,88.3,81.5,85.5,81.5z   M85.5,57.5h-70c-2.8,0-5-2.2-5-5v-4c0-2.8,2.2-5,5-5h70c2.8,0,5,2.2,5,5v4C90.5,55.3,88.3,57.5,85.5,57.5z M85.5,33.5h-70  c-2.8,0-5-2.2-5-5v-4c0-2.8,2.2-5,5-5h70c2.8,0,5,2.2,5,5v4C90.5,31.3,88.3,33.5,85.5,33.5z"></path></svg>
+          </button>
+          
+          <ul id="nav" class="navOverlay abs hide list-style-none" role="navigation">
+            {% for link in site.links %}
+              <li class="mobile-links">
+                <a href="{{ link.url }}">
+                  {{link.text}}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
         </div>
         
         <button class="flex flex-row ai-ctr" id="langBtn" role="button" aria-label="Select language">

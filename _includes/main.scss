@@ -50,7 +50,7 @@ header {
     border-radius: 100px;
     list-style-type:none;
 
-    @include mobile {
+    @include tablet {
       display: none;
     }
 
@@ -79,7 +79,7 @@ header {
   }  
 
   #navBtn {
-    @include mobile and tablet {
+    @include desktop {
       display: none;
     }
   }
