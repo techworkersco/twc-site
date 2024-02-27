@@ -54,7 +54,7 @@ collections:
     output: true
     permalink: blog/:title
 
-exclude_from_localizations: ["assets"]
+exclude_from_localizations: ["assets", "admin"]
 header_links: 
   - url: /blog
     text: BLOG  
@@ -64,7 +64,7 @@ header_links:
     text: JOIN  
 links:
   - url: /subscribe
-    text: Join our Slack
+    text: Join
   - url: /blog
     text: Blog  
   - url: /chapters
