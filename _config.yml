@@ -55,19 +55,27 @@ collections:
     permalink: blog/:title
 
 exclude_from_localizations: ["assets", "admin"]
+header_links: 
+  - url: /subscribe
+    text: Join  
+  - url: /blog
+    text: Blog  
+  - url: /chapters
+    text: Chapters
+  
 links:
   - url: /subscribe
     text: Join
   - url: /blog
     text: Blog  
   - url: /chapters
-    text: Join a Chapter
+    text: Chapters
   - url: /community-guide/
     text: Community Guide
   - url: /job-board
     text: Union Job Board
   - url: /press
-    text: Press
+    text: Press mentions
   - url: /security
     text: Security Tips
 sass:

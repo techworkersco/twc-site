@@ -40,6 +40,53 @@ header {
   button {
     border: 0;
   }
+
+  .desktop-header {
+    margin-left:10px;
+    background-color: #020e0f;
+    color: $white;
+    font-weight: normal;
+    padding: 4px 14px;
+    border-radius: 100px;
+    list-style-type:none;
+
+    @include tablet {
+      display: none;
+    }
+
+    &:hover {
+      background-color: red;
+      fill: red;
+    }
+
+    a {
+     color: $white; 
+    }
+  }
+
+  #langBtn {
+    padding-left: 14px;
+
+    &:hover {
+      color:red;
+      & .primarySvgFill {
+        fill: red;
+      }  
+    }
+  }
+  
+  li.mobile-links a {
+    background: #020e0f;
+    color: #fff;
+    border: $black solid 1px;
+    font-weight: normal;
+  }
+
+  #nav, #navBtn {
+    @include desktop {
+      display: none;
+    }
+  }
 }
 
 .border {
@@ -153,7 +200,6 @@ button {
   border-radius: 4px;
   border: 0; // 1px solid;
   box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
-  max-height: 200px;
   overflow: scroll;
   right: 0;
   top: 55px;
@@ -165,6 +211,7 @@ button {
   }
 
   li {
+    margin: 0;
     border-bottom: 1px solid;
     &:last-child {
       border: 0;
@@ -176,7 +223,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
-  width: 800px;
+  width: 1000px;
 }
 
 ol,
@@ -556,7 +603,7 @@ hr {
     fill: $red;
   }
   .border {
-    border-color: #fff;
+    border-color:$white;
   }
   #mc-embedded-subscribe {
     border-color: $grey;
