@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<style>h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}</style>
+<article class="post">
+  <a href="/events">{%t home.events.more %}</a>
+  <h1 class="post-title">{{ page.title | escape }}</h1>
+  <div class="post-content">
+    <h3>
+      📆 {% include date_format.html date=page.date %}
+    </h3>
+    
+    {{ content }}
+  </div>
+</article>

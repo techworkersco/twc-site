@@ -1,5 +1,4 @@
-local_backend:
-  url: http://127.0.0.1:8090
+local_backend: true
 
 backend:
   name: git-gateway
@@ -24,3 +23,17 @@ collections:
       - {label: "Title", name: "title", widget: "string"} 
       - {label: "Date", name: "date", widget: "datetime", picker_utc: true }
       - {label: "Body", name: "body", widget: "markdown"}
+  
+  - name: "event" # Used in routes, e.g., /admin/collections/blog
+    label: "Event" # Used in the UI
+    folder: "_events" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Timezone", name: "timezone", widget: "select", multiple: true, default: ["US/Eastern"], min: 1, options: ["US/Eastern", "US/Pacific", "US/Central", "US/Mountain", "Europe/Berlin", "Europe/London"]}
+      - {label: "hide signup form", name: "hide_form", widget: "boolean", default: false}
+      - {label: "Canonical url", name: "canonical_url", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Optional image for SEO", name: "image", widget: "image", required: false}

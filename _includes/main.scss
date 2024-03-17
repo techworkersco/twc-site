@@ -525,14 +525,14 @@ hr {
   padding: 0.75rem;
 }
 
-.press-icon {
+.card-icon {
   height: 40px;
   min-width: 40px;
   width: 40px;
 }
 
 @media (prefers-color-scheme: light) {
-  .press-icon {
+  .card-icon {
     fill: $black;
   }
 
@@ -599,7 +599,7 @@ hr {
   h2 a:link {
     color: $white;
   }
-  .press-icon {
+  .card-icon {
     fill: $red;
   }
   .border {
@@ -670,4 +670,30 @@ hr {
 .banner img {
   width: 100%;
   height: auto; // use this to display responsive image
+}
+
+.event-card {
+  @supports (display: grid) {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    grid-gap: 0.5rem;
+  }
+
+  & > div {
+    padding: 1rem 3.5rem 1rem 1rem;
+  }
+}
+
+.event-card__info-column {
+  grid-column: 2;
+  margin-left: 2rem;
+}
+
+.event-card__icon {
+  fill: $grey;
+  font-size: 0.55em;
+  font-weight: bold;
+  grid-column: 1;
+  width: 2rem;
 }
