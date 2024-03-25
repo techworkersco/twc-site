@@ -17,12 +17,18 @@ module Jekyll
 
     def all_time_zones(date, timezones)
       date = date.to_time
-      timezones ||= %w[Europe/Berlin]  
+      timezones ||= %w[Europe/Berlin]
+
       timezones.map { |tz|   
         date.getlocal(
           TZInfo::Timezone.get(tz)
-        ).strftime("%R %Z") 
-      }.join(", ") 
+        ).strftime("%R %Z")
+      }.join(", ") + dmy(date, timezones)
+    end
+
+    private 
+    def dmy(date, timezones)
+      date.getlocal(TZInfo::Timezone.get(timezones.first)).strftime(" %A, %d %B %Y")
     end
   end
 end
