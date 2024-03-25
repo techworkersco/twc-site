@@ -7,7 +7,7 @@ layout: default
   <h1 class="post-title">{{ page.title | escape }}</h1>
   <div class="post-content">
     <div class="event-time">
-      📆 <a target="_blank" href="{{ page.date | time_converter_url}}">{{ page.date | all_time_zones: page.time_zones }}<a/>  
+      📆 <a target="_blank" href="{{ page.date | time_converter_url}}">{{ page.date | all_time_zones: page.time_zones }}</a>  
       {{ page.date | date: '%A, %d %B %Y ' }}
     </div>
     
