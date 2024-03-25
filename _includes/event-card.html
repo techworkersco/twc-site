@@ -1,0 +1,36 @@
+
+  <article class="event-card marg-b-4 flex items-center">
+    <div class="bg-black circ lh-1">  
+      <svg
+      focusable="false"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      viewBox="0 0 24 24"
+      class="event-card__icon card-icon"
+      style="enable-background:new 0 0 24 24;"
+      xml:space="preserve"
+      >
+        <path d="M20,3h-1V1h-2v2H7V1H5v2H4C2.9,3,2,3.9,2,5v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V5C22,3.9,21.1,3,20,3z M20,21H4V8h16V21z"/>
+        <text transform="matrix(1 0 0 1 5.3281 19.1641)" class="st0 st1">{{ event.date | date: "%d" }}</text>
+      </svg>
+    </div>  
+    <div
+      class="event-card__info-column l-stack -vertical"
+      style="--stack-spacing: 0.25rem"
+      >
+      <time
+        datetime="{{ event.date }}"
+      ><b>{{ event.date | all_time_zones: event.time_zones }}</b> {{ event.date | date: "%A, %d %b %Y"}}</time>
+      {% if include.limit %}
+        <h3>
+          <a href="{{ event.url }}">{{ event.title }}</a>
+        </h3>
+      {% else %}
+        <h2>
+          <a href="{{ event.url }}">{{ event.title }}</a>
+        </h2>
+      {% endif %}
+    </div>  
+  </article>  

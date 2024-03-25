@@ -12,7 +12,7 @@ Open a browser to localhost:8080
 
 ## DecapCMS
 
-In addition to GitHub, you can update the website via [DecapCMS](https://decapcms.org/) for example adding new blog posts by going to [/admin](https://techworkerscoalition.org/admin) interface.
+In addition to GitHub, you can update the website via [DecapCMS](https://decapcms.org/) for example adding new blog posts and events by going to [/admin](https://techworkerscoalition.org/admin) interface. For local development, visit this [tutorial](https://decapcms.org/docs/working-with-a-local-git-repository/) (run `npx decap-server` from a different shell)
 
 ## Add your city
 

@@ -82,6 +82,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.11)
   jekyll-multiple-languages-plugin!
   rake (~> 13.1)
+  tzinfo
   webrick (~> 1.7)
 
 RUBY VERSION

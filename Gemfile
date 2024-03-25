@@ -14,6 +14,7 @@ gem "jekyll", "~> 4.3"
 gem 'deep_merge'
 # gem 'pry'
 
+gem 'tzinfo'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.11"

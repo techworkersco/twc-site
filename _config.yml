@@ -19,6 +19,7 @@ description: A coalition of tech industry workers, labor organizers, community o
 url: "https://techworkerscoalition.org" # the subpath of your site, e.g. /blog
 baseurl: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: techworkersco
+timezone: "Europe/Berlin"
 
 # Build settings
 plugins:
@@ -31,33 +32,45 @@ feed:
 
 jekyll_get_data:
   - data: collective-actions
-    url: "https://raw.githubusercontent.com/collective-action/tech/master/actions.json"
+    url: https://raw.githubusercontent.com/collective-action/tech/master/actions.json
   - data: berlin_press
-    url: "https://raw.githubusercontent.com/techworkersco/twc-site-berlin/develop/_data/press.yml"
+    url: https://raw.githubusercontent.com/techworkersco/twc-site-berlin/develop/_data/press.yml  
   - data: newsletter
-    url: "https://news.techworkerscoalition.org/feed.json"
-
+    url: https://news.techworkerscoalition.org/feed.json
+  - data: berlin_events
+    url: https://techworkersberlin.com/events.yml
 exclude:
   - .jekyll-cache/
 # also update index.md
 languages: ["en", "es", "fr", "it", "pt", "ru"]
+
 defaults:
   - scope:
       path: ""
     values:
       # unless languages: ["bl" "ah"] is included, english is only/default frontmatter language
-      languages: ["en"]         
+      languages: ["en"]
+  - scope:
+      type: "events"
+    values:
+      layout: "event"
 
 permalink: pretty
+future: true
 collections:
   blog:
     output: true
     permalink: blog/:title
+  events:
+    output: true
+    permalink: events/:title
 
 exclude_from_localizations: ["assets", "admin"]
 header_links: 
   - url: /subscribe
-    text: Join  
+    text: Join
+  - url: /events
+    text: Events       
   - url: /blog
     text: Blog  
   - url: /chapters
@@ -66,6 +79,8 @@ header_links:
 links:
   - url: /subscribe
     text: Join
+  - url: /events
+    text: Events  
   - url: /blog
     text: Blog  
   - url: /chapters
