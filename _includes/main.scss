@@ -43,8 +43,6 @@ header {
 
   .desktop-header {
     margin-left:10px;
-    background-color: #020e0f;
-    color: $white;
     font-weight: normal;
     padding: 4px 14px;
     border-radius: 100px;
@@ -52,11 +50,6 @@ header {
 
     @include tablet {
       display: none;
-    }
-
-    &:hover {
-      background-color: red;
-      fill: red;
     }
 
     a {
@@ -75,11 +68,10 @@ header {
     }
   }
   
-  li.mobile-links a {
+  li.mobile-links {
     background: #020e0f;
     color: #fff;
     border: $black solid 1px;
-    font-weight: normal;
   }
 
   #nav, #navBtn {
@@ -99,11 +91,6 @@ header {
   @include mobile {
     font-size: 16px;
   }
-}
-
-.bg-black {
-  background: $black;
-  color: $white;
 }
 
 .lh-1 {
@@ -450,22 +437,13 @@ label {
 }
 
 .primaryBg {
-  background: $grey2;
+  background: $grey;
 }
 .secondaryBg {
-  background: $grey;
+  background: $grey2;
 }
 .textColor {
   color: $white;
-}
-
-a {
-  &:link {
-    color: $red;
-  }
-  &:visited {
-    color: $red;
-  }
 }
 
 label {
@@ -529,13 +507,10 @@ hr {
   height: 40px;
   min-width: 40px;
   width: 40px;
+  fill: $black;
 }
 
 @media (prefers-color-scheme: light) {
-  .card-icon {
-    fill: $black;
-  }
-
   .bg-black {
     background-color: $grey3;
     color: $black;
@@ -589,19 +564,35 @@ hr {
     &:focus {
       color: $grey;
     }
-    &:active {
+    &:active,
+    &:link,
+    &:visited {
       color: $red;
     }
   }
-}
+
+  .desktop-header {
+    background-color: #020e0f;
+    color: $white;
+
+    &:hover {
+      background-color: red;
+      fill: red;
+    }
+  }
+  
+}  
 
 @media (prefers-color-scheme: dark) {
   h2 a:link {
     color: $white;
   }
-  .card-icon {
-    fill: $red;
+
+  .bg-black {
+    background: $white;
+    color: $black;
   }
+
   .border {
     border-color:$white;
   }
@@ -641,17 +632,38 @@ hr {
     color: $white;
   }
   a {
-    &:hover,
-    &:focus {
+    &:active,
+    &:link,
+    &:visited {
       color: $white;
     }
+
+    &:hover,
+    &:focus {
+      color: $red;
+    }
   }
+
   form {
     background-color: $grey;
   }
   footer {
     border-color: $grey2;
   }
+
+  .desktop-header {
+    background-color: $red;
+    color: $white;
+
+    &:hover {
+      background-color: $black;
+      fill: $black;
+    }
+  }
+  
+  li.mobile-links {
+   font-weight: bold; 
+  }  
 }
 
 .banner {
