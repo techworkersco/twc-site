@@ -1,7 +1,0 @@
-{% assign date = include.date %}
-{% assign local_hours = date | date: '%HH' | times: 60%}
-{% assign offset = date | date: '%z' | slice: 2 | times: 60 %}
-{% assign hours = local_hours | minus: offset | divided_by: 60  %}
-<a target="_blank" href="https://www.timeanddate.com/worldclock/converter.html?iso={{date | 
-date: '%Y%m%d'}}T{{hours}}{{date | date: ':%M'}}00&p1=179&p2=224&p3=37">{{ date | date: '%R %Z'}}<a/>  
-{{ date | date: '%A, %d %B %Y ' }}

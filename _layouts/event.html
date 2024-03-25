@@ -6,9 +6,10 @@ layout: default
   <a href="/events">{%t home.events.more %}</a>
   <h1 class="post-title">{{ page.title | escape }}</h1>
   <div class="post-content">
-    <h3>
-      📆 {% include date_format.html date=page.date %}
-    </h3>
+    <div class="event-time">
+      📆 <a target="_blank" href="{{ page.date | time_converter_url}}">{{ page.date | all_time_zones: page.time_zones }}<a/>  
+      {{ page.date | date: '%A, %d %B %Y ' }}
+    </div>
     
     {{ content }}
   </div>

@@ -21,16 +21,15 @@
       style="--stack-spacing: 0.25rem"
       >
       <time
-        class="aside event-card__date"
         datetime="{{ event.date }}"
-      >{{ event.date | date: "%A, %d %b %Y %R %Z" }}</time>
+      ><b>{{ event.date | all_time_zones: event.time_zones }}</b> {{ event.date | date: "%A, %d %b %Y"}}</time>
       {% if include.limit %}
-        <h3 class="event-card__title">
-          <a href="{{ event.url }}" class="event-card__link">{{ event.title }}</a>
+        <h3>
+          <a href="{{ event.url }}">{{ event.title }}</a>
         </h3>
       {% else %}
-        <h2 class="event-card__title">
-          <a href="{{ event.url }}" class="event-card__link">{{ event.title }}</a>
+        <h2>
+          <a href="{{ event.url }}">{{ event.title }}</a>
         </h2>
       {% endif %}
     </div>  

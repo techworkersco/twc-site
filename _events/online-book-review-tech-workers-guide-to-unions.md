@@ -1,8 +1,11 @@
 ---
 title: "Online book review: Tech Worker's Guide to Unions "
 date: 2024-03-26T18:00:00.000Z
-timezone:
+time_zones:
+  - US/Pacific
+  - US/Eastern
   - Europe/Berlin
+location: [Online]  
 hide_form: false
 ---
 In this 90 minute online-call, you will learn more about "[The Tech Worker's Guide to Unions](https://www.amazon.de/Tech-Workers-Guide-Unions/dp/9083386945)" book by Janneke Parrish, about their experiences organizing [\#AppleTogether](https://appletogether.org/) and supporting other tech companies in workplace organizing. 

@@ -32,12 +32,13 @@ feed:
 
 jekyll_get_data:
   - data: collective-actions
-    url: "https://raw.githubusercontent.com/collective-action/tech/master/actions.json"
+    url: https://raw.githubusercontent.com/collective-action/tech/master/actions.json
   - data: berlin_press
-    url: "https://raw.githubusercontent.com/techworkersco/twc-site-berlin/develop/_data/press.yml"
+    url: https://raw.githubusercontent.com/techworkersco/twc-site-berlin/develop/_data/press.yml  
   - data: newsletter
-    url: "https://news.techworkerscoalition.org/feed.json"
-
+    url: https://news.techworkerscoalition.org/feed.json
+  - data: berlin_events
+    url: http://localhost:4000/events.yml
 exclude:
   - .jekyll-cache/
 # also update index.md
@@ -67,7 +68,9 @@ collections:
 exclude_from_localizations: ["assets", "admin"]
 header_links: 
   - url: /subscribe
-    text: Join  
+    text: Join
+  - url: /events
+    text: Events       
   - url: /blog
     text: Blog  
   - url: /chapters
@@ -77,7 +80,7 @@ links:
   - url: /subscribe
     text: Join
   - url: /events
-    text: Event  
+    text: Events  
   - url: /blog
     text: Blog  
   - url: /chapters

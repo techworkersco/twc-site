@@ -30,7 +30,7 @@ module JekyllGetData
           elsif d['url'].end_with?(*%w(yml yaml))
             source = YAML.load(
               loaded_content.read,
-              permitted_classes: [Date]
+              permitted_classes: [Date, Time]
             )
           end
 

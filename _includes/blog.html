@@ -30,10 +30,9 @@
               >{{ post.date | date_to_string }}</time>
             </section>
             {% if limit %}<h3{% else %}<h2{% endif %}
-              class="event-card__title"
               id="news-{{ post.title | slugify }}"
             >
-              <a href="{{ post.url }}" class="event-card__link">{{ post.title }}</a>
+              <a href="{{ post.url }}">{{ post.title }}</a>
             {% if limit %}</h3>{% else %}</h2>{% endif %}
         </article>
       </li>
