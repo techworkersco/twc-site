@@ -23,12 +23,12 @@ module Jekyll
         date.getlocal(
           TZInfo::Timezone.get(tz)
         ).strftime("%R %Z")
-      }.join(", ") + dmy(date, timezones)
+      }.join(", ").prepend dmy(date, timezones)
     end
 
     private 
     def dmy(date, timezones)
-      date.getlocal(TZInfo::Timezone.get(timezones.first)).strftime(" %A, %d %B %Y")
+      date.getlocal(TZInfo::Timezone.get(timezones.first)).strftime("%d %B %Y – ")
     end
   end
 end

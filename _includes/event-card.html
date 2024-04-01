@@ -21,16 +21,10 @@
       style="--stack-spacing: 0.25rem"
       >
       <time datetime="{{ event.date }}">
-        <b>{{ event.date | all_time_zones: event.time_zones }}</b>
+        <b><h3>{{ event.date | all_time_zones: event.time_zones }}</h3></b>
       </time>
-      {% if include.limit %}
         <h3>
           <a href="{{ event.url }}">{{ event.title }}</a>
         </h3>
-      {% else %}
-        <h2>
-          <a href="{{ event.url }}">{{ event.title }}</a>
-        </h2>
-      {% endif %}
     </div>  
   </article>  
