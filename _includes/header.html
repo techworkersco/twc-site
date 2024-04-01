@@ -32,7 +32,7 @@
           
           <ul id="nav" class="navOverlay abs hide list-style-none" role="navigation">
             {% for link in site.links %}
-              <li class="mobile-links">
+              <li>
                 <a href="{{ link.url }}">
                   {{link.text}}
                 </a>
@@ -49,11 +49,7 @@
           {% assign languages = page.languages | default: site.languages %}
             {% for lang in languages %}
               <li>
-                {% if site.lang == lang %}
-                  <div class="p-2 bg-black">
-                    <b>{% t langs.{{ lang }} %}</b>
-                  </div>
-                {% elsif page.namespace %}
+                {% if page.namespace %}
                   <a href="{% tl {{ page.namespace }} {{ lang }} %}">
                     {% t langs.{{ lang }} %}
                   </a>

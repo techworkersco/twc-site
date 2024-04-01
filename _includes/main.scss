@@ -67,12 +67,6 @@ header {
       }  
     }
   }
-  
-  li.mobile-links {
-    background: #020e0f;
-    color: #fff;
-    border: $black solid 1px;
-  }
 
   #nav, #navBtn {
     @include desktop {
@@ -437,10 +431,10 @@ label {
 }
 
 .primaryBg {
-  background: $grey;
+  background: $grey2;
 }
 .secondaryBg {
-  background: $grey2;
+  background: $grey;
 }
 .textColor {
   color: $white;
@@ -474,10 +468,6 @@ input[type="submit"] {
   font-weight: 500;
   margin-top: 20px;
   padding: 10px 20px;
-
-  &:hover {
-    background-color: $red;
-  }
 }
 
 hr {
@@ -525,12 +515,6 @@ hr {
   hr {
     border-bottom: 1px solid #ccc;
   }
-  .navOverlay {
-    background: $white;
-    li {
-      border-color: #ccc;
-    }
-  }
   footer {
     border-color: #ccc;
   }
@@ -544,6 +528,10 @@ hr {
   input[type="submit"] {
     background: $grey2;
     color: $white;
+
+    &:hover {
+      background-color: $red;
+    }
   }
   input[type="email"],
   input[type="text"],
@@ -571,13 +559,16 @@ hr {
     }
   }
 
-  .desktop-header {
+  .desktop-header, .navOverlay > li {
     background-color: #020e0f;
-    color: $white;
 
     &:hover {
       background-color: red;
       fill: red;
+    }
+
+    & > a {
+      color: white;
     }
   }
   
@@ -602,15 +593,13 @@ hr {
   hr {
     border-bottom: 1px solid $grey;
   }
-  .navOverlay {
-    background: $grey;
-    li {
-      border-color: $grey2;
-    }
-  }
   input[type="submit"] {
     background: $red;
     color: $white;
+
+    &:hover {
+      background-color: $grey2;
+    }
   }
   input[type="email"],
   input[type="text"],
@@ -651,7 +640,7 @@ hr {
     border-color: $grey2;
   }
 
-  .desktop-header {
+  .desktop-header, .navOverlay > li {
     background-color: $red;
     color: $white;
 
@@ -659,10 +648,6 @@ hr {
       background-color: $black;
       fill: $black;
     }
-  }
-  
-  li.mobile-links {
-   font-weight: bold; 
   }  
 }
 
