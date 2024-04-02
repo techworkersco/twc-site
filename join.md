@@ -2,7 +2,6 @@
 layout: page
 title: Join Us
 permalink: /subscribe/
-show_in_footer: true
 ---
 
 # Join us
