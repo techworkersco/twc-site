@@ -1,5 +1,5 @@
 ---
-title: "Powering on – Tech and Power: Session 1"
+title: "Powering on – Tech and Power: Session #1"
 date: 2024-04-03T00:00:00.000Z
 locations:
   - Global
@@ -13,7 +13,7 @@ Today's session: Investigate the tech industry's relationship to global structur
 
 ![](/assets/img/powering_on_1_2.jpeg)
 
-Thank you for your interest in signing up for POWERING ON, a political education and organizing program for tech workers put together by the Tech Workers Coalition (TWC). This is a 6-week program for tech workers to build conceptual frameworks for analyzing the tech industry's relationship to global structures of oppression and develop concrete strategies for organizing. **[Mandatory registration](https://us02web.zoom.us/meeting/register/tZIpceugqjsrGNK_WDj4N7xDRvgzwSu0aCsM#/registration)** with Zoom
+Powering On is a political education and organizing program for tech workers put together by the Tech Workers Coalition (TWC). This is a 6-week program for tech workers to build conceptual frameworks for analyzing the tech industry's relationship to global structures of oppression and develop concrete strategies for organizing. **[Mandatory registration](https://us02web.zoom.us/meeting/register/tZIpceugqjsrGNK_WDj4N7xDRvgzwSu0aCsM#/registration)** with Zoom
 
 POWERING ON will begin on April 2, meeting every Tuesdays at 5pm PT / 8pm ET. The program is designed to build on each week, so consecutive attendance is ideal, but not required. We'll be meeting virtually.
 
