@@ -1,6 +1,6 @@
 ---
 title: "Powering on – Wielding Power: Session #4"
-date: 2024-04-23T00:00:00.000Z
+date: 2024-04-24T00:00:00.000Z
 locations:
   - Global
   - Online
@@ -9,7 +9,7 @@ time_zones:
   - US/Mountain
   - US/Eastern
 ---
-Explore organizing methods to build power collectively and work towards improving the material conditions of the world. Learn about what comes after political activation and how to work with others to make concrete change.
+Drive into strategic methods of building campaigns and learn tactics to apply towards various organizing goals
 
 ![Session #4 Wielding Power](/assets/img/powering_on_3_4.jpeg)
 
