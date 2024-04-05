@@ -9,11 +9,11 @@ time_zones:
   - US/Mountain
   - US/Eastern
 ---
-Today's session: Learn about the history of organizing, what it looks like in action, and what you can do as a tech worker. 
+Learn about the history of organizing, what it looks like in action, and what you can do as a tech worker. 
 
-![](/assets/img/powering_on_1_2.jpeg)
+POWERING ON is a political education and organizing program for tech workers put together by the Tech Workers Coalition (TWC). This is a 6-week program for tech workers to build conceptual frameworks for analyzing the tech industry's relationship to global structures of oppression and develop concrete strategies for organizing. **[Mandatory registration](https://us02web.zoom.us/meeting/register/tZEkcu6ppz8tG9ONKhxUk4u5mU7qw_idjTVX)** with Zoom
 
-Thank you for your interest in signing up for POWERING ON, a political education and organizing program for tech workers put together by the Tech Workers Coalition (TWC). This is a 6-week program for tech workers to build conceptual frameworks for analyzing the tech industry's relationship to global structures of oppression and develop concrete strategies for organizing. **[Mandatory registration](https://us02web.zoom.us/meeting/register/tZIpceugqjsrGNK_WDj4N7xDRvgzwSu0aCsM#/registration)** with Zoom
+![](/assets/img/powering_on_1_2.jpeg "Session 2: Organizing for Power")
 
 POWERING ON will begin on April 2, meeting every Tuesdays at 5pm PT / 8pm ET. The program is designed to build on each week, so consecutive attendance is ideal, but not required. We'll be meeting virtually.
 
@@ -26,4 +26,4 @@ POWERING ON will begin on April 2, meeting every Tuesdays at 5pm PT / 8pm ET. Th
 
 ## Registration
 
-* **[Mandatory registration](https://us02web.zoom.us/meeting/register/tZIpceugqjsrGNK_WDj4N7xDRvgzwSu0aCsM#/registration)** with Zoom
+* **[Mandatory registration](https://us02web.zoom.us/meeting/register/tZEkcu6ppz8tG9ONKhxUk4u5mU7qw_idjTVX)** with Zoom
