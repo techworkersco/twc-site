@@ -10,6 +10,6 @@ Do you want to talk about Palestine at your workplace but don’t know where to 
 
 We are hosting a virtual training on April 13 to learn how to have 1:1 conversations with your coworkers and invite them to join in building the labor movement to stop the genocide in Gaza!
 
-Register now: [bit.ly/maydaytraining](http://bit.ly/maydaytraining)
+Register now: [bit.ly/maydaytraining](https://us02web.zoom.us/meeting/register/tZUqde-oqDoiEtI9M-coBi5Xll_WRxO2AoD3)
 
 ![](/assets/img/mayday-training_2.png)
