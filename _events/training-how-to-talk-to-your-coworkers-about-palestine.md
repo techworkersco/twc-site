@@ -1,6 +1,6 @@
 ---
 title: "Training: How to talk to your coworkers about Palestine"
-date: 2024-04-09T12:03:00.000Z
+date: 2024-04-13T13:00:00.000Z
 locations:
   - Online
 time_zones:
