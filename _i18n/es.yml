@@ -25,12 +25,6 @@ home:
     title: Asiste a una reunión
     link: |
       Check out a meeting at a <a href="/chapters">local chapter</a>
-  join_discussion:
-    title: Únete a la discusión y mantente al día
-    links: |
-      <li><a href="/subscribe">Slack</a></li>
-      <li><a href="https://news.techworkerscoalition.org/subscribe/">Newsletter</a> (en inglés)</li>
-      <li><a target="_blank" href="https://sites.google.com/view/tech-workers-coalition/learning-club">Club de aprendizaje</a> (en inglés)</li>
   social_media:
     title: TWC en redes sociales
     links: |

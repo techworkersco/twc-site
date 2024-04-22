@@ -2,7 +2,6 @@
 layout: page
 title: Summer Learning Club
 permalink: /summer-learning-club/
-show_in_footer: false
 ---
 
 ## Summer Learning Club 2017 ☀️

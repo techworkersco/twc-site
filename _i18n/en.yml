@@ -33,12 +33,6 @@ home:
     title: Find a local chapter
     link: |
       Check out a meeting at a <a href="/chapters">local chapter</a>
-  join_discussion:
-    title: Join the discussion & know the latest
-    links: |
-      <li><a href="/subscribe">Slack</a></li>
-      <li><a href="https://news.techworkerscoalition.org/">Newsletter</a></li>
-      <li><a target="_blank" href="https://sites.google.com/view/tech-workers-coalition/learning-club">Learning Club</a></li>
   social_media:
     title: TWC on social media
     links: |
@@ -48,7 +42,7 @@ home:
   contact_us:
     title: Contact us
     description: |
-      <p>We’re also happy to chat, answer any questions you might have, or hear about any social justice efforts in which you need a partner. <a href="mailto:hello@techworkerscoalition.org">Send us an email.</a></p>
+      <p>Get in touch by signing up <a href="/subscribe">sign up</a> as a member. You can also <a href="mailto:hello@techworkerscoalition.org">reach us by email.</a></p>
       <p>If you’re a member of the press, please get in touch with us through <a href="mailto:press@techworkerscoalition.org">press@techworkerscoalition.org.</a></p>
   events:
     title: Recent events

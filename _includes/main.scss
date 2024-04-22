@@ -707,3 +707,11 @@ img {
   padding-bottom: 1rem;
   padding-top: 0.5rem;
 }
+[id]::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -60px; // height of header bar
+  height: 60px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
