@@ -23,8 +23,8 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
       <b>Please provide two links to your social media.</b>
       <div>We need a way to validate that you meet the membership requirements laid out <a href="/community-guide#membership">here</a>. Linkedin is preferred, but anything that allows us to verify that you are not a manager, journalist etc is acceptable.</div>
     </div>
-    <input placeholder="LinkedIn, Twitter, etc" id="social" required type="text" name="social_media_1" pattern="\w+\.[a-zA-Z]{2,}" title="enter a valid url">
-    <input placeholder="GitHub, Instagram, Blog" type="text" required name="social_media_2" pattern="\w+\.[a-zA-Z]{2,}" title="enter a valid url">
+    <input placeholder="LinkedIn, Twitter, etc" id="social" required type="text" name="social_media_1" title="enter a valid url">
+    <input placeholder="GitHub, Instagram, Blog" type="text" required name="social_media_2" title="enter a valid url">
   </label>
   <label class="marg-b-3" for="company_name">
     <div><b>Company Name</b></div>
