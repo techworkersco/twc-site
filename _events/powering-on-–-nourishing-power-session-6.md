@@ -1,6 +1,6 @@
 ---
 title: "Powering on – Nourishing Power: Session #6"
-date: 2024-05-08T00:00:00.000Z
+date: 2024-05-15T02:00:00.000Z
 locations:
   - Global
   - Online
@@ -17,8 +17,8 @@ POWERING ON is a political education and organizing program for tech workers put
 
 POWERING ON will begin on April 2, meeting every Tuesdays at 5pm PT / 8pm ET. The program is designed to build on each week, so consecutive attendance is ideal, but not required. We'll be meeting virtually.
 
-5. Winning Power (Apr 30 @ 5pm pt / 8pm et) - What does a “win” look like in organizing?    
-6. Nurturing Power (May 7 @ 5pm pt / 8pm et) - How do we take care of each other?
+5. Winning Power (May 7 @ 5pm pt / 8pm et) - What does a “win” look like in organizing?    
+6. Nurturing Power (May 14 @ 5pm pt / 8pm et) - How do we take care of each other?
 
 ## Registration
 
