@@ -1,6 +1,6 @@
 ---
 title: "Powering on – Organizing for Power: Session #2"
-date: 2024-04-10T00:00:00.000Z
+date: 2024-04-09 20:00
 locations:
   - Global
   - Online

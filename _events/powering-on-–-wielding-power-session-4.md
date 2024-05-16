@@ -1,6 +1,6 @@
 ---
 title: "Powering on – Wielding Power: Session #4"
-date: 2024-04-24T00:00:00.000Z
+date: 2024-04-30 20:00
 locations:
   - Global
   - Online
