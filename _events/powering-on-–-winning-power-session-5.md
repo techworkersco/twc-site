@@ -11,7 +11,7 @@ time_zones:
 ---
 Map out what victory can look like, and learn how to work sustainably towards your different goals. Delve into different strategies that are needed for actions and take inspiration from the long legacy of political organizing.
 
-![Session #5 Wielding Power](/assets/img/powering_on_5_6.jpeg)
+![Session #5 Wielding Power](/assets/img/powering_on_5.jpg)
 
 POWERING ON is a political education and organizing program for tech workers put together by the Tech Workers Coalition (TWC). This is a 6-week program for tech workers to build conceptual frameworks for analyzing the tech industry's relationship to global structures of oppression and develop concrete strategies for organizing. **[Mandatory registration](https://us02web.zoom.us/meeting/register/tZcpdOitrD4jE9bFLzi1YJUCVzPcuLfisFrJ)** with Zoom
 
