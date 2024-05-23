@@ -19,7 +19,7 @@ description: A coalition of tech industry workers, labor organizers, community o
 url: "https://techworkerscoalition.org" # the subpath of your site, e.g. /blog
 baseurl: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: techworkersco
-timezone: "Europe/Berlin"
+timezone: "America/New_York"
 
 # Build settings
 plugins:

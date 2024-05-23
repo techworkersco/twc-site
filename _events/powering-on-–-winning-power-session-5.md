@@ -1,6 +1,6 @@
 ---
 title: "Powering on – Winning Power: Session #5"
-date: 2024-05-08T02:00:00.000Z
+date: 2024-05-07 20:00
 locations:
   - Global
   - Online

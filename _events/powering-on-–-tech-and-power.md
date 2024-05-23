@@ -1,6 +1,6 @@
 ---
 title: "Powering on – Tech and Power: Session #1"
-date: 2024-04-03T00:00:00.000Z
+date: 2024-04-02 20:00
 locations:
   - Global
   - Online

@@ -1,6 +1,6 @@
 ---
 title: "Powering on – Nourishing Power: Session #6"
-date: 2024-05-15T02:00:00.000Z
+date: 2024-05-14 20:00
 locations:
   - Global
   - Online

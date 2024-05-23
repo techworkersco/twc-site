@@ -1,6 +1,6 @@
 ---
 title: "Online book review: Tech Worker's Guide to Unions "
-date: 2024-03-26T18:00:00.000Z
+date: 2024-03-26 14:00
 time_zones:
   - US/Pacific
   - US/Eastern
@@ -9,7 +9,6 @@ time_zones:
   - Europe/Berlin
 location:
   - Online
-hide_form: false
 locations:
   - Online
   - Global
