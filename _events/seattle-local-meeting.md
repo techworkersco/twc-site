@@ -1,6 +1,6 @@
 ---
 title: "Seattle Local Tech Worker Meetup"
-date: 2024-06-18 15:30
+date: 2024-06-18 21:30
 locations:
   - Seattle
 time_zones:
