@@ -75,5 +75,6 @@ chapters:
     activity_level: active
   - text: Netherlands
     twitter: nederlandtwc
-    activity_level: semiactive
+    activity_level: active
+    url: https://techwerkers.nl/
     
