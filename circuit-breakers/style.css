@@ -1,0 +1,189 @@
+/* || Global */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 137.5%;
+  -webkit-font-smoothing: antialiased;
+  background-image: linear-gradient(to right top, #b3c7f7, #d9c1ee, #f3bfdb, #ffc1c6, #fcc9b5);
+  scroll-behavior: smooth;
+}
+
+/* || Page container */
+
+#container {
+  width: 75%;
+  max-width: 1000px;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0rem;
+
+  @media (min-width: 800px) {
+    grid-template-columns: 250px minmax(10px, 1fr);
+  }
+
+  >* {
+    padding: 1rem 1rem 0rem 1rem;
+  }
+}
+
+/* || Sections */
+
+section {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.options {
+  /* margin: 3rem auto; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  /* grid-auto-rows: minmax(100px, auto); */
+
+  @media (min-width: 800px) {
+    grid-template-columns: 250px minmax(1fr, 1fr);
+  }
+
+  >* {
+    padding: 1rem;
+  }
+}
+
+.column {
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+/* .column {
+   flex: 50%;
+ } */
+
+.spacer {
+  width: 12px;
+}
+
+/* || Typography */
+
+h1 {
+  color: black;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: rgba(7, 102, 35, 0.91);
+  font-family: "Rubik Glitch";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.828rem;
+}
+
+h3 {
+  font-size: 1.414rem;
+}
+
+h4 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-block-start: 1.5rem;
+  margin-block-end: 0rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.2rem;
+}
+
+p {
+  font-family: Rubik;
+  font-size: .8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+
+/* || Lists */
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+/* || Links */
+
+.nav-link {
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #CDFF9C;
+}
+
+
+/* || Buttons */
+
+.button {
+  width: 100%;
+  background-color: #CDFF9C;
+  border-style: none;
+  border-radius: 8px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  height: 40px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 0.35em 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #73E600;
+}
+
+
+/* || Misc */
+
+hr {
+  border: 0.5px solid;
+}
