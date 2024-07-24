@@ -8,33 +8,50 @@ html {
   font-family: "Rubik", sans-serif;
   font-size: 137.5%;
   -webkit-font-smoothing: antialiased;
-  background-image: linear-gradient(to right top, #b3c7f7, #d9c1ee, #f3bfdb, #ffc1c6, #fcc9b5);
+  background-image: linear-gradient(to right top, #7a08d5, #7007c3, #6607b2, #5d06a1, #530690, #4a0988, #420a7f, #3a0b77, #300e74, #241071, #16116e, #01126b);
   scroll-behavior: smooth;
 }
 
 /* || Page container */
 
-#container {
-  width: 75%;
-  max-width: 1000px;
-  margin: 3rem auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0rem;
+@media (min-width: 300px) and (max-width: 500px) {
+  #container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 
-  @media (min-width: 800px) {
-    grid-template-columns: 250px minmax(10px, 1fr);
+@media (min-width: 501px) and (max-width: 800px) {
+  #container {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 801px) {
+  #container {
+    width: 75%;
+    max-width: 1000px;
+    margin: 3rem auto;
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-columns: 0.45fr minmax(10px, 1fr);
   }
 
-  >* {
-    padding: 1rem 1rem 0rem 1rem;
+  aside {
+    margin-right: 2rem;
   }
+
+  #title {
+    margin-bottom: 1rem;
+    grid-column: auto / span 3;
+  }
+
 }
 
 /* || Sections */
 
 section {
-  padding-top: 16px;
   padding-bottom: 16px;
 }
 
@@ -43,29 +60,9 @@ section {
   top: 0;
 }
 
-.options {
-  /* margin: 3rem auto; */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-  /* grid-auto-rows: minmax(100px, auto); */
-
-  @media (min-width: 800px) {
-    grid-template-columns: 250px minmax(1fr, 1fr);
-  }
-
-  >* {
-    padding: 1rem;
-  }
+.CTA {
+  padding: 1rem 0rem 0rem 0rem;
 }
-
-.column {
-  padding: 1rem 0rem 1rem 0rem;
-}
-
-/* .column {
-   flex: 50%;
- } */
 
 .spacer {
   width: 12px;
@@ -74,11 +71,11 @@ section {
 /* || Typography */
 
 h1 {
-  color: black;
+  color: #73E600;
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: rgba(7, 102, 35, 0.91);
   font-family: "Rubik Glitch";
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -86,28 +83,36 @@ h1 {
 }
 
 h2 {
-  font-size: 2.828rem;
+  color: #73E600;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
 }
 
 h3 {
+  color: #73E600;
   font-size: 1.414rem;
 }
 
 h4 {
+  color: white;
   font-size: 1rem;
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.6rem;
 }
 
 h5 {
-  font-size: 0.9rem;
-  font-weight: 500;
+  color: #CDFF9C;
+  font-size: 1rem;
+  font-weight: 900;
   margin-block-start: 1.5rem;
   margin-block-end: 0rem;
+  text-transform: uppercase;
 }
 
 h6 {
+  color: white;
   font-size: 0.8rem;
   font-weight: 500;
   margin: 0;
@@ -115,6 +120,7 @@ h6 {
 }
 
 p {
+  color: white;
   font-family: Rubik;
   font-size: .8rem;
   font-style: normal;
@@ -122,11 +128,20 @@ p {
   line-height: 1.2rem;
 }
 
+a {
+  color: #CDFF9C;
+}
+
+a:hover {
+  color: #73E600;
+}
+
 /* || Lists */
 
 ul {
   list-style-type: none;
   padding-inline-start: 0;
+  margin-top: 0;
 }
 
 li {
@@ -136,25 +151,26 @@ li {
 /* || Links */
 
 .nav-link {
+  color: #CDFF9C;
   font-family: "Rubik", sans-serif;
   font-weight: 800;
-  color: black;
   text-decoration: none;
 }
 
 .nav-link:hover {
-  color: #CDFF9C;
+  color: #73E600;
 }
 
 
 /* || Buttons */
 
 .button {
-  width: 100%;
-  background-color: #CDFF9C;
+  width: 10rem;
+  /* background-color: #CDFF9C; */
   border-style: none;
   border-radius: 8px;
   color: #000000;
+  border-color: #CDFF9C;
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
@@ -186,4 +202,5 @@ li {
 
 hr {
   border: 0.5px solid;
+  color: #CDFF9C;
 }
