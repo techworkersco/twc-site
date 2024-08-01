@@ -3,3 +3,9 @@
   to = "/welcome"
   status = 308
   force = true
+
+[[redirects]]
+  from = "/conf"
+  to = "/circuit-breakers"
+  status = 301
+  force = true

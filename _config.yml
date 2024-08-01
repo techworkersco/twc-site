@@ -69,8 +69,8 @@ exclude_from_localizations: ["assets", "admin"]
 header_links: 
   - url: /subscribe
     text: Join
-  - url: /events
-    text: Events       
+  - url: /circuit-breakers
+    text: 2024 Tech Conf        
   - url: /blog
     text: Blog  
   - url: /chapters
@@ -79,6 +79,8 @@ header_links:
 links:
   - url: /subscribe
     text: Join
+  - url: /circuit-breakers
+    text: 2024 Tech Conf  
   - url: /events
     text: Events  
   - url: /blog
