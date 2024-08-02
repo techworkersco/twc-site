@@ -68,6 +68,11 @@ section {
   width: 12px;
 }
 
+#footer img {
+  padding-right: 16px;
+  vertical-align: middle;
+}
+
 /* || Typography */
 
 h1 {
