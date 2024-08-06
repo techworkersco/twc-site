@@ -70,7 +70,7 @@ header_links:
   - url: /subscribe
     text: Join
   - url: /circuit-breakers
-    text: 2024 Tech Conf        
+    text: Circuit Breakers        
   - url: /blog
     text: Blog  
   - url: /chapters
@@ -80,7 +80,7 @@ links:
   - url: /subscribe
     text: Join
   - url: /circuit-breakers
-    text: 2024 Tech Conf  
+    text: Circuit Breakers  
   - url: /events
     text: Events  
   - url: /blog
