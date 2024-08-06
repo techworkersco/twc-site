@@ -80,7 +80,7 @@ h1 {
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: rgba(7, 102, 35, 0.91);
   font-family: "Rubik Glitch";
-  font-size: 2.8rem;
+  font-size: 2.7rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -172,10 +172,10 @@ li {
 .button {
   width: 10rem;
   /* background-color: #CDFF9C; */
-  border-style: none;
+
   border-radius: 8px;
   color: #000000;
-  border-color: #CDFF9C;
+
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
@@ -197,11 +197,29 @@ li {
   margin-bottom: 8px;
 }
 
-.button:hover,
-.button:focus {
-  background-color: #73E600;
+.secondary {
+  border-style: solid;
+  border-color: #CDFF9C;
+  color: #FFFFFF;
+  background-color: Transparent;
 }
 
+.secondary:hover,
+.secondary:focus {
+  background-color: #CDFF9C;
+  color: #000000;
+}
+
+.primary {
+  border-style: none;
+  background-color: #73E600;
+  color: #000000;
+}
+
+.primary:hover,
+.primary:focus {
+  background-color: #5AB201;
+}
 
 /* || Misc */
 
