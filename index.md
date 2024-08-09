@@ -26,8 +26,10 @@ languages: ["en", "es", "fr", "it", "pt", "ru"]
 </div>
 
 {% if site.lang == 'en' %}
-  {% include newsletter.html %}
+  <h2>Blog Posts</h2>
+  {% include blog.html limit=2 %}
+  {% include newsletter.html limit=2 %}
   <h2 class="txt-2"> TWC in the Press</h2>
   <a href="/press">All Press mentions</a>
-  {% include press.html limit=3%}
+  {% include press.html limit=2%}
 {% endif %}

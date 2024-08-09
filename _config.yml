@@ -31,8 +31,8 @@ feed:
   disable_in_development: true
 
 jekyll_get_data:
-  - data: collective-actions
-    url: https://raw.githubusercontent.com/collective-action/tech/master/actions.json
+  #- data: collective-actions
+  #  url: https://raw.githubusercontent.com/collective-action/tech/master/actions.json
   - data: berlin_press
     url: https://raw.githubusercontent.com/techworkersco/twc-site-berlin/develop/_data/press.yml  
   - data: newsletter
