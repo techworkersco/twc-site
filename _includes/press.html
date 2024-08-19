@@ -2,8 +2,8 @@
 {% assign berlin_press = site.data.berlin_press | where:"lang",site.lang %}
 {% assign posts = site.data.press | concat: berlin_press | sort: 'date' | reverse %}
 {% for post in posts limit: limit %}
-  <article class="marg-b-4 flex items-center">
-    <div class="bg-black circ p-3 marg-r-3 lh-1">
+  <article class="p-3 marg-b-2 flex items-center secondaryBg">
+    <div class="bg-white circ p-3 marg-r-3 lh-1">
       <svg
         focusable="false"
         class="card-icon"
@@ -21,11 +21,11 @@
           {{ post.date | date: '%-d %B %Y' }}
         </time>
       </div>
-      {% if limit %}<h2>{% else %}<h3>{% endif %}
+      <h3>
         <a href="{{ post.url }}">
           {{ post.title }}
         </a>
-      {% if limit %}</h2>{% else %}</h3>{% endif %}
+      </h3>
     </div>
   </article>
 {% endfor %}
