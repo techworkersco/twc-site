@@ -500,6 +500,10 @@ hr {
   fill: $black;
 }
 
+.bg-white {
+  background:$white;
+}
+
 @media (prefers-color-scheme: light) {
   .bg-black {
     background-color: $grey3;
@@ -594,7 +598,7 @@ hr {
     border-bottom: 1px solid $grey;
   }
   input[type="submit"] {
-    background: $red;
+    background-color: $red;
     color: $white;
 
     &:hover {

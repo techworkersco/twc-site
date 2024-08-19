@@ -1,20 +1,25 @@
 <h2 class="txt-2">TWC Newsletter</h2>
 {% assign posts = site.data.newsletter['items'] %}
 {% for post in posts limit: 2 %}
-  <article class="marg-b-4 flex items-center">
+  <article class="p-3 marg-b-2 p-10 flex items-center secondaryBg">
+    <img
+    src="/assets/img/twc_newsletter.jpg"
+    alt="TWC Newsletter"
+    class="bg-white circ p-3 marg-r-3 lh-1 primaryBg"
+    style="width:72px;height:72px;padding:0"
+  />
     <div>
       <div>
-        TWC Newsletter —
-        <time datetime="{{ post['date_published'] | date: '%Y-%m-%d' }}">
-          {{ post['date_published'] | date: '%-d %B %Y' }}
+        <time datetime="{{ post.date_published | date: '%Y-%m-%d' }}">
+          {{ post.date_published | date: '%-d %B %Y' }}
         </time>
       </div>
       <h3>
-        <a href="{{post['url']}}">
-          {{  post['title'] }}
+        <a href="{{ post.url }}">
+          {{ post.title }}
         </a>
       </h3>
-      {{ post['summary'] }}
+      {{ post.summary }}
     </div>
   </article>
 {% endfor %}
