@@ -1,6 +1,6 @@
 ---
-title: TWC Organization meeting
-date: 2016-11-02 22:00
+title: December Organization meeting
+date: 2016-12-06 22:00
 locations:
   - San Fransisco
 time_zones:
@@ -26,4 +26,6 @@ We're conversing regularly through Slack. If you want to join an see what we're 
 
 See you Tuesday!
 
-[Facebook event](https://www.facebook.com/events/206491609785030/)
+[Facebook event](https://www.facebook.com/events/953575728082489/)
+
+Venue: 215 Golden Gate Ave, San Francisco, CA 94102-3705, United States
