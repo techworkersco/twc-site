@@ -1,5 +1,5 @@
-
-  <article class="event-card marg-b-4 flex items-center">
+  
+  <article class="p-3 marg-b-2 event-card flex items-center secondaryBg">
     <div class="bg-black circ lh-1">  
       <svg
       focusable="false"
@@ -24,7 +24,8 @@
         <b><h3>{{ event.date | all_time_zones: event.time_zones }}</h3></b>
       </time>
         <h3>
-          <a href="{{ event.url }}">{{ event.title }}</a>
+          <a href="{{ event.url }}">{{ event.title }}</a> 
+          📍 {% for location in event.locations %}{{location}} {% endfor %} 
         </h3>
     </div>  
   </article>  

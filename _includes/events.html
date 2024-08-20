@@ -1,6 +1,3 @@
-{% unless page.permalink == "/events" %}
-  <a href="/events">{% t home.events.more %}</a>
-{% endunless %}
 {% assign berlin_events = site.data.berlin_events %}
 {% assign events = site.events | concat: berlin_events | sort: 'date' | filter_tags: include.tags | reverse %}
 {% assign future_events = events | where_exp: "event", "event.date >= site.time" %}   
