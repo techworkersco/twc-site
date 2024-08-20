@@ -1,18 +1,29 @@
 ---
-title: "Wake Up SF: Strike for 15 and Our Homes / Despiertate SF: Huelga para 15
-  y Nuestros Hogares"
-date: 2016-04-27 17:30
+title: TWC Organization meeting
+date: 2016-11-02 22:00
 locations:
   - San Fransisco
 time_zones:
   - US/Pacific
 ---
-![](/assets/img/equity.jpg)
+![](/assets/img/city_san_francisco.jpg)
 
-As the Tech Workers Coalition, a program in collaboration with Silicon Valley Rising, we stand in solidarity with our brothers and sisters in the service industry. While our companies prosper, the workers who keep us running smoothly have been left behind. These “invisible” workers do not share in the success of our industry with which their daily labor keeps running.
-The people of Silicon Valley are standing together to fight for a Silicon Valley where everyone thrives. We all contribute to the success of the tech industry, regardless of if you are a web developer, a janitor, or a food service worker. We should all be given the opportunity to afford to live in the cities in which we work.
-Join the Tech Workers Coalition on April 27 at 2:30 pm, 30 minutes before the event begins, in order to coordinate with our volunteers and make sure everyone understands the objective of the event. The meeting location is at the corner of Mission College Boulevard and Burton Drive in Santa Clara.
+We're meeting on a monthly basis to update each other on the work our teams are doing, learn about ways in which we can participate, and meet new members of our group.
 
-See original event invite here : https://www.facebook.com/events/919555041499148/
+Agenda (Roughly):
 
-[Facebook event](https://www.facebook.com/events/1768314066732868/)
+• 7:00 Doors open
+
+• 7:15 Introductions
+
+• 7:30 Guest Announcements
+
+• 8:00 Project Announcements
+
+• 8:30 New Business, Announcements, or Project Proposals
+
+We're conversing regularly through Slack. If you want to join an see what we're talking about, send a message to hello@techworkersco.org, and we'll send you an invite.
+
+See you Tuesday!
+
+[Facebook event](https://www.facebook.com/events/206491609785030/)
