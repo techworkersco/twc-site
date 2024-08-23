@@ -5,24 +5,13 @@ permalink: /
 languages: ["en", "es", "fr", "it", "pt", "ru"]
 ---
 
-<h2 class="p-3 marg-b-1 secondaryBg">{% t home.summary %}</h2>
 <h1 class="leading-tight mb-12">{% t home.title %}</h1>
 
-  <h3>{% t home.who_we_are.title %}</h3>
-  <p>{% t home.who_we_are.description %}</p>
-</div>
-<div class="p-3 marg-b-2 secondaryBg">
-  <h3>{% t home.who_we_support.title %}</h3>
-  <p>{% t home.who_we_support.description %}</p>
-</div>
-  <h3>{% t home.how_we_work.title %}</h3>
-<div class="p-4 mb-8 bg-secondary">
 <div class="p-4 mb-8 secondaryBg">
+  <p>{% t home.summary %}</p>
+  <p>{% t home.who_we_are.description %} 
+  {% t home.who_we_support.description %}</p>
   <p>{% t home.how_we_work.description %}</p>
-</div>
-<div class="p-3 marg-b-2 secondaryBg">
-  <h3>{% t home.check_out_meeting.title %}</h3>
-  <p>{% t home.check_out_meeting.link %}</p>
 </div>
 <div class="p-4 mb-8 secondaryBg">
   <h3>{% t home.contact_us.title %}</h3>
