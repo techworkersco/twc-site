@@ -1,7 +1,7 @@
 {% assign limit = include.limit %}
 {% assign sorted_posts = site.blog | filter_tags: include.tags | sort: 'date' | reverse %}
 {% for post in sorted_posts limit: limit %}
-  <article class="p-3 marg-b-2 flex items-center secondaryBg">
+  <article class="p-3 marg-b-3 flex items-center secondaryBg">
     <div class="bg-white circ p-3 marg-r-3 lh-1">
       <svg
         focusable="false"
