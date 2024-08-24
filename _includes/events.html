@@ -13,8 +13,21 @@
   {% for event in future_events reversed limit: include.limit  %}  
     {% include event-card.html %}
   {% endfor %} 
-{% else %}  
+{% else %}
+  {% assign earliestYear = events.last.date | date: "%Y" %}
+  {% assign latestYear = events.first.date | date: "%Y" %}
   {% for event in events limit: include.limit  %}
+  {% assign currentYear = event.date | date: "%Y" %}
+    {% if currentYear != date %}
+  {% unless currentYear == latestYear %}</div></h2>{% endunless %}
+  <h2 class="tab">
+    <input type="checkbox" name="accordion-1" id="year-{{currentYear}}">
+    <label for="year-{{currentYear}}" class="tab__label">{{ currentYear }} Events</label>
+    <div class="tab__content">
+  <!-- do not indent the above line -->
+      {% assign date = currentYear %} 
+    {% endif %}
     {% include event-card.html %}
+    {% if forloop.last %}</div></h2>{% endif %}
   {% endfor %}
-{% endif %}  
+{% endif %}
