@@ -1,33 +1,39 @@
 {% assign berlin_events = site.data.berlin_events %}
 {% assign events = site.events | concat: berlin_events | sort: 'date' | filter_tags: include.tags | reverse %}
-{% assign future_events = events | where_exp: "event", "event.date >= site.time" %}   
+{% assign future_events = events | where_exp: "event", "event.date >= site.time" %}
 
 {% if page.permalink == "/events" %}
   <h1>Tech Worker Events</h1>
-  Explore all <b>{{events.size}}</b> public events we organized
+  Explore all <b>{{ events.size }}</b> public events we organized
 {% else %}
   <a href="/events">{% t home.events.more %}</a>
 {% endif %}
 
-{% if include.limit and future_events.size > 0 %}
-  {% for event in future_events reversed limit: include.limit  %}  
+{% assign has_future_events = include.limit and future_events.size > 0 %}
+{% assign earliest_year = events.last.date | date: "%Y" %}
+{% assign latest_year = events.first.date | date: "%Y" %}
+{% assign date = nil %}
+
+{% if has_future_events %}
+  {% for event in future_events reversed limit: include.limit %}
     {% include event-card.html %}
-  {% endfor %} 
+  {% endfor %}
 {% else %}
-  {% assign earliestYear = events.last.date | date: "%Y" %}
-  {% assign latestYear = events.first.date | date: "%Y" %}
-  {% for event in events limit: include.limit  %}
-  {% assign currentYear = event.date | date: "%Y" %}
-    {% if currentYear != date %}
-  {% unless currentYear == latestYear %}</div></h2>{% endunless %}
-  <h2 class="tab">
-    <input type="checkbox" name="accordion-1" id="year-{{currentYear}}">
-    <label for="year-{{currentYear}}" class="tab__label">{{ currentYear }} Events</label>
-    <div class="tab__content">
-  <!-- do not indent the above line -->
-      {% assign date = currentYear %} 
+  {% for event in events limit: include.limit %}
+    {% assign current_year = event.date | date: "%Y" %}
+    {% if current_year != date %}
+      {% unless current_year == latest_year %}
+        </div></h2>
+      {% endunless %}
+<h2 class="tab">
+  <input type="checkbox" name="accordion-1" id="year-{{ current_year }}">
+  <label for="year-{{ current_year }}" class="tab__label">{{ current_year }} - Events</label>
+  <div class="tab__content">
+      {% assign date = current_year %}
     {% endif %}
     {% include event-card.html %}
-    {% if forloop.last %}</div></h2>{% endif %}
+    {% if forloop.last %}
+      </div></h2>
+    {% endif %}
   {% endfor %}
 {% endif %}
