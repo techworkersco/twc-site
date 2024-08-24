@@ -61,9 +61,9 @@ header {
     padding-left: 14px;
 
     &:hover {
-      color:red;
+      color:$red;
       & .primarySvgFill {
-        fill: red;
+        fill: $red;
       }  
     }
   }
@@ -496,9 +496,9 @@ hr {
 .card-icon {
   height: 40px;
   min-width: 40px;
-  width: 40px;
   fill: $black;
 }
+
 
 .bg-white {
   background:$white;
@@ -567,8 +567,8 @@ hr {
     background-color: #020e0f;
 
     &:hover {
-      background-color: red;
-      fill: red;
+      background-color: $red;
+      fill:$red;
     }
 
     & > a {
@@ -670,7 +670,6 @@ hr {
 
 .banner img {
   width: 100%;
-  height: auto; // use this to display responsive image
 }
 
 img {
@@ -678,6 +677,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height: auto; // use this to display responsive image
 }
 
 .event-card {
@@ -689,21 +689,21 @@ img {
   }
 
   & > div {
-    padding: 1rem 3.5rem 1rem 1rem;
+    padding: 0.75rem;
   }
 }
 
 .event-card__info-column {
   grid-column: 2;
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 
 .event-card__icon {
   fill: $grey;
-  font-size: 0.55em;
+  font-size: 0.4em;
   font-weight: bold;
   grid-column: 1;
-  width: 2rem;
+  height: 75px;
 }
 
 .event-time {

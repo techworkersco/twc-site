@@ -45,6 +45,6 @@ The Tech Workers’ Bill of Rights is undergirded by the core values of equity, 
 </div>
 
 <h3 class="marg-b-3">The Tech Workers’ Bill of Rights is endorsed by:</h3>
-<img alt="The Tech Workers Union 1010. Kickstarter United. Tech Workers Coalition. Silicon Valley DSA and CODE-CWA" height="120" width="720" src="/assets/img/endorsements.png" />
+<img alt="The Tech Workers Union 1010. Kickstarter United. Tech Workers Coalition. Silicon Valley DSA and CODE-CWA" height="120" width="720" style="max-width:100%;" src="/assets/img/endorsements.png" />
 
 If your organization, network, or collective is interesting in signing on, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuB3yiLdSVz9HdwNp2v3Dgu_UAGI0bUQ7cP9qCV_wwSYyJvg/viewform?usp=sf_link">please fill out this form.</a>

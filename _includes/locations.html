@@ -1,0 +1,3 @@
+{% for location in event.locations %}
+    {{location}}{% unless forloop.last %} ·{% endunless -%}
+{% endfor %}
