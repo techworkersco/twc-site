@@ -521,7 +521,6 @@ hr {
 
 /* Visual styles */
 .accordion {
-  color: var(--theme);
   border: 2px solid;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -529,7 +528,6 @@ hr {
 .tab__label,
 .tab__close {
   display: flex;
-  color: white;
   background: var(--theme);
   cursor: pointer;
 }
