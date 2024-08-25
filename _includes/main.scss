@@ -576,10 +576,6 @@ hr {
 // __END__ accordian css for /events
 
 @media (prefers-color-scheme: light) {
-  .bg-black {
-    background-color: $grey3;
-    color: $black;
-  }
   .primarySvgFill {
     fill: $grey;
   }
@@ -626,6 +622,7 @@ hr {
     &:hover,
     &:focus {
       color: $grey;
+      text-decoration: none;
     }
     &:active,
     &:link,
@@ -652,11 +649,6 @@ hr {
 @media (prefers-color-scheme: dark) {
   h2 a:link {
     color: $white;
-  }
-
-  .bg-black {
-    background: $white;
-    color: $black;
   }
 
   .border {
@@ -705,6 +697,7 @@ hr {
     &:hover,
     &:focus {
       color: $red;
+      text-decoration: none;
     }
   }
 
@@ -771,7 +764,7 @@ img {
 
 .event-card__icon {
   fill: $grey;
-  font-size: 0.4em;
+  font-size: 0.7em;
   font-weight: bold;
   grid-column: 1;
   height: 75px;
