@@ -61,9 +61,9 @@ header {
     padding-left: 14px;
 
     &:hover {
-      color:red;
+      color:$red;
       & .primarySvgFill {
-        fill: red;
+        fill: $red;
       }  
     }
   }
@@ -365,7 +365,7 @@ ul {
 
 main {
   max-width: 90%;
-  padding: 80px 0;
+  padding: 0;
 }
 
 footer {
@@ -496,19 +496,86 @@ hr {
 .card-icon {
   height: 40px;
   min-width: 40px;
-  width: 40px;
   fill: $black;
 }
+
 
 .bg-white {
   background:$white;
 }
 
-@media (prefers-color-scheme: light) {
-  .bg-black {
-    background-color: $grey3;
-    color: $black;
+// __BEGIN__ interface for /events
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+.tab input:checked ~ .tab__content {
+  max-height: 100%;
+}
+
+/* Visual styles */
+.accordion {
+  border: 2px solid;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.tab__label,
+.tab__close {
+  display: flex;
+  background: var(--theme);
+  cursor: pointer;
+}
+.tab__label {
+  justify-content: space-between;
+  padding: 1rem;
+}
+.tab__label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+.tab input:checked + .tab__label::after {
+  transform: rotate(270deg);
+  animation: ease .8s;
+}
+.tab__content p {
+  margin: 0;
+  padding: 1rem;
+}
+.tab__close {
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+.accordion--radio {
+  --theme: var(--secondary);
+}
+
+/* Arrow animation */
+// .tab input:not(:checked) + .tab__label:hover::after {
+//   animation: bounce .8s infinite;
+// }
+@keyframes bounce {
+  25% {
+    transform: rotate(90deg) translate(.25rem);
   }
+  75% {
+    transform: rotate(90deg) translate(-.25rem);
+  }
+}
+
+// __END__ accordian css for /events
+
+@media (prefers-color-scheme: light) {
   .primarySvgFill {
     fill: $grey;
   }
@@ -555,6 +622,7 @@ hr {
     &:hover,
     &:focus {
       color: $grey;
+      text-decoration: none;
     }
     &:active,
     &:link,
@@ -567,8 +635,8 @@ hr {
     background-color: #020e0f;
 
     &:hover {
-      background-color: red;
-      fill: red;
+      background-color: $red;
+      fill:$red;
     }
 
     & > a {
@@ -581,11 +649,6 @@ hr {
 @media (prefers-color-scheme: dark) {
   h2 a:link {
     color: $white;
-  }
-
-  .bg-black {
-    background: $white;
-    color: $black;
   }
 
   .border {
@@ -634,6 +697,7 @@ hr {
     &:hover,
     &:focus {
       color: $red;
+      text-decoration: none;
     }
   }
 
@@ -670,7 +734,6 @@ hr {
 
 .banner img {
   width: 100%;
-  height: auto; // use this to display responsive image
 }
 
 img {
@@ -678,6 +741,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height: auto; // use this to display responsive image
 }
 
 .event-card {
@@ -689,21 +753,21 @@ img {
   }
 
   & > div {
-    padding: 1rem 3.5rem 1rem 1rem;
+    padding: 0.75rem;
   }
 }
 
 .event-card__info-column {
   grid-column: 2;
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 
 .event-card__icon {
   fill: $grey;
-  font-size: 0.55em;
+  font-size: 0.7em;
   font-weight: bold;
   grid-column: 1;
-  width: 2rem;
+  height: 75px;
 }
 
 .event-time {

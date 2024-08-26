@@ -11,7 +11,7 @@ global:
   404: Page not found
 home:
   title: |
-    <span class="red">Worker</span> power in the tech industry
+    <span class="red">Worker</span> power in the <span class="red">tech industry</span>
   summary: Guided by our vision for an inclusive & equitable tech industry, TWC organizes to build worker power through rank & file self-organization and education.
   looking_for_union:
     title: Looking for a Tech Worker Union?
@@ -28,7 +28,7 @@ home:
   how_we_work:
     title: How we work
     description: |
-      We’re a democratically structured, all-volunteer, and worker-led organization. At this point, membership consists of attending meetings in person and working on the various projects that people are interested in. We organize online but IRL is the crux of what we do. Check out our <a href="/community-guide">Community Guide</a> for more info. Join the <a href="/subscribe">Slack</a> to connect with a local in your area.
+      We’re a democratically structured, all-volunteer, and worker-led organization. Membership consists of attending meetings in-person/online. Get involved by <a href="/subscribe">subscribing</a> here. Join an upcoming <a href="/events">event</a>!
   check_out_meeting:
     title: Find a local chapter
     link: |

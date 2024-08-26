@@ -1,20 +1,49 @@
 {% assign berlin_events = site.data.berlin_events %}
 {% assign events = site.events | concat: berlin_events | sort: 'date' | filter_tags: include.tags | reverse %}
-{% assign future_events = events | where_exp: "event", "event.date >= site.time" %}   
+{% assign future_events = events | where_exp: "event", "event.date >= site.time" %}
+{% assign past_events = events | where_exp: "event", "site.time > event.date" %}
 
 {% if page.permalink == "/events" %}
-  <h1>Tech Worker Events</h1>
-  Explore all <b>{{events.size}}</b> public events we organized
+  <h1>Events</h1>
+  Explore all <b>{{ events.size }}</b> public events we organized
 {% else %}
   <a href="/events">{% t home.events.more %}</a>
 {% endif %}
 
-{% if include.limit and future_events.size > 0 %}
-  {% for event in future_events reversed limit: include.limit  %}  
-    {% include event-card.html %}
-  {% endfor %} 
-{% else %}  
-  {% for event in events limit: include.limit  %}
+{% assign show_future_events_only = include.limit and future_events.size > 0 %}
+{% assign earliest_year = events.last.date | date: "%Y" %}
+{% assign latest_year = events.first.date | date: "%Y" %}
+{% assign date = nil %}
+<!-- Home page typically only shows upcoming events in different order...or most recent paste events -->
+{% if show_future_events_only %}
+  {% for event in future_events reversed limit: include.limit %}
     {% include event-card.html %}
   {% endfor %}
-{% endif %}  
+{% else %}
+  <!-- Determine title -->
+  {% if future_events.size > 0 %}<h2>Upcoming events</h2>{% else %}<p>There are no upcoming events. Check back later!</p>{% endif %}
+  {% for event in future_events limit: include.limit %}
+    {% include event-card.html %}
+  {% endfor %}
+<h2>Past events</h2>
+  {% for event in past_events limit: include.limit %}
+    {% assign current_year = event.date | date: "%Y" %}
+    {% if current_year != date %}
+<!-- Except for 2024 (as of writing) adds closing tags "above" -->
+    {% unless current_year == latest_year %}
+        </div></div>
+      {% endunless %}
+<!-- HTML whitespace issues is why it's indented in weird way. This created the H2 tags for 2024/2023 etc.. -->
+<div class="tab">
+  <input type="checkbox" name="accordion-1" id="year-{{ current_year }}">
+  <label for="year-{{ current_year }}" class="tab__label"><h3>{{ current_year }}</h3></label>
+  <div class="tab__content">
+      {% assign date = current_year %}
+    {% endif %}
+    {% include event-card.html %}
+    <!-- Adds closing tags on bottom for the very last event -->
+    {% if forloop.last %}
+      </div></div>
+    {% endif %}
+  {% endfor %}
+{% endif %}
