@@ -52,79 +52,11 @@ permalink: /nyc/
 <!-- Begin ActionNetwork Signup Form -->
 
 <hr />
-
-<div class="flex justify-between ai-center pad">
-  <b>Upcoming Events</b>
-  <a class="calendarLink" href="https://calendar.google.com/calendar?cid=dGVjaHdvcmtlcnNjb2FsaXRpb25ueWNAZ21haWwuY29t">
-    Calendar Subscribe!
-  </a>
-</div>
-<div id='calendarContainer'></div>
-
-<hr />
-
+<h2 class class="marg-b-2">NYC + Online Events</h2>
+{% include events.html tags="nyc,online" limit=5 %}
 <div class="d:flex justify-between bottomLinks">
   <ul class="d:flex social">
    <li><a href="https://www.meetup.com/Tech-Workers-Coalition-NYC">Meetup (NYC)</a></li>
    <li><a href="https://twitter.com/techworkerscony">Twitter (NYC)</a></li>
   </ul>
-  <ul class="d:flex social">
-    <li>
-      <a href="https://forms.gle/1rFMvppxPj7FvShbA">
-        Suggest an event
-      </a>
-    </li>
-    <li>
-      <a href="mailto:info@techworkersco.nyc">
-        Contact Us
-      </a>
-    </li>
-  </ul>
 </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script nonce="{% nonce %}">
-  const apikey = 'AIzaSyB9Gj0gvJvkQYaFPlxtsIGj8QkefAp5jgo';
-  const calendarUrl = `https://www.googleapis.com/calendar/v3/calendars/techworkerscoalitionnyc@gmail.com/events?key=${apikey}`;
-
-  const calendarContainer = document.getElementById('calendarContainer');
-  const dateTime2Date = dateString => new Date(new Date(dateString).toDateString());
-
-  const showCalendarEvents = json => {
-    const items = json.items || [];
-    const events = items
-      .filter((ev = {}) => {
-        const dateTime = ev.start ? ev.start.dateTime : "";
-        return dateTime2Date(dateTime) >= dateTime2Date(Date.now())
-      })
-      .sort((a, b) => new Date(a.start.dateTime) - new Date(b.start.dateTime));
-
-    for (const event of events) {
-      const eventDiv = document.createElement('div');
-      const start = moment(event.start.dateTime).format('LLLL');
-      eventDiv.className = 'event';
-
-      const eventMarkup = `
-        <h3 class="marg-b-2"><a href='${event.htmlLink}'>${event.summary}</a></h3>
-        <div class="marg-b-2">
-          <div><b>${start}</b></div>
-          <div><b>${event.location || 'Check the slack channel for location details'}</b></div>
-        </div>
-        <article>
-          ${event.description}
-        </article>
-      `;
-
-      eventDiv.innerHTML = eventMarkup;
-      calendarContainer.appendChild(eventDiv);
-    }
-  }
-
-  fetch(calendarUrl)
-  .then(function(res) {
-    return res.json()
-  })
-  .then(function(res) {
-    showCalendarEvents(res);
-  });
-</script>
