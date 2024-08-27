@@ -45,6 +45,7 @@ html {
   #title {
     margin-bottom: 1rem;
     grid-column: auto / span 3;
+    text-align: center;
   }
 
 }
@@ -76,11 +77,11 @@ section {
 /* || Typography */
 
 h1 {
-  color: #73E600;
+  color: #FFFFFF;
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: rgba(7, 102, 35, 0.91);
   font-family: "Rubik Glitch";
-  font-size: 2.7rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -88,7 +89,7 @@ h1 {
 }
 
 h2 {
-  color: #73E600;
+  color: #FFFFFF;
   font-size: 1.3rem;
   font-weight: 700;
   margin-top: 0.5rem;
