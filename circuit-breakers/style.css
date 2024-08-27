@@ -45,7 +45,6 @@ html {
   #title {
     margin-bottom: 1rem;
     grid-column: auto / span 3;
-    text-align: center;
   }
 
 }
