@@ -73,6 +73,12 @@ section {
   vertical-align: middle;
 }
 
+#overview img {
+  width: 100%;
+  border-radius: 16px;
+  margin-top: 1rem;
+}
+
 /* || Typography */
 
 h1 {
