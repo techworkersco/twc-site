@@ -11,6 +11,10 @@ time_zones:
   - Europe/London
 image: /assets/img/twc_book.png
 ---
-Learn more about Tech Workers Coalition and get involved! Note we have two time slot options covering multiple time zones to accommodate our international community!
+Learn more about Tech Workers Coalition and get involved! Note we have two time slot options covering multiple time zones to accommodate our international community!\
+\
+[Register](https://us02web.zoom.us/meeting/register/tZEuceuopj4oH9VZnGnIXNubx_pS8W_o5wzD)
+
+
 
 ![](/assets/img/twc_onboarding_0924.png)
