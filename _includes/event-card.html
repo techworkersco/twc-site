@@ -1,28 +1,30 @@
   
   <article class="p-3 marg-b-3 event-card flex items-center secondaryBg">
-    {% assign foundImage = 0 %}
-    {% assign image = 0 %}
-    {% assign images = event.content | split:"<img " %}
-    {% for image in images %}
+  {% assign foundImage = 0 %}  
+  {% if event.image %}
+    {% capture foundImage %} src="{{event.image}}" {% endcapture %}
+  {% else %}  
+    {% assign html_blocks = event.content | split:"<img " %}
+    {% for image in html_blocks %}
       {% if image contains 'src' %}
         {% if foundImage == 0 %}
           {% assign tags = image | split:"/>" | first | | split:" " %}
           {% for tag in tags %}
             {% if tag contains 'src' %}
-              {% assign image = tag %}
+              {% assign foundImage = tag %}
             {% endif %}
           {% endfor %}
-          {% assign foundImage = 1 %}
         {% endif %} 
       {% endif %}
     {% endfor %}
+  {% endif %}  
 
-    {% if image != 0 %}
+    {% if foundImage != 0 %}
       <img
-      {{image}}
+      {{foundImage}}
       alt=""
       class="bg-white marg-r-3 lh-1"
-      style="width:100px;height:100px"
+      style="width:100px;height:100px;object-fit:cover;"
     />
     {% else %}
       <div class="bg-white circ lh-1" style="min-width:100px;height:100px">  
