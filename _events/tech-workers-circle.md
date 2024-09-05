@@ -1,5 +1,5 @@
 ---
-title: Tech Workers Circle
+title: Tech Workers Circle, June 2024
 date: 2024-06-25 20:00
 locations:
   - Global
