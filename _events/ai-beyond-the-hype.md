@@ -1,5 +1,5 @@
 ---
-title: AI Beyond the Hype
+title: "AI Beyond the Hype: Part 1"
 date: 2024-09-03 20:00
 locations:
   - Global
