@@ -7,10 +7,8 @@ locations:
 time_zones:
   - US/Eastern
   - US/Pacific
-  - Europe/Berlin
-  - Europe/London
 image: /assets/img/twc_book.png
 ---
 Learn more about Tech Workers Coalition and get involved! Note we have two time slot options covering multiple time zones to accommodate our international community!
 
-![](/assets/img/twc_onboarding_0924.png)
+![Graphic describing the times of the event in different time zones, with a beautiful video game style pixelated red book with TWC logo embossed on it](/assets/img/twc_onboarding_0924.png)
