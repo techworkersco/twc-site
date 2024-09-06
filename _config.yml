@@ -39,6 +39,8 @@ jekyll_get_data:
     url: https://news.techworkerscoalition.org/feed.json
   - data: berlin_events
     url: https://techworkersberlin.com/events.yml
+  - data: nl_events
+    url: https://techwerkers.nl/events.yml    
 exclude:
   - .jekyll-cache/
 # also update index.md
@@ -69,12 +71,10 @@ exclude_from_localizations: ["assets", "admin"]
 header_links: 
   - url: /subscribe
     text: Join
+  - url: /events
+    text: Events
   - url: /circuit-breakers
-    text: Circuit Breakers        
-  - url: /blog
-    text: Blog  
-  - url: /chapters
-    text: Chapters
+    text: Circuit Breakers     
   
 links:
   - url: /subscribe
