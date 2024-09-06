@@ -18,7 +18,6 @@ languages: ["en", "es", "fr", "it", "pt", "ru"]
   {% t home.contact_us.description %}
 </div>
 
-<h2 class class="marg-b-2">{% t home.events.title %}</h2>
 {% include events.html limit=5 %}
 
 <h2 class class="marg-b-2">Blog Posts</h2>

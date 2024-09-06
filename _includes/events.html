@@ -1,6 +1,6 @@
 {% assign berlin_events = site.data.berlin_events %}
 {% assign events = site.events | concat: berlin_events | sort: 'date' | filter_tags: include.tags | reverse %}
-{% assign future_events = events | where_exp: "event", "event.date >= site.time" %}
+{% assign future_events = events | where_exp: "event", "event.date >= site.time" | reverse %}
 {% assign past_events = events | where_exp: "event", "site.time > event.date" %}
 
 {% if page.permalink == "/events" %}
@@ -15,8 +15,10 @@
 {% assign latest_year = events.first.date | date: "%Y" %}
 {% assign date = nil %}
 <!-- Home page typically only shows upcoming events in different order...or most recent paste events -->
+
 {% if show_future_events_only %}
-  {% for event in future_events reversed limit: include.limit %}
+  <h2 class class="marg-b-2">Upcoming events</h2>
+  {% for event in future_events limit: include.limit %}
     {% include event-card.html %}
   {% endfor %}
 {% else %}
