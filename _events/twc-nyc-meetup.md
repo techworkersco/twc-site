@@ -12,6 +12,6 @@ New York 🍎 come hang out soon at our next meetup! We will be meeting at Hidde
 
 All are welcome, come connect with other tech comrades and kick off the weekend together.
 
-
-
 Mark your calendars 🌞
+
+![](/assets/img/screenshot-2024-09-06-at-3.50.48 pm.png)
