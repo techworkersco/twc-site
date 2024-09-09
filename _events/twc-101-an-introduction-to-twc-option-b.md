@@ -1,6 +1,6 @@
 ---
 title: "TWC 101: An introduction to TWC (option B)"
-date: 2024-09-18 18:00
+date: 2024-09-18 20:00
 locations:
   - Global
   - Online
