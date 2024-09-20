@@ -125,10 +125,12 @@ h5 {
 
 h6 {
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  margin: 0;
+  margin-bottom: 0.5rem;
   line-height: 1.2rem;
+  color: #73E600;
+  font-style: italic;
 }
 
 p {
