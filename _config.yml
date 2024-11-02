@@ -38,9 +38,7 @@ jekyll_get_data:
   - data: newsletter
     url: https://news.techworkerscoalition.org/feed.json
   - data: berlin_events
-    url: https://techworkersberlin.com/events.yml
-  - data: nl_events
-    url: https://techwerkers.nl/events.yml    
+    url: https://techworkersberlin.com/events.yml   
 exclude:
   - .jekyll-cache/
 # also update index.md
