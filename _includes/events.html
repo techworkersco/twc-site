@@ -1,6 +1,6 @@
 {% assign berlin_events = site.data.berlin_events %}
 {% assign nl_events = site.data.nl_events %}
-{% assign events = site.events | concat: berlin_events | concat: nl_events  | sort: 'date' | filter_tags: include.tags %}
+{% assign events = site.events | concat: berlin_events | sort: 'date' | filter_tags: include.tags %}
 {% assign future_events = events | where_exp: "event", "event.date >= site.time" %}
 {% assign past_events = events | where_exp: "event", "site.time > event.date" %}
 
