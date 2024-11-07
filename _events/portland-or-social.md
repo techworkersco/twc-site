@@ -1,10 +1,10 @@
 ---
 title: Portland, OR Social
-date: 2024-11-09 18:00
+date: 2024-11-09 15:00
 locations:
   - Global
 time_zones:
-  - US/Eastern
+  - US/Pacific
 image: /assets/img/screenshot-2024-11-07-at-11.37.17 am.png
 ---
 Join us for a casual meetup to connect with fellow tech workers & organizers in the Portland metro area. 
