@@ -1,6 +1,6 @@
 ---
 title: Portland, OR Social
-date: 2024-11-09 15:00
+date: 2024-11-09 18:00
 locations:
   - Global
 time_zones:
