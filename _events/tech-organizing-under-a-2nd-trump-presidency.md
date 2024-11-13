@@ -15,3 +15,7 @@ Join us to learn what this election means for the tech industry and worker power
 🗓️ Tuesday, Nov. 19th
 ⏰ 5pm PT / 8pm ET
 🔗 Register at [bit.ly/techorganizingtwc](bit.ly/techorganizingtwc)
+
+[](bit.ly/techorganizingtwc)
+
+![](/assets/img/cover-no-text-01.png)
