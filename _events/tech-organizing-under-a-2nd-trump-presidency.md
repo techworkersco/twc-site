@@ -13,7 +13,9 @@ The incoming Trump presidency will mean a new wave of repression, handouts to bi
 Join us to learn what this election means for the tech industry and worker power — walk away with a strong understanding of how to get involved and strategize over how to effectively organize to fight back ✊
 
 🗓️ Tuesday, Nov. 19th
+
 ⏰ 5pm PT / 8pm ET
+
 🔗 Register at [bit.ly/techorganizingtwc](bit.ly/techorganizingtwc)
 
 [](bit.ly/techorganizingtwc)
