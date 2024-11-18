@@ -71,8 +71,8 @@ header_links:
     text: Join
   - url: /events
     text: Events
-  - url: /circuit-breakers
-    text: Circuit Breakers     
+  - url: /chapters
+    text: Chapters     
   
 links:
   - url: /subscribe
