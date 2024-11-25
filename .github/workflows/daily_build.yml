@@ -1,0 +1,13 @@
+name: rebuild-main-twc-site
+on:
+  schedule:
+    # run job every 24 hours at 17:00 UTC
+    - cron: "0 17 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: trigger netlify build
+        run: |
+          curl -X POST -d '{}' https://api.netlify.com/build_hooks/6277e1c305e5fd586b7e6e91&trigger_title=Daily+NetlifyBuild+Github+Action+Flow
