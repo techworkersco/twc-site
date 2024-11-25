@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /events
+permalink: /events/
 languages: ["en"]
 ---
 {% include events.html %}

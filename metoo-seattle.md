@@ -21,11 +21,11 @@ permalink: /metoo/seattle/
 * The Mask You Live In (film)
 
 ## Healthy Masculinity Resources
-* [Wholehearted Masculine](http://wholeheartedmasculine.org/)
+* [Wholehearted Masculine](https://wholeheartedmasculine.org/)
 * [The Consent Academy](https://web.archive.org/web/20200930215105/https://www.consent.academy/mission-statement.html)
 * [Jackson Katz, PhD TED talk - Violence Against Women](https://www.youtube.com/watch?v=KTvSfeCRxe8)
-* [A Call to Men](http://www.acalltomen.org)
-* [MVP Strategies](htp://www.mvpstrat.com/about)
+* [A Call to Men](https://www.acalltomen.org)
+* [MVP Strategies](htps://www.mvpstrat.com/about)
 * [Pop Culture Detective Agency](https://www.youtube.com/user/rebelliouspixels)
 
 ## Recommended Books
@@ -39,6 +39,6 @@ permalink: /metoo/seattle/
 * [Model View Culture](https://modelviewculture.com)
 * [Why is Silicon Valley so awful to women?](https://www.theatlantic.com/magazine/archive/2017/04/why-is-silicon-valley-so-awful-to-women/517788/)
 * [Elephant in the Valley](https://www.elephantinthevalley.com)
-* [Open Diversity Data](http://opendiversitydata.org)
-* [Project Include](http://projectinclude.org)
+* [Open Diversity Data](https://opendiversitydata.org)
+* [Project Include](https://projectinclude.org)
 * [Women entrepreneurs speak out against sexual harassment](https://www.nytimes.com/2017/06/30/technology/women-entrepreneurs-speak-out-sexual-harassment.html)

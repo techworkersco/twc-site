@@ -3,8 +3,9 @@
 [Slack](#slack)<br>
 [Historique du document](#document-history)
 
-<h1 class="lh-tight marg-b-4">Nos valeurs et notre code de conduite</h1>
-<a name="our-values" />
+<h1 class="lh-tight marg-b-4">
+  <a id="our-values" href="#our-values">Nos valeurs et notre code de conduite</a>  
+</h1>
 
 La Tech Workers Coalition cherche à redéfinir la relation entre les technologistes et les communautés locales (initialement de la Bay Area). À travers l'activisme, l'engagement civique, l'action directe et l'éducation, nous travaillons en solidarité avec les mouvements existants vers la justice sociale et l'inclusion économique.
 
@@ -53,8 +54,7 @@ Alors qu'en pratique, la plupart des actions des modérateurs et des administrat
 
 Les participants au TWC doivent être conscients de ce qu'ils écrivent et disent dans les réunions publiques du TWC et sur les canaux pseudo-publics comme Slack. Sachez que Slack conserve des enregistrements de nos conversations indéfiniment. Ne dites rien dans une chaîne non privée que vous ne souhaitez pas rendre publique. Les participants doivent également être conscients que des membres de la presse peuvent être présents ou sur les chaînes Slack. Alors que nous leur demandons de garder ce qu'ils lisent et entendent en dehors du compte rendu, nous ne pouvons pas contrôler ce qu'ils publient.
 
-## Projets
-<a name="projects" />
+## <a id="projects" href="#projects">Projets</a>
 
 Nous organisons une grande partie de nos efforts et de notre organisation en projets. Les projets sont organisés par une ou deux personnes qui sont chargées d'être un point de contact avec l'organisation plus large et de faire rapport au groupe plus large lors de nos réunions d'organisation.
 
@@ -62,9 +62,7 @@ Les projets sont une pierre de touche pour les nouveaux membres qui souhaitent p
 
 Les projets doivent former leurs propres sujets dans Slack. Beaucoup commencent par le préfixe *#proj-*. Voire [Discussion de projet / discussions](#slack).
 
-## Slack
-<a name="slack" />
-
+## <a id="slack" href="#slack">Slack</a>
 ### Étiquette
 
 - **Gérez vos notifications.** TWC Slack peut devenir rapidement écrasant sans une gestion appropriée des notifications. Nous vous recommandons de désactiver les notifications pour tous, sauf pour votre propre nom et pour tout mot ou condition spécifique qui vous intéresse. (Pour ce faire, ouvrez Slack, cliquez sur le nom de l’équipe, puis sur «Préférences» et «Gérer».). Rejoignez uniquement les chaînes que vous souhaitez suivre. N'ayez pas honte de quitter ou de désactiver une chaîne à laquelle vous n'avez pas le désir ou le temps de participer.
@@ -80,8 +78,7 @@ Les chaînes vont et viennent sur Slack, mais voici quelques chaînes à longue 
 - #meetings: conversation sur nos réunions à l'échelle de l'organisation
 - #workplace-conditions: conversations sur les conditions de travail et les expériences dans l'industrie technologique
 
-## Historique Du Document
-<a name="document-history" />
+## <a id="document-history" href="#document-history">Historique Du Document</a>
 - *2019-12-11: Retrait du comité directeur défunt selon consensus entre plusieurs sections locales *
 - *2019-11-04: Clarification concernant les conditions d'adhésion *
 - *2018-07-22: Informations anciennes et obsolètes supprimées, RK *

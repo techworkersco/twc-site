@@ -3,8 +3,8 @@
 [Slack](#slack)<br>
 [Document History](#document-history)
 
-<h1 class="lh-tight marg-b-4">Our Values and Code of Conduct</h1>
-<a name="our-values" />
+<h1 class="lh-tight marg-b-4"><a id="our-values" href="#our-values">Our Values and Code of Conduct</a>
+</h1>
 
 The Tech Workers Coalition seeks to redefine the relationship between tech workers and Bay Area communities. Through activism, civic engagement, direct action, and education, we work in solidarity with existing movements towards social justice and economic inclusion.
 
@@ -53,8 +53,7 @@ While in practice most actions from moderators and administrators will be friend
 
 TWC participants should be mindful of what they write and say in public TWC meetings and in pseudo-public channels like Slack. Be aware that Slack maintains records of our conversations indefinitely. Do not say anything in a non-private channel that you do not want becoming public. Participants should also be aware that members of the press may be present or in Slack channels. While we ask them to keep what they read and hear off the record, we cannot control what they publish.
 
-## Projects
-<a name="projects" />
+##<a id="projects" href="#projects">Projects</a>
 
 We organize much of our efforts and organization in projects. Projects are organized by one or two individuals who are responsible for being a point of contact to the broader organization, and reporting back to the larger group during our organizational meetings.
 
@@ -62,8 +61,7 @@ Projects are a touchstone for new members who want to participate, and we encour
 
 Projects should form their own topics within Slack. Many start with the prefix *#proj-*. See [Project/Discussion Channels](#slack).
 
-## Slack
-<a name="slack" />
+## Slack <a id="slack" href="#slack">Slack</a>
 
 ### Etiquette
 
@@ -80,8 +78,7 @@ Channels come and go on Slack, but here are some long-living channels:
 - #meetings: conversation about our org-wide meetings
 - #workplace-conditions: conversations about working conditions and experiences in the tech industry
 
-## Document History
-<a name="document-history" />
+## <a id="document-history" href="#document-history">Document History</a>
 - *2019-12-11: Removal of defunct steering committee as per consensus between several locals*
 - *2019-11-04: Clarification regarding membership requirements*
 - *2018-07-22: Deleted old and out-of-date information, RK*
