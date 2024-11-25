@@ -17,7 +17,7 @@ title: Tech Workers Coalition
 email: hello@techworkerscoalition.org
 description: A coalition of tech industry workers, labor organizers, community organizers, and friends cultivating solidarity among all workers in tech.
 url: "https://techworkerscoalition.org" # the subpath of your site, e.g. /blog
-baseurl: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the base hostname & protocol for your site, e.g. https://example.com
 twitter_username: techworkersco
 timezone: "America/New_York"
 
@@ -28,7 +28,7 @@ plugins:
 
 # jekyll-feed plugin
 feed:
-  disable_in_development: true
+  disable_in_development: false
 
 jekyll_get_data:
   #- data: collective-actions
@@ -60,10 +60,10 @@ future: true
 collections:
   blog:
     output: true
-    permalink: blog/:title
+    permalink: blog/:title/
   events:
     output: true
-    permalink: events/:title
+    permalink: events/:title/
 
 exclude_from_localizations: ["assets", "admin"]
 header_links: 
@@ -85,7 +85,7 @@ links:
     text: Blog  
   - url: /chapters
     text: Chapters
-  - url: /community-guide/
+  - url: /community-guide
     text: Community Guide
   - url: /job-board
     text: Union Job Board

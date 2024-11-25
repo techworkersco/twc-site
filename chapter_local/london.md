@@ -13,7 +13,7 @@ h1, .main-wrapper h2, h3 {
 
 This is the London, UK, chapter of the TWC. We started organising in early
 2019, and our first public meeting was at [Newspeak House](https://nwspk.com/)
-in September 2019, moving to [MayDay Rooms](http://www.maydayrooms.org/)
+in September 2019, moving to [MayDay Rooms](https://www.maydayrooms.org/)
 thereafter.
 
 We now have regular monthly general meetings online, announced on

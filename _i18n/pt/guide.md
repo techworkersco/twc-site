@@ -3,8 +3,9 @@
 [Slack](#slack)<br>
 [Documentação Histórica](#document-history)
 
-<h1 class="lh-tight marg-b-4">Nossos Valores e Código de Conduta</h1>
-<a name="our-values" />
+<h1 class="lh-tight marg-b-4">
+    <a id="our-values" href="#our-values">Nossos Valores e Código de Conduta</a>
+</h1>
 
 A Tech Workers Coalition busca redefinir a relação entre trabalhadores da área de tecnologia e as comunidades locais (inicialmente na Bay Area). Por meio do ativismo, engajamento cívico, ação direta e educação, trabalhamos em solidariedade com os movimentos existentes em prol da justiça social e da inclusão econômica.
 
@@ -56,8 +57,7 @@ Enquanto na prática a maioria das ações dos moderadores e administradores ser
 
 Participantes do TWC devem estar atentes ao que escrevem e dizem em reuniões públicas do TWC e em canais pseudo-públicos como o Slack. Esteja ciente de que o Slack mantém registros de nossas conversas indefinidamente. Não diga nada em um canal não privado que você não queira tornar público. Participantes também devem estar cientes de que membros da imprensa podem estar presentes em reuniões ou nos canais Slack. Enquanto pedimos que eles mantenham o que leem e ouvem fora do registro, não podemos controlar o que eles publicam.
 
-## Projetos
-<a name="projects" />
+## <a id="projects" href="#projects">Projetos</a>
 
 Organizamos grande parte de nossos esforços e organização em projetos. Os projetos são organizados por um ou dois indivíduos responsáveis por ser um ponto de contato com a organização em geral e reportar ao grupo maior durante nossas reuniões organizacionais.
 
@@ -66,8 +66,7 @@ Os projetos são um critério importante para novos membros que desejam particip
 Os projetos devem formar seus próprios tópicos no Slack. Muitos começam com o prefixo *# proj-*. Consulte [Project/Discussion Channels](#slack).
 
 
-## Slack
-<a name="slack" />
+## Slack <a id="slack" href="#slack">Slack</a>
 
 ### Etiqueta
 
@@ -86,8 +85,7 @@ Os canais vêm e vão no Slack, mas aqui estão alguns canais mais permanentes:
 - #workplace-conditions: conversas sobre condições e experiências de trabalho na indústria de tecnologia
 
 
-## Documentação Histórica (em inglês)
-<a name="document-history" />
+## <a id="document-history" href="#document-history">Documentação Histórica (em inglês)</a>
 - *2019-12-11: Removal of defunct steering committee as per consensus between several locals*
 - *2019-11-04: Clarification regarding membership requirements*
 - *2018-07-22: Deleted old and out-of-date information, RK*
