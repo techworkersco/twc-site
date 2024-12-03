@@ -9,7 +9,10 @@ permalink: /subscribe/
 Our Slack is governed by the principles and rules in our [Community Guide](/community-guide). By joining, you agree to follow them.
 
 <h3 class="marg-b-3">Please provide the following:</h3>
-<form class="join-form" method="POST" target="_blank" class="marg-b-4" data-netlify="true" action="/welcome">
+<form class="join-form" method="POST" target="_blank" class="marg-b-4" data-netlify="true" action="/welcome" netlify-honeypot="bot-field">
+  <label style="display:none">
+    Don’t fill this out if you’re human: <input name="bot-field" />
+  </label>
   <label class="marg-b-3" for="email">
     <div><b>Email:</b></div>
     <input id="email" type="email" required name="email">
