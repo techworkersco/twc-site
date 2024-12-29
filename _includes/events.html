@@ -4,7 +4,7 @@
 {% assign future_events = events | where_exp: "event", "event.date >= site.time" %}
 {% assign past_events = events | where_exp: "event", "site.time > event.date" %}
 
-{% if page.permalink == "/events" %}
+{% if page.permalink == "/events/" %}
   <h1>Events</h1>
   Explore all <b>{{ events.size }}</b> public events we organized
 {% else %}
@@ -12,11 +12,11 @@
 {% endif %}
 
 {% assign show_future_events_only = include.limit and future_events.size > 0 %}
-{% assign earliest_year = events.first.date | date: "%Y" %}
-{% assign latest_year = events.last.date | date: "%Y" %}
-{% assign display_year = nil %}
-<!-- Home page typically only shows upcoming events in different order...or most recent past events -->
+{% assign earliest_year = past_events.first.date | date: "%Y" %}
+{% assign latest_year = past_events.last.date | date: "%Y" %}
+{% assign render_year = nil %}
 
+{% comment %} Home page typically only shows upcoming events in different order...or most recent past events {% endcomment %}
 {% if show_future_events_only %}
   <h2 class class="marg-b-2">Upcoming events</h2>
   {% for event in future_events limit: include.limit %}
@@ -31,22 +31,22 @@
 <h2>Past events</h2>
   {% for event in past_events reversed limit: include.limit %}
     {% assign current_year = event.date | date: "%Y" %}
-    {% if current_year != display_year %}
-      {% comment %} Except for 2024 (as of writing) adds closing and opening div tags {% endcomment %}
+    {% if current_year != render_year %}
+      {% comment %} Add closing div tags except for current year {% endcomment %}
       {% unless current_year == latest_year %}
           </div>
         </div>
       {% endunless %}
-  {% comment %} HTML whitespace issues is why it's indented in weird way. Creates H2 tags for 2024/2023 etc.. {% endcomment %}
+  {% comment %} HTML whitespace issues is why it's indented in weird way. Create H2 tags for each year {% endcomment %}
   <div class="tab">
     <input type="checkbox" name="accordion-1" id="year-{{ current_year }}">
     <label for="year-{{ current_year }}" class="tab__label"><h3>{{ current_year }}</h3></label>
     <div class="tab__content">
-      {% assign display_year = current_year %}
+      {% assign render_year = current_year %}
     {% endif %}
     
     {% include event-card.html %}
-      {% comment %} Adds two closing div tags for last event {% endcomment %}
+      {% comment %} Add closing div tags for very last event {% endcomment %}
       {% if forloop.last %}
         </div>
     </div>
