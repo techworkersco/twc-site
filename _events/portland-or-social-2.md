@@ -4,7 +4,7 @@ date: 2025-01-11 18:00
 locations:
   - Global
 time_zones:
-  - US/Eastern
+  - US/Pacific
 image: /assets/img/unnamed-2-.png
 ---
 Join us for a casual meetup to connect with fellow tech workers & organizers in the Portland metro area.
