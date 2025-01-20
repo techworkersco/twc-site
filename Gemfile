@@ -12,6 +12,9 @@ ruby RUBY_VERSION
 gem "jekyll", "~> 4.3"
 gem 'html-proofer'
 gem 'deep_merge'
+gem 'csv'
+gem 'logger'
+gem 'base64'
 # gem 'pry'
 
 gem 'tzinfo'
