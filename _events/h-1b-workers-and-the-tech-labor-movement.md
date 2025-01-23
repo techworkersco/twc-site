@@ -6,6 +6,7 @@ locations:
   - Online
 time_zones:
   - US/Eastern
+  - US/Pacific
 image: /assets/img/img_1300.png
 ---
 How can we organize workers of different nationalities to not only feel but act as comrades-in-arms? Join us for a panel of current and former H-1B workers and union activists on their experiences, why immigrant rights are all our rights, and what we can do to defend them!
