@@ -13,4 +13,4 @@ How can we organize workers of different nationalities to not only feel but act 
 Monday, Feb 3rd\
 5:00 PM PT / 8:00 PM ET
 
-**[Register here](bit.ly/twch1b)**
+**[Register here](https://bit.ly/twch1b)**
