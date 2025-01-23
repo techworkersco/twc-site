@@ -14,3 +14,7 @@ Monday, Feb 3rd\
 5:00 PM PT / 8:00 PM ET
 
 **[Register here](https://bit.ly/twch1b)**
+
+
+
+![](/assets/img/h1b-workers.jpg)
