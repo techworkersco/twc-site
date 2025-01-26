@@ -35,6 +35,9 @@ chapters:
     twitter: techworkerscony
     meetup: Tech-Workers-Coalition-NYC/
     activity_level: active
+  - text: Portland
+    url: /pdx
+    activity_level: active
   - text: San Diego
     url: https://twcsandiego.org/
     twitter: twcsandiego
