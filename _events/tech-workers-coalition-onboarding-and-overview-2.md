@@ -16,8 +16,8 @@ Tech Worker Coalition’s first onboarding calls of the year! 💥 If you work i
 
 There will be two identical calls on Monday, Feb. 17th to accommodate different timezones — so make sure to register for the right link!
 
-Option A will take place at **18:00 CEST / 12:00 PM ET / 9:00 AM PT**, and you can register at bit.ly/twc101-feb2025A. 
+Option A will take place at **18:00 CEST / 12:00 PM ET / 9:00 AM PT**, and you can register at https:// bit.ly/twc101-feb2025A. 
 
-Option B will take place at **5:00 PM PT / 8:00 PM ET**, and you can register at bit.ly/twc101-feb2025B.
+Option B will take place at **5:00 PM PT / 8:00 PM ET**, and you can register at https://bit.ly/twc101-feb2025B.
 
 We will go over the history of TWC, the structure of our chapters, what projects we’re currently up to, and ways that you can help us make them a success! We especially are looking to onboard leaders who can help us build infrastructure to absorb even more folks. See you then! 💫
