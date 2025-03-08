@@ -16,7 +16,7 @@ The London, UK, chapter of the TWC formed in early
 in September 2019, moving to [MayDay Rooms](https://www.maydayrooms.org/)
 thereafter.
 
-One year later the chapter closed, in favor of opening a [United Tech & Allied Workers]([url](https://utaw.tech/)) branch within the Communication Workers' Union.
+One year later the chapter closed, in favor of opening a [United Tech & Allied Workers](https://utaw.tech/) branch within the Communication Workers' Union.
 
 Our definition of a "tech worker" is anyone involved in the tech industry in
 any capacity &mdash; including programmers, designers, product managers,
