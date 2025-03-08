@@ -69,16 +69,8 @@ Projects should form their own topics within Slack. Many start with the prefix *
 - **Use direct messages.** Members of this Slack range in expertise, talent, and experience. Feel free to reach out to folks with specific questions or needs.This is also a good space to take tangential conversations—no need to do everything in public.
 - Avoid @channel or @here in #general or high traffic channels unless your message is important to everyone in that channel
 
-### Channel Guide
-Channels come and go on Slack, but here are some long-living channels:
-- #articles: interesting reads
-- #calendar: TWC events calendar items
-- #events: things going on that you might want to know about (not limited to TWC events)
-- #general: general announcements
-- #meetings: conversation about our org-wide meetings
-- #workplace-conditions: conversations about working conditions and experiences in the tech industry
-
 ## <a id="document-history" href="#document-history">Document History</a>
+- *2025-03-08: Removal of Slack channel guide*
 - *2019-12-11: Removal of defunct steering committee as per consensus between several locals*
 - *2019-11-04: Clarification regarding membership requirements*
 - *2018-07-22: Deleted old and out-of-date information, RK*

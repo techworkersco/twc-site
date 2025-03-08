@@ -69,16 +69,8 @@ Les projets doivent former leurs propres sujets dans Slack. Beaucoup commencent 
 - **Utilisez des messages directs.** Les membres de ce Slack se distinguent par leur expertise, leurs talents et leur expérience. N'hésitez pas à contacter les personnes qui ont des questions ou des besoins spécifiques. C'est également un bon espace pour prendre des conversations tangentielles - pas besoin de tout faire en public.
 - Évitez @channel ou @here dans les canaux #general ou à fort trafic, sauf si votre message est important pour tout le monde dans ce canal.
 
-### Guide Des Chaînes
-Les chaînes vont et viennent sur Slack, mais voici quelques chaînes à longue durée de vie:
-- #articles: lectures intéressantes
-- #calendar: Calendrier des événements TWC
-- #events: les choses qui se passent que vous voudrez peut-être connaître (non limitées aux événements TWC)
-- #general: annonces générales
-- #meetings: conversation sur nos réunions à l'échelle de l'organisation
-- #workplace-conditions: conversations sur les conditions de travail et les expériences dans l'industrie technologique
-
 ## <a id="document-history" href="#document-history">Historique Du Document</a>
+- *2025-03-08: Removal of Slack channel guide*
 - *2019-12-11: Retrait du comité directeur défunt selon consensus entre plusieurs sections locales *
 - *2019-11-04: Clarification concernant les conditions d'adhésion *
 - *2018-07-22: Informations anciennes et obsolètes supprimées, RK *
