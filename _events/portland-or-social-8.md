@@ -1,6 +1,6 @@
 ---
 title: Portland, OR Social
-date: 2025-07-12 18:00
+date: 2025-08-09 18:00
 locations:
   - Portland
 time_zones:
