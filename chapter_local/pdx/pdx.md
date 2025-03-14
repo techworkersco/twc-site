@@ -10,10 +10,9 @@ This is the Portland, OR chapter of the TWC.
 ## About
 - We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends.
 
-## Connect With Us
-- Visit our [Google Calendar](https://calendar.google.com/calendar/b/1?cid=dHdjcGR4QGdtYWlsLmNvbQ) to find the latest events.
-- You may also browse the [twc-pdx](https://calagator.org/events/tag/twc-pdx) tag on Calagator.
-- Follow us on Twitter at [@twc_pdx](https://twitter.com/twc_pdx).
+## Organize With Us
+- Sign up to [join our chapter](https://techworkerscoalition.org/subscribe/)!
+- Visit the [Tech Workers Coalition Instagram](https://www.instagram.com/techworkerscoalition/) or the [global events page](https://techworkerscoalition.org/events/) for updates on our actions and events!
 
 ## Code of Conduct
 All meetings and communications are covered under the [TWC Code of Conduct](/community-guide/). The privacy and safety of our members is important to us. Sharing the identity of members and or taking/sharing photos are strictly forbidden unless express consent is given.
