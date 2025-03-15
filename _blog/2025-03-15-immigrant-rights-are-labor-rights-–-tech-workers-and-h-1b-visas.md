@@ -3,6 +3,10 @@ layout: page
 title: Immigrant Rights are Labor Rights – Tech Workers and H-1B Visas
 date: 2025-03-14T12:00:00.000Z
 ---
+
+Immigrant Rights are Labor Rights – Tech Workers and H-1B Visas
+=======
+
 In the weeks preceding Trump’s inauguration, the right-wing coalition supporting him entered into a fractious debate over skilled immigrant workers. On one side stood tech executives who value immigrant labor as a means to increase profits and productivity. On the other were pure reactionary white supremacist nativists stoking fears about minority workers taking “our American jobs”. Neither side was savory, and nowhere were the voices of tech workers, and especially immigrant tech workers, represented. As a first response, Tech Workers Coalition (TWC) assembled a panel of workers who were or had been on H-1B visas, to represent our experiences and views. We wanted to give voice to those at the heart of the debate, and also develop a strategy and message on how and why we must respond as part of an international working class.
 
 We felt this was especially urgent for two reasons. First, there are fake, astroturfed far-right organizations (such as “[U.S. Tech Workers](https://www.splcenter.org/resources/hate-watch/workers-organization-shares-staff-cash-anti-immigrant-groups/)”) that claim to speak for tech workers, but are in reality just propped up and run by anti-immigrant forces with no discernible constituency of actual tech workers. Second, even people who are looked to as progressive voices who advocate for workers, such as Bernie Sanders, have [given credence](https://www.sanders.senate.gov/press-releases/news-we-need-major-reforms-in-the-h-1b-program/) to nativist protectionism as somehow “anti-corporate”. In a similar vein, the UAW recently put out a [statement supporting tariffs](https://uaw.org/uaw-statement-on-tariffs-and-renegotiating-u-s-trade-agreements/). 
