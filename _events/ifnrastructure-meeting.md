@@ -1,6 +1,6 @@
 ---
 title: ifnrastructure meeting
-date: 2025-03-18 12:00
+date: 2025-03-18 15:00
 locations:
   - Global
   - Online
