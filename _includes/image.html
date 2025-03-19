@@ -1,0 +1,50 @@
+
+<!--
+For development and Netlify previews on PRs, use relative URLs.
+Otherwise, use absolute URLs so that images display in Mailchimp emails.
+-->
+{% if jekyll.environment == "development" %}
+    {% assign local_url = site.img_url | append: "/" | append: include.file %}
+{% else %}
+    {% assign local_url = site.url | append: site.img_url | append: "/" | append: include.file %}
+{% endif %}
+
+{% assign external_url = include.external_url %}
+
+{% assign alt = include.alt %}
+
+{% assign caption = include.caption %}
+
+{% assign source_link = include.source_link %}
+
+{% assign half_width = include.half_width %}
+
+<div class="row">
+    <div class="col"></div>
+    <div class="d-flex justify-content-center col-12 {% if half_width %} col-sm-8 col-md-6 {% endif %}">
+        <figure>
+            {% if source_link %}
+              <a href="{{ source_link }}" target="_blank" rel="noreferrer">
+            {% endif %}
+            <img class="img-thumbnail img-fluid"
+                 src="{{ external_url | default: local_url }}"
+                 title="{{ alt }}"
+                 alt="{{ alt }}"/>
+            {% if source_link %}
+              </a>
+            {% endif %}
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                {% if caption %}
+                    <figcaption>
+                        <p><small class="text-muted text-center">
+                            {{ caption }} {% if source_link %} / <a href="{{ source_link }}" target="_blank" rel="noreferrer">Source</a> {% endif %}
+                        </small></p>
+                    </figcaption>
+                {% endif %}
+                </div>
+            </div>
+        </figure>
+    </div>
+    <div class="col"></div>
+</div>
