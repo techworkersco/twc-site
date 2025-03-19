@@ -4,7 +4,7 @@ For development and Netlify previews on PRs, use relative URLs.
 Otherwise, use absolute URLs so that images display in Mailchimp emails.
 -->
 {% if jekyll.environment == "development" %}
-    {% assign local_url = site.img_url | append: "/" | append: include.file %}
+    {% assign local_url = site.img_url | append: "/assets/img/" | append: include.file %}
 {% else %}
     {% assign local_url = site.url | append: site.img_url | append: "/" | append: include.file %}
 {% endif %}
