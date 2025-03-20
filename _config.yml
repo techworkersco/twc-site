@@ -64,6 +64,9 @@ collections:
   events:
     output: true
     permalink: events/:title/
+  letters: 
+    output: true
+    permalink: blog/:year/:month/:day/:title/
 
 exclude_from_localizations: ["assets", "admin"]
 header_links: 

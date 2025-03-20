@@ -1,0 +1,8 @@
+{% if page.image %}
+    {% include image.html
+        file=page.image.file
+        alt=page.image.alt
+        caption=page.image.captionpage.image.source_linkimg_source
+        half_width=page.image.half_width
+    %}
+{% endif %}
