@@ -5,6 +5,7 @@ locations:
   - Global
 time_zones:
   - US/Eastern
+  - US/Pacific
 tags:
   - workers-circle
 image: /assets/img/twcmarch.jpg
