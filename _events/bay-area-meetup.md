@@ -1,6 +1,6 @@
 ---
 title: Bay Area meetup
-date: 2005-04-02 21:00
+date: 2025-04-02 21:00
 locations:
   - San Fransisco
 time_zones:
