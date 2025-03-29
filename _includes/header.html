@@ -21,9 +21,9 @@
     <div class='flex flex-row ai-ctr'>
       <div class="flex flex-row ai-ctr rel marg-r-2">
         {% for link in site.header_links %}        
-          <li class="desktop-header">
-            <a href="{{link.url}}">{{link.text}}</a>
-          </li>
+          <a href="{{link.url}}">
+            <li class="desktop-header">{{link.text}}</li>
+          </a>
         {% endfor %}     
         
         <div class="flex flex-row ai-ctr rel">

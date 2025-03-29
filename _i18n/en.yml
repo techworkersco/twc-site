@@ -47,6 +47,8 @@ home:
   events:
     title: Recent events
     more: Find more events
+  blog:
+    more: Blog archive
 
 job_board:
   title: "Job Board 🌹"
