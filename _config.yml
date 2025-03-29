@@ -42,11 +42,6 @@ languages: ["en", "es", "fr", "it", "pt", "ru"]
 
 defaults:
   - scope:
-      path: ""
-    values:
-      # unless languages: ["bl" "ah"] is included, english is only/default frontmatter language
-      languages: ["en"]
-  - scope:
       type: "events"
     values:
       layout: "event"
@@ -56,13 +51,10 @@ future: true
 collections:
   blog:
     output: true
-    permalink: blog/:title/
+    permalink: blog/:year/:month/:day/:title/
   events:
     output: true
     permalink: events/:title/
-  letters: 
-    output: true
-    permalink: blog/:year/:month/:day/:title/
 
 exclude_from_localizations: ["assets", "admin"]
 header_links: 
