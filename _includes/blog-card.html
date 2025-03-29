@@ -1,0 +1,42 @@
+{% if include.blog %}{% assign page = include.blog %}{% endif %}
+{% assign foundImage = 0 %}   
+  {% if page.image && page.image.file %}
+    {% capture foundImage %} src="{{page.image.file}}" {% endcapture %}
+  {% elsif page.image %}
+    {% capture foundImage %} src="{{page.image}}" {% endcapture %} 
+  {% else %}  
+    {% assign html_blocks = page.content | split:"<img " %}
+    {% for image in html_blocks %}
+      {% if image contains 'src' %}
+        {% if foundImage == 0 %}
+          {% assign tags = image | split:"/>" | first | | split:" " %}
+          {% for tag in tags %}
+            {% if tag contains 'src' %}
+              {% assign foundImage = tag %}
+            {% endif %}
+          {% endfor %}
+        {% endif %} 
+      {% endif %}
+    {% endfor %}
+  {% endif %} 
+<article class="card-preview">
+  {% if foundImage != 0 %}
+      <img
+      {{foundImage}}
+      alt=""
+    />
+  {% else %}
+    <div class="icon">
+      {% include icons/newspaper.html %}
+    </div>  
+  {% endif %}
+  <div>
+    <time datetime="{{ page.date '%-d %B %Y'}}">
+      {{ page.date | date: '%-d %B %Y'}}
+    </time>
+    <h3>
+      <a href="{{ page.url }}">{{ page.title }}</a> 
+    </h3>
+    <p>{{ page.content | strip_html | truncatewords: 25 }}</p>
+  </div>  
+</article>

@@ -13,14 +13,9 @@
     {% endunless %}
 {% endif %}
 
-<h4 class="d-inline-block text-dark">
-    <small>{{ post_entry.date | date_to_string }}</small>
-    {% if is_latest %}
-    <small class="badge badge-pill badge-dark font-weight-light">
-        <i class="far fa-sm fa-star"></i> Latest
-    </small>
-    {% endif %}
-</h4>
+<time datetime="{{ post.date '%-d %B %Y'}}">
+    {{ post.date | date: '%-d %B %Y'}}
+</time>
 
 {% if include.display_excerpt %}
 <div>

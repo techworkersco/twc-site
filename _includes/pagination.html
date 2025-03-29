@@ -1,16 +1,3 @@
-<div class="flex flex-row ai-ctr rel marg-r-2">
-{% if page.previous.url %}
-    <a  class="noUnderline" href="{{ page.previous.url }}" title="{{ page.previous.title }}">
-      <li class="desktop-header pagination">
-        ‹ Previous
-      </li>
-    </a>  
-  {% endif %}
-  {% if page.next.url %}
-      <a class="noUnderline" href="{{ page.next.url }}" title="{{ page.next.title }}">
-        <li class="desktop-header pagination">
-          Next ›
-        </li>
-      </a>
-  {% endif %}  
-</div>
+<h3>Explore other blog posts</h3>
+{% include blog-card.html blog=page.next %}  
+{% include blog-card.html blog=page.previous %} 

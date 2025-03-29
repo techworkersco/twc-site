@@ -1,55 +1,13 @@
 {% assign limit = include.limit %}
-{% assign sorted_posts = site.blog | filter_tags: include.tags | sort: 'date' | reverse %}
+{% assign sorted_blog = site.blog | filter_tags: include.tags | sort: 'date' | reverse %}
 {% if page.permalink == "/blog/" %}
   <h1>Blog</h1>
-  Explore our <b>{{ sorted_posts.size }}</b> blog posts
+  Explore our <b>{{ sorted_blog.size }}</b> blog posts
 {% else %}
   <h2 class="marg-b-2">Blog Posts</h2>
   <a href="/blog">{% t home.blog.more %}</a>
 {% endif %}
 
-
-{% for post in sorted_posts limit: limit %}
-  {% assign foundImage = 0 %}   
-  {% if post.image && post.image.file %}
-    {% capture foundImage %} src="{{post.image.file}}" {% endcapture %}
-  {% elsif post.image %}
-    {% capture foundImage %} src="{{post.image}}" {% endcapture %}
-  {% else %}  
-  {% else %}  
-    {% assign html_blocks = post.content | split:"<img " %}
-    {% for image in html_blocks %}
-      {% if image contains 'src' %}
-        {% if foundImage == 0 %}
-          {% assign tags = image | split:"/>" | first | | split:" " %}
-          {% for tag in tags %}
-            {% if tag contains 'src' %}
-              {% assign foundImage = tag %}
-            {% endif %}
-          {% endfor %}
-        {% endif %} 
-      {% endif %}
-    {% endfor %}
-  {% endif %} 
-<article class="card-preview">
-  {% if foundImage != 0 %}
-      <img
-      {{foundImage}}
-      alt=""
-    />
-  {% else %}
-    <div class="icon">
-      {% include icons/newspaper.html %}
-    </div>  
-  {% endif %}
-  <div>
-    <time datetime="{{ post.date '%-d %B %Y'}}">
-      {{ post.date | date: '%-d %B %Y'}}
-    </time>
-    <h3>
-      <a href="{{ post.url }}">{{ post.title }}</a> 
-    </h3>
-    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-  </div>  
-</article>
+{% for page in sorted_blog limit: limit %}
+  {% include blog-card.html %}
 {% endfor %}
