@@ -1,5 +1,5 @@
   
-  <article class="p-3 marg-b-3 event-card flex items-center secondaryBg">
+  <article class="card-preview">
   {% assign foundImage = 0 %}  
   {% if event.image %}
     {% capture foundImage %} src="{{event.image}}" {% endcapture %}
@@ -23,11 +23,9 @@
       <img
       {{foundImage}}
       alt=""
-      class="bg-white marg-r-3 lh-1"
-      style="width:100px;height:100px;object-fit:cover;"
     />
     {% else %}
-      <div class="bg-white circ lh-1" style="min-width:100px;height:100px">  
+      <div class="icon">  
         <svg
         focusable="false"
         xmlns="https://www.w3.org/2000/svg"
@@ -35,7 +33,6 @@
         x="0px"
         y="0px"
         viewBox="0 0 24 24"
-        class="event-card__icon event-icon"
         style="enable-background:new 0 0 24 24;"
         xml:space="preserve"
         >
@@ -44,10 +41,7 @@
         </svg>
       </div>
     {% endif %}    
-    <div
-      class="event-card__info-column l-stack -vertical"
-      style="--stack-spacing: 0.25rem"
-      >
+    <div>
       <h3>
         <a href="{{ event.url }}">{{ event.title }}</a> 
       </h3>

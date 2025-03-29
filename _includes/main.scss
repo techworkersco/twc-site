@@ -515,10 +515,11 @@ hr {
   padding: 0.75rem;
 }
 
-.card-icon {
-  height: 40px;
-  min-width: 40px;
-  fill: $black;
+div > .card-icon {
+  text-align: center;
+  align-content: center;
+  width:70px;
+  object-fit:cover;
 }
 
 
@@ -779,19 +780,6 @@ img {
   }
 }
 
-.event-card__info-column {
-  grid-column: 2;
-  margin-left: 4rem;
-}
-
-.event-card__icon {
-  fill: $grey;
-  font-size: 0.7em;
-  font-weight: bold;
-  grid-column: 1;
-  height: 75px;
-}
-
 .event-time {
   font-size: 1.25rem;
   padding-bottom: 1rem;
@@ -809,4 +797,42 @@ img {
 #logo-footer{
   background: white;
   border-radius: 50%;
+}
+
+.card-preview {
+  @extend .p-3;
+  @extend .marg-b-3; 
+  @extend .flex; 
+  @extend .items-center; 
+  @extend .secondaryBg;
+
+  > img {
+    @extend .event-card; 
+  }
+
+  img {
+    @extend .bg-white;
+    @extend .marg-r-3;
+    @extend .lh-1;
+    margin-left: 0;
+    width:100px;
+    height:100px;
+    object-fit:cover;
+  }
+
+  .icon {
+    @extend .bg-white;
+    @extend .circ; 
+    @extend .lh-1;
+    @extend .p-3;
+    @extend .marg-r-3;
+
+    svg {
+      fill: $grey;
+      font-size: 0.7em;
+      font-weight: bold;
+      grid-column: 1;
+      height: 75px;
+    }
+  }
 }
