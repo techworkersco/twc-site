@@ -4,19 +4,11 @@
   box-sizing: border-box;
 }
 
-:root { 
-  --purple: #692A72;
-  --light-purple: #A055A7;
-  --yellow: #BBBB27;
-  --light-blue: #27748E;
-  --dark-blue: #134d66;
-} 
-
 html {
   font-family: "Rubik", sans-serif;
   font-size: 137.5%;
   -webkit-font-smoothing: antialiased;
-  background-image: linear-gradient(to right top, var(--purple), var(--light-purple), var(--light-blue), var(--dark-blue));
+  background-image: linear-gradient(to right top, #7a08d5, #7007c3, #6607b2, #5d06a1, #530690, #4a0988, #420a7f, #3a0b77, #300e74, #241071, #16116e, #01126b);
   scroll-behavior: smooth;
 }
 
@@ -110,7 +102,7 @@ h2 {
 }
 
 h3 {
-  color: var(--yellow);
+  color: #73E600;
   font-size: 1.414rem;
 }
 
@@ -123,7 +115,7 @@ h4 {
 }
 
 h5 {
-  color: var(--yellow);
+  color: #CDFF9C;
   font-size: 1rem;
   font-weight: 900;
   margin-block-start: 1.5rem;
@@ -137,7 +129,7 @@ h6 {
   font-weight: 500;
   margin-bottom: 0.5rem;
   line-height: 1.2rem;
-  color: var(--light-purple);
+  color: #73E600;
   font-style: italic;
 }
 
@@ -151,11 +143,11 @@ p {
 }
 
 a {
-  color: var(--yellow);
+  color: #CDFF9C;
 }
 
 a:hover {
-  color: var(--light-purple);
+  color: #73E600;
 }
 
 /* || Lists */
@@ -173,14 +165,14 @@ li {
 /* || Links */
 
 .nav-link {
-  color: var(--yellow);
+  color: #CDFF9C;
   font-family: "Rubik", sans-serif;
   font-weight: 800;
   text-decoration: none;
 }
 
 .nav-link:hover {
-  color: var(--light-purple);
+  color: #73E600;
 }
 
 
@@ -188,6 +180,7 @@ li {
 
 .button {
   width: 10rem;
+  /* background-color: #CDFF9C; */
 
   border-radius: 8px;
   color: #000000;
@@ -215,20 +208,20 @@ li {
 
 .secondary {
   border-style: solid;
-  border-color: var(--yellow);
+  border-color: #CDFF9C;
   color: #FFFFFF;
   background-color: Transparent;
 }
 
 .secondary:hover,
 .secondary:focus {
-  background-color: var(--yellow);
+  background-color: #CDFF9C;
   color: #000000;
 }
 
 .primary {
   border-style: none;
-  background-color: var(--light-purple);
+  background-color: #73E600;
   color: #000000;
 }
 
@@ -241,5 +234,5 @@ li {
 
 hr {
   border: 0.5px solid;
-  color: var(--yellow);
+  color: #CDFF9C;
 }
