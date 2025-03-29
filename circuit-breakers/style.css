@@ -5,18 +5,19 @@
 }
 
 :root { 
-  --purple: #692A72;
-  --light-purple: #A055A7;
-  --yellow: #BBBB27;
+  --light-pink: #dca0af;
+  --pink: #D695A6;
   --light-blue: #27748E;
-  --dark-blue: #134d66;
+  --light-purple: #8c57cb;
+  --mid-blue: #4944b8;
+  --dark-blue: #1d3c98;
 } 
 
 html {
   font-family: "Rubik", sans-serif;
   font-size: 137.5%;
   -webkit-font-smoothing: antialiased;
-  background-image: linear-gradient(to right top, var(--purple), var(--light-purple), var(--light-blue), var(--dark-blue));
+  background-image: linear-gradient(to right top, var(--dark-blue), var(--mid-blue), var(--light-blue), var(--light-purple));
   scroll-behavior: smooth;
 }
 
@@ -110,7 +111,7 @@ h2 {
 }
 
 h3 {
-  color: var(--yellow);
+  color: var(--pink);
   font-size: 1.414rem;
 }
 
@@ -123,7 +124,7 @@ h4 {
 }
 
 h5 {
-  color: var(--yellow);
+  color: var(--pink);
   font-size: 1rem;
   font-weight: 900;
   margin-block-start: 1.5rem;
@@ -151,7 +152,7 @@ p {
 }
 
 a {
-  color: var(--yellow);
+  color: var(--pink);
 }
 
 a:hover {
@@ -173,7 +174,7 @@ li {
 /* || Links */
 
 .nav-link {
-  color: var(--yellow);
+  color: var(--pink);
   font-family: "Rubik", sans-serif;
   font-weight: 800;
   text-decoration: none;
@@ -191,7 +192,7 @@ li {
 
   border-radius: 8px;
   color: #000000;
-
+  background-color: var(--pink);
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
@@ -215,31 +216,33 @@ li {
 
 .secondary {
   border-style: solid;
-  border-color: var(--yellow);
+  border-color: var(--pink);
   color: #FFFFFF;
   background-color: Transparent;
 }
 
 .secondary:hover,
 .secondary:focus {
-  background-color: var(--yellow);
+  background-color: var(--pink);
   color: #000000;
 }
 
 .primary {
   border-style: none;
-  background-color: var(--light-purple);
+  background-color: var(--pink);
   color: #000000;
 }
 
 .primary:hover,
 .primary:focus {
-  background-color: #5AB201;
+  background-color: #1d3c98;
+  color: #FFFFFF;
+  font-weight: 400;
 }
 
 /* || Misc */
 
 hr {
   border: 0.5px solid;
-  color: var(--yellow);
+  color: var(--pink);
 }
