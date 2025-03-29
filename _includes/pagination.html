@@ -1,7 +1,16 @@
-
-<nav aria-label="Browse issues">
-  <ul class="pagination justify-content-center">
-    {% include previous.html url=page.previous.url title=page.previous.title %}
-    {% include next.html url=page.next.url title=page.next.title %}
-  </ul>
-</nav>
+<div class="flex flex-row ai-ctr rel marg-r-2">
+{% if page.previous.url %}
+    <a  class="noUnderline" href="{{ page.previous.url }}" title="{{ page.previous.title }}">
+      <li class="desktop-header pagination">
+        ‹ Previous
+      </li>
+    </a>  
+  {% endif %}
+  {% if page.next.url %}
+      <a class="noUnderline" href="{{ page.next.url }}" title="{{ page.next.title }}">
+        <li class="desktop-header pagination">
+          Next ›
+        </li>
+      </a>
+  {% endif %}  
+</div>

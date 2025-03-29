@@ -67,22 +67,6 @@ header {
     border: 0;
   }
 
-  .desktop-header {
-    margin-left:10px;
-    font-weight: normal;
-    padding: 4px 14px;
-    border-radius: 100px;
-    list-style-type:none;
-
-    @include tablet {
-      display: none;
-    }
-
-    a {
-     color: $white; 
-    }
-  }
-
   #langBtn {
     padding-left: 14px;
 
@@ -98,6 +82,18 @@ header {
     @include desktop {
       display: none;
     }
+  }
+}
+
+.desktop-header{
+  margin-left:10px;
+  font-weight: normal;
+  padding: 4px 14px;
+  border-radius: 100px;
+  list-style-type:none;
+
+  @include tablet {
+    display: none;
   }
 }
 
@@ -488,7 +484,7 @@ input[type="url"] {
   }
 }
 
-input[type="submit"] {
+input[type="submit"], .pagination {
   border-radius: 4px;
   border: 0;
   font-weight: 500;

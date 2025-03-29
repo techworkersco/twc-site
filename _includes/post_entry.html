@@ -4,7 +4,7 @@
     <a href="{{ post_entry.url }}">{{ post_entry.title }}</a>
 </h2>
 
-{% assign latest_post = site.posts.first %}
+{% assign latest_post = site.blog.first %}
 {% assign is_latest = false %}
 
 {% if latest_post.url == post_entry.url %}
