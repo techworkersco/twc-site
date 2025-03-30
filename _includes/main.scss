@@ -428,7 +428,33 @@ h3 {
 
 form {
   border-radius: 4px;
-  padding: 1rem;
+  padding: 0 4rem 1rem 4rem;
+  width: 70%;
+  margin: auto;
+
+  label {
+    margin: 0;
+    width: 90%;
+
+    div, input::placeholder {
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+      text-align: center;
+    }
+  }
+
+  input {
+    width: 100%;
+
+    &:focus{
+      outline: none;
+      border: 0.5px solid $red;
+    }
+
+    &[type=submit] {
+      width: 90%;
+    } 
+  }   
 }
 
 label {
