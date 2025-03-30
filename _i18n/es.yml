@@ -28,9 +28,9 @@ home:
   social_media:
     title: TWC en redes sociales
     links: |
-      <li><a nofollow noreferrer target="_blank" href="https://twitter.com/techworkersco">Twitter <img alt="" src="/assets/img/external.svg" /></a></li>
-      <li><a nofollow noreferrer target="_blank" href="https://www.facebook.com/TechWorkersCoalition">Facebook <img alt="" src="/assets/img/external.svg" /></a></li>
-      <li><a nofollow noreferrer target="_blank" href="https://medium.com/tech-workers-coalition">Medium <img alt="" src="/assets/img/external.svg" /></a></li>
+      <li><a nofollow noreferrer target="_blank" href="https://twitter.com/techworkersco">Twitter <img alt="External link" src="/assets/img/external.svg" /></a></li>
+      <li><a nofollow noreferrer target="_blank" href="https://www.facebook.com/TechWorkersCoalition">Facebook <img alt="External link" src="/assets/img/external.svg" /></a></li>
+      <li><a nofollow noreferrer target="_blank" href="https://medium.com/tech-workers-coalition">Medium <img alt="External link" src="/assets/img/external.svg" /></a></li>
   contact_us:
     title: Contáctanos
     description: |

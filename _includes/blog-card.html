@@ -1,7 +1,9 @@
 {% if include.blog %}{% assign page = include.blog %}{% endif %}
-{% assign foundImage = 0 %}   
+{% assign foundImage = 0 %}
+{% assign altText = "None available" %}   
   {% if page.image && page.image.file %}
     {% capture foundImage %} src="{{page.image.file}}" {% endcapture %}
+    {% assign altText = page.image.alt %}  
   {% elsif page.image %}
     {% capture foundImage %} src="{{page.image}}" {% endcapture %} 
   {% else %}  
@@ -23,7 +25,7 @@
   {% if foundImage != 0 %}
       <img
       {{foundImage}}
-      alt=""
+      alt="{{altText}}"
     />
   {% else %}
     <div class="icon">
