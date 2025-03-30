@@ -17,7 +17,7 @@ html {
   font-family: "Rubik", sans-serif;
   font-size: 137.5%;
   -webkit-font-smoothing: antialiased;
-  background-image: linear-gradient(to right top, var(--dark-blue), var(--mid-blue), var(--light-blue), var(--light-purple));
+  background-image: linear-gradient(to bottom right, var(--dark-blue), var(--mid-blue), var(--light-purple));
   scroll-behavior: smooth;
 }
 
@@ -156,7 +156,8 @@ a {
 }
 
 a:hover {
-  color: var(--light-purple);
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 /* || Lists */
@@ -181,7 +182,9 @@ li {
 }
 
 .nav-link:hover {
-  color: var(--light-purple);
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-decoration-color: var(--light-pink);
 }
 
 
@@ -235,9 +238,10 @@ li {
 
 .primary:hover,
 .primary:focus {
-  background-color: #1d3c98;
-  color: #FFFFFF;
-  font-weight: 400;
+  background-color: #000000;
+  color: var(--light-pink);
+  font-weight: bold;
+  border: 1px solid var(--light-pink);
 }
 
 /* || Misc */
