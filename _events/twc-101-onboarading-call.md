@@ -1,5 +1,5 @@
 ---
-title: TWC 101 - Onboarading Call
+title: TWC 101 - Onboarding Call
 date: 2025-07-15 11:00
 locations:
   - Online
