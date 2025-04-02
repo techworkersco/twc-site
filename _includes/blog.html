@@ -1,21 +1,13 @@
 {% assign limit = include.limit %}
-{% assign sorted_posts = site.blog | filter_tags: include.tags | sort: 'date' | reverse %}
-{% for post in sorted_posts limit: limit %}
-  <article class="p-3 marg-b-3 flex items-center secondaryBg">
-    <div class="bg-white circ p-3 marg-r-3 lh-1">
-      {% include icons/newspaper.html %}
-    </div>
-    <div>
-      <div>
-        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
-          {{ post.date | date: '%-d %B %Y' }}
-        </time>
-      </div>
-      <h3>
-        <a href="{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </h3>
-    </div>
-  </article>
+{% assign sorted_blog = site.blog | filter_tags: include.tags | sort: 'date' | reverse %}
+{% if page.permalink == "/blog/" %}
+  <h1>Blog</h1>
+  Explore our <b>{{ sorted_blog.size }}</b> blog posts
+{% else %}
+  <h2 class="marg-b-2">Blog Posts</h2>
+  <a href="/blog">{% t home.blog.more %}</a>
+{% endif %}
+
+{% for blog in sorted_blog limit: limit %}
+  {% include blog-card.html blog=blog %}
 {% endfor %}

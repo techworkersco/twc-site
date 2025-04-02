@@ -9,3 +9,21 @@
   to = "/circuit-breakers"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog/immigrant-rights-are-labor-rights-tech-workers-and-h-1b-visas"
+  to = "/blog/2025/03/14/immigrant-rights-are-labor-rights-tech-workers-and-h-1b-visas/"
+  status = 301
+  force = true  
+
+[[redirects]]
+  from = "/blog/new-logo"
+  to = "/blog/2024/06/13/new-logo/"
+  status = 301
+  force = true  
+
+[[redirects]]
+  from = "blog/labor-notes-highlights/"
+  to = "blog/2024/02/02/labor-notes-highlights/"
+  status = 301
+  force = true

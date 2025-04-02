@@ -1,0 +1,25 @@
+{% assign post_entry = include.post_entry %}
+
+<h2>
+    <a href="{{ post_entry.url }}">{{ post_entry.title }}</a>
+</h2>
+
+{% assign latest_post = site.blog.first %}
+{% assign is_latest = false %}
+
+{% if latest_post.url == post_entry.url %}
+    {% unless include.hide_latest_badge %}
+    {% assign is_latest = true %}
+    {% endunless %}
+{% endif %}
+
+<time datetime="{{ post.date '%-d %B %Y'}}">
+    {{ post.date | date: '%-d %B %Y'}}
+</time>
+
+{% if include.display_excerpt %}
+<div>
+    {{ post_entry.excerpt }}
+    <p class=""><a href="{{ post_entry.url }}"><i>Continue reading&hellip;</i></a></p>
+</div>
+{% endif %}

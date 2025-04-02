@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<a href="/blog">{% t home.blog.more %}</a>
+
+<article>
+    {% include post_entry.html post_entry=page display_excerpt=false %}
+    <div class="mt-4 mb-4">
+        {{ content }}
+    </div>
+</article>
+
+{% include social_share.html %}
+
+{% include pagination.html %}

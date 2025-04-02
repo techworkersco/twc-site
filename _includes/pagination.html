@@ -1,0 +1,8 @@
+<h3>Explore other blog posts</h3>
+{% unless site.blog.last == page %}
+    {% include blog-card.html blog=page.next %}
+{% endunless %}
+
+{% unless site.blog.first == page %}
+    {% include blog-card.html blog=page.previous %} 
+{% endunless %}
