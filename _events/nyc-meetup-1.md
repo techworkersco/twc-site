@@ -12,3 +12,5 @@ Happy spring NYC — hope there’s sunshine, flowers, and agitation in the air!
 🗓️ Saturday, April 26th
 📍 Jake’s Saloon ([206 W 23rd St, New York, NY](https://click.actionnetwork.org/ss/c/u001.xqm-apKpWqGuZCDDu9wrxbi7D6Pfh6Fdp_n0H5eb_eITPGwhiBrV8yeS9WaL2XEiH0jLzSkefSwxux_3Dk-9GUvpH66TFsAGifUa0aNYM4tJc0mzHYWEAYRYltSHt5CAXx23K69Bbo9_0w4qMgsAPYuwm-scl_1DwGBYLdU-lY3kyr43UEE38889NHEDzig81wxYEgj-azlqKdKg_1bM-8WNdhoKx-aywBYhZkMOorZdbG-NlCIS_HnjlD3hJR2B/4fa/eC7fmhj7RRq0Y8DtTsUHVw/h16/h001.tZ-M47sg-e3d_yrCGJV_h3iCNh29SlWEb7U6vBXVpGQ))
 ⏰ 5:00 PM
+
+![New York subway tiled wall that says "TWC NYC MEETUP"](/assets/img/april-2025-meetup.png)
