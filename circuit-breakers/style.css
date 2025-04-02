@@ -234,6 +234,7 @@ li {
   border-style: none;
   background-color: var(--pink);
   color: #000000;
+  font-weight: bold;
 }
 
 .primary:hover,
