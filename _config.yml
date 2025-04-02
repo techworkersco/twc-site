@@ -30,7 +30,7 @@ plugins:
 feed:
   collections:
     - events
-    - blog
+    - blog 
   disable_in_development: true
 
 jekyll_get_data:
