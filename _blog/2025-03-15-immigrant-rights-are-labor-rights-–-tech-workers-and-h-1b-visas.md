@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: newsletter
 title: Immigrant Rights are Labor Rights – Tech Workers and H-1B Visas
 date: 2025-03-14T12:00:00.000Z
 ---
