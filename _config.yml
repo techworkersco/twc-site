@@ -31,12 +31,8 @@ feed:
   disable_in_development: false
 
 jekyll_get_data:
-  #- data: collective-actions
-  #  url: https://raw.githubusercontent.com/collective-action/tech/master/actions.json
   - data: berlin_press
     url: https://raw.githubusercontent.com/techworkersco/twc-site-berlin/develop/_data/press.yml  
-  - data: newsletter
-    url: https://news.techworkerscoalition.org/feed.json
   - data: berlin_events
     url: https://techworkersberlin.com/events.yml   
 exclude:
@@ -46,21 +42,20 @@ languages: ["en", "es", "fr", "it", "pt", "ru"]
 
 defaults:
   - scope:
-      path: ""
-    values:
-      # unless languages: ["bl" "ah"] is included, english is only/default frontmatter language
-      languages: ["en"]
-  - scope:
       type: "events"
     values:
       layout: "event"
+  - scope:
+      type: "blog"
+    values:
+      layout: "newsletter"    
 
 permalink: pretty
 future: true
 collections:
   blog:
     output: true
-    permalink: blog/:title/
+    permalink: blog/:year/:month/:day/:title/
   events:
     output: true
     permalink: events/:title/

@@ -20,9 +20,7 @@ languages: ["en", "es", "fr", "it", "pt", "ru"]
 
 {% include events.html limit=5 %}
 
-<h2 class class="marg-b-2">Blog Posts</h2>
-{% include blog.html limit=2 %}
-{% include newsletter.html limit=2 %}
+{% include blog.html limit=3 %}
 <h2> TWC in the Press</h2>
 <a href="/press">All Press mentions</a>
 {% include press.html limit=2%}

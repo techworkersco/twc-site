@@ -1,9 +1,7 @@
-GIT
-  remote: https://github.com/kurtsson/jekyll-multiple-languages-plugin.git
-  revision: 6290d8c0db1ad62c47a1339465e88a9c3bce67df
-  ref: refs/pull/178/head
+PATH
+  remote: ../jekyll-multiple-languages-plugin
   specs:
-    jekyll-multiple-languages-plugin (1.7.0)
+    jekyll-multiple-languages-plugin (1.8.0)
       jekyll (>= 2.0, < 5.0)
 
 GEM
