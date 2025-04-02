@@ -8,6 +8,6 @@
   <a href="/blog">{% t home.blog.more %}</a>
 {% endif %}
 
-{% for page in sorted_blog limit: limit %}
-  {% include blog-card.html %}
+{% for blog in sorted_blog limit: limit %}
+  {% include blog-card.html blog=blog %}
 {% endfor %}

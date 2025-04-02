@@ -1,13 +1,12 @@
-{% if include.blog %}{% assign page = include.blog %}{% endif %}
 {% assign foundImage = 0 %}
 {% assign altText = "None available" %}   
-  {% if page.image && page.image.file %}
-    {% capture foundImage %} src="{{page.image.file}}" {% endcapture %}
-    {% assign altText = page.image.alt %}  
-  {% elsif page.image %}
-    {% capture foundImage %} src="{{page.image}}" {% endcapture %} 
+  {% if include.blog.image && include.blog.image.file %}
+    {% capture foundImage %} src="{{include.blog.image.file}}" {% endcapture %}
+    {% assign altText = include.blog.image.alt %}  
+  {% elsif include.blog.image %}
+    {% capture foundImage %} src="{{include.blog.image}}" {% endcapture %} 
   {% else %}  
-    {% assign html_blocks = page.content | split:"<img " %}
+    {% assign html_blocks = include.blog.content | split:"<img " %}
     {% for image in html_blocks %}
       {% if image contains 'src' %}
         {% if foundImage == 0 %}
@@ -33,12 +32,12 @@
     </div>  
   {% endif %}
   <div>
-    <time datetime="{{ page.date '%-d %B %Y'}}">
-      {{ page.date | date: '%-d %B %Y'}}
+    <time datetime="{{ include.blog.date '%-d %B %Y'}}">
+      {{ include.blog.date | date: '%-d %B %Y'}}
     </time>
     <h3>
-      <a href="{{ page.url }}">{{ page.title }}</a> 
+      <a href="{{ include.blog.url }}">{{ include.blog.title }}</a> 
     </h3>
-    <p>{{ page.content | strip_html | truncatewords: 25 }}</p>
+    <p>{{ include.blog.content | strip_html | truncatewords: 25 }}</p>
   </div>  
 </article>
