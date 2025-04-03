@@ -13,10 +13,6 @@ languages: ["en", "es", "fr", "it", "pt", "ru"]
   {% t home.who_we_support.description %}</p>
   <p>{% t home.how_we_work.description %}</p>
 </div>
-<div class="p-3 marg-b-2 secondaryBg">
-  <h3>{% t home.contact_us.title %}</h3>
-  {% t home.contact_us.description %}
-</div>
 
 {% include events.html limit=5 %}
 
