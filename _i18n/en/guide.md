@@ -1,10 +1,4 @@
-[Our Values and Code of Conduct](#our-values)<br>
-[Projects](#projects)<br>
-[Slack](#slack)<br>
-[Document History](#document-history)
-
-<h1 class="lh-tight marg-b-4"><a id="our-values" href="#our-values">Our Values and Code of Conduct</a>
-</h1>
+# Our Values and Code of Conduct
 
 The Tech Workers Coalition seeks to redefine the relationship between tech workers and Bay Area communities. Through activism, civic engagement, direct action, and education, we work in solidarity with existing movements towards social justice and economic inclusion.
 
@@ -52,28 +46,5 @@ While in practice most actions from moderators and administrators will be friend
 ## Be Mindful of What You Say and Write
 
 TWC participants should be mindful of what they write and say in public TWC meetings and in pseudo-public channels like Slack. Be aware that Slack maintains records of our conversations indefinitely. Do not say anything in a non-private channel that you do not want becoming public. Participants should also be aware that members of the press may be present or in Slack channels. While we ask them to keep what they read and hear off the record, we cannot control what they publish.
-
-##<a id="projects" href="#projects">Projects</a>
-
-We organize much of our efforts and organization in projects. Projects are organized by one or two individuals who are responsible for being a point of contact to the broader organization, and reporting back to the larger group during our organizational meetings.
-
-Projects are a touchstone for new members who want to participate, and we encourage project teams to reach out to new participants.
-
-Projects should form their own topics within Slack. Many start with the prefix *#proj-*. See [Project/Discussion Channels](#slack).
-
-## Slack <a id="slack" href="#slack">Slack</a>
-
-### Etiquette
-
-- **Manage your notifications.** TWC Slack can become quickly overwhelming without proper notification management. We recommend turning off notifications for all but your own name and any specific words or terms of interest to you. (To do this, open Slack, click on the team name, then ‘Preferences’ and ‘Manage.’). Only join channels you wish to follow—have no shame in leaving or muting a channel that you don’t have the desire or time to participate in.
-- **Use direct messages.** Members of this Slack range in expertise, talent, and experience. Feel free to reach out to folks with specific questions or needs.This is also a good space to take tangential conversations—no need to do everything in public.
-- Avoid @channel or @here in #general or high traffic channels unless your message is important to everyone in that channel
-
-## <a id="document-history" href="#document-history">Document History</a>
-- *2025-03-08: Removal of Slack channel guide*
-- *2019-12-11: Removal of defunct steering committee as per consensus between several locals*
-- *2019-11-04: Clarification regarding membership requirements*
-- *2018-07-22: Deleted old and out-of-date information, RK*
-- *2017-02-26: Initial draft, Steering committee*
 
 *Thank you to those we extrapolated from: codes of conduct and community guidelines from Learning Gardens, Fog City Ruby, Techqueria, and GoBridge*
