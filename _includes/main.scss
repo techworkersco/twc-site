@@ -137,13 +137,19 @@ header {
   display: none;
 }
 
-.m\:hide {
+.mobile-hide {
   @include mobile {
     display: none !important;
   }
 }
 
-.d\:hide {
+.tablet-hide {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.desktop-hide {
   @include desktop {
     display: none !important;
   }
@@ -226,6 +232,10 @@ button {
   margin-left: auto;
   margin-right: auto;
   width: 65%;
+
+  @include tablet {
+    width: 90%
+  }
 }
 
 ol,
@@ -824,6 +834,10 @@ img {
       font-weight: bold;
       grid-column: 1;
       height: 75px;
+
+      @include tablet {
+        height: 50px;
+      }
     }
   }
 }
