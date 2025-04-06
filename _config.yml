@@ -42,10 +42,12 @@ languages: ["en", "es", "fr", "it", "pt", "ru"]
 
 defaults:
   - scope:
+      path: ""
       type: "events"
     values:
       layout: "event"
   - scope:
+      path: ""
       type: "blog"
     values:
       layout: "newsletter"    

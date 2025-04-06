@@ -1,10 +1,8 @@
 ---
-layout: page
 title: The Tech Worker Bill of Rights
 permalink: /bill-of-rights/
 ---
 
-<h1>A Tech Workers’ Bill of Rights</h1>
 <b>Last updated 16 Dec 2020</b>
 
 Technology wields immense power. It fosters connection, creativity, and curiosity across the globe. Alongside the human connections fostered through tech, however, we see tech companies abusing privacy, reproducing inequality, surveilling already over-policed communities, exploiting workers and the environment, and stoking hatred and violence in our world. <b>It is vital that workers gain the ability to shape the products we build and the work we do.</b>

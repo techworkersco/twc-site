@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Climate Strike
 permalink: /climate-strike/
 ---

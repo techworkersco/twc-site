@@ -1,11 +1,7 @@
 ---
-layout: newsletter
 title: Immigrant Rights are Labor Rights – Tech Workers and H-1B Visas
 date: 2025-03-14T12:00:00.000Z
 ---
-
-Immigrant Rights are Labor Rights – Tech Workers and H-1B Visas
-=======
 
 In the weeks preceding Trump’s inauguration, the right-wing coalition supporting him entered into a fractious debate over skilled immigrant workers. On one side stood tech executives who value immigrant labor as a means to increase profits and productivity. On the other were pure reactionary white supremacist nativists stoking fears about minority workers taking “our American jobs”. Neither side was savory, and nowhere were the voices of tech workers, and especially immigrant tech workers, represented. As a first response, Tech Workers Coalition (TWC) assembled a panel of workers who were or had been on H-1B visas, to represent our experiences and views. We wanted to give voice to those at the heart of the debate, and also develop a strategy and message on how and why we must respond as part of an international working class.
 

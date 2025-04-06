@@ -1,5 +1,4 @@
 ---
-layout: page
 title: No Tech for Apartheid
 permalink: /no-tech-for-apartheid/
 ---

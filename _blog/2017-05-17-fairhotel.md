@@ -1,5 +1,4 @@
 ---
-layout: newsletter
 title: Fair Hotels
 permalink: /fairhotels/
 ---
