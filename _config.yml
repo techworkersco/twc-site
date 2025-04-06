@@ -43,6 +43,13 @@ languages: ["en", "es", "fr", "it", "pt", "ru"]
 defaults:
   - scope:
       path: ""
+      type: "pages"
+    values:
+      # English only for regular pages
+      languages: ["en"]
+      namespace: :title
+  - scope:
+      path: ""
       type: "events"
     values:
       layout: "event"
