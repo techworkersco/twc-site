@@ -28,7 +28,10 @@ plugins:
 
 # jekyll-feed plugin
 feed:
-  disable_in_development: false
+  collections:
+    - events
+    - blog
+  disable_in_development: true
 
 jekyll_get_data:
   - data: berlin_press
