@@ -30,7 +30,7 @@ plugins:
 feed:
   collections:
     - events
-    - blog
+    - blog 
   disable_in_development: true
 
 jekyll_get_data:
@@ -78,8 +78,8 @@ header_links:
     text: Join
   - url: /events
     text: Events
-  - url: /chapters
-    text: Chapters     
+  - url: /circuit-breakers
+    text: Circuit Breakers     
   
 links:
   - url: /subscribe
