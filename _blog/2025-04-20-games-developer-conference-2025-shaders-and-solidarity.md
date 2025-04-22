@@ -35,6 +35,6 @@ Outside of the panels and conversations with CWA organizers, we explored the Exp
 As we reflect on our first GDC, we’re excited to continue building coalitions and connecting with United Videogame Workers and other unions. We have a lot in common with videogame workers. We are honored to stand with them at the launch of their union, to learn from their organizing, and to be energized by their effort. The mid-week rally inspired us to think more about our presence and signage at this year’s May Day march, the history of the movement, and how we can continue to stand in solidarity with all workers.
 
 <p float="left">
-<img src="/assets/img/2025-04-20-blog-were-done-playing-group.jpg" width="45%">
-<img src="/assets/img/2025-04-20-blog-carousel.jpg.png" width="45%">
+<img alt="group photo and text we are done playing" src="/assets/img/2025-04-20-blog-were-done-playing-group.jpg" width="45%">
+<img alt="two tech workers, one is wearing a tech workers coalition shirt" src="/assets/img/2025-04-20-blog-carousel.jpg.png" width="45%">
 </p>
