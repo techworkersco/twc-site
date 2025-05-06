@@ -2,7 +2,6 @@ require "jekyll"
 require 'json'
 require 'deep_merge'
 require 'open-uri'
-# require 'pry'
 
 module JekyllGetData
   class GetDataGenerator < Jekyll::Generator
