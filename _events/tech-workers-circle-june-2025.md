@@ -13,4 +13,4 @@ interest with those they employ. For all those who are organizing or
 want to organize in their workplaces, join us to share experiences, 
 tactics, and strategies.\
 \
-https://us02web.zoom.us/meeting/register/ETUEUR7nRp-JsYzc3qQk2w
+<https://us02web.zoom.us/meeting/register/ETUEUR7nRp-JsYzc3qQk2w>
