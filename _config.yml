@@ -39,7 +39,7 @@ jekyll_get_data:
   - data: berlin_events
     url: https://techworkersberlin.com/events.yml
   - data: nl_events
-    url: https://techwerkers.nl/en/events/index.yaml     
+    url: https://techwerkers.nl/en/twc-global/index.yaml     
 exclude:
   - .jekyll-cache/
 # also update index.md
