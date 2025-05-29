@@ -1,5 +1,5 @@
 ---
-title: Portland, OR Social
+title: Portland, OR General Meeting
 date: 2025-08-09 18:00
 locations:
   - Portland
