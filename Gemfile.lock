@@ -26,7 +26,7 @@ GEM
       fiber-annotation
       fiber-local (~> 1.1)
       json
-    csv (3.3.4)
+    csv (3.3.5)
     deep_merge (1.2.2)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
