@@ -1,3 +1,5 @@
+[context.branch-deploy.environment]
+  JEKYLL_ENV = "production"
 [[redirects]]
   from = "/slack-thanks/"
   to = "/welcome"
