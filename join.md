@@ -39,5 +39,65 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
     <div class="marg-b-2">Including a referrer from an existing member can be a good way to get in the slack if you lack a social media presence. Also, please be specific! If you found us on search, don't just say "Google" (it's unclear if you mean the company or the search engine).</div>
     <input id="human-referrer" type="text" name="human-referrer">
   </label>
+  <label class="marg-b-3" for="nearby-chapter">
+    <div><b>Do you live or work near an existing chapter?</b> (optional):</div>
+    <div class="marg-b-2">This helps us connect you with local organizing efforts. If there isn't already a chapter in your area, we'd love to chat with you about starting one!</div>
+    <select id="nearby-chapter" name="nearby-chapter">
+      <option value="">Select a chapter</option>
+      {% assign active_chapters = site.data.chapters.chapters | where_exp:"chapter", "chapter.activity_level == 'active' or chapter.activity_level == 'midactive' or chapter.activity_level == 'semiactive'" | sort: "text" %}
+      {% for chapter in active_chapters %}
+      <option value="{{chapter.text}}">{{chapter.text}}</option>
+      {% endfor %}
+    </select>
+  </label>
+  <div id="chapter-outreach-fields" style="display: none;">
+    <label class="marg-b-3" for="wants-outreach">
+      <input id="wants-outreach" type="checkbox" name="wants-outreach" value="yes" style="margin-right: 8px;">
+      <b>Are you interested in 1:1 outreach from someone in the chapter?</b> (optional)
+    </label>
+    <label class="marg-b-3" for="phone-number">
+      <div><b>Phone Number</b> (optional):</div>
+      <div class="marg-b-2">Providing a phone number can help with local organizing outreach.</div>
+      <input id="phone-number" type="tel" name="phone-number" placeholder="(555) 123-4567">
+    </label>
+  </div>
   <input type="submit" value="Submit">
 </form>
+
+<script>
+(function() {
+  const chapterSelect = document.getElementById('nearby-chapter');
+  const outreachFields = document.getElementById('chapter-outreach-fields');
+  const form = document.querySelector('.join-form');
+  const baseAction = '/welcome';
+
+  function updateFormForChapter() {
+    const selectedChapter = chapterSelect.value;
+    
+    if (selectedChapter) {
+      // Show the additional fields
+      outreachFields.style.display = 'block';
+      
+      // Update form action with query parameter
+      const encodedChapter = encodeURIComponent(selectedChapter);
+      form.action = baseAction + '?chapter=' + encodedChapter;
+    } else {
+      // Hide the additional fields
+      outreachFields.style.display = 'none';
+      
+      // Reset form action to base
+      form.action = baseAction;
+      
+      // Clear the additional field values
+      document.getElementById('wants-outreach').checked = false;
+      document.getElementById('phone-number').value = '';
+    }
+  }
+
+  // Listen for changes to the chapter select
+  chapterSelect.addEventListener('change', updateFormForChapter);
+  
+  // Run on page load in case there's a pre-selected value
+  updateFormForChapter();
+})();
+</script>

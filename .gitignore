@@ -4,6 +4,7 @@ _site
 .jekyll-metadata
 .env
 .letsencrypt
+.ruby-version
 *.log
 .jekyll-cache/
 .bundle/
