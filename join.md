@@ -57,7 +57,7 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
     </label>
     <label class="marg-b-3" for="phone-number">
       <div><b>Phone Number</b> (optional):</div>
-      <div class="marg-b-2">Providing a phone number can help with local organizing outreach.</div>
+      <div class="marg-b-2">Provide a phone number for 1:1 outreach. Otherwise we will reach out via email.</div>
       <input id="phone-number" type="tel" name="phone-number" placeholder="(555) 123-4567">
     </label>
   </div>
