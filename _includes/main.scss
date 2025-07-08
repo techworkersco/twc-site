@@ -471,6 +471,7 @@ label {
 }
 
 label {
+  display: block;
   font-weight: inherit;
 
   @include mobile {
@@ -480,7 +481,8 @@ label {
 
 input[type="email"],
 input[type="text"],
-input[type="url"] {
+input[type="url"],
+select {
   border: 1px solid;
   border-radius: 4px;
   color: $grey;
@@ -629,7 +631,8 @@ hr {
   }
   input[type="email"],
   input[type="text"],
-  input[type="url"] {
+  input[type="url"],
+  select {
     border-color: #ccc;
   }
   .primaryBg {
@@ -693,7 +696,8 @@ hr {
   }
   input[type="email"],
   input[type="text"],
-  input[type="url"] {
+  input[type="url"],
+  select {
     background: $grey2;
     border-color: transparent;
     color: $white;
