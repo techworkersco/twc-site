@@ -1,7 +1,7 @@
 ---
 layout: page
 title: TWC SF Bay Area
-permalink: /sf-bay-area/
+permalink: /bay-area/
 ---
 <style>h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}</style>
 # SF Bay Area Tech Workers Coalition
