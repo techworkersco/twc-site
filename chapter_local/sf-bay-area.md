@@ -19,3 +19,6 @@ We are the Bay Area chapter of TWC. As of summer 2025, most of our active member
 We're excited to connect with new members.
 - After you join the [TWC Slack](/subscribe/), come introduce yourself in `#local-bay-area`, share your ideas and learn about (or plan!) local events.
 - Fill out this **[quick form](https://docs.google.com/forms/d/e/1FAIpQLSeXhHLTrtWpQr7eAPfValJvSZQt0EVlDyxZLxt53gthkrLDkw/viewform) to join our Bay Area chapter mailing list** where we periodically share upcoming events.
+
+## Upcoming Events
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&mode=AGENDA&title=TWC%20Bay%20Area%20Events&showPrint=0&src=ODJjMGEwMGU3ZTEwZTAxZGRhODFlZjNhNWEzYTIzZjk0OWFiMjdmNDFjNDUxZjYyN2QzODg2ZGE3MWI2NDZhNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23a79b8e" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
