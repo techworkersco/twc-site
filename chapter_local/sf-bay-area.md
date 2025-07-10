@@ -28,4 +28,8 @@ You can also **[fill out this quick form](https://docs.google.com/forms/d/e/1FAI
 <br/><br/>
 
 ## Upcoming Events
+
+👉 **Add these events to your own calendar: [Google Calendar](https://calendar.google.com/calendar/u/0?cid=ODJjMGEwMGU3ZTEwZTAxZGRhODFlZjNhNWEzYTIzZjk0OWFiMjdmNDFjNDUxZjYyN2QzODg2ZGE3MWI2NDZhNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t), [iCal](https://calendar.google.com/calendar/ical/82c0a00e7e10e01dda81ef3a5a3a23f949ab27f41c451f627d3886da71b646a4%40group.calendar.google.com/public/basic.ics)**
+
+
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&mode=AGENDA&title=TWC%20Bay%20Area%20Events&showPrint=0&src=ODJjMGEwMGU3ZTEwZTAxZGRhODFlZjNhNWEzYTIzZjk0OWFiMjdmNDFjNDUxZjYyN2QzODg2ZGE3MWI2NDZhNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23a79b8e" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
