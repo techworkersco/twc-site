@@ -27,3 +27,9 @@
   to = "blog/2024/02/02/labor-notes-highlights/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/sf-bay-area"
+  to = "/bay-area"
+  status = 301
+  force = true
