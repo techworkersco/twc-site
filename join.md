@@ -46,7 +46,7 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
       <option value="">Select a chapter</option>
       {% assign active_chapters = site.data.chapters.chapters | where_exp:"chapter", "chapter.activity_level == 'active' %}
       {% for chapter in active_chapters %}
-      <option value="{{chapter.text | replace: " ", "-" | downcase }}">{{chapter.text}}</option>
+      <option value="{{chapter.text | replace: ' ', '-' | downcase }}">{{chapter.text}}</option>
       {% endfor %}
     </select>
   </label>
@@ -54,11 +54,6 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
     <label class="marg-b-3" for="wants-outreach">
       <input id="wants-outreach" type="checkbox" name="wants-outreach" value="yes" style="margin-right: 8px;">
       <b>Are you interested in 1:1 outreach from someone in the chapter?</b> (optional)
-    </label>
-    <label class="marg-b-3" for="phone-number">
-      <div><b>Phone Number</b> (optional):</div>
-      <div class="marg-b-2">Provide a phone number for 1:1 outreach. Otherwise we will reach out via email.</div>
-      <input id="phone-number" type="tel" name="phone-number" placeholder="(555) 123-4567">
     </label>
   </div>
   <input type="submit" value="Submit">
@@ -90,7 +85,6 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
       
       // Clear the additional field values
       document.getElementById('wants-outreach').checked = false;
-      document.getElementById('phone-number').value = '';
     }
   }
 
