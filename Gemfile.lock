@@ -134,6 +134,8 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2025.2)
+      tzinfo (>= 1.0.0)
     unicode-display_width (2.6.0)
     webrick (1.9.1)
     yell (2.2.2)
@@ -155,6 +157,7 @@ DEPENDENCIES
   logger
   rake (~> 13.1)
   tzinfo
+  tzinfo-data
   webrick (~> 1.7)
 
 RUBY VERSION
