@@ -22,9 +22,9 @@ We are the Bay Area chapter of TWC. As of summer 2025, most of our active member
 
 ## Connect With Us
 
-We're excited to connect with new members! After you join the [TWC Slack](/subscribe/), come introduce yourself in `#local-bay-area`, share your ideas and learn about (or plan!) local events.
+We're excited to connect with new members! When you [join TWC](/subscribe/), select the "SF Bay Area" chapter to be added to our local mailing list. Then, come introduce yourself in `#local-bay-area` Slack channel, share your ideas and learn about (or plan!) local events.
 
-You can also **[fill out this quick form](https://docs.google.com/forms/d/e/1FAIpQLSeXhHLTrtWpQr7eAPfValJvSZQt0EVlDyxZLxt53gthkrLDkw/viewform) to join our Bay Area chapter mailing list** where we periodically share upcoming events.
+We periodically share upcoming local events in our chapter email newsletter. You can also find them below.
 <br/><br/>
 
 ## Upcoming Events
