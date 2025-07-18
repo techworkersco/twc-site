@@ -44,7 +44,7 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
     <div class="marg-b-2">This helps us connect you with local organizing efforts. If there isn't already a chapter in your area, we'd love to chat with you about starting one!</div>
     <select id="nearby-chapter" name="nearby-chapter">
       <option value="">Select a chapter</option>
-      {% assign active_chapters = site.data.chapters.chapters | where_exp:"chapter", "chapter.activity_level == 'active'" %}
+      {% assign active_chapters = site.data.chapters.chapters | where_exp:"chapter", "chapter.activity_level == 'active' or chapter.activity_level == 'semiactive'" | sort: "text" %}
       {% for chapter in active_chapters %}
       <option value="{{chapter.text | replace: ' ', '-' | downcase }}">{{chapter.text}}</option>
       {% endfor %}

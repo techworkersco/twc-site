@@ -11,7 +11,7 @@ This is the Austin, TX chapter of the TWC.
 - We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends.
 
 ## Connect With Us
-- Visit our [Meetup](https://www.meetup.com/Tech-Workers-Coalition-ATX/) to find the latest events.
+- Find us in `#local-austin` in the [TWC Slack](/subscribe/),
 - Follow us on Twitter at [@twcatx](https://twitter.com/twcatx).
 
 ## Code of Conduct

@@ -2,24 +2,21 @@ chapters:
   - text: Austin
     url: /austin
     twitter: twcatx
-    meetup: Tech-Workers-Coalition-ATX/
-    facebook: twcatx
-    activity_level: midactive
+    facebook: https://www.facebook.com/twcatx
+    activity_level: semiactive
   - text: Brasil
     url: /pt/brasil
     activity_level: inactive
   - text: Boston
-    url: https://boston.techworkerscoalition.org/
     twitter: techworkersBOS
     activity_level: inactive
   - text: Chicago
     url: /chicago
-    twitter: chicago_twc
     activity_level: inactive
   - text: DC
     url: /dc
     twitter: dctechworkers
-    facebook: DC-Tech-Workers-Coalition
+    facebook: https://www.facebook.com/DC-Tech-Workers-Coalition-338770966854335/
     activity_level: semiactive
   - text: Denver
     twitter: twc_den
@@ -29,7 +26,7 @@ chapters:
     activity_level: inactive
   - text: North Carolina
     url: /north-carolina
-    activity_level: midactive  
+    activity_level: semiactive  
   - text: NYC
     url: /nyc
     twitter: techworkerscony
@@ -39,9 +36,8 @@ chapters:
     url: /pdx
     activity_level: active
   - text: San Diego
-    url: https://twcsandiego.org/
     twitter: twcsandiego
-    activity_level: active
+    activity_level: semiactive
   - text: San Jose
     twitter: twc_sanjose
     activity_level: inactive
@@ -52,7 +48,6 @@ chapters:
     url: /bay-area
     activity_level: active
   - text: South Florida
-    twitter: southfltechworkers
     activity_level: inactive
   - text: Bangalore
     twitter: TechiesSpeakUp
@@ -60,20 +55,18 @@ chapters:
     activity_level: inactive
   - text: Berlin
     twitter: TechWorkersBER
-    facebook: TechWorkersBER
     url: https://techworkersberlin.com/
     activity_level: active
   - text: Dublin
-    twitter: TWBIreland
     activity_level: inactive
   - text: London
     twitter: TechWorkersLDN
-    facebook: TechWorkersLDN
+    facebook: https://www.facebook.com/TechWorkersLDN
     url: /london
     activity_level: inactive
   - text: Italia
     twitter: twcitalia
-    facebook: twcita
+    facebook: https://www.facebook.com/twcita
     url: https://twc-italia.org
     activity_level: active
   - text: Netherlands
