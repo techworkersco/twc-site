@@ -13,6 +13,8 @@ Sunday, August 3rd, 2025\
 2:00-4:00 PM\
 Counterpulse (80 Turk St, San Francisco, CA 94102)
 
-**Register here:** <https://partey.io/iYOBHdo6yBTb>
+**🎟️ Register here:** [https://partey.io/iYOBHdo6yBTb ](https://partey.io/iYOBHdo6yBTb)🎟️
+
+*Hosted by Tech Workers Coalition & [Citizens Privacy Coalition](https://www.cpcscc.org/)*
 
 ![](/assets/img/518042481_17890367598277826_3477586235890025810_n.jpg)
