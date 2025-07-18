@@ -1,5 +1,5 @@
 ---
-title: "San Francisco: Digital Security Workshop & Documentary Sample Screening"
+title: Digital Security Workshop & Documentary Sample Screening
 date: 2025-08-03 17:00
 locations:
   - San Fransisco
