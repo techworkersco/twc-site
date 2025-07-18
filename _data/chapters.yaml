@@ -55,7 +55,6 @@ chapters:
     activity_level: inactive
   - text: Berlin
     twitter: TechWorkersBER
-    # facebook: TechWorkersBER # broken link, what's the real one?
     url: https://techworkersberlin.com/
     activity_level: active
   - text: Dublin
