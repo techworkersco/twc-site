@@ -28,7 +28,7 @@ home:
   how_we_work:
     title: How we work
     description: |
-      We’re a democratically structured, all-volunteer, and worker-led organization. Get <a href="/subscribe">involved</a> and find an <a href="/events">event below</a>! You can also <a href="mailto:hello@techworkerscoalition.org">reach us by email.</a>
+      We’re a democratically structured, all-volunteer, and worker-led organization. <b><a href="/subscribe">Get involved</a> and find (or help start) a <a href="/chapters">local chapter</a>!</b> You can also <a href="mailto:hello@techworkerscoalition.org">reach us by email.</a>
   check_out_meeting:
     title: Find a local chapter
     link: |

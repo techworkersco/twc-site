@@ -11,8 +11,7 @@ This is the Chicago chapter of the TWC.
 - We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends living and working in the greater Chicagoland area.
 
 ## Connect With Us
-- Visit our [website](https://chicagotwc.org) for info and updates
-- Follow us on Twitter [@chicago_twc](https://twitter.com/chicago_twc)
+- Find us in `#local-chicago` in the [TWC Slack](/subscribe/),
 - Get in direct contact with us at [chicagotechworkers@gmail.com](mailto:chicagotechworkers@gmail.com)
 
 ## Code of Conduct
