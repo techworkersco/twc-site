@@ -44,54 +44,16 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
     <div class="marg-b-2">This helps us connect you with local organizing efforts. If there isn't already a chapter in your area, we'd love to chat with you about starting one!</div>
     <select id="nearby-chapter" name="nearby-chapter">
       <option value="">Select a chapter</option>
+      <option value="want-to-start">I want to help start a chapter</option>
       {% assign active_chapters = site.data.chapters.chapters | where_exp:"chapter", "chapter.activity_level == 'active' or chapter.activity_level == 'semiactive'" | sort: "text" %}
       {% for chapter in active_chapters %}
       <option value="{{chapter.text | replace: ' ', '-' | downcase }}">{{chapter.text}}</option>
       {% endfor %}
     </select>
   </label>
-  <div id="chapter-outreach-fields" style="display: none;">
-    <label class="marg-b-3" for="wants-outreach">
-      <input id="outreach" type="checkbox" name="outreach" value="wants-outreach" style="margin-right: 8px;">
-      <b>Are you interested in 1:1 outreach from someone in TWC?</b> (optional)
-    </label>
-  </div>
+  <label class="marg-b-3" for="wants-outreach">
+    <input id="outreach" type="checkbox" name="outreach" value="wants-outreach" style="margin-right: 8px;">
+    <b>Are you interested in 1:1 outreach from someone in TWC?</b> (optional)
+  </label>
   <input type="submit" value="Submit">
 </form>
-
-<script>
-(function() {
-  const chapterSelect = document.getElementById('nearby-chapter');
-  const outreachFields = document.getElementById('chapter-outreach-fields');
-  const form = document.querySelector('.join-form');
-  const baseAction = '/welcome';
-
-  function updateFormForChapter() {
-    const selectedChapter = chapterSelect.value;
-    
-    if (selectedChapter) {
-      // Show the additional fields
-      outreachFields.style.display = 'block';
-      
-      // Update form action with query parameter
-      const encodedChapter = encodeURIComponent(selectedChapter);
-      form.action = baseAction + '?chapter=' + encodedChapter;
-    } else {
-      // Hide the additional fields
-      outreachFields.style.display = 'none';
-      
-      // Reset form action to base
-      form.action = baseAction;
-      
-      // Clear the additional field values
-      document.getElementById('wants-outreach').checked = false;
-    }
-  }
-
-  // Listen for changes to the chapter select
-  chapterSelect.addEventListener('change', updateFormForChapter);
-  
-  // Run on page load in case there's a pre-selected value
-  updateFormForChapter();
-})();
-</script>
