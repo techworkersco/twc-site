@@ -1,5 +1,5 @@
 $red: #d72b2b;
-$black: #000;
+$black: #020e0f;
 $white: #fff;
 $grey: #2E2E2E;
 $grey2: #191919;
@@ -658,7 +658,8 @@ hr {
   }
 
   .desktop-header, .navOverlay > li {
-    background-color: #020e0f;
+    background-color: $black;
+    color: $white;
 
     &:hover {
       background-color: $red;
@@ -666,7 +667,7 @@ hr {
     }
 
     & > a {
-      color: white;
+      color: $white;
     }
   }
   
@@ -743,6 +744,10 @@ hr {
       background-color: $black;
       fill: $black;
     }
+
+    & > a {
+      color: $white;
+    }
   }  
 }
 
@@ -786,7 +791,7 @@ img {
 }
 #logo-header,
 #logo-footer{
-  background: white;
+  background: $white;
   border-radius: 50%;
 }
 
