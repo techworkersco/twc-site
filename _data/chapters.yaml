@@ -10,6 +10,9 @@ chapters:
   - text: Boston
     twitter: techworkersBOS
     activity_level: inactive
+  - text: Canada
+    url: /canada
+    activity_level: active
   - text: Chicago
     url: /chicago
     activity_level: inactive
