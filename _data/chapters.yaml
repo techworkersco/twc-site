@@ -3,7 +3,7 @@ chapters:
     url: /austin
     twitter: twcatx
     facebook: https://www.facebook.com/twcatx
-    activity_level: semiactive
+    activity_level: inactive
   - text: Brasil
     url: /pt/brasil
     activity_level: inactive
@@ -20,7 +20,7 @@ chapters:
     url: /dc
     twitter: dctechworkers
     facebook: https://www.facebook.com/DC-Tech-Workers-Coalition-338770966854335/
-    activity_level: semiactive
+    activity_level: active
   - text: Denver
     twitter: twc_den
     activity_level: inactive
@@ -29,7 +29,7 @@ chapters:
     activity_level: inactive
   - text: North Carolina
     url: /north-carolina
-    activity_level: semiactive  
+    activity_level: active  
   - text: NYC
     url: /nyc
     twitter: techworkerscony
@@ -40,7 +40,7 @@ chapters:
     activity_level: active
   - text: San Diego
     twitter: twcsandiego
-    activity_level: semiactive
+    activity_level: active
   - text: San Jose
     twitter: twc_sanjose
     activity_level: inactive
