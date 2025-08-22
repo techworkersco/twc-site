@@ -5,7 +5,7 @@ permalink: /chapters/
 ---
 {% assign activity_levels = "active,inactive" | split: ','%}
 {% for level in activity_levels %}
-  <h2>{{level | capitalize}} chapters</h2>
+  <h2>{% if level == "inactive" %}Inactive and former chapters{% else %}{{level | capitalize}} chapters{% endif %}</h2>
   {% assign chapters = site.data.chapters.chapters | where:"activity_level",level | sort: "text" %}
   {% for chapter in chapters %}
   <ul class="list-style-none marg-b-3 pad-l-3">
