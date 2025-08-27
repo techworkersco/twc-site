@@ -21,7 +21,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date (use New York time)", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm" }
-      - {label: "Locations", name: "locations", widget: "select", multiple: true, default: ["Global"], min: 1, options: ["Global", "Online", "Berlin", "San Fransisco", "San Diego", "Portland", "New York", "Austin", "Netherlands", "Italy", "Washington DC", "Boston", "Los Angeles", "Seattle"]}
+      - {label: "Locations", name: "locations", widget: "select", multiple: true, default: ["Global"], min: 1, options: ["Global", "Online", "Berlin", "Bay Area", "San Diego", "Portland", "New York", "Austin", "Netherlands", "Italy", "Washington DC", "Boston", "Los Angeles", "Seattle"]}
       - {label: "Time zones", name: "time_zones", widget: "select", multiple: true, default: ["US/Eastern"], min: 1, options: ["US/Eastern", "US/Pacific", "US/Central", "US/Mountain", "Europe/Berlin", "Europe/London"]}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}

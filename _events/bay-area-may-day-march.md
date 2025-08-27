@@ -2,7 +2,7 @@
 title: Bay Area May Day march
 date: 2025-05-01 19:00
 locations:
-  - San Fransisco
+  - Bay Area
 time_zones:
   - US/Pacific
 image: /assets/img/slide-1-english.png

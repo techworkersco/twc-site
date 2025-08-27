@@ -2,7 +2,7 @@
 title: "Bay Area Book Club: The Play in the System"
 date: 2025-08-30 17:00
 locations:
-  - San Fransisco
+  - Bay Area
 time_zones:
   - US/Pacific
 image: /assets/img/image.png

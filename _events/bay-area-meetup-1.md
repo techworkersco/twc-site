@@ -2,7 +2,7 @@
 title: Bay Area meetup
 date: 2025-06-05 21:00
 locations:
-  - San Fransisco
+  - Bay Area
 time_zones:
   - US/Pacific
 image: /assets/img/twc_bayarea_0625.png

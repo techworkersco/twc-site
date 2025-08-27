@@ -2,7 +2,7 @@
 title: Tech Against Totalitarianism
 date: 2025-05-10 20:00
 locations:
-  - San Fransisco
+  - Bay Area
 time_zones:
   - US/Pacific
 image: /assets/img/twc_nota_v3.png

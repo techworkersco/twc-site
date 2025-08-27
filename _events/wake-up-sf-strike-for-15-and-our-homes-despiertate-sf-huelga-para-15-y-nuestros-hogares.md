@@ -2,7 +2,7 @@
 title: December Organization meeting
 date: 2016-12-06 22:00
 locations:
-  - San Fransisco
+  - Bay Area
 time_zones:
   - US/Pacific
 ---
