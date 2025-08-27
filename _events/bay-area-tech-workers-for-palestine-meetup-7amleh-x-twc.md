@@ -2,7 +2,7 @@
 title: Bay Area Tech Workers for Palestine Meetup (7amleh x TWC)
 date: 2025-09-16 21:00
 locations:
-  - San Fransisco
+  - Bay Area
 time_zones:
   - US/Pacific
 image: /assets/img/image-2025-08-25-191806.jpg

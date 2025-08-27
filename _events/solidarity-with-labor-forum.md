@@ -3,7 +3,7 @@ title: "Wake Up SF: Strike for 15 and Our Homes / Despiertate SF: Huelga para 15
   y Nuestros Hogares"
 date: 2016-04-14 09:00
 locations:
-  - San Fransisco
+  - Bay Area
 time_zones:
   - US/Pacific
 ---

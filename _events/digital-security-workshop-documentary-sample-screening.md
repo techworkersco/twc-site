@@ -2,7 +2,7 @@
 title: Digital Security Workshop & Documentary Sample Screening
 date: 2025-08-03 17:00
 locations:
-  - San Fransisco
+  - Bay Area
 time_zones:
   - US/Pacific
 image: /assets/img/518042481_17890367598277826_3477586235890025810_n.jpg

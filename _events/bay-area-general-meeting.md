@@ -2,7 +2,7 @@
 title: Bay Area General Meeting
 date: 2025-09-24 21:00
 locations:
-  - San Fransisco
+  - Bay Area
 time_zones:
   - US/Pacific
 ---
