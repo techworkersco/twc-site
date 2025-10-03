@@ -5,7 +5,7 @@ locations:
   - Portland
 time_zones:
   - US/Pacific
-image: /assets/img/screenshot-2025-10-03-at-1.12.08 pm.png
+image: /assets/img/twc_pdx.jpg
 ---
 Every second Saturday of the month at 3pm PST, join us for our monthly meeting to connect with fellow tech workers & organizers in the Portland metro area. 
 
