@@ -15,7 +15,7 @@ chapters:
     activity_level: active
   - text: Chicago
     url: /chicago
-    activity_level: inactive
+    activity_level: active
   - text: DC
     url: /dc
     twitter: dctechworkers
