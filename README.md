@@ -26,4 +26,4 @@ Inside [`_data/press.yml`](_data/press.yml) file, add a media entry, with date f
 ### Supported Pages
 
 - Landing Page [index.md](index.md)
-- Community Guide [\_i18n/en/guide.md](_i18n/en/guide.md) and [guide.md](guide.md)
+- Community Guide [guide.md](guide.md)
