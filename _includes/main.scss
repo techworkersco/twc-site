@@ -1,11 +1,27 @@
 $red: #d72b2b;
 $black: #020e0f;
 $white: #fff;
-$grey: #2E2E2E;
+$grey: #2e2e2e;
 $grey2: #191919;
 $grey3: #f6f6f6;
+$grey4: #777;
 $tablet-width: 760px;
 $mobile-width: 420px;
+$header-height: 60px;
+
+$font-family-base:
+  Helvetica Neue,
+  HelveticaNeue,
+  Helvetica,
+  Arial,
+  system-ui,
+  -apple-system,
+  Segoe UI,
+  Roboto,
+  Ubuntu,
+  Cantarell,
+  Noto Sans,
+  sans-serif;
 
 @mixin desktop {
   @media screen and (min-width: #{$tablet-width}) {
@@ -26,8 +42,7 @@ $mobile-width: 420px;
 }
 
 body {
-  font-family: Helvetica Neue, HelveticaNeue, Helvetica, Arial, system-ui,
-    -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+  font-family: $font-family-base;
   letter-spacing: 0.03rem;
   line-height: 1.5;
   margin: 0;
@@ -35,6 +50,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+  padding-top: $header-height + 20px;
 }
 
 .grow-main {
@@ -50,8 +67,10 @@ body {
 }
 
 header {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  height: 60px;
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  height: $header-height;
   left: 0;
   position: fixed;
   right: 0;
@@ -70,26 +89,27 @@ header {
     padding-left: 14px;
 
     &:hover {
-      color:$red;
+      color: $red;
       & .primarySvgFill {
         fill: $red;
-      }  
+      }
     }
   }
 
-  #nav, #navBtn {
+  #nav,
+  #navBtn {
     @include desktop {
       display: none;
     }
   }
 }
 
-.desktop-header{
-  margin-left:10px;
+.desktop-header {
+  margin-left: 10px;
   font-weight: normal;
   padding: 4px 14px;
   border-radius: 100px;
-  list-style-type:none;
+  list-style-type: none;
 
   @include tablet {
     display: none;
@@ -233,7 +253,7 @@ button {
   width: 65%;
 
   @include tablet {
-    width: 90%
+    width: 90%;
   }
 }
 
@@ -494,7 +514,8 @@ select {
   }
 }
 
-input[type="submit"], .pagination {
+input[type="submit"],
+.pagination {
   border-radius: 4px;
   border: 0;
   font-weight: 500;
@@ -526,7 +547,7 @@ hr {
 }
 
 .bg-white {
-  background:$white;
+  background: $white;
 }
 
 // __BEGIN__ interface for /events
@@ -570,7 +591,7 @@ hr {
 }
 .tab input:checked + .tab__label::after {
   transform: rotate(270deg);
-  animation: ease .8s;
+  animation: ease 0.8s;
 }
 .tab__content p {
   margin: 0;
@@ -591,10 +612,10 @@ hr {
 // }
 @keyframes bounce {
   25% {
-    transform: rotate(90deg) translate(.25rem);
+    transform: rotate(90deg) translate(0.25rem);
   }
   75% {
-    transform: rotate(90deg) translate(-.25rem);
+    transform: rotate(90deg) translate(-0.25rem);
   }
 }
 
@@ -657,21 +678,21 @@ hr {
     }
   }
 
-  .desktop-header, .navOverlay > li {
+  .desktop-header,
+  .navOverlay > li {
     background-color: $black;
     color: $white;
 
     &:hover {
       background-color: $red;
-      fill:$red;
+      fill: $red;
     }
 
     & > a {
       color: $white;
     }
   }
-  
-}  
+}
 
 @media (prefers-color-scheme: dark) {
   h2 a:link {
@@ -679,7 +700,7 @@ hr {
   }
 
   .border {
-    border-color:$white;
+    border-color: $white;
   }
   #mc-embedded-subscribe {
     border-color: $grey;
@@ -736,7 +757,8 @@ hr {
     border-color: $grey2;
   }
 
-  .desktop-header, .navOverlay > li {
+  .desktop-header,
+  .navOverlay > li {
     background-color: $red;
     color: $white;
 
@@ -748,7 +770,7 @@ hr {
     & > a {
       color: $white;
     }
-  }  
+  }
 }
 
 .banner {
@@ -781,25 +803,25 @@ img {
   padding-bottom: 1rem;
   padding-top: 0.5rem;
 }
-[id]::before { 
-  display: block; 
-  content: " "; 
+[id]::before {
+  display: block;
+  content: " ";
   margin-top: -60px; // height of header bar
-  height: 60px; 
-  visibility: hidden; 
+  height: 60px;
+  visibility: hidden;
   pointer-events: none;
 }
 #logo-header,
-#logo-footer{
+#logo-footer {
   background: $white;
   border-radius: 50%;
 }
 
 .card-preview {
   @extend .p-3;
-  @extend .marg-b-3; 
-  @extend .flex; 
-  @extend .items-center; 
+  @extend .marg-b-3;
+  @extend .flex;
+  @extend .items-center;
   @extend .secondaryBg;
 
   > img {
@@ -809,15 +831,15 @@ img {
       grid-template-columns: 2rem 1fr;
       grid-gap: 0.5rem;
     }
-  
+
     & > div {
       padding: 0.75rem;
 
       @include tablet {
-        width:50px;
-        height:50px;
+        width: 50px;
+        height: 50px;
       }
-    } 
+    }
   }
 
   img {
@@ -825,25 +847,25 @@ img {
     @extend .lh-1;
     margin-right: 1rem;
     margin-left: 0;
-    width:100px;
-    height:100px;
-    object-fit:cover;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 
     @include tablet {
-      width:75px;
-      height:75px;
+      width: 75px;
+      height: 75px;
     }
   }
 
   .icon {
     @extend .bg-white;
-    @extend .circ; 
+    @extend .circ;
     @extend .lh-1;
     @extend .p-3;
     @extend .marg-r-3;
 
     @include tablet {
-      height:75px;
+      height: 75px;
       width: 75px;
     }
 
@@ -858,5 +880,161 @@ img {
         height: 45px;
       }
     }
+  }
+}
+
+.button,
+a.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+
+  text-decoration: none;
+
+  padding: 0.3em 1em;
+
+  border: 1px solid currentColor;
+  border-radius: 100px;
+
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
+  @media (prefers-color-scheme: light) {
+    color: $black;
+  }
+
+  &.textual {
+    border: none;
+    padding: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+
+  &.primary {
+    border: none;
+
+    background: $black;
+    color: $white;
+
+    &:hover {
+      background: $red;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      background: $red;
+
+      &:hover {
+        background: $black;
+      }
+    }
+  }
+}
+
+nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0;
+
+    display: flex;
+    gap: 1em;
+  }
+}
+
+section {
+  padding: clamp(0.9375rem, 0.554rem + 1.7045vw, 1.875rem) 0;
+}
+
+.chapter-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  & .name {
+    font-size: 120%;
+  }
+
+  & li {
+    border: 1px solid $grey4;
+    border-radius: 10px;
+    padding: 0.5em;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 0.5em;
+    align-items: center;
+
+    a {
+      display: flex;
+    }
+  }
+}
+
+.job-board {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  & li {
+    border: 1px solid $grey4;
+    border-radius: 10px;
+    padding: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.lucide,
+.simple-icon {
+  width: 1em;
+  aspect-ratio: 1 / 1;
+}
+
+.simple-icon {
+  fill: currentColor;
+
+  &.twitter {
+    width: 0.75em;
+  }
+
+  &.meetup {
+    width: 1.2em;
+  }
+}
+
+.blog-header {
+  text-wrap: balance;
+  text-wrap: pretty;
+}
+
+.blog-content {
+  font-size: clamp(1.25rem, 1.1989rem + 0.2273vw, 1.375rem);
+  font-family: serif;
+  max-width: 700px;
+
+  p {
+    margin: 1.5em 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-family-base;
   }
 }

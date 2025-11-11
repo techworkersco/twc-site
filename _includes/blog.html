@@ -1,13 +1,20 @@
 {% assign limit = include.limit %}
 {% assign sorted_blog = site.blog | filter_tags: include.tags | sort: 'date' | reverse %}
+
 {% if page.permalink == "/blog/" %}
   <h1>Blog</h1>
   Explore our <b>{{ sorted_blog.size }}</b> blog posts
+  <section>
 {% else %}
   <h2 class="marg-b-2">Blog Posts</h2>
-  <a href="/blog">{% t home.blog.more %}</a>
 {% endif %}
 
 {% for blog in sorted_blog limit: limit %}
   {% include blog-card.html blog=blog %}
 {% endfor %}
+
+{% if page.permalink == "/blog/" %}
+  </section>
+{% else %}
+  <a href="/blog" class="button">{% t home.blog.more %}</a>
+{% endif %}
