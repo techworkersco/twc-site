@@ -5,10 +5,6 @@ chapters:
     twitter: twcatx
     facebook: https://www.facebook.com/twcatx
     activity_level: inactive
-  - text: Brasil
-    icon: 🇧🇷
-    url: /pt/brasil
-    activity_level: inactive
   - text: Boston
     icon: 🇺🇸
     twitter: techworkersBOS
@@ -98,4 +94,3 @@ chapters:
     twitter: nederlandtwc
     activity_level: active
     url: https://techwerkers.nl/
-

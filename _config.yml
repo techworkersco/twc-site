@@ -24,15 +24,14 @@ timezone: "America/New_York"
 # Build settings
 plugins:
   - jekyll-feed
-  - jekyll-multiple-languages-plugin
 
 # jekyll-feed plugin
 feed:
+  posts_limit: 20
   collections:
     - events
     - blog
-  disable_in_development: true
-
+    
 jekyll_get_data:
   - data: berlin_press
     url: https://raw.githubusercontent.com/techworkersco/twc-site-berlin/develop/_data/press.yml
@@ -42,16 +41,12 @@ jekyll_get_data:
     url: https://techwerkers.nl/en/twc-global/index.yaml
 exclude:
   - .jekyll-cache/
-# also update index.md
-languages: ["en", "es", "fr", "it", "pt", "ru"]
 
 defaults:
   - scope:
       path: ""
       type: "pages"
     values:
-      # English only for regular pages
-      languages: ["en"]
       namespace: :title
   - scope:
       path: ""

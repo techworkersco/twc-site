@@ -23,7 +23,6 @@ gem 'tzinfo-data'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.11"
-   gem "jekyll-multiple-languages-plugin", github: "techworkersco/jekyll-i18n"
 end
 
 gem "webrick", "~> 1.7"

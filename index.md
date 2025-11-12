@@ -2,15 +2,14 @@
 layout: default
 namespace: home
 permalink: /
-languages: ["en", "es", "fr", "it", "pt", "ru"]
 ---
 
-<h1 class="leading-tight marg-b-2">{% t home.title %}</h1>
+<h1 class="leading-tight marg-b-2"><span class="red">Worker</span> power in the <span class="red">tech industry</span></h1>
 
 <div class="p-3 marg-b-2 secondaryBg">
-  <p>{% t home.summary %}</p>
-  <p>{% t home.who_we_are.description %}
-  {% t home.who_we_support.description %}</p>
+  <p>Guided by our vision for an inclusive & equitable tech industry, TWC organizes to build worker power through rank & file self-organization and education.</p>
+  <p>We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends.
+  We work in solidarity with existing movements towards social justice, workers' rights, and economic inclusion.</p>
   <p>We’re a democratically structured, all-volunteer, and worker-led organization.</p>
   <nav style="font-size: clamp(0.875rem, 0.7216rem + 0.6818vw, 1.25rem)">
     <ul>

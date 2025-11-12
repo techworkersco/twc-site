@@ -3,14 +3,18 @@ layout: page
 title: Job Board
 namespace: job-board
 permalink: /job-board/
-languages: ["en"]
 ---
 
-<h1 class="lh-tight marg-b-3 marg-t-2">{% t job_board.title %}</h1>
+<h1 class="lh-tight marg-b-3 marg-t-2">Job Board 🌹</h1>
 
-<p>{% t job_board.intro_to_unionized_workplaces %}</p>
+<p>
+  More and more tech-driven organizations are unionizing. This is an incomplete list of
+  workplaces with an active union. Some of these workplaces haven't recognized their
+  unions yet, or contracts have not been signed between the union and the workplace.
+  Know of another one? <a href="https://github.com/techworkersco/twc-site/tree/master/_workplaces">Please add it</a>.
+</p>
 
-<h2 class="marg-b-2">{% t job_board.workplaces %}</h2>
+<h2 class="marg-b-2">Active tech unions and campaigns</h2>
 <ul class="job-board">
   {% for workplace in site.data.workplaces %}
     <li>
@@ -40,7 +44,7 @@ languages: ["en"]
 
       <div class="flex">
         <a href="{{ workplace.job_listings }}" class="button">
-          {% t job_board.see_jobs %}
+          See all jobs
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
         </a>
       </div>
