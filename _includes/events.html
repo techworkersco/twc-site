@@ -8,7 +8,7 @@
   <h1>Events</h1>
   Explore all <b>{{ events.size }}</b> public events we organized
 {% else %}
-  <a href="/events">{% t home.events.more %}</a>
+  <a href="/events">Find more events</a>
 {% endif %}
 
 {% assign show_future_events_only = include.limit and future_events.size > 0 %}

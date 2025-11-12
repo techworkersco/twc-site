@@ -24,34 +24,29 @@ timezone: "America/New_York"
 # Build settings
 plugins:
   - jekyll-feed
-  - jekyll-multiple-languages-plugin
 
 # jekyll-feed plugin
 feed:
   collections:
     - events
-    - blog 
+    - blog
   disable_in_development: true
 
 jekyll_get_data:
   - data: berlin_press
-    url: https://raw.githubusercontent.com/techworkersco/twc-site-berlin/develop/_data/press.yml  
+    url: https://raw.githubusercontent.com/techworkersco/twc-site-berlin/develop/_data/press.yml
   - data: berlin_events
     url: https://techworkersberlin.com/events.yml
   - data: nl_events
-    url: https://techwerkers.nl/en/twc-global/index.yaml     
+    url: https://techwerkers.nl/en/twc-global/index.yaml
 exclude:
   - .jekyll-cache/
-# also update index.md
-languages: ["en", "es", "fr", "it", "pt", "ru"]
 
 defaults:
   - scope:
       path: ""
       type: "pages"
     values:
-      # English only for regular pages
-      languages: ["en"]
       namespace: :title
   - scope:
       path: ""
@@ -62,7 +57,7 @@ defaults:
       path: ""
       type: "blog"
     values:
-      layout: "newsletter"    
+      layout: "newsletter"
 
 permalink: pretty
 future: true
@@ -75,23 +70,23 @@ collections:
     permalink: events/:title/
 
 exclude_from_localizations: ["assets", "admin"]
-header_links: 
+header_links:
   - url: /subscribe
     text: Join
   - url: /events
     text: Events
   - url: /circuit-breakers
-    text: Circuit Breakers     
-  
+    text: Circuit Breakers
+
 links:
   - url: /subscribe
     text: Join
   - url: /circuit-breakers
-    text: Circuit Breakers  
+    text: Circuit Breakers
   - url: /events
-    text: Events  
+    text: Events
   - url: /blog
-    text: Blog  
+    text: Blog
   - url: /chapters
     text: Chapters
   - url: /community-guide

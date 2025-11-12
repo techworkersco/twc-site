@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Get involved
-languages: ['en']
 permalink: /get-involved
 ---
 

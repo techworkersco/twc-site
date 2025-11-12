@@ -4,9 +4,6 @@ chapters:
     twitter: twcatx
     facebook: https://www.facebook.com/twcatx
     activity_level: inactive
-  - text: Brasil
-    url: /pt/brasil
-    activity_level: inactive
   - text: Boston
     twitter: techworkersBOS
     activity_level: inactive
@@ -29,7 +26,7 @@ chapters:
     activity_level: inactive
   - text: North Carolina
     url: /north-carolina
-    activity_level: active  
+    activity_level: active
   - text: NYC
     url: /nyc
     twitter: techworkerscony
@@ -76,4 +73,3 @@ chapters:
     twitter: nederlandtwc
     activity_level: active
     url: https://techwerkers.nl/
-    

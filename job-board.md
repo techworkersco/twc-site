@@ -3,14 +3,20 @@ layout: page
 title: Job Board
 namespace: job-board
 permalink: /job-board/
-languages: ["en"]
 ---
 
-<h1 class="lh-tight marg-b-3 marg-t-2">{% t job_board.title %}</h1>
+<h1 class="lh-tight marg-b-3 marg-t-2">Job Board 🌹</h1>
 
-<h2 class="marg-b-4">{% t job_board.workplaces %}</h2>
+<h2 class="marg-b-4">Active tech unions and campaigns</h2>
 
-<p>{% t job_board.intro_to_unionized_workplaces %}</p>
+<p>
+  <p>
+  More and more tech-driven organizations are unionizing. This is an incomplete list of
+  workplaces with an active union. Some of these workplaces haven't recognized their
+  unions yet, or contracts have not been signed between the union and the workplace.
+  Know of another one? <a href="https://github.com/techworkersco/twc-site/tree/master/_workplaces">Please add it</a>.
+  </p>
+</p>
 
 {% for workplace in site.data.workplaces %}
 
@@ -22,8 +28,8 @@ languages: ["en"]
   {{content}}
 {% endif %}
 <p>
-{% if workplace.union_twitter %}<a href="https://twitter.com/{{ workplace.union_twitter }}">@{{ workplace.union_twitter }}</a>{% endif %} 
+{% if workplace.union_twitter %}<a href="https://twitter.com/{{ workplace.union_twitter }}">@{{ workplace.union_twitter }}</a>{% endif %}
 {% if workplace.union_website %}(<a href="{{ workplace.union_website }}">website</a>){% endif %}
 </p>
-<a href="{{ workplace.job_listings }}">{% t job_board.see_jobs %}&nbsp;></a>
+<a href="{{ workplace.job_listings }}">See all jobs&nbsp;></a>
 {% endfor %}
