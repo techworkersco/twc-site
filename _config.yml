@@ -27,11 +27,11 @@ plugins:
 
 # jekyll-feed plugin
 feed:
+  posts_limit: 20
   collections:
     - events
     - blog
-  disable_in_development: true
-
+    
 jekyll_get_data:
   - data: berlin_press
     url: https://raw.githubusercontent.com/techworkersco/twc-site-berlin/develop/_data/press.yml
