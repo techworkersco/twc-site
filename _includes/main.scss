@@ -898,14 +898,11 @@ a.button {
 
   @media (prefers-color-scheme: dark) {
     color: $white;
+    background: $black;
   }
   @media (prefers-color-scheme: light) {
     color: $black;
-  }
-
-  &.textual {
-    border: none;
-    padding: 0;
+    background: $white;
   }
 
   &:hover,
@@ -916,8 +913,8 @@ a.button {
   &.primary {
     border: none;
 
-    background: $black;
     color: $white;
+    background: $black;
 
     &:hover {
       background: $red;
@@ -1008,10 +1005,23 @@ section {
 
   &.twitter {
     width: 0.75em;
+
+    @media (prefers-color-scheme: light) {
+      color: #000000;
+    }
+  }
+
+  &.facebook {
+    @media (prefers-color-scheme: light) {
+      color: #0866FF;
+    }
   }
 
   &.meetup {
     width: 1.2em;
+    @media (prefers-color-scheme: light) {
+      color: #ED1C40;
+    }
   }
 }
 
@@ -1035,6 +1045,11 @@ section {
   h4,
   h5,
   h6 {
+    // todo(maximsmol): find a new font for headings that fits with the serif fonts
     font-family: $font-family-base;
   }
+}
+
+nav.see-more {
+  padding-bottom: 30px;
 }
