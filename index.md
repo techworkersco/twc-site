@@ -25,11 +25,6 @@ permalink: /
         Find a Local Chapter
       </a>
     </li>
-    <li class="hide-480vw">
-      <a href="mailto:hello@techworkerscoalition.org" class="button">
-        Email Us
-      </a>
-    </li>
   </ul>
 </nav>
 
