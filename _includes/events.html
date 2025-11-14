@@ -7,8 +7,6 @@
 {% if page.permalink == "/events/" %}
   <h1>Events</h1>
   Explore all <b>{{ events.size }}</b> public events we organized
-{% else %}
-  <a href="/events">Find more events</a>
 {% endif %}
 
 {% assign show_future_events_only = include.limit and future_events.size > 0 %}
@@ -44,7 +42,7 @@
     <div class="tab__content">
       {% assign render_year = current_year %}
     {% endif %}
-    
+
     {% include event-card.html %}
       {% comment %} Add closing div tags for very last event {% endcomment %}
       {% if forloop.last %}
@@ -52,4 +50,8 @@
     </div>
       {% endif %}
   {% endfor %}
+{% endif %}
+
+{% if page.permalink != "/events/" %}
+<a href="/events" class="button">Find more events</a>
 {% endif %}

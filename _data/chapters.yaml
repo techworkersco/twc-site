@@ -1,75 +1,96 @@
 chapters:
   - text: Austin
+    icon: 🇺🇸
     url: /austin
     twitter: twcatx
     facebook: https://www.facebook.com/twcatx
     activity_level: inactive
   - text: Boston
+    icon: 🇺🇸
     twitter: techworkersBOS
     activity_level: inactive
   - text: Canada
+    icon: 🇨🇦
     url: /canada
     activity_level: active
   - text: Chicago
+    icon: 🇺🇸
     url: /chicago
     activity_level: active
   - text: DC
+    icon: 🇺🇸
     url: /dc
     twitter: dctechworkers
     facebook: https://www.facebook.com/DC-Tech-Workers-Coalition-338770966854335/
     activity_level: active
   - text: Denver
+    icon: 🇺🇸
     twitter: twc_den
     activity_level: inactive
   - text: Los Angeles
+    icon: 🇺🇸
     twitter: TWC_LosAngeles
     activity_level: inactive
   - text: North Carolina
+    icon: 🇺🇸
     url: /north-carolina
     activity_level: active
   - text: NYC
+    icon: 🗽
     url: /nyc
     twitter: techworkerscony
     meetup: Tech-Workers-Coalition-NYC/
     activity_level: active
   - text: Portland
+    icon: 🇺🇸
     url: /pdx
     activity_level: active
   - text: San Diego
+    icon: 🇺🇸
     twitter: twcsandiego
     activity_level: active
   - text: San Jose
+    icon: 🇺🇸
     twitter: twc_sanjose
     activity_level: inactive
   - text: Seattle
+    icon: 🇺🇸
     url: /seattle
     activity_level: active
   - text: SF Bay Area
+    icon: 🌉
     url: /bay-area
     activity_level: active
   - text: South Florida
+    icon: 🇺🇸
     activity_level: inactive
   - text: Bangalore
+    icon: 🇮🇳
     twitter: TechiesSpeakUp
     url: https://twitter.com/twc_bangalore
     activity_level: inactive
   - text: Berlin
+    icon: 🇩🇪
     twitter: TechWorkersBER
     url: https://techworkersberlin.com/
     activity_level: active
   - text: Dublin
+    icon: 🇮🇪
     activity_level: inactive
   - text: London
+    icon: 🇬🇧
     twitter: TechWorkersLDN
     facebook: https://www.facebook.com/TechWorkersLDN
     url: /london
     activity_level: inactive
   - text: Italia
+    icon: 🇮🇹
     twitter: twcitalia
     facebook: https://www.facebook.com/twcita
     url: https://twc-italia.org
     activity_level: active
   - text: Netherlands
+    icon: 🇳🇱
     twitter: nederlandtwc
     activity_level: active
     url: https://techwerkers.nl/

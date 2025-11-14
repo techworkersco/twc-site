@@ -1,11 +1,15 @@
 ---
 layout: default
 ---
-<a href="/blog">Blog archive</a>
+<nav class="see-more">
+    <a href="/blog" class="button primary">
+        See more blog posts
+    </a>
+</nav>
 
 <article>
-    {% include post_entry.html post_entry=page display_excerpt=false %}
-    <div class="mt-4 mb-4">
+    {% include post_entry.html post_entry=page %}
+    <div class="blog-content">
         {{ content }}
     </div>
 </article>

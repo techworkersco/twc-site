@@ -2,14 +2,18 @@
 layout: default
 ---
 <style>h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}</style>
+
+<nav class="see-more">
+  <a href="/events" class="button primary">Find more events</a>
+</nav>
+
 <article class="post">
-  <a href="/events">Find more events</a>
   <h1 class="post-title">{{ page.title | escape }}</h1>
   <div class="post-content">
     <div class="event-time">
       📆 <a target="_blank" href="{{ page.date | time_converter_url}}">{{ page.date | all_time_zones: page.time_zones }}</a>
     </div>
-    
+
     {{ content }}
   </div>
 </article>

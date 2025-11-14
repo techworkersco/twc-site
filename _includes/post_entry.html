@@ -1,8 +1,6 @@
 {% assign post_entry = include.post_entry %}
 
-<h2>
-    <a href="{{ post_entry.url }}">{{ post_entry.title }}</a>
-</h2>
+<h2 class="blog-header">{{ post_entry.title }}</h2>
 
 {% assign latest_post = site.blog.first %}
 {% assign is_latest = false %}
@@ -13,13 +11,8 @@
     {% endunless %}
 {% endif %}
 
-<time datetime="{{ post.date '%-d %B %Y'}}">
-    {{ post.date | date: '%-d %B %Y'}}
-</time>
-
-{% if include.display_excerpt %}
-<div>
-    {{ post_entry.excerpt }}
-    <p class=""><a href="{{ post_entry.url }}"><i>Continue reading&hellip;</i></a></p>
-</div>
+{% if page.date != null %}
+    <time datetime="{{ page.date '%-d %B %Y'}}">
+        {{ page.date | date: '%-d %B %Y'}}
+    </time>
 {% endif %}

@@ -51,7 +51,7 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
       {% endfor %}
     </select>
   </label>
-  <label class="marg-b-3" for="wants-outreach">
+  <label class="marg-b-3" for="outreach">
     <input id="outreach" type="checkbox" name="outreach" value="wants-outreach" style="margin-right: 8px;">
     <b>Are you interested in 1:1 outreach from someone in TWC?</b> (optional)
   </label>
