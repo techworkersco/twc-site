@@ -15,9 +15,21 @@ permalink: /
 </div>
 <nav style="font-size: clamp(0.875rem, 0.7216rem + 0.6818vw, 1.25rem)">
   <ul>
-    <li><a href="/subscribe" class="button primary">Get Involved</a></li>
-    <li><a href="/chapters" class="button">Find a Local Chapter</a></li>
-    <li><a href="mailto:hello@techworkerscoalition.org" class="button">Email Us</a></li>
+    <li>
+      <a href="/subscribe" class="button primary">
+        Get Involved
+      </a>
+    </li>
+    <li>
+      <a href="/chapters" class="button">
+        Find a Local Chapter
+      </a>
+    </li>
+    <li class="hide-480vw">
+      <a href="mailto:hello@techworkerscoalition.org" class="button">
+        Email Us
+      </a>
+    </li>
   </ul>
 </nav>
 
@@ -33,5 +45,6 @@ permalink: /
   <h2>TWC in the Press</h2>
   {% include press.html limit=2%}
 
-  <a href="/press" class="button">See more press mentions</a>
+<a href="/press" class="button">See more press mentions</a>
+
 </section>
