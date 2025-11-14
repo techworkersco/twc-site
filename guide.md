@@ -7,7 +7,6 @@ permalink_pt: /guia-da-comunidade/
 ---
 
 [Our Values and Code of Conduct](#our-values)<br>
-[Projects](#projects)<br>
 [Slack](#slack)<br>
 [Document History](#document-history)
 
@@ -63,15 +62,7 @@ While in practice most actions from moderators and administrators will be friend
 
 TWC participants should be mindful of what they write and say in public TWC meetings and in pseudo-public channels like Slack. Be aware that Slack maintains records of our conversations indefinitely. Do not say anything in a non-private channel that you do not want becoming public. Participants should also be aware that members of the press may be present or in Slack channels. While we ask them to keep what they read and hear off the record, we cannot control what they publish.
 
-##<a id="projects" href="#projects">Projects</a>
-
-We organize much of our efforts and organization in projects. Projects are organized by one or two individuals who are responsible for being a point of contact to the broader organization, and reporting back to the larger group during our organizational meetings.
-
-Projects are a touchstone for new members who want to participate, and we encourage project teams to reach out to new participants.
-
-Projects should form their own topics within Slack. Many start with the prefix _#proj-_. See [Project/Discussion Channels](#slack).
-
-## Slack <a id="slack" href="#slack">Slack</a>
+## <a id="slack" href="#slack">Slack</a>
 
 ### Etiquette
 
@@ -88,4 +79,3 @@ Projects should form their own topics within Slack. Many start with the prefix _
 - _2017-02-26: Initial draft, Steering committee_
 
 _Thank you to those we extrapolated from: codes of conduct and community guidelines from Learning Gardens, Fog City Ruby, Techqueria, and GoBridge_
-s
