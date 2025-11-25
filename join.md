@@ -53,7 +53,7 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
   </label>
   <label class="marg-b-3" for="is-manager">
     <input id="is-manager" type="checkbox" name="is-manager" value="yes" style="margin-right: 8px;">
-    <b>Are you a manager with hiring or firing power?</b>
+    <b>Are you a manager with hiring or firing power? Note: for security reasons, managers won't be added to our internal channels.</b>
   </label>
   <label class="marg-b-3" for="outreach">
     <input id="outreach" type="checkbox" name="outreach" value="wants-outreach" style="margin-right: 8px;">
