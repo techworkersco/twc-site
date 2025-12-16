@@ -451,7 +451,38 @@ h3 {
 
 form {
   border-radius: 4px;
-  padding: 1rem;
+  padding: 0 1.5rem 1rem 1.5rem;
+  margin: auto;
+
+  label {
+    margin: 0;
+    width: 100%;
+
+    div, input::placeholder {
+      padding-top: 1rem;
+      padding-bottom: 2px;
+      margin-left: 5px;
+    }
+
+    input::placeholder {
+      text-align: center;
+    }
+  }
+  
+  input, select[name=nearby-chapter] {
+    &:focus{
+      outline: none;
+      border: 1px solid $red;
+    } 
+  }
+  
+  input, select[name=nearby-chapter], input[type=submit] {
+    width: 100%;
+    
+    &#outreach {
+      width: 1rem;
+    }
+  }
 }
 
 label {
@@ -499,13 +530,12 @@ label {
   }
 }
 
-input[type="email"],
-input[type="text"],
-input[type="url"],
+input[type=email],
+input[type=text],
+input[type=url],
 select {
   border: 1px solid;
   border-radius: 4px;
-  color: $grey;
   padding: 0.75rem;
 
   @include mobile {
@@ -514,12 +544,11 @@ select {
   }
 }
 
-input[type="submit"],
+input[type=submit],
 .pagination {
   border-radius: 4px;
   border: 0;
   font-weight: 500;
-  margin-top: 20px;
   padding: 10px 20px;
 }
 
@@ -642,7 +671,7 @@ hr {
   form {
     background-color: $grey3;
   }
-  input[type="submit"] {
+  input[type=submit] {
     background: $grey2;
     color: $white;
 
@@ -650,11 +679,12 @@ hr {
       background-color: $red;
     }
   }
-  input[type="email"],
-  input[type="text"],
-  input[type="url"],
+  input[type=email],
+  input[type=text],
+  input[type=url],
   select {
-    border-color: #ccc;
+    color: $grey;
+    border-color: $black;
   }
   .primaryBg {
     background-color: $white;
@@ -708,7 +738,7 @@ hr {
   hr {
     border-bottom: 1px solid $grey;
   }
-  input[type="submit"] {
+  input[type=submit] {
     background-color: $red;
     color: $white;
 
@@ -716,9 +746,9 @@ hr {
       background-color: $grey2;
     }
   }
-  input[type="email"],
-  input[type="text"],
-  input[type="url"],
+  input[type=email],
+  input[type=text],
+  input[type=url],
   select {
     background: $grey2;
     border-color: transparent;
