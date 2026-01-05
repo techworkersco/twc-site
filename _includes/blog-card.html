@@ -1,16 +1,16 @@
 {% assign foundImage = 0 %}
 {% assign altText = "None available" %}   
-  {% if include.blog.image && include.blog.image.file %}
-    {% capture foundImage %} src="{{include.blog.image.file}}" {% endcapture %}
-    {% assign altText = include.blog.image.alt %}  
-  {% elsif include.blog.image %}
-    {% capture foundImage %} src="{{include.blog.image}}" {% endcapture %} 
+  {% if include.blog.data.image and include.blog.data.image.file %}
+    {% capture foundImage %} src="{{include.blog.data.image.file}}" {% endcapture %}
+    {% assign altText = include.blog.data.image.alt %}  
+  {% elsif include.blog.data.image %}
+    {% capture foundImage %} src="{{include.blog.data.image}}" {% endcapture %} 
   {% else %}  
     {% assign html_blocks = include.blog.content | split:"<img " %}
     {% for image in html_blocks %}
       {% if image contains 'src' %}
         {% if foundImage == 0 %}
-          {% assign tags = image | split:"/>" | first | | split:" " %}
+          {% assign tags = image | split:"/>" | first | split:" " %}
           {% for tag in tags %}
             {% if tag contains 'src' %}
               {% assign foundImage = tag %}
@@ -32,11 +32,11 @@
     </div>  
   {% endif %}
   <div>
-    <time datetime="{{ include.blog.date '%-d %B %Y'}}">
+    <time datetime="{{ include.blog.date | date: '%Y-%m-%d %H:%M:%S %z'}}">
       {{ include.blog.date | date: '%-d %B %Y'}}
     </time>
     <h3>
-      <a href="{{ include.blog.url }}">{{ include.blog.title }}</a> 
+      <a href="{{ include.blog.url }}">{{ include.blog.data.title }}</a> 
     </h3>
     <p class="tablet-hide">{{ include.blog.content | strip_html | truncatewords: 25 }}</p>
   </div>  

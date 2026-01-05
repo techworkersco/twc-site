@@ -1,6 +1,6 @@
 {% assign post_entry = include.post_entry %}
 
-<h2 class="blog-header">{{ post_entry.title }}</h2>
+<h2 class="blog-header">{{ title }}</h2>
 
 {% assign latest_post = site.blog.first %}
 {% assign is_latest = false %}
@@ -12,7 +12,8 @@
 {% endif %}
 
 {% if page.date != null %}
-    <time datetime="{{ page.date '%-d %B %Y'}}">
-        {{ page.date | date: '%-d %B %Y'}}
+    <time datetime="{{ date | date: '%Y-%m-%d %H:%M:%S %z' }}">
+        {{ date | date: '%-d %B %Y'}}
     </time>
 {% endif %}
+

@@ -1,0 +1,3 @@
+patchedDependencies:
+  liquidjs: patches/liquidjs.patch
+  # todo(maximsmol): rewrite in sources and remove?
