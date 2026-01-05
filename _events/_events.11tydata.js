@@ -2,8 +2,6 @@ import path from "node:path";
 
 import { DateTime } from "luxon";
 
-const dateRe = /^(\d{4})-(\d{2})-(\d{2})-.*$/;
-
 export default {
   tags: ["events"],
   layout: "event",

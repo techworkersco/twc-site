@@ -22,6 +22,8 @@ export default (cfg) => {
 
   cfg.setLayoutsDirectory("_layouts");
   cfg.addPassthroughCopy("assets");
+  cfg.addPassthroughCopy("circuit-breakers");
+  cfg.ignores.add("circuit-breakers");
 
   cfg.setLiquidOptions({
     jekyllInclude: true, // todo(maximsmol): rewrite to new syntax?
@@ -85,7 +87,7 @@ export default (cfg) => {
 
   cfg.htmlTransformer.setPosthtmlProcessOptions({
     // closingSingleTag: "slash",
-    recognizeNoValueAttribute: true,
+    // recognizeNoValueAttribute: true,
   }); // todo(maximsmol): remove
   cfg.addFilter("absolute_url", function (x) {
     return new URL(x, baseUrl).href;
