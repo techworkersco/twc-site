@@ -8,7 +8,7 @@
     {% for image in html_blocks %}
       {% if image contains 'src' %}
         {% if foundImage == 0 %}
-          {% assign tags = image | split:"/>" | first | | split:" " %}
+          {% assign tags = image | split:"/>" | first | split:" " %}
           {% for tag in tags %}
             {% if tag contains 'src' %}
               {% assign foundImage = tag %}
@@ -45,7 +45,7 @@
       <h3>
         <a href="{{ event.url }}">{{ event.title }}</a> 
       </h3>
-      📆 <time datetime="{{ event.date }}">
+      📆 <time datetime="{{ event.date | date: '%Y-%m-%d %H:%M:%S %z' }}">
         {{ event.date | all_time_zones: event.time_zones }}
       </time><br>
       📍 {% include locations.html%}

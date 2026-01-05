@@ -50,6 +50,7 @@ export default (cfg) => {
         parser: "html",
       });
     } catch (error) {
+      console.log(`!!! Prettier failed: ${this.page.inputPath} (${error})`);
       return x;
     }
   });
@@ -75,6 +76,11 @@ export default (cfg) => {
         return cur.toFormat("dd LLLL yyyy – H:mm ZZZZ");
       })
       .join(", ");
+  });
+  cfg.addFilter("relative_day_of_month", function (x, timezones) {
+    if (timezones == null) timezones = [timeZone];
+    const dt = DateTime.fromJSDate(x);
+    return dt.setZone(timezones[0]).toFormat("dd");
   });
 
   cfg.htmlTransformer.setPosthtmlProcessOptions({
@@ -146,8 +152,9 @@ export default (cfg) => {
   );
 
   cfg.addGlobalData("eleventyComputed.site", (a) => (data) => ({
-    // ...data.collections,
+    ...data.collections, // todo(maximsmol): fix in source code
     // time: new Date(),
+    time: new Date("2026-01-01 00:00:00 -07:00"), // todo(maximsmol): remove, for diffing
     title: "Tech Workers Coalition",
     description:
       "A coalition of tech industry workers, labor organizers, community organizers, and friends cultivating solidarity among all workers in tech.",
