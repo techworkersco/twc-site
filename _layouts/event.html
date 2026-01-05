@@ -8,7 +8,7 @@ layout: default
 </nav>
 
 <article class="post">
-  <h1 class="post-title">{{ page.title | escape }}</h1>
+  <h1 class="post-title">{{ title | escape }}</h1>
   <div class="post-content">
     <div class="event-time">
       📆 <a target="_blank" href="{{ page.date | time_converter_url}}">{{ page.date | all_time_zones: page.time_zones }}</a>

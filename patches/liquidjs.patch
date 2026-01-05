@@ -1,0 +1,13 @@
+diff --git a/dist/liquid.node.js b/dist/liquid.node.js
+index 42b42e90385e939726d6959823aeaf2ce0671a6b..4f6ae14131fc40915607fff5811db83ad2f8300c 100644
+--- a/dist/liquid.node.js
++++ b/dist/liquid.node.js
+@@ -2202,7 +2202,7 @@ class Tokenizer {
+     }
+     *readFileNameTemplate(options) {
+         const { outputDelimiterLeft } = options;
+-        const htmlStopStrings = [',', ' ', outputDelimiterLeft];
++        const htmlStopStrings = [',', ' ', '\n', outputDelimiterLeft];
+         const htmlStopStringSet = new Set(htmlStopStrings);
+         // break on ',' and ' ', outputDelimiterLeft only stops HTML token
+         while (this.p < this.N && !htmlStopStringSet.has(this.peek())) {

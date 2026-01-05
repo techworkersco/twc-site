@@ -9,3 +9,6 @@ _site
 .jekyll-cache/
 .bundle/
 vendor/
+
+_site_jekyll*
+node_modules
