@@ -4,6 +4,7 @@ import memoize from "memoize";
 import * as sass from "sass";
 import { IdAttributePlugin } from "@11ty/eleventy";
 import markdownIt from "markdown-it";
+import markdownItAnchor from "markdown-it-anchor";
 import prettier from "prettier";
 
 const baseUrl = "https://techworkerscoalition.org";
@@ -15,6 +16,13 @@ const ampmZones = new Set([
   "US/Central",
   "US/Mountain",
 ]);
+
+// https://github.com/jekyll/jekyll/blob/ebe567c1d2efd94f2752acbe9cc2156671747aa1/lib/jekyll/utils.rb#L202
+const slugify = (x) =>
+  x
+    .replace(/[^\p{M}\p{L}\p{Nd}]+/gu, "-")
+    // .replace(/^-|-$/i, "") // apparently we don't do this?
+    .toLowerCase();
 
 export default (cfg) => {
   cfg.ignores.add("_site_jekyll"); // todo(maximsmol): remove before merging
@@ -34,7 +42,7 @@ export default (cfg) => {
     markdownIt({
       html: true,
       typographer: true,
-    }),
+    }).use(markdownItAnchor, { tabIndex: false, slugify }),
   );
   // cfg.configureErrorReporting({ allowMissingExtensions: true });
 
