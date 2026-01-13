@@ -27,29 +27,30 @@
     {% include event-card.html %}
   {% endfor %}
 <h2>Past events</h2>
-  {% for event in past_events reversed limit: include.limit %}
-    {% assign current_year = event.date | date: "%Y" %}
-    {% if current_year != render_year %}
+  {%- for event in past_events reversed limit: include.limit -%}
+    {%- assign current_year = event.date | date: "%Y" -%}
+    {%- if current_year != render_year -%}
       {% comment %} Add closing div tags except for current year {% endcomment %}
-      {% unless current_year == latest_year %}
+      {%- if render_year -%}
           </div>
         </div>
-      {% endunless %}
-  {% comment %} HTML whitespace issues is why it's indented in weird way. Create H2 tags for each year {% endcomment %}
-  <div class="tab">
-    <input type="checkbox" name="accordion-1" id="year-{{ current_year }}">
-    <label for="year-{{ current_year }}" class="tab__label"><h3>{{ current_year }}</h3></label>
-    <div class="tab__content">
-      {% assign render_year = current_year %}
-    {% endif %}
+      {%- endif -%}
+      {% comment %} HTML whitespace issues is why it's indented in weird way. Create H2 tags for each year {% endcomment %}
+      <div class="tab">
+        <input type="checkbox" name="accordion-1" id="year-{{ current_year }}">
+        <label for="year-{{ current_year }}" class="tab__label"><h3>{{ current_year }}</h3></label>
+        <div class="tab__content">
+          {%- assign render_year = current_year -%}
+    {%- endif -%}
 
     {% include event-card.html %}
-      {% comment %} Add closing div tags for very last event {% endcomment %}
-      {% if forloop.last %}
+    
+    {%- comment -%} Add closing div tags for very last event {%- endcomment -%}
+    {%- if forloop.last -%}
         </div>
-    </div>
-      {% endif %}
-  {% endfor %}
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
 {% endif %}
 
 {% if page.permalink != "/events/" %}

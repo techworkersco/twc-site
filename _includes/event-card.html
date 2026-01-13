@@ -1,30 +1,30 @@
   
   <article class="card-preview">
-  {% assign foundImage = 0 %}  
-  {% if event.image %}
-    {% capture foundImage %} src="{{event.image}}" {% endcapture %}
-  {% else %}  
-    {% assign html_blocks = event.content | split:"<img " %}
-    {% for image in html_blocks %}
-      {% if image contains 'src' %}
-        {% if foundImage == 0 %}
-          {% assign tags = image | split:"/>" | first | split:" " %}
-          {% for tag in tags %}
-            {% if tag contains 'src' %}
-              {% assign foundImage = tag %}
-            {% endif %}
-          {% endfor %}
-        {% endif %} 
-      {% endif %}
-    {% endfor %}
-  {% endif %}  
-
-    {% if foundImage != 0 %}
+  {%- assign foundImage = 0 -%}  
+  {%- if event.image -%}
+    {%- capture foundImage -%} src="{{event.image}}" {%- endcapture -%}
+  {%- else -%}  
+    {%- assign html_blocks = event.content | split:"<img " -%}
+    {%- for image in html_blocks -%}
+      {%- if image contains 'src' -%}
+        {%- if foundImage == 0 -%}
+          {%- assign tags = image | split:"/>" | first | split:" " -%}
+          {%- for tag in tags -%}
+            {%- if tag contains 'src' -%}
+              {%- assign foundImage = tag -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%} 
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}  
+ 
+   {%- if foundImage != 0 -%}
       <img
       {{foundImage}}
       alt=""
     />
-    {% else %}
+    {%- else -%}
       <div class="icon">  
         <svg
         focusable="false"
@@ -40,7 +40,7 @@
           <text transform="matrix(1 0 0 1 5.3281 19.1641)" fill="#F60933" class="st0 st1">{{ event.date | relative_day_of_month: event.time_zones }}</text>
         </svg>
       </div>
-    {% endif %}    
+    {%- endif -%}    
     <div>
       <h3>
         <a href="{{ event.url }}">{{ event.title }}</a> 

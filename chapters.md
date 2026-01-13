@@ -9,18 +9,18 @@ permalink: /chapters/
 {% for level in activity_levels %}
 
   <section>
-    {% if level == "inactive" %}
+    {%- if level == "inactive" -%}
       <h2>Inactive and former chapters</h2>
-    {% else %}
+    {%- else -%}
       <h2>Active chapters</h2>
-    {% endif %}
+    {%- endif -%}
 
-    {% assign chapters = site.data.chapters.chapters | where:"activity_level",level | sort: "text" %}
+    {%- assign chapters = site.data.chapters.chapters | where:"activity_level",level | sort: "text" -%}
 
     <!-- todo(maximsmol): add an info blurb and/or an image for each chapter -->
     <!-- todo(maximsmol): add more social links -->
     <ul class="chapter-list">
-      {% for chapter in chapters %}
+      {%- for chapter in chapters -%}
         <li>
           <span>{{chapter.icon}}</span>
 
@@ -50,7 +50,7 @@ permalink: /chapters/
             </a>
           {% endif %}
         </li>
-      {% endfor %}
+      {%- endfor -%}
     </ul>
 
   </section>

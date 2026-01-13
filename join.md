@@ -46,9 +46,9 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
       <option value="">Select a chapter</option>
       <option value="want-to-start">I want to help start a chapter</option>
       {% assign active_chapters = site.data.chapters.chapters | where_exp:"chapter", "chapter.activity_level == 'active' or chapter.activity_level == 'semiactive'" | sort: "text" %}
-      {% for chapter in active_chapters %}
+      {%- for chapter in active_chapters -%}
       <option value="{{chapter.text | replace: ' ', '-' | downcase }}">{{chapter.text}}</option>
-      {% endfor %}
+      {%- endfor -%}
     </select>
   </label>
   <label class="marg-b-3" for="outreach">

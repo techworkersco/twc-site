@@ -21,16 +21,16 @@
     {% endfor %}
   {% endif %} 
 <article class="card-preview">
-  {% if foundImage != 0 %}
+  {%- if foundImage != 0 -%}
       <img
       {{foundImage}}
       alt="{{altText}}"
     />
-  {% else %}
+  {%- else -%}
     <div class="icon">
       {% include icons/newspaper.html %}
     </div>  
-  {% endif %}
+  {%- endif -%}
   <div>
     <time datetime="{{ include.blog.date | date: '%Y-%m-%d %H:%M:%S %z'}}">
       {{ include.blog.date | date: '%-d %B %Y'}}
