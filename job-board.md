@@ -16,32 +16,30 @@ permalink: /job-board/
 
 <h2 class="marg-b-2">Active tech unions and campaigns</h2>
 <ul class="job-board">
-  {% for workplace in site.data.workplaces %}
+  {%- for workplace in site.data.workplaces -%}
     <li>
       <h3>
         {{ workplace.organization }}
-        {% if workplace.division %}
+        {%- if workplace.division -%}
           - {{workplace.division }}
-        {% endif %}
+        {%- endif -%}
       </h3>
-
       <div><strong>✊ Union:</strong> {{ workplace.union }}</div>
 
-      {% assign content = workplace.content | strip_newlines %}
-      {% if content != "" %}
+      {%- assign content = workplace.content | strip_newlines -%}
+      {%- if content != "" -%}
         {{content}}
-      {% endif %}
+      {%- endif -%}
 
       <p>
-        {% if workplace.union_twitter %}
+        {%- if workplace.union_twitter -%}
           <a href="https://twitter.com/{{ workplace.union_twitter }}">@{{ workplace.union_twitter }}</a>
-        {% endif %}
+        {%- endif -%}
 
-        {% if workplace.union_website %}
+        {%- if workplace.union_website -%}
           (<a href="{{ workplace.union_website }}">website</a>)
-        {% endif %}
+        {%- endif -%}
       </p>
-
       <div class="flex">
         <a href="{{ workplace.job_listings }}" class="button">
           See all jobs
@@ -49,5 +47,5 @@ permalink: /job-board/
         </a>
       </div>
     </li>
-  {% endfor %}
+  {%- endfor -%}
 </ul>

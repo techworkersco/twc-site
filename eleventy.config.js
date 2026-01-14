@@ -6,6 +6,7 @@ import { IdAttributePlugin } from "@11ty/eleventy";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
 import prettier from "prettier";
+import YAML from "yaml";
 
 const baseUrl = "https://techworkerscoalition.org";
 const timeZone = "America/New_York";
@@ -41,6 +42,9 @@ export default (cfg) => {
   cfg.addPassthroughCopy("assets");
   cfg.addPassthroughCopy("circuit-breakers");
   cfg.ignores.add("circuit-breakers");
+
+  cfg.addDataExtension("yml", YAML.parse);
+  cfg.addDataExtension("yaml", YAML.parse);
 
   cfg.setLiquidOptions({
     jekyllInclude: true, // todo(maximsmol): rewrite to new syntax?
@@ -124,9 +128,10 @@ export default (cfg) => {
       const res = cfg
         .getFilter("inputPathToUrl")
         .call(ctx.environments, this.path);
+
       if (res == null) throw new Error(`{% link ${this.path} %} not found`);
 
-      return res.url;
+      return res;
     },
   }));
 
@@ -197,13 +202,19 @@ export default (cfg) => {
       { url: "/press", text: "Press mentions" },
       { url: "/security", text: "Security Tips" },
     ],
-    // data: {
-    //   chapters: data.chapters,
-    //   press: data.press,
-    // },
+    data: {
+      chapters: data.chapters,
+      press: data.press,
+      workplaces: data.workplaces,
+    },
   }));
 };
 
+// fixme(maximsmol): blog excerpts
+// fixme(maximsmol): recent blog dates are wrong
+// fixme(maximsmol): event dates are wrong
+// todo(maximsmol): fix canonicals
+// todo(maximsmol): fix markdown anchor slugify
 // todo(maximsmol): import external events
 // todo(maximsmol): fix some quotation marks not getting smarty-panted
 // todo(maximsmol): fix bill-of-rights description
