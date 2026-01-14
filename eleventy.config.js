@@ -18,10 +18,19 @@ const ampmZones = new Set([
 ]);
 
 // https://github.com/jekyll/jekyll/blob/ebe567c1d2efd94f2752acbe9cc2156671747aa1/lib/jekyll/utils.rb#L202
-const slugify = (x) =>
+const slugifyJekyll = (x) =>
   x
     .replace(/[^\p{M}\p{L}\p{Nd}]+/gu, "-")
-    // .replace(/^-|-$/i, "") // apparently we don't do this?
+    .replace(/^-|-$/i, "")
+    .toLowerCase();
+
+// todo(maximsmol): this doesn't match for some reason
+// https://github.com/gettalong/kramdown/blob/fc051a9d93e4dc3ff05bf41b70a79297ebdb669f/lib/kramdown/converter/base.rb#L222
+const slugifyKramdown = (x) =>
+  x
+    .replace(/^[^a-zA-Z]+/g, "")
+    .replace(/[^a-zA-Z0-9 -]/g, "")
+    .replaceAll(" ", "-")
     .toLowerCase();
 
 export default (cfg) => {
@@ -42,10 +51,14 @@ export default (cfg) => {
     markdownIt({
       html: true,
       typographer: true,
-    }).use(markdownItAnchor, { tabIndex: false, slugify }),
+    }).use(markdownItAnchor, {
+      tabIndex: false,
+      slugify: slugifyJekyll,
+      // slugify: slugifyKramdown // todo(maximsmol): fix
+    }),
   );
-  // cfg.configureErrorReporting({ allowMissingExtensions: true });
 
+  // todo(maximsmol): switch to this?
   // cfg.addPlugin(IdAttributePlugin);
   cfg.setFrontMatterParsingOptions({
     excerpt: true,
@@ -93,10 +106,6 @@ export default (cfg) => {
     return dt.setZone(timezones[0]).toFormat("dd");
   });
 
-  cfg.htmlTransformer.setPosthtmlProcessOptions({
-    // closingSingleTag: "slash",
-    // recognizeNoValueAttribute: true,
-  }); // todo(maximsmol): remove
   cfg.addFilter("absolute_url", function (x) {
     return new URL(x, baseUrl).href;
   }); // todo(maximsmol): fix in sources
@@ -161,10 +170,15 @@ export default (cfg) => {
     }),
   );
 
+  cfg.addGlobalData(
+    "jekyll.environment",
+    process.env.CONTEXT === "production" ? "production" : "development",
+  );
   cfg.addGlobalData("eleventyComputed.site", (a) => (data) => ({
     ...data.collections, // todo(maximsmol): fix in source code
     // time: new Date(),
     time: new Date("2026-01-01 00:00:00 -07:00"), // todo(maximsmol): remove, for diffing
+    url: "https://techworkerscoalition.org",
     title: "Tech Workers Coalition",
     description:
       "A coalition of tech industry workers, labor organizers, community organizers, and friends cultivating solidarity among all workers in tech.",
@@ -189,3 +203,7 @@ export default (cfg) => {
     // },
   }));
 };
+
+// todo(maximsmol): import external events
+// todo(maximsmol): fix some quotation marks not getting smarty-panted
+// todo(maximsmol): fix bill-of-rights description
