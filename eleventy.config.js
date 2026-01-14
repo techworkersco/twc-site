@@ -34,6 +34,17 @@ const slugifyKramdown = (x) =>
     .replaceAll(" ", "-")
     .toLowerCase();
 
+const parseLooseDate = (x) => {
+  let dt = DateTime.fromJSDate(x);
+  if (!dt.isValid) dt = DateTime.fromISO(x, { setZone: true });
+  if (!dt.isValid)
+    dt = DateTime.fromFormat(x, "yyyy-MM-dd HH:mm:ss ZZ", { setZone: true });
+  if (!dt.isValid)
+    dt = DateTime.fromFormat(x, "yyyy-MM-dd HH:mm:ss ZZZ", { setZone: true });
+
+  return dt;
+};
+
 export default async (cfg) => {
   cfg.ignores.add("_site_jekyll"); // todo(maximsmol): remove before merging
   cfg.ignores.add("_site_jekyll_prettier"); // todo(maximsmol): remove before merging
@@ -49,7 +60,6 @@ export default async (cfg) => {
   cfg.setLiquidOptions({
     jekyllInclude: true, // todo(maximsmol): rewrite to new syntax?
     timezoneOffset: timeZone,
-    preserveTimezones: true,
   });
   cfg.setLibrary(
     "md",
@@ -84,36 +94,34 @@ export default async (cfg) => {
   });
 
   cfg.addFilter("time_converter_url", function (x) {
-    return `https://www.timeanddate.com/worldclock/converter.html?iso=${x.toISOString()}&p1=179&p2=224&p3=37`;
+    return `https://www.timeanddate.com/worldclock/converter.html?iso=${DateTime.fromJSDate(x).setZone("UTC").toFormat("yyyyMMdd'T'HHmmss")}&p1=179&p2=224&p3=37`;
   });
   cfg.addFilter("all_time_zones", function (x, timezones) {
-    let dt = DateTime.fromJSDate(x);
-
-    if (!dt.isValid) dt = DateTime.fromISO(x);
-    if (!dt.isValid) dt = DateTime.fromFormat(x, "yyyy-MM-dd HH:mm:ss ZZ");
-    if (!dt.isValid) dt = DateTime.fromFormat(x, "yyyy-MM-dd HH:mm:ss ZZZ");
-
+    const dt = parseLooseDate(x);
     if (!dt.isValid) throw new Error(`all_time_zones: invalid input: ${x}`);
 
     if (timezones == null) timezones = ["Europe/Berlin"];
 
-    return timezones
-      .map((tz) => {
-        const cur = dt.setZone(tz);
+    return (
+      dt.setZone(timezones[0]).toFormat("dd LLLL yyyy – ") +
+      timezones
+        .map((tz) => {
+          const cur = dt.setZone(tz);
 
-        if (ampmZones.has(tz))
-          return (
-            cur.toFormat("dd LLLL yyyy – h:mm") +
-            cur.toFormat("a").toLowerCase() +
-            cur.toFormat(" ZZZZ")
-          );
+          if (ampmZones.has(tz))
+            return (
+              cur.toFormat("h:mm") +
+              cur.toFormat("a").toLowerCase() +
+              cur.toFormat(" ZZZZ")
+            );
 
-        return cur
-          .toFormat("dd LLLL yyyy – H:mm ZZZZ")
-          .replace("GMT+1", "CET")
-          .replace("GMT+2", "CEST");
-      })
-      .join(", ");
+          return cur
+            .toFormat("HH:mm ZZZZ")
+            .replace("GMT+1", "CET")
+            .replace("GMT+2", "CEST");
+        })
+        .join(", ")
+    );
   });
   cfg.addFilter("relative_day_of_month", function (x, timezones) {
     if (timezones == null) timezones = [timeZone];
@@ -161,8 +169,6 @@ export default async (cfg) => {
     // res = DateTime.fromFormat(x, "yyyy-MM-dd hh:mm");
     else throw new Error(`Invalid date: ${x} in ${this.page.inputPath}`);
 
-    // console.log(this.page.inputPath, x, res);
-
     if (!res.isValid)
       throw new Error(
         `Invalid \`date\` value (${x}) is invalid for ${this.page.inputPath}: ${res.invalidReason}`,
@@ -186,12 +192,30 @@ export default async (cfg) => {
     }),
   );
 
-  // todo(maximsmol): do something about this?
+  // todo(maximsmol): do something about these?
   cfg.addFilter("where_future", function (xs, ts) {
-    return xs.filter((x) => new Date(x.date) >= new Date(ts));
+    const tsTime = new Date(ts).getTime();
+    return xs.filter((x) => new Date(x.date).getTime() >= tsTime);
   });
   cfg.addFilter("where_past", function (xs, ts) {
-    return xs.filter((x) => new Date(x.date) < new Date(ts));
+    const tsTime = new Date(ts).getTime();
+    return xs.filter((x) => new Date(x.date).getTime() < tsTime);
+  });
+  cfg.addFilter("date_sort", function (xs) {
+    return xs.sort(
+      (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
+    );
+  });
+  cfg.addFilter("date_or_utc", function (x, fmt) {
+    if (fmt !== "%Y-%m-%d %H:%M:%S %z")
+      throw new Error("date_or_utc: unexpected format");
+
+    if (typeof x === "string")
+      return parseLooseDate(x).toFormat("yyyy-MM-dd HH:mm:ss ZZZ");
+
+    return DateTime.fromJSDate(x)
+      .setZone("UTC")
+      .toFormat("yyyy-MM-dd HH:mm:ss 'UTC'");
   });
 
   const remoteDataSrcs = [
@@ -212,7 +236,11 @@ export default async (cfg) => {
   for (const x of remoteDataSrcs)
     deferred.push(
       (async () => {
-        const req = await fetch(x.url);
+        const req = await fetch(x.url, {
+          headers: {
+            "User-Agent": "twc-website/1.0",
+          },
+        });
         const data = YAML.parse(await req.text());
 
         console.log(`Fetched: ${x.data} from ${x.url}`);
