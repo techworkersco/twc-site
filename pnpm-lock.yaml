@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 patchedDependencies:
+  '@11ty/eleventy':
+    hash: 5610f774011c5a2d6f14c4b101b0083109f1f3d19bf4215398d85d7d3481260c
+    path: patches/@11ty__eleventy.patch
   liquidjs:
     hash: adad07cf7685c232b385a9d60c1b22e42c867e90dd2cef16240b5a6b75e45e1e
     path: patches/liquidjs.patch
@@ -15,7 +18,7 @@ importers:
     devDependencies:
       '@11ty/eleventy':
         specifier: ^3.1.2
-        version: 3.1.2
+        version: 3.1.2(patch_hash=5610f774011c5a2d6f14c4b101b0083109f1f3d19bf4215398d85d7d3481260c)
       luxon:
         specifier: ^3.7.2
         version: 3.7.2
@@ -761,7 +764,7 @@ snapshots:
 
   '@11ty/eleventy-utils@2.0.7': {}
 
-  '@11ty/eleventy@3.1.2':
+  '@11ty/eleventy@3.1.2(patch_hash=5610f774011c5a2d6f14c4b101b0083109f1f3d19bf4215398d85d7d3481260c)':
     dependencies:
       '@11ty/dependency-tree': 4.0.1
       '@11ty/dependency-tree-esm': 2.0.4

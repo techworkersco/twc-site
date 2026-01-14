@@ -1,0 +1,13 @@
+diff --git a/src/Template.js b/src/Template.js
+index 64c47095fabd8d3ffbc2f2645033cc98c01af275..7df540d75dcd80904873582f7f91bc788bb304ce 100755
+--- a/src/Template.js
++++ b/src/Template.js
+@@ -1160,7 +1160,7 @@ class Template extends TemplateContent {
+ 		if (filepathRegex !== null) {
+ 			// if multiple are found in the path, use the first one for the date
+ 			let dateObj = DateTime.fromISO(filepathRegex[1], {
+-				zone: "utc",
++				zone: "America/New_York",
+ 			}).toJSDate();
+ 			debug(
+ 				"getMappedDate: using filename regex time for %o of %o: %o",
