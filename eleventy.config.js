@@ -34,7 +34,7 @@ const slugifyKramdown = (x) =>
     .replaceAll(" ", "-")
     .toLowerCase();
 
-export default (cfg) => {
+export default async (cfg) => {
   cfg.ignores.add("_site_jekyll"); // todo(maximsmol): remove before merging
   cfg.ignores.add("_site_jekyll_prettier"); // todo(maximsmol): remove before merging
 
@@ -49,6 +49,7 @@ export default (cfg) => {
   cfg.setLiquidOptions({
     jekyllInclude: true, // todo(maximsmol): rewrite to new syntax?
     timezoneOffset: timeZone,
+    preserveTimezones: true,
   });
   cfg.setLibrary(
     "md",
@@ -86,7 +87,14 @@ export default (cfg) => {
     return `https://www.timeanddate.com/worldclock/converter.html?iso=${x.toISOString()}&p1=179&p2=224&p3=37`;
   });
   cfg.addFilter("all_time_zones", function (x, timezones) {
-    const dt = DateTime.fromJSDate(x);
+    let dt = DateTime.fromJSDate(x);
+
+    if (!dt.isValid) dt = DateTime.fromISO(x);
+    if (!dt.isValid) dt = DateTime.fromFormat(x, "yyyy-MM-dd HH:mm:ss ZZ");
+    if (!dt.isValid) dt = DateTime.fromFormat(x, "yyyy-MM-dd HH:mm:ss ZZZ");
+
+    if (!dt.isValid) throw new Error(`all_time_zones: invalid input: ${x}`);
+
     if (timezones == null) timezones = ["Europe/Berlin"];
 
     return timezones
@@ -100,7 +108,10 @@ export default (cfg) => {
             cur.toFormat(" ZZZZ")
           );
 
-        return cur.toFormat("dd LLLL yyyy – H:mm ZZZZ");
+        return cur
+          .toFormat("dd LLLL yyyy – H:mm ZZZZ")
+          .replace("GMT+1", "CET")
+          .replace("GMT+2", "CEST");
       })
       .join(", ");
   });
@@ -175,6 +186,42 @@ export default (cfg) => {
     }),
   );
 
+  // todo(maximsmol): do something about this?
+  cfg.addFilter("where_future", function (xs, ts) {
+    return xs.filter((x) => new Date(x.date) >= new Date(ts));
+  });
+  cfg.addFilter("where_past", function (xs, ts) {
+    return xs.filter((x) => new Date(x.date) < new Date(ts));
+  });
+
+  const remoteDataSrcs = [
+    {
+      data: "berlin_press",
+      url: "https://raw.githubusercontent.com/techworkersco/twc-site-berlin/develop/_data/press.yml",
+    },
+    {
+      data: "berlin_events",
+      url: "https://techworkersberlin.com/events.yml",
+    },
+    {
+      data: "nl_events",
+      url: "https://techwerkers.nl/en/twc-global/index.yaml",
+    },
+  ];
+  const deferred = [];
+  for (const x of remoteDataSrcs)
+    deferred.push(
+      (async () => {
+        const req = await fetch(x.url);
+        const data = YAML.parse(await req.text());
+
+        console.log(`Fetched: ${x.data} from ${x.url}`);
+
+        cfg.addGlobalData(x.data, data);
+      })(),
+    );
+  await Promise.all(deferred);
+
   cfg.addGlobalData(
     "jekyll.environment",
     process.env.CONTEXT === "production" ? "production" : "development",
@@ -206,6 +253,7 @@ export default (cfg) => {
       chapters: data.chapters,
       press: data.press,
       workplaces: data.workplaces,
+      ...Object.fromEntries(remoteDataSrcs.map((x) => [x.data, data[x.data]])),
     },
   }));
 };
