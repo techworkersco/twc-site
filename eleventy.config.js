@@ -158,17 +158,9 @@ export default async (cfg) => {
     // todo(maximsmol): fix in sources
     if (x == null) return;
 
-    let res;
-    if (x instanceof Date)
-      // res = DateTime.fromJSDate(x);
-      res = DateTime.fromJSDate(x, { zone: "utc" }).setZone(timeZone, {
-        keepLocalTime: true,
-      });
-    else if (typeof x === "string")
-      res = DateTime.fromFormat(x, "yyyy-MM-dd hh:mm", { zone: timeZone });
-    // res = DateTime.fromFormat(x, "yyyy-MM-dd hh:mm");
-    else throw new Error(`Invalid date: ${x} in ${this.page.inputPath}`);
+    if (x instanceof Date) return DateTime.fromJSDate(x);
 
+    const res = DateTime.fromFormat(x, "yyyy-MM-dd HH:mm", { zone: timeZone });
     if (!res.isValid)
       throw new Error(
         `Invalid \`date\` value (${x}) is invalid for ${this.page.inputPath}: ${res.invalidReason}`,

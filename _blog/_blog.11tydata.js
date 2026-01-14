@@ -9,8 +9,10 @@ export default {
   eleventyComputed: {
     date(data) {
       const {
-        page: { inputPath },
+        page: { inputPath, date },
       } = data;
+      if (date != null) return date;
+
       const parsed = path.parse(inputPath);
       const m = dateRe.exec(parsed.name);
       if (m == null)
