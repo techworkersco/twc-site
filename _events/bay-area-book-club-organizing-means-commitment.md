@@ -5,7 +5,7 @@ locations:
   - Bay Area
 time_zones:
   - US/Pacific
-image: /assets/img/glb.png
+image: ""
 ---
 We're kicking off the year with book club and will be getting together to discuss Grace Lee Boggs' revolutionary text Organizing Means Commitment. 6-7:30pm
 
