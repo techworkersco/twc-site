@@ -5,6 +5,7 @@ locations:
   - Bay Area
 time_zones:
   - US/Pacific
+image: /assets/img/btwag.png
 ---
 Bay Area Labor for Palestine, 7amleh and TWC will be hosting tech workers from across the industry for a forum examining Big Tech’s role in the genocide in Gaza - from the suppression of Palestinian voices on social media to direct investments in the war machine. Hear from tech workers who are organizing within and across their companies to challenge complicity, demand accountability, & take collective action for a free Palestine.
 
