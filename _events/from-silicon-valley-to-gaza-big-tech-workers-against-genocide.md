@@ -13,6 +13,8 @@ Bay Area Labor for Palestine, 7amleh and TWC will be hosting tech workers from a
 
 ⏰ 3:00-4:30 PM
 
-📍 East Bay DSA (1501 Harrison St, Oakland, CA 94612)
+📍 East Bay DSA (1610 Harrison St Suite D, Oakland, CA 94612)
 
 🌯 After the panel, we will head over to [Shawarmaji](https://www.google.com/url?q=https://share.google/09s7Vl0UE76NiEDWO&sa=D&source=calendar&usd=2&usg=AOvVaw1L0t3xh3vyH7yEd0wqQ2b3) for a social hangout from 5:00-6:30 PM.
+
+![](/assets/img/btwag.png)
