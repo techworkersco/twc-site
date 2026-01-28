@@ -7,9 +7,17 @@ import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
 import prettier from "prettier";
 import YAML from "yaml";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
 const baseUrl = "https://techworkerscoalition.org";
 const timeZone = "America/New_York";
+
+const site = {
+  title: "Tech Workers Coalition",
+  description:
+    "A coalition of tech industry workers, labor organizers, community organizers, and friends cultivating solidarity among all workers in tech.",
+  url: "https://techworkerscoalition.org",
+};
 
 const ampmZones = new Set([
   "US/Eastern",
@@ -51,6 +59,27 @@ export default async (cfg) => {
 
   cfg.addDataExtension("yml", YAML.parse);
   cfg.addDataExtension("yaml", YAML.parse);
+
+  const getRssConfig = (collection, name) => ({
+    type: "atom",
+    outputPath: `/feed/${collection}.xml`,
+    collection: {
+      name: collection,
+      limit: 20,
+    },
+    metadata: {
+      language: "en",
+      title: `${site.title} | ${name}`,
+      subtitle: site.description,
+      base: site.url,
+      author: {
+        name: "",
+      },
+    },
+  });
+
+  cfg.addPlugin(feedPlugin, getRssConfig("blog", "Blog"));
+  cfg.addPlugin(feedPlugin, getRssConfig("events", "Events"));
 
   cfg.setLiquidOptions({
     jekyllInclude: true, // todo(maximsmol): rewrite to new syntax?
@@ -246,10 +275,9 @@ export default async (cfg) => {
     ...data.collections, // todo(maximsmol): fix in source code
     // time: new Date(),
     time: new Date("2026-01-01 00:00:00 -07:00"), // todo(maximsmol): remove, for diffing
-    url: "https://techworkerscoalition.org",
-    title: "Tech Workers Coalition",
-    description:
-      "A coalition of tech industry workers, labor organizers, community organizers, and friends cultivating solidarity among all workers in tech.",
+    url: site.url,
+    title: site.title,
+    description: site.description,
     header_links: [
       { url: "/subscribe", text: "Join" },
       { url: "/events", text: "Events" },
