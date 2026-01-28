@@ -7,6 +7,8 @@ permalink: /bill-of-rights/
 
 Technology wields immense power. It fosters connection, creativity, and curiosity across the globe. Alongside the human connections fostered through tech, however, we see tech companies abusing privacy, reproducing inequality, surveilling already over-policed communities, exploiting workers and the environment, and stoking hatred and violence in our world. <b>It is vital that workers gain the ability to shape the products we build and the work we do.</b>
 
+<!--excerpt-->
+
 As tech workers, we represent a range of job roles, work environments, and salary levels. We are the creative, technology, academic, and office workers who deserve a say in the products and services we build. We are warehouse workers facing dangerously inadequate workplace safety protocols. We are customer service representatives squeezed to work more and more hours with insufficient pay and benefits. We are part time, gig and contract workers of all kinds who want to to protect our livelihoods in a highly competitive landscape.
 
 The Tech Workers’ Bill of Rights aims to protect and support everyone under the tech industry umbrella, no matter their job level or title, income, education, background or life experience. Additionally, in an industry where leadership is overwhelmingly homogenous, we strive to amplify the voices of the most vulnerable and oftentimes most invisible workers in this industry.

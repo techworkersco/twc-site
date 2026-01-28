@@ -55,16 +55,14 @@ export default async (cfg) => {
     jekyllInclude: true, // todo(maximsmol): rewrite to new syntax?
     timezoneOffset: timeZone,
   });
-  cfg.setLibrary(
-    "md",
-    markdownIt({
-      html: true,
-      typographer: true,
-    }).use(markdownItAnchor, {
-      tabIndex: false,
-      slugify: slugifyKramdown,
-    }),
-  );
+  const md = markdownIt({
+    html: true,
+    typographer: true,
+  }).use(markdownItAnchor, {
+    tabIndex: false,
+    slugify: slugifyKramdown,
+  });
+  cfg.setLibrary("md", md);
 
   // todo(maximsmol): switch to this?
   // cfg.addPlugin(IdAttributePlugin);
@@ -86,6 +84,10 @@ export default async (cfg) => {
     }
   });
 
+  cfg.addFilter("md", function (x) {
+    if (x == null) return x;
+    return md.render(x);
+  });
   cfg.addFilter("time_converter_url", function (x) {
     return `https://www.timeanddate.com/worldclock/converter.html?iso=${DateTime.fromJSDate(x).setZone("UTC").toFormat("yyyyMMdd'T'HHmmss")}&p1=179&p2=224&p3=37`;
   });

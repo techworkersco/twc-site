@@ -8,7 +8,7 @@
     and the page author prefers dark.
   -->
   <meta name="color-scheme" content="dark light">
-  <meta name="description" content="{{ data.page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="description" content="{{ page.excerpt | md | default: site.description | strip_html | normalize_whitespace | strip | truncate: 160 | escape }}">
   <meta http-equiv="Content-Security-Policy" content="base-uri 'none'; 
     connect-src 'self' https://www.googleapis.com https://actionnetwork.org; 
     default-src 'none'; 
