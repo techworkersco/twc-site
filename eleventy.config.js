@@ -51,6 +51,7 @@ export default async (cfg) => {
   cfg.ignores.add("_site_jekyll"); // todo(maximsmol): remove before merging
   cfg.ignores.add("_site_jekyll_prettier"); // todo(maximsmol): remove before merging
 
+  cfg.setLayoutsDirectory("admin");
   cfg.setLayoutsDirectory("_layouts");
   cfg.addPassthroughCopy("assets");
   cfg.addPassthroughCopy("netlify.toml");
