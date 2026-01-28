@@ -16,7 +16,7 @@
 
 {% comment %} Home page typically only shows upcoming events in different order...or most recent past events {% endcomment %}
 {% if show_future_events_only %}
-  <h2 class class="marg-b-2">Upcoming events</h2>
+  <h2 class="marg-b-2">Upcoming events</h2>
   {% for event in future_events limit: include.limit %}
     {% include event-card.html %}
   {% endfor %}

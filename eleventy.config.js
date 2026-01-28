@@ -45,6 +45,7 @@ export default async (cfg) => {
 
   cfg.setLayoutsDirectory("_layouts");
   cfg.addPassthroughCopy("assets");
+  cfg.addPassthroughCopy("netlify.toml");
   cfg.addPassthroughCopy("circuit-breakers");
   cfg.ignores.add("circuit-breakers");
 
