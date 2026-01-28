@@ -280,9 +280,7 @@ export default async (cfg) => {
 
 // fixme(maximsmol): blog excerpts
 // fixme(maximsmol): recent blog dates are wrong
-// fixme(maximsmol): event dates are wrong
 // todo(maximsmol): fix canonicals
 // todo(maximsmol): fix markdown anchor slugify
-// todo(maximsmol): import external events
 // todo(maximsmol): fix some quotation marks not getting smarty-panted
 // todo(maximsmol): fix bill-of-rights description
