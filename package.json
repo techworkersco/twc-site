@@ -10,8 +10,19 @@
 		"sass": "^1.97.1",
 		"yaml": "^2.8.2"
 	},
+	"pnpm": {
+		"overrides": {
+			"@sindresorhus/slugify": "^3.0.0"
+		},
+		"patchedDependencies": {
+			"liquidjs": "patches/liquidjs.patch",
+			"@11ty/eleventy": "patches/@11ty__eleventy.patch"
+		}
+	},
 	"scripts": {
 		"build": "pnpm exec eleventy",
-		"serve": "pnpm exec eleventy --serve"
+		"serve": "pnpm exec eleventy --serve",
+		"diff": "diff --ignore-space-change --minimal --ignore-blank-lines --recursive --new-file _site_jekyll_prettier _site > _site.diff",
+		"diff-filenames": "diff <(tree _site_jekyll) <(tree _site)"
 	}
 }

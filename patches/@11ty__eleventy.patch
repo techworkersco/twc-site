@@ -1,3 +1,15 @@
+diff --git a/src/Filters/Slugify.js b/src/Filters/Slugify.js
+index e84b42d1f2a7dc680f5666d7601def80b3dc3cdb..483b36cb6e3d6271f3cef1f0104307325df01479 100644
+--- a/src/Filters/Slugify.js
++++ b/src/Filters/Slugify.js
+@@ -7,6 +7,7 @@ export default function (str, options = {}) {
+ 			{
+ 				// lowercase: true, // default
+ 				decamelize: false,
++				transliterate: false,
+ 			},
+ 			options,
+ 		),
 diff --git a/src/Template.js b/src/Template.js
 index 64c47095fabd8d3ffbc2f2645033cc98c01af275..7df540d75dcd80904873582f7f91bc788bb304ce 100755
 --- a/src/Template.js

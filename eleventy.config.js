@@ -18,19 +18,13 @@ const ampmZones = new Set([
   "US/Mountain",
 ]);
 
-// https://github.com/jekyll/jekyll/blob/ebe567c1d2efd94f2752acbe9cc2156671747aa1/lib/jekyll/utils.rb#L202
-const slugifyJekyll = (x) =>
-  x
-    .replace(/[^\p{M}\p{L}\p{Nd}]+/gu, "-")
-    .replace(/^-|-$/i, "")
-    .toLowerCase();
-
-// todo(maximsmol): this doesn't match for some reason
 // https://github.com/gettalong/kramdown/blob/fc051a9d93e4dc3ff05bf41b70a79297ebdb669f/lib/kramdown/converter/base.rb#L222
+// modified to convert ASCII character classes to Unicode character properties
+// Ruby might be doing this implicitly? the generated slugs imperically match
 const slugifyKramdown = (x) =>
   x
-    .replace(/^[^a-zA-Z]+/g, "")
-    .replace(/[^a-zA-Z0-9 -]/g, "")
+    .replace(/^[^\p{L}]+/gu, "")
+    .replace(/[^\p{M}\p{L}\p{Nd} -]/gu, "")
     .replaceAll(" ", "-")
     .toLowerCase();
 
@@ -68,8 +62,7 @@ export default async (cfg) => {
       typographer: true,
     }).use(markdownItAnchor, {
       tabIndex: false,
-      slugify: slugifyJekyll,
-      // slugify: slugifyKramdown // todo(maximsmol): fix
+      slugify: slugifyKramdown,
     }),
   );
 

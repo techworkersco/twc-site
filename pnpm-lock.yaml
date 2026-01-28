@@ -4,9 +4,12 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  '@sindresorhus/slugify': ^3.0.0
+
 patchedDependencies:
   '@11ty/eleventy':
-    hash: 5610f774011c5a2d6f14c4b101b0083109f1f3d19bf4215398d85d7d3481260c
+    hash: 3903e831997ea5ad85d4915d3f9b8bf0de175133e1acba8d0327449adba7d836
     path: patches/@11ty__eleventy.patch
   liquidjs:
     hash: adad07cf7685c232b385a9d60c1b22e42c867e90dd2cef16240b5a6b75e45e1e
@@ -18,7 +21,7 @@ importers:
     devDependencies:
       '@11ty/eleventy':
         specifier: ^3.1.2
-        version: 3.1.2(patch_hash=5610f774011c5a2d6f14c4b101b0083109f1f3d19bf4215398d85d7d3481260c)
+        version: 3.1.2(patch_hash=3903e831997ea5ad85d4915d3f9b8bf0de175133e1acba8d0327449adba7d836)
       luxon:
         specifier: ^3.7.2
         version: 3.7.2
@@ -161,13 +164,13 @@ packages:
     resolution: {integrity: sha512-dfUnCxiN9H4ap84DvD2ubjw+3vUNpstxa0TneY/Paat8a3R4uQZDLSvWjmznAY/DoahqTHl9V46HF/Zs3F29pg==}
     engines: {node: '>= 10.0.0'}
 
-  '@sindresorhus/slugify@2.2.1':
-    resolution: {integrity: sha512-MkngSCRZ8JdSOCHRaYd+D01XhvU3Hjy6MGl06zhOk614hp9EOAp5gIkBeQg7wtmxpitU6eAL4kdiRMcJa2dlrw==}
-    engines: {node: '>=12'}
+  '@sindresorhus/slugify@3.0.0':
+    resolution: {integrity: sha512-SCrKh1zS96q+CuH5GumHcyQEVPsM4Ve8oE0E6tw7AAhGq50K8ojbTUOQnX/j9Mhcv/AXiIsbCfquovyGOo5fGw==}
+    engines: {node: '>=20'}
 
-  '@sindresorhus/transliterate@1.6.0':
-    resolution: {integrity: sha512-doH1gimEu3A46VX6aVxpHTeHrytJAG6HgdxntYnCFiIFHEM/ZGpG8KiZGBChchjQmG0XFIBL552kBTjVcMZXwQ==}
-    engines: {node: '>=12'}
+  '@sindresorhus/transliterate@2.3.1':
+    resolution: {integrity: sha512-gVaaGtKYMYAMmI8buULVH3A2TXVJ98QiwGwI7ddrWGuGidGC2uRt4FHs22+8iROJ0QTzju9CuMjlVsrvpqsdhA==}
+    engines: {node: '>=20'}
 
   '@types/linkify-it@5.0.0':
     resolution: {integrity: sha512-sVDA58zAw4eWAffKOaQH5/5j3XeayukzDk+ewSsnv3p4yJEZHCCzMDiZM8e0OUrRvmpGZ85jf4yDHkHsgBNr9Q==}
@@ -764,7 +767,7 @@ snapshots:
 
   '@11ty/eleventy-utils@2.0.7': {}
 
-  '@11ty/eleventy@3.1.2(patch_hash=5610f774011c5a2d6f14c4b101b0083109f1f3d19bf4215398d85d7d3481260c)':
+  '@11ty/eleventy@3.1.2(patch_hash=3903e831997ea5ad85d4915d3f9b8bf0de175133e1acba8d0327449adba7d836)':
     dependencies:
       '@11ty/dependency-tree': 4.0.1
       '@11ty/dependency-tree-esm': 2.0.4
@@ -774,7 +777,7 @@ snapshots:
       '@11ty/lodash-custom': 4.17.21
       '@11ty/posthtml-urls': 1.0.2
       '@11ty/recursive-copy': 4.0.3
-      '@sindresorhus/slugify': 2.2.1
+      '@sindresorhus/slugify': 3.0.0
       bcp-47-normalize: 2.3.0
       chokidar: 3.6.0
       debug: 4.4.3
@@ -881,14 +884,12 @@ snapshots:
       '@parcel/watcher-win32-x64': 2.5.1
     optional: true
 
-  '@sindresorhus/slugify@2.2.1':
+  '@sindresorhus/slugify@3.0.0':
     dependencies:
-      '@sindresorhus/transliterate': 1.6.0
+      '@sindresorhus/transliterate': 2.3.1
       escape-string-regexp: 5.0.0
 
-  '@sindresorhus/transliterate@1.6.0':
-    dependencies:
-      escape-string-regexp: 5.0.0
+  '@sindresorhus/transliterate@2.3.1': {}
 
   '@types/linkify-it@5.0.0': {}
 
