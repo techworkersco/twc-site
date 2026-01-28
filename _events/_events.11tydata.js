@@ -13,6 +13,11 @@ export default {
       data.page.date = res;
       return res;
     },
+    excerpt(data) {
+      const res = data.page.rawInput.trim().split("\n\n")[0];
+      data.page.excerpt = res;
+      return res;
+    },
   },
   permalink({ page: { inputPath } }) {
     const parsed = path.parse(inputPath);

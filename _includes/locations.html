@@ -1,4 +1,4 @@
 {%- assign locs = event.data.locations | default: event.locations -%}
 {%- for location in locs -%}
-    {{location}}{%- unless forloop.last -%} ·{%- endunless -%}
+    {{location}}{% unless forloop.last %} · {% endunless %}
 {%- endfor -%}

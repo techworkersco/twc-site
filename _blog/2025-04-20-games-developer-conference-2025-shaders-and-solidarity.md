@@ -1,8 +1,13 @@
 ---
 title: "Games Developer Conference 2025: Shaders and Solidarity"
 date: 2025-04-20T11:14:00.000Z
+image:
+  file: /assets/img/2025-04-20-blog-were-done-playing-group.jpg
+  alt: group photo and text we are done playing
 ---
 This year, over three days in late March, four members of TWC Bay Area attended the Game Developer Conference (GDC). Every year, GDC brings over 30,000 workers in the videogame industry to San Francsico to showcase the latest innovations and lead industry talks. We were there to observe and learn about organizing in the videogame industry, through worker-led panels and Communication Workers of America (CWA) organizers. CWA’s presence at GDC included over fifty organizers, a booth stuffed with [zines](https://drive.google.com/file/d/1rxk8ESFxmdmymUSXzXkhvmNQmbOlRjg5/view) and buttons, three panels, and a big announcement.
+
+<!--excerpt-->
 
 ![The CWA booth at GDC 2025, decorated with red and white circuits. People are standing at the entrance to the booth, and above their heads is the CODE-CWA logo.](/assets/img/2025-04-20-blog-cwa-booth.jpg "The CWA booth at GDC 2025")
 

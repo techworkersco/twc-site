@@ -23,7 +23,7 @@ const ampmZones = new Set([
 // Ruby might be doing this implicitly? the generated slugs imperically match
 const slugifyKramdown = (x) =>
   x
-    .replace(/^[^\p{L}]+/gu, "")
+    .replace(/^[^\p{L}\p{Nd}]+/gu, "")
     .replace(/[^\p{M}\p{L}\p{Nd} -]/gu, "")
     .replaceAll(" ", "-")
     .toLowerCase();
@@ -273,9 +273,5 @@ export default async (cfg) => {
   }));
 };
 
-// fixme(maximsmol): blog excerpts
-// fixme(maximsmol): recent blog dates are wrong
 // todo(maximsmol): fix canonicals
-// todo(maximsmol): fix markdown anchor slugify
 // todo(maximsmol): fix some quotation marks not getting smarty-panted
-// todo(maximsmol): fix bill-of-rights description

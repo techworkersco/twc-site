@@ -3,6 +3,8 @@ title: Highlights of the Labor Notes 2023 Tech Organizing Conference
 ---
 As the [Labor Notes 2023 Tech Organizing Conference](https://labornotes.org/techcon2023) came to a close, it became clear that the Tech Workers Movement is bigger and healthier than ever. The gathering, held in New York on the 7th of October, brought together a diverse group of tech labor organizers from all across the United States. 
 
+<!--excerpt-->
+
 Some of us in the Tech Workers Coalition wanted to give the opportunity to participants to share their experiences and insights. So we prepared a short survey to collect experiences from attendees. We then selected the most interesting quotes from the respondents and grouped them according to the themes that attracted the most interest.
 
 ## The Tech Workers Movement is Bigger Than We Thought

@@ -5,6 +5,8 @@ permalink: /fairhotels/
 
 ## Bring Fair Hotels to your company
 
+<!--excerpt-->
+
 - [Take the pledge and enlist your organization.](https://www.fairhotel.org/sign-fairhotel-partner)
 - [Read what others have done](https://medium.com/@pagepant/consumer-power-in-the-trump-era-tech-hotel-workers-united-b612548a7336) to bring a FairHotel policy to their company.
 

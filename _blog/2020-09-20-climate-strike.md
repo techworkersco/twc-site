@@ -14,6 +14,8 @@ permalink: /climate-strike/
 
 On September 20th 2019, millions of people will mobilize across the globe in the largest ever #ClimateStrike, led by students, workers, and people who care about a livable future. As tech workers, we have a responsibility to hold our employers accountable and to be part of the solution, not the problem.
 
+<!--excerpt-->
+
 ## Here is how you can participate
 
 1. On September 20 2020, join a protest near you, as an individual or even better, with your co-workers.
