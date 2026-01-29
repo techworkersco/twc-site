@@ -17,4 +17,4 @@ Note: this workshop focuses primarily on campaign organizing — not labor organ
 **Thursday, Feb 12, 2026**\
 **6:00 - 7:30 PM**
 
-**[Register here](https://zoom.us/meeting/register/PRU8yBbdR6ysVQMV6EsW5Q#/registration)**
+**[👉 Register here](https://zoom.us/meeting/register/PRU8yBbdR6ysVQMV6EsW5Q#/registration)**
