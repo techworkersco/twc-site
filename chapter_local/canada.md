@@ -24,10 +24,10 @@ All meetings and communications are covered under the [TWC Code of Conduct](/com
 [La code de conduite du TWC](/community-guide/) sont apliquée au toutes les réunions et communications. La sécurite et la confidentialité de nos membres sont trop importante pour nous. Partager l'identite ou des photos de nos membres est strictement interdite.
 
 ## Connect with Us
-To connect with us you can join one of our weekly Virtual Coffees or send us an [email](mailto:techworkerscanada@gmail.com).
+To connect with us you can join one of our weekly Virtual Coffees or send us an email to <techworkerscanada@gmail.com>.
 
 ## Contactez-nous
-Joignez-nous pour nos cafés virtuels hebdomaires ou envoyez-nous un [email](mailto:techworkerscanada@gmail.com).
+Joignez-nous pour nos cafés virtuels hebdomaires ou envoyez-nous un email à <techworkerscanada@gmail.com>.
 
 ## Upcoming Events / Prochaines Evenements
 <iframe src="https://calendar.google.com/calendar/embed?src=techworkerscanada%40gmail.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
