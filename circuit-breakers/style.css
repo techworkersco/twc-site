@@ -240,6 +240,8 @@ details {
   background-color: var(--pink);
   color: #000000;
   font-weight: bold;
+  font-size: larger;
+  border: 1px solid var(--light-pink);
 }
 
 .primary:hover,

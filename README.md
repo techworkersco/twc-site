@@ -11,19 +11,22 @@ This repository is responsible for most content visible on the website [techwork
 
 Open a browser to localhost:8080
 
+## Join
+* When users fill out the [/subscribe](https://techworkerscoalition.org/subscribe/) form, they are invited to check out our [community guidelines](https://techworkerscoalition.org/community-guide/)
+* After submitting the form, they are redirected to [/welcome](https://techworkerscoalition.org/welcome) which explains next steps.
+* Under the hood, the website uses "Netlify form" and if it's not spam, will trigger automated integration requests to ActionNetwork (newsletter subscription), Slack (for manual verification)
+
 ## DecapCMS
 
-In addition to GitHub, you can update the website via [DecapCMS](https://decapcms.org/) for example adding new blog posts and events by going to [/admin](https://techworkerscoalition.org/admin) interface. For local development, visit this [tutorial](https://decapcms.org/docs/working-with-a-local-git-repository/) (run `npx decap-server` from a different shell)
+In addition to GitHub, you can update the website via [DecapCMS](https://decapcms.org/).
+* Future improvements can include navigation links and static pages, for example the [Merchandise page](https://techworkerscoalition.org/merch/)
+* Feedback on making the DecapCMS more intuitive and friendly is always welcome. Create a GitHub issue, contact support@techworkerscoalition.org or ping us in our Slack channel #twc-infrastructure
+* For local development, visit this [tutorial](https://decapcms.org/docs/working-with-a-local-git-repository/) (run `npx decap-server` from a different shell)
 
 ## Add your city
 
-If your country/city's TWC chapter is not mentioned in the website, link to it on the homepage [here](_layouts/home.html) and if you want a local markdown page (as opposed to external link) see the other examples [here](city_local).
+If your TWC chapter is not mentioned in the website, update the [chapter page](_data/chapters.yaml). Internal files can also be stored in [chapter_local folder](chapter_local)
 
 ## Add a press mention
-
-Inside [`_data/press.yml`](_data/press.yml) file, add a media entry, with date format in `YYYY-MM-DD`
-
-### Supported Pages
-
-- Landing Page [index.md](index.md)
-- Community Guide [guide.md](guide.md)
+* TWC mentioned in the media or update? Create a media entry, with date format in `YYYY-MM-DD`
+* Update entry in [`_data/press.yml`](_data/press.yml) 

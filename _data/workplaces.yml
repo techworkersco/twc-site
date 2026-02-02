@@ -5,13 +5,6 @@
     union_website: https://alphabetworkersunion.org/
     job_listings: https://careers.google.com/
 
--   organization: Pitchfork Media
-    division:
-    union: Pitchfork Union
-    union_twitter: p4kunion
-    union_website: 
-    job_listings: https://pitchfork.com/news/tags/jobs/ 
-
 -   organization: Democracy Works
     union: Democracy Workers (NewsGuild-CWA, Local 31222)
     union_twitter: DWCollectiveTNG
@@ -56,3 +49,10 @@
     union: The NewsGuild of New York, CWA Local 31003, AFL-CIO
     union_twitter: 
     job_listings: https://tnr.bamboohr.com/jobs/?source=other
+
+-   organization: Nava PBC
+    division: 
+    union: Nava United (OPEIU Local 1010)
+    union_twitter: nava_united
+    union_website: https://www.navaunited.org/
+    job_listings: https://jobs.lever.co/nava

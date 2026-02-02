@@ -10,7 +10,7 @@ We are one chapter of many that TWC have globally. We are a coalition of workers
 
 While the membership is primarily Anglophone, we strive for a grassroots bilingual membership and welcome action and ideas for how to ensure Francophones are equally represented.
 
-## À propos
+## À Propos
 On est la section canadienne du Tech Workers Coalition (Coalition des Travaill.eurs.euses de la Technologie). Il y avait des itératrions previeuses du TWC qui avaient participé à des evenements au traverse du Canada en 2019 mais en été 2025, nous sommes renaître!
 
 On est une de plusieures sections mondiales du TWC. On est une coalition des travaill.eur.euse.s dans l'industrie technologique, des organisa.teur.trice.s des travailleurs,  des organisateur.trice.s communitaires et des amis. On veut bâtir la solidarité entre les travaill.eur.euse.s et élabourer une perspective qui centre les experiences des travaill.eur.euse.s. Tous les travaill.eur.euse.s sont accuillée pour organiser, pour apprendre et pour qu'on puisse réaffirmer notre pouvoir dans l'industrie technologique.
@@ -23,11 +23,11 @@ All meetings and communications are covered under the [TWC Code of Conduct](/com
 ## Code de Conduit
 [La code de conduite du TWC](/community-guide/) sont apliquée au toutes les réunions et communications. La sécurite et la confidentialité de nos membres sont trop importante pour nous. Partager l'identite ou des photos de nos membres est strictement interdite.
 
-## Connect with us
-Find us in `#local-canada` in the [TWC Slack](/subscribe/) or join us in one of our upcoming Virtual Coffees.
+## Connect with Us
+To connect with us you can join one of our weekly Virtual Coffees or send us an email to <techworkerscanada@gmail.com>.
 
 ## Contactez-nous
-Trouvez-nous dans la caîne `#local-canada` dans le [Slack du TWC](/subscribe/) ou joignez-nous pour une de notre prochaines evenements.
+Joignez-nous pour nos cafés virtuels hebdomaires ou envoyez-nous un email à <techworkerscanada@gmail.com>.
 
 ## Upcoming Events / Prochaines Evenements
 <iframe src="https://calendar.google.com/calendar/embed?src=techworkerscanada%40gmail.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>

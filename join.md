@@ -9,7 +9,7 @@ permalink: /subscribe/
 Our Slack is governed by the principles and rules in our [Community Guide](/community-guide). By joining, you agree to follow them.
 
 <h3 class="marg-b-3">Please provide the following:</h3>
-<form class="join-form" method="POST" target="_blank" class="marg-b-4" data-netlify="true" action="/welcome" netlify-honeypot="bot-field">
+<form class="join-form" method="POST" class="marg-b-4" data-netlify="true" action="/welcome" netlify-honeypot="bot-field">
   <label style="display:none">
     Don’t fill this out if you’re human: <input name="bot-field" />
   </label>
@@ -51,9 +51,14 @@ Our Slack is governed by the principles and rules in our [Community Guide](/comm
       {%- endfor -%}
     </select>
   </label>
+  <label class="marg-b-3" for="is-manager">
+    <input id="is-manager" type="checkbox" name="is-manager" value="yes" style="margin-right: 8px;">
+    <b>Are you a manager with hiring or firing power? Note: for security reasons, managers won't be added to our internal channels.</b>
+  </label>
   <label class="marg-b-3" for="outreach">
     <input id="outreach" type="checkbox" name="outreach" value="wants-outreach" style="margin-right: 8px;">
     <b>Are you interested in 1:1 outreach from someone in TWC?</b> (optional)
   </label>
+   
   <input type="submit" value="Submit">
 </form>
