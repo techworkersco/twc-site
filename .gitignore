@@ -13,3 +13,4 @@ vendor/
 _site_jekyll*
 node_modules
 _site.diff
+_site_clean.diff
