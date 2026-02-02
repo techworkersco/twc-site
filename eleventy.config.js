@@ -274,8 +274,7 @@ export default async (cfg) => {
   );
   cfg.addGlobalData("eleventyComputed.site", (a) => (data) => ({
     ...data.collections, // todo(maximsmol): fix in source code
-    // time: new Date(),
-    time: new Date("2026-01-01 00:00:00 -07:00"), // todo(maximsmol): remove, for diffing
+    time: new Date(),
     url: site.url,
     title: site.title,
     description: site.description,
