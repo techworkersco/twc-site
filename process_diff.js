@@ -45,6 +45,15 @@ const main = async () => {
           --- \n
           > \s+ /\*! \x20 normalize\.css \x20 v3\.0\.2 \x20 \| \x20 MIT \x20 License \x20 \| \x20 git\.io/normalize \x20 \*/html \x20 \{ \n
 
+          |
+          (
+          < \s+ \n
+          )?
+          < \s+ <!--excerpt--> \n
+          (
+          < \s+ \n
+          )?
+
         )
       `.replaceAll(/\s|\/\/[^\n]*/g, ""),
       "g",

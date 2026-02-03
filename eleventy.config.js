@@ -5,7 +5,6 @@ import * as sass from "sass";
 import { IdAttributePlugin } from "@11ty/eleventy";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
-import prettier from "prettier";
 import YAML from "yaml";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
@@ -48,9 +47,6 @@ const parseLooseDate = (x) => {
 };
 
 export default async (cfg) => {
-  cfg.ignores.add("_site_jekyll"); // todo(maximsmol): remove before merging
-  cfg.ignores.add("_site_jekyll_prettier"); // todo(maximsmol): remove before merging
-
   cfg.setLayoutsDirectory("admin");
   cfg.setLayoutsDirectory("_layouts");
   cfg.addPassthroughCopy("assets");
@@ -100,19 +96,6 @@ export default async (cfg) => {
   cfg.setFrontMatterParsingOptions({
     excerpt: true,
     excerpt_separator: "<!--excerpt-->",
-  });
-  cfg.addTransform("prettier", async function (x) {
-    // todo(maximsmol): remove, this is for diffing
-    if (!this.page.outputPath.endsWith(".html")) return x;
-
-    try {
-      return await prettier.format(x, {
-        parser: "html",
-      });
-    } catch (error) {
-      console.log(`!!! Prettier failed: ${this.page.inputPath} (${error})`);
-      return x;
-    }
   });
 
   cfg.addFilter("md", function (x) {

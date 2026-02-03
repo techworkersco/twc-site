@@ -21,7 +21,7 @@ permalink: /job-board/
       <h3>
         {{ workplace.organization }}
         {%- if workplace.division -%}
-          - {{workplace.division }}
+          {{ " " }}- {{workplace.division }}
         {%- endif -%}
       </h3>
       <div><strong>✊ Union:</strong> {{ workplace.union }}</div>
@@ -37,7 +37,7 @@ permalink: /job-board/
         {%- endif -%}
 
         {%- if workplace.union_website -%}
-          (<a href="{{ workplace.union_website }}">website</a>)
+          {{" "}}(<a href="{{ workplace.union_website }}">website</a>)
         {%- endif -%}
       </p>
       <div class="flex">

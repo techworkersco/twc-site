@@ -2,14 +2,14 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9ea4d7f9-fe8b-438b-b972-c3ba1076eae2/deploy-status)](https://app.netlify.com/sites/techworkersco/deploys)
 
-This repository is responsible for most content visible on the website [techworkerscoalition.org](https://techworkerscoalition.org). The site is made with a static site generator called [Jekyll](https://jekyllrb.com/) in a language called Ruby.
+This repository is responsible for most content visible on the website [techworkerscoalition.org](https://techworkerscoalition.org). The site is made with a static site generator called [11ty](https://www.11ty.dev/) using [Node.js](https://nodejs.org/en).
 
 ## Getting Started
 
-1. Install dependencies: `bundle install`
-2. Start a local server: `bundle exec jekyll serve`
-
-Open a browser to localhost:8080
+1. Install [the dependency manager pnpm](https://pnpm.io/)
+2. Install dependencies: `pnpm install --frozen-lockfile`
+3. Start a local server: `pnpm run serve`
+4. Open a browser to [http://localhost:8080](http://localhost:8080)
 
 ## Join
 * When users fill out the [/subscribe](https://techworkerscoalition.org/subscribe/) form, they are invited to check out our [community guidelines](https://techworkerscoalition.org/community-guide/)
