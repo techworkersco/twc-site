@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /welcome
+permalink: /welcome.html
 ---
 # 🎉 Congratulations
 

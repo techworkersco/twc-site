@@ -9,8 +9,8 @@
     <div>
       <div>
         {{post.media}} —
-        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
-          {{ post.date | date: '%-d %B %Y' }}
+        <time datetime="{{ post.date | date: '%Y-%m-%d', 'UTC' }}">
+          {{ post.date | date: '%-d %B %Y', 'UTC' }}
         </time>
       </div>
       <h3>

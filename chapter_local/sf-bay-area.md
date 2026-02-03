@@ -9,8 +9,11 @@ permalink: /bay-area/
 We are the Bay Area chapter of TWC. As of summer 2025, most of our active members and in-person meetups are in San Francisco and the East Bay, but we'd love to do more in the Peninsula and South Bay!
 
 <br/>
+
 ![Bay Area May Day 2025](/assets/img/2025-mayday-bayarea.jpg)
+
 <center><i>San Francisco May Day 2025 with TWC, AWU, Code CWA, Bay Area Labor 4 Palestine and friends</i></center>
+
 <br/>
 
 ## About

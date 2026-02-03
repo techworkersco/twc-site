@@ -1,11 +1,8 @@
 .DS_Store
 _site
 .sass-cache
-.jekyll-metadata
 .env
 .letsencrypt
-.ruby-version
 *.log
-.jekyll-cache/
-.bundle/
 vendor/
+node_modules

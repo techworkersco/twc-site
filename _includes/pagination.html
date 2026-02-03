@@ -1,8 +1,12 @@
 <h3>Explore other blog posts</h3>
-{% unless site.blog.last == page %}
-    {% include blog-card.html blog=page.next %}
-{% endunless %}
 
-{% unless site.blog.first == page %}
-    {% include blog-card.html blog=page.previous %} 
-{% endunless %}
+{% assign nextPost = collections.blog | getNextCollectionItem %}
+{% if nextPost %}
+    {% include blog-card.html blog=nextPost %}
+{% endif %}
+
+{% assign previousPost = collections.blog | getPreviousCollectionItem %}
+{% if previousPost %}
+    {% include blog-card.html blog=previousPost %}
+{% endif %}
+

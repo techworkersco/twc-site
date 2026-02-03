@@ -1,0 +1,3 @@
+patchedDependencies:
+  liquidjs: patches/liquidjs.patch
+  "@11ty/eleventy": patches/@11ty__eleventy.patch

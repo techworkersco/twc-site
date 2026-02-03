@@ -1,11 +1,12 @@
 {% assign berlin_events = site.data.berlin_events %}
 {% assign nl_events = site.data.nl_events %}
-{% assign events = site.events | concat: nl_events | concat: berlin_events | sort: 'date' | filter_tags: include.tags %}
-{% assign future_events = events | where_exp: "event", "event.date >= site.time" %}
-{% assign past_events = events | where_exp: "event", "site.time > event.date" %}
+{% assign events = site.events | concat: nl_events | concat: berlin_events | date_sort | filter_tags: include.tags %}
+{% assign future_events = events | where_future: site.time %}
+{% assign past_events = events | where_past: site.time %}
 
-{% if page.permalink == "/events/" %}
+{% if permalink == "/events/" %}
   <h1>Events</h1>
+
   Explore all <b>{{ events.size }}</b> public events we organized
 {% endif %}
 
@@ -16,7 +17,7 @@
 
 {% comment %} Home page typically only shows upcoming events in different order...or most recent past events {% endcomment %}
 {% if show_future_events_only %}
-  <h2 class class="marg-b-2">Upcoming events</h2>
+  <h2 class="marg-b-2">Upcoming events</h2>
   {% for event in future_events limit: include.limit %}
     {% include event-card.html %}
   {% endfor %}
@@ -27,31 +28,32 @@
     {% include event-card.html %}
   {% endfor %}
 <h2>Past events</h2>
-  {% for event in past_events reversed limit: include.limit %}
-    {% assign current_year = event.date | date: "%Y" %}
-    {% if current_year != render_year %}
+  {%- for event in past_events reversed limit: include.limit -%}
+    {%- assign current_year = event.date | date: "%Y" -%}
+    {%- if current_year != render_year -%}
       {% comment %} Add closing div tags except for current year {% endcomment %}
-      {% unless current_year == latest_year %}
+      {%- if render_year -%}
           </div>
         </div>
-      {% endunless %}
-  {% comment %} HTML whitespace issues is why it's indented in weird way. Create H2 tags for each year {% endcomment %}
-  <div class="tab">
-    <input type="checkbox" name="accordion-1" id="year-{{ current_year }}">
-    <label for="year-{{ current_year }}" class="tab__label"><h3>{{ current_year }}</h3></label>
-    <div class="tab__content">
-      {% assign render_year = current_year %}
-    {% endif %}
+      {%- endif -%}
+      {% comment %} HTML whitespace issues is why it's indented in weird way. Create H2 tags for each year {% endcomment %}
+      <div class="tab">
+        <input type="checkbox" name="accordion-1" id="year-{{ current_year }}">
+        <label for="year-{{ current_year }}" class="tab__label"><h3>{{ current_year }}</h3></label>
+        <div class="tab__content">
+          {%- assign render_year = current_year -%}
+    {%- endif -%}
 
     {% include event-card.html %}
-      {% comment %} Add closing div tags for very last event {% endcomment %}
-      {% if forloop.last %}
+    
+    {%- comment -%} Add closing div tags for very last event {%- endcomment -%}
+    {%- if forloop.last -%}
         </div>
-    </div>
-      {% endif %}
-  {% endfor %}
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
 {% endif %}
 
-{% if page.permalink != "/events/" %}
+{% if permalink != "/events/" %}
 <a href="/events" class="button">Find more events</a>
 {% endif %}
