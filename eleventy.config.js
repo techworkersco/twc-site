@@ -47,8 +47,8 @@ const parseLooseDate = (x) => {
 };
 
 export default async (cfg) => {
-  cfg.setLayoutsDirectory("admin");
   cfg.setLayoutsDirectory("_layouts");
+  cfg.addPassthroughCopy("admin");
   cfg.addPassthroughCopy("assets");
   cfg.addPassthroughCopy("netlify.toml");
   cfg.addPassthroughCopy("circuit-breakers");
