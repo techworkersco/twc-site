@@ -21,8 +21,6 @@
 	},
 	"scripts": {
 		"build": "pnpm exec eleventy",
-		"serve": "pnpm exec eleventy --serve",
-		"diff": "diff --ignore-space-change --minimal --ignore-blank-lines --recursive --new-file _site_jekyll_prettier _site > _site.diff",
-		"diff-filenames": "diff <(tree _site_jekyll) <(tree _site)"
+		"serve": "pnpm exec eleventy --serve"
 	}
 }
