@@ -38,8 +38,8 @@ importers:
         specifier: ^10.2.0
         version: 10.2.0
       sass:
-        specifier: ^1.97.1
-        version: 1.97.1
+        specifier: ^1.97.3
+        version: 1.97.3
       yaml:
         specifier: ^2.8.2
         version: 2.8.2
@@ -632,8 +632,8 @@ packages:
     resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
     engines: {node: '>= 14.18.0'}
 
-  sass@1.97.1:
-    resolution: {integrity: sha512-uf6HoO8fy6ClsrShvMgaKUn14f2EHQLQRtpsZZLeU/Mv0Q1K5P0+x2uvH6Cub39TVVbWNSrraUhDAoFph6vh0A==}
+  sass@1.97.3:
+    resolution: {integrity: sha512-fDz1zJpd5GycprAbu4Q2PV/RprsRtKC/0z82z0JLgdytmcq0+ujJbJ/09bPGDxCLkKY3Np5cRAOcWiVkLXJURg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -1289,7 +1289,7 @@ snapshots:
 
   readdirp@4.1.2: {}
 
-  sass@1.97.1:
+  sass@1.97.3:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.4
