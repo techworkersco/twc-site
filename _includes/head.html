@@ -32,9 +32,9 @@
   <style>
     {% capture styles %}
       {% include normalize.css %}
-      {% include main.scss %}
+      {% include main.css %}
     {% endcapture %}
-    {{ styles | scssify }}
+    {{ styles | lightningcss }}
   </style>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
