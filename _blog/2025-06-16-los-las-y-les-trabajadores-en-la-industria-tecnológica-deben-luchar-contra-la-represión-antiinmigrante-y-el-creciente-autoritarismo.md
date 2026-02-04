@@ -3,7 +3,8 @@ title: Los [las y les] trabajadores en la industria tecnológica deben luchar
   contra la represión antiinmigrante y el creciente autoritarismo
 date: 2025-06-16T18:00:00.000Z
 ---
-La ciudad de Los Ángeles es ahora un campo de batalla en defensa del derecho a la protesta. El 13 de junio de 2025, el gobierno federal tomó la decisión sin precedente de desplegar 700 *marines* en esa ciudad, además de 4000 miembros de la Guardia Nacional de California, mientras la alcaldesa de LA decretaba un toque de queda en el centro de la ciudad. Todo esto representa un ataque indiscriminado en contra de las libertades civiles fundamentales. Estas acciones represivas sucedieron tras varios días de protestas tanto sindicales como comunitarias en contra de la escalada de redadas de ICE (el Servicio de Control de Inmigración y Aduanas) por toda la ciudad, que ha buscado aislar y aterrorizar violentamente a la comunidad trabajadora latina y angelina en general.
+
+La ciudad de Los Ángeles es ahora un campo de batalla en defensa del derecho a la protesta. El 13 de junio de 2025, el gobierno federal tomó la decisión sin precedente de desplegar 700 _marines_ en esa ciudad, además de 4000 miembros de la Guardia Nacional de California, mientras la alcaldesa de LA decretaba un toque de queda en el centro de la ciudad. Todo esto representa un ataque indiscriminado en contra de las libertades civiles fundamentales. Estas acciones represivas sucedieron tras varios días de protestas tanto sindicales como comunitarias en contra de la escalada de redadas de ICE (el Servicio de Control de Inmigración y Aduanas) por toda la ciudad, que ha buscado aislar y aterrorizar violentamente a la comunidad trabajadora latina y angelina en general.
 
 <!--excerpt-->
 

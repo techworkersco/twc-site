@@ -3,6 +3,7 @@ title: "Tech Workers Must Fight the Anti-Immigrant Crackdown and Escalating
   Authoritarianism "
 date: 2025-06-16T13:00:00.000Z
 ---
+
 (Read the Spanish version [here](https://techworkerscoalition.org/blog/2025/06/16/los-las-y-les-trabajadores-en-la-industria-tecnol%C3%B3gica-deben-luchar-contra-la-represi%C3%B3n-antiinmigrante-y-el-creciente-autoritarismo/))
 
 Los Angeles is now a battleground in defense of the right to protest. On June 13th, 2025, the federal government made the unprecedented decision to deploy 700 Marines to Los Angeles, in addition to 4,000 members of the California National Guard, while the LA Mayor issued a curfew in the downtown area, signaling an ultimate attack on basic civil liberties. These repressive actions came after several days of union-led and community-based protests against the escalation of ICE raids throughout the city, which has sought to violently isolate and terrorize the Latino and Angeleno working community at large. 
