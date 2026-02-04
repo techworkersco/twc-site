@@ -17,12 +17,6 @@
 @custom-media --tablet screen and (width <= 760px);
 @custom-media --mobile screen and (width <= 420px);
 
-@media (--desktop) and (height > 100px) {
-  a {
-    color: #fff;
-  }
-}
-
 body {
   font-family: var(--font-family-base);
   letter-spacing: 0.03rem;
