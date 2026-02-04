@@ -1,11 +1,12 @@
-$(document).ready(function() {
-  $('#navBtn').on('click', function(event) {
-    $('#nav').toggleClass('hide');
-    $('#langNav').addClass('hide');
-  });
+const ready = () => {
+  document.removeEventListener("DOMContentLoaded", ready);
 
-  $('#langBtn').on('click', function(event) {
-    $('#langNav').toggleClass('hide');
-    $('#nav').addClass('hide');
-  });
-})
+  document
+    .getElementById("navBtn")
+    .addEventListener("click", () =>
+      document.getElementById("nav").classList.toggle("hide"),
+    );
+};
+
+if (document.readyState !== "loading") ready();
+else document.addEventListener("DOMContentLoaded", ready);
