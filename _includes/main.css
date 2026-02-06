@@ -61,17 +61,6 @@ header {
     border: 0;
   }
 
-  #langBtn {
-    padding-left: 14px;
-
-    &:hover {
-      color: var(--red);
-      & .primarySvgFill {
-        fill: var(--red);
-      }
-    }
-  }
-
   #nav,
   #navBtn {
     @media (--desktop) {
