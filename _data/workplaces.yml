@@ -1,58 +1,58 @@
--   organization: Alphabet (Google)
-    division:
-    union: Alphabet Workers Union, CWA Local 1400
-    union_twitter: alphabetworkers
-    union_website: https://alphabetworkersunion.org/
-    job_listings: https://careers.google.com/
+- organization: Alphabet (Google)
+  division:
+  union: Alphabet Workers Union, CWA Local 1400
+  union_twitter: alphabetworkers
+  union_website: https://alphabetworkersunion.org/
+  job_listings: https://careers.google.com/
 
--   organization: Democracy Works
-    union: Democracy Workers (NewsGuild-CWA, Local 31222)
-    union_twitter: DWCollectiveTNG
-    union_website: https://www.democracyworkers.org/
-    job_listings: https://democracy.works/careers
+- organization: Democracy Works
+  union: Democracy Workers (NewsGuild-CWA, Local 31222)
+  union_twitter: DWCollectiveTNG
+  union_website: https://www.democracyworkers.org/
+  job_listings: https://democracy.works/careers
 
--   organization: Glitch
-    division:
-    union: CWA Local 1101
-    union_twitter:
-    union_website:
-    job_listings: https://glitch.com/about/careers/
+- organization: Glitch
+  division:
+  union: CWA Local 1101
+  union_twitter:
+  union_website:
+  job_listings: https://glitch.com/about/careers/
 
--   organization: Kickstarter
-    division:
-    union: Kickstarter United (OPEIU Local 153)
-    union_twitter: ksr_united
-    union_website: https://kickstarterunited.org/
-    job_listings: https://jobs.kickstarter.com/
+- organization: Kickstarter
+  division:
+  union: Kickstarter United (OPEIU Local 153)
+  union_twitter: ksr_united
+  union_website: https://kickstarterunited.org/
+  job_listings: https://jobs.kickstarter.com/
 
--   organization: EveryAction
-    division: Mobilize
-    union: Mobilize Union, CWA
-    union_twitter: 
-    union_website: 
-    job_listings: https://join.mobilize.us/jobs
+- organization: EveryAction
+  division: Mobilize
+  union: Mobilize Union, CWA
+  union_twitter:
+  union_website:
+  job_listings: https://join.mobilize.us/jobs
 
--   organization: The New York Times
-    division: Tech Department
-    union: New York Times Tech Guild, CWA Local 31003, AFL-CIO
-    union_twitter:
-    job_listings: https://www.nytco.com/careers/technology/
+- organization: The New York Times
+  division: Tech Department
+  union: New York Times Tech Guild, CWA Local 31003, AFL-CIO
+  union_twitter:
+  job_listings: https://www.nytco.com/careers/technology/
 
--   organization: NPR
-    division: Digital Media
-    union: Digital Media United
-    union_twitter: WeBuildNPR
-    job_listings: https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/?q=&o=postedDateDesc&f5=rm7wpKF6wE-Pa61KyOrv5g
+- organization: NPR
+  division: Digital Media
+  union: Digital Media United
+  union_twitter: WeBuildNPR
+  job_listings: https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/?q=&o=postedDateDesc&f5=rm7wpKF6wE-Pa61KyOrv5g
 
--   organization: The New Republic
-    division: 
-    union: The NewsGuild of New York, CWA Local 31003, AFL-CIO
-    union_twitter: 
-    job_listings: https://tnr.bamboohr.com/jobs/?source=other
+- organization: The New Republic
+  division:
+  union: The NewsGuild of New York, CWA Local 31003, AFL-CIO
+  union_twitter:
+  job_listings: https://tnr.bamboohr.com/jobs/?source=other
 
--   organization: Nava PBC
-    division: 
-    union: Nava United (OPEIU Local 1010)
-    union_twitter: nava_united
-    union_website: https://www.navaunited.org/
-    job_listings: https://jobs.lever.co/nava
+- organization: Nava PBC
+  division:
+  union: Nava United (OPEIU Local 1010)
+  union_twitter: nava_united
+  union_website: https://www.navaunited.org/
+  job_listings: https://jobs.lever.co/nava
