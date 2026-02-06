@@ -1,0 +1,17 @@
+<form method="POST" class="marg-b-4" action="contact" data-netlify="true" netlify-honeypot="bot-field">
+  <label class="marg-b-3" for="email">
+    <div><b>Email:</b></div>
+    <input id="email" type="email" required name="email">
+  </label>
+  <label class="marg-b-3" for="name">
+    <div><b>Name:</b></div>
+    <input id="name" type="text" required name="name">
+  </label>
+  <label class="marg-b-3" for="message">
+    <div><b>Message:</b></div>
+    <textarea id="message" required name="message" rows="10" cols="50"></textarea>
+  </label>
+  <div>
+    <input type="submit" value="Submit">
+  </div>
+</form>
