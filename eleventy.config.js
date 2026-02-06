@@ -193,7 +193,10 @@ export default async (cfg) => {
         },
         targets: lightningcss.browserslistToTargets(browserslist()),
       });
-      console.log(res.warnings);
+      if (res.warnings.length > 0) {
+        console.warn("Lightning CSS warnings:");
+        for (const x of res.warnings) console.warn(x);
+      }
       // todo(maximsmol): does this need addDependencies somehow?
 
       return Buffer.from(res.code).toString();
