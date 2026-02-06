@@ -5,6 +5,7 @@ image:
   file: /assets/img/2025-04-20-blog-were-done-playing-group.jpg
   alt: group photo and text we are done playing
 ---
+
 This year, over three days in late March, four members of TWC Bay Area attended the Game Developer Conference (GDC). Every year, GDC brings over 30,000 workers in the videogame industry to San Francsico to showcase the latest innovations and lead industry talks. We were there to observe and learn about organizing in the videogame industry, through worker-led panels and Communication Workers of America (CWA) organizers. CWA’s presence at GDC included over fifty organizers, a booth stuffed with [zines](https://drive.google.com/file/d/1rxk8ESFxmdmymUSXzXkhvmNQmbOlRjg5/view) and buttons, three panels, and a big announcement.
 
 <!--excerpt-->
@@ -17,11 +18,11 @@ Game studios, like tech companies and startups, vary in size. It’s not uncommo
 
 The union launched at a panel on Wednesday, March 19th, with workers and full-time organizers sharing their experiences in union campaigns in individual studios. After the talk, we chanted and marched down a set of escalators, through the convention hall, and into Yerba Buena Gardens. Through [our march and a series of speeches outside](https://48hills.org/2025/03/game-development-conference-video-game-workers-unionization-cwa/), we let other game workers know there was a union in town. One call and response went:
 
-*“Does your boss know how to write a game design doc?” / “No!”*\
-*“Who does?” / “We do!”*
+_“Does your boss know how to write a game design doc?” / “No!”_\
+_“Who does?” / “We do!”_
 
-*“Does your boss know how to write a shader” / “No!”*\
-*“Who does?” / “We do!”*
+_“Does your boss know how to write a shader” / “No!”_\
+_“Who does?” / “We do!”_
 
 (Game design documents describe the world of the game, the characters’ values, and the mechanics of player interactions. It’s a collaboration between artists and developers without which a game would not exist. Shaders are graphics programs that run on a GPU, and require deep technical knowledge.)
 
@@ -29,7 +30,7 @@ Amid the cheers of the crowd, there were also sheepish admissions of the difficu
 
 ![Workers wearing GDC conference passes fill an escalator going down. Many hold signs that say UVW and one holds a larger banner that says UVW: UNIONIZE!](/assets/img/2025-04-20-bloh-48hills-escalator.jpg "Game workers march down the escalator at GDC")
 
-In a panel on Friday March 21st, workers that won unions and contracts walked us through their campaigns. Organizing committee members described the anxiety of early 1:1s, of asking people they didn’t know to call on their personal phones or meet by the elevator, and how after some practice, these conversations became easier. Turns out most coworkers were open to some form of collective action, and even those that were initially anti-union appreciated that folks were doing *something*. Remote organizing wasn’t necessarily harder, it just came with its own set of pros and cons. Discord servers served as off-site gathering places.
+In a panel on Friday March 21st, workers that won unions and contracts walked us through their campaigns. Organizing committee members described the anxiety of early 1:1s, of asking people they didn’t know to call on their personal phones or meet by the elevator, and how after some practice, these conversations became easier. Turns out most coworkers were open to some form of collective action, and even those that were initially anti-union appreciated that folks were doing _something_. Remote organizing wasn’t necessarily harder, it just came with its own set of pros and cons. Discord servers served as off-site gathering places.
 
 In the US, employers are required to negotiate any layoffs with the union, even before a formal contract. In the panel, workers spoke proudly about how they were able to save contractor jobs from being cut just weeks after they won their election. On top of protections from layoffs and a requirement that workers evaluate any new AI tools before adopting them, one hard-won contract included coverage for dental braces. Braces are almost never covered by dental benefits, showing the kinds of unexpected but necessary things workers can win when they stand together.
 
