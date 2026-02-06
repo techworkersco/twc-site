@@ -1,48 +1,24 @@
-$red: #d72b2b;
-$black: #020e0f;
-$white: #fff;
-$grey: #2e2e2e;
-$grey2: #191919;
-$grey3: #f6f6f6;
-$grey4: #777;
-$tablet-width: 760px;
-$mobile-width: 420px;
-$header-height: 60px;
+:root {
+  --red: #d72b2b;
+  --black: #020e0f;
+  --white: #fff;
+  --grey: #2e2e2e;
+  --grey2: #191919;
+  --grey3: #f6f6f6;
+  --grey4: #777;
 
-$font-family-base:
-  Helvetica Neue,
-  HelveticaNeue,
-  Helvetica,
-  Arial,
-  system-ui,
-  -apple-system,
-  Segoe UI,
-  Roboto,
-  Ubuntu,
-  Cantarell,
-  Noto Sans,
-  sans-serif;
+  --header-height: 60px;
 
-@mixin desktop {
-  @media screen and (min-width: #{$tablet-width}) {
-    @content;
-  }
+  --font-family-base: Helvetica Neue, HelveticaNeue, Helvetica, Arial, system-ui,
+    -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
 }
 
-@mixin tablet {
-  @media screen and (max-width: #{$tablet-width}) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media screen and (max-width: #{$mobile-width}) {
-    @content;
-  }
-}
+@custom-media --desktop screen and (width >= 760px);
+@custom-media --tablet screen and (width <= 760px);
+@custom-media --mobile screen and (width <= 420px);
 
 body {
-  font-family: $font-family-base;
+  font-family: var(--font-family-base);
   letter-spacing: 0.03rem;
   line-height: 1.5;
   margin: 0;
@@ -51,7 +27,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  padding-top: $header-height + 20px;
+  padding-top: calc(var(--header-height) + 20px);
 }
 
 .grow-main {
@@ -70,7 +46,7 @@ header {
   box-shadow:
     0 1px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  height: $header-height;
+  height: var(--header-height);
   left: 0;
   position: fixed;
   right: 0;
@@ -85,20 +61,9 @@ header {
     border: 0;
   }
 
-  #langBtn {
-    padding-left: 14px;
-
-    &:hover {
-      color: $red;
-      & .primarySvgFill {
-        fill: $red;
-      }
-    }
-  }
-
   #nav,
   #navBtn {
-    @include desktop {
+    @media (--desktop) {
       display: none;
     }
   }
@@ -111,7 +76,7 @@ header {
   border-radius: 100px;
   list-style-type: none;
 
-  @include tablet {
+  @media (--tablet) {
     display: none;
   }
 }
@@ -123,7 +88,7 @@ header {
 .title {
   font-size: 21px;
 
-  @include mobile {
+  @media (--mobile) {
     font-size: 16px;
   }
 }
@@ -137,19 +102,19 @@ header {
 }
 
 .black {
-  color: $black;
+  color: var(--black);
 }
 
 .black-important {
-  color: $black !important;
+  color: var(--black) !important;
 }
 
 .grey {
-  color: $grey;
+  color: var(--grey);
 }
 
 .red {
-  color: $red;
+  color: var(--red);
 }
 
 .hide {
@@ -157,19 +122,19 @@ header {
 }
 
 .mobile-hide {
-  @include mobile {
+  @media (--mobile) {
     display: none !important;
   }
 }
 
 .tablet-hide {
-  @include tablet {
+  @media (--tablet) {
     display: none !important;
   }
 }
 
 .desktop-hide {
-  @include desktop {
+  @media (--desktop) {
     display: none !important;
   }
 }
@@ -213,20 +178,20 @@ button {
 }
 
 .white {
-  color: $white;
+  color: var(--white);
 }
 
 .white-important {
-  color: $white !important;
+  color: var(--white) !important;
 }
 
 .hover\:white:hover {
-  color: $white;
+  color: var(--white);
 }
 
 .navOverlay {
   border-radius: 4px;
-  border: 0; // 1px solid;
+  border: 0; /* 1px solid; */
   box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
   overflow: scroll;
   right: 0;
@@ -252,7 +217,7 @@ button {
   margin-right: auto;
   width: 65%;
 
-  @include tablet {
+  @media (--tablet) {
     width: 90%;
   }
 }
@@ -289,11 +254,11 @@ ul {
 }
 
 .pad-l-3 {
-  padding-left: 1rem; // 16px, we should just be consistent and use rem
+  padding-left: 1rem; /* 16px, we should just be consistent and use rem */
 }
 
 .m\:marg-r-1 {
-  @include mobile {
+  @media (--mobile) {
     margin-right: 4px;
   }
 }
@@ -303,13 +268,13 @@ ul {
 }
 
 .d\:marg-r-2 {
-  @include desktop {
+  @media (--desktop) {
     margin-right: 8px;
   }
 }
 
 .m\:marg-r-2 {
-  @include mobile {
+  @media (--mobile) {
     margin-right: 8px;
   }
 }
@@ -323,7 +288,7 @@ ul {
 }
 
 .d\:marg-r-3 {
-  @include desktop {
+  @media (--desktop) {
     margin-right: 1rem;
   }
 }
@@ -345,7 +310,7 @@ ul {
 }
 
 .d\:flex {
-  @include desktop {
+  @media (--desktop) {
     display: flex;
   }
 }
@@ -362,20 +327,20 @@ ul {
   flex-wrap: wrap;
 }
 
-.d:flex-row {
-  @include desktop {
+.d\:flex-row {
+  @media (--desktop) {
     flex-direction: row;
   }
 }
 
 .m\:flex-col {
-  @include mobile {
+  @media (--mobile) {
     flex-direction: column;
   }
 }
 
 .d\:c-1\/3 {
-  @include desktop {
+  @media (--desktop) {
     flex: 0 1 calc(33.33% - 1rem);
   }
 }
@@ -426,7 +391,7 @@ footer {
 .txt-1,
 h1 {
   font-size: 2rem;
-  @include mobile {
+  @media (--mobile) {
     font-size: 1.75rem;
   }
 }
@@ -435,7 +400,7 @@ h1 {
 h2 {
   font-size: 1.75rem;
   font-weight: 500;
-  @include mobile {
+  @media (--mobile) {
     font-size: 1.5rem;
   }
 }
@@ -444,7 +409,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 500;
-  @include mobile {
+  @media (--mobile) {
     font-size: 1.25rem;
   }
 }
@@ -481,20 +446,20 @@ label {
 }
 
 .primaryBg {
-  background: $grey2;
+  background: var(--grey2);
 }
 .secondaryBg {
-  background: $grey;
+  background: var(--grey);
 }
 .textColor {
-  color: $white;
+  color: var(--white);
 }
 
 label {
   display: block;
   font-weight: inherit;
 
-  @include mobile {
+  @media (--mobile) {
     width: 100%;
   }
 }
@@ -505,10 +470,10 @@ input[type="url"],
 select {
   border: 1px solid;
   border-radius: 4px;
-  color: $grey;
+  color: var(--grey);
   padding: 0.75rem;
 
-  @include mobile {
+  @media (--mobile) {
     margin-bottom: 0.5rem;
     width: 100%;
   }
@@ -528,7 +493,7 @@ hr {
 }
 
 .primarySvgFill {
-  fill: $white;
+  fill: var(--white);
 }
 
 #mce-EMAIL,
@@ -547,10 +512,10 @@ hr {
 }
 
 .bg-white {
-  background: $white;
+  background: var(--white);
 }
 
-// __BEGIN__ interface for /events
+/*__BEGIN__ interface for /events */
 .tab input {
   position: absolute;
   opacity: 0;
@@ -607,9 +572,11 @@ hr {
 }
 
 /* Arrow animation */
-// .tab input:not(:checked) + .tab__label:hover::after {
-//   animation: bounce .8s infinite;
-// }
+/*
+.tab input:not(:checked) + .tab__label:hover::after {
+  animation: bounce .8s infinite;
+}
+*/
 @keyframes bounce {
   25% {
     transform: rotate(90deg) translate(0.25rem);
@@ -619,15 +586,15 @@ hr {
   }
 }
 
-// __END__ accordian css for /events
+/*__END__ accordian css for /events */
 
 @media (prefers-color-scheme: light) {
   .primarySvgFill {
-    fill: $grey;
+    fill: var(--grey);
   }
   #mc-embedded-subscribe {
-    background: $grey2;
-    color: $white;
+    background: var(--grey2);
+    color: var(--white);
   }
   hr {
     border-bottom: 1px solid #ccc;
@@ -637,17 +604,17 @@ hr {
   }
   button,
   form {
-    border-color: $grey3;
+    border-color: var(--grey3);
   }
   form {
-    background-color: $grey3;
+    background-color: var(--grey3);
   }
   input[type="submit"] {
-    background: $grey2;
-    color: $white;
+    background: var(--grey2);
+    color: var(--white);
 
     &:hover {
-      background-color: $red;
+      background-color: var(--red);
     }
   }
   input[type="email"],
@@ -657,118 +624,118 @@ hr {
     border-color: #ccc;
   }
   .primaryBg {
-    background-color: $white;
+    background-color: var(--white);
   }
   .secondaryBg {
-    background-color: $grey3;
+    background-color: var(--grey3);
   }
   .textColor {
-    color: $grey2;
+    color: var(--grey2);
   }
   a {
     &:hover,
     &:focus {
-      color: $grey;
+      color: var(--grey);
       text-decoration: none;
     }
     &:active,
     &:link,
     &:visited {
-      color: $red;
+      color: var(--red);
     }
   }
 
   .desktop-header,
   .navOverlay > li {
-    background-color: $black;
-    color: $white;
+    background-color: var(--black);
+    color: var(--white);
 
     &:hover {
-      background-color: $red;
-      fill: $red;
+      background-color: var(--red);
+      fill: var(--red);
     }
 
     & > a {
-      color: $white;
+      color: var(--white);
     }
   }
 }
 
 @media (prefers-color-scheme: dark) {
   h2 a:link {
-    color: $white;
+    color: var(--white);
   }
 
   .border {
-    border-color: $white;
+    border-color: var(--white);
   }
   #mc-embedded-subscribe {
-    border-color: $grey;
+    border-color: var(--grey);
   }
   hr {
-    border-bottom: 1px solid $grey;
+    border-bottom: 1px solid var(--grey);
   }
   input[type="submit"] {
-    background-color: $red;
-    color: $white;
+    background-color: var(--red);
+    color: var(--white);
 
     &:hover {
-      background-color: $grey2;
+      background-color: var(--grey2);
     }
   }
   input[type="email"],
   input[type="text"],
   input[type="url"],
   select {
-    background: $grey2;
+    background: var(--grey2);
     border-color: transparent;
-    color: $white;
+    color: var(--white);
   }
   .black {
-    color: $white !important;
+    color: var(--white) !important;
   }
   a {
-    color: $red;
+    color: var(--red);
   }
   h1,
   h2,
   h3,
   h4 {
-    color: $white;
+    color: var(--white);
   }
   a {
     &:active,
     &:link,
     &:visited {
-      color: $white;
+      color: var(--white);
     }
 
     &:hover,
     &:focus {
-      color: $red;
+      color: var(--red);
       text-decoration: none;
     }
   }
 
   form {
-    background-color: $grey;
+    background-color: var(--grey);
   }
   footer {
-    border-color: $grey2;
+    border-color: var(--grey2);
   }
 
   .desktop-header,
   .navOverlay > li {
-    background-color: $red;
-    color: $white;
+    background-color: var(--red);
+    color: var(--white);
 
     &:hover {
-      background-color: $black;
-      fill: $black;
+      background-color: var(--black);
+      fill: var(--black);
     }
 
     & > a {
-      color: $white;
+      color: var(--white);
     }
   }
 }
@@ -795,7 +762,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: auto; // use this to display responsive image
+  height: auto; /* use this to display responsive image */
 }
 
 .event-time {
@@ -806,23 +773,23 @@ img {
 [id]::before {
   display: block;
   content: " ";
-  margin-top: -60px; // height of header bar
+  margin-top: -60px; /* height of header bar */
   height: 60px;
   visibility: hidden;
   pointer-events: none;
 }
 #logo-header,
 #logo-footer {
-  background: $white;
+  background: var(--white);
   border-radius: 50%;
 }
 
 .card-preview {
-  @extend .p-3;
-  @extend .marg-b-3;
-  @extend .flex;
-  @extend .items-center;
-  @extend .secondaryBg;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  background: var(--grey);
 
   > img {
     @supports (display: grid) {
@@ -835,7 +802,7 @@ img {
     & > div {
       padding: 0.75rem;
 
-      @include tablet {
+      @media (--tablet) {
         width: 50px;
         height: 50px;
       }
@@ -843,40 +810,41 @@ img {
   }
 
   img {
-    @extend .bg-white;
-    @extend .lh-1;
+    background: var(--white);
+    line-height: 1;
+
     margin-right: 1rem;
     margin-left: 0;
     width: 100px;
     height: 100px;
     object-fit: cover;
 
-    @include tablet {
+    @media (--tablet) {
       width: 75px;
       height: 75px;
     }
   }
 
   .icon {
-    @extend .bg-white;
-    @extend .circ;
-    @extend .lh-1;
-    @extend .p-3;
-    @extend .marg-r-3;
+    background: var(--white);
+    line-height: 1;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-right: 1rem;
 
-    @include tablet {
+    @media (--tablet) {
       height: 75px;
       width: 75px;
     }
 
     svg {
-      fill: $grey;
+      fill: var(--grey);
       font-size: 0.7em;
       font-weight: bold;
       grid-column: 1;
       height: 75px;
 
-      @include tablet {
+      @media (--tablet) {
         height: 45px;
       }
     }
@@ -898,34 +866,34 @@ a.button {
   border-radius: 100px;
 
   @media (prefers-color-scheme: dark) {
-    color: $white;
-    background: $black;
+    color: var(--white);
+    background: var(--black);
   }
   @media (prefers-color-scheme: light) {
-    color: $black;
-    background: $white;
+    color: var(--black);
+    background: var(--white);
   }
 
   &:hover,
   &:focus {
-    color: $red;
+    color: var(--red);
   }
 
   &.primary {
     border: none;
 
-    color: $white;
-    background: $black;
+    color: var(--white);
+    background: var(--black);
 
     &:hover {
-      background: $red;
+      background: var(--red);
     }
 
     @media (prefers-color-scheme: dark) {
-      background: $red;
+      background: var(--red);
 
       &:hover {
-        background: $black;
+        background: var(--black);
       }
     }
   }
@@ -961,7 +929,7 @@ section {
   }
 
   & li {
-    border: 1px solid $grey4;
+    border: 1px solid var(--grey4);
     border-radius: 10px;
     padding: 0.5em;
 
@@ -987,7 +955,7 @@ section {
   gap: 5px;
 
   & li {
-    border: 1px solid $grey4;
+    border: 1px solid var(--grey4);
     border-radius: 10px;
     padding: 0.5em;
 
@@ -1047,8 +1015,8 @@ section {
   h4,
   h5,
   h6 {
-    // todo(maximsmol): find a new font for headings that fits with the serif fonts
-    font-family: $font-family-base;
+    /* todo(maximsmol): find a new font for headings that fits with the serif fonts */
+    font-family: var(--font-family-base);
   }
 }
 

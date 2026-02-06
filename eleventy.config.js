@@ -1,7 +1,8 @@
 import path from "node:path";
 import { DateTime } from "luxon";
 import memoize from "memoize";
-import * as sass from "sass";
+import * as lightningcss from "lightningcss";
+import browserslist from "browserslist";
 import { IdAttributePlugin } from "@11ty/eleventy";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
@@ -178,18 +179,27 @@ export default async (cfg) => {
     return res;
   });
 
-  // todo(maximsmol): replace sass with lightningcss
   cfg.addFilter(
-    "scssify",
+    "lightningcss",
     memoize(function (content) {
       const parsed = path.parse(this.page.inputPath);
-      const res = sass.compileString(content, {
-        loadPaths: [parsed.dir ?? ".", this.eleventy.directories.includes],
-        style: "compressed",
+
+      const res = lightningcss.transform({
+        code: Buffer.from(content),
+        minify: true,
+        sourceMap: process.env.CONTEXT === "development",
+        drafts: {
+          customMedia: true,
+        },
+        targets: lightningcss.browserslistToTargets(browserslist()),
       });
+      if (res.warnings.length > 0) {
+        console.warn("Lightning CSS warnings:");
+        for (const x of res.warnings) console.warn(x);
+      }
       // todo(maximsmol): does this need addDependencies somehow?
 
-      return res.css;
+      return Buffer.from(res.code).toString();
     }),
   );
 
