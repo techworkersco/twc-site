@@ -1,3 +1,6 @@
+// todo(maximsmol): install eslint
+
+import { pathToFileURL } from "node:url";
 import path from "node:path";
 import { DateTime } from "luxon";
 import memoize from "memoize";
@@ -8,6 +11,10 @@ import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
 import YAML from "yaml";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import { toHtml } from "hast-util-to-html";
+import * as mdx from "@mdx-js/mdx";
+import * as jsxRuntime from "hastscript/jsx-runtime";
+import rehypeSlug from "rehype-slug";
 
 const baseUrl = "https://techworkerscoalition.org";
 const timeZone = "America/New_York";
@@ -48,12 +55,19 @@ const parseLooseDate = (x) => {
 };
 
 export default async (cfg) => {
+  cfg.addGlobalData("layout", "default");
+
+  cfg.ignores.add("README");
+
   cfg.setLayoutsDirectory("_layouts");
-  cfg.addPassthroughCopy("admin");
   cfg.addPassthroughCopy("assets");
   cfg.addPassthroughCopy("netlify.toml");
+
   cfg.addPassthroughCopy("circuit-breakers");
   cfg.ignores.add("circuit-breakers");
+
+  cfg.addPassthroughCopy("admin");
+  cfg.ignores.add("admin");
 
   cfg.addDataExtension("yml", YAML.parse);
   cfg.addDataExtension("yaml", YAML.parse);
@@ -228,6 +242,37 @@ export default async (cfg) => {
       .setZone("UTC")
       .toFormat("yyyy-MM-dd HH:mm:ss 'UTC'");
   });
+
+  cfg.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
+    key: "11ty.js",
+    compile() {
+      return async function (data) {
+        const res = await this.defaultRenderer(data);
+        return toHtml(res);
+      };
+    },
+  });
+  cfg.addTemplateFormats(["11ty.jsx", "11ty.ts", "11ty.tsx"]);
+
+  cfg.addExtension("mdx", {
+    async compile(str, inputPath) {
+      const { default: mdxContent } = await mdx.evaluate(str, {
+        ...jsxRuntime,
+        baseUrl: pathToFileURL(inputPath),
+        development: process.env.CONTEXT === "development",
+        elementAttributeNameCase: "html",
+      });
+
+      return async function (data) {
+        const res = await mdxContent(data);
+        rehypeSlug({
+          slugify: slugifyKramdown,
+        })(res);
+        return toHtml(res);
+      };
+    },
+  });
+  cfg.addTemplateFormats("mdx");
 
   const remoteDataSrcs = [
     {
