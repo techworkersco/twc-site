@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Get involved
 permalink: /get-involved.html
 ---

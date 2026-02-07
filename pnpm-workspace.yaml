@@ -1,3 +1,6 @@
 patchedDependencies:
   liquidjs: patches/liquidjs.patch
   "@11ty/eleventy": patches/@11ty__eleventy.patch
+  hastscript: patches/hastscript.patch
+  "@mdx-js/mdx": patches/@mdx-js__mdx.patch
+  rehype-slug: patches/rehype-slug.patch

@@ -1,7 +1,5 @@
 ---
-layout: page
 title: TWC Security List
-permalink: /security/
 show_in_footer: true
 ---
 

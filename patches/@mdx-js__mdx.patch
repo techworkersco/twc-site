@@ -1,0 +1,13 @@
+diff --git a/lib/util/resolve-evaluate-options.js b/lib/util/resolve-evaluate-options.js
+index 0b9a05b848842883e5bef529801d9f1a0293d33d..ead7ad3e04760c9bde59aef589a1caa5a94b9cf2 100644
+--- a/lib/util/resolve-evaluate-options.js
++++ b/lib/util/resolve-evaluate-options.js
+@@ -67,7 +67,7 @@ export function resolveEvaluateOptions(options) {
+     ...rest
+   } = options || {}
+ 
+-  if (!Fragment) throw new Error('Expected `Fragment` given to `evaluate`')
++  if (Fragment === undefined) throw new Error('Expected `Fragment` given to `evaluate`')
+   if (development) {
+     if (!jsxDEV) throw new Error('Expected `jsxDEV` given to `evaluate`')
+   } else {
