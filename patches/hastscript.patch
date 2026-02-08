@@ -1,0 +1,35 @@
+diff --git a/lib/create-h.d.ts b/lib/create-h.d.ts
+index 89ae1f0db4f6a445b502c9de5dace127f174715b..7b8f255f03d18b1ba1a559ab163c044926d18d26 100644
+--- a/lib/create-h.d.ts
++++ b/lib/create-h.d.ts
+@@ -116,7 +116,7 @@ export type Child = ArrayChild | Nodes | PrimitiveChild;
+ /**
+  * Primitive children, either ignored (nullish), or turned into text nodes.
+  */
+-export type PrimitiveChild = number | string | null | undefined;
++export type PrimitiveChild = number | string | null | undefined | false;
+ /**
+  * Primitive property value.
+  */
+diff --git a/lib/create-h.js b/lib/create-h.js
+index 4e90f336fdf86bebcabc11cb5a2dfd00655be48f..b7c2b78e819714572861a9bb1af55e02e7152cef 100644
+--- a/lib/create-h.js
++++ b/lib/create-h.js
+@@ -24,7 +24,7 @@
+  */
+ 
+ /**
+- * @typedef {number | string | null | undefined} PrimitiveChild
++ * @typedef {number | string | null | undefined | false} PrimitiveChild
+  *   Primitive children, either ignored (nullish), or turned into text nodes.
+  */
+ 
+@@ -278,7 +278,7 @@ function addProperty(schema, properties, key, value) {
+  *   Nothing.
+  */
+ function addChild(nodes, value) {
+-  if (value === null || value === undefined) {
++  if (value === null || value === undefined || value === false) {
+     // Empty.
+   } else if (typeof value === 'number' || typeof value === 'string') {
+     nodes.push({type: 'text', value: String(value)})
