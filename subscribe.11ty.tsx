@@ -14,7 +14,7 @@ export const render = ({ chapters }: Data) => {
 
   return (
     <>
-      <h1>Join us</h1>
+      <h1 id="join-us">Join us</h1>
       Our Slack is governed by the principles and rules in our{" "}
       <a href="/community-guide">Community Guide.</a> By joining, you agree to
       follow them.
@@ -49,7 +49,7 @@ export const render = ({ chapters }: Data) => {
               <a href="/community-guide#membership">
                 the membership requirements laid out in our community guide.
               </a>{" "}
-              Linkedin is preferred, but anything that allows us to verify that
+              LinkedIn is preferred, but anything that allows us to verify that
               you are not a manager, journalist etc is acceptable.
             </div>
           </div>

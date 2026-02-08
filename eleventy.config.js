@@ -57,7 +57,7 @@ const parseLooseDate = (x) => {
 export default async (cfg) => {
   cfg.addGlobalData("layout", "default");
 
-  cfg.ignores.add("README");
+  cfg.ignores.add("README.md");
 
   cfg.setLayoutsDirectory("_layouts");
   cfg.addPassthroughCopy("assets");
