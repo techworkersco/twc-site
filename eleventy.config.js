@@ -1,12 +1,8 @@
-// todo(maximsmol): install eslint
-
 import { pathToFileURL } from "node:url";
-import path from "node:path";
 import { DateTime } from "luxon";
 import memoize from "memoize";
 import * as lightningcss from "lightningcss";
 import browserslist from "browserslist";
-import { IdAttributePlugin } from "@11ty/eleventy";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
 import YAML from "yaml";
@@ -162,9 +158,9 @@ export default async (cfg) => {
   cfg.addFilter("filter_tags", function (x) {
     return x;
   }); // todo(maximsmol): fix in sources
-  cfg.addLiquidTag("link", (liquid) => ({
+  cfg.addLiquidTag("link", () => ({
     // todo(maximsmol): rewrite in sources and remove
-    parse: function (tagToken, remainTokens) {
+    parse: function (tagToken) {
       this.path = tagToken.args;
     },
     render: async function (ctx) {
@@ -196,8 +192,6 @@ export default async (cfg) => {
   cfg.addFilter(
     "lightningcss",
     memoize(function (content) {
-      const parsed = path.parse(this.page.inputPath);
-
       const res = lightningcss.transform({
         code: Buffer.from(content),
         minify: true,
@@ -310,7 +304,7 @@ export default async (cfg) => {
     "jekyll.environment",
     process.env.CONTEXT === "production" ? "production" : "development",
   );
-  cfg.addGlobalData("eleventyComputed.site", (a) => (data) => ({
+  cfg.addGlobalData("eleventyComputed.site", () => (data) => ({
     ...data.collections, // todo(maximsmol): fix in source code
     time: new Date(),
     url: site.url,
