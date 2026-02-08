@@ -1,17 +1,7 @@
-import { Data } from "./types.js";
+import { Chapter, Data } from "./types.js";
 
 export const data = {
   title: "Join a Chapter",
-};
-
-type Chapter = {
-  text: string;
-  icon: string;
-  url?: string;
-  twitter?: string;
-  meetup?: string;
-  facebook?: string;
-  activity_level: "active" | "inactive";
 };
 
 export const render = ({ chapters }: Data) => {
