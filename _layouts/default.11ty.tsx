@@ -4,6 +4,7 @@ import browserslist from "browserslist";
 
 import { htmlToText, nmap } from "../utils.ts";
 import { readFile } from "fs/promises";
+import { Page } from "../types.ts";
 
 const header_links = [
   { url: "/subscribe", text: "Join" },
@@ -45,7 +46,8 @@ const renderCss = async () => {
   return Buffer.from(res.code).toString();
 };
 
-const truncate = (x: string) => (x.length <= 160 ? x : x.slice(0, 159) + "…");
+const truncate = (x: string) =>
+  x.length <= 160 ? x : x.slice(0, 159).trimEnd() + "…";
 
 export const render = async ({
   md,
@@ -58,18 +60,7 @@ export const render = async ({
   content: string;
   title?: string;
   site: { title: string; description: string; url: string };
-  page: {
-    inputPath: string;
-    fileSlug: string;
-    filePathStem: string;
-    outputFileExtension: string;
-    templateSyntax: string;
-    date: Date;
-    rawInput: string;
-    url: string;
-    outputPath: string;
-    excerpt?: string;
-  };
+  page: Page;
 }) => {
   return {
     type: "root",

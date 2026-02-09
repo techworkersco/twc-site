@@ -109,10 +109,7 @@ export default async (cfg) => {
     excerpt_separator: "<!--excerpt-->",
   });
 
-  cfg.addFilter("time_converter_url", function (x) {
-    return `https://www.timeanddate.com/worldclock/converter.html?iso=${DateTime.fromJSDate(x).setZone("UTC").toFormat("yyyyMMdd'T'HHmmss")}&p1=179&p2=224&p3=37`;
-  });
-  cfg.addFilter("all_time_zones", function (x, timezones) {
+  const allTimeZones = function (x, timezones) {
     const dt = parseLooseDate(x);
     if (!dt.isValid) throw new Error(`all_time_zones: invalid input: ${x}`);
 
@@ -138,7 +135,9 @@ export default async (cfg) => {
         })
         .join(", ")
     );
-  });
+  };
+  cfg.addFilter("all_time_zones", allTimeZones);
+  cfg.addGlobalData("allTimeZones", () => allTimeZones);
   cfg.addFilter("relative_day_of_month", function (x, timezones) {
     if (timezones == null) timezones = [timeZone];
     const dt = DateTime.fromJSDate(x);

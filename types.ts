@@ -21,3 +21,16 @@ export type Data = {
   chapters: Chapter[];
   workplaces: Workplace[];
 };
+
+export type Page = {
+  inputPath: string;
+  fileSlug: string;
+  filePathStem: string;
+  outputFileExtension: string;
+  templateSyntax: string;
+  date: Date;
+  rawInput: string;
+  url: string;
+  outputPath: string;
+  excerpt?: string;
+};
