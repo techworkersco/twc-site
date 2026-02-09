@@ -1,4 +1,4 @@
-import { Data } from "./types.js";
+import { Data } from "./types.ts";
 
 export const data = {
   title: "Job Board",

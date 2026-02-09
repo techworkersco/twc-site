@@ -13,7 +13,9 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+
+    "allowImportingTsExtensions": true
   },
   "typeAcquisition": {
     "enable": false
