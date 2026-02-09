@@ -1,3 +1,9 @@
+---
+layout: page
+title: Contact Us
+permalink: /contact-us-temp/
+---
+
 <form method="POST" class="marg-b-4" action="contact" data-netlify="true" netlify-honeypot="bot-field">
   <label class="marg-b-3" for="email">
     <div><b>Email:</b></div>
