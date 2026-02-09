@@ -1,5 +1,4 @@
 ---
-layout: page
 title: TWC Seattle
 permalink: /seattle/
 ---

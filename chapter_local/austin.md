@@ -1,5 +1,4 @@
 ---
-layout: page
 title: TWC Austin
 permalink: /austin/
 ---

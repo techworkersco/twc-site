@@ -1,5 +1,4 @@
 ---
-layout: page
 title: TWC DC
 permalink: /dc/
 ---
