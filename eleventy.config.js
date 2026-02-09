@@ -2,18 +2,14 @@ import { pathToFileURL } from "node:url";
 
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import * as mdx from "@mdx-js/mdx";
-import browserslist from "browserslist";
 import { toHtml } from "hast-util-to-html";
 import * as jsxRuntime from "hastscript/jsx-runtime";
-import * as lightningcss from "lightningcss";
 import { DateTime } from "luxon";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
-import memoize from "memoize";
 import rehypeSlug from "rehype-slug";
 import YAML from "yaml";
 
-const baseUrl = "https://techworkerscoalition.org";
 const timeZone = "America/New_York";
 
 const site = {
@@ -52,7 +48,7 @@ const parseLooseDate = (x) => {
 };
 
 export default async (cfg) => {
-  cfg.addGlobalData("layout", "default");
+  cfg.addGlobalData("layout", "default.11ty.tsx");
 
   cfg.ignores.add("README.md");
 
@@ -94,6 +90,9 @@ export default async (cfg) => {
     jekyllInclude: true, // todo(maximsmol): rewrite to new syntax?
     timezoneOffset: timeZone,
   });
+
+  // todo(maximsmol): switch to this?
+  // cfg.addPlugin(IdAttributePlugin);
   const md = markdownIt({
     html: true,
     typographer: true,
@@ -102,18 +101,14 @@ export default async (cfg) => {
     slugify: slugifyKramdown,
   });
   cfg.setLibrary("md", md);
+  cfg.addGlobalData("md", md);
 
-  // todo(maximsmol): switch to this?
-  // cfg.addPlugin(IdAttributePlugin);
+  // todo(maximsmol): switch to hast-based excerpts?
   cfg.setFrontMatterParsingOptions({
     excerpt: true,
     excerpt_separator: "<!--excerpt-->",
   });
 
-  cfg.addFilter("md", function (x) {
-    if (x == null) return x;
-    return md.render(x);
-  });
   cfg.addFilter("time_converter_url", function (x) {
     return `https://www.timeanddate.com/worldclock/converter.html?iso=${DateTime.fromJSDate(x).setZone("UTC").toFormat("yyyyMMdd'T'HHmmss")}&p1=179&p2=224&p3=37`;
   });
@@ -151,10 +146,7 @@ export default async (cfg) => {
   });
 
   cfg.addFilter("absolute_url", function (x) {
-    return new URL(x, baseUrl).href;
-  }); // todo(maximsmol): fix in sources
-  cfg.addFilter("relative_url", function (x) {
-    return x;
+    return new URL(x, site.url).href;
   }); // todo(maximsmol): fix in sources
   cfg.addFilter("filter_tags", function (x) {
     return x;
@@ -190,28 +182,6 @@ export default async (cfg) => {
     return res;
   });
 
-  cfg.addFilter(
-    "lightningcss",
-    memoize(function (content) {
-      const res = lightningcss.transform({
-        code: Buffer.from(content),
-        minify: true,
-        sourceMap: process.env.CONTEXT === "development",
-        drafts: {
-          customMedia: true,
-        },
-        targets: lightningcss.browserslistToTargets(browserslist()),
-      });
-      if (res.warnings.length > 0) {
-        console.warn("Lightning CSS warnings:");
-        for (const x of res.warnings) console.warn(x);
-      }
-      // todo(maximsmol): does this need addDependencies somehow?
-
-      return Buffer.from(res.code).toString();
-    }),
-  );
-
   // todo(maximsmol): do something about these?
   cfg.addFilter("where_future", function (xs, ts) {
     const tsTime = new Date(ts).getTime();
@@ -243,7 +213,9 @@ export default async (cfg) => {
     compile() {
       return async function (data) {
         const res = await this.defaultRenderer(data);
-        return toHtml(res);
+        return toHtml(res, {
+          allowDangerousHtml: true,
+        });
       };
     },
   });
@@ -263,7 +235,9 @@ export default async (cfg) => {
         rehypeSlug({
           slugify: slugifyKramdown,
         })(res);
-        return toHtml(res);
+        return toHtml(res, {
+          allowDangerousHtml: true,
+        });
       };
     },
   });
@@ -307,25 +281,8 @@ export default async (cfg) => {
   );
   cfg.addGlobalData("eleventyComputed.site", () => (data) => ({
     ...data.collections, // todo(maximsmol): fix in source code
+    ...site,
     time: new Date(),
-    url: site.url,
-    title: site.title,
-    description: site.description,
-    header_links: [
-      { url: "/subscribe", text: "Join" },
-      { url: "/events", text: "Events" },
-      { url: "/chapters", text: "Chapters" },
-    ],
-    links: [
-      { url: "/subscribe", text: "Join" },
-      { url: "/events", text: "Events" },
-      { url: "/blog", text: "Blog" },
-      { url: "/chapters", text: "Chapters" },
-      { url: "/community-guide", text: "Community Guide" },
-      { url: "/job-board", text: "Union Job Board" },
-      { url: "/press", text: "Press mentions" },
-      { url: "/security", text: "Security Tips" },
-    ],
     data: {
       chapters: data.chapters,
       press: data.press,
