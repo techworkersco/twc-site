@@ -85,6 +85,7 @@ export const render = async ({
           {/* The page supports both dark and light color schemes,
           and the page author prefers dark. */}
           <meta name="color-scheme" content="dark light" />
+          {/* todo(maximsmol): make sure all blog and event pages have non-default descriptions */}
           <meta
             name="description"
             content={truncate(
