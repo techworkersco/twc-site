@@ -10,7 +10,7 @@ export type Chapter = {
 
 type Workplace = {
   organization: string;
-  division: string;
+  division?: string;
   union: string;
   union_twitter: string;
   union_website: string;

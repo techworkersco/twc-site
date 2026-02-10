@@ -1,20 +1,17 @@
-// todo(maximsmol): install eslint
-
 import { pathToFileURL } from "node:url";
-import path from "node:path";
-import { DateTime } from "luxon";
-import memoize from "memoize";
-import * as lightningcss from "lightningcss";
+
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import * as mdx from "@mdx-js/mdx";
 import browserslist from "browserslist";
-import { IdAttributePlugin } from "@11ty/eleventy";
+import { toHtml } from "hast-util-to-html";
+import * as jsxRuntime from "hastscript/jsx-runtime";
+import * as lightningcss from "lightningcss";
+import { DateTime } from "luxon";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
-import YAML from "yaml";
-import { feedPlugin } from "@11ty/eleventy-plugin-rss";
-import { toHtml } from "hast-util-to-html";
-import * as mdx from "@mdx-js/mdx";
-import * as jsxRuntime from "hastscript/jsx-runtime";
+import memoize from "memoize";
 import rehypeSlug from "rehype-slug";
+import YAML from "yaml";
 
 const baseUrl = "https://techworkerscoalition.org";
 const timeZone = "America/New_York";
@@ -38,8 +35,8 @@ const ampmZones = new Set([
 // Ruby might be doing this implicitly? the generated slugs imperically match
 const slugifyKramdown = (x) =>
   x
-    .replace(/^[^\p{L}\p{Nd}]+/gu, "")
-    .replace(/[^\p{M}\p{L}\p{Nd} -]/gu, "")
+    .replaceAll(/^[^\p{L}\p{Nd}]+/gu, "")
+    .replaceAll(/[^\p{M}\p{L}\p{Nd} -]/gu, "")
     .replaceAll(" ", "-")
     .toLowerCase();
 
@@ -162,9 +159,9 @@ export default async (cfg) => {
   cfg.addFilter("filter_tags", function (x) {
     return x;
   }); // todo(maximsmol): fix in sources
-  cfg.addLiquidTag("link", (liquid) => ({
+  cfg.addLiquidTag("link", () => ({
     // todo(maximsmol): rewrite in sources and remove
-    parse: function (tagToken, remainTokens) {
+    parse: function (tagToken) {
       this.path = tagToken.args;
     },
     render: async function (ctx) {
@@ -196,8 +193,6 @@ export default async (cfg) => {
   cfg.addFilter(
     "lightningcss",
     memoize(function (content) {
-      const parsed = path.parse(this.page.inputPath);
-
       const res = lightningcss.transform({
         code: Buffer.from(content),
         minify: true,
@@ -227,7 +222,7 @@ export default async (cfg) => {
     return xs.filter((x) => new Date(x.date).getTime() < tsTime);
   });
   cfg.addFilter("date_sort", function (xs) {
-    return xs.sort(
+    return xs.toSorted(
       (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
     );
   });
@@ -310,7 +305,7 @@ export default async (cfg) => {
     "jekyll.environment",
     process.env.CONTEXT === "production" ? "production" : "development",
   );
-  cfg.addGlobalData("eleventyComputed.site", (a) => (data) => ({
+  cfg.addGlobalData("eleventyComputed.site", () => (data) => ({
     ...data.collections, // todo(maximsmol): fix in source code
     time: new Date(),
     url: site.url,

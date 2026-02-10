@@ -1,15 +1,11 @@
 {
   "include": ["./**/*"],
-  "exclude": [],
   "compilerOptions": {
-    "target": "ESNext",
     "module": "NodeNext",
     "lib": ["ESNext"],
     "moduleResolution": "nodenext",
     "jsx": "react-jsx",
     "jsxImportSource": "hastscript",
-    "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
 
     "strict": true,
     "noFallthroughCasesInSwitch": true,
@@ -17,7 +13,9 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+
+    "allowImportingTsExtensions": true
   },
   "typeAcquisition": {
     "enable": false

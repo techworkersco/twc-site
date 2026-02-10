@@ -1,4 +1,4 @@
-import { Chapter, Data } from "./types.js";
+import { Chapter, Data } from "./types.ts";
 
 export const data = {
   title: "Join a Chapter",
