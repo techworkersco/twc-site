@@ -20,7 +20,7 @@
     "memoize": "^10.2.0",
     "rehype-slug": "^6.0.0",
     "tsx": "^4.21.0",
-    "typescript-eslint": "^8.54.0",
+    "typescript-eslint": "^8.55.0",
     "yaml": "^2.8.2"
   },
   "engines": {
