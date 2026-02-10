@@ -4,22 +4,38 @@ import { Page } from "../types.ts";
 
 export const data = { layout: "default.11ty.tsx" };
 
-export const render = ({
-  content,
-  title,
-  page,
-  allTimeZones,
-  time_zones,
-}: {
-  content: string;
-  title: string;
-  page: Page;
-  allTimeZones: (x: Date, timezones: string[]) => string;
-  time_zones: string[];
-}) => {
+export const render = function (
+  this: {
+    all_time_zones: (x: Date, timezones: string[]) => string;
+  },
+  {
+    content,
+    title,
+    page,
+    time_zones,
+  }: {
+    content: string;
+    title: string;
+    page: Page;
+    time_zones: string[];
+  },
+) {
+  const timeConverterUrl = new URL(
+    "https://www.timeanddate.com/worldclock/converter.html",
+  );
+  // todo(maximsmol): can this use regular iso format?
+  timeConverterUrl.searchParams.set(
+    "iso",
+    DateTime.fromJSDate(page.date).setZone("UTC").toFormat("yyyyMMdd'T'HHmmss"),
+  );
+  timeConverterUrl.searchParams.set("p1", "179"); // New York City
+  timeConverterUrl.searchParams.set("p2", "224"); // San Francisco
+  timeConverterUrl.searchParams.set("p3", "37"); // Berlin
+
   return (
     <>
       <style>
+        {/* todo(maximsmol): move to main.css? */}
         {"h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}"}
       </style>
       <nav class="see-more">
@@ -32,11 +48,8 @@ export const render = ({
         <div class="post-content">
           <div class="event-time">
             📆{" "}
-            <a
-              target="_blank"
-              href={`https://www.timeanddate.com/worldclock/converter.html?iso=${DateTime.fromJSDate(page.date).setZone("UTC").toFormat("yyyyMMdd'T'HHmmss")}&p1=179&p2=224&p3=37`}
-            >
-              {allTimeZones(page.date, time_zones)}
+            <a target="_blank" href={timeConverterUrl.href}>
+              {this.all_time_zones(page.date, time_zones)}
             </a>
           </div>
 

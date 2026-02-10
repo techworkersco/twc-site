@@ -17,12 +17,8 @@ type Workplace = {
   job_listings: string;
 };
 
-export type Data = {
-  chapters: Chapter[];
-  workplaces: Workplace[];
-};
-
 export type Page = {
+  excerpt?: string;
   inputPath: string;
   fileSlug: string;
   filePathStem: string;
@@ -32,5 +28,16 @@ export type Page = {
   rawInput: string;
   url: string;
   outputPath: string;
-  excerpt?: string;
+};
+
+export type Site = {
+  title: string;
+  description: string;
+  url: string;
+  timeZone: string;
+};
+
+export type Data = {
+  chapters: Chapter[];
+  workplaces: Workplace[];
 };

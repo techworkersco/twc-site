@@ -4,7 +4,7 @@ const dateRe = /^(\d{4})-(\d{2})-(\d{2})-(.*)$/;
 
 export default {
   tags: ["blog"],
-  layout: "newsletter",
+  layout: "newsletter.11ty.tsx",
   permalink(data) {
     const {
       page: { inputPath },

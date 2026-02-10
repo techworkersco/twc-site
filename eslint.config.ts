@@ -38,6 +38,8 @@ export default defineConfig([
       "unicorn/no-array-callback-reference": "off",
       "unicorn/no-anonymous-default-export": "off",
       "unicorn/consistent-function-scoping": "off",
+      "unicorn/no-nested-ternary": "off",
+      "unicorn/no-await-expression-member": "off",
     },
     languageOptions: {
       globals: globals.node,

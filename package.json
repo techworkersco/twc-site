@@ -15,6 +15,7 @@
     "eslint-plugin-unicorn": "^62.0.0",
     "globals": "^17.3.0",
     "hast-util-from-html": "^2.0.3",
+    "hast-util-select": "^6.0.4",
     "hast-util-to-html": "^9.0.5",
     "hast-util-to-text": "^4.0.2",
     "hastscript": "^9.0.1",

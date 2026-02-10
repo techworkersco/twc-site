@@ -4,7 +4,7 @@ import { DateTime } from "luxon";
 
 export default {
   tags: ["events"],
-  layout: "event",
+  layout: "event.11ty.tsx",
   eleventyComputed: {
     date(data) {
       const res = DateTime.fromFormat(data.date, "yyyy-MM-dd HH:mm", {

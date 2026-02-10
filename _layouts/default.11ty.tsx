@@ -1,10 +1,13 @@
-import type markdownIt from "markdown-it";
-import * as lightningcss from "lightningcss";
-import browserslist from "browserslist";
+import { readFile } from "node:fs/promises";
 
-import { htmlToText, nmap } from "../utils.ts";
-import { readFile } from "fs/promises";
-import { Page } from "../types.ts";
+import browserslist from "browserslist";
+import { fromHtml } from "hast-util-from-html";
+import { toText } from "hast-util-to-text";
+import * as lightningcss from "lightningcss";
+import type markdownIt from "markdown-it";
+
+import { Page, Site } from "../types.ts";
+import { nmap } from "../utils.ts";
 
 const header_links = [
   { url: "/subscribe", text: "Join" },
@@ -46,9 +49,6 @@ const renderCss = async () => {
   return Buffer.from(res.code).toString();
 };
 
-const truncate = (x: string) =>
-  x.length <= 160 ? x : x.slice(0, 159).trimEnd() + "…";
-
 export const render = async ({
   md,
   content,
@@ -59,9 +59,23 @@ export const render = async ({
   md: markdownIt;
   content: string;
   title?: string;
-  site: { title: string; description: string; url: string };
+  site: Site;
   page: Page;
 }) => {
+  // todo(maximsmol): switch to hast-based excerpts to avoid having to re-render the text
+  // and relying on it being markdown
+  const descriptionRaw =
+    nmap(page.excerpt, (x) => md.render(x)) ?? site.description;
+  const descriptionAst = fromHtml(descriptionRaw);
+  let description = toText(descriptionAst).replaceAll(/\s+/g, " ").trim();
+  if (description.length > 160)
+    description = description.slice(0, 159).trimEnd() + "…";
+
+  const canonicalUrl = new URL(
+    page.url.replaceAll(/index.html$/g, ""),
+    site.url,
+  );
+
   return {
     type: "root",
     children: [
@@ -77,16 +91,7 @@ export const render = async ({
           and the page author prefers dark. */}
           <meta name="color-scheme" content="dark light" />
           {/* todo(maximsmol): make sure all blog and event pages have non-default descriptions */}
-          <meta
-            name="description"
-            content={truncate(
-              htmlToText(
-                nmap(page.excerpt, (x) => md.render(x)) ?? site.description,
-              )
-                .replaceAll(/\s+/g, " ")
-                .trim(),
-            )}
-          />
+          <meta name="description" content={description} />
           <meta
             http-equiv="Content-Security-Policy"
             content={Object.entries({
@@ -141,12 +146,7 @@ export const render = async ({
           />
 
           <style>{await renderCss()}</style>
-          <link
-            rel="canonical"
-            href={
-              new URL(page.url.replaceAll(/index.html$/g, ""), site.url).href
-            }
-          />
+          <link rel="canonical" href={canonicalUrl.href} />
           <link
             rel="shortcut icon"
             href="/assets/favicon.png"

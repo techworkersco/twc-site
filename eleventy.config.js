@@ -17,6 +17,7 @@ const site = {
   description:
     "A coalition of tech industry workers, labor organizers, community organizers, and friends cultivating solidarity among all workers in tech.",
   url: "https://techworkerscoalition.org",
+  timeZone,
 };
 
 const ampmZones = new Set([
@@ -49,6 +50,7 @@ const parseLooseDate = (x) => {
 
 export default async (cfg) => {
   cfg.addGlobalData("layout", "default.11ty.tsx");
+  cfg.setLayoutResolution(false);
 
   cfg.ignores.add("README.md");
 
@@ -101,15 +103,16 @@ export default async (cfg) => {
     slugify: slugifyKramdown,
   });
   cfg.setLibrary("md", md);
+  // todo(maximsmol): get rid of this somehow? e.g. via `renderTemplate`?
   cfg.addGlobalData("md", md);
 
-  // todo(maximsmol): switch to hast-based excerpts?
   cfg.setFrontMatterParsingOptions({
     excerpt: true,
     excerpt_separator: "<!--excerpt-->",
   });
 
-  const allTimeZones = function (x, timezones) {
+  // todo(maximsmol): move this into a javascript util file
+  cfg.addFilter("all_time_zones", function (x, timezones) {
     const dt = parseLooseDate(x);
     if (!dt.isValid) throw new Error(`all_time_zones: invalid input: ${x}`);
 
@@ -135,18 +138,13 @@ export default async (cfg) => {
         })
         .join(", ")
     );
-  };
-  cfg.addFilter("all_time_zones", allTimeZones);
-  cfg.addGlobalData("allTimeZones", () => allTimeZones);
+  });
   cfg.addFilter("relative_day_of_month", function (x, timezones) {
     if (timezones == null) timezones = [timeZone];
     const dt = DateTime.fromJSDate(x);
     return dt.setZone(timezones[0]).toFormat("dd");
   });
 
-  cfg.addFilter("absolute_url", function (x) {
-    return new URL(x, site.url).href;
-  }); // todo(maximsmol): fix in sources
   cfg.addFilter("filter_tags", function (x) {
     return x;
   }); // todo(maximsmol): fix in sources
@@ -230,7 +228,7 @@ export default async (cfg) => {
       });
 
       return async function (data) {
-        const res = await mdxContent(data);
+        const res = await mdxContent.call(this, data);
         rehypeSlug({
           slugify: slugifyKramdown,
         })(res);
