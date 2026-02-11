@@ -5645,12 +5645,8 @@ snapshots:
 
   walk-up-path@3.0.1: {}
 
-<<<<<<< HEAD
   web-namespaces@2.0.1: {}
 
-||||||| 5397ea4
-=======
->>>>>>> master
   which-boxed-primitive@1.1.1:
     dependencies:
       is-bigint: 1.1.0
