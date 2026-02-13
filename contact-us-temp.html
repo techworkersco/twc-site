@@ -3,8 +3,7 @@ layout: page
 title: Contact Us
 permalink: /contact-us-temp/
 ---
-
-<form method="POST" class="marg-b-4" action="contact" data-netlify="true" netlify-honeypot="bot-field">
+<form method="POST" name="contact" class="marg-b-4" action="/contact" data-netlify="true" netlify-honeypot="bot-field">
   <label class="marg-b-3" for="email">
     <div><b>Email:</b></div>
     <input id="email" type="email" required name="email">
@@ -15,7 +14,7 @@ permalink: /contact-us-temp/
   </label>
   <label class="marg-b-3" for="message">
     <div><b>Message:</b></div>
-    <textarea id="message" required name="message" rows="10" cols="50"></textarea>
+    <textarea id="message" required name="message" rows="10" cols="10"></textarea>
   </label>
   <div>
     <input type="submit" value="Submit">
