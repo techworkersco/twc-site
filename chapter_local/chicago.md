@@ -1,5 +1,4 @@
 ---
-layout: page
 title: TWC Chicago
 permalink: /chicago/
 ---

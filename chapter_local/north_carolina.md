@@ -1,5 +1,4 @@
 ---
-layout: page
 title: TWC North Carolina
 permalink: /north-carolina/
 ---

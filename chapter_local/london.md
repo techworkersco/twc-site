@@ -1,5 +1,4 @@
 ---
-layout: page
 title: TWC London
 permalink: /london/
 ---

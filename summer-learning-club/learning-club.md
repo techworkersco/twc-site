@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Summer Learning Club
 permalink: /summer-learning-club/
 ---

@@ -1,5 +1,4 @@
 ---
-layout: page
 title: TWC London Code of Conduct
 permalink: /london/code-of-conduct/
 
