@@ -7,6 +7,7 @@ import * as jsxRuntime from "hastscript/jsx-runtime";
 import { DateTime } from "luxon";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
+import ical from "node-ical";
 import rehypeSlug from "rehype-slug";
 import YAML from "yaml";
 
@@ -67,6 +68,7 @@ export default async (cfg) => {
   cfg.addDataExtension("yml", YAML.parse);
   cfg.addDataExtension("yaml", YAML.parse);
 
+  // fixme(maximsmol): calendar events do not get loaded into RSS
   const getRssConfig = (collection, name) => ({
     type: "atom",
     outputPath: `/feed/${collection}.xml`,
@@ -240,6 +242,41 @@ export default async (cfg) => {
   });
   cfg.addTemplateFormats("mdx");
 
+  const fetchCalendar = async () => {
+    const data = await ical.fromURL(
+      "https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/EHFzzZQXSQoS3f5w/?export",
+    );
+
+    if (data == null) throw new Error("failed to load calendar data");
+
+    const events = [];
+    for (const [, entry] of Object.entries(data)) {
+      if (entry == null) continue;
+      if (entry.type !== "VEVENT") continue;
+
+      const start = DateTime.fromJSDate(entry.start, {
+        zone: entry.start.tz,
+      });
+      // todo(maximsmol): deal with recurring events
+      // todo(maximsmol): extract image from content
+      events.push({
+        // todo(maximsmol): use a timezone-aware datetime?
+        date: start.toJSDate(),
+        url: `/events/${entry.uid}/`,
+        data: {
+          title: entry.summary,
+          time_zones: entry.start.tz != null ? [entry.start.tz] : undefined,
+          // todo(maximsmol): add locations
+          // locations: [],
+        },
+        content:
+          entry.description != null ? md.render(entry.description) : undefined,
+      });
+    }
+
+    cfg.addGlobalData("ical_events", events);
+  };
+
   const remoteDataSrcs = [
     {
       data: "berlin_press",
@@ -254,7 +291,7 @@ export default async (cfg) => {
       url: "https://techwerkers.nl/en/twc-global/index.yaml",
     },
   ];
-  const deferred = [];
+  const deferred = [fetchCalendar()];
   for (const x of remoteDataSrcs)
     deferred.push(
       (async () => {
@@ -265,7 +302,9 @@ export default async (cfg) => {
         });
         const data = YAML.parse(await req.text());
 
-        console.log(`Fetched: ${x.data} from ${x.url}`);
+        console.log(
+          `Fetched ${data.length} ${x.data} items from from ${x.url}`,
+        );
 
         cfg.addGlobalData(x.data, data);
       })(),
