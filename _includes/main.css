@@ -467,6 +467,7 @@ label {
 input[type="email"],
 input[type="text"],
 input[type="url"],
+textarea,
 select {
   border: 1px solid;
   border-radius: 4px;
@@ -620,6 +621,7 @@ hr {
   input[type="email"],
   input[type="text"],
   input[type="url"],
+  textarea,
   select {
     border-color: #ccc;
   }
@@ -686,6 +688,7 @@ hr {
   input[type="email"],
   input[type="text"],
   input[type="url"],
+  textarea,
   select {
     background: var(--grey2);
     border-color: transparent;
@@ -1026,4 +1029,9 @@ nav.see-more {
 
 .img-fluid {
   max-width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 1em;
 }
