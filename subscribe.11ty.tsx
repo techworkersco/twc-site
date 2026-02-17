@@ -5,7 +5,7 @@ export const data = {
 };
 
 export const render = ({ chapters }: Data) => {
-  const xs = chapters.filter((x) => x.activity_level === "active");
+  const xs = chapters.filter((x) => x.active);
   xs.sort((a, b) => a.text.localeCompare(b.text));
 
   const chapterOptions = xs.map((x) => (

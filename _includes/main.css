@@ -11,6 +11,28 @@
 
   --font-family-base: Helvetica Neue, HelveticaNeue, Helvetica, Arial, system-ui,
     -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+
+  --border-radius-s: 5px;
+  --border-radius-m: 10px;
+
+  --step--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
+  --step--1: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  --step-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --step-1: clamp(1.35rem, 1.2631rem + 0.3864vw, 1.5625rem);
+  --step-2: clamp(1.62rem, 1.4837rem + 0.6057vw, 1.9531rem);
+  --step-3: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
+  --step-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
+  --step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5369rem + 0.1136vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8494rem + 0.1136vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6108rem + 0.3409vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.1477rem + 0.4545vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2216rem + 0.6818vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.2955rem + 0.9091vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.4432rem + 1.3636vw, 7.5rem);
 }
 
 @custom-media --desktop screen and (width >= 760px);
@@ -19,6 +41,9 @@
 
 body {
   font-family: var(--font-family-base);
+  font-size: var(--step-0);
+
+  /* todo(maximsmol): get rid of this? */
   letter-spacing: 0.03rem;
   line-height: 1.5;
   margin: 0;
@@ -28,6 +53,16 @@ body {
   min-height: 100vh;
 
   padding-top: calc(var(--header-height) + 20px);
+}
+
+h1 {
+  font-size: var(--step-3);
+}
+h2 {
+  font-size: var(--step-2);
+}
+h3 {
+  font-size: var(--step-1);
 }
 
 .grow-main {
@@ -386,32 +421,6 @@ main {
 footer {
   border-top: 1px solid;
   padding: 2rem 0;
-}
-
-.txt-1,
-h1 {
-  font-size: 2rem;
-  @media (--mobile) {
-    font-size: 1.75rem;
-  }
-}
-
-.txt-2,
-h2 {
-  font-size: 1.75rem;
-  font-weight: 500;
-  @media (--mobile) {
-    font-size: 1.5rem;
-  }
-}
-
-.txt-3,
-h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  @media (--mobile) {
-    font-size: 1.25rem;
-  }
 }
 
 form {
@@ -919,31 +928,100 @@ section {
 }
 
 .chapter-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  &,
+  & ul {
+    list-style-type: none;
+    padding: 0;
 
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-
-  & .name {
-    font-size: 120%;
+    & li {
+      margin: 0;
+    }
   }
 
-  & li {
-    border: 1px solid var(--grey4);
-    border-radius: 10px;
-    padding: 0.5em;
+  display: grid;
+
+  /* todo(maximsmol): rethink this layout */
+  grid-template-columns: repeat(auto-fit, clamp(150px, 35vw, 240px));
+  @media (--mobile) {
+    grid-template-columns: auto;
+  }
+
+  row-gap: var(--space-s);
+  column-gap: var(--space-s);
+
+  & section {
+    padding: 0;
+  }
+  & p {
+    margin: 0;
+  }
+
+  & > .card {
+    aspect-ratio: 1 / 1;
+    @media (--mobile) {
+      aspect-ration: unset;
+    }
 
     display: flex;
-    flex-direction: row;
 
-    gap: 0.5em;
-    align-items: center;
+    border: 1px solid var(--grey4);
+    border-radius: var(--border-radius-m);
+    padding: var(--space-2xs);
 
-    a {
+    line-height: 1.2;
+    letter-spacing: 0;
+
+    & > .content {
       display: flex;
+      flex-direction: column;
+
+      gap: var(--space-s);
+
+      & > .header {
+        display: flex;
+        flex-direction: column;
+
+        & h4 {
+          color: inherit;
+        }
+
+        &:not(:hover),
+        &:not([href]) {
+          color: inherit;
+        }
+        text-decoration: none;
+
+        gap: var(--space-xs);
+        overflow: hidden;
+
+        & > .image {
+          order: -1;
+
+          border-radius: var(--border-radius-s);
+
+          overflow: hidden;
+
+          & > img {
+            width: 100%;
+
+            object-fit: cover;
+          }
+        }
+      }
+
+      & .details {
+        font-size: var(--step--1);
+      }
+
+      & .quick-links {
+        display: flex;
+        gap: var(--space-2xs);
+
+        height: var(--space-m);
+
+        line-height: 1;
+        place-items: center;
+      }
     }
   }
 }
@@ -1034,4 +1112,8 @@ nav.see-more {
 .form-row {
   display: flex;
   gap: 1em;
+}
+
+.spring {
+  flex-grow: 1;
 }
