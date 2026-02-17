@@ -33,14 +33,41 @@ export const render = ({ chapters }: Data) => {
           <div>
             <b>Email:</b>
           </div>
-          <input id="email" type="email" required name="email" />
+          <input
+            id="email"
+            type="email"
+            required
+            name="email"
+            placeholder="mail@example.com"
+          />
         </label>
-        <label class="marg-b-3" for="name">
-          <div>
-            <b>Name:</b>
-          </div>
-          <input id="name" type="text" required name="name" />
-        </label>
+        <div class="form-row">
+          <label class="marg-b-3" for="first-name">
+            <div>
+              <b>First Name:</b>
+            </div>
+            <input
+              id="first-name"
+              type="text"
+              maxlength="100"
+              required
+              name="first-name"
+              placeholder="John"
+            />
+          </label>
+          <label class="marg-b-3" for="last-name">
+            <div>
+              <b>Last Name:</b>
+            </div>
+            <input
+              id="last-name"
+              type="text"
+              maxlength="100"
+              name="last-name"
+              placeholder="Doe"
+            />
+          </label>
+        </div>
         <label class="marg-b-3" for="social">
           <div class="marg-b-2">
             <b>Please provide two links to your social media.</b>
@@ -57,16 +84,16 @@ export const render = ({ chapters }: Data) => {
             placeholder="LinkedIn, Twitter, etc"
             id="social"
             required
-            type="text"
+            type="url"
             name="social_media_1"
-            title="enter a valid url"
+            title="Enter a valid url"
           />{" "}
           <input
             placeholder="GitHub, Instagram, Blog"
-            type="text"
+            type="url"
             required
             name="social_media_2"
-            title="enter a valid url"
+            title="Enter a valid url"
           />
         </label>
         <label class="marg-b-3" for="company_name">
@@ -74,7 +101,27 @@ export const render = ({ chapters }: Data) => {
             <b>Company Name</b>
           </div>
           <div class="marg-b-2">Including a company name helps us vet you.</div>
-          <input id="company_name" type="text" name="company_name" required />
+          <input
+            id="company_name"
+            type="text"
+            name="company_name"
+            required
+            placeholder="ACME Inc."
+          />
+        </label>
+        <label class="marg-b-3" for="contacts-comments">
+          <div>
+            <b>Additional Comments</b> (optional):
+          </div>
+          <div class="marg-b-2">
+            Any additional details regarding your contact information that you
+            would like to include.
+          </div>
+          <textarea
+            id="contacts-comments"
+            maxlength="2000"
+            name="contacts-comments"
+          />
         </label>
         <label class="marg-b-3" for="human-referrer">
           <div>
