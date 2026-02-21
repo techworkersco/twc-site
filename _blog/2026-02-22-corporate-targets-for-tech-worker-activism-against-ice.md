@@ -2,8 +2,9 @@
 title: Corporate Targets for Tech Worker Activism Against ICE
 date: 2026-02-21T19:00:00.000-05:00
 ---
+*By Gary Levi, Tech Workers Coalition*
 
-Over the last few weeks, following the murders of Renée Good and Alex Pretti, and in the midst of the ongoing occupation in Minneapolis, tech workers have begun to organize against ICE, and particularly the support and complicity of their companies in these attacks on not only immigrants, but the rights and lives of all workers. Along with the recent [https://iceout.tech](https://iceout.tech) open letter calling on big tech to cancel contracts with ICE (signed by many executives as well as rank and file workers) , over a thousand google workers have signed a letter ([https://www.googlers-against-ice.com](https://www.googlers-against-ice.com)) calling for divestment from partnership with ICE, and over a thousand salesforce employees have likewise called on their CEO to drop contracts with ICE. Tech has an important role in the vast infrastructure of monitoring and logistics that fuels the deportation and repression machine. As tech workers we have both an ability and a responsibility to fight against it.
+Over the last few weeks, following the murders of Renée Good and Alex Pretti, and in the midst of the ongoing occupation in Minneapolis, tech workers have begun to organize against ICE, and particularly the support and complicity of their companies in these attacks on not only immigrants, but the rights and lives of all workers. Along with the recent <https://iceout.tech> open letter calling on big tech to cancel contracts with ICE (signed by many executives as well as rank and file workers) , over a thousand google workers have signed a letter (<https://www.googlers-against-ice.com>) calling for divestment from partnership with ICE, and over a thousand salesforce employees have likewise called on their CEO to drop contracts with ICE. Tech has an important role in the vast infrastructure of monitoring and logistics that fuels the deportation and repression machine. As tech workers we have both an ability and a responsibility to fight against it.
 
 The recent protest efforts are very similar to campaigns organized in the first Trump presidency. Then, the “[Tech Won’t Build It](https://www.kqed.org/news/11679302/in-a-direct-challenge-to-their-employers-tech-workers-begin-to-organize)” and “[No Tech for ICE](https://notechforice.com/wp-content/uploads/2019/08/V10_StudentToolkit_8.5-x-11-template-with-bleed-trim.pdf)” slogans and campaigns galvanized thousands of workers who submitted letters to CEOs and [called on their companies](https://www.geekwire.com/2019/microsoft-github-workers-protest-ice-contracts-latest-demonstration-employee-activism/) to [cut contracts with ICE](https://www.nytimes.com/2018/06/19/technology/tech-companies-immigration-border.html). Despite significant media coverage and mass public support, these campaigns had no effect on corporate policy, and quietly dissolved over time. Although this wave of organizing fell short of winning demands, it contributed to a legacy of organizing which played an important role in future organizing efforts that won material gains, from union campaigns to Palestine activism and beyond. How can we do things differently this time?
 
@@ -23,26 +24,26 @@ It is quite possible that a campaign might not be able to sever all ICE contract
 
 Here is a list of my calculation of the top twenty contractors (data sourced from the [custom award data](https://www.usaspending.gov/download_center/custom_award_data) at [usaspending.gov](http://usaspending.gov)):
 
-| CSI AVIATION, INC | $9,707,485,430 |
-| :---- | ----: |
-| THE GEO GROUP, INC. | $5,370,665,928 |
-| MVM, INC. | $2,068,344,189 |
-| CORECIVIC, INC. | $2,028,372,809 |
-| B.I. INCORPORATED | $1,672,887,893 |
-| INSERSO CORPORATION | $1,484,191,479 |
+| CSI AVIATION, INC                   | $9,707,485,430 |
+| ----------------------------------- | -------------- |
+| THE GEO GROUP, INC.                 | $5,370,665,928 |
+| MVM, INC.                           | $2,068,344,189 |
+| CORECIVIC, INC.                     | $2,028,372,809 |
+| B.I. INCORPORATED                   | $1,672,887,893 |
+| INSERSO CORPORATION                 | $1,484,191,479 |
 | AKIMA INFRASTRUCTURE PROTECTION LLC | $1,241,684,376 |
-| AKIMA GLOBAL SERVICES, LLC | $1,045,991,175 |
-| PARAGON PROFESSIONAL SERVICES LLC | $1,044,183,289 |
-| STEAMPUNK, INC. | $819,579,403 |
-| WIDEPOINT INTEGRATED SOLUTIONS CORP | $691,184,173 |
-| PALANTIR TECHNOLOGIES INC. | $659,800,540 |
-| DELOITTE CONSULTING LLP | $610,394,065 |
-| CACI, INC. \- FEDERAL | $591,706,852 |
-| G4S SECURE SOLUTIONS (USA) INC. | $556,405,484 |
-| CACI NSS, LLC | $421,025,885 |
-| MANAGEMENT & TRAINING CORPORATION | $420,212,896 |
-| CLASSIC AIR CHARTER INC. | $379,336,739 |
-| ITC FEDERAL, LLC | $347,138,958 |
+| AKIMA GLOBAL SERVICES, LLC          | $1,045,991,175 |
+| PARAGON PROFESSIONAL SERVICES LLC   | $1,044,183,289 |
+| STEAMPUNK, INC.                     | $819,579,403   |
+| WIDEPOINT INTEGRATED SOLUTIONS CORP | $691,184,173   |
+| PALANTIR TECHNOLOGIES INC.          | $659,800,540   |
+| DELOITTE CONSULTING LLP             | $610,394,065   |
+| CACI, INC. - FEDERAL                | $591,706,852   |
+| G4S SECURE SOLUTIONS (USA) INC.     | $556,405,484   |
+| CACI NSS, LLC                       | $421,025,885   |
+| MANAGEMENT & TRAINING CORPORATION   | $420,212,896   |
+| CLASSIC AIR CHARTER INC.            | $379,336,739   |
+| ITC FEDERAL, LLC                    | $347,138,958   |
 
 Who are these companies?
 
