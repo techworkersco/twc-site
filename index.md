@@ -11,7 +11,7 @@ permalink: /
   We work in solidarity with existing movements towards social justice, workers' rights, and economic inclusion.</p>
   <p>We’re a democratically structured, all-volunteer, and worker-led organization.</p>
 </div>
-<nav style="font-size: clamp(0.875rem, 0.7216rem + 0.6818vw, 1.25rem)">
+<nav>
   <ul>
     <li>
       <a href="/subscribe" class="button primary">
