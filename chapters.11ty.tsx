@@ -1,6 +1,7 @@
 import { JSX } from "hastscript/jsx-runtime";
 
 import { Chapter, Data } from "./types.ts";
+import { makeAriaId } from "./utils.ts";
 
 export const data = {
   title: "Join a Chapter",
@@ -36,7 +37,7 @@ export const render = ({ chapters }: Data) => {
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title>X.com</title>
+              <title>X.com (Twitter)</title>
               <path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" />
             </svg>
           </a>
@@ -77,12 +78,14 @@ export const render = ({ chapters }: Data) => {
         </li>,
       );
 
+    const titleId = makeAriaId();
+
     return (
       <li class="card">
-        <article class="content">
+        <article class="content" aria-labelledby={titleId}>
           <a href={x.url ?? x.twitter ?? x.meetup ?? x.facebook} class="header">
             <section>
-              <h4>
+              <h4 id={titleId}>
                 {/*<span aria-hidden>{x.icon} </span>*/}
                 {x.text}
               </h4>
@@ -94,45 +97,62 @@ export const render = ({ chapters }: Data) => {
               <img src="/assets/chapters/berlin.jpg" />
             </div>
           </a>
-          <ul class="quick-links">{links}</ul>
+          <ul class="quick-links" aria-label="Social media links">
+            {links}
+          </ul>
         </article>
       </li>
     );
   };
 
-  const renderLocalities = (xs: ChaptersByLocality) => (
-    <>
-      <article>
-        <h3>North America</h3>
-        <ul class="chapter-list">{xs.north_america.map(renderChapter)}</ul>
-      </article>
-      <article>
-        <h3>Europe</h3>
-        <ul class="chapter-list">{xs.europe.map(renderChapter)}</ul>
-      </article>
-      {xs.asia.length > 0 && (
-        <article>
-          <h3>Asia</h3>
-          <ul class="chapter-list">{xs.asia.map(renderChapter)}</ul>
+  const renderLocalities = (xs: ChaptersByLocality) => {
+    const naId = makeAriaId();
+    const euId = makeAriaId();
+    const asiaId = makeAriaId();
+
+    return (
+      <div class="region-group">
+        <article aria-labelledby={naId}>
+          <h3 id={naId}>North America</h3>
+          <ul aria-label="Chapters" class="list">
+            {xs.north_america.map(renderChapter)}
+          </ul>
         </article>
-      )}
-    </>
-  );
+        <article aria-labelledby={euId}>
+          <h3 id={euId}>Europe</h3>
+          <ul aria-label="Chapters" class="list">
+            {xs.europe.map(renderChapter)}
+          </ul>
+        </article>
+        {xs.asia.length > 0 && (
+          <article aria-labelledby={asiaId}>
+            <h3 id={asiaId}>Asia</h3>
+            <ul aria-label="Chapters" class="list">
+              {xs.asia.map(renderChapter)}
+            </ul>
+          </article>
+        )}
+      </div>
+    );
+  };
+
+  const activeId = makeAriaId();
+  const inactiveId = makeAriaId();
 
   return (
-    <>
+    <div class="chapters-page">
       {/* todo(maximsmol): add an info blurb and/or an image for each chapter */}
       {/* todo(maximsmol): add more social links */}
 
-      <article>
-        <h2>Active chapters</h2>
+      <article aria-labelledby={activeId}>
+        <h2 id={activeId}>Active chapters</h2>
         {renderLocalities(active)}
       </article>
 
-      <article>
-        <h2>Inactive and former chapters</h2>
+      <article aria-labelledby={inactiveId}>
+        <h2 id={inactiveId}>Inactive and former chapters</h2>
         {renderLocalities(inactive)}
       </article>
-    </>
+    </div>
   );
 };

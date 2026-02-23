@@ -35,6 +35,25 @@
   --space-3xl: clamp(6.75rem, 6.4432rem + 1.3636vw, 7.5rem);
 }
 
+h1 {
+  font-size: var(--step-3);
+}
+h2 {
+  font-size: var(--step-2);
+}
+h3 {
+  font-size: var(--step-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 2;
+}
+
 @custom-media --desktop screen and (width >= 760px);
 @custom-media --tablet screen and (width <= 760px);
 @custom-media --mobile screen and (width <= 420px);
@@ -53,16 +72,6 @@ body {
   min-height: 100vh;
 
   padding-top: calc(var(--header-height) + 20px);
-}
-
-h1 {
-  font-size: var(--step-3);
-}
-h2 {
-  font-size: var(--step-2);
-}
-h3 {
-  font-size: var(--step-1);
 }
 
 .grow-main {
@@ -416,6 +425,8 @@ ul {
 main {
   max-width: 90%;
   padding: 0;
+
+  padding-bottom: var(--space-xl);
 }
 
 footer {
@@ -927,7 +938,19 @@ section {
   padding: clamp(0.9375rem, 0.554rem + 1.7045vw, 1.875rem) 0;
 }
 
-.chapter-list {
+.chapters-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+
+  & .region-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+  }
+}
+
+.chapters-page .list {
   &,
   & ul {
     list-style-type: none;
@@ -1055,7 +1078,11 @@ section {
   fill: currentColor;
 
   &.twitter {
-    width: 0.75em;
+    width: 1.3em;
+
+    background: #000;
+    padding: 6px;
+    border-radius: 6px;
 
     @media (prefers-color-scheme: light) {
       color: #000000;
