@@ -1082,6 +1082,12 @@ section {
     border-radius: 6px;
 
     @media (prefers-color-scheme: light) {
+      background: transparent;
+
+      padding: 0;
+      width: 0.8em;
+      border-radius: 0;
+
       color: #000000;
     }
   }
