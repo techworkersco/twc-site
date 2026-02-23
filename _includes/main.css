@@ -103,6 +103,8 @@ header {
   top: 0;
   z-index: 9;
 
+  font-size: var(--step--1);
+
   a {
     text-decoration: none;
   }
@@ -790,14 +792,14 @@ img {
   padding-bottom: 1rem;
   padding-top: 0.5rem;
 }
-[id]::before {
+/*[id]::before {
   display: block;
   content: " ";
-  margin-top: -60px; /* height of header bar */
+  margin-top: -60px;
   height: 60px;
   visibility: hidden;
   pointer-events: none;
-}
+}*/
 #logo-header,
 #logo-footer {
   background: var(--white);
@@ -963,7 +965,11 @@ section {
   /* todo(maximsmol): rethink this layout */
   grid-template-columns: repeat(auto-fit, clamp(150px, 35vw, 240px));
   @media (--mobile) {
-    grid-template-columns: auto;
+    &:not(\20) {
+      grid-template-columns: auto;
+
+      row-gap: var(--space-2xs);
+    }
   }
 
   row-gap: var(--space-s);
@@ -979,7 +985,7 @@ section {
   & > .card {
     aspect-ratio: 1 / 1;
     @media (--mobile) {
-      aspect-ration: unset;
+      aspect-ratio: unset;
     }
 
     display: flex;
@@ -995,11 +1001,32 @@ section {
       display: flex;
       flex-direction: column;
 
+      width: 100%;
+
+      @media (--mobile) {
+        flex-direction: row;
+      }
+
       gap: var(--space-s);
 
       & > .header {
         display: flex;
         flex-direction: column;
+
+        @media (--mobile) {
+          flex-direction: row;
+          align-items: center;
+        }
+
+        & > section {
+          display: flex;
+          flex-direction: column;
+          gap: var(--space-3xs);
+
+          & :is(h1, h2, h3, h4, h5, h6) {
+            line-height: 1;
+          }
+        }
 
         & h4 {
           color: inherit;
@@ -1023,8 +1050,14 @@ section {
 
           & > img {
             width: 100%;
+            height: 100%;
 
             object-fit: cover;
+
+            @media (--mobile) {
+              aspect-ratio: 1;
+              max-height: 50px;
+            }
           }
         }
       }
@@ -1040,7 +1073,18 @@ section {
         height: var(--space-m);
 
         line-height: 1;
-        place-items: center;
+        align-items: center;
+
+        @media (--mobile) {
+          place-self: flex-end;
+
+          flex-grow: 1;
+          justify-content: flex-end;
+        }
+
+        & a {
+          display: block;
+        }
       }
     }
   }
