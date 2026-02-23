@@ -138,11 +138,8 @@ header {
 }
 
 .title {
-  font-size: 21px;
-
-  @media (--mobile) {
-    font-size: 16px;
-  }
+  font-size: var(--step-0);
+  white-space: pre;
 }
 
 .lh-1 {
@@ -934,7 +931,7 @@ nav {
 }
 
 section {
-  padding: clamp(0.9375rem, 0.554rem + 1.7045vw, 1.875rem) 0;
+  padding: var(--space-m) 0;
 }
 
 .chapters-page {
@@ -1156,7 +1153,6 @@ section {
 }
 
 .blog-content {
-  font-size: clamp(1.25rem, 1.1989rem + 0.2273vw, 1.375rem);
   font-family: serif;
   max-width: 700px;
 
