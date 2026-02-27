@@ -61,7 +61,7 @@ export const render = async function (
       <section>
         {{
           type: "raw",
-          value: await this.renderFile("_includes/blog.html", {
+          value: await this.renderFile("_includes/blog.11ty.tsx", {
             ...data,
             include: { limit: 3 },
           }),

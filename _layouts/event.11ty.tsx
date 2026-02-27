@@ -1,13 +1,11 @@
 import { DateTime } from "luxon";
 
-import { Page } from "../types.ts";
+import { EleventyFuns, Page } from "../types.ts";
 
 export const data = { layout: "default.11ty.tsx" };
 
 export const render = function (
-  this: {
-    all_time_zones: (x: Date, timezones: string[]) => string;
-  },
+  this: EleventyFuns,
   {
     content,
     title,

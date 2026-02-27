@@ -5,24 +5,9 @@ import { select } from "hast-util-select";
 import { toText } from "hast-util-to-text";
 import { DateTime } from "luxon";
 
-import { Page, Site } from "../types.ts";
+import { BlogItem, Page, Site } from "../types.ts";
 
 export const data = { layout: "default.11ty.tsx" };
-
-type BlogItem = {
-  data: {
-    image?:
-      | string
-      | {
-          file: string;
-          alt?: string;
-        };
-    title: string;
-  };
-  url: string;
-  date: Date;
-  content: string;
-};
 
 const BlogCard = async ({
   blog,
