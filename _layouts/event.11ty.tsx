@@ -53,7 +53,7 @@ export const render = function (
             </a>
           </div>
 
-          {{ type: "raw", value: content }}
+          <>{{ type: "raw", value: content }}</>
         </div>
       </article>
     </>
