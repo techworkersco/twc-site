@@ -26,6 +26,7 @@ export const render = ({ chapters }: Data) => {
         action="/welcome"
         netlify-honeypot="bot-field"
       >
+        <input type="hidden" name="form-name" value="join-us" />
         <label style="display:none">
           Don’t fill this out if you’re human: <input name="bot-field" />
         </label>
