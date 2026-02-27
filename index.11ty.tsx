@@ -1,11 +1,11 @@
+import { EleventyFuns } from "./types.ts";
+
 export const data = {
   permalink: "/",
 };
 
 export const render = async function (
-  this: {
-    renderFile: (x: string, data?: unknown) => Promise<string>;
-  },
+  this: EleventyFuns,
   data: Record<string, unknown>,
 ) {
   return (
@@ -73,7 +73,7 @@ export const render = async function (
         <>
           {{
             type: "raw",
-            value: await this.renderFile("_includes/press.html", {
+            value: await this.renderFile("_includes/press.11ty.tsx", {
               ...data,
               include: { limit: 2 },
             }),

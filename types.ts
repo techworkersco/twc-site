@@ -37,7 +37,24 @@ export type Site = {
   timeZone: string;
 };
 
+export type Press = {
+  media: string;
+  url: string;
+  title: string;
+  date: string;
+};
+
 export type Data = {
   chapters: Chapter[];
   workplaces: Workplace[];
+  berlin_press: (Press & {
+    lang: "en" | "de";
+    byline: string;
+  })[];
+  press: Press[];
+  site: Site;
+};
+
+export type EleventyFuns = {
+  renderFile: (x: string, data?: unknown) => Promise<string>;
 };
