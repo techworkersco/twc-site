@@ -1,5 +1,6 @@
 import { pathToFileURL } from "node:url";
 
+import { RenderPlugin } from "@11ty/eleventy";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import * as mdx from "@mdx-js/mdx";
 import { toHtml } from "hast-util-to-html";
@@ -66,6 +67,8 @@ export default async (cfg) => {
 
   cfg.addDataExtension("yml", YAML.parse);
   cfg.addDataExtension("yaml", YAML.parse);
+
+  cfg.addPlugin(RenderPlugin);
 
   const getRssConfig = (collection, name) => ({
     type: "atom",
@@ -227,8 +230,13 @@ export default async (cfg) => {
         elementAttributeNameCase: "html",
       });
 
+      const funs = this.config.javascriptFunctions;
+
       return async function (data) {
-        const res = await mdxContent.call(this, data);
+        const res = await mdxContent({
+          ...data,
+          eleventy: funs,
+        });
         rehypeSlug({
           slugify: slugifyKramdown,
         })(res);
