@@ -94,6 +94,9 @@ importers:
       markdown-it-anchor:
         specifier: ^9.2.0
         version: 9.2.0(@types/markdown-it@14.1.2)(markdown-it@14.1.0)
+      node-ical:
+        specifier: ^0.25.2
+        version: 0.25.2
       rehype-slug:
         specifier: ^6.0.0
         version: 6.0.0(patch_hash=1bf83dfa419d0209fd1fba0392ca594fe12bf7a8aa0cc20d96d4d10ed6f8318f)
@@ -368,6 +371,10 @@ packages:
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
+    engines: {node: '>=12'}
+
+  '@js-temporal/polyfill@0.5.1':
+    resolution: {integrity: sha512-hloP58zRVCRSpgDxmqCWJNlizAlUgJFqG2ypq79DCvyv9tHjRYMDOcPFjzfl/A1/YxDvRCZz8wvZvmapQnKwFQ==}
     engines: {node: '>=12'}
 
   '@mdx-js/mdx@3.1.1':
@@ -1564,6 +1571,9 @@ packages:
     resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
     hasBin: true
 
+  jsbi@4.3.2:
+    resolution: {integrity: sha512-9fqMSQbhJykSeii05nxKl4m6Eqn2P6rOlYiS+C5Dr/HPIU/7yZxu5qzbs40tgaFORiw2Amd0mirjxatXYMkIew==}
+
   jsesc@3.1.0:
     resolution: {integrity: sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==}
     engines: {node: '>=6'}
@@ -1892,6 +1902,10 @@ packages:
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
+  node-ical@0.25.2:
+    resolution: {integrity: sha512-DJnT/UqBPxVO7Inx5RMuSSqtyk9oUz2DLiKsvlSjGNycUACSM5gGYSkKLIerwJXTeFxs3X24R9ds4iDwd5z4KA==}
+    engines: {node: '>=18'}
+
   node-releases@2.0.27:
     resolution: {integrity: sha512-nmh3lCkYZ3grZvqcCH+fjmQ7X+H0OeZgP40OierEaAptX4XofMh5kwNbWh7lBduUzCcV/8kZ+NDLCwm2iorIlA==}
 
@@ -2176,6 +2190,9 @@ packages:
   retry@0.12.0:
     resolution: {integrity: sha512-9LkiTwjUh6rT555DtE9rTX+BKByPfrMzEAtnlEtdEwr3Nkffwiihqe2bWADg+OQRjt9gl6ICdmB/ZFDCGAtSow==}
     engines: {node: '>= 4'}
+
+  rrule-temporal@1.4.6:
+    resolution: {integrity: sha512-eRruK01K8uu0VWgn+lvKYXGZCER7eI2EaoAhsh5wwHaYMc4jPJ1cvY+bD0hBbYwCucggMpjtuwH2RpEH9oLfWg==}
 
   sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
@@ -2867,6 +2884,10 @@ snapshots:
       strip-ansi-cjs: strip-ansi@6.0.1
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
+
+  '@js-temporal/polyfill@0.5.1':
+    dependencies:
+      jsbi: 4.3.2
 
   '@mdx-js/mdx@3.1.1(patch_hash=c3747fa40d5fa8b461c601e2f709b66223999ee269d6985ade30e835bf76f834)':
     dependencies:
@@ -4363,6 +4384,8 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
+  jsbi@4.3.2: {}
+
   jsesc@3.1.0: {}
 
   json-buffer@3.0.1: {}
@@ -4836,6 +4859,10 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
+  node-ical@0.25.2:
+    dependencies:
+      rrule-temporal: 1.4.6
+
   node-releases@2.0.27: {}
 
   node-retrieve-globals@6.0.1:
@@ -5170,6 +5197,10 @@ snapshots:
       supports-preserve-symlinks-flag: 1.0.0
 
   retry@0.12.0: {}
+
+  rrule-temporal@1.4.6:
+    dependencies:
+      '@js-temporal/polyfill': 0.5.1
 
   sade@1.8.1:
     dependencies:

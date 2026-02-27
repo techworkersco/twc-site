@@ -63,6 +63,8 @@ export default defineConfig([
       tseslint.configs.stylisticTypeChecked,
     ],
     rules: {
+      "@typescript-eslint/no-confusing-void-expression": "off",
+
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     },
     languageOptions: {
