@@ -29,4 +29,4 @@ To connect with us you can join one of our weekly Virtual Coffees or send us an 
 Joignez-nous pour nos cafés virtuels hebdomaires ou envoyez-nous un email à <techworkerscanada@gmail.com>.
 
 ## Upcoming Events / Prochaines Evenements
-<iframe src="https://calendar.google.com/calendar/embed?src=techworkerscanada%40gmail.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FToronto&showPrint=0&showCalendars=0&src=dGVjaHdvcmtlcnNjYW5hZGFAZ21haWwuY29t&src=dGExa3MxYmpqb2RraXRncjJocjNrZ201ZGJrdnNyaWhAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039be5&color=%23d50000" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
