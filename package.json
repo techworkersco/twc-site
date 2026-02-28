@@ -11,7 +11,7 @@
     "browserslist": "^4.28.1",
     "eslint": "^9.39.2",
     "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-mdx": "^3.6.2",
+    "eslint-plugin-mdx": "^3.7.0",
     "eslint-plugin-unicorn": "^62.0.0",
     "globals": "^17.3.0",
     "hast-util-from-html": "^2.0.3",
