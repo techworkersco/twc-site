@@ -1,4 +1,6 @@
 :root {
+  color-scheme: light dark;
+
   --red: #d72b2b;
   --black: #020e0f;
   --white: #fff;
@@ -6,6 +8,10 @@
   --grey2: #191919;
   --grey3: #f6f6f6;
   --grey4: #777;
+
+  --color-bg-primary: light-dark(var(--white), var(--grey2));
+  --color-bg-secondary: light-dark(var(--grey3), var(--grey));
+  --color-text: light-dark(var(--grey2), var(--white));
 
   --header-height: 60px;
 
@@ -446,13 +452,13 @@ label {
 }
 
 .primaryBg {
-  background: var(--grey2);
+  background: var(--color-bg-primary);
 }
 .secondaryBg {
-  background: var(--grey);
+  background: var(--color-bg-secondary);
 }
 .textColor {
-  color: var(--white);
+  color: var(--color-text);
 }
 
 label {
@@ -467,6 +473,7 @@ label {
 input[type="email"],
 input[type="text"],
 input[type="url"],
+textarea,
 select {
   border: 1px solid;
   border-radius: 4px;
@@ -620,17 +627,9 @@ hr {
   input[type="email"],
   input[type="text"],
   input[type="url"],
+  textarea,
   select {
     border-color: #ccc;
-  }
-  .primaryBg {
-    background-color: var(--white);
-  }
-  .secondaryBg {
-    background-color: var(--grey3);
-  }
-  .textColor {
-    color: var(--grey2);
   }
   a {
     &:hover,
@@ -686,6 +685,7 @@ hr {
   input[type="email"],
   input[type="text"],
   input[type="url"],
+  textarea,
   select {
     background: var(--grey2);
     border-color: transparent;
@@ -789,7 +789,7 @@ img {
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  background: var(--grey);
+  background: var(--color-bg-secondary);
 
   > img {
     @supports (display: grid) {
@@ -1026,4 +1026,9 @@ nav.see-more {
 
 .img-fluid {
   max-width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 1em;
 }
