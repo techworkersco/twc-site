@@ -243,9 +243,9 @@ export default async (cfg) => {
   cfg.addTemplateFormats("mdx");
 
   const fetchCalendar = async () => {
-    const data = await ical.fromURL(
-      "https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/EHFzzZQXSQoS3f5w/?export",
-    );
+    const base =
+      "https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/EHFzzZQXSQoS3f5w/?export";
+    const data = await ical.fromURL(base);
 
     if (data == null) throw new Error("failed to load calendar data");
 
@@ -253,6 +253,12 @@ export default async (cfg) => {
     for (const [, entry] of Object.entries(data)) {
       if (entry == null) continue;
       if (entry.type !== "VEVENT") continue;
+
+      const img =
+        entry.attach?.val != null &&
+        entry.attach?.params.FMTTYPE.startsWith("image/")
+          ? new URL(entry.attach.val, base)
+          : undefined;
 
       const start = DateTime.fromJSDate(entry.start, {
         zone: entry.start.tz,
@@ -266,8 +272,8 @@ export default async (cfg) => {
         data: {
           title: entry.summary,
           time_zones: entry.start.tz != null ? [entry.start.tz] : undefined,
-          // todo(maximsmol): add locations
-          // locations: [],
+          image: img?.href,
+          locations: entry.location != null ? [entry.location] : undefined,
         },
         content:
           entry.description != null ? md.render(entry.description) : undefined,
