@@ -3,6 +3,9 @@ title: Contact Us
 permalink: /contact-us/
 ---
 <form method="POST" name="contact" class="marg-b-4" action="/contact" data-netlify="true" netlify-honeypot="bot-field">
+  <label style="display:none">
+    Don’t fill this out if you’re human: <input name="bot-field" />
+  </label>
   <label class="marg-b-3" for="email">
     <div><b>Email:</b></div>
     <input id="email" type="email" required name="email">
