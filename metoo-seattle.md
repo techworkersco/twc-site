@@ -1,6 +1,5 @@
 ---
-layout: page
-title: #MeToo In Seattle Resources
+title: "#MeToo In Seattle Resources"
 permalink: /metoo/seattle/
 ---
 
@@ -14,31 +13,34 @@ permalink: /metoo/seattle/
 
 ## Women of Color Speak Out Resources
 
-* [Real Rent Duwamish](https://www.realrentduwamish.org/)
-* Undoing Racisim with [The Peoples's Institute PNW](https://www.pinwseattle.org/)
-* WoCSO videos: [I: Surrounded by Patriarchy](https://www.youtube.com/watch?v=GvKAe-iFOMs), [II: Internalized Oppression](https://www.youtube.com/watch?v=XHrvNYUTTpw), [III: What is Sexual Harassment](https://www.youtube.com/watch?v=swumabAjkWM), [IV: Heart to Heart](https://www.youtube.com/watch?v=QVSwSJJZJS0)   
-* Join white men dismantling patriarchy and toxic masculinity: email bertwhopkins@gmail.com
-* The Mask You Live In (film)
+- [Real Rent Duwamish](https://www.realrentduwamish.org/)
+- Undoing Racisim with [The Peoples's Institute PNW](https://www.pinwseattle.org/)
+- WoCSO videos: [I: Surrounded by Patriarchy](https://www.youtube.com/watch?v=GvKAe-iFOMs), [II: Internalized Oppression](https://www.youtube.com/watch?v=XHrvNYUTTpw), [III: What is Sexual Harassment](https://www.youtube.com/watch?v=swumabAjkWM), [IV: Heart to Heart](https://www.youtube.com/watch?v=QVSwSJJZJS0)
+- Join white men dismantling patriarchy and toxic masculinity: email bertwhopkins@gmail.com
+- The Mask You Live In (film)
 
 ## Healthy Masculinity Resources
-* [Wholehearted Masculine](https://wholeheartedmasculine.org/)
-* [The Consent Academy](https://web.archive.org/web/20200930215105/https://www.consent.academy/mission-statement.html)
-* [Jackson Katz, PhD TED talk - Violence Against Women](https://www.youtube.com/watch?v=KTvSfeCRxe8)
-* [A Call to Men](https://www.acalltomen.org)
-* [MVP Strategies](htps://www.mvpstrat.com/about)
-* [Pop Culture Detective Agency](https://www.youtube.com/user/rebelliouspixels)
+
+- [Wholehearted Masculine](https://wholeheartedmasculine.org/)
+- [The Consent Academy](https://web.archive.org/web/20200930215105/https://www.consent.academy/mission-statement.html)
+- [Jackson Katz, PhD TED talk - Violence Against Women](https://www.youtube.com/watch?v=KTvSfeCRxe8)
+- [A Call to Men](https://www.acalltomen.org)
+- [MVP Strategies](htps://www.mvpstrat.com/about)
+- [Pop Culture Detective Agency](https://www.youtube.com/user/rebelliouspixels)
 
 ## Recommended Books
-* bell hooks, Will to Change
-* Tim Wise, White like Me
-* Alan Johnson, Gender Knot
-* Jackson Katz, The Macho Paradox
-* Alan Johnson, Privilege, Power, and Difference
+
+- bell hooks, Will to Change
+- Tim Wise, White like Me
+- Alan Johnson, Gender Knot
+- Jackson Katz, The Macho Paradox
+- Alan Johnson, Privilege, Power, and Difference
 
 ## Miscellaneous Resources
-* [Model View Culture](https://modelviewculture.com)
-* [Why is Silicon Valley so awful to women?](https://www.theatlantic.com/magazine/archive/2017/04/why-is-silicon-valley-so-awful-to-women/517788/)
-* [Elephant in the Valley](https://www.elephantinthevalley.com)
-* [Open Diversity Data](https://opendiversitydata.org)
-* [Project Include](https://projectinclude.org)
-* [Women entrepreneurs speak out against sexual harassment](https://www.nytimes.com/2017/06/30/technology/women-entrepreneurs-speak-out-sexual-harassment.html)
+
+- [Model View Culture](https://modelviewculture.com)
+- [Why is Silicon Valley so awful to women?](https://www.theatlantic.com/magazine/archive/2017/04/why-is-silicon-valley-so-awful-to-women/517788/)
+- [Elephant in the Valley](https://www.elephantinthevalley.com)
+- [Open Diversity Data](https://opendiversitydata.org)
+- [Project Include](https://projectinclude.org)
+- [Women entrepreneurs speak out against sexual harassment](https://www.nytimes.com/2017/06/30/technology/women-entrepreneurs-speak-out-sexual-harassment.html)

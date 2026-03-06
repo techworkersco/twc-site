@@ -1,5 +1,4 @@
 ---
-layout: page
 title: TWC PDX
 permalink: /pdx/
 ---

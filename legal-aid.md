@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Legal Help
-permalink: /legal-aid/
 ---
 
 # Legal Aid Resources

@@ -1,5 +1,4 @@
 ---
-layout: page
 title: TWC SF Bay Area
 permalink: /bay-area/
 ---

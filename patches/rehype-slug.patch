@@ -1,0 +1,21 @@
+diff --git a/lib/index.js b/lib/index.js
+index a25bb98d4a6cc9f661e891c9d693cc0d94eb06eb..b9ac7af0cced82d650c34e851a50cb794f4eae83 100644
+--- a/lib/index.js
++++ b/lib/index.js
+@@ -29,6 +29,7 @@ const slugs = new GithubSlugger()
+ export default function rehypeSlug(options) {
+   const settings = options || emptyOptions
+   const prefix = settings.prefix || ''
++  const slugify = settings.slugify || slugs.slug
+ 
+   /**
+    * @param {Root} tree
+@@ -41,7 +42,7 @@ export default function rehypeSlug(options) {
+ 
+     visit(tree, 'element', function (node) {
+       if (headingRank(node) && !node.properties.id) {
+-        node.properties.id = prefix + slugs.slug(toString(node))
++        node.properties.id = prefix + slugify(toString(node))
+       }
+     })
+   }

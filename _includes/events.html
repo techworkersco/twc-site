@@ -4,7 +4,7 @@
 {% assign future_events = events | where_future: site.time %}
 {% assign past_events = events | where_past: site.time %}
 
-{% if permalink == "/events/" %}
+{% if page.url == "/events/" %}
   <h1>Events</h1>
 
   Explore all <b>{{ events.size }}</b> public events we organized
@@ -54,6 +54,6 @@
   {%- endfor -%}
 {% endif %}
 
-{% if permalink != "/events/" %}
+{% if page.url != "/events/" %}
 <a href="/events" class="button">Find more events</a>
 {% endif %}

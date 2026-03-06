@@ -1,8 +1,7 @@
 ---
-layout: page
 title: Progressive Stack
-permalink: /stack/
 ---
+
 # Stack
 
 Many TWC chapter meetings using a technique called [Progressive
@@ -51,8 +50,8 @@ A person can "raise a hand" by:
 - Raising their hand if they are on video. This is not possible for people
   without video, and may be infeasible for large meetings.
 - Using the `Raise Hand` feature in Zoom.
-    - NOTE: Meeting hosts cannot use the `Raise Hand` feature, so will have to
-      use some other mechanism to raise their hand.
+  - NOTE: Meeting hosts cannot use the `Raise Hand` feature, so will have to
+    use some other mechanism to raise their hand.
 - Using one of the 👏 or 👍 emoji overlays.
 - Posting in the chat that they would like to speak.
 

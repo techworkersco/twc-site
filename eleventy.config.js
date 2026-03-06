@@ -1,15 +1,15 @@
-import path from "node:path";
+import { pathToFileURL } from "node:url";
+
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import * as mdx from "@mdx-js/mdx";
+import { toHtml } from "hast-util-to-html";
+import * as jsxRuntime from "hastscript/jsx-runtime";
 import { DateTime } from "luxon";
-import memoize from "memoize";
-import * as lightningcss from "lightningcss";
-import browserslist from "browserslist";
-import { IdAttributePlugin } from "@11ty/eleventy";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
+import rehypeSlug from "rehype-slug";
 import YAML from "yaml";
-import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
-const baseUrl = "https://techworkerscoalition.org";
 const timeZone = "America/New_York";
 
 const site = {
@@ -17,6 +17,7 @@ const site = {
   description:
     "A coalition of tech industry workers, labor organizers, community organizers, and friends cultivating solidarity among all workers in tech.",
   url: "https://techworkerscoalition.org",
+  timeZone,
 };
 
 const ampmZones = new Set([
@@ -31,8 +32,8 @@ const ampmZones = new Set([
 // Ruby might be doing this implicitly? the generated slugs imperically match
 const slugifyKramdown = (x) =>
   x
-    .replace(/^[^\p{L}\p{Nd}]+/gu, "")
-    .replace(/[^\p{M}\p{L}\p{Nd} -]/gu, "")
+    .replaceAll(/^[^\p{L}\p{Nd}]+/gu, "")
+    .replaceAll(/[^\p{M}\p{L}\p{Nd} -]/gu, "")
     .replaceAll(" ", "-")
     .toLowerCase();
 
@@ -48,12 +49,20 @@ const parseLooseDate = (x) => {
 };
 
 export default async (cfg) => {
+  cfg.addGlobalData("layout", "default.11ty.tsx");
+  cfg.setLayoutResolution(false);
+
+  cfg.ignores.add("README.md");
+
   cfg.setLayoutsDirectory("_layouts");
-  cfg.addPassthroughCopy("admin");
   cfg.addPassthroughCopy("assets");
   cfg.addPassthroughCopy("netlify.toml");
+
   cfg.addPassthroughCopy("circuit-breakers");
   cfg.ignores.add("circuit-breakers");
+
+  cfg.addPassthroughCopy("admin");
+  cfg.ignores.add("admin");
 
   cfg.addDataExtension("yml", YAML.parse);
   cfg.addDataExtension("yaml", YAML.parse);
@@ -83,6 +92,9 @@ export default async (cfg) => {
     jekyllInclude: true, // todo(maximsmol): rewrite to new syntax?
     timezoneOffset: timeZone,
   });
+
+  // todo(maximsmol): switch to this?
+  // cfg.addPlugin(IdAttributePlugin);
   const md = markdownIt({
     html: true,
     typographer: true,
@@ -91,21 +103,15 @@ export default async (cfg) => {
     slugify: slugifyKramdown,
   });
   cfg.setLibrary("md", md);
+  // todo(maximsmol): get rid of this somehow? e.g. via `renderTemplate`?
+  cfg.addGlobalData("md", md);
 
-  // todo(maximsmol): switch to this?
-  // cfg.addPlugin(IdAttributePlugin);
   cfg.setFrontMatterParsingOptions({
     excerpt: true,
     excerpt_separator: "<!--excerpt-->",
   });
 
-  cfg.addFilter("md", function (x) {
-    if (x == null) return x;
-    return md.render(x);
-  });
-  cfg.addFilter("time_converter_url", function (x) {
-    return `https://www.timeanddate.com/worldclock/converter.html?iso=${DateTime.fromJSDate(x).setZone("UTC").toFormat("yyyyMMdd'T'HHmmss")}&p1=179&p2=224&p3=37`;
-  });
+  // todo(maximsmol): move this into a javascript util file
   cfg.addFilter("all_time_zones", function (x, timezones) {
     const dt = parseLooseDate(x);
     if (!dt.isValid) throw new Error(`all_time_zones: invalid input: ${x}`);
@@ -139,18 +145,12 @@ export default async (cfg) => {
     return dt.setZone(timezones[0]).toFormat("dd");
   });
 
-  cfg.addFilter("absolute_url", function (x) {
-    return new URL(x, baseUrl).href;
-  }); // todo(maximsmol): fix in sources
-  cfg.addFilter("relative_url", function (x) {
-    return x;
-  }); // todo(maximsmol): fix in sources
   cfg.addFilter("filter_tags", function (x) {
     return x;
   }); // todo(maximsmol): fix in sources
-  cfg.addLiquidTag("link", (liquid) => ({
+  cfg.addLiquidTag("link", () => ({
     // todo(maximsmol): rewrite in sources and remove
-    parse: function (tagToken, remainTokens) {
+    parse: function (tagToken) {
       this.path = tagToken.args;
     },
     render: async function (ctx) {
@@ -179,30 +179,6 @@ export default async (cfg) => {
     return res;
   });
 
-  cfg.addFilter(
-    "lightningcss",
-    memoize(function (content) {
-      const parsed = path.parse(this.page.inputPath);
-
-      const res = lightningcss.transform({
-        code: Buffer.from(content),
-        minify: true,
-        sourceMap: process.env.CONTEXT === "development",
-        drafts: {
-          customMedia: true,
-        },
-        targets: lightningcss.browserslistToTargets(browserslist()),
-      });
-      if (res.warnings.length > 0) {
-        console.warn("Lightning CSS warnings:");
-        for (const x of res.warnings) console.warn(x);
-      }
-      // todo(maximsmol): does this need addDependencies somehow?
-
-      return Buffer.from(res.code).toString();
-    }),
-  );
-
   // todo(maximsmol): do something about these?
   cfg.addFilter("where_future", function (xs, ts) {
     const tsTime = new Date(ts).getTime();
@@ -213,7 +189,7 @@ export default async (cfg) => {
     return xs.filter((x) => new Date(x.date).getTime() < tsTime);
   });
   cfg.addFilter("date_sort", function (xs) {
-    return xs.sort(
+    return xs.toSorted(
       (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
     );
   });
@@ -228,6 +204,41 @@ export default async (cfg) => {
       .setZone("UTC")
       .toFormat("yyyy-MM-dd HH:mm:ss 'UTC'");
   });
+
+  cfg.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
+    key: "11ty.js",
+    compile() {
+      return async function (data) {
+        const res = await this.defaultRenderer(data);
+        return toHtml(res, {
+          allowDangerousHtml: true,
+        });
+      };
+    },
+  });
+  cfg.addTemplateFormats(["11ty.jsx", "11ty.ts", "11ty.tsx"]);
+
+  cfg.addExtension("mdx", {
+    async compile(str, inputPath) {
+      const { default: mdxContent } = await mdx.evaluate(str, {
+        ...jsxRuntime,
+        baseUrl: pathToFileURL(inputPath),
+        development: process.env.CONTEXT === "development",
+        elementAttributeNameCase: "html",
+      });
+
+      return async function (data) {
+        const res = await mdxContent.call(this, data);
+        rehypeSlug({
+          slugify: slugifyKramdown,
+        })(res);
+        return toHtml(res, {
+          allowDangerousHtml: true,
+        });
+      };
+    },
+  });
+  cfg.addTemplateFormats("mdx");
 
   const remoteDataSrcs = [
     {
@@ -265,27 +276,10 @@ export default async (cfg) => {
     "jekyll.environment",
     process.env.CONTEXT === "production" ? "production" : "development",
   );
-  cfg.addGlobalData("eleventyComputed.site", (a) => (data) => ({
+  cfg.addGlobalData("eleventyComputed.site", () => (data) => ({
     ...data.collections, // todo(maximsmol): fix in source code
+    ...site,
     time: new Date(),
-    url: site.url,
-    title: site.title,
-    description: site.description,
-    header_links: [
-      { url: "/subscribe", text: "Join" },
-      { url: "/events", text: "Events" },
-      { url: "/chapters", text: "Chapters" },
-    ],
-    links: [
-      { url: "/subscribe", text: "Join" },
-      { url: "/events", text: "Events" },
-      { url: "/blog", text: "Blog" },
-      { url: "/chapters", text: "Chapters" },
-      { url: "/community-guide", text: "Community Guide" },
-      { url: "/job-board", text: "Union Job Board" },
-      { url: "/press", text: "Press mentions" },
-      { url: "/security", text: "Security Tips" },
-    ],
     data: {
       chapters: data.chapters,
       press: data.press,
