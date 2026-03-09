@@ -106,6 +106,7 @@ export const render = async ({
                 "https://airtable.com",
                 "https://calendar.google.com",
                 "https://app.netlify.com",
+                "https://dev.techworkerscoalition.org",
               ],
               "font-src": ["'self'"],
               "img-src": [
