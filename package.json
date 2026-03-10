@@ -23,6 +23,7 @@
     "luxon": "^3.7.2",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
+    "node-ical": "^0.25.2",
     "rehype-slug": "^6.0.0",
     "tsx": "^4.21.0",
     "typescript-eslint": "^8.54.0",
