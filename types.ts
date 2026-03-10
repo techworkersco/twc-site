@@ -5,7 +5,8 @@ export type Chapter = {
   twitter?: string;
   meetup?: string;
   facebook?: string;
-  activity_level: "active" | "inactive";
+  active: boolean;
+  locality: "north_america" | "europe" | "asia";
 };
 
 type Workplace = {
