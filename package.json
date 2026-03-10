@@ -19,7 +19,7 @@
     "hast-util-to-html": "^9.0.5",
     "hast-util-to-text": "^4.0.2",
     "hastscript": "^9.0.1",
-    "lightningcss": "^1.31.1",
+    "lightningcss": "^1.32.0",
     "luxon": "^3.7.2",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
