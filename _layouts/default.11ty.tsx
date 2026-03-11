@@ -248,7 +248,7 @@ export const render = async ({
                   </li>
                 ))}
                 <li>
-                  <a href="mailto:hello@techworkerscoalition.org">Email Us</a>
+                  <a href="/contact-us">Contact Us</a>
                 </li>
               </ul>
             </div>
