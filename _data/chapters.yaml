@@ -20,6 +20,7 @@
   calendar: https://luma.com/twc-canada
   email: techworkerscanada@gmail.com
   established: 2025
+  image: /assets/chapters/canada.webp
 
 - text: Chicago
   icon: 🇺🇸
@@ -121,7 +122,7 @@
   active: true
   locality: europe
   image: /assets/chapters/berlin.webp
-  established: 2021
+  established: 2019
 
 - text: Dublin
   icon: 🇮🇪
