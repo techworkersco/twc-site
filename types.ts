@@ -1,12 +1,25 @@
 export type Chapter = {
   text: string;
   icon: string;
-  url?: string;
-  twitter?: string;
-  meetup?: string;
-  facebook?: string;
   active: boolean;
   locality: "north_america" | "europe" | "asia";
+
+  established?: number;
+
+  url?: string;
+  image?: string;
+
+  twitter?: string;
+  facebook?: string;
+  email?: string;
+  calendar?: string;
+  instagram?: string;
+  telegram?: string;
+  bluesky?: string;
+  mastodon?: string;
+  linked_in?: string;
+  forum?: string;
+  youtube?: string;
 };
 
 type Workplace = {
