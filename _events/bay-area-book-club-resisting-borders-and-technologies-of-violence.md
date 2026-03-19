@@ -15,3 +15,5 @@ This chapter focuses on connections between exclusionary control (i.e. surveilla
 ⏰ 6:30-8pm *(come for as long or short as you like)*\
 📍 [Syzygy](https://share.google/YxLj6iy43Nmvun2yD) @ 395 S Van Ness Ave, San Francisco\
 📖 Reading: <https://bit.ly/bookclub-7>
+
+![](/assets/img/twc_book-club_0326.jpg)
