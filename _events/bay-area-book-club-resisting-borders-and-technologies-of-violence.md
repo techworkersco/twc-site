@@ -5,7 +5,7 @@ locations:
   - Bay Area
 time_zones:
   - US/Pacific
-image: /assets/img/2026-03026-bay-area-book-club.png
+image: /assets/img/twc_book-club_0326.jpg
 ---
 All are welcome! We'll be reading ["Control-X: Communication, Control, and Exclusion"](https://bit.ly/bookclub-7)  (~11 pages) by Brian Jordan Jefferson from *Resisting Borders and Technologies of Violence (*2023). Discussion questions will be shared in Slack in advance.
 
