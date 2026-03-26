@@ -2,7 +2,7 @@
 title: Bay Area Chapter Meeting
 date: 2026-04-02 21:00
 locations:
-  - Global
+  - Bay Area
 time_zones:
   - US/Pacific
 ---
