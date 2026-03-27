@@ -37,7 +37,44 @@ export type Site = {
   timeZone: string;
 };
 
+export type Press = {
+  media: string;
+  url: string;
+  title: string;
+  date: string;
+};
+
+export type BlogItem = {
+  data: {
+    image?:
+      | string
+      | {
+          file: string;
+          alt?: string;
+        };
+    title: string;
+  };
+  url: string;
+  date: Date;
+  content: string;
+};
+
 export type Data = {
   chapters: Chapter[];
   workplaces: Workplace[];
+  berlin_press: (Press & {
+    lang: "en" | "de";
+    byline: string;
+  })[];
+  press: Press[];
+  site: Site;
+  collections: {
+    blog: BlogItem[];
+  };
+  page: Page;
+};
+
+export type EleventyFuns = {
+  renderFile: (x: string, data?: unknown) => Promise<string>;
+  all_time_zones: (x: Date, timezones: string[]) => string;
 };
