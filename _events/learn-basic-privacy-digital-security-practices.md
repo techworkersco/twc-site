@@ -5,7 +5,7 @@ locations:
   - Portland
 time_zones:
   - US/Pacific
-image: /assets/img/signal-2026-03-26-181643.jpeg
+image: /assets/img/twc-pdx-library.png
 ---
 FREE Public Library Workshop on how to minimize your digital trail using the Activist Checklist
 
