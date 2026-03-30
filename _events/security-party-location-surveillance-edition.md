@@ -5,7 +5,7 @@ locations:
   - Global
 time_zones:
   - US/Eastern
-image: /assets/img/securitypartymarch.png
+image: assets/img/securitypartymarch.png
 ---
 Our location data tells a story. Who do we want to read it?
 
