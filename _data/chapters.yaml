@@ -3,93 +3,172 @@
   url: /austin
   twitter: twcatx
   facebook: https://www.facebook.com/twcatx
-  activity_level: inactive
+  active: false
+  locality: north_america
+
 - text: Boston
   icon: 🇺🇸
   twitter: techworkersBOS
-  activity_level: inactive
+  active: false
+  locality: north_america
+
 - text: Canada
   icon: 🇨🇦
   url: /canada
-  activity_level: active
+  active: true
+  locality: north_america
+  calendar: https://luma.com/twc-canada
+  email: techworkerscanada@gmail.com
+  established: 2025
+  image: /assets/chapters/canada.webp
+
 - text: Chicago
   icon: 🇺🇸
   url: /chicago
-  activity_level: active
+  active: true
+  locality: north_america
+
 - text: DC
   icon: 🇺🇸
   url: /dc
   twitter: dctechworkers
   facebook: https://www.facebook.com/DC-Tech-Workers-Coalition-338770966854335/
-  activity_level: active
+  active: true
+  locality: north_america
+
 - text: Denver
   icon: 🇺🇸
   twitter: twc_den
-  activity_level: inactive
+  active: false
+  locality: north_america
+
 - text: Los Angeles
   icon: 🇺🇸
   twitter: TWC_LosAngeles
-  activity_level: inactive
+  active: false
+  locality: north_america
+
 - text: North Carolina
   icon: 🇺🇸
   url: /north-carolina
-  activity_level: active
+  active: true
+  locality: north_america
+
 - text: NYC
   icon: 🗽
   url: /nyc
   twitter: techworkerscony
-  meetup: Tech-Workers-Coalition-NYC/
-  activity_level: active
+  active: true
+  locality: north_america
+  established: 2018
+  image: /assets/chapters/nyc.webp
+
 - text: Portland
   icon: 🇺🇸
   url: /pdx
-  activity_level: active
+  active: true
+  locality: north_america
+  established: 2024
+  instagram: twc_pdx
+  image: /assets/chapters/portland.webp
+
 - text: San Diego
   icon: 🇺🇸
   twitter: twcsandiego
-  activity_level: active
+  active: true
+  locality: north_america
+
 - text: San Jose
   icon: 🇺🇸
   twitter: twc_sanjose
-  activity_level: inactive
+  active: false
+  locality: north_america
+
 - text: Seattle
   icon: 🇺🇸
   url: /seattle
-  activity_level: active
+  active: true
+  locality: north_america
+  image: /assets/chapters/seattle.svg
+
 - text: SF Bay Area
   icon: 🌉
   url: /bay-area
-  activity_level: active
+  active: true
+  locality: north_america
+  email: twcbayarea@proton.me
+  image: /assets/chapters/bayarea.webp
+  established: 2023
+
 - text: South Florida
   icon: 🇺🇸
-  activity_level: inactive
+  active: false
+  locality: north_america
+
 - text: Bangalore
   icon: 🇮🇳
   twitter: TechiesSpeakUp
   url: https://twitter.com/twc_bangalore
-  activity_level: inactive
+  active: false
+  locality: asia
+
 - text: Berlin
   icon: 🇩🇪
   twitter: TechWorkersBER
+  telegram: TechWorkersBer
+  instagram: techworkersber
+  bluesky: techworkersberlin.com
   url: https://techworkersberlin.com/
-  activity_level: active
+  active: true
+  locality: europe
+  image: /assets/chapters/berlin.webp
+  established: 2019
+
 - text: Dublin
   icon: 🇮🇪
-  activity_level: inactive
+  active: false
+  locality: europe
+
 - text: London
   icon: 🇬🇧
   twitter: TechWorkersLDN
-  facebook: https://www.facebook.com/TechWorkersLDN
+  facebook: TechWorkersLDN
   url: /london
-  activity_level: inactive
+  active: false
+  locality: europe
+
 - text: Italia
   icon: 🇮🇹
-  twitter: twcitalia
-  facebook: https://www.facebook.com/twcita
+  telegram: twcitagruppo # also twcita
+  mastodon: https://mastodon.bida.im/@twcitalia
+  # mobilizon: tech_workers_coalition_italia
+  facebook: twcita
+  instagram: twcita
+  linked_in: twcita
+  forum: https://zulip.twc-italia.org/
+  email: info@twc-italia.org
   url: https://twc-italia.org
-  activity_level: active
+  active: true
+  locality: europe
+  established: 2020
+  image: /assets/chapters/italia.webp
+
 - text: Netherlands
   icon: 🇳🇱
-  twitter: nederlandtwc
-  activity_level: active
+  linked_in: techwerkers-nl
+  mastodon: https://mastodon.nl/@techwerkers
+  youtube: Techwerkers
+  instagram: techwerkers
+  bluesky: techwerkers.bsky.social
+  active: true
   url: https://techwerkers.nl/
+  locality: europe
+  established: 2025
+  image: /assets/chapters/netherlands.webp
+
+- text: Utah
+  icon: 🇺🇸
+  active: true
+  email: techworkerscoalitionutah@gmail.com
+  established: 2025
+  locality: north_america
