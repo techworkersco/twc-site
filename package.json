@@ -8,7 +8,7 @@
     "@types/luxon": "^3.7.1",
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^25.2.2",
-    "browserslist": "^4.28.1",
+    "browserslist": "^4.28.2",
     "eslint": "^9.39.2",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-mdx": "^3.6.2",
