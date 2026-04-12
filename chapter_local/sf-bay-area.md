@@ -9,18 +9,16 @@ We are the Bay Area chapter of TWC. We are building worker power in the Bay Area
 
 We build power primarily through community building, political education, and training to organize and take collective action effectively as workers. We regularly gather in-person in San Francisco and the East Bay, and digitally on Zoom. As of Spring 2026 we're also starting to be active in South Bay again!
 
-<br/>
-
-![Bay Area No Kings March 2026](/assets/img/2026-bay-area-nokings.jpg)
-
-<center><i>Tabling at No Kings SF in March 2026</i></center>
-
-<br/>
-
-![Bay Area May Day 2025](/assets/img/2025-mayday-bayarea.jpg)
-
-<center><i>San Francisco May Day 2025 with TWC, AWU, Code CWA, Bay Area Labor 4 Palestine and friends</i></center>
-
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
+  <div style="flex: 1.28 1 320px; text-align: center;">
+    <img src="/assets/img/2026-bay-area-nokings.jpg" alt="Bay Area No Kings March 2026" style="max-width: 100%; height: auto;">
+    <div style="font-style: italic; margin-top: 8px;">Tabling at No Kings SF in March 2026</div>
+  </div>
+  <div style="flex: 1.50 1 375px; text-align: center;">
+    <img src="/assets/img/2025-mayday-bayarea.jpg" alt="Bay Area May Day 2025" style="max-width: 100%; height: auto;">
+    <div style="font-style: italic; margin-top: 8px;">TWC and friends at SF May Day 2025</div>
+  </div>
+</div>
 <br/>
 
 ## About
