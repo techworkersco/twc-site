@@ -1,5 +1,5 @@
 ---
-title: "Bay Area Book Club: Notes Toward a Digital Workers Inquiry"
+title: Bay Area Book Club in Oakland
 date: 2026-04-16 21:30
 locations:
   - Bay Area
