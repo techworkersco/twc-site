@@ -13,7 +13,7 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-mdx": "^3.6.2",
     "eslint-plugin-unicorn": "^62.0.0",
-    "globals": "^17.3.0",
+    "globals": "^17.5.0",
     "hast-util-from-html": "^2.0.3",
     "hast-util-select": "^6.0.4",
     "hast-util-to-html": "^9.0.5",
