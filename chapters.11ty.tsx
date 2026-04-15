@@ -219,7 +219,12 @@ export const render = ({ chapters }: Data) => {
               </p>
             </section>
             <div class="image">
-              <img src={x.image ?? "/assets/chapters/generic.svg"} />
+              <img
+                class={
+                  x.image?.endsWith(".svg") ?? true ? "twc-svg-logo" : undefined
+                }
+                src={x.image ?? "/assets/chapters/generic.svg"}
+              />
             </div>
           </a>
           <ul class="quick-links" aria-label="Social media links">
