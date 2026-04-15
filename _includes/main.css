@@ -51,15 +51,6 @@ h3 {
   font-size: var(--step-1);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 2;
-}
-
 @custom-media --desktop screen and (width >= 760px);
 @custom-media --tablet screen and (width <= 760px);
 @custom-media --mobile screen and (width <= 420px);
@@ -437,6 +428,8 @@ main {
 footer {
   border-top: 1px solid;
   padding: 2rem 0;
+
+  font-size: var(--step--1);
 }
 
 form {
@@ -810,6 +803,8 @@ img {
   align-items: center;
   background: var(--color-bg-secondary);
 
+  font-size: var(--step--1);
+
   > img {
     @supports (display: grid) {
       align-items: center;
@@ -1019,10 +1014,6 @@ section {
           display: flex;
           flex-direction: column;
           gap: var(--space-3xs);
-
-          & :is(h1, h2, h3, h4, h5, h6) {
-            line-height: 1;
-          }
         }
 
         & h4 {
