@@ -106,6 +106,7 @@ export const render = async ({
                 "https://airtable.com",
                 "https://calendar.google.com",
                 "https://app.netlify.com",
+                "https://dev.techworkerscoalition.org",
               ],
               "font-src": ["'self'"],
               "img-src": [
@@ -248,7 +249,7 @@ export const render = async ({
                   </li>
                 ))}
                 <li>
-                  <a href="mailto:hello@techworkerscoalition.org">Email Us</a>
+                  <a href="/contact-us">Contact Us</a>
                 </li>
               </ul>
             </div>

@@ -20,6 +20,7 @@ export const render = ({ chapters }: Data) => {
       follow them.
       <h3 class="marg-b-3">Please provide the following:</h3>
       <form
+        name="signup-global"
         method="POST"
         class="marg-b-4"
         data-netlify="true"
