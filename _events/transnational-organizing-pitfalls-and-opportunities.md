@@ -1,10 +1,13 @@
 ---
 title: "Transnational Organizing: Pitfalls and Opportunities"
-date: 2026-04-22 19:00
+date: 2026-04-22 13:00
 locations:
   - Global
 time_zones:
+  - US/Pacific
   - US/Eastern
+  - Europe/London
+  - Europe/Berlin
 image: /assets/img/transnational-organizing-1-.png
 ---
 Tech companies are global and multinational entities, and our organizing as workers must also be international in scope. Such organizing requires knowledge of different legal regimes and union structures, and creative thought about bridging them. This presentation will discuss efforts such as European Works Councils, Global Union Federations, and grassroots transnational initiatives like Amazon Workers International, looking at how such groups foster connections and challenges to be overcome.
