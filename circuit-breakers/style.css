@@ -11,13 +11,17 @@
   --light-purple: #8c57cb;
   --mid-blue: #4944b8;
   --dark-blue: #1d3c98;
+  --dark-violet: #4a154b;
+  --light-violet: #993399;
+  --orange: #ffa31a;
+  --light-orange: #fff5e6;
 } 
 
 html {
   font-family: "Rubik", sans-serif;
   font-size: 137.5%;
   -webkit-font-smoothing: antialiased;
-  background-image: linear-gradient(to bottom right, var(--dark-blue), var(--mid-blue), var(--light-purple));
+  background-image: linear-gradient(to bottom right, var(--dark-violet), var(--light-violet));
   scroll-behavior: smooth;
 }
 
@@ -91,7 +95,7 @@ section {
 /* || Typography */
 
 h1 {
-  color: #FFFFFF;
+  color: #FFF5E6;
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: rgba(7, 102, 35, 0.91);
   font-family: "Rubik Glitch";
@@ -124,7 +128,7 @@ h4 {
 }
 
 h5 {
-  color: var(--pink);
+  color: var(--orange);
   font-size: 1rem;
   font-weight: 900;
   margin-block-start: 1.5rem;
@@ -152,7 +156,7 @@ p, summary, details {
 }
 
 a, summary {
-  color: var(--pink);
+  color: var(--orange);
 }
 
 a:hover {
@@ -177,7 +181,7 @@ li {
 /* || Links */
 
 .nav-link {
-  color: var(--pink);
+  color: var(--orange);
   font-family: "Rubik", sans-serif;
   font-weight: 800;
   text-decoration: none;
@@ -200,7 +204,7 @@ details {
 
   border-radius: 8px;
   color: #000000;
-  background-color: var(--pink);
+  background-color: var(--orange);
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
@@ -224,24 +228,24 @@ details {
 
 .secondary {
   border-style: solid;
-  border-color: var(--pink);
+  border-color: var(--orange);
   color: #FFFFFF;
   background-color: Transparent;
 }
 
 .secondary:hover,
 .secondary:focus {
-  background-color: var(--pink);
+  background-color: var(--orange);
   color: #000000;
 }
 
 .primary {
   border-style: none;
-  background-color: var(--pink);
+  background-color: var(--orange);
   color: #000000;
   font-weight: bold;
   font-size: larger;
-  border: 1px solid var(--light-pink);
+  border: 1px solid var(--light-orange);
 }
 
 .primary:hover,
@@ -249,12 +253,12 @@ details {
   background-color: #000000;
   color: var(--light-pink);
   font-weight: bold;
-  border: 1px solid var(--light-pink);
+  border: 1px solid var(--light-orange);
 }
 
 /* || Misc */
 
 hr {
   border: 0.5px solid;
-  color: var(--pink);
+  color: var(--orange);
 }
