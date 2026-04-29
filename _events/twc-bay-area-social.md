@@ -1,5 +1,5 @@
 ---
-title: TWC Bay Area Social
+title: "Bay Area Meetup: Oakland"
 date: 2026-05-07 21:00
 locations:
   - Bay Area
