@@ -26,7 +26,7 @@
     "rehype-slug": "^6.0.0",
     "tsx": "^4.21.0",
     "typescript-eslint": "^8.54.0",
-    "yaml": "^2.8.3"
+    "yaml": "^2.8.4"
   },
   "engines": {
     "node": ">=24 <25"
