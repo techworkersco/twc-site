@@ -1,5 +1,5 @@
 ---
-title: Portland, OR General Meeting
+title: July 2025 Portland, OR General Meeting
 date: 2025-07-12 18:00
 locations:
   - Portland
