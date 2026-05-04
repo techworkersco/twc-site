@@ -1,5 +1,5 @@
 ---
-title: July 2026 Portland OR, General Meeting
+title: Portland OR, General Meeting - July 2026
 date: 2026-07-11 18:00
 locations:
   - Portland
