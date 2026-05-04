@@ -1,5 +1,5 @@
 ---
-title: Portland, OR General Meeting
+title: April 2026 Portland, OR General Meeting
 date: 2026-04-11 18:00
 locations:
   - Portland
