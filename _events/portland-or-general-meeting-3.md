@@ -1,6 +1,6 @@
 ---
 title: Portland, OR General Meeting
-date: 2026-05-09 18:00
+date: 2026-06-13 18:00
 locations:
   - Portland
 time_zones:
