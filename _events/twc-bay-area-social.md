@@ -5,11 +5,12 @@ locations:
   - Bay Area
 time_zones:
   - US/Pacific
+image: /assets/img/bay-area-meetup-may26.jpeg
 ---
-**Location: Mad Oak in Oakland near 12th St BART**
+**Location: Mad Oak in Oakland near 12th St BART - on the roof deck**
 
 Monthly meetup for tech workers interested in organizing and building collective power. Join us for casual conversation, good food and hangs with like minded workers. We will do some brief TWC 101 and working group introductions for new folks. All are welcome!
 
 📆 Thursday, May 7, 2026\
 ⏰ 6-8pm (come for as long or short as you like)\
-📍 Mad Oak Bar N Yard, 135 12th Street, Oakland
+📍 Mad Oak Bar N Yard, 135 12th Street, Oakland (on the roof deck)
