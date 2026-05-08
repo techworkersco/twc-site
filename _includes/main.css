@@ -712,7 +712,6 @@
   select {
     border: 1px solid;
     border-radius: 4px;
-    color: var(--grey);
     padding: 0.75rem;
 
     @media (--mobile) {
