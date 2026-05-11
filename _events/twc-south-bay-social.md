@@ -1,6 +1,6 @@
 ---
 title: TWC South Bay social
-date: 2026-05-16 18:30
+date: 2026-05-16 21:30
 locations:
   - Bay Area
 time_zones:
