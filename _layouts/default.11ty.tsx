@@ -156,8 +156,15 @@ export const render = async ({
           <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
         </head>
         <body class="primaryBg textColor">
-          <header class="secondaryBg flex flex-row fixed w-full" role="banner">
-            <div class="contain flex flex-row ai-ctr justify-between">
+          <header role="banner">
+            <div id="circuit-breakers">
+              <a href="/circuit-breakers/">
+                The <strong>CIRCUIT BREAKERS</strong> conference is coming up in
+                <strong> NYC on October 17-18 2026.</strong> By and for tech
+                labor organizing.
+              </a>
+            </div>
+            <div class="nav-header contain flex flex-row ai-ctr justify-between">
               <div class="flex flex-row ai-ctr">
                 <img
                   alt="TWC logo"
