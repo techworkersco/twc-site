@@ -85,13 +85,13 @@ export const render = ({ chapters }: Data) => {
             placeholder="LinkedIn, Twitter, etc"
             id="social"
             required
-            type="url"
+            type="text"
             name="social_media_1"
             title="Enter a valid url"
           />{" "}
           <input
             placeholder="GitHub, Instagram, Blog"
-            type="url"
+            type="text"
             required
             name="social_media_2"
             title="Enter a valid url"
