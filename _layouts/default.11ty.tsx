@@ -145,6 +145,10 @@ export const render = async ({
             href="/feed/events.xml"
             title="Events"
           />
+          <link 
+            rel="me" 
+            href="https://union.place/@techworkersco"
+          />
 
           <style>{await renderCss()}</style>
           <link rel="canonical" href={canonicalUrl.href} />
