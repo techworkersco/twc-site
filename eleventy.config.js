@@ -58,6 +58,16 @@ export default async (cfg) => {
   cfg.addPassthroughCopy("assets");
   cfg.addPassthroughCopy("netlify.toml");
 
+  // todo(maximsmol): fix fallback CLS with fontaine?
+  cfg.addPassthroughCopy({
+    "node_modules/@fontsource/silkscreen/files/silkscreen-latin-400-normal.woff2":
+      "fonts/silkscreen-latin-400-normal.woff2",
+    "node_modules/@fontsource-variable/montserrat/files/montserrat-latin-wght-normal.woff2":
+      "fonts/montserrat-latin-wght-normal.woff2",
+    "node_modules/@fontsource-variable/roboto-mono/files/roboto-mono-latin-wght-normal.woff2":
+      "fonts/roboto-mono-latin-wght-normal.woff2",
+  });
+
   cfg.addPassthroughCopy("circuit-breakers");
   cfg.ignores.add("circuit-breakers");
 

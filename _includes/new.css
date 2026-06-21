@@ -1,0 +1,171 @@
+/* montserrat-latin-wght-normal */
+@font-face {
+  font-family: "Montserrat Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(/fonts/montserrat-latin-wght-normal.woff2) format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* silkscreen-latin-400-normal */
+@font-face {
+  font-family: "Silkscreen";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(/fonts/silkscreen-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* roboto-mono-latin-wght-normal */
+@font-face {
+  font-family: "Roboto Mono Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 700;
+  src: url(/files/roboto-mono-latin-wght-normal.woff2)
+    format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@layer reset, base, main, utils;
+
+@layer reset {
+  /* see https://www.joshwcomeau.com/css/custom-css-reset/  */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  :root {
+    color-scheme: light dark;
+
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+
+    -webkit-font-smoothing: antialiased;
+    interpolate-size: allow-keywords;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* see https://utopia.fyi/  */
+    --step--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
+    --step--1: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+    --step-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+    --step-1: clamp(1.35rem, 1.2631rem + 0.3864vw, 1.5625rem);
+    --step-2: clamp(1.62rem, 1.4837rem + 0.6057vw, 1.9531rem);
+    --step-3: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
+    --step-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
+    --step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+
+    --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+    --space-2xs: clamp(0.5625rem, 0.5369rem + 0.1136vw, 0.625rem);
+    --space-xs: clamp(0.875rem, 0.8494rem + 0.1136vw, 0.9375rem);
+    --space-s: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+    --space-m: clamp(1.6875rem, 1.6108rem + 0.3409vw, 1.875rem);
+    --space-l: clamp(2.25rem, 2.1477rem + 0.4545vw, 2.5rem);
+    --space-xl: clamp(3.375rem, 3.2216rem + 0.6818vw, 3.75rem);
+    --space-2xl: clamp(4.5rem, 4.2955rem + 0.9091vw, 5rem);
+    --space-3xl: clamp(6.75rem, 6.4432rem + 1.3636vw, 7.5rem);
+
+    --space-3xs-2xs: clamp(0.3125rem, 0.1847rem + 0.5682vw, 0.625rem);
+    --space-2xs-xs: clamp(0.5625rem, 0.4091rem + 0.6818vw, 0.9375rem);
+    --space-xs-s: clamp(0.875rem, 0.7216rem + 0.6818vw, 1.25rem);
+    --space-s-m: clamp(1.125rem, 0.8182rem + 1.3636vw, 1.875rem);
+    --space-m-l: clamp(1.6875rem, 1.3551rem + 1.4773vw, 2.5rem);
+    --space-l-xl: clamp(2.25rem, 1.6364rem + 2.7273vw, 3.75rem);
+    --space-xl-2xl: clamp(3.375rem, 2.7102rem + 2.9545vw, 5rem);
+    --space-2xl-3xl: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
+
+    font-size: var(--step-0);
+    font-family: "Montserrat Variable", sans-serif;
+  }
+
+  pre,
+  code {
+    font-family: "Roboto Mono Variable", monospace;
+  }
+
+  h1,
+  .h1 {
+    font-size: var(--step-5);
+  }
+
+  h2,
+  .h2 {
+    font-size: var(--step-4);
+  }
+
+  h3,
+  .h3 {
+    font-size: var(--step-3);
+  }
+
+  h4,
+  .h4 {
+    font-size: var(--step-2);
+  }
+
+  h5,
+  .h5 {
+    font-size: var(--step-1);
+  }
+
+  h6,
+  .h6 {
+    font-weight: bold;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5 {
+    font-family: "Silkscreen", sans-serif;
+  }
+}
