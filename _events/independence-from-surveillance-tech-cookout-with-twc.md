@@ -5,12 +5,12 @@ locations:
   - Bay Area
 time_zones:
   - US/Pacific
-image: /assets/img/twc-july4-flyer.jpeg
+image: /assets/img/twc-july4-cookout.png
 ---
-Join Tech Workers Coalition Bay Area and friends for a community cookout and political gathering about independence from Surveillance Tech. This will feature music, activities, speakers and BBQ.
+Join TWC Bay Area for a cookout and potluck on the 4th of July from 1pm to 5pm at Pine Knoll Park, Lake Merritt, Oakland! 🦅🇺🇸🎇🌭🗽🎆🏈
 
-**RSVP at [twcl.ink/july4](https://twcl.ink/july4) !**
+We will have food, drinks and music as well as activities and speakers from local groups focusing on the evils of surveillance tech and the many alternatives to keep our communities safe. Bring as many friends, family and coworkers as you want, this should be a fun event for all!
 
-📆 Saturday July 4\
-⏰ 1:00-5:00pm (come whenever, stay however long)\
-📍 Lake Merritt, Oakland - on the north side, near the Boat House ([GMaps](https://maps.app.goo.gl/1F1WyzMs7aUqDBFm7))
+📅 July 4th, 1-5pm\
+📍 Pine Knoll Park @ Lake Merritt in Oakland\
+🎟️ **RSVP at [twcl.ink/july4](https://twcl.ink/july4)**
