@@ -1238,6 +1238,15 @@ nav.see-more {
   background: #1d3c98;
   color: white;
 
+  .content {
+    margin-inline: auto;
+    width: 65%;
+
+    @media (--tablet) {
+      width: 90%;
+    }
+  }
+
   a {
     color: inherit;
   }
