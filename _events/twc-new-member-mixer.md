@@ -1,5 +1,5 @@
 ---
-title: TWC New Member Mixer
+title: "TWC New Member Mixer: August"
 date: 2026-08-30 13:00
 locations:
   - Global
