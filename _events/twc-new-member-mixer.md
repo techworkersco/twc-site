@@ -14,4 +14,4 @@ If everyone at your workplace is afraid of talking about layoffs, unions, survei
 
 You'll get to know fellow tech workers, discover how they're dealing with all of the above, and talk through plans to do something about it, either in the workplace or within a TWC chapter. Tailored to new members, but all members welcome, especially if you've been lurking for a bit and want to get more involved. 
 
-Register at twcl.ink/hellotwc. See you there!
+Register at [twcl.ink/hellotwc](twcl.ink/hellotwc). See you there!
