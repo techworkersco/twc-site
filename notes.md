@@ -1,13 +1,13 @@
 # notes
 
-- header image licensing
-- event address is a link?
+- header image licensing - pexels
+- footer image - ??? pexels?
+- event address is a link to the event page
 - the events/press header doesn't look clickable - the "view more" button is hard to see on the right side of the screen
-- mobile design for header/footer
-- icons set? hand made?
 
 # todo
 
-1. respond to TWC new chapter questions
-2. TWC appointment system
-3. TWC redesgn
+1. add analytics (web/mobile basically)
+2. max existing site content
+3. intros summary
+4. new site map based on intros and interviews

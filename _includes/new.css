@@ -38,35 +38,61 @@
 @layer reset, base, main, utils;
 
 @layer reset {
-  /* see https://www.joshwcomeau.com/css/custom-css-reset/  */
+  /* see https://www.joshwcomeau.com/css/custom-css-reset */
+  /* see https://vale.rocks/posts/css-reset */
   *,
   *::before,
   *::after {
     box-sizing: border-box;
+    background-repeat: no-repeat;
   }
 
   * {
     margin: 0;
+    padding: 0;
   }
 
   :root {
     color-scheme: light dark;
 
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+
     line-height: 1.5;
     overflow-wrap: break-word;
     text-wrap: pretty;
+    font-variant-numeric: proportional-nums;
+    hanging-punctuation: first allow-end last;
 
     -webkit-font-smoothing: antialiased;
     interpolate-size: allow-keywords;
+
+    block-size: 100%;
+  }
+
+  body {
+    min-block-size: 100%;
+  }
+
+  :focus-visible {
+    outline-offset: 0.2rem;
   }
 
   img,
   picture,
+  audio,
   video,
   canvas,
+  iframe,
   svg {
     display: block;
-    max-width: 100%;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+
+  svg:not([fill]) {
+    fill: currentColor;
   }
 
   input,
@@ -83,6 +109,30 @@
   h5,
   h6 {
     text-wrap: balance;
+  }
+
+  math,
+  time,
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+
+  pre,
+  code {
+    font-variant-numeric: tabular-nums slashed-zero;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  sup,
+  sub {
+    line-height: 0;
   }
 }
 
@@ -116,6 +166,105 @@
     --space-l-xl: clamp(2.25rem, 1.6364rem + 2.7273vw, 3.75rem);
     --space-xl-2xl: clamp(3.375rem, 2.7102rem + 2.9545vw, 5rem);
     --space-2xl-3xl: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
+
+    /* https://huetone.ardov.me/?palette=N4IgdghgtgpiBcIAqB1AwgAgMYHsAOAniADQgAWArjAM4IDaoksCIAChQE54A2cpu3HB1rw6IAMQATAGYwAzNOkkJWAEaSAjIuXiI01QDZtpcQE4ATKdPGJAdnMGsN8QFYAHHJfO5bjbawaOuaqAAzuSiYaBiFuLuYgALoAvsSM0HCIAEowksoCQiJi4oqSWJKmOopYACxYIZXS1lYNtlF8EtLRpnJyOljRIeYuOqa2ISEaEDoG1SHVGvUmcpLjYYkpacyIAOIcEET8OILC9BIwLufnOpLVNzc66o%2B5JhAur686sV-DJgamf38dNVpMDgToehDepEAjD1qlwOkWAAZCAANxgYEkMA4eSOBVO4hgBhgWnaUkcTgiKhCemcEGqoxgqk%2B1Vs-jc01MLlUEAqJlBMWZS2q5gcQokWjm1TgyXhTAyyBgEG4uOOhQk-0Uzgm0nMIJ040kbnKOiiqjUzwk41MbmaJnGtlGU3tYVULiwBpCclU3s95g0-vWCVIABccGAaKcXIsQAsY%2BZxso5InSLMY9GYwNlGMY25E8kgA */
+    /* todo(maximsmol): these are sRGB, we should try upgrading to P3/Rec2020 */
+    /* todo(maximsmol): maybe use https://harmonizer.evilmartians.com */
+
+    --color-purple-50: #dfe3ff;
+    --color-purple-50: oklch(0.921 0.038 279.169);
+    --color-purple-100: #cbd1ff;
+    --color-purple-100: oklch(0.871 0.064 279.15);
+    --color-purple-200: #afb6ff;
+    --color-purple-200: oklch(0.798 0.104 279.54);
+    --color-purple-300: #9299ff;
+    --color-purple-300: oklch(0.721 0.147 279.036);
+    --color-purple-400: #726cff;
+    --color-purple-400: oklch(0.616 0.212 280.012);
+    --color-purple-500: #5835ff;
+    --color-purple-500: oklch(0.521 0.273 279.068);
+    --color-purple-600: #3817c1;
+    --color-purple-600: oklch(0.403 0.233 276.822);
+    --color-purple-700: #2b058f;
+    --color-purple-700: oklch(0.32 0.19 279.274);
+    --color-purple-800: #160852;
+    --color-purple-800: oklch(0.226 0.122 279.099);
+
+    --color-red-50: #ffdcd9;
+    --color-red-50: oklch(0.923 0.039 23.697);
+    --color-red-100: #ffc4c0;
+    --color-red-100: oklch(0.872 0.068 23.014);
+    --color-red-200: #ff9f99;
+    --color-red-200: oklch(0.798 0.115 23.837);
+    --color-red-300: #ff716e;
+    --color-red-300: oklch(0.72 0.174 23.661);
+    --color-red-400: #f60b33;
+    --color-red-400: oklch(0.616 0.246 23.532);
+    --color-red-500: #c60025;
+    --color-red-500: oklch(0.521 0.211 23.669);
+    --color-red-600: #97001a;
+    --color-red-600: oklch(0.427 0.172 23.571);
+    --color-red-700: #640410;
+    --color-red-700: oklch(0.32 0.125 23.383);
+    --color-red-800: #3d0005;
+    --color-red-800: oklch(0.227 0.092 23.707);
+
+    --color-gray-50: #e5e5e5;
+    --color-gray-50: oklch(0.922 0 89.876);
+    --color-gray-100: #d4d4d4;
+    --color-gray-100: oklch(0.87 0 89.876);
+    --color-gray-200: #bdbdbd;
+    --color-gray-200: oklch(0.798 0 89.876);
+    --color-gray-300: #a5a5a5;
+    --color-gray-300: oklch(0.722 0 89.876);
+    --color-gray-400: #858585;
+    --color-gray-400: oklch(0.617 0 89.876);
+    --color-gray-500: #696969;
+    --color-gray-500: oklch(0.521 0 89.876);
+    --color-gray-600: #4f4f4f;
+    --color-gray-600: oklch(0.428 0 89.876);
+    --color-gray-700: #333333;
+    --color-gray-700: oklch(0.321 0 89.876);
+    --color-gray-800: #1c1c1c;
+    --color-gray-800: oklch(0.226 0 89.876);
+
+    --color-lavender-50: #e6e1fe;
+    --color-lavender-50: oklch(0.922 0.039 293.523);
+    --color-lavender-100: #d6ccff;
+    --color-lavender-100: oklch(0.87 0.071 293.871);
+    --color-lavender-200: #c0afff;
+    --color-lavender-200: oklch(0.798 0.113 293.426);
+    --color-lavender-300: #a497eb;
+    --color-lavender-300: oklch(0.721 0.121 290.122);
+    --color-lavender-400: #8477c8;
+    --color-lavender-400: oklch(0.615 0.121 289.741);
+    --color-lavender-500: #695ba9;
+    --color-lavender-500: oklch(0.521 0.12 289.816);
+    --color-lavender-600: #4f408b;
+    --color-lavender-600: oklch(0.426 0.12 289.528);
+    --color-lavender-700: #34226b;
+    --color-lavender-700: oklch(0.321 0.121 289.1);
+    --color-lavender-800: #1f044e;
+    --color-lavender-800: oklch(0.225 0.12 289.591);
+
+    --color-teal-50: #96ffff;
+    --color-teal-50: oklch(0.937 0.098 195.609);
+    --color-teal-100: #00f2f4;
+    --color-teal-100: oklch(0.871 0.148 195.842);
+    --color-teal-200: #01d8d9;
+    --color-teal-200: oklch(0.799 0.136 195.368);
+    --color-teal-300: #00bcbe;
+    --color-teal-300: oklch(0.721 0.123 196.129);
+    --color-teal-400: #009899;
+    --color-teal-400: oklch(0.616 0.105 195.596);
+    --color-teal-500: #00797a;
+    --color-teal-500: oklch(0.522 0.089 195.786);
+    --color-teal-600: #005b5c;
+    --color-teal-600: oklch(0.427 0.073 196.077);
+    --color-teal-700: #003b3b;
+    --color-teal-700: oklch(0.319 0.054 194.769);
+    --color-teal-800: #002121;
+    --color-teal-800: oklch(0.224 0.038 194.769);
 
     font-size: var(--step-0);
     font-family: "Montserrat Variable", sans-serif;
