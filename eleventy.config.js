@@ -273,7 +273,13 @@ export default async (cfg) => {
             "User-Agent": "twc-website/1.0",
           },
         });
-        const data = YAML.parse(await req.text());
+
+        let data;
+        try {
+          data = YAML.parse(await req.text());
+        } catch (error) {
+          console.error(`Failed to fetch remote data from ${x.url}`, error);
+        }
 
         console.log(`Fetched: ${x.data} from ${x.url}`);
 
