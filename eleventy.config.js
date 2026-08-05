@@ -264,16 +264,14 @@ export default async (cfg) => {
           },
         });
 
-        let data;
         try {
-          data = YAML.parse(await req.text());
+          if (req.status !== 200) throw req.status
+          const data = YAML.parse(await req.text());
+          console.log(`Fetched: ${x.data} from ${x.url}`);
+          cfg.addGlobalData(x.data, data);
         } catch (error) {
-          console.error(`Failed to fetch remote data from ${x.url}`, error);
+          console.error(`Failed: ${x.data} from ${x.url}:`, error);
         }
-
-        console.log(`Fetched: ${x.data} from ${x.url}`);
-
-        cfg.addGlobalData(x.data, data);
       })(),
     );
   await Promise.all(deferred);
