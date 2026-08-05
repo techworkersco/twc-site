@@ -38,7 +38,7 @@
     U+2215, U+FEFF, U+FFFD;
 }
 
-@layer reset, base, main, utils;
+@layer reset, base, main, utils, overrides;
 
 @layer reset {
   /* see https://www.joshwcomeau.com/css/custom-css-reset */
@@ -140,6 +140,8 @@
 }
 
 @layer base {
+  body { overflow-x: clip; }
+
   :root {
     /* see https://utopia.fyi/  */
     --step--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
@@ -169,6 +171,8 @@
     --space-l-xl: clamp(2.25rem, 1.6364rem + 2.7273vw, 3.75rem);
     --space-xl-2xl: clamp(3.375rem, 2.7102rem + 2.9545vw, 5rem);
     --space-2xl-3xl: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
+
+    --content-max-width: 1440px;
 
     /* https://huetone.ardov.me/?palette=N4IgdghgtgpiBcIAqB1AwgAgMYHsAOAniADQgAWArjAM4IDaoksCIAChQE54A2cpu3HB1rw6IAMQATAGYwAzNOkkJWAEaSAjIuXiI01QDZtpcQE4ATKdPGJAdnMGsN8QFYAHHJfO5bjbawaOuaqAAzuSiYaBiFuLuY6IRAhIZ4gALoAvsSM0HCIAEowksoCQiJi4oqSWJKmOopYACxYIfXS1lZttlF8EtLRpnJyOljRIeYuOqa2yRoQOgaNIY0arSZykslhQeZb8ZnZ4LksAOIcEET8OILC9BIwLg8POpKNr6866l-FJhAuf38dLFgZMTAZTODwTpGtIYTCdENEcNIgFUQlNhj0lkcsxEAAZCAANxgYEkMA4JWuZTu4hgBhgWl6UkcTgiKkSijZuka0xgqiBjVs-jcC1MLlUEDqJjhMX560a5gccokWmWjSZq2SclaBxxeWQMAg3EpN3KEghnK5IS05lhCRCkjctR0UVUah%2BEmSpjcnRMyVs03mfrCqhcWHtclUkft5g0sYSGkTqyxaVIABccGAaHcXGsQJrlLs89q80s87m82NlDM825kspTPXMkA */
     /* todo(maximsmol): these are sRGB, we should try upgrading to P3/Rec2020 */
@@ -304,7 +308,7 @@
 
   h2,
   .h2 {
-    font-size: var(--step-4);
+    font-size: min(9vw, var(--step-4));
   }
 
   h3,
@@ -314,7 +318,7 @@
 
   h4,
   .h4 {
-    font-size: var(--step-2);
+    font-size: min(6vw, var(--step-2));
   }
 
   h5,
@@ -374,9 +378,15 @@
     > header {
       display: flex;
 
-      padding: var(--space-s) var(--space-l);
+      padding-top: var(--space-s);
+      padding-bottom: var(--space-s);
+      gap: var(--space-s);
+      justify-content: space-between;
+      width: 100%;
 
       > h1 {
+        min-width: 290px;
+        block-size: 60px;
         display: flex;
         align-items: center;
         gap: var(--space-s);
@@ -391,28 +401,43 @@
 
       > nav {
         flex-grow: 1;
-
-        display: flex;
-        justify-content: flex-end;
+        flex-shrink: 1;
+        max-width: 700px;
 
         > ul {
+          justify-content: space-around;
           display: flex;
           align-items: center;
-          gap: var(--space-m);
 
           list-style: none;
+          text-wrap: nowrap;
         }
       }
     }
 
+    /* [jneen] set max-width for main (non-fullwidth) elements.
+     * padding is applied on *all* device widths - on larger
+     * screens, the horizontal margin will be the naturally-
+     * occurring margin after max-width, plus the padding
+     * defined here.
+     */
+    > header, > main > article {
+      max-width: var(--content-max-width);
+      padding-left: var(--space-xs);
+      padding-right: var(--space-xs);
+      margin: 0 auto;
+    }
+
     > main {
       .banner {
-        block-size: calc(1.5 * var(--space-3xl));
+        block-size: calc(min(30vw, 1.5 * var(--space-3xl)));
         overflow: hidden;
+        overflow-x: clip;
       }
 
       .hero {
-        padding: var(--space-s) var(--space-l);
+        overflow-x: clip;
+        padding: var(--space-xs);
         padding-top: var(--space-l);
 
         h2 {
@@ -432,6 +457,7 @@
             flex-direction: column;
 
             text-align: justify;
+            text-wrap: nowrap;
 
             .h4 {
               line-height: 1.5;
@@ -457,6 +483,8 @@
               display: flex;
               gap: var(--space-2xs);
               justify-content: flex-end;
+
+              > svg { width: 24px; height: 24px; }
             }
           }
         }
@@ -470,12 +498,15 @@
         > .cards {
           list-style: none;
 
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
           gap: var(--space-s);
 
           li {
             padding: var(--space-s);
+            flex-basis: 330px;
+            flex-grow: 1;
 
             border: 2px solid var(--color-red-400);
             box-shadow: var(--color-red-400) -4px 6px;
@@ -506,5 +537,39 @@
         }
       }
     }
+  }
+}
+
+@layer overrides {
+  @media(max-width: 600px) {
+    header {
+      ul {
+        align-items: flex-end;
+        > li { flex-basis: 0; }
+        gap: 0;
+        flex-direction: column;
+      }
+    }
+
+    .hero h2 {
+      .title { margin: 0 auto; }
+      > svg { display: none; }
+    }
+  }
+
+  @media(max-width: 1000px) {
+    header {
+      flex-direction: column;
+      align-items: flex-end;
+
+      h1 {
+        width: 100%;
+      }
+    }
+
+    .icon-lines {
+      display: none;
+    }
+
   }
 }
