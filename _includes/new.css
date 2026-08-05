@@ -5,9 +5,10 @@
   font-display: swap;
   font-weight: 100 900;
   src: url(/fonts/montserrat-latin-wght-normal.woff2) format("woff2-variations");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
-    U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 /* silkscreen-latin-400-normal */
@@ -17,9 +18,10 @@
   font-display: swap;
   font-weight: 400;
   src: url(/fonts/silkscreen-latin-400-normal.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
-    U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 /* roboto-mono-latin-wght-normal */
@@ -30,9 +32,10 @@
   font-weight: 100 700;
   src: url(/files/roboto-mono-latin-wght-normal.woff2)
     format("woff2-variations");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
-    U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @layer reset, base, main, utils;
@@ -167,9 +170,10 @@
     --space-xl-2xl: clamp(3.375rem, 2.7102rem + 2.9545vw, 5rem);
     --space-2xl-3xl: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
 
-    /* https://huetone.ardov.me/?palette=N4IgdghgtgpiBcIAqB1AwgAgMYHsAOAniADQgAWArjAM4IDaoksCIAChQE54A2cpu3HB1rw6IAMQATAGYwAzNOkkJWAEaSAjIuXiI01QDZtpcQE4ATKdPGJAdnMGsN8QFYAHHJfO5bjbawaOuaqAAzuSiYaBiFuLuYgALoAvsSM0HCIAEowksoCQiJi4oqSWJKmOopYACxYIZXS1lYNtlF8EtLRpnJyOljRIeYuOqa2ISEaEDoG1SHVGvUmcpLjYYkpacyIAOIcEET8OILC9BIwLufnOpLVNzc66o%2B5JhAur686sV-DJgamf38dNVpMDgToehDepEAjD1qlwOkWAAZCAANxgYEkMA4eSOBVO4hgBhgWnaUkcTgiKhCemcEGqoxgqk%2B1Vs-jc01MLlUEAqJlBMWZS2q5gcQokWjm1TgyXhTAyyBgEG4uOOhQk-0Uzgm0nMIJ040kbnKOiiqjUzwk41MbmaJnGtlGU3tYVULiwBpCclU3s95g0-vWCVIABccGAaKcXIsQAsY%2BZxso5InSLMY9GYwNlGMY25E8kgA */
+    /* https://huetone.ardov.me/?palette=N4IgdghgtgpiBcIAqB1AwgAgMYHsAOAniADQgAWArjAM4IDaoksCIAChQE54A2cpu3HB1rw6IAMQATAGYwAzNOkkJWAEaSAjIuXiI01QDZtpcQE4ATKdPGJAdnMGsN8QFYAHHJfO5bjbawaOuaqAAzuSiYaBiFuLuY6IRAhIZ4gALoAvsSM0HCIAEowksoCQiJi4oqSWJKmOopYACxYIfXS1lZttlF8EtLRpnJyOljRIeYuOqa2yRoQOgaNIY0arSZykslhQeZb8ZnZ4LksAOIcEET8OILC9BIwLg8POpKNr6866l-FJhAuf38dLFgZMTAZTODwTpGtIYTCdENEcNIgFUQlNhj0lkcsxEAAZCAANxgYEkMA4JWuZTu4hgBhgWl6UkcTgiKkSijZuka0xgqiBjVs-jcC1MLlUEDqJjhMX560a5gccokWmWjSZq2SclaBxxeWQMAg3EpN3KEghnK5IS05lhCRCkjctR0UVUah%2BEmSpjcnRMyVs03mfrCqhcWHtclUkft5g0sYSGkTqyxaVIABccGAaHcXGsQJrlLs89q80s87m82NlDM825kspTPXMkA */
     /* todo(maximsmol): these are sRGB, we should try upgrading to P3/Rec2020 */
-    /* todo(maximsmol): maybe use https://harmonizer.evilmartians.com */
+    /* todo(maximsmol): maybe use https://harmonizer.evilmartians.com*/
+    /* todo(maximsmol): likely need to fork huetone and fix it up */
 
     --color-purple-50: #dfe3ff;
     --color-purple-50: oklch(0.921 0.038 279.169);
@@ -189,6 +193,8 @@
     --color-purple-700: oklch(0.32 0.19 279.274);
     --color-purple-800: #160852;
     --color-purple-800: oklch(0.226 0.122 279.099);
+    --color-purple-900: #090035;
+    --color-purple-900: oklch(0.16 0.098 279.099);
 
     --color-red-50: #ffdcd9;
     --color-red-50: oklch(0.923 0.039 23.697);
@@ -208,6 +214,8 @@
     --color-red-700: oklch(0.32 0.125 23.383);
     --color-red-800: #3d0005;
     --color-red-800: oklch(0.227 0.092 23.707);
+    --color-red-900: #220002;
+    --color-red-900: oklch(0.16 0.064 23.707);
 
     --color-gray-50: #e5e5e5;
     --color-gray-50: oklch(0.922 0 89.876);
@@ -227,6 +235,8 @@
     --color-gray-700: oklch(0.321 0 89.876);
     --color-gray-800: #1c1c1c;
     --color-gray-800: oklch(0.226 0 89.876);
+    --color-gray-900: #0d0d0d;
+    --color-gray-900: oklch(0.16 0 89.876);
 
     --color-lavender-50: #e6e1fe;
     --color-lavender-50: oklch(0.922 0.039 293.523);
@@ -246,6 +256,8 @@
     --color-lavender-700: oklch(0.321 0.121 289.1);
     --color-lavender-800: #1f044e;
     --color-lavender-800: oklch(0.225 0.12 289.591);
+    --color-lavender-900: #100030;
+    --color-lavender-900: oklch(0.16 0.09 289.59);
 
     --color-teal-50: #96ffff;
     --color-teal-50: oklch(0.937 0.098 195.609);
@@ -265,14 +277,24 @@
     --color-teal-700: oklch(0.319 0.054 194.769);
     --color-teal-800: #002121;
     --color-teal-800: oklch(0.224 0.038 194.769);
+    --color-teal-900: #011110;
+    --color-teal-900: oklch(0.16 0.025 194.769);
+
+    --font-main: "Montserrat Variable", sans-serif;
+    --font-monospace: "Roboto Mono Variable", monospace;
+
+    --main-bg: var(--color-purple-900);
 
     font-size: var(--step-0);
-    font-family: "Montserrat Variable", sans-serif;
+    font-family: var(--font-main);
+
+    color: #fafafa;
+    background-color: var(--main-bg);
   }
 
   pre,
   code {
-    font-family: "Roboto Mono Variable", monospace;
+    font-family: var(--font-monospace);
   }
 
   h1,
@@ -316,5 +338,173 @@
   .h4,
   .h5 {
     font-family: "Silkscreen", sans-serif;
+  }
+
+  .monospace {
+    font-family: var(--font-monospace);
+  }
+
+  svg.icon {
+    display: inline-block;
+
+    inline-size: 1em;
+    aspect-ratio: 1/1;
+  }
+
+  a.button {
+    padding: var(--space-2xs) var(--space-xs);
+
+    display: flex;
+    align-items: center;
+    gap: 1ch;
+
+    color: inherit;
+    text-decoration: none;
+
+    &.framed {
+      border: 2px solid currentColor;
+      box-shadow: currentColor -2px 4px;
+    }
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+
+    > header {
+      display: flex;
+
+      padding: var(--space-s) var(--space-l);
+
+      > h1 {
+        display: flex;
+        align-items: center;
+        gap: var(--space-s);
+
+        font-size: inherit;
+
+        > .logo {
+          block-size: 100%;
+          aspect-ratio: 1/1;
+        }
+      }
+
+      > nav {
+        flex-grow: 1;
+
+        display: flex;
+        justify-content: flex-end;
+
+        > ul {
+          display: flex;
+          align-items: center;
+          gap: var(--space-m);
+
+          list-style: none;
+        }
+      }
+    }
+
+    > main {
+      .banner {
+        block-size: calc(1.5 * var(--space-3xl));
+        overflow: hidden;
+      }
+
+      .hero {
+        padding: var(--space-s) var(--space-l);
+        padding-top: var(--space-l);
+
+        h2 {
+          line-height: 1;
+
+          display: flex;
+          gap: var(--space-s);
+
+          > svg {
+            color: var(--color-red-400);
+
+            width: 2lh;
+          }
+
+          > .title {
+            display: flex;
+            flex-direction: column;
+
+            text-align: justify;
+
+            .h4 {
+              line-height: 1.5;
+            }
+          }
+
+          .red {
+            color: var(--color-red-400);
+          }
+
+          > .icon-lines {
+            flex-grow: 1;
+
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2xs);
+
+            div {
+              flex-grow: 1;
+              flex-basis: 0;
+              min-block-size: 0;
+
+              display: flex;
+              gap: var(--space-2xs);
+              justify-content: flex-end;
+            }
+          }
+        }
+
+        > hr {
+          color: var(--color-red-400);
+
+          margin: var(--space-l) 0;
+        }
+
+        > .cards {
+          list-style: none;
+
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: var(--space-s);
+
+          li {
+            padding: var(--space-s);
+
+            border: 2px solid var(--color-red-400);
+            box-shadow: var(--color-red-400) -4px 6px;
+
+            > section {
+              > .h5 {
+                background-color: var(--color-red-400);
+                color: var(--main-bg);
+
+                text-transform: uppercase;
+                font-family: var(--font-main);
+              }
+
+              display: flex;
+              flex-direction: column;
+              gap: var(--space-s);
+            }
+          }
+        }
+
+        > .cta {
+          padding: var(--space-l) 0;
+
+          display: flex;
+          gap: var(--space-s);
+
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
