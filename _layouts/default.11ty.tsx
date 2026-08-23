@@ -24,6 +24,7 @@ const links = [
   { url: "/job-board", text: "Union Job Board" },
   { url: "/press", text: "Press mentions" },
   { url: "/security", text: "Security Tips" },
+  { url: "https://www.youtube.com/@techworkerscoalitionvideos", text: "YouTube" },
 ];
 
 const renderCss = async () => {
@@ -47,6 +48,20 @@ const renderCss = async () => {
   // todo(maximsmol): does this to track dependencies on the CSS files somehow?
 
   return Buffer.from(res.code).toString();
+};
+
+const getLinkProps = (url: string) => {
+  const isExternal = url.includes("youtube.com") || url.startsWith("http");
+  
+  if (isExternal) {
+    return {
+      target: "_blank",
+      rel: "noopener noreferrer",
+      ariaLabel: "Opens in a new tab"
+    };
+  }
+  
+  return {}; // Return nothing for internal links
 };
 
 export const render = async ({
@@ -107,6 +122,8 @@ export const render = async ({
                 "https://calendar.google.com",
                 "https://app.netlify.com",
                 "https://dev.techworkerscoalition.org",
+                "https://www.youtube.com",
+                "https://www.youtube-nocookie.com",
               ],
               "font-src": ["'self'"],
               "img-src": [
@@ -230,7 +247,26 @@ export const render = async ({
                     >
                       {links.map((x) => (
                         <li>
-                          <a href={x.url}>{x.text}</a>
+                          <a href={x.url} {...getLinkProps(x.url)}>{x.text}
+                            {x.url.includes("youtube") ? (
+                              <svg
+                                role="img"
+                                aria-hidden="true"
+                                focusable="false"
+                                class="primarySvgFill"
+                                height="16"
+                                width="16"
+                                xmlns="https://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                stroke-linejoin="round"
+                                stroke-miterlimit="1.4"
+                              >
+                                <path d="M14 2.7L8.4 8.4a.5.5 0 01-.8-.8L13.3 2H9.5a.5.5 0 010-1h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.7zM5 3H2.5C1.7 3 1 3.7 1 4.5v9c0 .8.7 1.5 1.5 1.5h9a1.5 1.5 0 001.5-1.5V11a.5.5 0 00-1 0v2.5a.5.5 0 01-.5.5h-9a.5.5 0 01-.5-.5v-9c0-.3.2-.5.5-.5H5a.5.5 0 000-1z" fill-rule="nonzero"/>
+                              </svg>
+                            ) : null}
+                          </a>
                         </li>
                       ))}
                     </ul>
@@ -258,7 +294,26 @@ export const render = async ({
               <ul class="d:flex flex-wrap d:flex-row list-style-none">
                 {links.map((x) => (
                   <li class="d:c-1/3 marg-b-3 d:marg-r-3">
-                    <a href={x.url}>{x.text}</a>
+                    <a href={x.url} {...getLinkProps(x.url)}>{x.text}
+                      {x.url.includes("youtube") ? (
+                        <svg
+                          role="img"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="primarySvgFill"
+                          height="16"
+                          width="16"
+                          xmlns="https://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          stroke-linejoin="round"
+                          stroke-miterlimit="1.4"
+                        >
+                          <path d="M14 2.7L8.4 8.4a.5.5 0 01-.8-.8L13.3 2H9.5a.5.5 0 010-1h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.7zM5 3H2.5C1.7 3 1 3.7 1 4.5v9c0 .8.7 1.5 1.5 1.5h9a1.5 1.5 0 001.5-1.5V11a.5.5 0 00-1 0v2.5a.5.5 0 01-.5.5h-9a.5.5 0 01-.5-.5v-9c0-.3.2-.5.5-.5H5a.5.5 0 000-1z" fill-rule="nonzero"/>
+                        </svg>
+                      ) : null}
+                    </a>
                   </li>
                 ))}
                 <li>

@@ -41,3 +41,11 @@ permalink: /
 <a href="/press" class="button">See more press mentions</a>
 
 </section>
+
+<section>
+  <h2>Featured Video</h2>
+  <!-- Swap out YouTube video id here -->
+  {% featuredVideo "jlAbwmoai-0" %}
+
+  <a href="https://www.youtube.com/@techworkerscoalitionvideos" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab" class="button">See more videos on YouTube</a>
+</section>

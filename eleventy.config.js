@@ -239,6 +239,40 @@ export default async (cfg) => {
     },
   });
   cfg.addTemplateFormats("mdx");
+  
+  cfg.addShortcode("featuredVideo", (videoId) => {
+    if (!videoId) return '';
+
+    return `
+      <div class="featured-video-wrapper">
+        <div class="featured-video-facade" 
+            id="youtube-${videoId}"
+            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; cursor: pointer;"
+            onclick="
+              const iframe = document.createElement('iframe');
+              iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1');
+              iframe.setAttribute('title', 'Featured Video');
+              iframe.setAttribute('frameborder', '0');
+              iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+              iframe.setAttribute('allowfullscreen', 'true');
+              iframe.setAttribute('style', 'position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;');
+              this.innerHTML = '';
+              this.appendChild(iframe);
+            ">
+          <img src="https://img.youtube.com/vi/${videoId}/maxresdefault.jpg" 
+            alt="Featured Video Thumbnail" 
+            style="position: absolute; top: 0; left: 0; right: 0; width: 100%; max-width: 100%; height: 100%; object-fit: cover; opacity: 0.85;"
+            onerror="this.src='https://img.youtube.com/vi/${videoId}/hqdefault.jpg';">
+          <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; background: rgba(30, 30, 30, 0.9); border-radius: 12px; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">
+            <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: white;"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <style>
+        .featured-video-facade:hover .play-button { background: #FF0000 !important; }
+      </style>
+    `;
+  });
 
   const remoteDataSrcs = [
     {
