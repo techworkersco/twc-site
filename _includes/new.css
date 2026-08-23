@@ -38,7 +38,7 @@
     U+2215, U+FEFF, U+FFFD;
 }
 
-@layer reset, base, main, utils, overrides;
+@layer reset, base, main, utils;
 
 @layer reset {
   /* see https://www.joshwcomeau.com/css/custom-css-reset */
@@ -139,9 +139,12 @@
   }
 }
 
-@layer base {
-  body { overflow-x: clip; }
+/*
+note: minimum supported width 360px matching the smallest preset in Firefox,
+which is Galaxy S10/S10+ Android 11
+*/
 
+@layer base {
   :root {
     /* see https://utopia.fyi/  */
     --step--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
@@ -172,7 +175,7 @@
     --space-xl-2xl: clamp(3.375rem, 2.7102rem + 2.9545vw, 5rem);
     --space-2xl-3xl: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
 
-    --content-max-width: 1440px;
+    --space-s-l: clamp(1.125rem, 0.5625rem + 2.5vw, 2.5rem);
 
     /* https://huetone.ardov.me/?palette=N4IgdghgtgpiBcIAqB1AwgAgMYHsAOAniADQgAWArjAM4IDaoksCIAChQE54A2cpu3HB1rw6IAMQATAGYwAzNOkkJWAEaSAjIuXiI01QDZtpcQE4ATKdPGJAdnMGsN8QFYAHHJfO5bjbawaOuaqAAzuSiYaBiFuLuY6IRAhIZ4gALoAvsSM0HCIAEowksoCQiJi4oqSWJKmOopYACxYIfXS1lZttlF8EtLRpnJyOljRIeYuOqa2yRoQOgaNIY0arSZykslhQeZb8ZnZ4LksAOIcEET8OILC9BIwLg8POpKNr6866l-FJhAuf38dLFgZMTAZTODwTpGtIYTCdENEcNIgFUQlNhj0lkcsxEAAZCAANxgYEkMA4JWuZTu4hgBhgWl6UkcTgiKkSijZuka0xgqiBjVs-jcC1MLlUEDqJjhMX560a5gccokWmWjSZq2SclaBxxeWQMAg3EpN3KEghnK5IS05lhCRCkjctR0UVUah%2BEmSpjcnRMyVs03mfrCqhcWHtclUkft5g0sYSGkTqyxaVIABccGAaHcXGsQJrlLs89q80s87m82NlDM825kspTPXMkA */
     /* todo(maximsmol): these are sRGB, we should try upgrading to P3/Rec2020 */
@@ -308,7 +311,7 @@
 
   h2,
   .h2 {
-    font-size: min(9vw, var(--step-4));
+    font-size: var(--step-4);
   }
 
   h3,
@@ -318,7 +321,7 @@
 
   h4,
   .h4 {
-    font-size: min(6vw, var(--step-2));
+    font-size: var(--step-2);
   }
 
   h5,
@@ -374,19 +377,36 @@
   body {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
-    > header {
+    .header-padding {
+      display: flex;
+      justify-content: center;
+
+      padding: var(--space-s) var(--space-s-l);
+      inline-size: 100%;
+    }
+
+    header {
       display: flex;
 
-      padding-top: var(--space-s);
-      padding-bottom: var(--space-s);
-      gap: var(--space-s);
-      justify-content: space-between;
-      width: 100%;
+      gap: var(--space-xs) var(--space-s-m);
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+
+      max-inline-size: 1440px;
+      inline-size: 100%;
+
+      @media (max-width: 600px) {
+        display: grid;
+        grid-template-columns: 1fr auto;
+      }
 
       > h1 {
-        min-width: 290px;
-        block-size: 60px;
+        flex-grow: 1;
+        padding-right: var(--space-s);
+
         display: flex;
         align-items: center;
         gap: var(--space-s);
@@ -394,45 +414,69 @@
         font-size: inherit;
 
         > .logo {
-          block-size: 100%;
-          aspect-ratio: 1/1;
+          height: 2lh;
         }
       }
 
-      > nav {
-        flex-grow: 1;
-        flex-shrink: 1;
-        max-width: 700px;
+      nav {
+        display: contents;
 
         > ul {
-          justify-content: space-around;
-          display: flex;
-          align-items: center;
+          display: contents;
 
           list-style: none;
           text-wrap: nowrap;
+
+          @media (max-width: 600px) {
+            li {
+              grid-column: span 2;
+
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 600px) {
+        > nav {
+          display: none;
+        }
+      }
+
+      > details {
+        @media (min-width: 600px) {
+          display: none;
+        }
+
+        &[open] {
+          display: contents;
+        }
+
+        &::details-content {
+          content-visibility: visible;
+        }
+
+        > summary {
+          list-style: none;
+
+          @media (min-width: 600px) {
+            display: none;
+          }
+
+          svg {
+            width: 2em;
+          }
         }
       }
     }
 
-    /* [jneen] set max-width for main (non-fullwidth) elements.
-     * padding is applied on *all* device widths - on larger
-     * screens, the horizontal margin will be the naturally-
-     * occurring margin after max-width, plus the padding
-     * defined here.
-     */
-    > header, > main > article {
-      max-width: var(--content-max-width);
-      padding-left: var(--space-xs);
-      padding-right: var(--space-xs);
-      margin: 0 auto;
-    }
-
     > main {
+      max-inline-size: 1440px;
+
       .banner {
         block-size: calc(min(30vw, 1.5 * var(--space-3xl)));
-        overflow: hidden;
-        overflow-x: clip;
+        overflow: clip;
       }
 
       .hero {
@@ -446,10 +490,20 @@
           display: flex;
           gap: var(--space-s);
 
+          font-size: min(9vw, var(--step-4));
+
+          @media (max-width: 800px) {
+            justify-content: center;
+          }
+
           > svg {
             color: var(--color-red-400);
 
             width: 2lh;
+
+            @media (max-width: 600px) {
+              display: none;
+            }
           }
 
           > .title {
@@ -461,6 +515,8 @@
 
             .h4 {
               line-height: 1.5;
+
+              font-size: min(6vw, var(--step-2));
             }
           }
 
@@ -475,6 +531,10 @@
             flex-direction: column;
             gap: var(--space-2xs);
 
+            @media (max-width: 800px) {
+              display: none;
+            }
+
             div {
               flex-grow: 1;
               flex-basis: 0;
@@ -484,7 +544,84 @@
               gap: var(--space-2xs);
               justify-content: flex-end;
 
-              > svg { width: 24px; height: 24px; }
+              /*> svg {
+                width: 24px;
+                height: 24px;
+              }*/
+
+              @media (max-width: 1200px) {
+                > svg:nth-child(10) {
+                  display: none;
+                }
+              }
+
+              @media (max-width: 1100px) {
+                > svg:nth-child(9) {
+                  display: none;
+                }
+              }
+
+              @media (max-width: 1050px) {
+                > svg:nth-child(8) {
+                  display: none;
+                }
+              }
+
+              @media (max-width: 1000px) {
+                > svg:nth-child(7) {
+                  display: none;
+                }
+
+                &:nth-child(2) > svg:nth-child(6) {
+                  display: none;
+                }
+
+                &:nth-child(3) > svg:nth-child(5) {
+                  display: none;
+                }
+              }
+
+              @media (max-width: 950px) {
+                > svg:nth-child(6) {
+                  display: none;
+                }
+
+                &:nth-child(2) > svg:nth-child(5) {
+                  display: none;
+                }
+
+                &:nth-child(3) > svg:nth-child(4) {
+                  display: none;
+                }
+              }
+
+              @media (max-width: 900px) {
+                > svg:nth-child(5) {
+                  display: none;
+                }
+
+                &:nth-child(2) > svg:nth-child(4) {
+                  display: none;
+                }
+
+                &:nth-child(3) > svg:nth-child(3) {
+                  display: none;
+                }
+              }
+
+              @media (max-width: 850px) {
+                > svg:nth-child(4) {
+                  display: none;
+                }
+
+                &:nth-child(2) > svg:nth-child(3) {
+                  display: none;
+                }
+
+                &:nth-child(3) > svg:nth-child(2) {
+                  display: none;
+                }
+              }
             }
           }
         }
@@ -537,39 +674,5 @@
         }
       }
     }
-  }
-}
-
-@layer overrides {
-  @media(max-width: 600px) {
-    header {
-      ul {
-        align-items: flex-end;
-        > li { flex-basis: 0; }
-        gap: 0;
-        flex-direction: column;
-      }
-    }
-
-    .hero h2 {
-      .title { margin: 0 auto; }
-      > svg { display: none; }
-    }
-  }
-
-  @media(max-width: 1000px) {
-    header {
-      flex-direction: column;
-      align-items: flex-end;
-
-      h1 {
-        width: 100%;
-      }
-    }
-
-    .icon-lines {
-      display: none;
-    }
-
   }
 }
