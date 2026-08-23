@@ -180,6 +180,8 @@ export const render = ({ chapters }: Data) => {
 
         <input type="submit" value="Submit" />
       </form>
+      <i>Our policy and practices for using and managing data are described in
+      our <a href="/data-policy">data transparency policy</a>.</i>
     </>
   );
 };
