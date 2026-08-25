@@ -13,13 +13,13 @@ We focus on community building, political education, and hands-on organizing tra
 We host regular in-person events in San Francisco, the East Bay, and (most recently) the South Bay. We also gather digitally on Slack, Signal, and Zoom. Join us!
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
-  <div style="flex: 1.28 1 320px; text-align: center;">
-    <img src="/assets/img/2026-bay-area-nokings.jpg" alt="Bay Area No Kings March 2026" style="max-width: 100%; height: auto;">
+  <div style="flex: 1.25 1 320px; text-align: center;">
+    <img src="/assets/chapters/2026-bay-area-nokings.jpg" alt="Bay Area No Kings March 2026" style="max-width: 100%; height: auto;">
     <div style="font-style: italic; margin-top: 8px;">Tabling at No Kings SF in March 2026</div>
   </div>
-  <div style="flex: 1.50 1 375px; text-align: center;">
-    <img src="/assets/img/2025-mayday-bayarea.jpg" alt="Bay Area May Day 2025" style="max-width: 100%; height: auto;">
-    <div style="font-style: italic; margin-top: 8px;">TWC and friends at SF May Day 2025</div>
+  <div style="flex: 1.78 1 375px; text-align: center;">
+    <img src="/assets/chapters/2026-bay-area-mayday.jpg" alt="Bay Area May Day 2026" style="max-width: 100%; height: auto;">
+    <div style="font-style: italic; margin-top: 8px;">TWC and friends at SF May Day 2026</div>
   </div>
 </div>
 <br/>
