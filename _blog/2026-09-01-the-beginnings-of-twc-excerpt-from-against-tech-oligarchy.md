@@ -2,7 +2,9 @@
 title: The Beginnings of TWC (excerpt from Against Tech Oligarchy)
 date: 2026-09-01T18:00:00.000-04:00
 ---
-_Two longtime tech worker organizers and TWC members, JS Tan and Clarissa Redwine, have just published [AGAINST TECH OLIGARCHY](https://againsttecholigarchy.com/), a new book on the history of our movement as tech workers, recounting the rise of tech worker activism, why workers came together to challenge the industry's most powerful bosses, and how our movement changed Silicon Valley forever. There’s a lot to learn here, and also a lot of strategic argument to debate, and TWC is excited to be co-hosting a virtual reading group with the authors. Join the kickoff session on September 14th to get a hardcover copy of the book for free in your mail. [RSVP here](https://us06web.zoom.us/meeting/register/L-Tu0ZXJTxu9srRtneTvvg#/registration). The book is also available for [pre-order](https://againsttecholigarchy.com) today._
+![](/assets/img/ato-ad.png)
+
+*Two longtime tech worker organizers and TWC members, JS Tan and Clarissa Redwine, have just published [AGAINST TECH OLIGARCHY](https://againsttecholigarchy.com/), a new book on the history of our movement as tech workers, recounting the rise of tech worker activism, why workers came together to challenge the industry's most powerful bosses, and how our movement changed Silicon Valley forever. There’s a lot to learn here, and also a lot of strategic argument to debate, and TWC is excited to be co-hosting a virtual reading group with the authors. Join the kickoff session on September 14th to get a hardcover copy of the book for free in your mail. [RSVP here](https://us06web.zoom.us/meeting/register/L-Tu0ZXJTxu9srRtneTvvg#/registration). The book is also available for [pre-order](https://againsttecholigarchy.com) today.*
 
 Below is an excerpt from the book that showcases the Tech Workers Coalition’s critical role in shaping the movement:
 
@@ -43,7 +45,10 @@ More importantly, these ideas offered a powerful alternative to the waning legit
 
 <hr>
 
-_If you enjoy this sample of Against Tech Oligarchy, we highly encourage you to [join our reading group](https://us06web.zoom.us/meeting/register/L-Tu0ZXJTxu9srRtneTvvg#/registration) and/or [preorder](https://againsttecholigarchy.com). And importantly, please also share this book with your co-workers who may stand to benefit the most from reading this book and learning about the brave activism from tech workers all over the country over the past decade._
+*If you enjoy this sample of Against Tech Oligarchy, we highly encourage you to [join our reading group](https://us06web.zoom.us/meeting/register/L-Tu0ZXJTxu9srRtneTvvg#/registration) and/or [preorder](https://againsttecholigarchy.com). And importantly, please also share this book with your co-workers who may stand to benefit the most from reading this book and learning about the brave activism from tech workers all over the country over the past decade.*
 
 To celebrate the launch of this book, the authors have also teamed up with artists and creators to offer limited edition items. Each piece tells a story of solidarity and worker power. ❤️‍🔥You can bundle a preorder of the book with any merch until 9/15. Nab a [Luddite cap](https://pilsencommunitybooks.com/item/iQd_fL9V8fgheEFRrG4GHQ), [Bread & Puppet poster](https://pilsencommunitybooks.com/item/iQd_fL9V8fhLlXqftUMNvg), or [bandana](https://pilsencommunitybooks.com/item/iQd_fL9V8fjjROuFgc2t9Q)!
 
+![](/assets/img/ato-ad1.png)
+![](/assets/img/ato-ad2.png)
+![](/assets/img/ato-ad3.png)
