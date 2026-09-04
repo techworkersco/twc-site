@@ -20,8 +20,8 @@ Share snacks and coffee with other local tech workers. Discuss the challenges of
 We'll be discussing [A Workers' Inquiry for Unemployed Tech Workers](https://pdx.techworkerscoalition.org/nextcloud/s/jgWRAgGqBrrMSS9).
 
 ### Time and Location
-Wednesday, Sep 9 · 1:30 PM to 3:30 PM PDT.
-Multnomah County Central Library
+Wednesday, Sep 9th 2026, 1:30 PM to 3:30 PM PDT.
+Multnomah County Central Library,
 801 SW 10th Ave, Portland, OR 97205,
 Room 1A.
 
@@ -40,5 +40,11 @@ Tentatively set for Friday, Sep 18. Check back for details!
 
 ## Unemployed Tech Worker Potluck
 
+### About Event
+Enjoy an end-of-summer potluck picnic with your fellow tech workers in Noble Woods Park. Bring something for yourself and something to share.
+
 ### Time and Location
-Tentatively set for Friday, Oct 2. Check back for details!
+Friday, Oct 2nd 2026, 3:00 PM.
+Noble Woods Park Shelter,
+475 SE Century Blvd, Hillsboro, OR 97124, Shelter 30.
+
