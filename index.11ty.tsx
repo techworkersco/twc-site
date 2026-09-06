@@ -28,6 +28,38 @@ const renderCss = async () => {
 };
 
 export const render = async () => {
+  const nav = (
+    <nav class="monospace">
+      <ul>
+        <li>
+          <a href="/about" class="button">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="/blog" class="button">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="/resources" class="button">
+            Resources
+          </a>
+        </li>
+        <li>
+          <a href="/newsletter" class="button">
+            Newsletter
+          </a>
+        </li>
+        <li>
+          <a href="/donate" class="button framed">
+            Donate
+          </a>
+        </li>
+      </ul>
+    </nav>
+  );
+
   return {
     type: "root",
     children: [
@@ -65,13 +97,14 @@ export const render = async () => {
           {/* todo(maximsmol): WebMention? */}
         </head>
         <body>
-          <header>
-            <h1>
-              <span class="logo">
+          <div class="header-padding">
+            <header>
+              <h1>
                 <svg
                   alt=""
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 400 400"
+                  class="logo"
                 >
                   <path d="M94.44,261.32v-102.21h-20.44v-20.44h61.32v20.44h-20.44v102.21h-20.44Z" />
                   <path d="M148.9,261.32v-122.65h20.44v102.21h20.44v-102.21h20.44v102.21h20.44v-102.21h20.44v122.65h-102.21Z" />
@@ -84,43 +117,36 @@ export const render = async () => {
                   <path d="M252.32,83.05c4.89,4.99,6.21,12.78,2.72,19.25-4.29,7.94-14.24,10.91-22.18,6.62-7.94-4.29-10.91-14.24-6.62-22.18,3.43-6.36,10.5-9.53,17.26-8.34l26.22-45.36,8.8,4.75M235.04,91.5c-1.67,3.09-.51,6.96,2.58,8.63s6.96.51,8.63-2.58.51-6.96-2.58-8.63-6.96-.51-8.63,2.58Z" />
                   <path d="M199.38,38.42c4.89,4.99,6.21,12.78,2.72,19.25-4.29,7.94-14.24,10.91-22.18,6.62s-10.91-14.24-6.62-22.18c3.43-6.36,10.5-9.53,17.26-8.34l9.56-16.86,8.8,4.75M182.1,46.86c-1.67,3.09-.51,6.96,2.58,8.63s6.96.51,8.63-2.58c1.67-3.09.51-6.96-2.58-8.63s-6.96-.51-8.63,2.58Z" />
                 </svg>
-              </span>
-              <span>
-                Tech&nbsp;Workers
-                <br />
-                Coalition
-              </span>
-            </h1>
-            <nav class="monospace">
-              <ul>
-                <li>
-                  <a href="/about" class="button">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="/blog" class="button">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="/resources" class="button">
-                    Resources
-                  </a>
-                </li>
-                <li>
-                  <a href="/newsletter" class="button">
-                    Newsletter
-                  </a>
-                </li>
-                <li>
-                  <a href="/donate" class="button framed">
-                    Donate
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </header>
+                <span>
+                  Tech&nbsp;Workers
+                  <br />
+                  Coalition
+                </span>
+              </h1>
+              <details>
+                <summary>
+                  {/* lucide-menu */}
+                  <svg
+                    alt="Navigation"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 5h16" />
+                    <path d="M4 12h16" />
+                    <path d="M4 19h16" />
+                  </svg>
+                </summary>
+
+                {nav}
+              </details>
+              {nav}
+            </header>
+          </div>
           <main>
             <div class="banner">
               <img src="/assets/img/header.jpg" alt="" />
