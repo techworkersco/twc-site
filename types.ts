@@ -51,7 +51,32 @@ export type Site = {
   timeZone: string;
 };
 
+export type EventCommon = {
+  title: string;
+  date: string;
+  locations: string[];
+  image?: string;
+};
+
+export type Event = EventCommon & {
+  time_zones: string[];
+  tags?: string[];
+};
+
+export type BerlinEvent = EventCommon & {
+  timeszones: string[];
+  tags: string | null;
+  url: string;
+};
+
 export type Data = {
   chapters: Chapter[];
   workplaces: Workplace[];
+
+  berlin_events?: BerlinEvent[];
+  nl_events?: undefined; // todo(maximsmol)
+
+  collections: {
+    events: { data: Event; url: string }[];
+  };
 };

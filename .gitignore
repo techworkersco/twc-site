@@ -10,3 +10,5 @@ node_modules
 # IntelliJ IDEA
 *.iml
 .idea/
+
+.direnv

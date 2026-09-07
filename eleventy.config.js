@@ -242,6 +242,7 @@ export default async (cfg) => {
         rehypeSlug({
           slugify: slugifyKramdown,
         })(res);
+
         return toHtml(res, {
           allowDangerousHtml: true,
         });
@@ -297,9 +298,9 @@ export default async (cfg) => {
     ...site,
     time: new Date(),
     data: {
-      chapters: data.chapters,
       press: data.press,
       workplaces: data.workplaces,
+      events: data.events,
       ...Object.fromEntries(remoteDataSrcs.map((x) => [x.data, data[x.data]])),
     },
   }));

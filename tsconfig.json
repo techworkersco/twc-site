@@ -15,7 +15,9 @@
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
 
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+
+    "types": ["node"]
   },
   "typeAcquisition": {
     "enable": false

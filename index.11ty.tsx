@@ -2,6 +2,8 @@ import { readFile } from "node:fs/promises";
 
 import browserslist from "browserslist";
 import * as lightningcss from "lightningcss";
+import { Data } from "./types.ts";
+import { inspect } from "node:util";
 
 export const data = {
   layout: "empty.11ty.tsx",
@@ -27,7 +29,67 @@ const renderCss = async () => {
   return Buffer.from(res.code).toString();
 };
 
-export const render = async () => {
+export const render = async ({
+  collections: { events: globalEvents },
+  berlin_events,
+  nl_events,
+}: Data) => {
+  const events = [
+    ...globalEvents.map(({ data, url }) => ({ ...data, url })),
+    ...(berlin_events ?? []),
+    ...(nl_events ?? []),
+  ].map((x) => {
+    let date: Date | undefined;
+    try {
+      // Temporal.Instant is very picky about whitespace
+      date = new Date(x.date);
+      return {
+        ...x,
+        timestamp: Temporal.Instant.from(date.toISOString()),
+      };
+    } catch (err) {
+      throw new Error(
+        `Failed to parse event timestamp: ${inspect(x.date)} (${date?.toISOString()})`,
+        { cause: err },
+      );
+    }
+  });
+  // todo(maximsmol): use Instant.compare when available
+  events.sort(
+    (a, b) => a.timestamp.epochMilliseconds - b.timestamp.epochMilliseconds,
+  );
+
+  const renderTs = Temporal.Now.instant();
+  const eventsFuture = events.filter(
+    (x) => x.timestamp.epochNanoseconds >= renderTs.epochNanoseconds,
+  );
+  const eventsPast = events.filter(
+    (x) => x.timestamp.epochNanoseconds < renderTs.epochNanoseconds,
+  );
+
+  const eventsExample = [
+    {
+      title: "Bay Area: Social Meeting",
+      time: "2026-02-26T18:00-08:00[America/Los_Angeles]",
+      location: "Bay Area",
+    },
+    {
+      title: "TWC Book Club: Empire of AI",
+      time: "2026-03-01T21:00-05:00[America/New_York]",
+      location: "Online",
+    },
+    {
+      title: "Netherlands: Organizing Meetup",
+      time: "2026-03-02T17:00+01:00[Europe/Amsterdam]",
+      location: "Netherlands",
+    },
+    {
+      title: "Portland: General Meeting",
+      time: "2026-03-14T15:00-07:00[America/Los_Angeles]",
+      location: "Portland",
+    },
+  ];
+
   const nav = (
     <nav class="monospace">
       <ul>
@@ -60,6 +122,9 @@ export const render = async () => {
     </nav>
   );
 
+  {
+    /* todo(maximsmol): load icons by name instead of copy-paste */
+  }
   return {
     type: "root",
     children: [
@@ -373,52 +438,149 @@ export const render = async () => {
                 </a>
               </section>
             </article>
-            <article>
-              <h2>
-                Upcoming Events
-                <a href="/events">View More</a>
-              </h2>
+            <article class="events">
+              {/* todo(maximsmol): add a minimal padding */}
+              {/* todo(maximsmol): doesn't work right */}
+              <div class="bg" />
+              <header>
+                <h2 class="h3">Upcoming Events</h2>
+                <a href="/events" class="button">
+                  View More{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </header>
               <ol>
-                <li>
-                  <article>
-                    <img src="stuff.png" alt="" />
-                    <h3>Bay Area: Social Meeting</h3>
-                    <time datetime="2026-02-26T18:00-07:00">
-                      26 February 2026 - 6:00pm PST
-                    </time>
-                    <p>Bay Area</p>
-                  </article>
-                </li>
-                <li>
-                  <article>
-                    <img src="stuff.png" alt="" />
-                    <h3>TWC Book Club: Empire of AI</h3>
-                    <time datetime="2026-03-01T21:00-04:00">
-                      01 March 2026 - 9:00pm ET
-                    </time>
-                    <p>Online</p>
-                  </article>
-                </li>
-                <li>
-                  <article>
-                    <img src="stuff.png" alt="" />
-                    <h3>Netherlands: Organizing Meetup</h3>
-                    <time datetime="2026-03-02T17:00+01:00">
-                      02 March 2026 - 5:00pm CET
-                    </time>
-                    <p>Netherlands</p>
-                  </article>
-                </li>
-                <li>
-                  <article>
-                    <img src="stuff.png" alt="" />
-                    <h3>Portland: General Meeting</h3>
-                    <time datetime="2026-03-14T15:00-07:00">
-                      14 March 2026 - 3:00pm PST
-                    </time>
-                    <p>Portland</p>
-                  </article>
-                </li>
+                {/* todo(maximsmol): title fails to wrap if it doesn't fit */}
+                {eventsFuture.map((data) => {
+                  const { title, timestamp, locations, url, image } = data;
+                  try {
+                    const tzs =
+                      "time_zones" in data ? data.time_zones : data.timeszones;
+
+                    if (tzs.length === 0)
+                      throw new Error("No time zone specified");
+
+                    return (
+                      <li>
+                        <article>
+                          <a href={url}>
+                            <div
+                              class="icon"
+                              style={`background-image: url(${image})`}
+                            >
+                              {image == null && (
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path d="M8 2v3" />
+                                  <path d="M16 2v3" />
+                                  <rect
+                                    x="3"
+                                    y="3"
+                                    width="18"
+                                    height="18"
+                                    rx="2"
+                                  />
+                                  <path d="M3 9h18" />
+                                  <path d="M8 13h.01" />
+                                  <path d="M12 13h.01" />
+                                  <path d="M16 13h.01" />
+                                  <path d="M8 17h.01" />
+                                  <path d="M12 17h.01" />
+                                  <path d="M16 17h.01" />
+                                </svg>
+                              )}
+                            </div>
+                          </a>
+                          <div class="info">
+                            <div>
+                              <h3>
+                                <a href={url} class="plain">
+                                  {title}
+                                </a>
+                              </h3>
+                              {tzs.map((tz) => {
+                                const time = timestamp.toZonedDateTimeISO(tz);
+
+                                return (
+                                  <time
+                                    // todo(maximsmol): add IXDTF suffix when supported
+                                    datetime={timestamp.toString({
+                                      timeZone: time.timeZoneId,
+                                    })}
+                                  >
+                                    <span class="short">
+                                      {new Intl.DateTimeFormat("en-US", {
+                                        timeZone: time.timeZoneId,
+                                        // We want `dateStyle: "short"` + `timeStyle: "short"` but with a time zone
+                                        year: "2-digit",
+                                        month: "numeric",
+                                        day: "numeric",
+                                        hour: "numeric",
+                                        minute: "2-digit",
+                                        timeZoneName: "short",
+                                      }).format(timestamp)}
+                                    </span>
+                                    <span class="long">
+                                      {new Intl.DateTimeFormat("en-US", {
+                                        timeZone: time.timeZoneId,
+                                        // We want `dateStyle: "long"`` + `timeStyle: "long"` but no seconds
+                                        year: "numeric",
+                                        month: "long",
+                                        day: "numeric",
+                                        hour: "numeric",
+                                        minute: "2-digit",
+                                        timeZoneName: "short",
+                                      }).format(timestamp)}
+                                    </span>
+                                  </time>
+                                );
+                              })}
+                            </div>
+                            <span class="location">
+                              <span>{locations[0]}</span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon"
+                              >
+                                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                <circle cx="12" cy="10" r="3" />
+                              </svg>
+                            </span>
+                          </div>
+                        </article>
+                      </li>
+                    );
+                  } catch (err) {
+                    throw new Error(`Failed to render event ${inspect(data)}`, {
+                      cause: err,
+                    });
+                  }
+                })}
               </ol>
             </article>
             <article>
