@@ -13,6 +13,7 @@ This is the Portland, OR chapter of the TWC.
 - Sign up to [join our chapter](https://techworkerscoalition.org/subscribe/)!
 - See what's coming up on our [chapter calendar](https://dev.techworkerscoalition.org/nextcloud/apps/calendar/p/P7FzxHGbFoMPCSPE), or [subscribe to it](https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/P7FzxHGbFoMPCSPE/?export) in your own calendar app.
 - Visit the [Tech Workers Coalition Instagram](https://www.instagram.com/techworkerscoalition/) for updates on our actions and events!
+- Come to one of our [Unemployed Tech Worker Events](/pdx/events/unemployed-workers-meeting/).
 
 ## Bylaws
 - Our chapter is governed by the [PDX TWC bylaws](https://pdx.techworkerscoalition.org/nextcloud/s/4AF5pgYNobDgcwF).
