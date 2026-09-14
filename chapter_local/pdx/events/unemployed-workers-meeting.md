@@ -5,13 +5,44 @@ time_zones:
 permalink: /pdx/events/unemployed-workers-meeting/
 ---
 
-# Upcoming Events
-* [Coffee, Donuts, and Conversation with Tech Workers](#coffee-donuts-and-conversation-with-tech-workers), Sept 9th at 3PM
-* [Worker Co-ops for Tech Workers](#worker-co-ops-for-tech-workers)
-* [Unemployed Tech Worker Potluck](#unemployed-tech-worker-potluck)
+# Upcoming Events for Unemployed Tech Workers
+* [Unemployed Tech Worker Potluck](#unemployed-tech-worker-potluck), Oct 2nd at 3PM
+* [Worker Co-ops for Tech Workers](#worker-co-ops-for-tech-workers), Sept 18 at 4PM
+* [Coffee, Donuts, and Conversation with Tech Workers](#past-event-coffee-donuts-and-conversation-with-tech-workers), Sept 9th at 3PM
 <hr>
 
-## Coffee, Donuts, and Conversation with Tech Workers
+## Unemployed Tech Worker Potluck
+
+### About Event
+Enjoy an end-of-summer potluck picnic with your fellow tech workers in Noble Woods Park. Bring something for yourself and something to share.
+
+### Time and Location
+Friday, Oct 2nd 2026, 3:00 PM.
+Noble Woods Park Shelter,
+475 SE Century Blvd, Hillsboro, OR 97124, Shelter 30.
+
+<hr>
+
+## Worker Co-ops for Tech Workers
+
+### About Event
+This is a meeting for unemployed tech workers, who have capacity, risk tolerance, and desire to step away from traditional tech 
+workplace environment. In the meeting, you'll
+* learn what a worker co-op is
+* learn the benefits of a co-op vs. a traditional business
+* discuss attendee skills, interests, & potential business ideas.
+* learn the legal, tax, and social implications of entering co-op business relationships.
+
+Worker co-ops are democratic enterprises. Unemployed workers could use this structure to create new opportunities for employment by building local businesses with a pro-social bottom line. Building a robust worker co-op sector in PDX improves community resilience in these challenging times.
+
+### Time and Location
+Friday, Sep 18 2026, 4PM - 5:30PM PDT.
+Multnomah County Central Library,
+801 SW 10th Ave, Portland, OR 97205,
+Room 1A.
+<hr>
+
+## (Past Event) Coffee, Donuts, and Conversation with Tech Workers
 Hosted by the Portland Tech Workers Coalition.
 
 ### About Event
@@ -30,21 +61,3 @@ Room 1A.
 Please register on our event page on [Luma](https://luma.com/00764d8c) or [Meetup](https://www.meetup.com/codepdx/events/316256811/).
 
 <hr>
-
-## Worker Co-ops for Tech Workers
-
-### Time and Location
-Tentatively set for Friday, Sep 18. Check back for details!
-
-<hr>
-
-## Unemployed Tech Worker Potluck
-
-### About Event
-Enjoy an end-of-summer potluck picnic with your fellow tech workers in Noble Woods Park. Bring something for yourself and something to share.
-
-### Time and Location
-Friday, Oct 2nd 2026, 3:00 PM.
-Noble Woods Park Shelter,
-475 SE Century Blvd, Hillsboro, OR 97124, Shelter 30.
-
