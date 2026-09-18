@@ -8,7 +8,7 @@ permalink: /pdx/events/unemployed-workers-meeting/
 # Upcoming Events for Unemployed Tech Workers
 * [Unemployed Tech Worker Potluck](#unemployed-tech-worker-potluck), Oct 2nd at 3PM
 * [Worker Co-ops for Tech Workers](#worker-co-ops-for-tech-workers), Sept 18 at 4PM
-* [Coffee, Donuts, and Conversation with Tech Workers](#past-event-coffee-donuts-and-conversation-with-tech-workers), Sept 9th at 3PM
+
 <hr>
 
 ## Unemployed Tech Worker Potluck
