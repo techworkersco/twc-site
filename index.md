@@ -11,7 +11,7 @@ permalink: /
   We work in solidarity with existing movements towards social justice, workers' rights, and economic inclusion.</p>
   <p>We’re a democratically structured, all-volunteer, and worker-led organization.</p>
 </div>
-<nav style="font-size: clamp(0.875rem, 0.7216rem + 0.6818vw, 1.25rem)">
+<nav>
   <ul>
     <li>
       <a href="/subscribe" class="button primary">
@@ -40,4 +40,12 @@ permalink: /
 
 <a href="/press" class="button">See more press mentions</a>
 
+</section>
+
+<section>
+  <h2>Featured Video</h2>
+  <!-- Swap out YouTube video id here -->
+  {% featuredVideo "jlAbwmoai-0" %}
+
+  <a href="https://www.youtube.com/@techworkerscoalitionvideos" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab" class="button">See more videos on YouTube</a>
 </section>

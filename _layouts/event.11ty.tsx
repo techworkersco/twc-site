@@ -13,11 +13,13 @@ export const render = function (
     title,
     page,
     time_zones,
+    image,
   }: {
     content: string;
     title: string;
     page: Page;
     time_zones: string[];
+    image?: string;
   },
 ) {
   const timeConverterUrl = new URL(
@@ -52,6 +54,10 @@ export const render = function (
               {this.all_time_zones(page.date, time_zones)}
             </a>
           </div>
+
+          {image != null && !content.includes(image) && (
+            <img class="img-fluid" src={image} />
+          )}
 
           {{ type: "raw", value: content }}
         </div>

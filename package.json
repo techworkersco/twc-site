@@ -1,7 +1,7 @@
 {
   "type": "module",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy": "^3.1.5",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
     "@eslint/js": "^9.39.2",
     "@mdx-js/mdx": "^3.1.1",
@@ -21,34 +21,20 @@
     "hastscript": "^9.0.1",
     "lightningcss": "^1.31.1",
     "luxon": "^3.7.2",
-    "markdown-it": "^14.1.0",
+    "markdown-it": "^14.1.1",
     "markdown-it-anchor": "^9.2.0",
     "node-ical": "^0.25.2",
     "rehype-slug": "^6.0.0",
     "tsx": "^4.21.0",
     "typescript-eslint": "^8.54.0",
-    "yaml": "^2.8.2"
+    "yaml": "^2.8.3"
   },
   "engines": {
     "node": ">=24 <25"
   },
-  "pnpm": {
-    "overrides": {
-      "@sindresorhus/slugify": "^3.0.0"
-    },
-    "patchedDependencies": {
-      "liquidjs": "patches/liquidjs.patch",
-      "@11ty/eleventy": "patches/@11ty__eleventy.patch",
-      "hastscript": "patches/hastscript.patch",
-      "@mdx-js/mdx": "patches/@mdx-js__mdx.patch",
-      "rehype-slug": "patches/rehype-slug.patch"
-    },
-    "ignoredBuiltDependencies": [
-      "esbuild"
-    ]
-  },
   "scripts": {
-    "build": "NODE_OPTIONS='--import tsx' pnpm exec eleventy",
-    "serve": "NODE_OPTIONS='--import tsx' pnpm exec eleventy --serve"
-  }
+    "build": "NODE_OPTIONS='--import tsx' eleventy",
+    "serve": "NODE_OPTIONS='--import tsx' eleventy --serve"
+  },
+  "packageManager": "pnpm@11.15.1+sha512.81350b07e53c9538a02f1f2303b4290fa2d7be04e56e2a970c4cc4b417dc761de196edabd49d55c7dc9580db81007c44143e4e3d7e462b3000d23c255122d065"
 }

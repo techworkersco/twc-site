@@ -6,3 +6,7 @@ _site
 *.log
 vendor/
 node_modules
+
+# IntelliJ IDEA
+*.iml
+.idea/

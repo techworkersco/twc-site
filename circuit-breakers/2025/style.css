@@ -1,0 +1,260 @@
+/* || Global */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --light-pink: #dca0af;
+  --pink: #D695A6;
+  --light-blue: #27748E;
+  --light-purple: #8c57cb;
+  --mid-blue: #4944b8;
+  --dark-blue: #1d3c98;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 137.5%;
+  -webkit-font-smoothing: antialiased;
+  background-image: linear-gradient(to bottom right, var(--dark-blue), var(--mid-blue), var(--light-purple));
+  scroll-behavior: smooth;
+}
+
+/* || Page container */
+
+@media (min-width: 300px) and (max-width: 500px) {
+  #container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #container {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 801px) {
+  #container {
+    width: 75%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-columns: 0.45fr minmax(10px, 1fr);
+  }
+
+  aside {
+    margin-right: 2rem;
+  }
+
+  #title {
+    margin-bottom: 1rem;
+    grid-column: auto / span 3;
+  }
+
+}
+
+/* || Sections */
+
+section {
+  padding-bottom: 16px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.CTA {
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.spacer {
+  width: 12px;
+}
+
+#footer img {
+  padding-right: 16px;
+  vertical-align: middle;
+}
+
+#overview img {
+  width: 100%;
+  border-radius: 16px;
+  margin-top: 1rem;
+}
+
+/* || Typography */
+
+h1 {
+  color: #FFFFFF;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: rgba(7, 102, 35, 0.91);
+  font-family: "Rubik Glitch";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+h3 {
+  color: var(--pink);
+  font-size: 1.414rem;
+}
+
+h4 {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+
+h5 {
+  color: var(--pink);
+  font-size: 1rem;
+  font-weight: 900;
+  margin-block-start: 1.5rem;
+  margin-block-end: 0rem;
+  text-transform: uppercase;
+}
+
+h6 {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  line-height: 1.2rem;
+  color: var(--light-purple);
+  font-style: italic;
+}
+
+p, summary, details {
+  color: white;
+  font-family: Rubik;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+
+a, summary {
+  color: var(--pink);
+}
+
+a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* || Lists */
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-top: 0;
+}
+
+li {
+  padding-bottom: 10px;
+  padding-left: 20px;
+  color: #FFFFFF;
+}
+
+/* || Links */
+
+.nav-link {
+  color: var(--pink);
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.nav-link:hover, summary:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-decoration-color: var(--light-pink);
+}
+
+details {
+  padding-bottom: 15px;
+}
+
+/* || Buttons */
+
+.button {
+  width: 10rem;
+
+  border-radius: 8px;
+  color: #000000;
+  background-color: var(--pink);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  height: 60px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 0.35em 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.secondary {
+  border-style: solid;
+  border-color: var(--pink);
+  color: #FFFFFF;
+  background-color: Transparent;
+}
+
+.secondary:hover,
+.secondary:focus {
+  background-color: var(--pink);
+  color: #000000;
+}
+
+.primary {
+  border-style: none;
+  background-color: var(--pink);
+  color: #000000;
+  font-weight: bold;
+  font-size: larger;
+  border: 1px solid var(--light-pink);
+}
+
+.primary:hover,
+.primary:focus {
+  background-color: #000000;
+  color: var(--light-pink);
+  font-weight: bold;
+  border: 1px solid var(--light-pink);
+}
+
+/* || Misc */
+
+hr {
+  border: 0.5px solid;
+  color: var(--pink);
+}

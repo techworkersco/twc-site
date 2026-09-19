@@ -5,7 +5,7 @@ export const data = {
 };
 
 export const render = ({ chapters }: Data) => {
-  const xs = chapters.filter((x) => x.activity_level === "active");
+  const xs = chapters.filter((x) => x.active);
   xs.sort((a, b) => a.text.localeCompare(b.text));
 
   const chapterOptions = xs.map((x) => (
@@ -85,13 +85,13 @@ export const render = ({ chapters }: Data) => {
             placeholder="LinkedIn, Twitter, etc"
             id="social"
             required
-            type="url"
+            type="text"
             name="social_media_1"
             title="Enter a valid url"
           />{" "}
           <input
             placeholder="GitHub, Instagram, Blog"
-            type="url"
+            type="text"
             required
             name="social_media_2"
             title="Enter a valid url"
@@ -180,6 +180,8 @@ export const render = ({ chapters }: Data) => {
 
         <input type="submit" value="Submit" />
       </form>
+      <i>Our policy and practices for using and managing data are described in
+      our <a href="/data-policy">data transparency policy</a>.</i>
     </>
   );
 };

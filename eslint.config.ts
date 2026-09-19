@@ -66,6 +66,10 @@ export default defineConfig([
       "@typescript-eslint/no-confusing-void-expression": "off",
 
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+      "@typescript-eslint/restrict-template-expressions": [
+        "error",
+        { allowNumber: true },
+      ],
     },
     languageOptions: {
       parserOptions: {
