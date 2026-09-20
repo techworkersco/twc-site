@@ -326,10 +326,6 @@ export default async (cfg) => {
       data: "berlin_events",
       url: "https://techworkersberlin.com/events.yml",
     },
-    {
-      data: "nl_events",
-      url: "https://techwerkers.nl/en/twc-global/index.yaml",
-    },
   ];
   const deferred = [fetchCalendar()];
   for (const x of remoteDataSrcs)
