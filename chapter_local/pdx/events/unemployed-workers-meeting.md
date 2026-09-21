@@ -6,8 +6,7 @@ permalink: /pdx/events/unemployed-workers-meeting/
 ---
 
 # Upcoming Events for Unemployed Tech Workers
-* [Unemployed Tech Worker Potluck](#unemployed-tech-worker-potluck), Oct 2nd at 3PM
-* [Worker Co-ops for Tech Workers](#worker-co-ops-for-tech-workers), Sept 18 at 4PM
+* [Unemployed Tech Worker Potluck](#unemployed-tech-worker-potluck), Oct 2nd at 4PM
 
 <hr>
 
@@ -17,13 +16,13 @@ permalink: /pdx/events/unemployed-workers-meeting/
 Enjoy an end-of-summer potluck picnic with your fellow tech workers in Noble Woods Park. Bring something for yourself and something to share.
 
 ### Time and Location
-Friday, Oct 2nd 2026, 3:00 PM.
+Friday, Oct 2nd 2026, 4:00 PM.
 Noble Woods Park Shelter,
 475 SE Century Blvd, Hillsboro, OR 97124, Shelter 30.
 
 <hr>
 
-## Worker Co-ops for Tech Workers
+## (Past Event) Worker Co-ops for Tech Workers
 
 ### About Event
 This is a meeting for unemployed tech workers, who have capacity, risk tolerance, and desire to step away from traditional tech 
