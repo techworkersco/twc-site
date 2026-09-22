@@ -14,7 +14,7 @@ image: /assets/img/twcnewmembersep26-cover.png
 
 Meet your fellow tech workers, get some momentum going, and start visioning together. Tailored to new members, but all members welcome, especially if you've been lurking for a bit and want to get more involved!
 
-Register at [https://twcl.ink/hellotwc](twcl.ink/hellotwc). See you there!!
+Register at [twcl.ink/hellotwc](https://twcl.ink/hellotwc). See you there!!
 
 
 ![](/assets/img/twcnewmembersep26-cover.png)
