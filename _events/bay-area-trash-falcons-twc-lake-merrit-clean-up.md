@@ -6,7 +6,7 @@ locations:
 time_zones:
   - US/Pacific
 tags: []
-image: /assets/img/falgonblk3k-1-.png
+image: /assets/img/falgonblk3k.png
 ---
 Join us for a Tech Workers Coalition Bay Area collaboration with Trash Falcons! Trash Falcons is a grassroots initiative by and for the community. Help clean up the neighborhood while getting to know each other with a 90 minute walk around Lake Merritt picking up trash. All materials, equipment, and epic Trash Falcon lore provided — the only thing required of you is showing up. Making a difference really is that easy ❤️.
 
