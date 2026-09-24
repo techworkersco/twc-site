@@ -1,5 +1,5 @@
 ---
-title: "Bay Area: Trash Falcons/TWC Lake Merrit Clean-up"
+title: "Bay Area: Trash Falcons/TWC Lake Merritt Clean-up"
 date: 2026-10-25 09:00
 locations:
   - Bay Area
