@@ -162,11 +162,13 @@
     }
     input[type="email"],
     input[type="text"],
+    input[type="tel"],
     input[type="url"],
     textarea,
     select {
       border-color: #ccc;
     }
+    
     a {
       &:hover,
       &:focus {
@@ -220,6 +222,7 @@
     }
     input[type="email"],
     input[type="text"],
+                                                                                                                                                                                                                                                                input[type="tel"],
     input[type="url"],
     textarea,
     select {
@@ -278,6 +281,12 @@
 }
 
 @layer base {
+  /* normalize.css sets summary { display: block } which removes the disclosure
+                 triangle; list-item restores the ::marker pseudo-element. */
+    summary {
+      display: list-item;
+      cursor: pointer;
+    }
   body {
     font-family: var(--font-family-base);
     font-size: var(--step-0);
@@ -720,6 +729,7 @@
 
   input[type="email"],
   input[type="text"],
+  input[type="tel"],
   input[type="url"],
   textarea,
   select {
@@ -733,6 +743,10 @@
     }
   }
 
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
   input[type="submit"],
   .pagination {
     border-radius: 4px;

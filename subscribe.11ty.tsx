@@ -1,4 +1,4 @@
-import { Data } from "./types.ts";
+import type { Data } from "./types.ts";
 
 export const data = {
   title: "Join Us",
@@ -159,8 +159,7 @@ export const render = ({ chapters }: Data) => {
             type="checkbox"
             name="is-manager"
             value="yes"
-            style="margin-right: 8px;"
-          />{" "}
+          />
           <b>
             Are you a manager with hiring or firing power? Note: for security
             reasons, managers won't be added to our internal channels.
@@ -172,16 +171,159 @@ export const render = ({ chapters }: Data) => {
             type="checkbox"
             name="outreach"
             value="wants-outreach"
-            style="margin-right: 8px;"
-          />{" "}
-          <b>Are you interested in 1:1 outreach from someone in TWC?</b>{" "}
-          (optional)
+          />
+          <b>
+            Are you interested in 1:1 outreach from someone in TWC? (optional)
+          </b>
         </label>
+        <fieldset id="outreach-details" hidden disabled>
+          <legend>Request a 1-on-1 with Tech Workers Coalition</legend>
+
+          <p>
+            Tell us how to reach you and what you're interested in, and we'll
+            get in touch to schedule a 1-on-1 chat. We'll use the email address
+            you entered above unless you tell us otherwise.
+          </p>
+
+          <label class="marg-b-3" for="phone">
+            <div>
+              <b>Phone number</b> (optional):
+            </div>
+            <input
+              id="phone"
+              type="tel"
+              name="phone"
+              autocomplete="tel"
+              placeholder="+1 555 555 5555"
+            />
+          </label>
+
+          <label class="marg-b-3">
+            <div>
+              <b>How do you prefer to be contacted?</b> (optional):
+            </div>
+            <select name="Contact_Preference" id="Contact_Preference">
+              <option value="Email">Email</option>
+              <option value="Phone">Phone</option>
+              <option value="TWC Slack">TWC Slack</option>
+            </select>
+          </label>
+
+          <label class="marg-b-3">
+            <div>
+              <b>How would you like to get involved?</b> (select at least one):
+            </div>
+            <div>
+              <label>
+                <input
+                  type="checkbox"
+                  name="Involved_Preference[]"
+                  value="Local chapter - support local community or start new chapter"
+                />
+                <span>
+                  Local chapter - support local community or start new chapter
+                </span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="Involved_Preference[]"
+                  value="Finance - fundraising and managing budget"
+                />
+                <span>Finance - fundraising and managing budget</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="Involved_Preference[]"
+                  value="Infrastructure - website and automations"
+                />
+                <span>Infrastructure - website and automations</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="Involved_Preference[]"
+                  value="Onboarding - onboarding &amp; retention"
+                />
+                <span>Onboarding - onboarding &amp; retention</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="Involved_Preference[]"
+                  value="Trainings/Digital Events - organizing training &amp; political education"
+                />
+                <span>
+                  Trainings/Digital Events - organizing training &amp; political
+                  education
+                </span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="Involved_Preference[]"
+                  value="Comms - social media and newsletter and blog"
+                />
+                <span>Comms - social media and newsletter and blog</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="Involved_Preference[]"
+                  value="Building community - hosting virtual events &amp; ways to socialize"
+                />
+                <span>
+                  Building community - hosting virtual events &amp; ways to
+                  socialize
+                </span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="Involved_Preference[]"
+                  value="Something else - let us know in the questions box!"
+                />
+                <span>Something else - let us know in the questions box!</span>
+              </label>
+            </div>
+          </label>
+
+          <label class="marg-b-3" for="past-experience">
+            <div>
+              <b>
+                What labor or political organizing experience do you have, if
+                any?
+              </b>{" "}
+              (optional):
+            </div>
+            <textarea
+              id="past-experience"
+              maxlength="2000"
+              name="past-experience"
+            />
+          </label>
+
+          <label for="further-questions">
+            <div>
+              <b>What questions do you have about Tech Workers Coalition?</b>{" "}
+              (optional):
+            </div>
+            <textarea
+              id="further-questions"
+              maxlength="2000"
+              name="further-questions"
+            />
+          </label>
+        </fieldset>
 
         <input type="submit" value="Submit" />
       </form>
-      <i>Our policy and practices for using and managing data are described in
-      our <a href="/data-policy">data transparency policy</a>.</i>
+      <i>
+        Our policy and practices for using and managing data are described in
+        our <a href="/data-policy">data transparency policy</a>.
+      </i>
+      <script src="/assets/js/subscribe.js" defer></script>
     </>
   );
 };
