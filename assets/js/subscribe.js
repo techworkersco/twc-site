@@ -2,10 +2,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const checkbox = document.getElementById("outreach");
   const fieldset = document.getElementById("outreach-details");
-  const sync = () => {
+  const handleChange = () => {
     fieldset.hidden = !checkbox.checked;
     fieldset.disabled = !checkbox.checked; // skip validation and submission while hidden
   };
-  checkbox.addEventListener("change", sync);
-  sync(); // handles the browser restoring the checked state on back/forward
+  checkbox.addEventListener("change", handleChange);
+
+  // Hide the fieldset on page load. Everything shows when js is disabled.
+  fieldset.hidden = true;
+  fieldset.disabled = true;
 });

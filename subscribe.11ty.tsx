@@ -176,7 +176,7 @@ export const render = ({ chapters }: Data) => {
             Are you interested in 1:1 outreach from someone in TWC? (optional)
           </b>
         </label>
-        <fieldset id="outreach-details" hidden disabled>
+        <fieldset id="outreach-details">
           <legend>Request a 1-on-1 with Tech Workers Coalition</legend>
 
           <p>
