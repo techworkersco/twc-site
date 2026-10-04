@@ -1,6 +1,6 @@
 ---
 pagination:
-  data: ical_events
+  data: portland_events
   size: 1
   alias: event
 permalink: "{{ event.url }}"
