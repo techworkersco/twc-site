@@ -276,45 +276,53 @@ export default async (cfg) => {
     `;
   });
 
+  /*
+   Fetch iCal calender events.
+   */
   const fetchCalendar = async () => {
-    const base =
-      "https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/EHFzzZQXSQoS3f5w/?export";
-    const data = await ical.fromURL(base);
+    const ical_urls = new Map([
+      ['ical_events', 'https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/EHFzzZQXSQoS3f5w/?export'],
+      ['portland_events', 'https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/P7FzxHGbFoMPCSPE?export']
+    ]);
+    for (const ical_name of ical_urls.keys()) {
+        const url = ical_urls.get(ical_name);
+        const data = await ical.fromURL(url);
 
-    if (data == null) throw new Error("failed to load calendar data");
+        if (data == null) throw new Error(`failed to load calendar data for ${ical_name}`);
 
-    const events = [];
-    for (const [, entry] of Object.entries(data)) {
-      if (entry == null) continue;
-      if (entry.type !== "VEVENT") continue;
+        const events = [];
+        for (const [, entry] of Object.entries(data)) {
+          if (entry == null) continue;
+          if (entry.type !== "VEVENT") continue;
 
-      const img =
-        entry.attach?.val != null &&
-        entry.attach?.params.FMTTYPE.startsWith("image/")
-          ? new URL(entry.attach.val, base)
-          : undefined;
+          const img =
+            entry.attach?.val != null &&
+            entry.attach?.params.FMTTYPE.startsWith("image/")
+              ? new URL(entry.attach.val, base)
+              : undefined;
 
-      const start = DateTime.fromJSDate(entry.start, {
-        zone: entry.start.tz,
-      });
-      // todo(maximsmol): deal with recurring events
-      // todo(maximsmol): extract image from content
-      events.push({
-        // todo(maximsmol): use a timezone-aware datetime?
-        date: start.toJSDate(),
-        url: `/events/${entry.uid}/`,
-        data: {
-          title: entry.summary,
-          time_zones: entry.start.tz != null ? [entry.start.tz] : undefined,
-          image: img?.href,
-          locations: entry.location != null ? [entry.location] : undefined,
-        },
-        content:
-          entry.description != null ? md.render(entry.description) : undefined,
-      });
+          const start = DateTime.fromJSDate(entry.start, {
+            zone: entry.start.tz,
+          });
+          // todo(maximsmol): deal with recurring events
+          // todo(maximsmol): extract image from content
+          events.push({
+            // todo(maximsmol): use a timezone-aware datetime?
+            date: start.toJSDate(),
+            url: `/events/${entry.uid}/`,
+            data: {
+              title: entry.summary,
+              time_zones: entry.start.tz != null ? [entry.start.tz] : undefined,
+              image: img?.href,
+              locations: entry.location != null ? [entry.location] : undefined,
+            },
+            content:
+              entry.description != null ? md.render(entry.description) : undefined,
+          });
+        }
+
+        cfg.addGlobalData(ical_name, events);
     }
-
-    cfg.addGlobalData("ical_events", events);
   };
 
   const remoteDataSrcs = [
