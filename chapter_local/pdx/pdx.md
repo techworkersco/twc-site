@@ -2,7 +2,7 @@
 title: TWC PDX
 permalink: /pdx/
 ---
-{% assign events = portland_events | date_sort | where_future: site.time | reverse | filter_tags: include.tags %}
+{% assign events = portland_events | date_sort | where_future: site.time | filter_tags: include.tags %}
 
 <style>h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}</style>
 # PDX Tech Workers Coalition
@@ -18,7 +18,7 @@ This is the Portland, OR chapter of the TWC.
 - Come to one of our [Unemployed Tech Worker Events](/pdx/events/unemployed-workers-meeting/).
 
 ## Meetings and Events
-Upcoming events are listed below and on the <a href="https://dev.techworkerscoalition.org/nextcloud/apps/calendar/p/P7FzxHGbFoMPCSPE">Portland TWC Calendar</a>.
+Upcoming meetings and events are listed below and on the <a href="https://dev.techworkerscoalition.org/nextcloud/apps/calendar/p/P7FzxHGbFoMPCSPE">Portland TWC Calendar</a>.
 {% for event in events %}
     {% include event-card.html %}
 {% endfor %}

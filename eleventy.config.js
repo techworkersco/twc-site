@@ -285,43 +285,53 @@ export default async (cfg) => {
       ['portland_events', 'https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/P7FzxHGbFoMPCSPE?export']
     ]);
     for (const ical_name of ical_urls.keys()) {
-        const url = ical_urls.get(ical_name);
-        const data = await ical.fromURL(url);
+      const url = ical_urls.get(ical_name);
+      const data = await ical.fromURL(url);
 
-        if (data == null) throw new Error(`failed to load calendar data for ${ical_name}`);
+      if (data == null) throw new Error(`failed to load calendar data for ${ical_name}`);
 
-        const events = [];
-        for (const [, entry] of Object.entries(data)) {
-          if (entry == null) continue;
-          if (entry.type !== "VEVENT") continue;
+      const events = [];
+      for (const [, entry] of Object.entries(data)) {
+        // node-ical API docs: https://www.npmjs.com/package/node-ical
+        if (entry == null) continue;
+        if (entry.type !== "VEVENT") continue;
 
+        // Expand any recurring events over the next 60 days.
+        const now = new Date();
+        const recurring_events = ical.expandRecurringEvent(entry, {
+          from: now,
+          to: new Date(now.getTime() + 60 * 24 * 60 * 60 * 1000)
+        });
+        recurring_events.forEach(event_instance => {
           const img =
-            entry.attach?.val != null &&
-            entry.attach?.params.FMTTYPE.startsWith("image/")
-              ? new URL(entry.attach.val, base)
+            event_instance.attach?.val != null &&
+            event_instance.attach?.params.FMTTYPE.startsWith("image/")
+              ? new URL(event_instance.attach.val, base)
               : undefined;
 
-          const start = DateTime.fromJSDate(entry.start, {
-            zone: entry.start.tz,
+          const start = DateTime.fromJSDate(event_instance.start, {
+            zone: event_instance.start.tz,
           });
-          // todo(maximsmol): deal with recurring events
+
           // todo(maximsmol): extract image from content
+          const event_instance_url = `/events/${event_instance.event.uid}_${event_instance.start.getTime()}/`;
           events.push({
             // todo(maximsmol): use a timezone-aware datetime?
             date: start.toJSDate(),
-            url: `/events/${entry.uid}/`,
+            url: event_instance_url,
             data: {
-              title: entry.summary,
-              time_zones: entry.start.tz != null ? [entry.start.tz] : undefined,
+              title: event_instance.summary,
+              time_zones: event_instance.start.tz != null ? [event_instance.start.tz] : undefined,
               image: img?.href,
-              locations: entry.location != null ? [entry.location] : undefined,
+              locations: event_instance.event.location != null ? [event_instance.event.location] : undefined,
             },
             content:
-              entry.description != null ? md.render(entry.description) : undefined,
+              event_instance.event.description != null ? md.render(event_instance.event.description) : undefined,
           });
-        }
+        });
+      }
 
-        cfg.addGlobalData(ical_name, events);
+      cfg.addGlobalData(ical_name, events);
     }
   };
 
