@@ -114,6 +114,14 @@
     text-wrap: balance;
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: unset;
+  }
+
   math,
   time,
   table {
@@ -182,125 +190,129 @@ which is Galaxy S10/S10+ Android 11
     /* todo(maximsmol): maybe use https://harmonizer.evilmartians.com*/
     /* todo(maximsmol): likely need to fork huetone and fix it up */
 
-    --color-purple-50: #dfe3ff;
+    /* --color-purple-50: #dfe3ff; */
     --color-purple-50: oklch(0.921 0.038 279.169);
-    --color-purple-100: #cbd1ff;
+    /* --color-purple-100: #cbd1ff; */
     --color-purple-100: oklch(0.871 0.064 279.15);
-    --color-purple-200: #afb6ff;
+    /* --color-purple-200: #afb6ff; */
     --color-purple-200: oklch(0.798 0.104 279.54);
-    --color-purple-300: #9299ff;
+    /* --color-purple-300: #9299ff; */
     --color-purple-300: oklch(0.721 0.147 279.036);
-    --color-purple-400: #726cff;
+    /* --color-purple-400: #726cff; */
     --color-purple-400: oklch(0.616 0.212 280.012);
-    --color-purple-500: #5835ff;
+    /* --color-purple-500: #5835ff; */
     --color-purple-500: oklch(0.521 0.273 279.068);
-    --color-purple-600: #3817c1;
+    /* --color-purple-600: #3817c1; */
     --color-purple-600: oklch(0.403 0.233 276.822);
-    --color-purple-700: #2b058f;
+    /* --color-purple-700: #2b058f; */
     --color-purple-700: oklch(0.32 0.19 279.274);
-    --color-purple-800: #160852;
+    /* --color-purple-800: #160852; */
     --color-purple-800: oklch(0.226 0.122 279.099);
-    --color-purple-900: #090035;
+    /* --color-purple-900: #090035; */
     --color-purple-900: oklch(0.16 0.098 279.099);
 
-    --color-red-50: #ffdcd9;
+    /* --color-red-50: #ffdcd9; */
     --color-red-50: oklch(0.923 0.039 23.697);
-    --color-red-100: #ffc4c0;
+    /* --color-red-100: #ffc4c0; */
     --color-red-100: oklch(0.872 0.068 23.014);
-    --color-red-200: #ff9f99;
+    /* --color-red-200: #ff9f99; */
     --color-red-200: oklch(0.798 0.115 23.837);
-    --color-red-300: #ff716e;
+    /* --color-red-300: #ff716e; */
     --color-red-300: oklch(0.72 0.174 23.661);
-    --color-red-400: #f60b33;
+    /* --color-red-400: #f60b33; */
     --color-red-400: oklch(0.616 0.246 23.532);
-    --color-red-500: #c60025;
+    /* --color-red-500: #c60025; */
     --color-red-500: oklch(0.521 0.211 23.669);
-    --color-red-600: #97001a;
+    /* --color-red-600: #97001a; */
     --color-red-600: oklch(0.427 0.172 23.571);
-    --color-red-700: #640410;
+    /* --color-red-700: #640410; */
     --color-red-700: oklch(0.32 0.125 23.383);
-    --color-red-800: #3d0005;
+    /* --color-red-800: #3d0005; */
     --color-red-800: oklch(0.227 0.092 23.707);
-    --color-red-900: #220002;
+    /* --color-red-900: #220002; */
     --color-red-900: oklch(0.16 0.064 23.707);
 
-    --color-gray-50: #e5e5e5;
+    /* --color-gray-50: #e5e5e5; */
     --color-gray-50: oklch(0.922 0 89.876);
-    --color-gray-100: #d4d4d4;
+    /* --color-gray-100: #d4d4d4; */
     --color-gray-100: oklch(0.87 0 89.876);
-    --color-gray-200: #bdbdbd;
+    /* --color-gray-200: #bdbdbd; */
     --color-gray-200: oklch(0.798 0 89.876);
-    --color-gray-300: #a5a5a5;
+    /* --color-gray-300: #a5a5a5; */
     --color-gray-300: oklch(0.722 0 89.876);
-    --color-gray-400: #858585;
+    /* --color-gray-400: #858585; */
     --color-gray-400: oklch(0.617 0 89.876);
-    --color-gray-500: #696969;
+    /* --color-gray-500: #696969; */
     --color-gray-500: oklch(0.521 0 89.876);
-    --color-gray-600: #4f4f4f;
+    /* --color-gray-600: #4f4f4f; */
     --color-gray-600: oklch(0.428 0 89.876);
-    --color-gray-700: #333333;
+    /* --color-gray-700: #333333; */
     --color-gray-700: oklch(0.321 0 89.876);
-    --color-gray-800: #1c1c1c;
+    /* --color-gray-800: #1c1c1c; */
     --color-gray-800: oklch(0.226 0 89.876);
-    --color-gray-900: #0d0d0d;
+    /* --color-gray-900: #0d0d0d; */
     --color-gray-900: oklch(0.16 0 89.876);
 
-    --color-lavender-50: #e6e1fe;
+    /* --color-lavender-50: #e6e1fe; */
     --color-lavender-50: oklch(0.922 0.039 293.523);
-    --color-lavender-100: #d6ccff;
+    /* --color-lavender-100: #d6ccff; */
     --color-lavender-100: oklch(0.87 0.071 293.871);
-    --color-lavender-200: #c0afff;
+    /* --color-lavender-200: #c0afff; */
     --color-lavender-200: oklch(0.798 0.113 293.426);
-    --color-lavender-300: #a497eb;
+    /* --color-lavender-300: #a497eb; */
     --color-lavender-300: oklch(0.721 0.121 290.122);
-    --color-lavender-400: #8477c8;
+    /* --color-lavender-400: #8477c8; */
     --color-lavender-400: oklch(0.615 0.121 289.741);
-    --color-lavender-500: #695ba9;
+    /* --color-lavender-500: #695ba9; */
     --color-lavender-500: oklch(0.521 0.12 289.816);
-    --color-lavender-600: #4f408b;
+    /* --color-lavender-600: #4f408b; */
     --color-lavender-600: oklch(0.426 0.12 289.528);
-    --color-lavender-700: #34226b;
+    /* --color-lavender-700: #34226b; */
     --color-lavender-700: oklch(0.321 0.121 289.1);
-    --color-lavender-800: #1f044e;
+    /* --color-lavender-800: #1f044e; */
     --color-lavender-800: oklch(0.225 0.12 289.591);
-    --color-lavender-900: #100030;
+    /* --color-lavender-900: #100030; */
     --color-lavender-900: oklch(0.16 0.09 289.59);
 
-    --color-teal-50: #96ffff;
+    /* --color-teal-50: #96ffff; */
     --color-teal-50: oklch(0.937 0.098 195.609);
-    --color-teal-100: #00f2f4;
+    /* --color-teal-100: #00f2f4; */
     --color-teal-100: oklch(0.871 0.148 195.842);
-    --color-teal-200: #01d8d9;
+    /* --color-teal-200: #01d8d9; */
     --color-teal-200: oklch(0.799 0.136 195.368);
-    --color-teal-300: #00bcbe;
+    /* --color-teal-300: #00bcbe; */
     --color-teal-300: oklch(0.721 0.123 196.129);
-    --color-teal-400: #009899;
+    /* --color-teal-400: #009899; */
     --color-teal-400: oklch(0.616 0.105 195.596);
-    --color-teal-500: #00797a;
+    /* --color-teal-500: #00797a; */
     --color-teal-500: oklch(0.522 0.089 195.786);
-    --color-teal-600: #005b5c;
+    /* --color-teal-600: #005b5c; */
     --color-teal-600: oklch(0.427 0.073 196.077);
-    --color-teal-700: #003b3b;
+    /* --color-teal-700: #003b3b; */
     --color-teal-700: oklch(0.319 0.054 194.769);
-    --color-teal-800: #002121;
+    /* --color-teal-800: #002121; */
     --color-teal-800: oklch(0.224 0.038 194.769);
-    --color-teal-900: #011110;
+    /* --color-teal-900: #011110; */
     --color-teal-900: oklch(0.16 0.025 194.769);
 
+    /* --color-white: #ffffff; */
+    --color-white: oklch(1 0 0);
+    /* --color-off-white: #fafafa; */
+    --color-off-white: oklch(0.985 0 89.876);
+    /* --color-black: #000000; */
+    --color-black: oklch(0 0 0);
+
     --font-main: "Montserrat Variable", sans-serif;
+    --font-heading: Silkscreen, sans-serif;
     --font-monospace: "Roboto Mono Variable", monospace;
 
-    --main-bg: var(--color-purple-900);
-
-    font-size: var(--step-0);
-    font-family: var(--font-main);
-
-    color: #fafafa;
-    background-color: var(--main-bg);
+    --color-text: light-dark(var(--color-purple-900), var(--color-off-white));
+    --color-bg-primary: light-dark(var(--color-white), var(--color-purple-900));
   }
 
   pre,
-  code {
+  code,
+  .monospace {
     font-family: var(--font-monospace);
   }
 
@@ -344,11 +356,7 @@ which is Galaxy S10/S10+ Android 11
   .h3,
   .h4,
   .h5 {
-    font-family: "Silkscreen", sans-serif;
-  }
-
-  .monospace {
-    font-family: var(--font-monospace);
+    font-family: var(--font-heading);
   }
 
   svg.icon {
@@ -373,7 +381,7 @@ which is Galaxy S10/S10+ Android 11
 
       &:hover,
       &:focus-visible {
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: oklab(from var(--color-white) l a b / 0.1);
       }
     }
 
@@ -396,6 +404,11 @@ which is Galaxy S10/S10+ Android 11
   }
 
   body {
+    font-size: var(--step-0);
+    font-family: var(--font-main);
+
+    color: var(--color-text);
+    background-color: var(--color-bg-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -672,10 +685,11 @@ which is Galaxy S10/S10+ Android 11
             > section {
               > .h5 {
                 background-color: var(--color-red-400);
-                color: var(--main-bg);
+                color: var(--color-bg-primary);
 
                 text-transform: uppercase;
                 font-family: var(--font-main);
+                font-weight: bold;
               }
 
               display: flex;
