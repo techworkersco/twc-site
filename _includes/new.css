@@ -38,7 +38,7 @@
     U+2215, U+FEFF, U+FFFD;
 }
 
-@layer reset, base, main, utils;
+@layer reset, base, components, utils;
 
 @layer reset {
   /* see https://www.joshwcomeau.com/css/custom-css-reset */
@@ -147,6 +147,12 @@
   }
 }
 
+@custom-media --breakpoint-sm (width >= 40rem) /* 640px */;
+@custom-media --breakpoint-md (width >= 48rem) /* 768px */;
+@custom-media --breakpoint-lg (width >= 64rem) /* 1024px */;
+@custom-media --breakpoint-xl (width >= 80rem) /* 1280px */;
+@custom-media --breakpoint-2xl (width >= 96rem) /* 1536px */;
+
 /*
 note: minimum supported width 360px matching the smallest preset in Firefox,
 which is Galaxy S10/S10+ Android 11
@@ -154,6 +160,9 @@ which is Galaxy S10/S10+ Android 11
 
 @layer base {
   :root {
+    --container-width: 1440px;
+
+
     /* see https://utopia.fyi/  */
     --step--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
     --step--1: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
@@ -359,41 +368,44 @@ which is Galaxy S10/S10+ Android 11
     font-family: var(--font-heading);
   }
 
-  svg.icon {
+  .icon {
     display: inline-block;
 
     inline-size: 1em;
   }
 
-  a.button {
-    padding: var(--space-2xs) var(--space-xs);
-
+  .button {
     display: flex;
     align-items: center;
     gap: 1ch;
-
     color: inherit;
     text-decoration: none;
+    transition: 0.2s all ease-in;
+    border-bottom: 2px solid transparent;
+    width: fit-content;
 
-    &.framed {
-      border: 2px solid currentColor;
-      box-shadow: currentColor -2px 4px;
-
-      &:hover,
-      &:focus-visible {
-        background-color: oklab(from var(--color-white) l a b / 0.1);
-      }
-    }
-
-    &:not(.framed) {
-      &:hover,
-      &:focus-visible {
-        text-decoration: underline;
-      }
+    &:hover,
+    &:active,
+    &:focus-visible {
+      color: var(--color-lavender-200);
+      border-bottom-color: currentColor;
     }
   }
 
-  a.plain {
+  .framed {
+    padding: var(--space-s);
+    border: 2px solid currentColor;
+    box-shadow: currentColor -2px 4px;
+
+    &:hover,
+    &:active,
+    &:focus-visible {
+      color: var(--color-lavender-200);
+      box-shadow: none;
+    }
+  }
+
+  .plain {
     color: inherit;
     text-decoration: none;
 
@@ -406,107 +418,81 @@ which is Galaxy S10/S10+ Android 11
   body {
     font-size: var(--step-0);
     font-family: var(--font-main);
-
     color: var(--color-text);
     background-color: var(--color-bg-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
-    .header-padding {
-      display: flex;
-      justify-content: center;
-
-      padding: var(--space-s) var(--space-s-l);
-      inline-size: 100%;
+    > header,
+    > footer,
+    main > * {
+      width: 100%;
+      max-width: var(--container-width);
+      padding-inline: var(--space-s-l);
     }
 
-    header {
+    > header {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-block: var(--space-s-m);
+      gap: var(--space-s) var(--space-m-l);
 
-      gap: var(--space-xs) var(--space-s-m);
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-
-      max-inline-size: 1440px;
-      inline-size: 100%;
-
-      @media (max-width: 600px) {
-        display: grid;
-        grid-template-columns: 1fr auto;
-      }
-
-      > h1 {
-        flex-grow: 1;
-        padding-right: var(--space-s);
-
-        display: flex;
+      @media (--breakpoint-lg) {
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
-        gap: var(--space-s);
-
-        font-size: inherit;
-
-        > .logo {
-          height: 2lh;
-        }
+        justify-content: space-between;
+        gap: var(--space-s) var(--space-l);
       }
 
       nav {
-        display: contents;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex: 1;
+        max-width: 100%;
+        gap: var(--space-m-l);
 
-        > ul {
-          display: contents;
+        @media (--breakpoint-lg) {
+          justify-content: end;
+          gap: var(--space-l-xl);
+        }
 
+        @media (--breakpoint-xl) {
+          gap: var(--space-xl-2xl);
+        }
+
+        ul {
+          display: flex;
+          align-items: center;
+          overflow-x: auto;
           list-style: none;
-          text-wrap: nowrap;
+          gap: var(--space-m-l);
 
-          @media (max-width: 600px) {
-            li {
-              grid-column: span 2;
-
-              display: flex;
-              justify-content: flex-end;
-            }
-          }
-        }
-      }
-
-      @media (max-width: 600px) {
-        > nav {
-          display: none;
-        }
-      }
-
-      > details {
-        @media (min-width: 600px) {
-          display: none;
-        }
-
-        &[open] {
-          display: contents;
-        }
-
-        &::details-content {
-          content-visibility: visible;
-        }
-
-        > summary {
-          list-style: none;
-
-          @media (min-width: 600px) {
-            display: none;
+          @media (--breakpoint-lg) {
+            overflow-x: unset;
+            gap: var(--space-l-xl);
           }
 
-          svg {
-            width: 2em;
+          @media (--breakpoint-xl) {
+            gap: var(--space-xl-2xl);
           }
+        }
+
+        .framed {
+          padding: var(--space-3xs) var(--space-xs);
         }
       }
     }
 
     > main {
-      max-inline-size: 1440px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
 
       > .banner {
         block-size: calc(min(30vw, 1.5 * var(--space-3xl)));
@@ -838,6 +824,28 @@ which is Galaxy S10/S10+ Android 11
           }
         }
       }
+    }
+  }
+}
+
+@layer components {
+  .site-logo-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
+    font-size: var(--step-1);
+    line-height: 1.3;
+    font-family: var(--font-heading);
+    text-decoration: none;
+    color: currentColor;
+
+    svg {
+      height: 2lh;
+      fill: currentColor;
+    }
+
+    span {
+      flex-basis: 14rem;
     }
   }
 }

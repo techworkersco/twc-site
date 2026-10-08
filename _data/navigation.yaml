@@ -1,5 +1,5 @@
 main:
-  - text: "About us"
+  - text: "About"
     slug: "/about"
   - text: "Blog"
     slug: "/blog"
@@ -9,6 +9,7 @@ main:
     slug: "/newsletter"
   - text: "Donate"
     slug: "/donate"
+    cta: true
 footer:
   - text: "Join"
     slug: "/join"

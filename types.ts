@@ -82,8 +82,9 @@ export type Data = {
 };
 
 type NavigationItemCommon = {
-    text: string;
-    slug: string;
+  text: string;
+  slug: string;
+  cta?: boolean;
 };
 
 export type Navigation = {
