@@ -89,5 +89,5 @@ type NavigationItemCommon = {
 
 export type Navigation = {
     main: NavigationItemCommon[];
-    footer: (NavigationItemCommon & {icon: string;})[];
+    footer: (NavigationItemCommon & {iconName: string;})[];
 };

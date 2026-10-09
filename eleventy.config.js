@@ -1,4 +1,5 @@
-import { pathToFileURL } from "node:url";
+import {pathToFileURL} from "node:url";
+import { readFile } from "node:fs/promises";
 
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import * as mdx from "@mdx-js/mdx";
@@ -304,6 +305,30 @@ export default async (cfg) => {
       ...Object.fromEntries(remoteDataSrcs.map((x) => [x.data, data[x.data]])),
     },
   }));
+
+  cfg.addAsyncShortcode('inlineSvg', async (filename) => {
+    if (Array.isArray(filename)) {
+      const arr = [];
+
+      for (const item of filename) {
+        arr.push({
+          type: "raw",
+          value: (
+            await readFile(`_includes/inline-svgs/${item}.svg`)
+          ).toString(),
+        });
+      }
+
+      return arr;
+    }
+
+    return {
+      type: "raw",
+      value: (
+        await readFile(`_includes/inline-svgs/${filename}.svg`)
+      ).toString(),
+    };
+  });
 };
 
 // todo(maximsmol): fix canonicals
