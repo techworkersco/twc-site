@@ -88,7 +88,7 @@ export const render = async ({
               </span>
             </h1>
             <div class="icon-lines" aria-hidden="true">
-              <div>
+              <div class="icon-line">
                 {/* see https://pixelarticons.com/ */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +161,7 @@ export const render = async ({
                   <path d="M16 20v-6H8v6h8Zm-4-10H6V6h6v4Zm8-4h-2V4h2v2Zm0 14V6h2v16H2V2h16v2H4v16h2v-8h12v8h2Z" />
                 </svg>
               </div>
-              <div>
+              <div class="icon-line">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -205,7 +205,7 @@ export const render = async ({
                   <path d="M16 22h-2v-2h2v2Zm-2-2h-2v-2h2v2Zm4 0h-2v-4h2v4Zm-6-2h-2v-2h2v2Zm-2-2H8v-2h2v2Zm10-2h-4v2h-2v-4h6v2ZM4 4v8h2V4H4Zm18 8h-2V8h2v4Zm-2-4h-2V4h2v4ZM8 14H2V2h16v2H8v10Z" />
                 </svg>
               </div>
-              <div>
+              <div class="icon-line">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
