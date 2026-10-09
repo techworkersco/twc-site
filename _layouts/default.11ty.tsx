@@ -9,16 +9,20 @@ export const render = async ({
   content,
   site,
   navigation,
+  pageTitle,
+  title,
 }: {
     content: string;
     site: Site;
     navigation: Navigation;
+    pageTitle?: string;
+    title: string;
   }) => {
   const ctaNavLink = navigation.main.filter((item) => item?.cta);
 
   return (
     <>
-      <header role="banner">
+      <header role="banner" class="site-header">
         <a href="/" class="site-logo-link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,48 +42,52 @@ export const render = async ({
           </svg>
           <span>{site.title}</span>
         </a>
-        <nav aria-label="site">
-          <ul role="list">
-            {navigation.main.map((item) => (
-              !item?.cta
-              && <li>
-                <a href={item.slug} class="button">
+        {
+          navigation?.main && navigation.main.length > 0
+          && <nav aria-label="site">
+            <ul role="list">
+              {navigation.main.map((item) => (
+                !item?.cta
+                && <li>
+                  <a href={item.slug} class="button">
+                    {item.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            {
+              ctaNavLink.length > 0
+              && ctaNavLink.map((item) => (
+                <a href={item.slug} class="button framed">
                   {item.text}
                 </a>
-              </li>
-            ))}
-          </ul>
-          {
-            ctaNavLink.length > 0
-            && ctaNavLink.map((item) => (
-              <a href={item.slug} class="button framed">
-                {item.text}
-              </a>
-            ))
-          }
-        </nav>
+              ))
+            }
+          </nav>
+        }
       </header>
       <main>
-        <div class="banner">
+        <div class="hero-banner">
+          {/* @todo change to picture el with cropped sizes */}
           <img src="/assets/img/header.jpg" alt="" />
         </div>
         <div class="hero">
-          <h2>
-            {(<>
-              {{
-                type: "raw",
-                value: (
-                  await readFile("assets/img/decor/chip.svg")
-                ).toString(),
-              }}
-            </>)}
-            <div class="title">
-              <div>
-                Worker <span class="red">Power</span>
-              </div>
-              <div class="h4">In the Tech Industry</div>
-            </div>
-            <div class="icon-lines red">
+          <div class="hero-container">
+            <h1>
+              {/* @todo find a better way to work with svgs */}
+              {(<span class="box-icon">
+                {{
+                  type: "raw",
+                  value: (
+                    await readFile("assets/img/decor/chip.svg")
+                  ).toString(),
+                }}
+              </span>)}
+              <span class="heading-text">
+                {pageTitle ?? title}
+              </span>
+            </h1>
+            <div class="icon-lines" aria-hidden="true">
               <div>
                 {/* see https://pixelarticons.com/ */}
                 <svg
@@ -230,8 +238,7 @@ export const render = async ({
                 </svg>
               </div>
             </div>
-          </h2>
-          <hr />
+          </div>
         </div>
         {{type: "raw", value: content}}
       </main>

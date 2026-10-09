@@ -4,6 +4,8 @@ import {Data} from "./types.ts";
 
 export const data = {
   layout: "default.11ty.tsx",
+  pageTitle: <>Worker <span class="red">Power</span><div>In the Tech Industry</div></>,
+  title: "Home",
 };
 
 export const render = async ({
