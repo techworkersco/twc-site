@@ -74,9 +74,9 @@ export const render = async ({
   }
   return (
     <>
-      <div class="hero">
+      <div class="card-columns">
         {/* todo(maximsmol): smarty-pants this */}
-        <ul class="cards">
+        <ul role="list" class="cards">
           <li>
             <section>
               <h3 class="h5">Vision & Values:</h3>
@@ -110,11 +110,11 @@ export const render = async ({
           </li>
         </ul>
         <section class="cta">
-          <a href="/chapters" class="button monospace">
-            <u>Find a Local Chapter</u>
+          <a href="/chapters" class="underline monospace">
+            Find a Local Chapter
           </a>
           {/* lucide */}
-          <a href="/get-involved" class="button framed">
+          <a href="/get-involved" class="framed">
             Get Involved
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -125,6 +125,7 @@ export const render = async ({
               stroke-linecap="round"
               stroke-linejoin="round"
               class="icon"
+              aria-hidden="true"
             >
               <path d="M5 12h14" />
               <path d="m12 5 7 7-7 7" />
@@ -133,9 +134,6 @@ export const render = async ({
         </section>
       </div>
       <article class="events">
-        {/* todo(maximsmol): add a minimal padding */}
-        {/* todo(maximsmol): doesn't work right */}
-        <div class="bg" />
         <header>
           <h2 class="h3">Upcoming Events</h2>
           <a href="/events" class="button">
@@ -183,6 +181,7 @@ export const render = async ({
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
+                            aria-hidden="true"
                           >
                             <path d="M8 2v3" />
                             <path d="M16 2v3" />
@@ -207,7 +206,7 @@ export const render = async ({
                     <div class="info">
                       <div>
                         <h3>
-                          <a href={url} class="plain">
+                          <a href={url}>
                             {title}
                           </a>
                         </h3>

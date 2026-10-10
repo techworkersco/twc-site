@@ -329,8 +329,8 @@ which is Galaxy S10/S10+ Android 11
     align-items: center;
     width: 100%;
 
-    header,
-    footer,
+    > header,
+    > footer,
     main {
       width: 100%;
 
@@ -346,7 +346,7 @@ which is Galaxy S10/S10+ Android 11
       }
     }
 
-    header > * {
+    > header > * {
       padding-inline: var(--space-s);
 
       @media (--breakpoint-md) {
@@ -424,6 +424,8 @@ which is Galaxy S10/S10+ Android 11
     transition: 0.2s all ease-in;
     border-bottom: 2px solid transparent;
     width: fit-content;
+    font-weight: 500;
+    font-family: var(--font-monospace);
 
     &:hover,
     &:active,
@@ -440,16 +442,29 @@ which is Galaxy S10/S10+ Android 11
     inline-size: 1em;
   }
 
-  a:where(.framed) {
-    padding: var(--space-s);
-    border: 2px solid currentColor;
-    box-shadow: currentColor -2px 4px;
+  a {
+    &:where(.framed) {
+      padding: var(--space-s);
+      border: 2px solid currentColor;
+      box-shadow: currentColor -2px 4px;
 
-    &:hover,
-    &:active,
-    &:focus-visible {
-      color: var(--color-lavender-200);
-      box-shadow: none;
+      &:hover,
+      &:active,
+      &:focus-visible {
+        color: var(--color-lavender-200);
+        box-shadow: none;
+      }
+    }
+
+    &:where(.underline) {
+      border-bottom-color: currentColor;
+
+      &:hover,
+      &:active,
+      &:focus-visible {
+        color: var(--color-bg-primary);
+        background-color: var(--color-text);
+      }
     }
   }
 
@@ -645,13 +660,12 @@ which is Galaxy S10/S10+ Android 11
 
   .cards {
     list-style: none;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: var(--space-s);
 
-    li {
+    :where(li) {
       padding: var(--space-s);
       flex-basis: 330px;
       flex-grow: 1;
@@ -659,8 +673,8 @@ which is Galaxy S10/S10+ Android 11
       border: 2px solid var(--color-red-400);
       box-shadow: var(--color-red-400) -4px 6px;
 
-      > section {
-        > .h5 {
+      :where(section) {
+        :where(.h5) {
           background-color: var(--color-red-400);
           color: var(--color-bg-primary);
 
@@ -677,139 +691,122 @@ which is Galaxy S10/S10+ Android 11
   }
 
   .cta {
-    padding: var(--space-l) 0;
-
+    padding: var(--space-xl) 0;
     display: flex;
-    gap: var(--space-s);
-
-    font-weight: bold;
+    align-items: center;
+    gap: var(--space-l);
   }
 
   .events {
     display: flex;
     flex-direction: column;
+    background-color: var(--color-lavender-800);
+    padding-block: var(--space-xl);
 
-    > .bg {
-      position: absolute;
-
-      left: 0;
-      right: 0;
-      z-index: -1;
-
-      block-size: 100%;
-
-      background-color: var(--color-lavender-800);
-    }
-
-    > header {
+    :where(header) {
       display: flex;
+      align-items: center;
       justify-content: space-between;
 
-      padding: var(--space-l) 0;
+      padding-bottom: var(--space-l);
     }
 
-    > ol {
+    :where(ol) {
       display: flex;
       flex-direction: column;
       gap: var(--space-s);
 
       list-style: none;
 
-      > li {
+      :where(li) {
         display: flex;
 
-        > article {
-          flex-grow: 1;
-
-          display: grid;
-          grid-template-rows: auto 1fr;
-
-          /* hack to get the square icon */
-          writing-mode: vertical-lr;
-
-          @media (max-width: 600px) {
-            display: flex;
-          }
+        :where(article) {
+          display: flex;
+          width: 100%;
 
           --border: 2px solid var(--color-lavender-400);
 
-          > a > .icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+          > :where(a) {
+            width: var(--space-3xl);
+            height: 100%;
+            border: unset;
 
-            background-color: var(--color-lavender-400);
-            color: var(--color-lavender-800);
+            > :where(.icon) {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 100%;
+              width: 100%;
 
-            aspect-ratio: 1;
+              background-color: var(--color-lavender-400);
+              color: var(--color-lavender-800);
 
-            border: var(--border);
-            border-right: none;
+              aspect-ratio: 1;
 
-            background-size: cover;
-            background-position-x: center;
+              border: var(--border);
+              border-right: none;
 
-            > svg {
-              inline-size: 1.5em;
-            }
+              background-size: cover;
+              background-position-x: center;
 
-            @media (max-width: 600px) {
-              display: none;
+              :where(svg) {
+                inline-size: 1.5em;
+              }
             }
           }
 
-          > .info {
+          :where(.info) {
             display: flex;
+            flex-grow: 1;
             justify-content: space-between;
             align-items: center;
 
-            writing-mode: horizontal-tb;
-
             padding: var(--space-xs);
+            gap: var(--space-s);
 
             border: var(--border);
+            font-family: var(--font-monospace);
+            font-weight: 300;
 
-            time {
-              font-family: var(--font-monospace);
+            :where(h3) {
+              font-size: inherit;
 
-              > .short {
-                display: none;
+              :where(a) {
+                font-weight: 700;
               }
+            }
 
-              @media (max-width: 600px) {
-                > .short {
+            :where(time) {
+              font-size: var(--step--1);
+
+              :where(long) {
+                display: none;
+
+                @media (--breakpoint-md) {
                   display: unset;
                 }
+              }
 
-                > .long {
+              :where(.short) {
+                @media (--breakpoint-md) {
                   display: none;
                 }
               }
             }
 
-            > .location {
+            :where(.location) {
               display: flex;
               gap: var(--space-xs);
 
-              font-weight: bold;
+              font-weight: 500;
 
-              > .icon {
-                font-size: 150%;
+              :where(.icon) {
+                width: var(--step-2);
+                height: var(--step-2);
               }
             }
-
-            @media (max-width: 800px) {
-              flex-direction: column;
-              align-items: flex-start;
-
-              gap: var(--space-s);
-            }
           }
-        }
-
-        h3 {
-          font-family: inherit;
-          font-size: inherit;
         }
       }
     }
