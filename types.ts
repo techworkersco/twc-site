@@ -80,14 +80,3 @@ export type Data = {
     events: { data: Event; url: string }[];
   };
 };
-
-type NavigationItemCommon = {
-  text: string;
-  slug: string;
-  cta?: boolean;
-};
-
-export type Navigation = {
-  main: NavigationItemCommon[];
-  footer: (NavigationItemCommon & { iconName: string })[];
-};
