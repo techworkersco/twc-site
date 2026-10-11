@@ -1,10 +1,15 @@
-import {inspect} from "node:util";
+import { inspect } from "node:util";
 
-import {Data} from "./types.ts";
+import { Data } from "./types.ts";
 
 export const data = {
   layout: "default.11ty.tsx",
-  pageTitle: <>Worker <span class="red">Power</span><div>In the Tech Industry</div></>,
+  pageTitle: (
+    <>
+      Worker <span class="red">Power</span>
+      <div>In the Tech Industry</div>
+    </>
+  ),
   title: "Home",
 };
 
@@ -82,8 +87,8 @@ export const render = async ({
               <h3 class="h5">Vision & Values:</h3>
               <p>
                 Guided by our vision for an inclusive and equitable tech
-                industry, TWC organizes to build worker power through rank
-                and file self-organization and education.
+                industry, TWC organizes to build worker power through rank and
+                file self-organization and education.
               </p>
             </section>
           </li>
@@ -91,11 +96,10 @@ export const render = async ({
             <section>
               <h3 class="h5">Who We Are:</h3>
               <p>
-                We are a coalition of workers in and around the tech
-                industry, labor organizers, community organizers, and
-                friends. We work in solidarity with existing movements
-                towards social justice, worker's rights, and economic
-                inclusion.
+                We are a coalition of workers in and around the tech industry,
+                labor organizers, community organizers, and friends. We work in
+                solidarity with existing movements towards social justice,
+                worker's rights, and economic inclusion.
               </p>
             </section>
           </li>
@@ -103,8 +107,8 @@ export const render = async ({
             <section>
               <h3 class="h5">How We Operate:</h3>
               <p>
-                We're democratically structured, all-volunteer, and
-                worker-led organization.
+                We're democratically structured, all-volunteer, and worker-led
+                organization.
               </p>
             </section>
           </li>
@@ -156,13 +160,12 @@ export const render = async ({
         <ol>
           {/* todo(maximsmol): title fails to wrap if it doesn't fit */}
           {eventsFuture.map((data) => {
-            const {title, timestamp, locations, url, image} = data;
+            const { title, timestamp, locations, url, image } = data;
             try {
               const tzs =
                 "time_zones" in data ? data.time_zones : data.timeszones;
 
-              if (tzs.length === 0)
-                throw new Error("No time zone specified");
+              if (tzs.length === 0) throw new Error("No time zone specified");
 
               return (
                 <li>
@@ -185,13 +188,7 @@ export const render = async ({
                           >
                             <path d="M8 2v3" />
                             <path d="M16 2v3" />
-                            <rect
-                              x="3"
-                              y="3"
-                              width="18"
-                              height="18"
-                              rx="2"
-                            />
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
                             <path d="M3 9h18" />
                             <path d="M8 13h.01" />
                             <path d="M12 13h.01" />
@@ -206,9 +203,7 @@ export const render = async ({
                     <div class="info">
                       <div>
                         <h3>
-                          <a href={url}>
-                            {title}
-                          </a>
+                          <a href={url}>{title}</a>
                         </h3>
                         {tzs.map((tz) => {
                           const time = timestamp.toZonedDateTimeISO(tz);
@@ -286,8 +281,8 @@ export const render = async ({
             <article>
               <img src="assets/img/newspaper.svg" alt="" />
               <h3>
-                Despite Crackdown on Activism, Tech Employees Are Still
-                Picking Fights
+                Despite Crackdown on Activism, Tech Employees Are Still Picking
+                Fights
               </h3>
               <time datetime="2025-12-26">26 December 2025</time>
               <p>New York Times</p>
@@ -295,8 +290,8 @@ export const render = async ({
             <article>
               <img src="assets/img/newspaper.svg" alt="" />
               <h3>
-                "Grand Theft, Not Wage Theft", Rockstar Protest in NYC
-                Draws Tech Workers, Multiple Unions
+                "Grand Theft, Not Wage Theft", Rockstar Protest in NYC Draws
+                Tech Workers, Multiple Unions
               </h3>
               <time datetime="2025-12-08">08 December 2025</time>
               <p>Aftermath</p>

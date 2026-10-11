@@ -1,4 +1,4 @@
-import {pathToFileURL} from "node:url";
+import { pathToFileURL } from "node:url";
 import { readFile } from "node:fs/promises";
 
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
@@ -306,7 +306,7 @@ export default async (cfg) => {
     },
   }));
 
-  cfg.addAsyncShortcode('inlineSvg', async (filename) => {
+  cfg.addAsyncShortcode("inlineSvg", async (filename) => {
     if (Array.isArray(filename)) {
       const arr = [];
 

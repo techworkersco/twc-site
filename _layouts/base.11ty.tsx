@@ -1,13 +1,13 @@
-import {readFile} from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 
 import browserslist from "browserslist";
-import {fromHtml} from "hast-util-from-html";
-import {toText} from "hast-util-to-text";
+import { fromHtml } from "hast-util-from-html";
+import { toText } from "hast-util-to-text";
 import * as lightningcss from "lightningcss";
 import type markdownIt from "markdown-it";
 
-import {Page, Site} from "../types.ts";
-import {nmap} from "../utils.ts";
+import { Page, Site } from "../types.ts";
+import { nmap } from "../utils.ts";
 
 const renderCss = async () => {
   const res = lightningcss.transform({
@@ -59,8 +59,8 @@ export const render = async ({
   return {
     type: "root",
     children: [
-      {type: "doctype"},
-      {type: "text", value: "\n"},
+      { type: "doctype" },
+      { type: "text", value: "\n" },
       <html lang="en-US">
         {/* see https://rviscomi.github.io/capo.js/ */}
         <head>
@@ -68,7 +68,11 @@ export const render = async ({
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-          <title>{typeof title !== undefined && title ? `${title} | ${site.title}` : site.title}</title>
+          <title>
+            {typeof title !== undefined && title
+              ? `${title} | ${site.title}`
+              : site.title}
+          </title>
           {/* The page supports both dark and light color schemes, and the page author prefers dark. */}
           <meta name="color-scheme" content="dark light" />
           {/* todo(maximsmol): make sure all blog and event pages have non-default descriptions */}
@@ -127,10 +131,7 @@ export const render = async ({
             href="/feed/events.xml"
             title="Events"
           />
-          <link
-            rel="me"
-            href="https://union.place/@techworkersco"
-          />
+          <link rel="me" href="https://union.place/@techworkersco" />
 
           <link rel="canonical" href={canonicalUrl.href} />
           <link
@@ -159,9 +160,7 @@ export const render = async ({
           {/* todo(maximsmol): JSON-LD */}
           {/* todo(maximsmol): WebMention? */}
         </head>
-        <body>
-          {{type: "raw", value: content}}
-        </body>
+        <body>{{ type: "raw", value: content }}</body>
       </html>,
     ],
   };

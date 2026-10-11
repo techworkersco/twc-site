@@ -88,6 +88,6 @@ type NavigationItemCommon = {
 };
 
 export type Navigation = {
-    main: NavigationItemCommon[];
-    footer: (NavigationItemCommon & {iconName: string;})[];
+  main: NavigationItemCommon[];
+  footer: (NavigationItemCommon & { iconName: string })[];
 };

@@ -642,7 +642,6 @@ which is Galaxy S10/S10+ Android 11
           }
         }
 
-
         :where(svg) {
           color: var(--color-red-400);
           min-width: var(--step-1);
@@ -813,7 +812,7 @@ which is Galaxy S10/S10+ Android 11
   }
 
   .site-footer {
-    background-image: url('/assets/img/footer-bg.jpg');
+    background-image: url("/assets/img/footer-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 4px solid var(--color-red-400);
@@ -850,7 +849,6 @@ which is Galaxy S10/S10+ Android 11
 
     :where(li) {
       width: fit-content;
-
     }
   }
 }
