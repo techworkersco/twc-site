@@ -41,25 +41,10 @@ const navigation = {
   ],
 };
 
-const inlineSvg = async (filename) => {
-  if (Array.isArray(filename)) {
-    const arr = [];
-
-    for (const item of filename) {
-      arr.push({
-        type: "raw",
-        value: (await readFile(`_includes/inline-svgs/${item}.svg`)).toString(),
-      });
-    }
-
-    return arr;
-  }
-
-  return {
-    type: "raw",
-    value: (await readFile(`_includes/inline-svgs/${filename}.svg`)).toString(),
-  };
-};
+const inlineSvg = async (filename) => ({
+  type: "raw",
+  value: (await readFile(`_includes/inline-svgs/${filename}.svg`)).toString(),
+});
 
 export const render = async function ({
   content,
@@ -147,9 +132,13 @@ export const render = async function ({
               </h1>
               {/* see https://pixelarticons.com/ */}
               <div class="icon-lines" aria-hidden="true">
-                <div class="icon-line">{await inlineSvg(iconLines[0])}</div>
-                <div class="icon-line">{await inlineSvg(iconLines[1])}</div>
-                <div class="icon-line">{await inlineSvg(iconLines[2])}</div>
+                {await Promise.all(
+                  iconLines.map(async (line) => (
+                    <div class="icon-line">
+                      {await Promise.all(line.map(inlineSvg))}
+                    </div>
+                  )),
+                )}
               </div>
             </div>
           </div>
