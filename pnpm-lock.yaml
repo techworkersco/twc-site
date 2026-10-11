@@ -84,6 +84,9 @@ importers:
       lightningcss:
         specifier: ^1.31.1
         version: 1.31.1
+      lucide-static:
+        specifier: ^1.55.0
+        version: 1.55.0
       luxon:
         specifier: ^3.7.2
         version: 3.7.2
@@ -93,6 +96,9 @@ importers:
       markdown-it-anchor:
         specifier: ^9.2.0
         version: 9.2.0(@types/markdown-it@14.2.0)(markdown-it@14.1.1)
+      pixelarticons:
+        specifier: ^2.4.2
+        version: 2.4.2(react@19.3.0)
       rehype-slug:
         specifier: ^6.0.0
         version: 6.0.0(patch_hash=1bf83dfa419d0209fd1fba0392ca594fe12bf7a8aa0cc20d96d4d10ed6f8318f)
@@ -1768,6 +1774,9 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
+  lucide-static@1.55.0:
+    resolution: {integrity: sha512-h18lunTFsIJWnY0FMRPjXeO9KcAtNi7fDqtqgWHOFbssfgUWsctn/pA7bpiyrd4g1DuBOJ24CsRnPfkYblwm/A==}
+
   luxon@3.7.2:
     resolution: {integrity: sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew==}
     engines: {node: '>=12'}
@@ -2122,6 +2131,12 @@ packages:
     resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
     engines: {node: '>=12'}
 
+  pixelarticons@2.4.2:
+    resolution: {integrity: sha512-BZKSU5ckLuioZCzES4fEmdQfnI8XEiQlHljdIVk+N6+KH7vTBQJNtMs+V0LQF7nC7cZbKT0qBXFOsT35sl8uhg==}
+    hasBin: true
+    peerDependencies:
+      react: '>=16'
+
   please-upgrade-node@3.2.0:
     resolution: {integrity: sha512-gQR3WpIgNIKwBMVLkpMUeR3e1/E1y42bqDQZfql+kDeXd8COYfM8PQA4X6y7a8u9Ua9FHmsrrmirW2vHs45hWg==}
 
@@ -2196,6 +2211,10 @@ packages:
   range-parser@1.2.1:
     resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==}
     engines: {node: '>= 0.6'}
+
+  react@19.3.0:
+    resolution: {integrity: sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog==}
+    engines: {node: '>=0.10.0'}
 
   read-package-json-fast@3.0.2:
     resolution: {integrity: sha512-0J+Msgym3vrLOUB3hzQCuZHII0xkNGCtz/HJH9xZshwv9DbDwkw1KaE3gx/e2J5rpEY5rtOy6cyhKOPrkP7FZw==}
@@ -4652,6 +4671,8 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
+  lucide-static@1.55.0: {}
+
   luxon@3.7.2: {}
 
   make-asynchronous@1.1.0:
@@ -5220,6 +5241,10 @@ snapshots:
 
   picomatch@4.0.3: {}
 
+  pixelarticons@2.4.2(react@19.3.0):
+    dependencies:
+      react: 19.3.0
+
   please-upgrade-node@3.2.0:
     dependencies:
       semver-compare: 1.0.0
@@ -5271,6 +5296,8 @@ snapshots:
   quote-js-string@0.1.0: {}
 
   range-parser@1.2.1: {}
+
+  react@19.3.0: {}
 
   read-package-json-fast@3.0.2:
     dependencies:

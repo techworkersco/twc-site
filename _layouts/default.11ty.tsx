@@ -1,6 +1,16 @@
 import { readFile } from "node:fs/promises";
 import { Navigation, type Site } from "../types.ts";
 
+import { JSX } from "hastscript/jsx-runtime";
+import * as lucideRaw from "lucide-static";
+
+const icons = Object.fromEntries(
+  Object.entries(lucideRaw).map(([name, value]) => [
+    name,
+    { type: "raw", value },
+  ]),
+) as { [K in keyof typeof lucideRaw]: JSX.Element };
+
 export const data = {
   layout: "base.11ty.tsx",
 };
@@ -14,32 +24,39 @@ const navigation = {
     { text: "Donate", href: "/donate", cta: true },
   ],
   footer: [
-    { text: "Join", href: "/join", icon: "join" },
-    { text: "Chapters", href: "/chapters", icon: "chapters" },
-    { text: "Press Mentions", href: "/press", icon: "press" },
-    { text: "Events", href: "/events", icon: "events" },
+    { text: "Join", href: "/join", icon: icons.UserPlus },
+    { text: "Chapters", href: "/chapters", icon: icons.UserGroup },
+    { text: "Press Mentions", href: "/press", icon: icons.Newspaper },
+    { text: "Events", href: "/events", icon: icons.CalendarDays },
     {
       text: "Community Guide",
       href: "/community-guide",
-      icon: "community-guide",
+      icon: icons.Scale,
     },
     {
       text: "Security Tips",
       href: "/security",
-      icon: "security",
+      icon: icons.ShieldKeyhole,
     },
     {
       text: "Job Board",
       href: "/job-board",
-      icon: "job-board",
+      icon: icons.BriefcaseBusiness,
     },
     {
       text: "Contact Us",
       href: "/contact-us",
-      icon: "contact",
+      icon: icons.Mail,
     },
   ],
 };
+
+const PAIcon = async (icon: string) => ({
+  type: "raw",
+  value: (
+    await readFile(`node_modules/pixelarticons/svg/${icon}.svg`)
+  ).toString(),
+});
 
 const inlineSvg = async (filename) => ({
   type: "raw",
@@ -58,7 +75,7 @@ export const render = async function ({
   title: string;
 }) {
   const ctaNavLink = navigation.main.filter(({ cta = false }) => cta);
-  const heroIconNames = [
+  const heroIcons = [
     "binary-sharp",
     "sunglasses-sharp",
     "zap",
@@ -79,7 +96,6 @@ export const render = async function ({
     "brackets-angle",
     "square-cursor-sharp",
   ];
-  const heroIcons = heroIconNames.map((item) => `pixel-art-icons/${item}`);
   const iconLines = [
     heroIcons.slice(0, 10),
     heroIcons.slice(10, 16),
@@ -135,7 +151,7 @@ export const render = async function ({
                 {await Promise.all(
                   iconLines.map(async (line) => (
                     <div class="icon-line">
-                      {await Promise.all(line.map(inlineSvg))}
+                      {await Promise.all(line.map(PAIcon))}
                     </div>
                   )),
                 )}
@@ -148,15 +164,16 @@ export const render = async function ({
       <footer class="site-footer">
         <div class="site-footer-inner">
           <ul role="list" class="footer-links">
-            {navigation.footer.map(({ slug, text }) => (
-              <li>
-                <a href={slug}>
-                  {/* @todo uncomment this once all the svg files have been added */}
-                  {/* {inlineSvg(`pixel-art-icons/${item.iconName}`)} */}
-                  {text}
-                </a>
-              </li>
-            ))}
+            {await Promise.all(
+              navigation.footer.map(async ({ href, text, icon }) => (
+                <li>
+                  <a href={href}>
+                    {icon}
+                    {text}
+                  </a>
+                </li>
+              )),
+            )}
           </ul>
         </div>
       </footer>
