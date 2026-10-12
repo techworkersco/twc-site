@@ -19,7 +19,7 @@ export const parseDatesAndSort = <T extends { date: string }>(
   });
   // todo(maximsmol): use Instant.compare when available
   res.sort(
-    (a, b) => a.timestamp.epochMilliseconds - b.timestamp.epochMilliseconds,
+    (a, b) => -(a.timestamp.epochMilliseconds - b.timestamp.epochMilliseconds),
   );
 
   return res;

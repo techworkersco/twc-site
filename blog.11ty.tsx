@@ -1,5 +1,6 @@
 import liquidjs from "liquidjs";
 
+import { Data } from "./types.ts";
 import icons from "./src/lucide.ts";
 
 import { parseDatesAndSort, renderTime } from "./src/collections.tsx";
@@ -24,16 +25,17 @@ const truncatewords = (x: string, words?: number) =>
     words,
   );
 
-export const render = async function ({ collections: { blog } }) {
+export const render = async ({ collections: { blog } }: Data) => {
   const posts = parseDatesAndSort(blog);
-  posts.reverse();
 
   return (
     <main class="cards">
       <header>
         <div>
           <h1>Blog</h1>
-          <div>Explore our {blog.length} blog posts</div>
+          <div>
+            Explore our <strong>{blog.length}</strong> blog posts.
+          </div>
         </div>
       </header>
       <ol>
