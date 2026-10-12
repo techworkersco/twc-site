@@ -6,19 +6,37 @@ permalink: /pdx/events/unemployed-workers-meeting/
 ---
 
 # Upcoming Events for Unemployed Tech Workers
-* [Unemployed Tech Worker Potluck](#unemployed-tech-worker-potluck), Oct 2nd at 4PM
+* Labor Rights Reading Group
 
 <hr>
 
-## Unemployed Tech Worker Potluck
+## Labor Rights Reading Group
+
+### About Event
+Join our reading group to learn about your rights in the workplace.
+
+### Location and Time
+* Beaverton City Library, 12375 SW Fifth St, Beaverton OR 97005, Cathy Stanton Conference Room.
+  * Monday, December 7, 2026, 2:30 – 3:30 PM.
+  * Monday, November 30, 2026, 2:30 – 3:30 PM.
+  * Monday, November 23, 2026, 2:30 – 3:30 PM.
+* Multnomah County Central Library, 801 SW 10th Ave, Portland, OR 97205, Room 1A.
+  * Monday, November 02, 2:30PM - 3:30PM.
+  * Monday, October 26, 2:30PM - 3:30PM.
+
+<hr>
+
+
+## (Past Event) Unemployed Tech Worker Potluck
 
 ### About Event
 Enjoy an end-of-summer potluck picnic with your fellow tech workers in Noble Woods Park. Bring something for yourself and something to share.
 
-### Time and Location
-Friday, Oct 2nd 2026, 4:00 PM.
+### Location and Time
 Noble Woods Park Shelter,
 475 SE Century Blvd, Hillsboro, OR 97124, Shelter 30.
+Friday, Oct 2nd 2026, 4:00 PM.
+
 
 <hr>
 
@@ -34,26 +52,12 @@ workplace environment. In the meeting, you'll
 
 Worker co-ops are democratic enterprises. Unemployed workers could use this structure to create new opportunities for employment by building local businesses with a pro-social bottom line. Building a robust worker co-op sector in PDX improves community resilience in these challenging times.
 
-### Time and Location
+### Location and Time
+Multnomah County Central Library,
+801 SW 10th Ave, Portland, OR 97205,
+Room 1A.
 Friday, Sep 18 2026, 4PM - 5:30PM PDT.
-Multnomah County Central Library,
-801 SW 10th Ave, Portland, OR 97205,
-Room 1A.
 <hr>
-
-## (Past Event) Coffee, Donuts, and Conversation with Tech Workers
-Hosted by the Portland Tech Workers Coalition.
-
-### About Event
-Share snacks and coffee with other local tech workers. Discuss the challenges of navigating tech industry layoffs, the underlying root causes of this instability, and the strategy and resources we can share to ensure sustainable and fair work in our future jobs.
-
-We'll be discussing [A Workers' Inquiry for Unemployed Tech Workers](https://pdx.techworkerscoalition.org/nextcloud/s/jgWRAgGqBrrMSS9).
-
-### Time and Location
-Wednesday, Sep 9th 2026, 1:30 PM to 3:30 PM PDT.
-Multnomah County Central Library,
-801 SW 10th Ave, Portland, OR 97205,
-Room 1A.
 
 
 ### Registration
