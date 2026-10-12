@@ -1,3 +1,5 @@
+/* todo(maximsmol): rename to main.css */
+
 /* montserrat-latin-wght-normal */
 @font-face {
   font-family: "Montserrat Variable";
@@ -38,7 +40,7 @@
     U+2215, U+FEFF, U+FFFD;
 }
 
-@layer reset, base, components, utils;
+@layer reset, base, main, utils;
 
 @layer reset {
   /* see https://www.joshwcomeau.com/css/custom-css-reset */
@@ -94,7 +96,7 @@
     block-size: auto;
   }
 
-  svg:where(:not([fill])) {
+  svg:not([fill]) {
     fill: currentColor;
   }
 
@@ -112,14 +114,6 @@
   h5,
   h6 {
     text-wrap: balance;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-weight: unset;
   }
 
   math,
@@ -152,18 +146,13 @@ note: minimum supported width 360px matching the smallest preset in Firefox,
 which is Galaxy S10/S10+ Android 11
 */
 
-@custom-media --breakpoint-sm (width >= 40rem) /* 640px */;
-@custom-media --breakpoint-md (width >= 48rem) /* 768px */;
-@custom-media --breakpoint-lg (width >= 64rem) /* 1024px */;
-@custom-media --breakpoint-xl (width >= 80rem) /* 1280px */;
-@custom-media --breakpoint-2xl (width >= 96rem) /* 1536px */;
+@custom-media --width-lte-s (width <= 600px);
+@custom-media --width-gte-s (width >= 600px);
+@custom-media --width-lte-m (width <= 800px);
 
 @layer base {
   :root {
-    --container-width: 1440px;
-
-    /* see https://utopia.fyi/  */
-    /* @todo what were the inputs in utopia for these? want to add comments with their px equivalents and the specific link to generate them */
+    /* https://utopia.fyi/type/calculator?c=360,18,1.2,1240,20,1.25,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12  */
     --step--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
     --step--1: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
     --step-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
@@ -173,6 +162,7 @@ which is Galaxy S10/S10+ Android 11
     --step-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
     --step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
 
+    /* https://utopia.fyi/space/calculator?c=360,18,1.2,1240,20,1.25,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12 */
     --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
     --space-2xs: clamp(0.5625rem, 0.5369rem + 0.1136vw, 0.625rem);
     --space-xs: clamp(0.875rem, 0.8494rem + 0.1136vw, 0.9375rem);
@@ -254,74 +244,28 @@ which is Galaxy S10/S10+ Android 11
     --color-teal-800: oklch(0.224 0.038 194.769);
     --color-teal-900: oklch(0.16 0.025 194.769);
 
-    --color-white: oklch(1 0 0);
-    --color-off-white: oklch(0.985 0 89.876);
-    --color-black: oklch(0 0 0);
-
-    --color-text: light-dark(var(--color-purple-900), var(--color-off-white));
-    --color-bg-primary: light-dark(var(--color-white), var(--color-purple-900));
+    --max-content-width: 1440px;
 
     --font-main: "Montserrat Variable", sans-serif;
-    --font-heading: Silkscreen, sans-serif;
     --font-monospace: "Roboto Mono Variable", monospace;
-  }
 
-  body {
+    --main-bg: var(--color-purple-900);
+
     font-size: var(--step-0);
     font-family: var(--font-main);
-    color: var(--color-text);
-    background-color: var(--color-bg-primary);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
 
-    > header,
-    > footer,
-    main {
-      width: 100%;
-
-      > * {
-        width: 100%;
-        max-width: var(--container-width);
-        padding-inline: var(--space-m);
-        margin-inline: auto;
-
-        @media (--breakpoint-md) {
-          padding-inline: var(--space-xl);
-        }
-      }
-    }
-
-    > header > * {
-      padding-inline: var(--space-s);
-
-      @media (--breakpoint-md) {
-        padding-inline: var(--space-l);
-      }
-    }
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    color: #fafafa;
+    background-color: var(--main-bg);
   }
 
   pre,
-  code,
-  .monospace {
+  code {
     font-family: var(--font-monospace);
   }
 
   h1,
   .h1 {
-    font-size: var(--step-4);
-
-    @media (--breakpoint-md) {
-      font-size: var(--step-5);
-    }
+    font-size: var(--step-5);
   }
 
   h2,
@@ -359,449 +303,546 @@ which is Galaxy S10/S10+ Android 11
   .h3,
   .h4,
   .h5 {
-    font-family: var(--font-heading);
+    font-family: "Silkscreen", sans-serif;
   }
 
-  a {
-    display: flex;
-    align-items: center;
-    gap: 1ch;
-    color: inherit;
-    text-decoration: none;
-    transition: 0.2s all ease-in; /* todo(maximsmol): maybe not? */
-    border-bottom: 2px solid transparent;
-    width: fit-content;
-    font-weight: 500;
+  .monospace {
     font-family: var(--font-monospace);
-
-    &:hover,
-    &:active,
-    &:focus-visible {
-      color: var(--color-lavender-200);
-      border-bottom-color: currentColor;
-    }
   }
-}
 
-@layer components {
-  .icon {
+  svg:where(.icon, .lucide) {
     display: inline-block;
+
     inline-size: 1em;
   }
 
-  a {
-    &:where(.framed) {
-      padding: var(--space-s);
+  .pushdown {
+    flex-grow: 1;
+  }
+
+  a.button {
+    padding: var(--space-2xs) var(--space-xs);
+
+    display: flex;
+    align-items: center;
+    gap: 1ch;
+
+    color: inherit;
+    text-decoration: none;
+
+    &.framed {
       border: 2px solid currentColor;
       box-shadow: currentColor -2px 4px;
 
       &:hover,
-      &:active,
       &:focus-visible {
-        color: var(--color-lavender-200);
-        box-shadow: none;
+        background-color: var(--color-lavender-600);
       }
     }
 
-    &:where(.underline) {
-      border-bottom-color: currentColor;
-
+    &:not(.framed) {
       &:hover,
-      &:active,
       &:focus-visible {
-        color: var(--color-bg-primary);
-        background-color: var(--color-text);
+        text-decoration: underline;
+
+        color: var(--color-lavender-200);
       }
     }
   }
 
-  .site-header-inner {
+  a.plain {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+
+      color: var(--color-lavender-200);
+    }
+  }
+
+  body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-block: var(--space-s-m);
-    gap: var(--space-s) var(--space-m-l);
-
-    @media (--breakpoint-lg) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: var(--space-s) var(--space-l);
-    }
-  }
-
-  .site-logo-link {
-    display: flex;
     align-items: center;
-    gap: var(--space-s);
-    font-size: var(--step-1);
-    line-height: 1.3;
-    font-family: var(--font-heading);
-    text-decoration: none;
-    color: currentColor;
 
-    :where(svg) {
-      height: 2lh;
-      fill: currentColor;
-    }
-
-    :where(span) {
-      flex-basis: 14rem;
-    }
-  }
-
-  .site-nav {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    flex: 1;
-    max-width: 100%;
-    gap: var(--space-m-l);
-
-    @media (--breakpoint-lg) {
-      justify-content: end;
-      gap: var(--space-l-xl);
-    }
-
-    @media (--breakpoint-xl) {
-      gap: var(--space-xl-2xl);
-    }
-
-    :where(ul) {
+    > header,
+    > footer {
       display: flex;
-      align-items: center;
-      overflow-x: auto;
-      list-style: none;
-      gap: var(--space-m-l);
-
-      @media (--breakpoint-lg) {
-        overflow-x: unset;
-        gap: var(--space-l-xl);
-      }
-
-      @media (--breakpoint-xl) {
-        gap: var(--space-xl-2xl);
-      }
-    }
-
-    :where(a.framed) {
-      padding: var(--space-3xs) var(--space-xs);
-    }
-  }
-
-  .hero-banner {
-    padding-inline: 0;
-    max-height: 250px;
-    overflow: clip;
-    max-width: unset;
-    margin-bottom: var(--space-xl);
-  }
-
-  .hero {
-    margin-bottom: var(--space-xl);
-
-    :where(.hero-container) {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-bottom: var(--space-l);
-      border-bottom: 2px solid var(--color-red-400);
-      gap: var(--space-m);
-      overflow: clip;
-    }
-
-    :where(h1) {
-      display: flex;
-      flex-wrap: wrap;
-      flex-shrink: 0;
-      gap: var(--space-s-m);
-      align-items: center;
-      line-height: 1;
-      width: fit-content;
-    }
-
-    :where(.box-icon) {
-      display: flex;
-      align-items: end;
       justify-content: center;
-      color: var(--color-red-400);
-      border: 2px solid currentColor;
-      box-shadow: currentColor -4px 6px;
-      height: 1.5lh;
-      width: 1.5lh;
 
-      :where(svg) {
-        height: 75%;
-        width: auto;
+      inline-size: 100%;
+
+      .contents {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        max-inline-size: 1440px;
+        inline-size: 100%;
       }
     }
 
-    :where(.heading-text) {
-      line-height: 1;
+    > footer {
+      padding: var(--space-xl) var(--space-s);
 
-      > :where(div) {
-        line-height: 1.5;
-        font-size: var(--step-2);
+      border-top: 4px solid var(--color-red-400);
 
-        @media (--breakpoint-md) {
-          font-size: var(--step-3);
+      /* todo(maximsmol): tall footers do not get a pretty background */
+      background-image: url("/assets/img/footer-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      > nav {
+        display: contents;
+
+        > ul {
+          list-style: none;
+          text-wrap: nowrap;
+
+          max-block-size: calc(2.5 * var(--space-xl));
+
+          flex-direction: column;
+
+          @media (--width-lte-m) {
+            max-block-size: unset;
+          }
         }
       }
     }
 
-    :where(.icon-lines) {
-      display: none;
+    > header {
+      padding: var(--space-s) var(--space-s-l);
 
-      @media (--breakpoint-md) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: var(--space-xs);
+      > div {
+        justify-content: flex-end;
+        align-items: center;
+
+        gap: var(--space-xs) var(--space-s-m);
+
+        @media (--width-lte-s) {
+          display: grid;
+          grid-template-columns: 1fr auto;
+        }
+
+        > .h1 {
+          margin-right: var(--space-s);
+
+          display: flex;
+          align-items: center;
+          gap: var(--space-s);
+
+          font-size: inherit;
+
+          > svg {
+            block-size: 2lh;
+          }
+        }
+
+        nav {
+          display: contents;
+
+          > ul {
+            display: contents;
+
+            list-style: none;
+            text-wrap: nowrap;
+
+            @media (--width-lte-s) {
+              li {
+                grid-column: span 2;
+
+                display: flex;
+                justify-content: flex-end;
+              }
+            }
+          }
+        }
+
+        @media (--width-lte-s) {
+          > nav {
+            display: none;
+          }
+        }
+
+        > details {
+          @media (--width-gte-s) {
+            display: none;
+          }
+
+          &[open] {
+            display: contents;
+          }
+
+          &::details-content {
+            content-visibility: visible;
+          }
+
+          > summary {
+            cursor: pointer;
+
+            list-style: none;
+
+            @media (--width-gte-s) {
+              display: none;
+            }
+
+            > svg {
+              inline-size: 2em;
+            }
+          }
+        }
+      }
+    }
+
+    > main {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+
+      > .banner {
+        max-inline-size: var(--max-content-width);
+
+        block-size: calc(min(30vw, 1.5 * var(--space-3xl)));
+        overflow: clip;
       }
 
-      :where(.icon-line) {
-        display: flex;
-        gap: var(--space-xs);
+      > .hero {
+        max-inline-size: var(--max-content-width);
 
-        /* First line. */
-        &:where(:first-child) {
-          /* Hide the 6th svg and all following it. */
-          :where(svg:nth-child(n + 6)) {
-            display: none;
+        overflow-x: clip;
+        padding: var(--space-xs);
+        padding-top: var(--space-l);
+
+        > h1 {
+          line-height: 1;
+
+          display: flex;
+          gap: var(--space-s);
+
+          font-size: min(9vw, var(--step-4));
+
+          @media (--width-lte-m) {
+            justify-content: center;
+          }
+
+          > svg {
+            color: var(--color-red-400);
+
+            inline-size: 2lh;
+
+            @media (--width-lte-s) {
+              display: none;
+            }
+          }
+
+          > .title {
+            display: flex;
+            flex-direction: column;
+
+            text-align: justify;
+            text-wrap: nowrap;
+
+            .h4 {
+              line-height: 1.5;
+
+              font-size: min(6vw, var(--step-2));
+            }
+          }
+
+          .red {
+            color: var(--color-red-400);
+          }
+
+          > .icon-lines {
+            flex-grow: 1;
+
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2xs);
+
+            @media (--width-lte-m) {
+              display: none;
+            }
+
+            div {
+              flex-grow: 1;
+              flex-basis: 0;
+              min-block-size: 0;
+
+              display: flex;
+              gap: var(--space-2xs);
+              justify-content: flex-end;
+
+              @media (max-width: 1200px) {
+                > svg:nth-child(10) {
+                  display: none;
+                }
+              }
+
+              @media (max-width: 1100px) {
+                > svg:nth-child(9) {
+                  display: none;
+                }
+              }
+
+              @media (max-width: 1050px) {
+                > svg:nth-child(8) {
+                  display: none;
+                }
+              }
+
+              @media (max-width: 1000px) {
+                > svg:nth-child(7) {
+                  display: none;
+                }
+
+                &:nth-child(2) > svg:nth-child(6) {
+                  display: none;
+                }
+
+                &:nth-child(3) > svg:nth-child(5) {
+                  display: none;
+                }
+              }
+
+              @media (max-width: 950px) {
+                > svg:nth-child(6) {
+                  display: none;
+                }
+
+                &:nth-child(2) > svg:nth-child(5) {
+                  display: none;
+                }
+
+                &:nth-child(3) > svg:nth-child(4) {
+                  display: none;
+                }
+              }
+
+              @media (max-width: 900px) {
+                > svg:nth-child(5) {
+                  display: none;
+                }
+
+                &:nth-child(2) > svg:nth-child(4) {
+                  display: none;
+                }
+
+                &:nth-child(3) > svg:nth-child(3) {
+                  display: none;
+                }
+              }
+
+              @media (max-width: 850px) {
+                > svg:nth-child(4) {
+                  display: none;
+                }
+
+                &:nth-child(2) > svg:nth-child(3) {
+                  display: none;
+                }
+
+                &:nth-child(3) > svg:nth-child(2) {
+                  display: none;
+                }
+              }
+            }
           }
         }
 
-        /* Second line. */
-        &:where(:nth-child(2)) {
-          /* Hide the 4th svg and all following it. */
-          :where(svg:nth-child(n + 4)) {
-            display: none;
-          }
-        }
-
-        /* Third line. */
-        &:where(:last-child) {
-          /* Hide the 2nd svg and all following it. */
-          :where(svg:nth-child(n + 3)) {
-            display: none;
-          }
-        }
-
-        :where(svg) {
+        > hr {
           color: var(--color-red-400);
-          min-width: var(--step-1);
-          width: var(--step-1);
-          height: var(--step-1);
 
-          /* Show all of the svgs on larger screens. */
-          @media (--breakpoint-lg) {
-            display: block;
+          margin: var(--space-l) 0;
+        }
+
+        > .hero-cards {
+          list-style: none;
+
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          gap: var(--space-s);
+
+          li {
+            padding: var(--space-s);
+            flex-basis: 330px;
+            flex-grow: 1;
+
+            border: 2px solid var(--color-red-400);
+            box-shadow: var(--color-red-400) -4px 6px;
+
+            > section {
+              > .h5 {
+                background-color: var(--color-red-400);
+                color: var(--main-bg);
+
+                text-transform: uppercase;
+                font-family: var(--font-main);
+              }
+
+              display: flex;
+              flex-direction: column;
+              gap: var(--space-s);
+            }
           }
+        }
+
+        > .cta {
+          padding: var(--space-l) 0;
+
+          display: flex;
+          gap: var(--space-s);
+
+          font-weight: bold;
         }
       }
     }
   }
 
   .cards {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: var(--space-s);
+    inline-size: 100%;
+    background-color: var(--color-lavender-800);
 
-    :where(li) {
-      padding: var(--space-s);
-      flex-basis: 330px;
-      flex-grow: 1;
-
-      border: 2px solid var(--color-red-400);
-      box-shadow: var(--color-red-400) -4px 6px;
-
-      :where(section) {
-        :where(.h5) {
-          background-color: var(--color-red-400);
-          color: var(--color-bg-primary);
-
-          text-transform: uppercase;
-          font-family: var(--font-main);
-          font-weight: bold;
-        }
-
-        display: flex;
-        flex-direction: column;
-        gap: var(--space-s);
-      }
-    }
-  }
-
-  .cta {
-    padding: var(--space-xl) 0;
-    display: flex;
-    align-items: center;
-    gap: var(--space-l);
-  }
-
-  .events {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-lavender-800);
-    padding-block: var(--space-xl);
 
-    :where(header) {
+    align-items: center;
+
+    > header {
+      inline-size: 100%;
+      max-inline-size: var(--max-content-width);
+
       display: flex;
-      align-items: center;
       justify-content: space-between;
 
-      padding-bottom: var(--space-l);
+      padding: var(--space-l) 0;
     }
 
-    :where(ol) {
+    > ol {
+      inline-size: 100%;
+      max-inline-size: var(--max-content-width);
+
       display: flex;
       flex-direction: column;
       gap: var(--space-s);
 
       list-style: none;
 
-      :where(li) {
+      > li {
         display: flex;
 
-        :where(article) {
+        > article {
+          flex-grow: 1;
+
           display: flex;
-          width: 100%;
+
+          @media (--width-lte-s) {
+            display: flex;
+          }
 
           --border: 2px solid var(--color-lavender-400);
 
-          > :where(a) {
-            width: var(--space-3xl);
-            height: 100%;
-            border: unset;
+          > a {
+            inline-size: var(--space-2xl);
+            aspect-ratio: 1;
+            flex-shrink: 0;
 
-            > :where(.icon) {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              height: 100%;
-              width: 100%;
+            &.large {
+              inline-size: var(--space-3xl);
+            }
 
-              background-color: var(--color-lavender-400);
-              color: var(--color-lavender-800);
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
+            background-color: var(--color-lavender-400);
+            color: var(--color-lavender-800);
+
+            border: var(--border);
+            border-right: none;
+
+            @media (--width-lte-s) {
+              display: none;
+            }
+
+            > svg {
+              inline-size: 1.5em;
+            }
+
+            > .thumbnail {
+              inline-size: 100%;
+              max-block-size: 100%;
               aspect-ratio: 1;
-
-              border: var(--border);
-              border-right: none;
 
               background-size: cover;
               background-position-x: center;
-
-              :where(svg) {
-                inline-size: 1.5em;
-              }
             }
           }
 
-          :where(.info) {
-            display: flex;
+          > .info {
             flex-grow: 1;
+
+            display: flex;
             justify-content: space-between;
             align-items: center;
 
             padding: var(--space-xs);
-            gap: var(--space-s);
 
             border: var(--border);
-            font-family: var(--font-monospace);
-            font-weight: 300;
 
-            :where(h3) {
-              font-size: inherit;
+            time {
+              font-family: var(--font-monospace);
 
-              :where(a) {
-                font-weight: 700;
-              }
-            }
-
-            :where(time) {
-              font-size: var(--step--1);
-
-              :where(long) {
+              > .short {
                 display: none;
+              }
 
-                @media (--breakpoint-md) {
+              @media (--width-lte-s) {
+                > .short {
                   display: unset;
                 }
-              }
 
-              :where(.short) {
-                @media (--breakpoint-md) {
+                > .long {
                   display: none;
                 }
               }
             }
 
-            :where(.location) {
+            > .location {
               display: flex;
               gap: var(--space-xs);
 
-              font-weight: 500;
+              font-weight: bold;
 
-              :where(.icon) {
-                width: var(--step-2);
-                height: var(--step-2);
+              > .icon,
+              > .lucide {
+                font-size: 150%;
               }
+            }
+
+            @media (--width-lte-m) {
+              flex-direction: column;
+              align-items: flex-start;
+
+              gap: var(--space-s);
             }
           }
         }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-family: inherit;
+          font-size: inherit;
+        }
       }
     }
-  }
-
-  .site-footer {
-    background-image: url("/assets/img/footer-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: 4px solid var(--color-red-400);
-  }
-
-  .site-footer-inner {
-    padding-block: var(--space-m);
-
-    @media (--breakpoint-md) {
-      padding-block: var(--space-xl);
-    }
-  }
-
-  .footer-links {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: var(--space-s-m);
-    font-weight: 700;
-    font-family: var(--font-monospace);
-    font-size: var(--step--1);
-
-    @media (--breakpoint-sm) {
-      align-items: start;
-      align-content: space-between;
-      max-height: calc(2lh + (2 * var(--space-s-m)));
-    }
-
-    @media (--breakpoint-lg) {
-      max-height: calc(3lh + (3 * var(--space-s-m)));
-    }
-
-    :where(li) {
-      width: fit-content;
-    }
-  }
-}
-
-@layer utils {
-  .red {
-    color: var(--color-red-400);
   }
 }

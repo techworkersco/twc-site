@@ -155,9 +155,6 @@ export default async (cfg) => {
     return dt.setZone(timezones[0]).toFormat("dd");
   });
 
-  cfg.addFilter("filter_tags", function (x) {
-    return x;
-  }); // todo(maximsmol): fix in sources
   cfg.addLiquidTag("link", () => ({
     // todo(maximsmol): rewrite in sources and remove
     parse: function (tagToken) {
@@ -294,7 +291,6 @@ export default async (cfg) => {
     process.env.CONTEXT === "production" ? "production" : "development",
   );
   cfg.addGlobalData("eleventyComputed.site", () => (data) => ({
-    ...data.collections, // todo(maximsmol): fix in source code
     ...site,
     time: new Date(),
     data: {

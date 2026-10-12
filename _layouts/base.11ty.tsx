@@ -62,21 +62,42 @@ export const render = async ({
       { type: "doctype" },
       { type: "text", value: "\n" },
       <html lang="en-US">
-        {/* see https://rviscomi.github.io/capo.js/ */}
+        {/* see https://rviscomi.github.io/capo.js/ for order */}
         <head>
           {/* todo(maximsmol): make sure we set the CSP header */}
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
 
           <title>
-            {typeof title !== undefined && title
-              ? `${title} | ${site.title}`
-              : site.title}
+            {title != null ? `${title} | ${site.title}` : site.title}
           </title>
-          {/* The page supports both dark and light color schemes, and the page author prefers dark. */}
+
+          <style>{await renderCss()}</style>
+
+          {/* todo(maximsmol): theme-color */}
+          {/*<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: light)" />
+          <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />*/}
           <meta name="color-scheme" content="dark light" />
+
           {/* todo(maximsmol): make sure all blog and event pages have non-default descriptions */}
           <meta name="description" content={description} />
+
+          {/* todo(maximsmol): canonical? */}
+
+          {/* todo(maximsmol): check favicon.ico */}
+          {/* todo(maximsmol): svg favicon */}
+          {/* todo(maximsmol): svg favicon dark mode */}
+          {/* <link rel="icon" href="/favicon.svg" type="image/svg+xml" /> */}
+          {/* todo(maximsmol): apple touch icon? */}
+
+          {/* todo(maximsmol): Atom feeds */}
+
+          {/* todo(maximsmol): OpenGraph */}
+          {/* <meta name="twitter:card" content="summary_large_image"> */}
+          {/* todo(maximsmol): JSON-LD */}
+          {/* todo(maximsmol): WebMention? */}
+
+          {/* todo(maximsmol): stuff bewow is from the old website, integrate/remove/audit */}
           <meta
             http-equiv="Content-Security-Policy"
             content={Object.entries({
@@ -117,7 +138,6 @@ export const render = async ({
               .map(([k, v]) => `${k} ${v.join(" ")}`)
               .join(";\n")}
           />
-          <style>{await renderCss()}</style>
           <link
             rel="alternate"
             type="application/atom+xml"
@@ -140,25 +160,6 @@ export const render = async ({
             type="image/x-icon"
           />
           <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
-
-          {/* todo(maximsmol): theme-color */}
-          {/* <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" /> */}
-          {/* <meta name="theme-color" content="#090035" media="(prefers-color-scheme: dark)" /> */}
-
-          {/* todo(maximsmol): canonical? */}
-
-          {/* todo(maximsmol): check favicon.ico */}
-          {/* todo(maximsmol): svg favicon */}
-          {/* todo(maximsmol): svg favicon dark mode */}
-          {/* <link rel="icon" href="/favicon.svg" type="image/svg+xml" /> */}
-          {/* todo(maximsmol): apple touch icon? */}
-
-          {/* todo(maximsmol): Atom feeds */}
-
-          {/* todo(maximsmol): OpenGraph */}
-          {/* <meta name="twitter:card" content="summary_large_image"> */}
-          {/* todo(maximsmol): JSON-LD */}
-          {/* todo(maximsmol): WebMention? */}
         </head>
         <body>{{ type: "raw", value: content }}</body>
       </html>,

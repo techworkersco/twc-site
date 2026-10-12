@@ -1,23 +1,41 @@
 import { inspect } from "node:util";
 
 import { Data } from "./types.ts";
-
-export const data = {
-  layout: "default.11ty.tsx",
-  pageTitle: (
-    <>
-      Worker <span class="red">Power</span>
-      <div>In the Tech Industry</div>
-    </>
-  ),
-  title: "Home",
-};
+import { inlineSvg, PAIcon } from "./src/icons.ts";
+import icons from "./src/lucide.ts";
 
 export const render = async ({
   collections: { events: globalEvents },
   berlin_events,
   nl_events,
 }: Data) => {
+  const heroIcons = [
+    "binary-sharp",
+    "sunglasses-sharp",
+    "zap",
+    "robot",
+    "heart",
+    "cpu-sharp",
+    "fire",
+    "thumbs-up-sharp",
+    "warning-diamond",
+    "rss-square-sharp",
+    "zoom-in",
+    "tv-sharp",
+    "close",
+    "directions",
+    "thumbs-down-sharp",
+    "bug",
+    "braces-content-sharp",
+    "brackets-angle",
+    "square-cursor-sharp",
+  ];
+  const iconLines = [
+    heroIcons.slice(0, 10),
+    heroIcons.slice(10, 16),
+    heroIcons.slice(16, 20),
+  ];
+
   const events = [
     ...globalEvents.map(({ data, url }) => ({ ...data, url })),
     ...(berlin_events ?? []),
@@ -51,37 +69,34 @@ export const render = async ({
     (x) => x.timestamp.epochNanoseconds < renderTs.epochNanoseconds,
   );
 
-  const eventsExample = [
-    {
-      title: "Bay Area: Social Meeting",
-      time: "2026-02-26T18:00-08:00[America/Los_Angeles]",
-      location: "Bay Area",
-    },
-    {
-      title: "TWC Book Club: Empire of AI",
-      time: "2026-03-01T21:00-05:00[America/New_York]",
-      location: "Online",
-    },
-    {
-      title: "Netherlands: Organizing Meetup",
-      time: "2026-03-02T17:00+01:00[Europe/Amsterdam]",
-      location: "Netherlands",
-    },
-    {
-      title: "Portland: General Meeting",
-      time: "2026-03-14T15:00-07:00[America/Los_Angeles]",
-      location: "Portland",
-    },
-  ];
-
-  {
-    /* todo(maximsmol): load icons by name instead of copy-paste */
-  }
   return (
-    <>
-      <div class="card-columns">
+    <main>
+      <div class="banner">
+        {/* todo(maximsmol): webp everything */}
+        <img src="/assets/img/hero-banner.jpg" alt="" />
+      </div>
+      <article class="hero">
+        <h1>
+          {await inlineSvg("chip")}
+          <div class="title">
+            <div>
+              Worker <span class="red">Power</span>
+            </div>
+            <div class="h4">In the Tech Industry</div>
+          </div>
+          <div class="icon-lines red">
+            {await Promise.all(
+              iconLines.map(async (line) => (
+                <div class="icon-line">
+                  {await Promise.all(line.map(PAIcon))}
+                </div>
+              )),
+            )}
+          </div>
+        </h1>
+        <hr />
         {/* todo(maximsmol): smarty-pants this */}
-        <ul role="list" class="cards">
+        <ul class="hero-cards">
           <li>
             <section>
               <h3 class="h5">Vision & Values:</h3>
@@ -114,47 +129,20 @@ export const render = async ({
           </li>
         </ul>
         <section class="cta">
-          <a href="/chapters" class="underline monospace">
-            Find a Local Chapter
+          <a href="/chapters" class="button monospace">
+            <u>Find a Local Chapter</u>
           </a>
-          {/* lucide */}
-          <a href="/get-involved" class="framed">
+          <a href="/get-involved" class="button framed">
             Get Involved
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon"
-              aria-hidden="true"
-            >
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
+            {icons.ArrowRight}
           </a>
         </section>
-      </div>
-      <article class="events">
+      </article>
+      <article class="cards">
         <header>
           <h2 class="h3">Upcoming Events</h2>
           <a href="/events" class="button">
-            View More{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon"
-            >
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
+            View More {icons.ArrowRight}
           </a>
         </header>
         <ol>
@@ -171,39 +159,21 @@ export const render = async ({
                 <li>
                   <article>
                     <a href={url}>
-                      <div
-                        class="icon"
-                        style={`background-image: url(${image})`}
-                      >
-                        {image == null && (
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            aria-hidden="true"
-                          >
-                            <path d="M8 2v3" />
-                            <path d="M16 2v3" />
-                            <rect x="3" y="3" width="18" height="18" rx="2" />
-                            <path d="M3 9h18" />
-                            <path d="M8 13h.01" />
-                            <path d="M12 13h.01" />
-                            <path d="M16 13h.01" />
-                            <path d="M8 17h.01" />
-                            <path d="M12 17h.01" />
-                            <path d="M16 17h.01" />
-                          </svg>
-                        )}
-                      </div>
+                      {image != null ? (
+                        <div
+                          class="thumbnail"
+                          style={`background-image: url(${image})`}
+                        />
+                      ) : (
+                        icons.CalendarDays
+                      )}
                     </a>
                     <div class="info">
                       <div>
                         <h3>
-                          <a href={url}>{title}</a>
+                          <a href={url} class="plain">
+                            {title}
+                          </a>
                         </h3>
                         {tzs.map((tz) => {
                           const time = timestamp.toZonedDateTimeISO(tz);
@@ -245,19 +215,7 @@ export const render = async ({
                       </div>
                       <span class="location">
                         <span>{locations[0]}</span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="icon"
-                        >
-                          <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
-                          <circle cx="12" cy="10" r="3" />
-                        </svg>
+                        {icons.MapPin}
                       </span>
                     </div>
                   </article>
@@ -279,7 +237,7 @@ export const render = async ({
         <ol>
           <li>
             <article>
-              <img src="assets/img/newspaper.svg" alt="" />
+              {icons.Newspaper}
               <h3>
                 Despite Crackdown on Activism, Tech Employees Are Still Picking
                 Fights
@@ -288,7 +246,7 @@ export const render = async ({
               <p>New York Times</p>
             </article>
             <article>
-              <img src="assets/img/newspaper.svg" alt="" />
+              {icons.Newspaper}
               <h3>
                 "Grand Theft, Not Wage Theft", Rockstar Protest in NYC Draws
                 Tech Workers, Multiple Unions
@@ -299,6 +257,6 @@ export const render = async ({
           </li>
         </ol>
       </article>
-    </>
+    </main>
   );
 };

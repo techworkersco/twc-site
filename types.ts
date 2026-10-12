@@ -78,5 +78,14 @@ export type Data = {
 
   collections: {
     events: { data: Event; url: string }[];
+    blog: {
+      data: {
+        title: string;
+        date: string;
+        image?: { file: string };
+      };
+      url: string;
+      content: string;
+    }[];
   };
 };

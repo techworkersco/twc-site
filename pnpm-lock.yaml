@@ -84,6 +84,9 @@ importers:
       lightningcss:
         specifier: ^1.31.1
         version: 1.31.1
+      liquidjs:
+        specifier: 10.25.0
+        version: 10.25.0(patch_hash=f4f01a1fe49f46a48ddcb9a7585cd7f8dfca5cc92f5443605740e390f75ad26a)
       lucide-static:
         specifier: ^1.55.0
         version: 1.55.0
