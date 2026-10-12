@@ -4,6 +4,8 @@ import { Data } from "./types.ts";
 import { inlineSvg, PAIcon } from "./src/icons.ts";
 import icons from "./src/lucide.ts";
 
+import { parseDatesAndSort, renderTime } from "./src/collections.tsx";
+
 export const render = async ({
   collections: { events: globalEvents },
   berlin_events,
@@ -36,30 +38,11 @@ export const render = async ({
     heroIcons.slice(16, 20),
   ];
 
-  const events = [
+  const events = parseDatesAndSort([
     ...globalEvents.map(({ data, url }) => ({ ...data, url })),
     ...(berlin_events ?? []),
     ...(nl_events ?? []),
-  ].map((x) => {
-    let date: Date | undefined;
-    try {
-      // Temporal.Instant is very picky about whitespace
-      date = new Date(x.date);
-      return {
-        ...x,
-        timestamp: Temporal.Instant.from(date.toISOString()),
-      };
-    } catch (err) {
-      throw new Error(
-        `Failed to parse event timestamp: ${inspect(x.date)} (${date?.toISOString()})`,
-        { cause: err },
-      );
-    }
-  });
-  // todo(maximsmol): use Instant.compare when available
-  events.sort(
-    (a, b) => a.timestamp.epochMilliseconds - b.timestamp.epochMilliseconds,
-  );
+  ]);
 
   const renderTs = Temporal.Now.instant();
   const eventsFuture = events.filter(
@@ -132,7 +115,7 @@ export const render = async ({
           <a href="/chapters" class="button monospace">
             <u>Find a Local Chapter</u>
           </a>
-          <a href="/get-involved" class="button framed">
+          <a href="/subscribe" class="button framed">
             Get Involved
             {icons.ArrowRight}
           </a>
@@ -175,43 +158,7 @@ export const render = async ({
                             {title}
                           </a>
                         </h3>
-                        {tzs.map((tz) => {
-                          const time = timestamp.toZonedDateTimeISO(tz);
-
-                          return (
-                            <time
-                              // todo(maximsmol): add IXDTF suffix when supported
-                              datetime={timestamp.toString({
-                                timeZone: time.timeZoneId,
-                              })}
-                            >
-                              <span class="short">
-                                {new Intl.DateTimeFormat("en-US", {
-                                  timeZone: time.timeZoneId,
-                                  // We want `dateStyle: "short"` + `timeStyle: "short"` but with a time zone
-                                  year: "2-digit",
-                                  month: "numeric",
-                                  day: "numeric",
-                                  hour: "numeric",
-                                  minute: "2-digit",
-                                  timeZoneName: "short",
-                                }).format(timestamp)}
-                              </span>
-                              <span class="long">
-                                {new Intl.DateTimeFormat("en-US", {
-                                  timeZone: time.timeZoneId,
-                                  // We want `dateStyle: "long"`` + `timeStyle: "long"` but no seconds
-                                  year: "numeric",
-                                  month: "long",
-                                  day: "numeric",
-                                  hour: "numeric",
-                                  minute: "2-digit",
-                                  timeZoneName: "short",
-                                }).format(timestamp)}
-                              </span>
-                            </time>
-                          );
-                        })}
+                        {tzs.map((tz) => renderTime(timestamp, tz))}
                       </div>
                       <span class="location">
                         <span>{locations[0]}</span>

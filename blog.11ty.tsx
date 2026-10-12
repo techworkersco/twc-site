@@ -2,9 +2,14 @@ import liquidjs from "liquidjs";
 
 import icons from "./src/lucide.ts";
 
+import { parseDatesAndSort, renderTime } from "./src/collections.tsx";
+
 export const data = {
   title: "Blog",
 };
+
+const imageTagRe = /<\s*img\s+(?:[^>]+\s+)?src\s*=\s*"([^"]*)"[^>]*>/is;
+const firstImageIn = (x: string) => imageTagRe.exec(x)?.[1];
 
 const strip_html = (x: string) =>
   liquidjs.filters.strip_html.call(
@@ -20,26 +25,8 @@ const truncatewords = (x: string, words?: number) =>
   );
 
 export const render = async function ({ collections: { blog } }) {
-  const posts = blog.map((x) => {
-    let date: Date | undefined;
-    try {
-      // Temporal.Instant is very picky about whitespace
-      date = new Date(x.date);
-      return {
-        ...x,
-        timestamp: Temporal.Instant.from(date.toISOString()),
-      };
-    } catch (err) {
-      throw new Error(
-        `Failed to parse blog timestamp: ${inspect(x.date)} (${date?.toISOString()})`,
-        { cause: err },
-      );
-    }
-  });
-  // todo(maximsmol): use Instant.compare when available
-  posts.sort(
-    (a, b) => -(a.timestamp.epochMilliseconds - b.timestamp.epochMilliseconds),
-  );
+  const posts = parseDatesAndSort(blog);
+  posts.reverse();
 
   return (
     <main class="cards">
@@ -50,36 +37,43 @@ export const render = async function ({ collections: { blog } }) {
         </div>
       </header>
       <ol>
-        {posts.map(({ data: { title, image }, content, url }) => (
-          <li>
-            <article>
-              <a href={url} class="large">
-                {image != null ? (
-                  <div
-                    class="thumbnail"
-                    style={`background-image: url(${image.file})`}
-                  />
-                ) : (
-                  icons.CalendarDays
-                )}
-              </a>
-              <div class="info">
-                <div>
-                  <h2>
-                    <a href={url} class="plain">
-                      {title}
-                    </a>
-                  </h2>
-                  <p class="detail">
-                    {/* todo(maximsmol): use `page.excerpt`? */}
-                    {/* todo(maximsmol): do not rely on liquid */}
-                    {truncatewords(strip_html(content), 25)}
-                  </p>
+        {posts.map(({ data: { title, image }, timestamp, content, url }) => {
+          const resolvedImage = image?.file ?? firstImageIn(content);
+
+          return (
+            <li>
+              <article>
+                <a href={url} class="large">
+                  {resolvedImage != null ? (
+                    <div
+                      class="thumbnail"
+                      style={`background-image: url(${resolvedImage})`}
+                    />
+                  ) : (
+                    icons.Newspaper
+                  )}
+                </a>
+                <div class="info">
+                  <div>
+                    <h2>
+                      <a href={url} class="plain">
+                        {title}
+                      </a>
+                    </h2>
+                    <p class="detail">
+                      {/* todo(maximsmol): use `page.excerpt`? */}
+                      {/* todo(maximsmol): do not rely on liquid */}
+                      {truncatewords(strip_html(content), 25)}
+                    </p>
+                    <div class="tiny">
+                      {renderTime(timestamp, { dateOnly: true })}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </article>
-          </li>
-        ))}
+              </article>
+            </li>
+          );
+        })}
       </ol>
     </main>
   );

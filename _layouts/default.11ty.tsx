@@ -51,7 +51,7 @@ export const render = async function ({
   const nav = (
     <nav class="monospace">
       <ul>
-        <li>
+        {/*<li>
           <a href="/about" class="button">
             About Us
           </a>
@@ -74,6 +74,32 @@ export const render = async function ({
         <li>
           <a href="/donate" class="button framed">
             Donate
+          </a>
+        </li>*/}
+
+        <li>
+          <a href="/blog" class="button">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="/events" class="button">
+            Events
+          </a>
+        </li>
+        <li>
+          <a href="/chapters" class="button">
+            Chapters
+          </a>
+        </li>
+        <li>
+          <a href="/press" class="button">
+            Press
+          </a>
+        </li>
+        <li>
+          <a href="/subscribe" class="button framed">
+            Join
           </a>
         </li>
       </ul>
