@@ -72,6 +72,12 @@ export type BerlinEvent = EventCommon & {
 export type Data = {
   chapters: Chapter[];
   workplaces: Workplace[];
+  press: {
+    media: string;
+    title: string;
+    url: string;
+    date: string;
+  }[];
 
   berlin_events?: BerlinEvent[];
   nl_events?: undefined; // todo(maximsmol)

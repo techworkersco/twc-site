@@ -7,6 +7,7 @@ import icons from "./src/lucide.ts";
 import { parseDatesAndSort, renderTime } from "./src/collections.tsx";
 
 export const render = async ({
+  press,
   collections: { events: globalEvents },
   berlin_events,
   nl_events,
@@ -51,6 +52,8 @@ export const render = async ({
   const eventsPast = events.filter(
     (x) => x.timestamp.epochNanoseconds < renderTs.epochNanoseconds,
   );
+
+  press = parseDatesAndSort(press).slice(0, 3);
 
   return (
     <main>
@@ -129,7 +132,6 @@ export const render = async ({
           </a>
         </header>
         <ol>
-          {/* todo(maximsmol): title fails to wrap if it doesn't fit */}
           {eventsFuture.map((data) => {
             const { title, timestamp, locations, url, image } = data;
             try {
@@ -176,32 +178,37 @@ export const render = async ({
           })}
         </ol>
       </article>
-      <article>
-        <h2>
-          TWC in the Press
-          <a href="/press">View More</a>
-        </h2>
+      <article class="cards press">
+        <header>
+          <h2 class="h3">TWC in the Press</h2>
+          <a href="/press" class="button">
+            View More
+            {icons.ArrowRight}
+          </a>
+        </header>
+        <hr />
         <ol>
-          <li>
-            <article>
-              {icons.Newspaper}
-              <h3>
-                Despite Crackdown on Activism, Tech Employees Are Still Picking
-                Fights
-              </h3>
-              <time datetime="2025-12-26">26 December 2025</time>
-              <p>New York Times</p>
-            </article>
-            <article>
-              {icons.Newspaper}
-              <h3>
-                "Grand Theft, Not Wage Theft", Rockstar Protest in NYC Draws
-                Tech Workers, Multiple Unions
-              </h3>
-              <time datetime="2025-12-08">08 December 2025</time>
-              <p>Aftermath</p>
-            </article>
-          </li>
+          {press.map(({ title, timestamp, media, url }) => (
+            <li>
+              <article>
+                <a href={url}>{icons.Newspaper}</a>
+                <div class="info">
+                  <div>
+                    <h3>
+                      <a href={url} class="plain">
+                        {title}
+                      </a>
+                    </h3>
+                    {renderTime(timestamp, { dateOnly: true })}
+                  </div>
+                  <a href={url} class="location plain">
+                    <u>{media}</u>
+                    {icons.Link2}
+                  </a>
+                </div>
+              </article>
+            </li>
+          ))}
         </ol>
       </article>
     </main>
