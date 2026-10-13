@@ -798,7 +798,7 @@ which is Galaxy S10/S10+ Android 11
       --bg-color: var(--color-lavender-600);
       --accent-color: var(--color-lavender-100);
 
-      > ol > li > article {
+      ol > li > section {
         --border: none;
 
         > a {
@@ -812,7 +812,7 @@ which is Galaxy S10/S10+ Android 11
       }
     }
 
-    > header {
+    header {
       inline-size: 100%;
       max-inline-size: var(--max-content-width);
 
@@ -830,7 +830,11 @@ which is Galaxy S10/S10+ Android 11
       color: var(--accent-color);
     }
 
-    > ol {
+    > details {
+      inline-size: 100%;
+    }
+
+    ol {
       inline-size: 100%;
       max-inline-size: var(--max-content-width);
 
@@ -845,7 +849,7 @@ which is Galaxy S10/S10+ Android 11
       > li {
         display: flex;
 
-        > article {
+        > section {
           flex-grow: 1;
 
           display: flex;
@@ -952,6 +956,34 @@ which is Galaxy S10/S10+ Android 11
           font-family: inherit;
           font-size: inherit;
         }
+      }
+    }
+  }
+
+  .events {
+    > header,
+    > .past > header {
+      inline-size: 100%;
+      max-inline-size: var(--max-content-width);
+      padding: var(--space-l) var(--space-m);
+    }
+
+    > .past {
+      inline-size: 100%;
+
+      background-color: var(--color-lavender-800);
+
+      summary {
+        list-style: none;
+
+        cursor: pointer;
+      }
+
+      details[open] .summary-closed {
+        display: none;
+      }
+      details:not([open]) .summary-open {
+        display: none;
       }
     }
   }

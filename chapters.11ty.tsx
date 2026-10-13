@@ -199,7 +199,7 @@ export const render = ({ chapters }: Data) => {
 
     return (
       <li class="card">
-        <article class="content" aria-labelledby={titleId}>
+        <section class="content" aria-labelledby={titleId}>
           <a href={x.url ?? x.twitter ?? x.facebook} class="header">
             <section>
               <h4 id={titleId}>
@@ -221,7 +221,9 @@ export const render = ({ chapters }: Data) => {
             <div class="image">
               <img
                 class={
-                  x.image?.endsWith(".svg") ?? true ? "twc-svg-logo" : undefined
+                  (x.image?.endsWith(".svg") ?? true)
+                    ? "twc-svg-logo"
+                    : undefined
                 }
                 src={x.image ?? "/assets/chapters/generic.svg"}
               />
@@ -230,7 +232,7 @@ export const render = ({ chapters }: Data) => {
           <ul class="quick-links" aria-label="Social media links">
             {links}
           </ul>
-        </article>
+        </section>
       </li>
     );
   };
@@ -242,25 +244,25 @@ export const render = ({ chapters }: Data) => {
 
     return (
       <div class="region-group">
-        <article aria-labelledby={naId}>
+        <section aria-labelledby={naId}>
           <h3 id={naId}>North America</h3>
           <ul aria-label="Chapters" class="list">
             {xs.north_america.map(renderChapter)}
           </ul>
-        </article>
-        <article aria-labelledby={euId}>
+        </section>
+        <section aria-labelledby={euId}>
           <h3 id={euId}>Europe</h3>
           <ul aria-label="Chapters" class="list">
             {xs.europe.map(renderChapter)}
           </ul>
-        </article>
+        </section>
         {xs.asia.length > 0 && (
-          <article aria-labelledby={asiaId}>
+          <section aria-labelledby={asiaId}>
             <h3 id={asiaId}>Asia</h3>
             <ul aria-label="Chapters" class="list">
               {xs.asia.map(renderChapter)}
             </ul>
-          </article>
+          </section>
         )}
       </div>
     );
@@ -274,15 +276,15 @@ export const render = ({ chapters }: Data) => {
       {/* todo(maximsmol): add an info blurb and/or an image for each chapter */}
       {/* todo(maximsmol): add more social links */}
 
-      <article aria-labelledby={activeId}>
+      <section aria-labelledby={activeId}>
         <h2 id={activeId}>Active chapters</h2>
         {renderLocalities(active)}
-      </article>
+      </section>
 
-      <article aria-labelledby={inactiveId}>
+      <section aria-labelledby={inactiveId}>
         <h2 id={inactiveId}>Inactive and former chapters</h2>
         {renderLocalities(inactive)}
-      </article>
+      </section>
     </div>
   );
 };

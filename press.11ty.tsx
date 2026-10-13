@@ -27,7 +27,7 @@ export const render = async ({ press, berlin_press }: Data) => {
         {/* // todo(maximsmol): display bylines */}
         {press.map(({ title, media, timestamp, url }) => (
           <li>
-            <article>
+            <section>
               <a href={url}>{icons.Newspaper}</a>
               <div class="info">
                 <div>
@@ -36,14 +36,14 @@ export const render = async ({ press, berlin_press }: Data) => {
                       {title}
                     </a>
                   </h2>
-                  {renderTime(timestamp, { dateOnly: true })}
+                  {renderTime(timestamp, { tz: "UTC", dateOnly: true })}
                 </div>
                 <a href={url} class="location plain">
                   <u>{media}</u>
                   {icons.Link2}
                 </a>
               </div>
-            </article>
+            </section>
           </li>
         ))}
       </ol>

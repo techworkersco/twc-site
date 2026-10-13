@@ -44,7 +44,7 @@ export const render = async ({ collections: { blog } }: Data) => {
 
           return (
             <li>
-              <article>
+              <section>
                 <a href={url} class="large">
                   {resolvedImage != null ? (
                     // todo(maximsmol): add alt text
@@ -73,7 +73,7 @@ export const render = async ({ collections: { blog } }: Data) => {
                     </div>
                   </div>
                 </div>
-              </article>
+              </section>
             </li>
           );
         })}

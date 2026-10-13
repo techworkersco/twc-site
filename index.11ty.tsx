@@ -61,7 +61,7 @@ export const render = async ({
         {/* todo(maximsmol): webp everything */}
         <img src="/assets/img/hero-banner.jpg" alt="" />
       </div>
-      <article class="hero">
+      <section class="hero">
         <h1>
           {await inlineSvg("chip")}
           <div class="title">
@@ -123,8 +123,8 @@ export const render = async ({
             {icons.ArrowRight}
           </a>
         </section>
-      </article>
-      <article class="cards">
+      </section>
+      <section class="cards">
         <header>
           <h2 class="h3">Upcoming Events</h2>
           <a href="/events" class="button">
@@ -142,7 +142,7 @@ export const render = async ({
 
               return (
                 <li>
-                  <article>
+                  <section>
                     <a href={url}>
                       {image != null ? (
                         <div
@@ -167,7 +167,7 @@ export const render = async ({
                         {icons.MapPin}
                       </span>
                     </div>
-                  </article>
+                  </section>
                 </li>
               );
             } catch (err) {
@@ -177,8 +177,8 @@ export const render = async ({
             }
           })}
         </ol>
-      </article>
-      <article class="cards press">
+      </section>
+      <section class="cards press">
         <header>
           <h2 class="h3">TWC in the Press</h2>
           <a href="/press" class="button">
@@ -190,7 +190,7 @@ export const render = async ({
         <ol>
           {press.map(({ title, timestamp, media, url }) => (
             <li>
-              <article>
+              <section>
                 <a href={url}>{icons.Newspaper}</a>
                 <div class="info">
                   <div>
@@ -199,18 +199,18 @@ export const render = async ({
                         {title}
                       </a>
                     </h3>
-                    {renderTime(timestamp, { dateOnly: true })}
+                    {renderTime(timestamp, { tz: "UTC", dateOnly: true })}
                   </div>
                   <a href={url} class="location plain">
                     <u>{media}</u>
                     {icons.Link2}
                   </a>
                 </div>
-              </article>
+              </section>
             </li>
           ))}
         </ol>
-      </article>
+      </section>
     </main>
   );
 };
