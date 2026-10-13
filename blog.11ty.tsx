@@ -47,6 +47,7 @@ export const render = async ({ collections: { blog } }: Data) => {
               <article>
                 <a href={url} class="large">
                   {resolvedImage != null ? (
+                    // todo(maximsmol): add alt text
                     <div
                       class="thumbnail"
                       style={`background-image: url(${resolvedImage})`}

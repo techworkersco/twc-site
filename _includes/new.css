@@ -349,6 +349,10 @@ which is Galaxy S10/S10+ Android 11
         color: var(--color-lavender-200);
       }
     }
+
+    &.unpadded {
+      padding: 0;
+    }
   }
 
   a.plain {
@@ -360,6 +364,32 @@ which is Galaxy S10/S10+ Android 11
       text-decoration: underline;
 
       color: var(--color-lavender-200);
+    }
+  }
+
+  time {
+    font-family: var(--font-monospace);
+
+    > .short {
+      display: none;
+    }
+
+    @media (--width-lte-s) {
+      > .short {
+        display: unset;
+      }
+
+      > .long {
+        display: none;
+      }
+    }
+  }
+
+  table {
+    inline-size: 100%;
+
+    td {
+      padding: 0 var(--space-xs);
     }
   }
 
@@ -706,6 +736,39 @@ which is Galaxy S10/S10+ Android 11
           font-weight: bold;
         }
       }
+
+      &.plain {
+        max-inline-size: 950px;
+        padding: var(--space-l) var(--space-m);
+
+        > nav {
+          align-self: flex-start;
+
+          padding-bottom: var(--space-l);
+        }
+
+        p {
+          margin: var(--space-s) 0;
+        }
+
+        img {
+          align-self: center;
+        }
+      }
+    }
+  }
+
+  .post {
+    display: flex;
+    flex-direction: column;
+
+    > header {
+      display: flex;
+      flex-direction: column;
+    }
+
+    > .content {
+      max-width: 700px;
     }
   }
 
@@ -846,33 +909,20 @@ which is Galaxy S10/S10+ Android 11
               font-size: var(--step--2);
             }
 
-            time {
-              font-family: var(--font-monospace);
-
-              > .short {
-                display: none;
-              }
-
-              @media (--width-lte-s) {
-                > .short {
-                  display: unset;
-                }
-
-                > .long {
-                  display: none;
-                }
-              }
-            }
-
             > .location {
               display: flex;
               gap: var(--space-xs);
+              padding-left: var(--space-s);
 
               font-weight: bold;
 
               > .icon,
               > .lucide {
                 font-size: 150%;
+              }
+
+              @media (--width-lte-m) {
+                padding-left: 0;
               }
             }
 
