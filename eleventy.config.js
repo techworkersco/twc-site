@@ -7,6 +7,7 @@ import * as jsxRuntime from "hastscript/jsx-runtime";
 import { DateTime } from "luxon";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
+import ical from "node-ical";
 import rehypeSlug from "rehype-slug";
 import YAML from "yaml";
 
@@ -67,6 +68,7 @@ export default async (cfg) => {
   cfg.addDataExtension("yml", YAML.parse);
   cfg.addDataExtension("yaml", YAML.parse);
 
+  // fixme(maximsmol): calendar events do not get loaded into RSS
   const getRssConfig = (collection, name) => ({
     type: "atom",
     outputPath: `/feed/${collection}.xml`,
@@ -274,6 +276,65 @@ export default async (cfg) => {
     `;
   });
 
+  /*
+   Fetch iCal calender events.
+   */
+  const fetchCalendar = async () => {
+    const ical_urls = new Map([
+      ['ical_events', 'https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/EHFzzZQXSQoS3f5w/?export'],
+      ['portland_events', 'https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/P7FzxHGbFoMPCSPE?export']
+    ]);
+    for (const ical_name of ical_urls.keys()) {
+      const url = ical_urls.get(ical_name);
+      const data = await ical.fromURL(url);
+
+      if (data == null) throw new Error(`failed to load calendar data for ${ical_name}`);
+
+      const events = [];
+      for (const [, entry] of Object.entries(data)) {
+        // node-ical API docs: https://www.npmjs.com/package/node-ical
+        if (entry == null) continue;
+        if (entry.type !== "VEVENT") continue;
+
+        // Expand any recurring events over the next 60 days.
+        const now = new Date();
+        const recurring_events = ical.expandRecurringEvent(entry, {
+          from: now,
+          to: new Date(now.getTime() + 60 * 24 * 60 * 60 * 1000)
+        });
+        recurring_events.forEach(event_instance => {
+          const img =
+            event_instance.attach?.val != null &&
+            event_instance.attach?.params.FMTTYPE.startsWith("image/")
+              ? new URL(event_instance.attach.val, base)
+              : undefined;
+
+          const start = DateTime.fromJSDate(event_instance.start, {
+            zone: event_instance.start.tz,
+          });
+
+          // todo(maximsmol): extract image from content
+          const event_instance_url = `/events/${event_instance.event.uid}_${event_instance.start.getTime()}/`;
+          events.push({
+            // todo(maximsmol): use a timezone-aware datetime?
+            date: start.toJSDate(),
+            url: event_instance_url,
+            data: {
+              title: event_instance.summary,
+              time_zones: event_instance.start.tz != null ? [event_instance.start.tz] : undefined,
+              image: img?.href,
+              locations: event_instance.event.location != null ? [event_instance.event.location] : undefined,
+            },
+            content:
+              event_instance.event.description != null ? md.render(event_instance.event.description) : undefined,
+          });
+        });
+      }
+
+      cfg.addGlobalData(ical_name, events);
+    }
+  };
+
   const remoteDataSrcs = [
     {
       data: "berlin_press",
@@ -283,12 +344,8 @@ export default async (cfg) => {
       data: "berlin_events",
       url: "https://techworkersberlin.com/events.yml",
     },
-    {
-      data: "nl_events",
-      url: "https://techwerkers.nl/en/twc-global/index.yaml",
-    },
   ];
-  const deferred = [];
+  const deferred = [fetchCalendar()];
   for (const x of remoteDataSrcs)
     deferred.push(
       (async () => {
@@ -305,7 +362,9 @@ export default async (cfg) => {
           console.error(`Failed to fetch remote data from ${x.url}`, error);
         }
 
-        console.log(`Fetched: ${x.data} from ${x.url}`);
+        console.log(
+          `Fetched ${data.length} ${x.data} items from from ${x.url}`,
+        );
 
         cfg.addGlobalData(x.data, data);
       })(),
