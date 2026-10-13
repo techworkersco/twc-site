@@ -772,6 +772,14 @@ which is Galaxy S10/S10+ Android 11
     }
   }
 
+  .callout {
+    border: 2px solid var(--color-lavender-100);
+
+    padding: var(--space-m);
+    margin: 0 var(--space-m);
+    margin-bottom: var(--space-l);
+  }
+
   .cards {
     --bg-color: var(--color-lavender-800);
     --accent-color: var(--color-lavender-400);

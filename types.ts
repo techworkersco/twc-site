@@ -76,8 +76,17 @@ export type Data = {
     media: string;
     title: string;
     url: string;
+    byline?: string;
     date: string;
   }[];
+  berlin_press: {
+    media: string;
+    url: string;
+    lang: string;
+    title: string;
+    byline?: string;
+    date: string;
+  };
 
   berlin_events?: BerlinEvent[];
   nl_events?: undefined; // todo(maximsmol)
