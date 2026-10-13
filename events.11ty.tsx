@@ -27,6 +27,10 @@ const renderEvent = ({ title, timestamp, locations, url, image }) => (
           {/* fixme(maximsmol): handle timezones properly */}
           {renderTime(timestamp)}
         </div>
+        <span class="location">
+          <span>{locations[0]}</span>
+          {icons.MapPin}
+        </span>
       </div>
     </section>
   </li>
