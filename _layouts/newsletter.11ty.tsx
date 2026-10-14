@@ -137,7 +137,7 @@ export const render = async function (
         </a>
       </nav>
       {/* todo(maximsmol): fix components syntax with hastscript */}
-      {/* todo(maximsmol): re-add */}
+      {/* fixme(maximsmol): re-add */}
       {/*<h2 class="h4">Explore other blog posts</h2>
       {nextPost != null &&
         (await BlogCard({ blog: nextPost, timeZone: site.timeZone }))}

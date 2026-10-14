@@ -10,7 +10,7 @@ export const data = {
 
 const navigation = {
   footer: [
-    { text: "Join", href: "/join", icon: icons.UserPlus },
+    { text: "Join", href: "/subscribe", icon: icons.UserPlus },
     { text: "Chapters", href: "/chapters", icon: icons.UserGroup },
     { text: "Press Mentions", href: "/press", icon: icons.Newspaper },
     { text: "Events", href: "/events", icon: icons.CalendarDays },
@@ -128,6 +128,7 @@ export const render = async function ({
         </div>
       </header>
       {{ type: "raw", value: content }}
+      <div style="flex-grow: 1;" />
       <footer>
         <nav>
           <ul class="contents">
