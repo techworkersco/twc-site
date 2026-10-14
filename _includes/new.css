@@ -772,6 +772,8 @@ which is Galaxy S10/S10+ Android 11
     gap: var(--space-s);
     align-items: flex-start;
 
+    max-inline-size: 100%;
+
     p {
       margin: 0;
 
@@ -783,6 +785,7 @@ which is Galaxy S10/S10+ Android 11
     .row {
       display: flex;
 
+      flex-wrap: wrap;
       gap: var(--space-s);
     }
 
