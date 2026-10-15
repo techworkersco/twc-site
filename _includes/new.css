@@ -869,6 +869,7 @@ which is Galaxy S10/S10+ Android 11
     margin-bottom: var(--space-l);
   }
 
+  /* todo(maximsmol): needs a better name */
   .cards {
     --bg-color: var(--color-lavender-800);
     --accent-color: var(--color-lavender-400);
@@ -1083,6 +1084,7 @@ which is Galaxy S10/S10+ Android 11
     }
   }
 
+  /* todo(maximsmol): this could use some clean up, it's mostly copied from the old site */
   .chapters-page {
     --bg-color: var(--color-lavender-600);
     --accent-color: var(--color-lavender-100);
@@ -1246,6 +1248,32 @@ which is Galaxy S10/S10+ Android 11
 
     @media (prefers-color-scheme: dark) {
       filter: invert(100%);
+    }
+  }
+
+  .job-board {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+
+    list-style-type: none;
+
+    h3 {
+      font-size: inherit;
+    }
+
+    p {
+      margin-top: var(--space-2xs);
+    }
+
+    & li {
+      display: flex;
+      flex-direction: column;
+
+      padding: var(--space-s);
+
+      border: 1px solid var(--color-lavender-100);
+      border-radius: 6px;
     }
   }
 }
