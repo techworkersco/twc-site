@@ -770,7 +770,7 @@ which is Galaxy S10/S10+ Android 11
       }
     }
 
-    ul + p {
+    ul + :is(p, h1, h2, h3, h4, h5, h6) {
       margin-top: var(--space-s);
     }
 
@@ -778,7 +778,8 @@ which is Galaxy S10/S10+ Android 11
       align-self: center;
     }
 
-    ul {
+    ul,
+    ol {
       display: flex;
       flex-direction: column;
 
@@ -1218,6 +1219,7 @@ which is Galaxy S10/S10+ Android 11
 
           .quick-links {
             display: flex;
+            flex-direction: row;
             gap: var(--space-2xs);
 
             flex-shrink: 0;

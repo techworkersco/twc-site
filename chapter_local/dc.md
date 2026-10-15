@@ -1,6 +1,7 @@
 ---
 title: TWC DC
 permalink: /dc/
+layout: plain.11ty.tsx
 ---
 
 # DC Tech Workers Coalition

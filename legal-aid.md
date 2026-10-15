@@ -1,5 +1,6 @@
 ---
 title: Legal Help
+layout: plain.11ty.tsx
 ---
 
 # Legal Aid Resources
