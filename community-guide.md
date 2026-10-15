@@ -1,13 +1,13 @@
 ---
 title: Community Guide
+layout: plain.11ty.tsx
 ---
 
 [Our Values and Code of Conduct](#our-values)<br>
 [Slack](#slack)<br>
 [Document History](#document-history)
 
-<h1 class="lh-tight marg-b-4"><a id="our-values" href="#our-values">Our Values and Code of Conduct</a>
-</h1>
+<h1 id="our-values">Our Values and Code of Conduct</h1>
 
 The Tech Workers Coalition seeks to redefine the relationship between tech workers and Bay Area communities. Through activism, civic engagement, direct action, and education, we work in solidarity with existing movements towards social justice and economic inclusion.
 
@@ -58,7 +58,7 @@ While in practice most actions from moderators and administrators will be friend
 
 TWC participants should be mindful of what they write and say in public TWC meetings and in pseudo-public channels like Slack. Be aware that Slack maintains records of our conversations indefinitely. Do not say anything in a non-private channel that you do not want becoming public. Participants should also be aware that members of the press may be present or in Slack channels. While we ask them to keep what they read and hear off the record, we cannot control what they publish.
 
-## <a id="slack" href="#slack">Slack</a>
+## Slack
 
 ### Etiquette
 
@@ -66,7 +66,7 @@ TWC participants should be mindful of what they write and say in public TWC meet
 - **Use direct messages.** Members of this Slack range in expertise, talent, and experience. Feel free to reach out to folks with specific questions or needs.This is also a good space to take tangential conversations—no need to do everything in public.
 - Avoid @channel or @here in #general or high traffic channels unless your message is important to everyone in that channel
 
-## <a id="document-history" href="#document-history">Document History</a>
+## Document History
 
 - _2025-03-08: Removal of Slack channel guide_
 - _2019-12-11: Removal of defunct steering committee as per consensus between several locals_

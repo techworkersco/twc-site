@@ -1,24 +1,51 @@
 ---
 title: Contact Us
 permalink: /contact-us/
+layout: plain.11ty.tsx
 ---
-<form method="POST" name="contact" class="marg-b-4" action="/contact" data-netlify="true" netlify-honeypot="bot-field">
-  <label style="display:none">
-    Don’t fill this out if you’re human: <input name="bot-field" />
-  </label>
-  <label class="marg-b-3" for="email">
-    <div><b>Email:</b></div>
-    <input id="email" type="email" required name="email">
-  </label>
-  <label class="marg-b-3" for="name">
-    <div><b>Name:</b></div>
-    <input id="name" type="text" required name="name">
-  </label>
-  <label class="marg-b-3" for="message">
-    <div><b>Message:</b></div>
-    <textarea id="message" required name="message" rows="10" cols="50" maxlength="2900"></textarea>
-  </label>
-  <div>
-    <input type="submit" value="Submit">
+
+<form
+  method="POST"
+  name="contact"
+  action="/contact"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+>
+  <div style="display: none">
+    <label> Don’t fill this out if you’re human: </label>
+    <input name="bot-field" />
   </div>
+  <div class="column">
+    <label for="email">
+      <strong>Email:</strong>
+    </label>
+    <input
+      id="email"
+      placeholder="john.doe@example.com"
+      type="email"
+      required
+      name="email"
+    />
+  </div>
+  <div class="column">
+    <label for="name">
+      <strong>Name:</strong>
+    </label>
+    <input id="name" type="text" placeholder="John Doe" required name="name" />
+  </div>
+  <div class="column">
+    <label for="message">
+      <strong>Message:</strong>
+    </label>
+    <textarea
+      id="message"
+      required
+      name="message"
+      rows="10"
+      cols="50"
+      maxlength="2900"
+      placeholder="The quick brown fox jumped over the lazy dog…"
+    ></textarea>
+  </div>
+  <input type="submit" value="Submit" />
 </form>

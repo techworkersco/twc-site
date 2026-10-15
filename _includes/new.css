@@ -760,10 +760,29 @@ which is Galaxy S10/S10+ Android 11
 
     p {
       margin: var(--space-s) 0;
+
+      & + p {
+        margin-top: 0;
+      }
+
+      &:has(+ ul) {
+        margin-bottom: 0;
+      }
+    }
+
+    ul + p {
+      margin-top: var(--space-s);
     }
 
     img {
       align-self: center;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      gap: var(--space-3xs);
     }
   }
 
