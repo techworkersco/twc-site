@@ -9,6 +9,7 @@ export const data = {
 
 type ChaptersByLocality = Record<Chapter["locality"], Chapter[]>;
 
+// todo(maximsmol): the Seattle chapter doesn't render right on mobile for some reason
 export const render = ({ chapters }: Data) => {
   const active: ChaptersByLocality = {
     north_america: [],
@@ -198,14 +199,14 @@ export const render = ({ chapters }: Data) => {
     const titleId = makeAriaId();
 
     return (
-      <li class="card">
-        <section class="content" aria-labelledby={titleId}>
+      <li>
+        <section>
           <a href={x.url ?? x.twitter ?? x.facebook} class="header">
             <section>
-              <h4 id={titleId}>
+              <h3>
                 {/*<span aria-hidden>{x.icon} </span>*/}
                 {x.text}
-              </h4>
+              </h3>
               <p class="details">
                 {x.active ? (
                   x.established != null ? (
@@ -238,27 +239,23 @@ export const render = ({ chapters }: Data) => {
   };
 
   const renderLocalities = (xs: ChaptersByLocality) => {
-    const naId = makeAriaId();
-    const euId = makeAriaId();
-    const asiaId = makeAriaId();
-
     return (
       <div class="region-group">
-        <section aria-labelledby={naId}>
-          <h3 id={naId}>North America</h3>
+        <section>
+          <h2 class="h4">North America</h2>
           <ul aria-label="Chapters" class="list">
             {xs.north_america.map(renderChapter)}
           </ul>
         </section>
-        <section aria-labelledby={euId}>
-          <h3 id={euId}>Europe</h3>
+        <section>
+          <h2 class="h4">Europe</h2>
           <ul aria-label="Chapters" class="list">
             {xs.europe.map(renderChapter)}
           </ul>
         </section>
         {xs.asia.length > 0 && (
-          <section aria-labelledby={asiaId}>
-            <h3 id={asiaId}>Asia</h3>
+          <section>
+            <h2 class="h4">Asia</h2>
             <ul aria-label="Chapters" class="list">
               {xs.asia.map(renderChapter)}
             </ul>
@@ -268,23 +265,20 @@ export const render = ({ chapters }: Data) => {
     );
   };
 
-  const activeId = makeAriaId();
-  const inactiveId = makeAriaId();
-
   return (
-    <div class="chapters-page">
+    <main class="plain chapters-page">
       {/* todo(maximsmol): add an info blurb and/or an image for each chapter */}
       {/* todo(maximsmol): add more social links */}
 
-      <section aria-labelledby={activeId}>
-        <h2 id={activeId}>Active chapters</h2>
+      <section>
+        <h1 class="h3">Active chapters</h1>
         {renderLocalities(active)}
       </section>
 
-      <section aria-labelledby={inactiveId}>
-        <h2 id={inactiveId}>Inactive and former chapters</h2>
+      <section>
+        <h1 class="h3">Inactive and former chapters</h1>
         {renderLocalities(inactive)}
       </section>
-    </div>
+    </main>
   );
 };
