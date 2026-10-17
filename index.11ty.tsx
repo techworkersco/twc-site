@@ -6,9 +6,11 @@ import icons from "./src/lucide.ts";
 
 import { parseDatesAndSort, renderTime } from "./src/collections.tsx";
 
+import { BlogCard } from "./blog.11ty.tsx";
+
 export const render = async ({
   press,
-  collections: { events: globalEvents },
+  collections: { events: globalEvents, blog },
   berlin_events,
   nl_events,
 }: Data) => {
@@ -54,6 +56,9 @@ export const render = async ({
   );
 
   press = parseDatesAndSort(press).slice(0, 3);
+  blog = parseDatesAndSort(blog).slice(0, 3);
+
+  const videoId = "jlAbwmoai-0";
 
   return (
     <main>
@@ -210,6 +215,67 @@ export const render = async ({
             </li>
           ))}
         </ol>
+      </section>
+      <section class="cards">
+        <header>
+          <h2 class="h3">Blog Posts</h2>
+          <a href="/blog" class="button">
+            View More {icons.ArrowRight}
+          </a>
+        </header>
+        <ol>{blog.map((post) => BlogCard({ post, header: "h3" }))}</ol>
+      </section>
+      <section class="youtube">
+        <header>
+          <h2>Featured Video</h2>
+        </header>
+        {/* todo(maximsmol): this is not accessible, code is inherited from old site */}
+        <div class="container">
+          <div
+            class="video"
+            onclick={`
+            const iframe = document.createElement('iframe');
+
+            iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1');
+            iframe.setAttribute('title', 'Featured Video');
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+            iframe.setAttribute('allowfullscreen', 'true');
+            iframe.setAttribute('style', 'position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;');
+
+            this.appendChild(iframe);
+          `}
+          >
+            <img
+              src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+              alt="Featured Video Thumbnail"
+              onerror={`this.src='https://img.youtube.com/vi/${videoId}/hqdefault.jpg';`}
+            />
+            {/* this is directly from YouTube's normal iframe */}
+            <div class="play-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 67 60"
+                fill=""
+                focusable="false"
+                aria-hidden="true"
+              >
+                <path d="M63 14.87a7.885 7.885 0 00-5.56-5.56C52.54 8 32.88 8 32.88 8S13.23 8 8.32 9.31c-2.7.72-4.83 2.85-5.56 5.56C1.45 19.77 1.45 30 1.45 30s0 10.23 1.31 15.13c.72 2.7 2.85 4.83 5.56 5.56C13.23 52 32.88 52 32.88 52s19.66 0 24.56-1.31c2.7-.72 4.83-2.85 5.56-5.56C64.31 40.23 64.31 30 64.31 30s0-10.23-1.31-15.13z"></path>
+                <path
+                  fill="#FFF"
+                  class="logo-arrow"
+                  d="M26.6 39.43L42.93 30 26.6 20.57z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <a
+            href="https://www.youtube.com/@techworkerscoalitionvideos"
+            class="button framed"
+          >
+            More on our channel {icons.ArrowRight}
+          </a>
+        </div>
       </section>
     </main>
   );

@@ -757,6 +757,60 @@ which is Galaxy S10/S10+ Android 11
         font-weight: bold;
       }
     }
+
+    > .youtube {
+      display: flex;
+      flex-direction: column;
+
+      inline-size: 100%;
+      max-inline-size: var(--max-content-width);
+
+      padding: var(--space-l) var(--space-m);
+
+      > header {
+        display: flex;
+        justify-content: space-between;
+
+        padding-bottom: var(--space-l);
+      }
+
+      > .container {
+        display: flex;
+        flex-direction: column;
+
+        gap: var(--space-s);
+
+        inline-size: 100%;
+        max-inline-size: 800px;
+
+        align-self: center;
+
+        > .video {
+          position: relative;
+          cursor: pointer;
+
+          > .play-button {
+            position: absolute;
+            inset: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            > svg {
+              fill: #f03;
+
+              width: 72px;
+              height: 72px;
+            }
+          }
+        }
+
+        > .button {
+          align-self: flex-start;
+        }
+      }
+    }
   }
 
   main:where(.plain) {

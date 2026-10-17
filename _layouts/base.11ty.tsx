@@ -113,6 +113,8 @@ export const render = async ({
                 "https://calendar.google.com",
                 "https://app.netlify.com",
                 "https://dev.techworkerscoalition.org",
+                "https://www.youtube.com",
+                "https://www.youtube-nocookie.com",
               ],
               "font-src": ["'self'"],
               "img-src": [

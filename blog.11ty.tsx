@@ -1,6 +1,6 @@
 import liquidjs from "liquidjs";
 
-import { Data } from "./types.ts";
+import { Data, BlogPost } from "./types.ts";
 import icons from "./src/lucide.ts";
 
 import { parseDatesAndSort, renderTime } from "./src/collections.tsx";
@@ -25,6 +25,57 @@ const truncatewords = (x: string, words?: number) =>
     words,
   );
 
+export const BlogCard = ({
+  post: {
+    data: { title, image },
+    timestamp,
+    content,
+    url,
+  },
+  header,
+}: {
+  post: BlogPost;
+  header: string;
+}) => {
+  const resolvedImage = image?.file ?? firstImageIn(content);
+
+  const titleLink = (
+    <a href={url} class="plain">
+      {title}
+    </a>
+  );
+
+  return (
+    <li>
+      <section>
+        <a href={url} class="large">
+          {resolvedImage != null ? (
+            // todo(maximsmol): add alt text
+            <div
+              class="thumbnail"
+              style={`background-image: url(${resolvedImage})`}
+            />
+          ) : (
+            icons.Newspaper
+          )}
+        </a>
+        <div class="info">
+          <div>
+            {header === "h2" && <h2>{titleLink}</h2>}
+            {header === "h3" && <h3>{titleLink}</h3>}
+            <p class="detail">
+              {/* todo(maximsmol): use `page.excerpt`? */}
+              {/* todo(maximsmol): do not rely on liquid */}
+              {truncatewords(strip_html(content), 25)}
+            </p>
+            <div class="tiny">{renderTime(timestamp, { dateOnly: true })}</div>
+          </div>
+        </div>
+      </section>
+    </li>
+  );
+};
+
 export const render = async ({ collections: { blog } }: Data) => {
   const posts = parseDatesAndSort(blog);
 
@@ -38,46 +89,7 @@ export const render = async ({ collections: { blog } }: Data) => {
           </div>
         </div>
       </header>
-      <ol>
-        {posts.map(({ data: { title, image }, timestamp, content, url }) => {
-          const resolvedImage = image?.file ?? firstImageIn(content);
-
-          return (
-            <li>
-              <section>
-                <a href={url} class="large">
-                  {resolvedImage != null ? (
-                    // todo(maximsmol): add alt text
-                    <div
-                      class="thumbnail"
-                      style={`background-image: url(${resolvedImage})`}
-                    />
-                  ) : (
-                    icons.Newspaper
-                  )}
-                </a>
-                <div class="info">
-                  <div>
-                    <h2>
-                      <a href={url} class="plain">
-                        {title}
-                      </a>
-                    </h2>
-                    <p class="detail">
-                      {/* todo(maximsmol): use `page.excerpt`? */}
-                      {/* todo(maximsmol): do not rely on liquid */}
-                      {truncatewords(strip_html(content), 25)}
-                    </p>
-                    <div class="tiny">
-                      {renderTime(timestamp, { dateOnly: true })}
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </li>
-          );
-        })}
-      </ol>
+      <ol>{posts.map((post) => BlogCard({ post, header: "h2" }))}</ol>
     </main>
   );
 };

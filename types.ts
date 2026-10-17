@@ -69,6 +69,16 @@ export type BerlinEvent = EventCommon & {
   url: string;
 };
 
+export type BlogPost = {
+  data: {
+    title: string;
+    date: string;
+    image?: { file: string };
+  };
+  url: string;
+  content: string;
+};
+
 export type Data = {
   chapters: Chapter[];
   workplaces: Workplace[];
@@ -93,14 +103,6 @@ export type Data = {
 
   collections: {
     events: { data: Event; url: string }[];
-    blog: {
-      data: {
-        title: string;
-        date: string;
-        image?: { file: string };
-      };
-      url: string;
-      content: string;
-    }[];
+    blog: BlogPost[];
   };
 };
