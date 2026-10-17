@@ -465,7 +465,7 @@ which is Galaxy S10/S10+ Android 11
         }
 
         > .h1 {
-          margin-right: var(--space-s);
+          margin-right: var(--space-xs-s);
 
           display: flex;
           align-items: center;
