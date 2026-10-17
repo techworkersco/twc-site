@@ -1,6 +1,6 @@
 import { inspect } from "node:util";
 
-import { Data } from "./types.ts";
+import { Data, Site } from "./types.ts";
 import { inlineSvg, PAIcon } from "./src/icons.ts";
 import icons from "./src/lucide.ts";
 
@@ -13,7 +13,8 @@ export const render = async ({
   collections: { events: globalEvents, blog },
   berlin_events,
   nl_events,
-}: Data) => {
+  site: { timeZone },
+}: Data & { site: Site }) => {
   const heroIcons = [
     "binary-sharp",
     "sunglasses-sharp",
@@ -226,7 +227,9 @@ export const render = async ({
             View More {icons.ArrowRight}
           </a>
         </header>
-        <ol>{blog.map((post) => BlogCard({ post, header: "h3" }))}</ol>
+        <ol>
+          {blog.map((post) => BlogCard({ post, header: "h3", timeZone }))}
+        </ol>
       </section>
       <section class="youtube">
         <header>

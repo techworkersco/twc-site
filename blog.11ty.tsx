@@ -1,6 +1,6 @@
 import liquidjs from "liquidjs";
 
-import { Data, BlogPost } from "./types.ts";
+import { Data, BlogPost, Site } from "./types.ts";
 import icons from "./src/lucide.ts";
 
 import { parseDatesAndSort, renderTime } from "./src/collections.tsx";
@@ -33,9 +33,11 @@ export const BlogCard = ({
     url,
   },
   header,
+  timeZone,
 }: {
   post: BlogPost;
   header: string;
+  timeZone: string;
 }) => {
   const resolvedImage = image?.file ?? firstImageIn(content);
 
@@ -68,7 +70,9 @@ export const BlogCard = ({
               {/* todo(maximsmol): do not rely on liquid */}
               {truncatewords(strip_html(content), 25)}
             </p>
-            <div class="tiny">{renderTime(timestamp, { dateOnly: true })}</div>
+            <div class="tiny">
+              {renderTime(timestamp, { tz: timeZone, dateOnly: true })}
+            </div>
           </div>
         </div>
       </section>
@@ -76,7 +80,10 @@ export const BlogCard = ({
   );
 };
 
-export const render = async ({ collections: { blog } }: Data) => {
+export const render = async ({
+  collections: { blog },
+  site: { timeZone },
+}: Data & { site: Site }) => {
   const posts = parseDatesAndSort(blog);
 
   return (
@@ -89,7 +96,7 @@ export const render = async ({ collections: { blog } }: Data) => {
           </div>
         </div>
       </header>
-      <ol>{posts.map((post) => BlogCard({ post, header: "h2" }))}</ol>
+      <ol>{posts.map((post) => BlogCard({ post, header: "h2", timeZone }))}</ol>
     </main>
   );
 };
