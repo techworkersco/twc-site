@@ -53,6 +53,7 @@ export const render = async ({
 
     return { ...x, baseTime: x.timestamp.toZonedDateTimeISO(tzs[0]), tzs };
   });
+  events.reverse();
 
   const renderTs = Temporal.Now.instant();
   const eventsFuture = events.filter(

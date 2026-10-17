@@ -46,6 +46,7 @@ export const render = async ({
     ...(berlin_events ?? []),
     ...(nl_events ?? []),
   ]);
+  events.reverse();
 
   const renderTs = Temporal.Now.instant();
   const eventsFuture = events.filter(
@@ -137,7 +138,7 @@ export const render = async ({
           </a>
         </header>
         <ol>
-          {eventsFuture.map((data) => {
+          {eventsFuture.slice(0, 5).map((data) => {
             const { title, timestamp, locations, url, image } = data;
             try {
               const tzs =
