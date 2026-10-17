@@ -109,22 +109,31 @@ export const render = async function ({
   return (
     <>
       <header>
-        <div class="contents">
-          <a href="/" class="h1 plain">
-            {await inlineSvg("site-logo")}
-            <span>
-              Tech&nbsp;Workers
-              <br />
-              Coalition
-            </span>
+        <div class="banner">
+          <a class="plain" href="/circuit-breakers/">
+            The <strong>CIRCUIT BREAKERS</strong> conference is coming up in
+            <strong> NYC on October 17-18 2026.</strong> By and for tech labor
+            organizing.
           </a>
-          <div class="pushdown" />
-          <details>
-            <summary>{icons.Menu}</summary>
+        </div>
+        <div>
+          <div class="contents">
+            <a href="/" class="h1 plain">
+              {await inlineSvg("site-logo")}
+              <span>
+                Tech&nbsp;Workers
+                <br />
+                Coalition
+              </span>
+            </a>
+            <div class="pushdown" />
+            <details>
+              <summary>{icons.Menu}</summary>
 
+              {nav}
+            </details>
             {nav}
-          </details>
-          {nav}
+          </div>
         </div>
       </header>
       {{ type: "raw", value: content }}

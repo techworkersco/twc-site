@@ -451,85 +451,97 @@ which is Galaxy S10/S10+ Android 11
     }
 
     > header {
-      padding: var(--space-s) var(--space-s-l);
+      flex-direction: column;
+
+      > .banner {
+        padding: var(--space-xs) var(--space-m);
+        justify-content: center;
+
+        background-color: var(--color-teal-500);
+
+        > a {
+          color: inherit;
+        }
+      }
 
       > div {
-        justify-content: flex-end;
-        align-items: center;
+        display: flex;
 
-        gap: var(--space-xs) var(--space-s-m);
+        padding: var(--space-s) var(--space-s-l);
 
-        @media (--width-lte-s) {
-          display: grid;
-          grid-template-columns: 1fr auto;
-        }
-
-        > .h1 {
-          margin-right: var(--space-xs-s);
-
-          display: flex;
+        > .contents {
+          justify-content: flex-end;
           align-items: center;
-          gap: var(--space-s);
 
-          font-size: inherit;
-          font-family: var(--font-pixelated);
+          gap: var(--space-xs) var(--space-s-m);
 
-          > svg {
-            block-size: 2lh;
+          > .h1 {
+            margin-right: var(--space-xs-s);
+
+            display: flex;
+            align-items: center;
+            gap: var(--space-s);
+
+            font-size: inherit;
+            font-family: var(--font-pixelated);
+
+            > svg {
+              block-size: 2lh;
+            }
           }
-        }
 
-        nav {
-          display: contents;
-
-          > ul {
+          nav {
             display: contents;
 
-            list-style: none;
-            text-wrap: nowrap;
+            > ul {
+              display: contents;
 
-            @media (--width-lte-s) {
-              li {
-                grid-column: span 2;
+              list-style: none;
+              text-wrap: nowrap;
 
-                display: flex;
-                justify-content: flex-end;
+              @media (--width-lte-s) {
+                li {
+                  grid-column: span 2;
+
+                  display: flex;
+                  justify-content: flex-end;
+                }
               }
             }
           }
-        }
 
-        @media (--width-lte-s) {
-          > nav {
-            display: none;
-          }
-        }
-
-        > details {
-          @media (--width-gte-s) {
-            display: none;
-          }
-
-          &[open] {
-            display: contents;
-
-            &::details-content {
-              content-visibility: visible;
-              display: contents;
+          @media (--width-lte-s) {
+            > nav {
+              display: none;
             }
           }
 
-          > summary {
-            cursor: pointer;
-
-            list-style: none;
-
+          > details {
             @media (--width-gte-s) {
               display: none;
             }
 
-            > svg {
-              inline-size: 2em;
+            &[open] {
+              display: contents;
+
+              &::details-content {
+                content-visibility: visible;
+                display: contents;
+              }
+            }
+
+            > summary {
+              cursor: pointer;
+
+              list-style: none;
+
+              @media (--width-gte-s) {
+                display: none;
+              }
+
+              > svg {
+                inline-size: 2em;
+              }
             }
           }
         }
