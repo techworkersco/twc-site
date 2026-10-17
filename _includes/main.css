@@ -469,7 +469,10 @@
     width: 240px;
 
     a {
-      display: block;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      gap: 4px;
       padding: 8px;
     }
 
@@ -656,6 +659,13 @@
     padding: 2rem 0;
 
     font-size: var(--step--1);
+
+    li > a {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      gap: 4px;
+    }
   }
 
   form {

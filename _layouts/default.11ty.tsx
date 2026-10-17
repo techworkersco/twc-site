@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { type Site } from "../types.ts";
 
+import siIcons from "../src/simple-icons.ts";
 import icons from "../src/lucide.ts";
 import { inlineSvg, PAIcon } from "../src/icons.ts";
 
@@ -129,7 +130,6 @@ export const render = async function ({
             <div class="pushdown" />
             <details>
               <summary>{icons.Menu}</summary>
-
               {nav}
             </details>
             {nav}
@@ -151,6 +151,18 @@ export const render = async function ({
                 </li>
               )),
             )}
+            <li>
+              <a
+                href={"https://www.youtube.com/@techworkerscoalitionvideos"}
+                class="button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {siIcons.siYoutube}
+                YouTube
+                {icons.ExternalLink}
+              </a>
+            </li>
           </ul>
         </nav>
       </footer>

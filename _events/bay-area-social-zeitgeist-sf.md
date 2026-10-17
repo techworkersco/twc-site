@@ -5,6 +5,7 @@ locations:
   - Bay Area
 time_zones:
   - US/Pacific
+image: /assets/img/twc-bayarea-social-august-2026.jpg
 ---
 Monthly meetup for tech workers interested in organizing and building collective power. Join us for casual conversation, good food and hangs with like minded workers. We will do some brief TWC 101 and working group introductions for new folks. All are welcome!
 

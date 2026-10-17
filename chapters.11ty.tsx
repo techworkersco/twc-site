@@ -146,20 +146,20 @@ export const render = ({ chapters }: Data) => {
     return (
       <div class="region-group">
         <section>
-          <h2 class="h4">North America</h2>
+          <h2>North America</h2>
           <ul aria-label="Chapters" class="list">
             {xs.north_america.map(renderChapter)}
           </ul>
         </section>
         <section>
-          <h2 class="h4">Europe</h2>
+          <h2>Europe</h2>
           <ul aria-label="Chapters" class="list">
             {xs.europe.map(renderChapter)}
           </ul>
         </section>
         {xs.asia.length > 0 && (
           <section>
-            <h2 class="h4">Asia</h2>
+            <h2>Asia</h2>
             <ul aria-label="Chapters" class="list">
               {xs.asia.map(renderChapter)}
             </ul>
@@ -175,12 +175,12 @@ export const render = ({ chapters }: Data) => {
       {/* todo(maximsmol): add more social links */}
 
       <section>
-        <h1 class="h3">Active chapters</h1>
+        <h1>Active chapters</h1>
         {renderLocalities(active)}
       </section>
 
       <section>
-        <h1 class="h3">Inactive and former chapters</h1>
+        <h1>Inactive and former chapters</h1>
         {renderLocalities(inactive)}
       </section>
     </main>
