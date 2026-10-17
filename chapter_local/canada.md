@@ -38,4 +38,4 @@ Joignez-nous pour nos cafés virtuels hebdomaires ou envoyez-nous un email à <t
 
 ## Upcoming Events / Prochaines Evenements
 
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FToronto&showPrint=0&showCalendars=0&src=dGVjaHdvcmtlcnNjYW5hZGFAZ21haWwuY29t&src=dGExa3MxYmpqb2RraXRncjJocjNrZ201ZGJrdnNyaWhAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039be5&color=%23d50000" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FToronto&showPrint=0&showCalendars=0&src=dGVjaHdvcmtlcnNjYW5hZGFAZ21haWwuY29t&src=dGExa3MxYmpqb2RraXRncjJocjNrZ201ZGJrdnNyaWhAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039be5&color=%23d50000" style="border:solid 1px #777; height: 600px" width="800" height="600" frameborder="0" scrolling="no"></iframe>

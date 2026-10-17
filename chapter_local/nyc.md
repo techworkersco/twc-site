@@ -54,7 +54,6 @@ layout: plain.11ty.tsx
 
 <hr />
 <h2 class class="marg-b-2">NYC + Online Events</h2>
-{% include events.html tags="nyc,online" limit=5 %}
 <div class="d:flex justify-between bottomLinks">
   <ul class="d:flex social">
    <li><a href="https://www.meetup.com/Tech-Workers-Coalition-NYC">Meetup (NYC)</a></li>
