@@ -512,10 +512,11 @@ which is Galaxy S10/S10+ Android 11
 
           &[open] {
             display: contents;
-          }
 
-          &::details-content {
-            content-visibility: visible;
+            &::details-content {
+              content-visibility: visible;
+              display: contents;
+            }
           }
 
           > summary {
