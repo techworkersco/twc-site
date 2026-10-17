@@ -46,12 +46,12 @@ export const render = async ({
     ...(berlin_events ?? []),
     ...(nl_events ?? []),
   ]);
-  events.reverse();
 
   const renderTs = Temporal.Now.instant();
   const eventsFuture = events.filter(
     (x) => x.timestamp.epochNanoseconds >= renderTs.epochNanoseconds,
   );
+  eventsFuture.reverse();
   const eventsPast = events.filter(
     (x) => x.timestamp.epochNanoseconds < renderTs.epochNanoseconds,
   );
@@ -166,7 +166,9 @@ export const render = async ({
                             {title}
                           </a>
                         </h3>
-                        {tzs.map((tz) => renderTime(timestamp, tz))}
+                        {tzs.map((tz) => (
+                          <div>{renderTime(timestamp, { tz })}</div>
+                        ))}
                       </div>
                       <span class="location">
                         <span>{locations[0]}</span>

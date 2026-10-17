@@ -7,34 +7,43 @@ export const data = {
   title: "Events",
 };
 
-const renderEvent = ({ title, timestamp, locations, url, image }) => (
-  <li>
-    <section>
-      <a href={url} class="large">
-        {image != null ? (
-          <div class="thumbnail" style={`background-image: url(${image})`} />
-        ) : (
-          icons.CalendarDays
-        )}
-      </a>
-      <div class="info">
-        <div>
-          <h2>
-            <a href={url} class="plain">
-              {title}
-            </a>
-          </h2>
-          {/* fixme(maximsmol): handle timezones properly */}
-          {renderTime(timestamp)}
+const renderEvent = (data) => {
+  const { title, timestamp, locations, url, image } = data;
+
+  const tzs = "time_zones" in data ? data.time_zones : data.timeszones;
+
+  if (tzs.length === 0) throw new Error("No time zone specified");
+
+  return (
+    <li>
+      <section>
+        <a href={url} class="large">
+          {image != null ? (
+            <div class="thumbnail" style={`background-image: url(${image})`} />
+          ) : (
+            icons.CalendarDays
+          )}
+        </a>
+        <div class="info">
+          <div>
+            <h2>
+              <a href={url} class="plain">
+                {title}
+              </a>
+            </h2>
+            {tzs.map((tz) => (
+              <div>{renderTime(timestamp, { tz })}</div>
+            ))}
+          </div>
+          <span class="location">
+            <span>{locations[0]}</span>
+            {icons.MapPin}
+          </span>
         </div>
-        <span class="location">
-          <span>{locations[0]}</span>
-          {icons.MapPin}
-        </span>
-      </div>
-    </section>
-  </li>
-);
+      </section>
+    </li>
+  );
+};
 
 export const render = async ({
   collections: { events: globalEvents },
@@ -53,12 +62,12 @@ export const render = async ({
 
     return { ...x, baseTime: x.timestamp.toZonedDateTimeISO(tzs[0]), tzs };
   });
-  events.reverse();
 
   const renderTs = Temporal.Now.instant();
   const eventsFuture = events.filter(
     (x) => x.timestamp.epochNanoseconds >= renderTs.epochNanoseconds,
   );
+  eventsFuture.reverse();
   const eventsPast = events.filter(
     (x) => x.timestamp.epochNanoseconds < renderTs.epochNanoseconds,
   );
