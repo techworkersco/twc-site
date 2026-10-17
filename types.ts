@@ -51,7 +51,58 @@ export type Site = {
   timeZone: string;
 };
 
+export type EventCommon = {
+  title: string;
+  date: string;
+  locations: string[];
+  image?: string;
+};
+
+export type Event = EventCommon & {
+  time_zones: string[];
+  tags?: string[];
+};
+
+export type BerlinEvent = EventCommon & {
+  timeszones: string[];
+  tags: string | null;
+  url: string;
+};
+
+export type BlogPost = {
+  data: {
+    title: string;
+    date: string;
+    image?: { file: string };
+  };
+  url: string;
+  content: string;
+};
+
 export type Data = {
   chapters: Chapter[];
   workplaces: Workplace[];
+  press: {
+    media: string;
+    title: string;
+    url: string;
+    byline?: string;
+    date: string;
+  }[];
+  berlin_press: {
+    media: string;
+    url: string;
+    lang: string;
+    title: string;
+    byline?: string;
+    date: string;
+  };
+
+  berlin_events?: BerlinEvent[];
+  nl_events?: undefined; // todo(maximsmol)
+
+  collections: {
+    events: { data: Event; url: string }[];
+    blog: BlogPost[];
+  };
 };

@@ -1,8 +1,9 @@
 ---
 title: TWC Seattle
 permalink: /seattle/
+layout: plain.11ty.tsx
 ---
-<style>h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}</style>
+
 # Seattle Tech Workers Coalition
 
 <div class="blurb">

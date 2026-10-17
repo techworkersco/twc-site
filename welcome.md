@@ -1,5 +1,6 @@
 ---
 permalink: /welcome.html
+layout: plain.11ty.tsx
 ---
 
 # 🎉 Congratulations

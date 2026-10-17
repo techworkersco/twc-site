@@ -1,9 +1,11 @@
 ---
 title: TWC London Code of Conduct
 permalink: /london/code-of-conduct/
+layout: plain.11ty.tsx
 
 last-updated: 2020-08-12
 ---
+
 # Code of Conduct for TWC London
 
 Below is a summary of TWC London's Code of Conduct (points 1, 2, 3, 4, 6, 7,
@@ -59,7 +61,7 @@ and outside contexts associated with TWC.
 As a coalition of workers coming from many backgrounds, TWC is focussed on
 providing a space, regardless of gender identity and expression, sexual
 orientation, disability, physical appearance, body size, race, age, religion or
-lack thereof, etc. 
+lack thereof, etc.
 
 We do not tolerate harassment in any form by members, partners, collaborators,
 or guests, including:
@@ -82,20 +84,20 @@ or guests, including:
 As an activist organisation, TWC advocates for the disenfranchised and will
 privilege their needs. Accountability reps first priority is to protect those
 at more risk of being materially disadvantaged, e.g. systematically
-marginalised, losing their jobs for their activism, etc. 
+marginalised, losing their jobs for their activism, etc.
 
 ### 7. How is this Code of Conduct enforced?
 
 Participants asked to stop any harassing behavior are expected to comply
 immediately. We operate by a 2 strike policy and these are on the basis of
-instances of behaviour. 
+instances of behaviour.
 
 - 2 strike (1 incident with warning. If done again, you’re out)
-  - In effect for? *Year-long exclusion (removed from meetings, banned from
+  - In effect for? _Year-long exclusion (removed from meetings, banned from
     future events, removed from Slack, blocked on Twitter, etc.); return on
     condition of agreement amongst accountability reps; after returning, the
     perpetrator will be subject to a single strike policy. This incident will be
-    reported to the global TWC organisers*.
+    reported to the global TWC organisers_.
 
 - Outside of TWC associated spaces
   - Please do raise issues to the accountability reps about issues relating to

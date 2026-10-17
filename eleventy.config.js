@@ -58,6 +58,16 @@ export default async (cfg) => {
   cfg.addPassthroughCopy("assets");
   cfg.addPassthroughCopy("netlify.toml");
 
+  // todo(maximsmol): fix fallback CLS with fontaine?
+  cfg.addPassthroughCopy({
+    "node_modules/@fontsource/silkscreen/files/silkscreen-latin-400-normal.woff2":
+      "fonts/silkscreen-latin-400-normal.woff2",
+    "node_modules/@fontsource-variable/montserrat/files/montserrat-latin-wght-normal.woff2":
+      "fonts/montserrat-latin-wght-normal.woff2",
+    "node_modules/@fontsource-variable/roboto-mono/files/roboto-mono-latin-wght-normal.woff2":
+      "fonts/roboto-mono-latin-wght-normal.woff2",
+  });
+
   cfg.addPassthroughCopy("circuit-breakers");
   cfg.ignores.add("circuit-breakers");
 
@@ -145,9 +155,6 @@ export default async (cfg) => {
     return dt.setZone(timezones[0]).toFormat("dd");
   });
 
-  cfg.addFilter("filter_tags", function (x) {
-    return x;
-  }); // todo(maximsmol): fix in sources
   cfg.addLiquidTag("link", () => ({
     // todo(maximsmol): rewrite in sources and remove
     parse: function (tagToken) {
@@ -232,6 +239,7 @@ export default async (cfg) => {
         rehypeSlug({
           slugify: slugifyKramdown,
         })(res);
+
         return toHtml(res, {
           allowDangerousHtml: true,
         });
@@ -317,13 +325,12 @@ export default async (cfg) => {
     process.env.CONTEXT === "production" ? "production" : "development",
   );
   cfg.addGlobalData("eleventyComputed.site", () => (data) => ({
-    ...data.collections, // todo(maximsmol): fix in source code
     ...site,
     time: new Date(),
     data: {
-      chapters: data.chapters,
       press: data.press,
       workplaces: data.workplaces,
+      events: data.events,
       ...Object.fromEntries(remoteDataSrcs.map((x) => [x.data, data[x.data]])),
     },
   }));

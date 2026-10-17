@@ -1,5 +1,6 @@
 ---
 title: Progressive Stack
+layout: plain.11ty.tsx
 ---
 
 # Stack

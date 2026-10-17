@@ -1,6 +1,7 @@
 ---
 title: TWC Security List
 show_in_footer: true
+layout: plain.11ty.tsx
 ---
 
 # TWC Security Guide List

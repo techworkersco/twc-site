@@ -40,6 +40,8 @@ export default defineConfig([
       "unicorn/consistent-function-scoping": "off",
       "unicorn/no-nested-ternary": "off",
       "unicorn/no-await-expression-member": "off",
+      "unicorn/catch-error-name": "off",
+      "unicorn/name-replacements": "off",
     },
     languageOptions: {
       globals: globals.node,

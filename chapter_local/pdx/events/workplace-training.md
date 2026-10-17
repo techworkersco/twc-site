@@ -1,6 +1,7 @@
 ---
 title: PDX October 2019 Workplace Organizer Training
 permalink: /pdx/events/workplace-organizer-training/
+layout: plain.11ty.tsx
 ---
 
 # PDX October 2019 Workplace Organizer Training

@@ -13,27 +13,38 @@ export const render = ({ chapters }: Data) => {
   ));
 
   return (
-    <>
-      <h1 id="join-us">Join us</h1>
-      Our Slack is governed by the principles and rules in our{" "}
-      <a href="/community-guide">Community Guide.</a> By joining, you agree to
-      follow them.
-      <h3 class="marg-b-3">Please provide the following:</h3>
+    <main class="plain">
+      <header>
+        <h1>Join us</h1>
+      </header>
+
+      <p class="callout">
+        Our Slack is governed by the principles and rules in our{" "}
+        <a href="/community-guide">Community Guide.</a>
+        <br />
+        By joining, you agree to follow them.
+      </p>
+
       <form
         name="signup-global"
         method="POST"
-        class="marg-b-4"
         data-netlify="true"
         action="/welcome"
         netlify-honeypot="bot-field"
       >
-        <label style="display:none">
-          Don’t fill this out if you’re human: <input name="bot-field" />
-        </label>
-        <label class="marg-b-3" for="email">
-          <div>
-            <b>Email:</b>
-          </div>
+        <p class="h5">Please provide the following:</p>
+
+        <div style="display: none;">
+          <label>
+            <strong>Don’t fill this out if you’re human:</strong>
+          </label>
+          <input name="bot-field" />
+        </div>
+
+        <div class="column">
+          <label for="email">
+            <strong>Email:</strong>
+          </label>
           <input
             id="email"
             type="email"
@@ -41,147 +52,194 @@ export const render = ({ chapters }: Data) => {
             name="email"
             placeholder="mail@example.com"
           />
-        </label>
-        <div class="form-row">
-          <label class="marg-b-3" for="first-name">
-            <div>
-              <b>First Name:</b>
-            </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <label for="first-name">
+              <strong>First Name:</strong>
+            </label>
             <input
               id="first-name"
-              type="text"
               maxlength="100"
               required
               name="first-name"
               placeholder="John"
             />
-          </label>
-          <label class="marg-b-3" for="last-name">
-            <div>
-              <b>Last Name:</b>
-            </div>
+          </div>
+
+          <div class="column">
+            <label for="last-name">
+              <strong>Last Name</strong> (optional):
+            </label>
             <input
               id="last-name"
-              type="text"
               maxlength="100"
               name="last-name"
               placeholder="Doe"
             />
-          </label>
+          </div>
         </div>
-        <label class="marg-b-3" for="social">
-          <div class="marg-b-2">
-            <b>Please provide two links to your social media.</b>
-            <div>
-              We need a way to validate that you meet{" "}
-              <a href="/community-guide#membership">
-                the membership requirements laid out in our community guide.
-              </a>{" "}
-              LinkedIn is preferred, but anything that allows us to verify that
-              you are not a manager, journalist etc is acceptable.
+
+        <fieldset>
+          <legend>
+            <strong>Please provide two links to your social media.</strong>
+          </legend>
+          <p id="social-description">
+            We need a way to validate that you meet{" "}
+            <a href="/community-guide#membership">
+              the membership requirements laid out in our community guide.
+            </a>{" "}
+            LinkedIn is preferred, but anything that allows us to verify that
+            you are not a manager, journalist etc is acceptable.
+          </p>
+          <div class="row">
+            <div class="column">
+              <label for="social">
+                <strong>LinkedIn, Twitter, etc.</strong>
+              </label>
+              <input
+                aria-describedby="social-description"
+                placeholder="linkedin.com/in/john.doe"
+                id="social"
+                required
+                name="social_media_1"
+              />
+            </div>
+            <div class="column">
+              <label for="social-2">
+                <strong>GitHub, Instagram, Blog</strong>
+              </label>
+              <input
+                aria-describedby="social-description"
+                placeholder="github.com/john.doe"
+                id="social-2"
+                required
+                name="social_media_2"
+              />
             </div>
           </div>
+        </fieldset>
+
+        <div class="column">
+          <label for="company_name">
+            <strong>Company Name:</strong>
+          </label>
+          <p id="company_name-description">
+            Including a company name helps us vet you.
+          </p>
           <input
-            placeholder="LinkedIn, Twitter, etc"
-            id="social"
-            required
-            type="text"
-            name="social_media_1"
-            title="Enter a valid url"
-          />{" "}
-          <input
-            placeholder="GitHub, Instagram, Blog"
-            type="text"
-            required
-            name="social_media_2"
-            title="Enter a valid url"
-          />
-        </label>
-        <label class="marg-b-3" for="company_name">
-          <div>
-            <b>Company Name</b>
-          </div>
-          <div class="marg-b-2">Including a company name helps us vet you.</div>
-          <input
+            aria-describedby="company_name-description"
             id="company_name"
-            type="text"
             name="company_name"
             required
             placeholder="ACME Inc."
           />
-        </label>
-        <label class="marg-b-3" for="contacts-comments">
-          <div>
-            <b>Additional Comments</b> (optional):
-          </div>
-          <div class="marg-b-2">
+        </div>
+
+        <div class="column">
+          <label for="contacts-comments">
+            <strong>Additional Comments</strong> (optional):
+          </label>
+          <p id="contacts-comments-description">
             Any additional details regarding your contact information that you
             would like to include.
-          </div>
+          </p>
           <textarea
+            aria-describedby="contacts-comments-description"
             id="contacts-comments"
             maxlength="2000"
             name="contacts-comments"
           />
-        </label>
-        <label class="marg-b-3" for="human-referrer">
-          <div>
-            <b>How Did You Hear About Us?</b> (optional):
-          </div>
-          <div class="marg-b-2">
+        </div>
+
+        <div class="column">
+          <label for="human-referrer">
+            <strong>How Did You Hear About Us?</strong> (optional):
+          </label>
+          <p id="human-referrer-description">
             Including a referrer from an existing member can be a good way to
-            get in the slack if you lack a social media presence. Also, please
-            be specific! If you found us on search, don't just say "Google"
-            (it's unclear if you mean the company or the search engine).
-          </div>
-          <input id="human-referrer" type="text" name="human-referrer" />
-        </label>
-        <label class="marg-b-3" for="nearby-chapter">
-          <div>
-            <b>Do you live or work near an existing chapter?</b> (optional):
-          </div>
-          <div class="marg-b-2">
+            get in the slack if you lack a social media presence.
+            <br />
+            Also, please be specific! If you found us on search, don't just say
+            "Google" (it's unclear if you mean the company or the search
+            engine).
+          </p>
+          <input
+            aria-describedby="human-referrer-description"
+            id="human-referrer"
+            type="text"
+            name="human-referrer"
+          />
+        </div>
+
+        <div class="column">
+          <label for="nearby-chapter">
+            <strong>Do you live or work near an existing chapter?</strong>{" "}
+            (optional):
+          </label>
+          <p id="nearby-chapter-description">
             This helps us connect you with local organizing efforts. If there
             isn't already a chapter in your area, we'd love to chat with you
             about starting one!
-          </div>
-          <select id="nearby-chapter" name="nearby-chapter">
+          </p>
+          <select
+            aria-describedby="nearby-chapter-description"
+            id="nearby-chapter"
+            name="nearby-chapter"
+          >
             <option value="">Select a chapter</option>
             <option value="want-to-start">
               I want to help start a chapter
             </option>
             {chapterOptions}
           </select>
-        </label>
-        <label class="marg-b-3" for="is-manager">
-          <input
-            id="is-manager"
-            type="checkbox"
-            name="is-manager"
-            value="yes"
-            style="margin-right: 8px;"
-          />{" "}
-          <b>
-            Are you a manager with hiring or firing power? Note: for security
-            reasons, managers won't be added to our internal channels.
-          </b>
-        </label>
-        <label class="marg-b-3" for="outreach">
+        </div>
+
+        <div>
+          <div>
+            <input
+              aria-describedby="is-manager-description"
+              id="is-manager"
+              type="checkbox"
+              name="is-manager"
+              value="yes"
+              style="margin-right: 8px;"
+            />
+            <label for="is-manager">
+              <strong>Are you a manager with hiring or firing power?</strong>
+            </label>
+          </div>
+          <p id="is-manager-description">
+            Note: for security reasons, managers won't be added to our internal
+            channels.
+          </p>
+        </div>
+
+        <div>
           <input
             id="outreach"
             type="checkbox"
             name="outreach"
             value="wants-outreach"
             style="margin-right: 8px;"
-          />{" "}
-          <b>Are you interested in 1:1 outreach from someone in TWC?</b>{" "}
-          (optional)
-        </label>
+          />
+          <label for="outreach">
+            <strong>
+              Are you interested in 1:1 outreach from someone in TWC?
+            </strong>{" "}
+            (optional)
+          </label>
+        </div>
 
         <input type="submit" value="Submit" />
       </form>
-      <i>Our policy and practices for using and managing data are described in
-      our <a href="/data-policy">data transparency policy</a>.</i>
-    </>
+      <p>
+        <em>
+          Our policy and practices for using and managing data are described in
+          our <a href="/data-policy">data transparency policy</a>.
+        </em>
+      </p>
+    </main>
   );
 };
