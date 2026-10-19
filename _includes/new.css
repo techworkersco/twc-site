@@ -1041,7 +1041,7 @@ which is Galaxy S10/S10+ Android 11
       inline-size: 100%;
       max-inline-size: var(--max-content-width);
 
-      padding: 0 var(--space-m);
+      padding: 0 var(--space-s-m);
 
       display: flex;
       flex-direction: column;

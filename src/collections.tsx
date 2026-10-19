@@ -42,8 +42,10 @@ export const renderTime = (
         {new Intl.DateTimeFormat("en-US", {
           timeZone: time.timeZoneId,
           // We want `dateStyle: "short"` + `timeStyle: "short"` but with a time zone
-          year: "2-digit",
-          month: "numeric",
+          // We also can't use numeric months because month/day order is ambiguous internationally
+          // So this is a custom format instead
+          year: "numeric",
+          month: "short",
           day: "numeric",
           ...(!dateOnly
             ? {
