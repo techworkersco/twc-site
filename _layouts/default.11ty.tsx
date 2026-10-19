@@ -9,12 +9,17 @@ export const data = {
   layout: "base.11ty.tsx",
 };
 
+const merchUrl =
+  "https://shop.goodpress.coop/collections/tech-workers-coalition";
+
+// todo(maximsmol): just inline into markup
 const navigation = {
   footer: [
     { text: "Join", href: "/subscribe", icon: icons.UserPlus },
     { text: "Chapters", href: "/chapters", icon: icons.UserGroup },
     { text: "Press Mentions", href: "/press", icon: icons.Newspaper },
     { text: "Events", href: "/events", icon: icons.CalendarDays },
+    { text: "Merchandise", href: merchUrl, icon: icons.Shirt },
     {
       text: "Community Guide",
       href: "/community-guide",
@@ -96,6 +101,11 @@ export const render = async function ({
         <li>
           <a href="/press" class="button">
             Press
+          </a>
+        </li>
+        <li>
+          <a href={merchUrl} class="button">
+            Merchandise
           </a>
         </li>
         <li>

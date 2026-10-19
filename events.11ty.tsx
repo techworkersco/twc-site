@@ -10,6 +10,9 @@ export const data = {
 const renderEvent = (data) => {
   const { title, timestamp, locations, url, image } = data;
 
+  // todo(maximsmol): when rendering multiple time zones,
+  // do not specify date when it matches the previous item
+  // to make it more concise
   const tzs = "time_zones" in data ? data.time_zones : data.timeszones;
 
   if (tzs.length === 0) throw new Error("No time zone specified");
