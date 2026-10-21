@@ -115,7 +115,7 @@ export const render = async ({
             <section>
               <h3 class="h5">How We Operate:</h3>
               <p>
-                We're democratically structured, all-volunteer, and worker-led
+                We're a democratically structured, all-volunteer, and worker-led
                 organization.
               </p>
             </section>
