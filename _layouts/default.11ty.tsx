@@ -123,7 +123,7 @@ export const render = async function ({
         <div class="banner">
           <a class="plain" href="/circuit-breakers/">
             The <strong>CIRCUIT BREAKERS</strong> conference is coming up in
-            <strong> NYC on October 17-18 2026.</strong> By and for tech labor
+            <strong> NYC on October 17-18, 2026.</strong> By and for tech labor
             organizing.
           </a>
         </div>

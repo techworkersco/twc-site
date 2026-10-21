@@ -44,7 +44,7 @@ The Code of Conduct applies to:
 ### 4. Where does this apply?
 
 The following is not an exhaustive list of where the Code of Conduct applies,
-but intended for guidance:
+but is intended for guidance:
 
 - Meetings (virtual or in-person).
 - Slack discussion channels.
@@ -68,7 +68,7 @@ or guests, including:
 
 - Violence or threats of violence.
 - Language which is racist, sexist/misogynist, homophobic, transphobic,
-  ableist, fatphobic, derogatory against protected characterics, etc.
+  ableist, fatphobic, derogatory against protected characteristics, etc.
 - Verbal comments that reinforce social structures of domination related to
   gender identity and expression, sexual orientation, disability, physical
   appearance, body size, race, age, religion, etc.
@@ -82,24 +82,24 @@ or guests, including:
 - Advocating for, or encouraging, any of the above behaviour.
 
 As an activist organisation, TWC advocates for the disenfranchised and will
-privilege their needs. Accountability reps first priority is to protect those
-at more risk of being materially disadvantaged, e.g. systematically
+privilege their needs. Accountability reps' first priority is to protect those
+at greater risk of being materially disadvantaged, e.g. systematically
 marginalised, losing their jobs for their activism, etc.
 
 ### 7. How is this Code of Conduct enforced?
 
-Participants asked to stop any harassing behavior are expected to comply
-immediately. We operate by a 2 strike policy and these are on the basis of
+Participants who are asked to stop any harassing behavior are expected to comply
+immediately. We operate under a two-strike policy based on
 instances of behaviour.
 
-- 2 strike (1 incident with warning. If done again, you’re out)
-  - In effect for? _Year-long exclusion (removed from meetings, banned from
+- Two-strike policy (one incident with warning. If done again, you’re out)
+  - In effect for: _Year-long exclusion (removed from meetings, banned from
     future events, removed from Slack, blocked on Twitter, etc.); return on
     condition of agreement amongst accountability reps; after returning, the
     perpetrator will be subject to a single strike policy. This incident will be
     reported to the global TWC organisers_.
 
-- Outside of TWC associated spaces
+- Outside of TWC-associated spaces
   - Please do raise issues to the accountability reps about issues relating to
     past behaviours outside of TWC contexts. People who have demonstrated prior
     behaviour that would have contravened our Code of Conduct will be given 1

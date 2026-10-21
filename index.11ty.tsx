@@ -95,8 +95,8 @@ export const render = async ({
               <h3 class="h5">Vision & Values:</h3>
               <p>
                 Guided by our vision for an inclusive and equitable tech
-                industry, TWC organizes to build worker power through rank and
-                file self-organization and education.
+                industry, TWC organizes to build worker power through
+                rank-and-file self-organization and education.
               </p>
             </section>
           </li>
@@ -107,7 +107,7 @@ export const render = async ({
                 We are a coalition of workers in and around the tech industry,
                 labor organizers, community organizers, and friends. We work in
                 solidarity with existing movements towards social justice,
-                worker's rights, and economic inclusion.
+                workers' rights, and economic inclusion.
               </p>
             </section>
           </li>

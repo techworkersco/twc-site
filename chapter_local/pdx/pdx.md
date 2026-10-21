@@ -24,4 +24,4 @@ This is the Portland, OR chapter of the TWC.
 
 ## Code of Conduct
 
-All meetings and communications are covered under the [TWC Code of Conduct](/community-guide/). The privacy and safety of our members is important to us. Sharing the identity of members and or taking/sharing photos are strictly forbidden unless express consent is given.
+All meetings and communications are covered under the [TWC Code of Conduct](/community-guide/). The privacy and safety of our members are important to us. Sharing the identity of members and/or taking/sharing photos are strictly forbidden unless express consent is given.

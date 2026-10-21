@@ -5,7 +5,7 @@ layout: plain.11ty.tsx
 
 # Stack
 
-Many TWC chapter meetings using a technique called [Progressive
+Many TWC chapter meetings use a technique called [Progressive
 Stack](https://en.wikipedia.org/wiki/Progressive_stack) to manage the order of
 who speaks during a discussion. Below is a brief summary of why and how it
 works.
@@ -14,13 +14,13 @@ works.
 
 Stack is intended to make group discussions more equitable to prevent a small
 group from dominating a discussion. A person, the _stack-taker_, manages the
-stack and is in charge of deciding the order of who speaks next. In particular,
+stack and decides who speaks next. In particular,
 
 - Prefer to hear first from people who haven't spoken yet, or don't often
   speak.
 - Prefer to hear first from marginalized people who may otherwise be silenced,
-  ignored, or discouraged by "they who shout loudest" or "first come first
-  served" orderings.
+  ignored, or discouraged by "those who shout loudest" or "first-come,
+  first-served" orderings.
 
 Relatedly, registering a desire to speak should be a low-friction one-time
 action. For example, briefly raising a hand and attracting the attention of the
@@ -39,9 +39,9 @@ person to speak, returning to the facilitator if the stack is empty.
 
 ## Remote meetings
 
-Taking stack has challenges in remote meetings, as not every participant will
-have video, it's hard to keep track of everyone's videos at once, and so on.
-Below are some procedures and tips we've found helpful managing the stack for
+Taking stack has challenges in remote meetings because not every participant will
+have video and it's hard to keep track of everyone's videos at once.
+Below are some procedures and tips we've found helpful for managing the stack for
 specific remote meeting tools.
 
 ### Zoom

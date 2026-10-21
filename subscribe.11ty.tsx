@@ -91,7 +91,7 @@ export const render = ({ chapters }: Data) => {
               the membership requirements laid out in our community guide.
             </a>{" "}
             LinkedIn is preferred, but anything that allows us to verify that
-            you are not a manager, journalist etc is acceptable.
+            you are not a manager, journalist, etc., is acceptable.
           </p>
           <div class="row">
             <div class="column">
@@ -142,8 +142,8 @@ export const render = ({ chapters }: Data) => {
             <strong>Additional Comments</strong> (optional):
           </label>
           <p id="contacts-comments-description">
-            Any additional details regarding your contact information that you
-            would like to include.
+            Please include any additional details regarding your contact
+            information.
           </p>
           <textarea
             aria-describedby="contacts-comments-description"
@@ -159,9 +159,9 @@ export const render = ({ chapters }: Data) => {
           </label>
           <p id="human-referrer-description">
             Including a referrer from an existing member can be a good way to
-            get in the slack if you lack a social media presence.
+            get into Slack if you lack a social media presence.
             <br />
-            Also, please be specific! If you found us on search, don't just say
+            Also, please be specific! If you found us through a search, don't just say
             "Google" (it's unclear if you mean the company or the search
             engine).
           </p>
