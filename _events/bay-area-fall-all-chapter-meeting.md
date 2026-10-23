@@ -8,7 +8,7 @@ time_zones:
 ---
 ### Agenda
 
-Join TWC Bay Area for our summer all chapter meeting. We'll cover:
+Join TWC Bay Area for our fall all chapter meeting. We'll cover:
 - New Member Orientation @ 6pm
 - Report backs from the Circuit Breakers conference in NYC
 - Discuss the state of our industry and work
