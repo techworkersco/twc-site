@@ -33,4 +33,5 @@ Join TWC Bay Area for our fall all chapter meeting. We'll cover:<br><br>
 
 * **Berkeley:** [The Office](https://theofficeberkeley.com/) (1935A Addison St, Berkeley)
 * **San Mateo/San Carlos:** San Carlos Public Library, Meeting Room B (610 Elm St, San Carlos)
-* **SF, East Oakland, South Bay:** TBD, watch this space! Or join on Zoom
+* **San Jose:** MLK Library, Room 662 - 6th floor (150 E San Fernando St, San Jose)
+* **SF:** TBD, watch this space! Or join on Zoom
