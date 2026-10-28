@@ -1,5 +1,5 @@
 ---
-title: Tendrils - Tech Workers Organizining in the End Times
+title: Tendrils - Tech Workers Organizing in the End Times
 date: 2026-10-28T12:00:00.000+01:00
 ---
 > *"If ten years ago the proposition of leading tech workers into collective action sounded preposterous in most of the world, today it is regarded not only as a possibility, but as a
