@@ -1,8 +1,9 @@
 ---
-title: "Bay Area, Militarism & Surveillance Working Group "
+title: "Bay Area: Militarism & Surveillance Working Group "
 date: 2026-11-10 19:00
 locations:
   - Bay Area
+  - Online
 time_zones:
   - US/Pacific
 ---
