@@ -147,9 +147,9 @@ note: minimum supported width 360px matching the smallest preset in Firefox,
 which is Galaxy S10/S10+ Android 11
 */
 
-@custom-media --width-lte-s (width <= 600px);
-@custom-media --width-gte-s (width >= 600px);
-@custom-media --width-lte-m (width <= 800px);
+@custom-media --width-lte-s (width <=600px);
+@custom-media --width-gte-s (width >=600px);
+@custom-media --width-lte-m (width <=800px);
 
 @layer base {
   :root {
@@ -358,6 +358,8 @@ which is Galaxy S10/S10+ Android 11
     &:hover,
     &:focus-visible {
       background-color: var(--color-lavender-600);
+
+      text-decoration: none;
     }
   }
 
@@ -367,6 +369,8 @@ which is Galaxy S10/S10+ Android 11
   }
 
   a {
+    color: var(--color-teal-200);
+
     &:hover,
     &:focus-visible {
       text-decoration: underline;
@@ -966,6 +970,10 @@ which is Galaxy S10/S10+ Android 11
 
     > .content {
       max-inline-size: var(--max-readable-width);
+
+      a:visited:not(:hover) {
+        color: var(--color-purple-200);
+      }
     }
   }
 
@@ -1185,6 +1193,7 @@ which is Galaxy S10/S10+ Android 11
       details[open] .summary-closed {
         display: none;
       }
+
       details:not([open]) .summary-open {
         display: none;
       }
@@ -1221,6 +1230,7 @@ which is Galaxy S10/S10+ Android 11
 
       /* todo(maximsmol): rethink this layout */
       grid-template-columns: repeat(auto-fit, clamp(150px, 35vw, 240px));
+
       @media (--width-lte-s) {
         grid-template-columns: auto;
 
@@ -1232,6 +1242,7 @@ which is Galaxy S10/S10+ Android 11
 
       > li {
         aspect-ratio: 1 / 1;
+
         @media (--width-lte-s) {
           aspect-ratio: unset;
         }

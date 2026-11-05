@@ -120,6 +120,14 @@ export const render = async function ({
   return (
     <>
       <header>
+        <div class="banner">
+          <a
+            class="plain"
+            href="/blog/2026/10/28/tendrils-tech-workers-organizing-in-the-end-times/"
+          >
+            TWC Global's first zine — <strong>Tendrils</strong> — is out now!
+          </a>
+        </div>
         <div>
           <div class="contents">
             <a href="/" class="h1 plain">
