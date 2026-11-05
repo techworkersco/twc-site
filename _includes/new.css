@@ -972,7 +972,7 @@ which is Galaxy S10/S10+ Android 11
       max-inline-size: var(--max-readable-width);
 
       a:visited:not(:hover) {
-        color: var(--color-purple-200);
+        color: var(--color-teal-400);
       }
     }
   }
