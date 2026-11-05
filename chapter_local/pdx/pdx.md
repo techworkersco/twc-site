@@ -1,30 +1,41 @@
 ---
 title: TWC PDX
 permalink: /pdx/
+layout: plain.11ty.tsx
 ---
+
 {% assign events = portland_events | date_sort | where_future: site.time | filter_tags: include.tags %}
 
-<style>h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}</style>
 # PDX Tech Workers Coalition
+
 This is the Portland, OR chapter of the TWC.
 
 ## About
+
 - We are a coalition of workers in and around the tech industry, labor organizers, community organizers, and friends.
 
 ## Organize With Us
+
 - Sign up to [join our chapter](https://techworkerscoalition.org/subscribe/)!
 - See what's coming up on our [chapter calendar](https://dev.techworkerscoalition.org/nextcloud/apps/calendar/p/P7FzxHGbFoMPCSPE), or [subscribe to it](https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/P7FzxHGbFoMPCSPE/?export) in your own calendar app.
-- Visit the [Tech Workers Coalition Instagram](https://www.instagram.com/techworkerscoalition/) for updates on our actions and events!
+- Visit our social media for updates on our actions and events!
+  - [TWC Instagram](https://www.instagram.com/techworkerscoalition/)
+  - [Portland TWC Instagram](https://www.instagram.com/twc_pdx/)
+  - [Bluesky](https://bsky.app/profile/twcpdx.bsky.social)
+  - [Mastodon](https://union.place/@twc_pdx)
 - Come to one of our [Unemployed Tech Worker Events](/pdx/events/unemployed-workers-meeting/).
 
 ## Meetings and Events
+
 Upcoming meetings and events are listed below and on the <a href="https://dev.techworkerscoalition.org/nextcloud/apps/calendar/p/P7FzxHGbFoMPCSPE">Portland TWC Calendar</a>.
 {% for event in events %}
-    {% include event-card.html %}
+{% include event-card.html %}
 {% endfor %}
 
 ## Bylaws
+
 - Our chapter is governed by the [PDX TWC bylaws](https://pdx.techworkerscoalition.org/nextcloud/s/4AF5pgYNobDgcwF).
 
 ## Code of Conduct
-All meetings and communications are covered under the [TWC Code of Conduct](/community-guide/). The privacy and safety of our members is important to us. Sharing the identity of members and or taking/sharing photos are strictly forbidden unless express consent is given.
+
+All meetings and communications are covered under the [TWC Code of Conduct](/community-guide/). The privacy and safety of our members are important to us. Sharing the identity of members and/or taking/sharing photos are strictly forbidden unless express consent is given.

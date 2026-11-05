@@ -9,7 +9,7 @@ Summer Learning Club was an experimental, bi-weekly reading and discussion group
 
 **How can worker self-organization improve the working lives of people in and around the tech industry?**
 
-There were sessions based on worker's inquiry, labor history, critique of the tech industry, and case studies from other successful movements.
+There were sessions based on workers' inquiry, labor history, critique of the tech industry, and case studies from other successful movements.
 
 ### Schedule
 **June**

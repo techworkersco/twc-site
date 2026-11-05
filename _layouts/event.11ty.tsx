@@ -23,7 +23,6 @@ export const render = function (
     image?: string;
   },
 ) {
-
   // Events and their dates come from 3 sources:
   // * _events/*.md files with dates and timezones in the frontmatter
   // * remote YAML files with dates and timezones.
@@ -41,15 +40,15 @@ export const render = function (
     formatted_event_date = this.all_time_zones(page.date, time_zones);
   } else {
     event_date = event.date;
-    formatted_event_date = new Intl.DateTimeFormat('en-US', {
-        weekday: 'short',
-        month: 'long',
-        day: '2-digit',
-        year: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-        hour12: false,
-        timeZoneName: 'short'
+    formatted_event_date = new Intl.DateTimeFormat("en-US", {
+      weekday: "short",
+      month: "long",
+      day: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+      timeZoneName: "short",
     }).format(event_date);
   }
 
@@ -60,40 +59,41 @@ export const render = function (
   // todo(maximsmol): can this use regular iso format?
   timeConverterUrl.searchParams.set(
     "iso",
-    DateTime.fromJSDate(event_date).setZone("UTC").toFormat("yyyyMMdd'T'HHmmss"),
+    DateTime.fromJSDate(event_date)
+      .setZone("UTC")
+      .toFormat("yyyyMMdd'T'HHmmss"),
   );
   timeConverterUrl.searchParams.set("p1", "179"); // New York City
   timeConverterUrl.searchParams.set("p2", "224"); // San Francisco
   timeConverterUrl.searchParams.set("p3", "37"); // Berlin
 
   return (
-    <>
-      <style>
-        {/* todo(maximsmol): move to main.css? */}
-        {"h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}"}
-      </style>
-      <nav class="see-more">
-        <a href="/events" class="button primary">
+    <main class="plain">
+      <nav>
+        <a href="/blog" class="button framed">
           Find more events
         </a>
       </nav>
       <article class="post">
-        <h1 class="post-title">{title}</h1>
-        <div class="post-content">
-          <div class="event-time">
+        <header>
+          <h1 class="h4">{title}</h1>
+          {/* todo(maximsmol): use regular time rendering */}
+          <div>
             📆{" "}
-            <a target="_blank" href={timeConverterUrl.href}>
+            <a class="plain" target="_blank" href={timeConverterUrl.href}>
               {formatted_event_date}
             </a>
           </div>
-
+        </header>
+        <div class="content">
           {image != null && !content.includes(image) && (
-            <img class="img-fluid" src={image} />
+            <p>
+              <img src={image} />
+            </p>
           )}
-
           {{ type: "raw", value: content }}
         </div>
       </article>
-    </>
+    </main>
   );
 };

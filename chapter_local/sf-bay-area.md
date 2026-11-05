@@ -1,9 +1,11 @@
 ---
 title: TWC SF Bay Area
 permalink: /bay-area/
+layout: plain.11ty.tsx
 ---
-<style>h1, .main-wrapper h2, h3 {text-align: left; font-weight: bold;}</style>
+
 # Tech Workers Coalition Bay Area
+
 <br/>
 
 We are building tech worker power in the Bay Area: to win better working conditions and a real say in how the technology we build impacts our communities and the world.
@@ -29,7 +31,7 @@ We host regular in-person events in San Francisco, the East Bay, and (most recen
 - **Who is this for?** We are workers in and around the tech industry, labor organizers, community organizers, and friends. If this sounds like you, you're welcome here!
 - **What are we working on?** We have active working groups focused on political education for tech workers, pushing back against tech militarism and mass surveillance, community building, and organizing in our workplaces.
 - **When do we meet?** We host regular social meetups, reading groups, chapter meetings, and political education events (often in partnership with aligned orgs). See the [calendar below](#upcoming-events) for upcoming events.
-<br/><br/>
+  <br/><br/>
 
 ## Get Involved
 
@@ -38,13 +40,12 @@ Here's how to get started:
 1. **[Join TWC](/subscribe/)** and select the "SF Bay Area" chapter in the form to join our local mailing list (we typically send 2-4 emails per month).
 2. Once you're in the TWC Slack, hop into the `#local-bay-area` channel to introduce yourself!
 3. Show up: the best way to get involved is in person. Browse the [calendar below](#upcoming-events) and come to our next social meetup, training, or book club.
-<br/><br/>
+   <br/><br/>
 
 ## Upcoming Events
 
 👉 **Add these events to your own calendar: [Google Calendar](https://calendar.google.com/calendar/u/0?cid=ODJjMGEwMGU3ZTEwZTAxZGRhODFlZjNhNWEzYTIzZjk0OWFiMjdmNDFjNDUxZjYyN2QzODg2ZGE3MWI2NDZhNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t), [iCal](https://calendar.google.com/calendar/ical/82c0a00e7e10e01dda81ef3a5a3a23f949ab27f41c451f627d3886da71b646a4%40group.calendar.google.com/public/basic.ics)**\
 👉 <a href="https://grist.dev.techworkerscoalition.org/o/twc/forms/bvnr5yiRcc91y4uhhPkq3a/7" target="_blank">Join a working group</a>
 
-
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&mode=AGENDA&title=TWC%20Bay%20Area%20Events&showPrint=0&src=ODJjMGEwMGU3ZTEwZTAxZGRhODFlZjNhNWEzYTIzZjk0OWFiMjdmNDFjNDUxZjYyN2QzODg2ZGE3MWI2NDZhNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23a79b8e" style="border-width:0; width:100%;" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&mode=AGENDA&title=TWC%20Bay%20Area%20Events&showPrint=0&src=ODJjMGEwMGU3ZTEwZTAxZGRhODFlZjNhNWEzYTIzZjk0OWFiMjdmNDFjNDUxZjYyN2QzODg2ZGE3MWI2NDZhNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23a79b8e" style="border-width:0; width:100%; height: 600px" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 <br/><br/>

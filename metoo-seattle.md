@@ -14,7 +14,7 @@ permalink: /metoo/seattle/
 ## Women of Color Speak Out Resources
 
 - [Real Rent Duwamish](https://www.realrentduwamish.org/)
-- Undoing Racisim with [The Peoples's Institute PNW](https://www.pinwseattle.org/)
+- Undoing Racism with [The People's Institute PNW](https://www.pinwseattle.org/)
 - WoCSO videos: [I: Surrounded by Patriarchy](https://www.youtube.com/watch?v=GvKAe-iFOMs), [II: Internalized Oppression](https://www.youtube.com/watch?v=XHrvNYUTTpw), [III: What is Sexual Harassment](https://www.youtube.com/watch?v=swumabAjkWM), [IV: Heart to Heart](https://www.youtube.com/watch?v=QVSwSJJZJS0)
 - Join white men dismantling patriarchy and toxic masculinity: email bertwhopkins@gmail.com
 - The Mask You Live In (film)
@@ -25,7 +25,7 @@ permalink: /metoo/seattle/
 - [The Consent Academy](https://web.archive.org/web/20200930215105/https://www.consent.academy/mission-statement.html)
 - [Jackson Katz, PhD TED talk - Violence Against Women](https://www.youtube.com/watch?v=KTvSfeCRxe8)
 - [A Call to Men](https://www.acalltomen.org)
-- [MVP Strategies](htps://www.mvpstrat.com/about)
+- [MVP Strategies](https://www.mvpstrat.com/about)
 - [Pop Culture Detective Agency](https://www.youtube.com/user/rebelliouspixels)
 
 ## Recommended Books

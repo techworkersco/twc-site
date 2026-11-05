@@ -1,7 +1,9 @@
 ---
 title: TWC NYC
 permalink: /nyc/
+layout: plain.11ty.tsx
 ---
+
 <style>.event a{line-height:1}#calendarContainer{padding:0 0 20px}.social{list-style:none;margin:0;padding:0}.bottomLinks a{display:block;font-size:18px;line-height:1;padding:12px}.calendarLink{display:block;font-size:18px;line-height:1}.marg{margin:0 5px}.pad{padding:12px 0 24px}.main-wrapper main{max-width:1024px;padding-left:1.5em;padding-right:1.5em}@media screen and (max-width:920px){.header .supporting-links li:nth-child(1),.header .supporting-links li:nth-child(2){display:none}}@media screen and (max-width:640px){.header .supporting-links li:nth-child(1),.header .supporting-links li:nth-child(2),.header .work{display:none}.hideMobile{display:none}.event{padding:12px}.bottomLinks a{padding:6px 0}}#tech-workers-coalition-nyc {font-size:32px;line-height:1;}.mc-field-group{font-size:14px;}.mc-field-group label{display:block;}.mc-field-group input{margin: 0;padding:8px;width:100%;}#mc_embed_label{display:block;font-size:20px;font-weight:600;line-height:1;text-align:left !important;margin-bottom: 10px;}.col{flex:1;}.mR4{margin-right:4px;}.mB12{margin-bottom:12px}input{box-sizing:border-box;} #mc-embedded-subscribe{text-transform: initial;border-radius: 4px;font-size: 14px;font-weight: 600;margin: 0 auto;text-align: center;display: block}#mc_embed_signup{padding: 8px 0;}
 .event{background:#f8f8f8;border-radius:4px;padding:24px;margin:24px 0;}
 .event article {font-size:18px;line-height:24px;margin:0;max-width:960px;max-height: 200px;overflow:scroll;}
@@ -52,7 +54,6 @@ permalink: /nyc/
 
 <hr />
 <h2 class class="marg-b-2">NYC + Online Events</h2>
-{% include events.html tags="nyc,online" limit=5 %}
 <div class="d:flex justify-between bottomLinks">
   <ul class="d:flex social">
    <li><a href="https://www.meetup.com/Tech-Workers-Coalition-NYC">Meetup (NYC)</a></li>

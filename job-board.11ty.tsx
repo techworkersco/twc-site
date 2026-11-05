@@ -1,13 +1,15 @@
 import { Data } from "./types.ts";
 
+import icons from "./src/lucide";
+
 export const data = {
   title: "Job Board",
 };
 
 export const render = ({ workplaces }: Data) => {
   return (
-    <>
-      <h1 class="lh-tight marg-b-3 marg-t-2">Job Board 🌹</h1>
+    <main class="plain">
+      <h1>Job Board 🌹</h1>
 
       <p>
         More and more tech-driven organizations are unionizing. This is an
@@ -19,7 +21,7 @@ export const render = ({ workplaces }: Data) => {
         </a>
       </p>
 
-      <h2 class="marg-b-2">Active tech unions and campaigns</h2>
+      <h2 class="h4">Active tech unions and campaigns</h2>
       <ul class="job-board">
         {workplaces.map((x) => (
           <li>
@@ -43,28 +45,15 @@ export const render = ({ workplaces }: Data) => {
                 </>
               )}
             </p>
-            <div class="flex">
-              <a href={x.job_listings} class="button">
+            <div style="display: flex;">
+              <a href={x.job_listings} class="button framed">
                 See all jobs
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-right-icon lucide-chevron-right"
-                >
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
+                {icons.ChevronRight}
               </a>
             </div>
           </li>
         ))}
       </ul>
-    </>
+    </main>
   );
 };
