@@ -32,6 +32,15 @@ export const render = ({ chapters }: Data) => {
     // todo(maximsmol): get these from npm?
     const links: JSX.Element[] = [];
 
+    if (x.whatsapp != null)
+      links.push(
+        <li>
+          <a href={`https://chat.whatsapp.com/${x.whatsapp}`}>
+            {siIcons.siWhatsapp}
+          </a>
+        </li>,
+      );
+
     if (x.telegram != null)
       links.push(
         <li>
@@ -95,8 +104,8 @@ export const render = ({ chapters }: Data) => {
 
     if (x.twitter != null)
       links.push(
-        <li>
-          <a href={`https://twitter.com/${x.twitter}`}>{siIcons.Twitter}</a>
+        <li style="font-size: 80%">
+          <a href={`https://twitter.com/${x.twitter}`}>{siIcons.siX}</a>
         </li>,
       );
 
