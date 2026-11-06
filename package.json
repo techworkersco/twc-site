@@ -23,7 +23,7 @@
     "hast-util-to-text": "^4.0.2",
     "hastscript": "^9.0.1",
     "lightningcss": "^1.31.1",
-    "liquidjs": "10.25.0",
+    "liquidjs": "10.27.2",
     "lucide-static": "^1.55.0",
     "luxon": "^3.7.2",
     "markdown-it": "^14.1.1",

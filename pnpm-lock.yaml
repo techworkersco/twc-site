@@ -85,8 +85,8 @@ importers:
         specifier: ^1.31.1
         version: 1.31.1
       liquidjs:
-        specifier: 10.25.0
-        version: 10.25.0(patch_hash=f4f01a1fe49f46a48ddcb9a7585cd7f8dfca5cc92f5443605740e390f75ad26a)
+        specifier: 10.27.2
+        version: 10.27.2(patch_hash=f4f01a1fe49f46a48ddcb9a7585cd7f8dfca5cc92f5443605740e390f75ad26a)
       lucide-static:
         specifier: ^1.55.0
         version: 1.55.0
@@ -1759,8 +1759,8 @@ packages:
   linkify-it@5.0.0:
     resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
 
-  liquidjs@10.25.0:
-    resolution: {integrity: sha512-XpO7AiGULTG4xcTlwkcTI5JreFG7b6esLCLp+aUSh7YuQErJZEoUXre9u9rbdb0057pfWG4l0VursvLd5Q/eAw==}
+  liquidjs@10.27.2:
+    resolution: {integrity: sha512-kvknfAEtOHjHkAAv7GxLEJh8ghpMQm3Fc4uWVyF7hERSTsSRsdC7saWs0p5aDG7GDcWsu5o+T4232O+8KZO55w==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -2820,7 +2820,7 @@ snapshots:
       iso-639-1: 3.1.5
       js-yaml: 4.1.1
       kleur: 4.1.5
-      liquidjs: 10.25.0(patch_hash=f4f01a1fe49f46a48ddcb9a7585cd7f8dfca5cc92f5443605740e390f75ad26a)
+      liquidjs: 10.27.2(patch_hash=f4f01a1fe49f46a48ddcb9a7585cd7f8dfca5cc92f5443605740e390f75ad26a)
       luxon: 3.7.2
       markdown-it: 14.1.1
       minimist: 1.2.8
@@ -4660,7 +4660,7 @@ snapshots:
     dependencies:
       uc.micro: 2.1.0
 
-  liquidjs@10.25.0(patch_hash=f4f01a1fe49f46a48ddcb9a7585cd7f8dfca5cc92f5443605740e390f75ad26a):
+  liquidjs@10.27.2(patch_hash=f4f01a1fe49f46a48ddcb9a7585cd7f8dfca5cc92f5443605740e390f75ad26a):
     dependencies:
       commander: 10.0.1
 
