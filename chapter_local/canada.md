@@ -14,19 +14,19 @@ While the membership is primarily Anglophone, we strive for a grassroots bilingu
 
 ## À Propos
 
-On est la section canadienne du Tech Workers Coalition (Coalition des Travaill.eurs.euses de la Technologie). Il y avait des itératrions previeuses du TWC qui avaient participé à des evenements au traverse du Canada en 2019 mais en été 2025, nous sommes renaître!
+Nous sommes la section canadienne de la Tech Workers Coalition (Coalition des Travailleurs·euses de la Technologie ou TWC). Des sections de TWC ont participé à des événements partout au Canada en 2019, et nous avons repris nos activités à l’été 2025 !
 
-On est une de plusieures sections mondiales du TWC. On est une coalition des travaill.eur.euse.s dans l'industrie technologique, des organisa.teur.trice.s des travailleurs, des organisateur.trice.s communitaires et des amis. On veut bâtir la solidarité entre les travaill.eur.euse.s et élabourer une perspective qui centre les experiences des travaill.eur.euse.s. Tous les travaill.eur.euse.s sont accuillée pour organiser, pour apprendre et pour qu'on puisse réaffirmer notre pouvoir dans l'industrie technologique.
+Nous sommes l’une des nombreuses sections mondiales de TWC. Nous sommes une coalition de travailleurs·euses dans l’industrie de la technologie, de militant·es autour des questions de droit du travail, d’organisateurs·trices de communautés et d’ami·e·s. Nous voulons créer plus de solidarité entre les travailleurs·euses et développer des perspective politiques centrées sur leurs expériences. Tous les travailleurs·euses sont les bienvenu·e·s pour s’organiser, apprendre et réaffirmer notre capacité d'action dans l’industrie de la technologie.
 
-Au présent, la plupart de nos membres sont anglophone mais on met tout en oeuvr epour nourir une collectivité billingue et on accueil favorablement toute recommandation pour qu'on puisse la nourir.
+Pour le moment, la plupart de nos membres sont anglophones, mais nous mettons tout en œuvre pour développer une communauté bilingue et accueillons toute recommandation en ce sens.
 
 ## Code of Conduct
 
 All meetings and communications are covered under the [TWC Code of Conduct](/community-guide/). The privacy and safety of our members is important to us. Sharing the identity of members and or taking/sharing photos are strictly forbidden unless express consent is given.
 
-## Code de Conduit
+## Code de Conduite
 
-[La code de conduite du TWC](/community-guide/) sont apliquée au toutes les réunions et communications. La sécurite et la confidentialité de nos membres sont trop importante pour nous. Partager l'identite ou des photos de nos membres est strictement interdite.
+[Le code de conduite de TWC](/community-guide/) s’applique à toutes les réunions et communications. La sécurité et la confidentialité de nos membres sont très importantes pour nous. Partager l’identité de nos membres ou prendre et partager des photos sont strictement interdits sans le consentement clair des personnes.
 
 ## Connect with Us
 
@@ -34,8 +34,8 @@ To connect with us you can join one of our weekly Virtual Coffees or email us at
 
 ## Contactez-nous
 
-Joignez-nous pour nos cafés virtuels hebdomaires ou envoyez-nous un email à <techworkerscanada@gmail.com>.
+Rejoignez-nous lors de nos cafés virtuels hebdomadaires ou envoyez-nous un courriel à <techworkerscanada@gmail.com>.
 
-## Upcoming Events / Prochaines Evenements
+## Upcoming Events / Prochains événements
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FToronto&showPrint=0&showCalendars=0&src=dGVjaHdvcmtlcnNjYW5hZGFAZ21haWwuY29t&src=dGExa3MxYmpqb2RraXRncjJocjNrZ201ZGJrdnNyaWhAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039be5&color=%23d50000" style="border:solid 1px #777; height: 600px" width="800" height="600" frameborder="0" scrolling="no"></iframe>

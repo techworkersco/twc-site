@@ -3,9 +3,6 @@ local_backend: true
 backend:
   name: git-gateway
   branch: master # defaults to master
-  accept_roles: #optional - accepts all users if left out
-    - admin
-    - editor
   commit_messages:
     create: Add {{collection}} "{{slug}}" via DecapCMS
     update: Update {{collection}} "{{slug}}" via DecapCMS
