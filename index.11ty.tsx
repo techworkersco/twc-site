@@ -131,7 +131,7 @@ export const render = async ({
           </a>
         </section>
       </section>
-      <section class="cards">
+      <section class="cards full-width">
         <header>
           <h2 class="h3">Upcoming Events</h2>
           <a href="/events" class="button">
@@ -187,7 +187,7 @@ export const render = async ({
           })}
         </ol>
       </section>
-      <section class="cards press">
+      <section class="cards full-width press">
         <header>
           <h2 class="h3">TWC in the Press</h2>
           <a href="/press" class="button">
@@ -220,7 +220,7 @@ export const render = async ({
           ))}
         </ol>
       </section>
-      <section class="cards">
+      <section class="cards full-width">
         <header>
           <h2 class="h3">Blog Posts</h2>
           <a href="/blog" class="button">

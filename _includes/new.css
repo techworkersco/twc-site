@@ -846,6 +846,11 @@ which is Galaxy S10/S10+ Android 11
       margin-top: var(--space-s);
     }
 
+    ul,
+    ol {
+      margin-left: 1em;
+    }
+
     img {
       align-self: center;
     }
@@ -989,15 +994,22 @@ which is Galaxy S10/S10+ Android 11
     --bg-color: var(--color-lavender-800);
     --accent-color: var(--color-lavender-400);
 
-    inline-size: 100%;
-    background-color: var(--bg-color);
-
     display: flex;
     flex-direction: column;
 
     align-items: center;
 
-    padding-bottom: var(--space-xl);
+    inline-size: 100%;
+
+    &.full-width {
+      background-color: var(--bg-color);
+
+      padding-bottom: var(--space-xl);
+
+      ol {
+        padding: 0 var(--space-s-m);
+      }
+    }
 
     > .callout {
       margin-top: 0;
@@ -1049,7 +1061,7 @@ which is Galaxy S10/S10+ Android 11
       inline-size: 100%;
       max-inline-size: var(--max-content-width);
 
-      padding: 0 var(--space-s-m);
+      margin: 0;
 
       display: flex;
       flex-direction: column;
@@ -1122,6 +1134,7 @@ which is Galaxy S10/S10+ Android 11
             padding: var(--space-xs);
 
             border: var(--border);
+            background-color: var(--bg-color);
 
             .detail {
               font-size: var(--step--1);
@@ -1142,10 +1155,21 @@ which is Galaxy S10/S10+ Android 11
               > .icon,
               > .lucide {
                 font-size: 150%;
+
+                flex-shrink: 0;
               }
 
               @media (--width-lte-m) {
                 padding-left: 0;
+              }
+
+              > * {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                max-inline-size: 15ch;
+                overflow: hidden;
+                text-overflow: ellipsis;
               }
             }
 
@@ -1224,6 +1248,8 @@ which is Galaxy S10/S10+ Android 11
     .list {
       ul {
         list-style-type: none;
+
+        margin: 0;
       }
 
       display: grid;

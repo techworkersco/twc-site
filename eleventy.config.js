@@ -249,13 +249,13 @@ export default async (cfg) => {
     },
   });
   cfg.addTemplateFormats("mdx");
-  
+
   cfg.addShortcode("featuredVideo", (videoId) => {
-    if (!videoId) return '';
+    if (!videoId) return "";
 
     return `
       <div class="featured-video-wrapper">
-        <div class="featured-video-facade" 
+        <div class="featured-video-facade"
             id="youtube-${videoId}"
             style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; cursor: pointer;"
             onclick="
@@ -269,8 +269,8 @@ export default async (cfg) => {
               this.innerHTML = '';
               this.appendChild(iframe);
             ">
-          <img src="https://img.youtube.com/vi/${videoId}/maxresdefault.jpg" 
-            alt="Featured Video Thumbnail" 
+          <img src="https://img.youtube.com/vi/${videoId}/maxresdefault.jpg"
+            alt="Featured Video Thumbnail"
             style="position: absolute; top: 0; left: 0; right: 0; width: 100%; max-width: 100%; height: 100%; object-fit: cover; opacity: 0.85;"
             onerror="this.src='https://img.youtube.com/vi/${videoId}/hqdefault.jpg';">
           <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; background: rgba(30, 30, 30, 0.9); border-radius: 12px; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">
@@ -289,14 +289,21 @@ export default async (cfg) => {
    */
   const fetchCalendar = async () => {
     const ical_urls = new Map([
-      ['ical_events', 'https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/EHFzzZQXSQoS3f5w/?export'],
-      ['portland_events', 'https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/P7FzxHGbFoMPCSPE?export']
+      [
+        "ical_events",
+        "https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/EHFzzZQXSQoS3f5w/?export",
+      ],
+      [
+        "portland_events",
+        "https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/P7FzxHGbFoMPCSPE/?export",
+      ],
     ]);
     for (const ical_name of ical_urls.keys()) {
       const url = ical_urls.get(ical_name);
       const data = await ical.fromURL(url);
 
-      if (data == null) throw new Error(`failed to load calendar data for ${ical_name}`);
+      if (data == null)
+        throw new Error(`failed to load calendar data for ${ical_name}`);
 
       const events = [];
       for (const [, entry] of Object.entries(data)) {
@@ -308,9 +315,9 @@ export default async (cfg) => {
         const now = new Date();
         const recurring_events = ical.expandRecurringEvent(entry, {
           from: now,
-          to: new Date(now.getTime() + 60 * 24 * 60 * 60 * 1000)
+          to: new Date(now.getTime() + 60 * 24 * 60 * 60 * 1000),
         });
-        recurring_events.forEach(event_instance => {
+        recurring_events.forEach((event_instance) => {
           const img =
             event_instance.attach?.val != null &&
             event_instance.attach?.params.FMTTYPE.startsWith("image/")
@@ -329,15 +336,27 @@ export default async (cfg) => {
             url: event_instance_url,
             data: {
               title: event_instance.summary,
-              time_zones: event_instance.start.tz != null ? [event_instance.start.tz] : undefined,
+              // todo(maximsmol): use a timezone-aware datetime?
+              date: start.toJSDate(),
+              url: event_instance_url,
+              time_zones:
+                event_instance.start.tz != null
+                  ? [event_instance.start.tz]
+                  : undefined,
               image: img?.href,
-              locations: event_instance.event.location != null ? [event_instance.event.location] : undefined,
+              locations:
+                event_instance.event.location != null
+                  ? [event_instance.event.location]
+                  : undefined,
             },
             content:
-              event_instance.event.description != null ? md.render(event_instance.event.description) : undefined,
+              event_instance.event.description != null
+                ? md.render(event_instance.event.description)
+                : undefined,
           });
         });
       }
+      console.log(`Fetched ${events.length} ical events from ${ical_name}`);
 
       cfg.addGlobalData(ical_name, events);
     }

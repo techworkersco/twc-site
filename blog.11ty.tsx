@@ -87,7 +87,7 @@ export const render = async ({
   const posts = parseDatesAndSort(blog);
 
   return (
-    <main class="cards">
+    <main class="cards full-width">
       <header>
         <div>
           <h1>Blog</h1>

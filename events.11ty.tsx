@@ -1,3 +1,5 @@
+import { inspect } from "util";
+
 import icons from "./src/lucide.ts";
 
 import { Data } from "./types.ts";
@@ -7,7 +9,10 @@ export const data = {
   title: "Events",
 };
 
-const renderEvent = (data) => {
+export const renderEvent = (
+  data,
+  { small = false }: { small?: boolean } = {},
+) => {
   const { title, timestamp, locations, url, image } = data;
 
   // todo(maximsmol): when rendering multiple time zones,
@@ -20,7 +25,7 @@ const renderEvent = (data) => {
   return (
     <li>
       <section>
-        <a href={url} class="large">
+        <a href={url} class={!small ? "large" : undefined}>
           {image != null ? (
             <div class="thumbnail" style={`background-image: url(${image})`} />
           ) : (
@@ -38,10 +43,12 @@ const renderEvent = (data) => {
               <div>{renderTime(timestamp, { tz })}</div>
             ))}
           </div>
-          <span class="location">
-            <span>{locations[0]}</span>
-            {icons.MapPin}
-          </span>
+          {locations != null && locations.length > 0 && (
+            <span class="location" title={locations[0]}>
+              <span>{locations[0]}</span>
+              {icons.MapPin}
+            </span>
+          )}
         </div>
       </section>
     </li>
@@ -52,16 +59,21 @@ export const render = async ({
   collections: { events: globalEvents },
   berlin_events,
   nl_events,
+  portland_events,
+  ical_events,
 }: Data) => {
   // todo(maximsmol): deduplicate with landing
   const events = parseDatesAndSort([
     ...globalEvents.map(({ data, url }) => ({ ...data, url })),
     ...(berlin_events ?? []),
     ...(nl_events ?? []),
+    ...(portland_events ?? []).map((x) => x.data),
+    ...(ical_events ?? []).map((x) => x.data),
   ]).map((x) => {
     const tzs = "time_zones" in x ? x.time_zones : x.timeszones;
 
-    if (tzs.length === 0) throw new Error("No time zone specified");
+    if (tzs == null || tzs.length === 0)
+      throw new Error(`No time zone specified: ${inspect(x)}`);
 
     return { ...x, baseTime: x.timestamp.toZonedDateTimeISO(tzs[0]), tzs };
   });
@@ -91,7 +103,7 @@ export const render = async ({
           </div>
         </div>
       </header>
-      <section class="cards">
+      <section class="cards full-width">
         <header>
           <h2 class="h3">Upcoming Events</h2>
         </header>
@@ -102,7 +114,7 @@ export const render = async ({
           <h2 class="h3">Past Events</h2>
         </header>
         {years.map((year) => (
-          <section class="cards">
+          <section class="cards full-width">
             <details>
               <summary>
                 <header>
