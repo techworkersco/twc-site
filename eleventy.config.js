@@ -50,6 +50,8 @@ const parseLooseDate = (x) => {
 };
 
 export default async (cfg) => {
+  const renderTs = Temporal.Now.instant();
+
   cfg.addGlobalData("layout", "default.11ty.tsx");
   cfg.setLayoutResolution(false);
 
@@ -250,115 +252,67 @@ export default async (cfg) => {
   });
   cfg.addTemplateFormats("mdx");
 
-  cfg.addShortcode("featuredVideo", (videoId) => {
-    if (!videoId) return "";
-
-    return `
-      <div class="featured-video-wrapper">
-        <div class="featured-video-facade"
-            id="youtube-${videoId}"
-            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; cursor: pointer;"
-            onclick="
-              const iframe = document.createElement('iframe');
-              iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1');
-              iframe.setAttribute('title', 'Featured Video');
-              iframe.setAttribute('frameborder', '0');
-              iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-              iframe.setAttribute('allowfullscreen', 'true');
-              iframe.setAttribute('style', 'position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;');
-              this.innerHTML = '';
-              this.appendChild(iframe);
-            ">
-          <img src="https://img.youtube.com/vi/${videoId}/maxresdefault.jpg"
-            alt="Featured Video Thumbnail"
-            style="position: absolute; top: 0; left: 0; right: 0; width: 100%; max-width: 100%; height: 100%; object-fit: cover; opacity: 0.85;"
-            onerror="this.src='https://img.youtube.com/vi/${videoId}/hqdefault.jpg';">
-          <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; background: rgba(30, 30, 30, 0.9); border-radius: 12px; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">
-            <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: white;"><path d="M8 5v14l11-7z"/></svg>
-          </div>
-        </div>
-      </div>
-      <style>
-        .featured-video-facade:hover .play-button { background: #FF0000 !important; }
-      </style>
-    `;
-  });
-
-  /*
-   Fetch iCal calender events.
-   */
   const fetchCalendar = async () => {
-    const ical_urls = new Map([
-      [
-        "ical_events",
-        "https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/EHFzzZQXSQoS3f5w/?export",
-      ],
-      [
-        "portland_events",
-        "https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/P7FzxHGbFoMPCSPE/?export",
-      ],
-    ]);
-    for (const ical_name of ical_urls.keys()) {
-      const url = ical_urls.get(ical_name);
-      const data = await ical.fromURL(url);
-
+    for (const [calendarName, shareKey] of Object.entries({
+      ical_events: "EHFzzZQXSQoS3f5w",
+      portland_events: "P7FzxHGbFoMPCSPE",
+    })) {
+      const data = await ical.fromURL(
+        `https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/${shareKey}/?export`,
+      );
       if (data == null)
-        throw new Error(`failed to load calendar data for ${ical_name}`);
+        throw new Error(`failed to load calendar data for ${calendarName}`);
 
       const events = [];
       for (const [, entry] of Object.entries(data)) {
-        // node-ical API docs: https://www.npmjs.com/package/node-ical
         if (entry == null) continue;
         if (entry.type !== "VEVENT") continue;
 
         // Expand any recurring events over the next 60 days.
-        const now = new Date();
-        const recurring_events = ical.expandRecurringEvent(entry, {
-          from: now,
-          to: new Date(now.getTime() + 60 * 24 * 60 * 60 * 1000),
-        });
-        recurring_events.forEach((event_instance) => {
+        for (const event of ical.expandRecurringEvent(entry, {
+          from: new Date(renderTs.toString()),
+          to: new Date(
+            renderTs.add(Temporal.Duration.from({ hours: 60 * 24 })).toString(),
+          ),
+        })) {
           const img =
-            event_instance.attach?.val != null &&
-            event_instance.attach?.params.FMTTYPE.startsWith("image/")
-              ? new URL(event_instance.attach.val, base)
+            event.attach?.val != null &&
+            event.attach?.params.FMTTYPE.startsWith("image/")
+              ? new URL(event.attach.val, base)
               : undefined;
 
-          const start = DateTime.fromJSDate(event_instance.start, {
-            zone: event_instance.start.tz,
+          const start = DateTime.fromJSDate(event.start, {
+            zone: event.start.tz,
           });
 
           // todo(maximsmol): extract image from content
-          const event_instance_url = `/events/${event_instance.event.uid}_${event_instance.start.getTime()}/`;
+          const url = `/events/${event.event.uid}_${event.start.getTime()}/`;
           events.push({
             // todo(maximsmol): use a timezone-aware datetime?
             date: start.toJSDate(),
-            url: event_instance_url,
+            url,
             data: {
-              title: event_instance.summary,
+              title: event.summary,
               // todo(maximsmol): use a timezone-aware datetime?
               date: start.toJSDate(),
-              url: event_instance_url,
-              time_zones:
-                event_instance.start.tz != null
-                  ? [event_instance.start.tz]
-                  : undefined,
+              url,
+              time_zones: event.start.tz != null ? [event.start.tz] : undefined,
               image: img?.href,
               locations:
-                event_instance.event.location != null
-                  ? [event_instance.event.location]
+                event.event.location != null
+                  ? [event.event.location]
                   : undefined,
             },
             content:
-              event_instance.event.description != null
-                ? md.render(event_instance.event.description)
+              event.event.description != null
+                ? md.render(event.event.description)
                 : undefined,
           });
-        });
+        }
       }
-      console.log(`Fetched ${events.length} ical events from ${ical_name}`);
+      console.log(`Fetched ${events.length} ical events from ${calendarName}`);
 
-      cfg.addGlobalData(ical_name, events);
+      cfg.addGlobalData(calendarName, events);
     }
   };
 

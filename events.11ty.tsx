@@ -11,7 +11,7 @@ export const data = {
 
 export const renderEvent = (
   data,
-  { small = false }: { small?: boolean } = {},
+  { large = false, h3 = false }: { large?: boolean; h3?: boolean } = {},
 ) => {
   const { title, timestamp, locations, url, image } = data;
 
@@ -20,12 +20,19 @@ export const renderEvent = (
   // to make it more concise
   const tzs = "time_zones" in data ? data.time_zones : data.timeszones;
 
-  if (tzs.length === 0) throw new Error("No time zone specified");
+  if (tzs == null || tzs.length === 0)
+    throw new Error(`No time zone specified: ${inspect(data)}`);
+
+  const titleBody = (
+    <a href={url} class="plain">
+      {title}
+    </a>
+  );
 
   return (
     <li>
       <section>
-        <a href={url} class={!small ? "large" : undefined}>
+        <a href={url} class={large ? "large" : undefined}>
           {image != null ? (
             <div class="thumbnail" style={`background-image: url(${image})`} />
           ) : (
@@ -34,11 +41,7 @@ export const renderEvent = (
         </a>
         <div class="info">
           <div>
-            <h2>
-              <a href={url} class="plain">
-                {title}
-              </a>
-            </h2>
+            {!h3 ? <h2>{titleBody}</h2> : <h3>{titleBody}</h3>}
             {tzs.map((tz) => (
               <div>{renderTime(timestamp, { tz })}</div>
             ))}
@@ -107,7 +110,7 @@ export const render = async ({
         <header>
           <h2 class="h3">Upcoming Events</h2>
         </header>
-        <ol>{eventsFuture.map(renderEvent)}</ol>
+        <ol>{eventsFuture.map((x) => renderEvent(x, { large: true }))}</ol>
       </section>
       <section class="past">
         <header>
@@ -126,7 +129,9 @@ export const render = async ({
                   </h2>
                 </header>
               </summary>
-              <ol>{byYear[year].map(renderEvent)}</ol>
+              <ol>
+                {byYear[year].map((x) => renderEvent(x, { large: true }))}
+              </ol>
             </details>
           </section>
         ))}
