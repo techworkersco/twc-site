@@ -14,6 +14,7 @@ export const render = function (
     page,
     time_zones,
     image,
+    event,
   }: {
     content: string;
     title: string;
@@ -22,13 +23,16 @@ export const render = function (
     image?: string;
   },
 ) {
+  const date = event?.date ?? page.date;
+  if (event?.data.time_zones != null) time_zones = event?.data.time_zones;
+
   const timeConverterUrl = new URL(
     "https://www.timeanddate.com/worldclock/converter.html",
   );
   // todo(maximsmol): can this use regular iso format?
   timeConverterUrl.searchParams.set(
     "iso",
-    DateTime.fromJSDate(page.date).setZone("UTC").toFormat("yyyyMMdd'T'HHmmss"),
+    DateTime.fromJSDate(date).setZone("UTC").toFormat("yyyyMMdd'T'HHmmss"),
   );
   timeConverterUrl.searchParams.set("p1", "179"); // New York City
   timeConverterUrl.searchParams.set("p2", "224"); // San Francisco
@@ -44,11 +48,12 @@ export const render = function (
       <article class="post">
         <header>
           <h1 class="h4">{title}</h1>
+          {/* todo(maximsmol): add location? */}
           {/* todo(maximsmol): use regular time rendering */}
           <div>
             📆{" "}
             <a class="plain" target="_blank" href={timeConverterUrl.href}>
-              {this.all_time_zones(page.date, time_zones)}
+              {this.all_time_zones(date, time_zones)}
             </a>
           </div>
         </header>

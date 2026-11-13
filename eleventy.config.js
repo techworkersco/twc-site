@@ -7,6 +7,7 @@ import * as jsxRuntime from "hastscript/jsx-runtime";
 import { DateTime } from "luxon";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
+import ical from "node-ical";
 import rehypeSlug from "rehype-slug";
 import YAML from "yaml";
 
@@ -49,6 +50,8 @@ const parseLooseDate = (x) => {
 };
 
 export default async (cfg) => {
+  const renderTs = Temporal.Now.instant();
+
   cfg.addGlobalData("layout", "default.11ty.tsx");
   cfg.setLayoutResolution(false);
 
@@ -77,6 +80,7 @@ export default async (cfg) => {
   cfg.addDataExtension("yml", YAML.parse);
   cfg.addDataExtension("yaml", YAML.parse);
 
+  // fixme(maximsmol): calendar events do not get loaded into RSS
   const getRssConfig = (collection, name) => ({
     type: "atom",
     outputPath: `/feed/${collection}.xml`,
@@ -247,40 +251,70 @@ export default async (cfg) => {
     },
   });
   cfg.addTemplateFormats("mdx");
-  
-  cfg.addShortcode("featuredVideo", (videoId) => {
-    if (!videoId) return '';
 
-    return `
-      <div class="featured-video-wrapper">
-        <div class="featured-video-facade" 
-            id="youtube-${videoId}"
-            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; cursor: pointer;"
-            onclick="
-              const iframe = document.createElement('iframe');
-              iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1');
-              iframe.setAttribute('title', 'Featured Video');
-              iframe.setAttribute('frameborder', '0');
-              iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-              iframe.setAttribute('allowfullscreen', 'true');
-              iframe.setAttribute('style', 'position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;');
-              this.innerHTML = '';
-              this.appendChild(iframe);
-            ">
-          <img src="https://img.youtube.com/vi/${videoId}/maxresdefault.jpg" 
-            alt="Featured Video Thumbnail" 
-            style="position: absolute; top: 0; left: 0; right: 0; width: 100%; max-width: 100%; height: 100%; object-fit: cover; opacity: 0.85;"
-            onerror="this.src='https://img.youtube.com/vi/${videoId}/hqdefault.jpg';">
-          <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; background: rgba(30, 30, 30, 0.9); border-radius: 12px; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">
-            <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: white;"><path d="M8 5v14l11-7z"/></svg>
-          </div>
-        </div>
-      </div>
-      <style>
-        .featured-video-facade:hover .play-button { background: #FF0000 !important; }
-      </style>
-    `;
-  });
+  const fetchCalendar = async () => {
+    for (const [calendarName, shareKey] of Object.entries({
+      ical_events: "EHFzzZQXSQoS3f5w",
+      portland_events: "P7FzxHGbFoMPCSPE",
+    })) {
+      const data = await ical.fromURL(
+        `https://dev.techworkerscoalition.org/nextcloud/remote.php/dav/public-calendars/${shareKey}/?export`,
+      );
+      if (data == null)
+        throw new Error(`failed to load calendar data for ${calendarName}`);
+
+      const events = [];
+      for (const [, entry] of Object.entries(data)) {
+        if (entry == null) continue;
+        if (entry.type !== "VEVENT") continue;
+
+        // Expand any recurring events over the next 60 days.
+        for (const event of ical.expandRecurringEvent(entry, {
+          from: new Date(renderTs.toString()),
+          to: new Date(
+            renderTs.add(Temporal.Duration.from({ hours: 60 * 24 })).toString(),
+          ),
+        })) {
+          const img =
+            event.attach?.val != null &&
+            event.attach?.params.FMTTYPE.startsWith("image/")
+              ? new URL(event.attach.val, base)
+              : undefined;
+
+          const start = DateTime.fromJSDate(event.start, {
+            zone: event.start.tz,
+          });
+
+          // todo(maximsmol): extract image from content
+          const url = `/events/${event.event.uid}_${event.start.getTime()}/`;
+          events.push({
+            // todo(maximsmol): use a timezone-aware datetime?
+            date: start.toJSDate(),
+            url,
+            data: {
+              title: event.summary,
+              // todo(maximsmol): use a timezone-aware datetime?
+              date: start.toJSDate(),
+              url,
+              time_zones: event.start.tz != null ? [event.start.tz] : undefined,
+              image: img?.href,
+              locations:
+                event.event.location != null
+                  ? [event.event.location]
+                  : undefined,
+            },
+            content:
+              event.event.description != null
+                ? md.render(event.event.description)
+                : undefined,
+          });
+        }
+      }
+      console.log(`Fetched ${events.length} ical events from ${calendarName}`);
+
+      cfg.addGlobalData(calendarName, events);
+    }
+  };
 
   const remoteDataSrcs = [
     {
@@ -292,7 +326,7 @@ export default async (cfg) => {
       url: "https://techworkersberlin.com/events.yml",
     },
   ];
-  const deferred = [];
+  const deferred = [fetchCalendar()];
   for (const x of remoteDataSrcs)
     deferred.push(
       (async () => {
@@ -309,7 +343,9 @@ export default async (cfg) => {
           console.error(`Failed to fetch remote data from ${x.url}`, error);
         }
 
-        console.log(`Fetched: ${x.data} from ${x.url}`);
+        console.log(
+          `Fetched ${data.length} ${x.data} items from from ${x.url}`,
+        );
 
         cfg.addGlobalData(x.data, data);
       })(),

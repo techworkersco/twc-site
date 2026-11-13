@@ -7,12 +7,14 @@ import icons from "./src/lucide.ts";
 import { parseDatesAndSort, renderTime } from "./src/collections.tsx";
 
 import { BlogCard } from "./blog.11ty.tsx";
+import { renderEvent } from "./events.11ty.tsx";
 
 export const render = async ({
   press,
   collections: { events: globalEvents, blog },
   berlin_events,
   nl_events,
+  ical_events,
   site: { timeZone },
 }: Data & { site: Site }) => {
   const heroIcons = [
@@ -46,6 +48,7 @@ export const render = async ({
     ...globalEvents.map(({ data, url }) => ({ ...data, url })),
     ...(berlin_events ?? []),
     ...(nl_events ?? []),
+    ...(ical_events ?? []).map((x) => x.data),
   ]);
 
   const renderTs = Temporal.Now.instant();
@@ -131,7 +134,7 @@ export const render = async ({
           </a>
         </section>
       </section>
-      <section class="cards">
+      <section class="cards full-width">
         <header>
           <h2 class="h3">Upcoming Events</h2>
           <a href="/events" class="button">
@@ -139,55 +142,11 @@ export const render = async ({
           </a>
         </header>
         <ol>
-          {eventsFuture.slice(0, 5).map((data) => {
-            const { title, timestamp, locations, url, image } = data;
-            try {
-              const tzs =
-                "time_zones" in data ? data.time_zones : data.timeszones;
-
-              if (tzs.length === 0) throw new Error("No time zone specified");
-
-              return (
-                <li>
-                  <section>
-                    <a href={url}>
-                      {image != null ? (
-                        <div
-                          class="thumbnail"
-                          style={`background-image: url(${image})`}
-                        />
-                      ) : (
-                        icons.CalendarDays
-                      )}
-                    </a>
-                    <div class="info">
-                      <div>
-                        <h3>
-                          <a href={url} class="plain">
-                            {title}
-                          </a>
-                        </h3>
-                        {tzs.map((tz) => (
-                          <div>{renderTime(timestamp, { tz })}</div>
-                        ))}
-                      </div>
-                      <span class="location">
-                        <span>{locations[0]}</span>
-                        {icons.MapPin}
-                      </span>
-                    </div>
-                  </section>
-                </li>
-              );
-            } catch (err) {
-              throw new Error(`Failed to render event ${inspect(data)}`, {
-                cause: err,
-              });
-            }
-          })}
+          {/* todo(maximsmol): dedup with events.11ty.tsx */}
+          {eventsFuture.slice(0, 5).map((x) => renderEvent(x, { h3: true }))}
         </ol>
       </section>
-      <section class="cards press">
+      <section class="cards full-width press">
         <header>
           <h2 class="h3">TWC in the Press</h2>
           <a href="/press" class="button">
@@ -220,7 +179,7 @@ export const render = async ({
           ))}
         </ol>
       </section>
-      <section class="cards">
+      <section class="cards full-width">
         <header>
           <h2 class="h3">Blog Posts</h2>
           <a href="/blog" class="button">

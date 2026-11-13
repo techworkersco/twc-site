@@ -1,20 +1,21 @@
+import { inspect } from "util";
+
 export const parseDatesAndSort = <T extends { date: string }>(
   xs: T[],
 ): T & { timestamp: Temporal.Instant } => {
   const res = xs.map((x) => {
     let date: Date | undefined;
     try {
-      // Temporal.Instant is very picky about whitespace
+      // Temporal.Instant is very picky about whitespace so we use Date
       date = new Date(x.date);
       return {
         ...x,
         timestamp: Temporal.Instant.from(date.toISOString()),
       };
     } catch (err) {
-      throw new Error(
-        `Failed to parse timestamp: ${inspect(x.date)} (${date?.toISOString()})`,
-        { cause: err },
-      );
+      throw new Error(`Failed to parse timestamp: ${inspect(x.date)}`, {
+        cause: err,
+      });
     }
   });
   // todo(maximsmol): use Instant.compare when available
