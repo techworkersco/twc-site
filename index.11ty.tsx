@@ -14,7 +14,6 @@ export const render = async ({
   collections: { events: globalEvents, blog },
   berlin_events,
   nl_events,
-  portland_events,
   ical_events,
   site: { timeZone },
 }: Data & { site: Site }) => {
@@ -49,7 +48,6 @@ export const render = async ({
     ...globalEvents.map(({ data, url }) => ({ ...data, url })),
     ...(berlin_events ?? []),
     ...(nl_events ?? []),
-    ...(portland_events ?? []).map((x) => x.data),
     ...(ical_events ?? []).map((x) => x.data),
   ]);
 

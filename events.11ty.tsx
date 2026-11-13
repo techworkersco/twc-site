@@ -62,7 +62,6 @@ export const render = async ({
   collections: { events: globalEvents },
   berlin_events,
   nl_events,
-  portland_events,
   ical_events,
 }: Data) => {
   // todo(maximsmol): deduplicate with landing
@@ -70,7 +69,6 @@ export const render = async ({
     ...globalEvents.map(({ data, url }) => ({ ...data, url })),
     ...(berlin_events ?? []),
     ...(nl_events ?? []),
-    ...(portland_events ?? []).map((x) => x.data),
     ...(ical_events ?? []).map((x) => x.data),
   ]).map((x) => {
     const tzs = "time_zones" in x ? x.time_zones : x.timeszones;
