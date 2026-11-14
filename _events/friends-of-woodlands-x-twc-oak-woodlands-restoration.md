@@ -1,6 +1,6 @@
 ---
 title: Friends of Woodlands x TWC Oak Woodlands restoration
-date: 2026-11-14 09:30
+date: 2026-11-14 00:30
 locations:
   - Bay Area
 time_zones:
