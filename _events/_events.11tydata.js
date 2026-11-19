@@ -7,6 +7,8 @@ export default {
   layout: "event.11ty.tsx",
   eleventyComputed: {
     date(data) {
+      if (data.event != null) return;
+
       const res = DateTime.fromFormat(data.date, "yyyy-MM-dd HH:mm", {
         zone: "America/New_York",
       }).toJSDate();
@@ -14,7 +16,10 @@ export default {
       return res;
     },
     excerpt(data) {
-      const res = data.page.rawInput.trim().split("\n\n")[0];
+      let content = data.page.rawInput;
+      if (data.event != null) content = data.event.content ?? "";
+
+      const res = content.trim().split("\n\n")[0];
       data.page.excerpt = res;
       return res;
     },
