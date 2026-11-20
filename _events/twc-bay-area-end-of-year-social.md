@@ -14,6 +14,6 @@ Whether you are a long-term organizer with us or getting to know us for the very
 
 📆 Thursday, December 3rd\
 ⏰ 6:00-8:00 PM\
-📍 There/There (468 25th St, Oakland)
+📍 [There/There](https://therethere.bar/) (468 25th St, Oakland) - Back patio
 
 RSVP here: [twcl.ink/dec26-social](http://twcl.ink/dec26-social)
