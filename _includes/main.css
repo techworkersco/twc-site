@@ -162,6 +162,7 @@
     }
     input[type="email"],
     input[type="text"],
+    input[type="tel"],
     input[type="url"],
     textarea,
     select {
@@ -220,6 +221,7 @@
     }
     input[type="email"],
     input[type="text"],
+    input[type="tel"],
     input[type="url"],
     textarea,
     select {
@@ -720,6 +722,7 @@
 
   input[type="email"],
   input[type="text"],
+  input[type="tel"],
   input[type="url"],
   textarea,
   select {
@@ -733,6 +736,10 @@
     }
   }
 
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
   input[type="submit"],
   .pagination {
     border-radius: 4px;
