@@ -11,7 +11,7 @@ export const render = async ({ press, berlin_press }: Data) => {
   press = parseDatesAndSort([...press, ...berlin_press]);
 
   return (
-    <main class="cards press">
+    <main class="cards full-width press">
       <header>
         <div>
           <h1>Press</h1>

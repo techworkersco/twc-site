@@ -28,6 +28,7 @@
     "luxon": "^3.7.2",
     "markdown-it": "^14.1.1",
     "markdown-it-anchor": "^9.2.0",
+    "node-ical": "^0.25.2",
     "pixelarticons": "^2.4.2",
     "rehype-slug": "^6.0.0",
     "simple-icons": "^16.35.0",

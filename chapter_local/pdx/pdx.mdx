@@ -4,6 +4,9 @@ permalink: /pdx/
 layout: plain.11ty.tsx
 ---
 
+import { parseDatesAndSort, renderTime } from "../../src/collections.tsx";
+import { renderEvent } from "../../events.11ty.tsx";
+
 # PDX Tech Workers Coalition
 
 This is the Portland, OR chapter of the TWC.
@@ -23,7 +26,36 @@ This is the Portland, OR chapter of the TWC.
   - [Mastodon](https://union.place/@twc_pdx)
 - Come to one of our [Unemployed Tech Worker Events](/pdx/events/unemployed-workers-meeting/).
 
+## Meetings and Events
+
+Upcoming meetings and events are listed below and on the <a href="https://dev.techworkerscoalition.org/nextcloud/apps/calendar/p/P7FzxHGbFoMPCSPE">Portland TWC Calendar</a>.
+
+{(() => {
+// todo(maximsmol): deduplicate with events.11ty.tsx
+const events = parseDatesAndSort(props.portland_events.map(x => x.data)).map((x) => {
+const tzs = "time_zones" in x ? x.time_zones : x.timeszones;
+
+if (tzs.length === 0) throw new Error("No time zone specified");
+
+return { ...x, baseTime: x.timestamp.toZonedDateTimeISO(tzs[0]), tzs };
+});
+
+const renderTs = Temporal.Now.instant();
+const eventsFuture = events.filter((x) => x.timestamp.epochNanoseconds >= renderTs.epochNanoseconds);
+eventsFuture.reverse();
+
+return <section class="cards" style="padding-bottom: var(--space-l)">
+
+  <ol>{eventsFuture.map(x => renderEvent(x, {h3: true}))}</ol>
+</section>;
+})()}
+
+<br />
+
+{/* todo(maximsmol): this doesn't work because NextCloud sets a CSP that sets iframe policy to same-origin <iframe width="400" height="215" src="https://dev.techworkerscoalition.org/nextcloud/apps/calendar/embed/P7FzxHGbFoMPCSPE"></iframe> */}
+
 ## Bylaws
+
 - Our chapter is governed by the [PDX TWC bylaws](https://pdx.techworkerscoalition.org/nextcloud/s/4AF5pgYNobDgcwF).
 
 ## Code of Conduct
